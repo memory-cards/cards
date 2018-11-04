@@ -1,0 +1,16 @@
+{
+  type: 'choose_options',
+  lang: 'en',
+  tags: ['development', 'patterns'],
+  card: {
+    question: 'What is `S` in SOLID?',
+    answers: [
+      { text: 'Simple' },
+      { text: 'Smart structure' },
+      { text: 'Single responsibility', correct: true },
+      { text: 'Segregate interface' },
+      { text: 'Stackoverflow' },
+    ],
+    comment: 'The single responsibility principles is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.',
+  },
+}
