@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test:json5": "json5 -v ./**/*.json5",
-    "test": "yarn run test:json5"
+    "test:json5-format": "node .scripts/formatJSON5docs.js --validate",
+    "test": "yarn run test:json5 && yarn run test:json5-format",
+    "format:json5": "node .scripts/formatJSON5docs.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,6 @@
     "json5": "^2.1.0"
   },
   "husky": {
-    "pre-commit": "yarn run test:json5 && node .scripts/formatJSON5docs.js"
+    "pre-commit": "yarn run test:json5 && yarn run format:json5"
   }
 }
