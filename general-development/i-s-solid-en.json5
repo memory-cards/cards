@@ -1,0 +1,17 @@
+{
+  type: 'choose_options',
+  lang: 'en',
+  tags: ['development', 'patterns'],
+  card: {
+    question: 'What is `I` in SOLID?',
+    answers: [
+      { text: 'Interface segregation', correct: true },
+      { text: 'Immutable' },
+      { text: 'Intelligent decoupling' },
+      { text: 'International' },
+      { text: 'Infrastructural improvements' },
+    ],
+    comment: '<b>Interface-segregation principle (ISP)</b> states that no client should be forced to depend on methods it does not use.\
+    <br /><i>"many client-specific interfaces are better than one general-purpose interface."</i>',
+  },
+}
