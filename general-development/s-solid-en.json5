@@ -1,10 +1,7 @@
 {
   type: 'choose_options',
   lang: 'en',
-  tags: [
-    'development',
-    'patterns',
-  ],
+  tags: ['development', 'patterns'],
   card: {
     question: 'What is `S` in SOLID?',
     answers: [
