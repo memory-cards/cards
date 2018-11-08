@@ -1,15 +1,29 @@
 {
   type: 'choose_options',
   lang: 'en',
-  tags: ['development', 'patterns'],
+  tags: [
+    'development',
+    'patterns',
+  ],
   card: {
     question: 'What is `O` in SOLID?',
     answers: [
-      { text: 'Object oriented' },
-      { text: 'Obviously simple' },
-      { text: 'Open/closed', correct: true },
-      { text: 'Original and fresh' },
-      { text: 'Open minded' },
+      {
+        text: 'Object oriented',
+      },
+      {
+        text: 'Obviously simple',
+      },
+      {
+        text: 'Open/closed',
+        correct: true,
+      },
+      {
+        text: 'Original and fresh',
+      },
+      {
+        text: 'Open minded',
+      },
     ],
     comment: '<b>Open/closed principle</b> -"software entities … should be open for extension, but closed for modification."',
   },

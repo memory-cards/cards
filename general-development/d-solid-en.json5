@@ -1,23 +1,30 @@
 {
   type: 'choose_options',
   lang: 'en',
-  tags: ['development', 'patterns'],
+  tags: [
+    'development',
+    'patterns',
+  ],
   card: {
     question: 'What is `D` in SOLID?',
     answers: [
-      { text: 'Development' },
-      { text: 'Domain' },
-      { text: 'Data driven' },
-      { text: 'Dependency inversion', correct: true },
-      { text: 'Delegates segragation' },
+      {
+        text: 'Development',
+      },
+      {
+        text: 'Domain',
+      },
+      {
+        text: 'Data driven',
+      },
+      {
+        text: 'Dependency inversion',
+        correct: true,
+      },
+      {
+        text: 'Delegates segragation',
+      },
     ],
-    comment: 'the <b>Dependency Inversion (one should "depend upon abstractions, [not] concretions.)</b> principle refers to a specific form of decoupling software modules.\
-     When following this principle, the conventional dependency relationships established from high-level, \
-     policy-setting modules to low-level, dependency modules are reversed, \
-     thus rendering high-level modules independent of the low-level module implementation details. \
-     The principle states:<ol>\
-     <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>\
-    <li>Abstractions should not depend on details. Details should depend on abstractions.</li>\
-    </ol>',
+    comment: 'the <b>Dependency Inversion (one should "depend upon abstractions, [not] concretions.)</b> principle refers to a specific form of decoupling software modules.     When following this principle, the conventional dependency relationships established from high-level,      policy-setting modules to low-level, dependency modules are reversed,      thus rendering high-level modules independent of the low-level module implementation details.      The principle states:<ol>     <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>    <li>Abstractions should not depend on details. Details should depend on abstractions.</li>    </ol>',
   },
 }
