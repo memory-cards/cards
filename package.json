@@ -1,0 +1,38 @@
+{
+  "name": "cards",
+  "version": "1.0.0",
+  "description": "This repo is used to store cards separated by topic.",
+  "engines": {
+    "node": ">=10.0.0",
+    "yarn": ">=1.3.0"
+  },
+  "scripts": {
+    "test:json5": "node .scripts/validateJSON5.js",
+    "test:json5-format": "node .scripts/formatJSON5docs.js --validate",
+    "test": "yarn run test:json5 && yarn run test:json5-format",
+    "format:json5": "node .scripts/formatJSON5docs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memory-cards/cards.git"
+  },
+  "keywords": [
+    "anki",
+    "anki decks",
+    "education"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memory-cards/cards/issues"
+  },
+  "homepage": "https://github.com/memory-cards/cards#readme",
+  "dependencies": {
+    "glob": "^7.1.3",
+    "husky": "^1.1.3",
+    "json5": "^2.1.0"
+  },
+  "husky": {
+    "pre-commit": "yarn run test:json5 && yarn run format:json5"
+  }
+}

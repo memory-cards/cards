@@ -1,16 +1,30 @@
 {
   type: 'choose_options',
   lang: 'en',
-  tags: ['development', 'patterns'],
+  tags: [
+    'development',
+    'patterns',
+  ],
   card: {
     question: 'What is `L` in SOLID?',
     answers: [
-      { text: 'Lazy evaluation' },
-      { text: 'Long chain' },
-      { text: 'Liskov substitution', correct: true },
-      { text: 'Latency Stage' },
-      { text: 'Liquid flow' },
+      {
+        text: 'Lazy evaluation',
+      },
+      {
+        text: 'Long chain',
+      },
+      {
+        text: 'Liskov substitution',
+        correct: true,
+      },
+      {
+        text: 'Latency Stage',
+      },
+      {
+        text: 'Liquid flow',
+      },
     ],
     comment: '<b>Liskov substitution principle</b> - objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."',
- },
+  },
 }
