@@ -1,0 +1,12 @@
+{
+  type: 'info',
+  lang: 'en',
+  tags: [
+    'development',
+    'patterns',
+  ],
+  card: {
+    question: 'What is <b>Kiss</b> principle?',
+    comment: 'Kiss is the backronym for <b>Keep it short and simple</b> - a design principle for development.<br /><i>The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore simplicity should be a key goal in design, and that unnecessary complexity should be avoided.</i>',
+  },
+}
