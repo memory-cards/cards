@@ -1,0 +1,8 @@
+{
+  type: 'info',
+  strangeProperty: [
+    'development',
+    'patterns',
+  ],
+  tags: 1234,
+}
