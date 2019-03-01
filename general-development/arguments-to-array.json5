@@ -1,0 +1,35 @@
+{
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'development',
+    'javascript',
+  ],
+  card: {
+    question: 'Turn the arguments of a method into a array:<br/><pre>function myArray() {\n  var a = ???;\n  a = Array.prototype.???.call(a);\n  return a;\n}</pre>',
+    answers: [
+      {
+        text: 'arguments',
+      },
+      {
+        text: 'slice',
+      },
+      {
+        text: 'splice',
+      },
+      {
+        text: 'argv',
+      },
+      {
+        text: 'args',
+      },
+      {
+        text: 'sort',
+      },
+      {
+        text: 'toArray',
+      },
+    ],
+    comment: 'The arguments of a function can be accessed with the arguments keyword, but arguments only returns a pseudo-array.      Before applying Array methods, arguments needs to be converted to an actual Array, as follows:<pre>function sortedArgs() {\n  // pseudo-array of arguments\n  var a = arguments\n  // turn a into a proper Array:\n  a = Array.prototype.slice.call(a)\n  // we can now use Array methods:\n  return a.sort();\n}</pre>      Example of use:      <code>sortedArgs(3,1,2) // [1,2,3]</code>',
+  },
+}
