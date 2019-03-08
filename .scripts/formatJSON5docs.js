@@ -5,7 +5,9 @@ const json5 = require('json5');
 const cmd = process.argv.join(' ');
 const validate = cmd.includes('--validate');
 
-const json5files = glob.sync('./**/*.json5');
+const json5files = glob.sync('./**/*.json5', {
+  ignore: ['./node_modules/**/*.*'],
+});
 const nonFormattedFiles = [];
 json5files.forEach(fileName => {
   const content = fs.readFileSync(fileName).toString();
@@ -20,7 +22,9 @@ json5files.forEach(fileName => {
 });
 
 console.log(
-  `${nonFormattedFiles.length} json5-file(s) ${validate ? 'should be' : ''} reformatted`,
+  `${nonFormattedFiles.length} json5-file(s) ${
+    validate ? 'should be' : ''
+  } reformatted`,
 );
 
 if (validate && nonFormattedFiles.length) {
