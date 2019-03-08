@@ -9,7 +9,8 @@
   "scripts": {
     "test:json5": "node .scripts/validateJSON5.js",
     "test:json5-format": "node .scripts/formatJSON5docs.js --validate",
-    "test": "yarn run test:json5 && yarn run test:json5-format",
+    "test:card-types": "node .scripts/validateCardTypes.js",
+    "test": "yarn run test:json5 && yarn run test:json5-format && yarn run test:card-types",
     "format:json5": "node .scripts/formatJSON5docs.js"
   },
   "repository": {
