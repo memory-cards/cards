@@ -11,7 +11,7 @@ json5files.forEach(fileName => {
   const content = fs.readFileSync(fileName).toString();
   const data = json5.parse(content);
   const newContent = json5.stringify(data, null, 2);
-  if (newContent !== content) {
+  if (newContent.trim() !== content.trim()) {
     if (!validate) {
       fs.writeFileSync(fileName, newContent);
     }
