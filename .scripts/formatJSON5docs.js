@@ -6,7 +6,7 @@ const cmd = process.argv.join(' ');
 const validate = cmd.includes('--validate');
 
 const json5files = glob.sync('./**/*.json5');
-let counter = 0;
+const nonFormattedFiles = [];
 json5files.forEach(fileName => {
   const content = fs.readFileSync(fileName).toString();
   const data = json5.parse(content);
@@ -15,14 +15,15 @@ json5files.forEach(fileName => {
     if (!validate) {
       fs.writeFileSync(fileName, newContent);
     }
-    counter++;
+    nonFormattedFiles.push(fileName);
   }
 });
 
 console.log(
-  `${counter} json5-file(s) ${validate ? 'should be' : ''} reformatted`,
+  `${nonFormattedFiles.length} json5-file(s) ${validate ? 'should be' : ''} reformatted`,
 );
 
-if (validate && counter) {
+if (validate && nonFormattedFiles.length) {
+  console.log(nonFormattedFiles.join('\n'));
   process.exit(1);
 }
