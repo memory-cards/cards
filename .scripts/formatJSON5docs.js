@@ -3,26 +3,31 @@ const fs = require('fs');
 const json5 = require('json5');
 
 const cmd = process.argv.join(' ');
-const validate = cmd.includes('--validate');
+const isValidate = cmd.includes('--validate');
 
-const json5files = glob.sync('./**/*.json5');
-let counter = 0;
+const json5files = glob.sync('./**/*.json5', {
+  ignore: ['./node_modules/**/*.*'],
+});
+const nonFormattedFiles = [];
 json5files.forEach(fileName => {
   const content = fs.readFileSync(fileName).toString();
   const data = json5.parse(content);
   const newContent = json5.stringify(data, null, 2);
-  if (newContent !== content) {
-    if (!validate) {
+  if (newContent.trim() !== content.trim()) {
+    if (!isValidate) {
       fs.writeFileSync(fileName, newContent);
     }
-    counter++;
+    nonFormattedFiles.push(fileName);
   }
 });
 
 console.log(
-  `${counter} json5-file(s) ${validate ? 'should be' : ''} reformatted`,
+  `${nonFormattedFiles.length} json5-file(s) ${
+    isValidate ? 'should be' : ''
+  } reformatted`,
 );
 
-if (validate && counter) {
+if (isValidate && nonFormattedFiles.length) {
+  console.log(nonFormattedFiles.join('\n'));
   process.exit(1);
 }
