@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/publishing/package-distribution-tags.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'workout',
+  ],
+  card: {
+    question: '<p>List all the tags for a package:</p>\n<pre><code class="language-bash">$ npm ??? ??? [&#x3C;pkg>]\n</code></pre>\n',
+    answers: [
+      {
+        text: 'dist-tag',
+      },
+      {
+        text: 'ls',
+      },
+      {
+        text: 'rm',
+      },
+      {
+        text: '--tag',
+      },
+      {
+        text: 'add',
+      },
+      {
+        text: 'tags',
+      },
+    ],
+    comment: '<p>Distribution tags are used to provide an alias instead of version number for packages.</p>\n<p>They are more human readable and allow the user to clearly differentiate between for example streams of development (e.g. <code>beta</code>, <code>latest</code>, <code>next</code>, <code>stable</code>).</p>\n<p>To add a tag to your package:</p>\n<pre><code class="language-bash">$ npm dist-tag add &#x3C;pkg>@&#x3C;version> [&#x3C;tag>]\n</code></pre>\n<p>This will tag the version of the package with the <code>&#x3C;tag></code>, or the <code>--tag</code> config if it\'s not specified.</p>\n<p>You can also remove a tag:</p>\n<pre><code class="language-bash">$ npm dist-tag rm &#x3C;pkg> &#x3C;tag>\n</code></pre>\n<p>To list all the tags for a package:</p>\n<pre><code class="language-bash">$  npm dist-tag ls [&#x3C;pkg>]\n</code></pre>\n<p>These tags can be used on installing packages:</p>\n<pre><code class="language-bash">$ npm dist-tag add enki stable\n$ npm install enki@stable\n</code></pre>\n<p>It\'s advised not to use tags that begin with numbers or the letter <code>v</code>  as they may be interpreted as <strong>semVer</strong> syntax.</p>\n',
+  },
+}

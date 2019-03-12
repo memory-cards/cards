@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/intro-ecmascript/const-part-1.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'es6',
+    'memory',
+  ],
+  card: {
+    question: "<p>Is the following code valid? Why?</p>\n<p>???</p>\n<pre><code class=\"language-javascript\">const enki = 'enki';\n\nif (true) {\n   const enki = 'nk';\n}\n</code></pre>\n",
+    answers: [
+      {
+        text: 'yes, because the second assignment is in a different scope',
+        correct: true,
+      },
+      {
+        text: 'yes, because the value is changed',
+        correct: false,
+      },
+      {
+        text: "no, because you can't redeclare a variable",
+        correct: false,
+      },
+      {
+        text: "no, because the <code>if</code> block doesn't have it's own scope",
+        correct: false,
+      },
+    ],
+    comment: '<p>The <em><code>const</code></em> (constant) keyword is new to ES6 and creates a variable that cannot be reassigned.</p>\n<p>When declaring a constant variable, you must assign an initial value otherwise you\nwill receive an error.</p>\n<p>To declare a constant use the <em><code>const</code></em> keyword where you would have used <em><code>var</code></em>:</p>\n<pre><code class="language-javascript">const year = 2016;\n</code></pre>\n<p>Once a <code>const</code> is declared any attempts to reassign the value will cause an error:</p>\n<pre><code class="language-javascript">year = 2017; //error\nyear = "future"; //error\n</code></pre>\n<p><code>const</code>s can exist in different scopes for example if we had already declared a <code>const</code> variable called <code>year</code> it is valid to declare another as long as it exists in another scope:</p>\n<pre><code class="language-javascript">const year = 2015;\n\nif (1 == 1) {\n   const year = 2016; //valid\n}\n</code></pre>\n',
+  },
+}

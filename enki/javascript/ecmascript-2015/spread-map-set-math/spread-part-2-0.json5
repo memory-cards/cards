@@ -1,0 +1,54 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/spread-map-set-math/spread-part-2.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the gaps such that the array is properly filled in:</p>\n<pre><code class="language-javascript">const initial = [1, 2, 3];\nconst second = [5, 6, 7];\nconst final = [\n?????? ???\n???, \n???];\nconsole.log(final)\n// 1, 2, 3, 4, 5, 6, 7\n</code></pre>\n',
+    answers: [
+      {
+        text: '...',
+      },
+      {
+        text: 'initial',
+      },
+      {
+        text: ',',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: '...second',
+      },
+      {
+        text: '...initial',
+      },
+      {
+        text: ', ,',
+      },
+      {
+        text: 'second',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: '6',
+      },
+      {
+        text: 'final',
+      },
+      {
+        text: '...final',
+      },
+    ],
+    comment: '<p>The spread syntax is particularly useful when working with arrays and we can use it to copy an array (previously you would probably have used slice to accomplish this):</p>\n<pre><code class="language-javascript">var original = [1,2,3];\nvar copyOfOriginal = [...original];\n</code></pre>\n<p>We can even copy the original array into the middle of a new array: </p>\n<pre><code class="language-javascript">var another = [0, ...original, 4, 5, 6];\n//[0, 1, 2, 3, 4, 5, 6]\n</code></pre>\n<p>Or add on the end of an existing array:</p>\n<pre><code class="language-javascript">original.push(...copyOfOriginal);\n//[1, 2, 3, 1, 2, 3]\n</code></pre>\n',
+  },
+}

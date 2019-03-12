@@ -1,0 +1,29 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/treating-a-boolean-as-number.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'type-coercion',
+    '',
+  ],
+  card: {
+    question: '<p>What does the this code output?</p>\n<pre><code class="language-javascript">console.log(3 + false); // ???\nconsole.log(3 + true); // ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '3',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: 'undefined',
+      },
+    ],
+    comment: '<p><em>Type coercion</em> converts a boolean to a number.</p>\n<p><code>true</code> is evaluated to <code>1</code> and <code>false</code> is evaluated to <code>0</code>.</p>\n<p>For example:</p>\n<pre><code class="language-javascript">console.log(3 + false); // 3\nconsole.log(3 + true); // 4\n</code></pre>\n',
+  },
+}

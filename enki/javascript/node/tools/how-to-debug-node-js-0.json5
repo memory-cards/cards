@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/tools/how-to-debug-node-js.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Which of the following cannot be used to debug a node application?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'webpack',
+        correct: true,
+      },
+      {
+        text: 'node debug',
+        correct: false,
+      },
+      {
+        text: 'node-inspector',
+        correct: false,
+      },
+      {
+        text: 'iron-node',
+        correct: false,
+      },
+    ],
+    comment: '<p>ß\nThere are many options when debugging Node applications.</p>\n<h3>Built-in debugger</h3>\n<p>Debug by putting a <code>debugger</code> statement in your code.\nRun by:</p>\n<pre><code class="language-bash">node debug app.js\n</code></pre>\n<h3>Browser interface</h3>\n<p>More sophisticated debugging can be done using <strong>Node Inspector</strong>, which allows debugging via an interface inside of a browser.\nRun by:</p>\n<pre><code class="language-bash">npm install -g node-inspector\nnode-debug app.js\n</code></pre>\n<h3>REPL</h3>\n<p><strong>Iron Node</strong> also has sophisticated debugging for Linux, Windows and OS X.</p>\n<pre><code class="language-bash">npm install iron-node -g;\niron-node app.js\n</code></pre>\n',
+  },
+}

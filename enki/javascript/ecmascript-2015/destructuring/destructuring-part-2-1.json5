@@ -1,0 +1,54 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-part-2.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Complete the destructuring assignment such that the log statements are correct:</p>\n<pre><code class="language-javascript">const obj = {\n  a: 3\n}\n\nconst {??? ??? ???,\n  ??? ??? ??? } = obj;\nconsole.log(foo)\n// 3\nconsole.log(bar)\n// 20\n</code></pre>\n',
+    answers: [
+      {
+        text: 'a',
+      },
+      {
+        text: ':',
+      },
+      {
+        text: 'foo',
+      },
+      {
+        text: 'bar',
+      },
+      {
+        text: '=',
+      },
+      {
+        text: '20',
+      },
+      {
+        text: 'as',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: '==',
+      },
+      {
+        text: ': foo',
+      },
+      {
+        text: ': bar',
+      },
+      {
+        text: ': 20',
+      },
+    ],
+    comment: '<p>Destructuring can also be used to work with objects.</p>\n<h3>Specifying where to assign variables</h3>\n<p>Sometimes when using destructuring you will want to specify where values should be assigned - this can be done as follows:</p>\n<pre><code class="language-javascript">var source =\n{company: "Enki", topic: "js"};\n\nvar {company:v1, topic:v2} = source;\n//v1 = "Enki"\n//v2 = "js"\n</code></pre>\n<h3>Default Properties</h3>\n<p>You can also assign a default value that will be used when destructuring if a source object doesn’t have a matching property.</p>\n<p>Below the default value of <code>200</code> will be used for variable <code>y</code> as the source object does not have a <code>y</code> property.</p>\n<p>Note how <code>x</code>\'s default is overwritten as the <code>x</code> property exists:</p>\n<pre><code class="language-javascript">var {x = 1, y = 200} = {x: 100};\n//x = 100, y = 200\n</code></pre>\n',
+  },
+}

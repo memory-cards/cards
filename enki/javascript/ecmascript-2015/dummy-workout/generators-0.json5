@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/generators.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Create a generator using generator function declaration:</p>\n<pre><code>??? generator() { ··· } \nlet genObj = ???(); \n</code></pre>\n',
+    answers: [
+      {
+        text: 'function*',
+      },
+      {
+        text: 'generator',
+      },
+      {
+        text: 'function',
+      },
+      {
+        text: 'func',
+      },
+      {
+        text: 'newgenerator`',
+      },
+      {
+        text: 'new',
+      },
+    ],
+    comment: '<p>Generators are functions that can be paused and resumed at a <code>yield</code> point.</p>\n<p>Generators can play three roles:</p>\n<p><strong>Iterators</strong>: generators can return a value via <code>next()</code> at each yield point to produce a sequence of values (an iterable).</p>\n<p><strong>Observers</strong>: generators can pause at a yield point until a new value is pushed to them via <code>next()</code>.</p>\n<p><strong>Coroutines</strong>: the dual data producing and consuming properties of generators can be combined into a multitasking routine.</p>\n<p>There are various ways of creating a generator, for example by a generator function declaration:</p>\n<pre><code>function* genFunc() { ··· }\nlet genObj = genFunc();\n</code></pre>\n<p>Note the <code>*</code> that indicates <code>genFunc()</code> is a generator.</p>\n',
+  },
+}

@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/js-history/javascript-history.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'obscura',
+  ],
+  card: {
+    question: '<p>The first version of JavaScript was developed by ??? in only 10 days.</p>\n',
+    answers: [
+      {
+        text: 'Brendan Eich',
+        correct: true,
+      },
+      {
+        text: 'Bjarne Stroustrup',
+        correct: false,
+      },
+      {
+        text: 'James Gosling',
+        correct: false,
+      },
+      {
+        text: 'Linus Torvalds',
+        correct: false,
+      },
+    ],
+    comment: "<p>Before we jump in, a few words on JavaScript history. It was initially developed by <strong>Brendan Eich</strong> in just <em>10 days</em> under the code name <em>Mocha</em> in May 1995.</p>\n<p>The first version of JavaScript was called <em>LiveScript</em>, but this was later changed to JavaScript.</p>\n<p>Although JavaScript has the word “Java” in the title, the language has nothing to do with Java (probably a marketing ploy to capitalize on Java's popularity at the time).</p>\n<p>While some of JavaScript’s methods and syntax are similar to Java, JavaScript owes more to languages such as <em>Scheme</em> and <em>Self</em>.</p>\n",
+  },
+}

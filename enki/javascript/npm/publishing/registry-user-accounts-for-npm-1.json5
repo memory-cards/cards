@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/publishing/registry-user-accounts-for-npm.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>For what command is <code>npm login</code> an alias?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'npm adduser',
+        correct: true,
+      },
+      {
+        text: 'npm signup',
+        correct: false,
+      },
+      {
+        text: 'npm signin',
+        correct: false,
+      },
+      {
+        text: 'npm add',
+        correct: false,
+      },
+    ],
+    comment: '<p>The <code>npm adduser</code> command is used to create and verify users in the specified registry. The credentials will be saved to the <code>.npmrc</code> file.</p>\n<p>Username, password and email values aren\'t specified as command arguments, but are asked and read in from prompts.</p>\n<p>Additional configuration  arguments specified with flags are <code>registry</code>, <code>scope</code> and <code>always-auth</code>.</p>\n<p>The first, <code>registry</code> indicates the <strong>base URL</strong> of the npm package registry:</p>\n<pre><code class="language-bash">npm adduser --registry=http://myreg.com\n</code></pre>\n<p>If <code>scope</code> is specified, the registry will only be used for packages with that scope:</p>\n<pre><code class="language-bash">npm adduser --registry=http://myreg.com\n    --scope=@myScope\n</code></pre>\n<p>The <code>always-auth</code> is by default set to <code>false</code>, but if specified, all requests to the given registry should include authorization information as an authorization header:</p>\n<pre><code class="language-bash">npm adduser --registry=http:myreg.com\n    --always-auth\n</code></pre>\n<p>Note that <code>npm login</code> is an alias for <code>npm adduser</code> and works in exactly the same way.</p>\n',
+  },
+}

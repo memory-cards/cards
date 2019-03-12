@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/best-practices/wrap-common-utilities-in-modules.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+  ],
+  card: {
+    question: '<p>In other words, breaking up mixed code into self-contained components means</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'modularizing it',
+        correct: true,
+      },
+      {
+        text: 'fixing bugs',
+        correct: false,
+      },
+      {
+        text: 'encapsulating it',
+        correct: false,
+      },
+      {
+        text: 'designing it',
+        correct: false,
+      },
+    ],
+    comment: '<p>A monolith is built around some code shared by all the components. If you decide to break up the monolith, every new module would require some part of the shared code. Database models, helper functions, constants, wrappers, etc. are some examples of shared resources.</p>\n<p>Long time ago, the answer was to duplicate the commons for each new module. Luckily, <code>npm</code> (Node Package Manager) solves that issue: you can bundle your code into <code>npm</code> modules and export it across environments.</p>\n<p>If this is not enough, you can further split the common code into multiple modules: helpers and constants in one module, database models and wrappers in another. Modularity is great!</p>\n<p><code>npm</code> is installed with Node by default and publishing your own packages is a piece of cake. If you want to learn more about <code>npm</code>, you can subscribe to the course on Enki.</p>\n',
+  },
+}

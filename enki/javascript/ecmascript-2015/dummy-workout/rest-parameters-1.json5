@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/rest-parameters.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Store all parameters under <code>rest</code> in the function:</p>\n<pre><code class="language-javascript">function(??????) {\n\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '...',
+      },
+      {
+        text: 'rest',
+      },
+      {
+        text: 'param',
+      },
+      {
+        text: '..',
+      },
+      {
+        text: 'undefined',
+      },
+    ],
+    comment: '<p>ES6 introduces <strong>rest</strong> parameters. These are indicated by three dots <code>...</code> preceding a parameter. The rest parameter is an array that contains an indefinite number of arguments.</p>\n<p>In this example, if more than three parameters are passed to the function, the additional parameters will be stored in <code>rest</code>:</p>\n<pre><code>function(a, b, c, ...rest) {\n  // ...\n}\n</code></pre>\n<p>This differs from the <code>arguments</code> object of ES5 that would contain <strong>all</strong> the parameters if it was used.</p>\n<p>Another difference is that a rest parameter is a true array and so can have array methods such as <code>sort()</code> applied to it.</p>\n',
+  },
+}

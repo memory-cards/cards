@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/introducing-proxy.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the missing outputs of the <code>console.log</code> calls:</p>\n<pre><code class="language-javascript">const proxyFn = {\n  get: (obj, prop) => \'enki\'\n}\nconst obj = {\n  number: 42\n}\nconst proxy = new Proxy(obj, proxyFn)\n\nconsole.log(obj.number)\n// ???\nconsole.log(proxy.number)\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '42',
+      },
+      {
+        text: 'enki',
+      },
+      {
+        text: 'error',
+      },
+      {
+        text: 'obj',
+      },
+      {
+        text: 'prop',
+      },
+      {
+        text: 'Proxy',
+      },
+      {
+        text: 'Enki',
+      },
+    ],
+    comment: '<p><strong>proxy</strong> is new to ES6 and allows you to intercept (referred to as trap) calls to actions on objects such as property access and enumeration.</p>\n<p>To illustrate proxy usage we will create a logger proxy to log any calls made to an objects property.</p>\n<p>First we will create a handler to perform this logic:</p>\n<pre><code class="language-javascript">var loggerHandler = {\n  get: function(obj, prop) {\n    console.info(prop + " was accessed");\n    return obj[prop];\n  }\n}\n</code></pre>\n<p>Next we\'ll create an object to use with this:</p>\n<pre><code class="language-javascript">var x = { someProp: "enki"};\n</code></pre>\n<p>Then we will wrap our object with a Proxy and pass in the logger handler:</p>\n<pre><code class="language-javascript">var p = new Proxy(x, loggerHandler);\n</code></pre>\n<p>If we access property on obj itself it will work as per normal:</p>\n<pre><code class="language-javascript">x.someProp; //enki\n</code></pre>\n<p>..so we need to be sure to access the obj via the proxy wrapper:</p>\n<pre><code class="language-javascript">p.someProp //someProp was accessed\n</code></pre>\n<p>Proxies can also be used to intercept set calls. Maybe for example we want to validate a value passed in without changing the underlying code:</p>\n<pre><code class="language-javascript">var setWrapper = {\n  set: function(obj, prop, value) {\n    if (prop === "company") {\n      if (value!="enki"){\n        return;\n      }\n    }\n  }\n}\n</code></pre>\n',
+  },
+}

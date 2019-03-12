@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/events/passing-arguments-to-listeners.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>What does <code>this</code> refer to inside of a callback registered to listen to an event on an <code>EventEmitter</code>?\n???</p>\n',
+    answers: [
+      {
+        text: 'The instance of <code>EventEmitter</code>',
+        correct: true,
+      },
+      {
+        text: 'global',
+        correct: false,
+      },
+      {
+        text: 'event',
+        correct: false,
+      },
+      {
+        text: 'window',
+        correct: false,
+      },
+    ],
+    comment: "<p>The <code>eventEmitter.emit()</code> method allows for a set of arguments to be passed to the listener functions. The <code>this</code> keyword, when passed, is set to reference the <code>EventEmitter</code> to which the listener is attached.</p>\n<pre><code class=\"language-javascript\">var EventEmitter = require('events');\nclass MyEmitter extends EventEmitter {}\nconst emitter = new MyEmitter();\n\nemitter.on('event', function(x, y) {\n\n  console.log(x, y, this);\n\n});\n\n// emit event\nemitter.emit('event', 'En', 'ki');\n</code></pre>\n<p>Gives the following output:</p>\n<pre><code class=\"language-javascript\">En ki MyEmitter {\n  domain: null,\n  _events: { event: [Function] },\n  _eventsCount: 1,\n  _maxListeners: undefined }\n</code></pre>\n",
+  },
+}

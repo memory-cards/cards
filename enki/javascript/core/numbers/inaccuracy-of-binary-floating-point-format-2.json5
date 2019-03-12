@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/numbers/inaccuracy-of-binary-floating-point-format.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+  ],
+  card: {
+    question: '<h3>what is 0.1 + 0.2?</h3>\n<p>What will be the value of x?</p>\n<pre><code class="language-javascript">var x = 0.2 + 0.1;\nconsole.log(x);\n</code></pre>\n<p> ???</p>\n',
+    answers: [
+      {
+        text: '0.30000000000000004',
+        correct: true,
+      },
+      {
+        text: '0.3',
+        correct: false,
+      },
+      {
+        text: '0.2999999999999999',
+        correct: false,
+      },
+      {
+        text: 'NaN',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>JavaScript</strong> has only one data type for representing numbers - binary floating-point format.</p>\n<p>Taking into consideration that binary floating-point format have several <em><code>inaccuracies</code></em>, you must be aware of some implications that may break your code.</p>\n<p>For example :</p>\n<pre><code class="language-javascript">console.log(.1 + .2);\n</code></pre>\n<p>will print <code>0.30000000000000004</code> instead of <code>0.3</code>. This happens because <code>0.1</code> is an <em><code>inaccuracy</code></em> - it can not be represented in binary (just the same way we can\'t represent <code>1/3</code> in decimal).</p>\n<p>This proves a nuisance especially at comparisons:</p>\n<pre><code class="language-javascript">console.log((.1 + .2) == .3); //false\n</code></pre>\n<p>It is advised to avoid comparisons between floating point numbers. Instead, consider subtracting the numbers and compare it to an epsilon:</p>\n<pre><code class="language-javascript">eql =  Math.abs((.1 + .2) - .3) &#x3C; .0000001;\n</code></pre>\n',
+  },
+}

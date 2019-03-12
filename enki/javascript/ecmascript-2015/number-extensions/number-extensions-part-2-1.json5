@@ -1,0 +1,50 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/number-extensions/number-extensions-part-2.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>How do you check if a number can be represented in IEEE-754 format?</p>\n<pre><code class="language-javascript">Number.???(\n  Math.pow(2, 53)\n  )\n</code></pre>\n',
+    answers: [
+      {
+        text: 'isSafeInteger',
+        correct: true,
+      },
+      {
+        text: 'MIN_SAFE_INTEGER',
+        correct: false,
+      },
+      {
+        text: 'EPSILON',
+        correct: false,
+      },
+      {
+        text: 'isSafe',
+        correct: false,
+      },
+      {
+        text: 'isIeee',
+        correct: false,
+      },
+      {
+        text: 'isValid',
+        correct: false,
+      },
+      {
+        text: 'isFinite',
+        correct: false,
+      },
+      {
+        text: 'isInteger',
+        correct: false,
+      },
+    ],
+    comment: '<h3>Number.EPSILON</h3>\n<p>Number.EPSILON is the smallest value less than 1 that can be represented as a number and is intended for advanced uses such as testing equality:</p>\n<pre><code class="language-javascript">Number.EPSILON;\n//2.220446049250313e-16\n</code></pre>\n<h3>Number.isSafeInteger</h3>\n<p>To be considered a safe integer numbers must be able to be represented in a format called <em>IEEE-754</em> and cannot be the result of rounding any other IEEE-754 number. There are some numbers that fall outside of what can be represented using IEEE-754:</p>\n<pre><code class="language-javascript">Number.isSafeInteger(3); //true\nvar unsafe = Math.pow(2, 53);\nNumber.isSafeInteger(unsafe); //false\n</code></pre>\n<h3>Number.MIN_SAFE_INTEGER and Number.MAX_SAFE_INTEGER</h3>\n<p><em>IEEE-754</em> can represent a limited range of numbers. This range can be retrieved using <em>Number.MIN_SAFE_INTEGER</em> and <em>Number.MAX_SAFE_INTEGER</em>:</p>\n<pre><code class="language-javascript">Number.MIN_SAFE_INTEGER; //-9007199254740991\nNumber.MAX_SAFE_INTEGER; //9007199254740991\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'ioanna.ki',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/labeling-your-loops.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'javascript',
+  ],
+  card: {
+    question: '<p>Break <code>enkiLoop</code>:</p>\n<pre><code class="language-javascript">enkiLoop:\nfor(var i=0; i&#x3C;5; i++) {\n if(condition) {\n   ??? ???\n }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'break',
+      },
+      {
+        text: 'enkiLoop',
+      },
+      {
+        text: 'loop',
+      },
+      {
+        text: 'yield',
+      },
+      {
+        text: 'stop',
+      },
+      {
+        text: 'enki',
+      },
+    ],
+    comment: '<p>You can give a label to every nested iteration and use the <code>break</code> statement to exit them when some condition is fulfilled. </p>\n<pre><code class="language-javascript">outerloop:  \nfor (var i=0; i&#x3C;5; i++) {\n  if (somethingIsTrue()) {  \n    innerloop:  \n    for (var j=0; j&#x3C;5; j++) {  \n      if (somethingElseIsTrue()) {  \n        // Breaks the inner loop  \n        break innerloop; \n      }\n      if (somethingIsWrong()) {\n        // Breaks the outer loop  \n        break outerloop; \n      }\n    }\n  }   \n}\n</code></pre>\n',
+  },
+}

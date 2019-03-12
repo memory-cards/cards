@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/intro-node/installing-node-js.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What file extension does <code>node</code> use?\n???</p>\n',
+    answers: [
+      {
+        text: '.js',
+        correct: true,
+      },
+      {
+        text: '.javascript',
+        correct: false,
+      },
+      {
+        text: '.jscript',
+        correct: false,
+      },
+    ],
+    comment: '<p>To setup a local environment to use Node.js both a text editor and the Node.js binary installables are required. JavaScript files can be created in any text editor (Notepad, Atom, Sublime) as long as the file has the extension <code>.js</code>. However, it’s recommended to use an Integrated Development Environment (IDE) such as Webstorm which is a far more useful tool when programming.</p>\n<p>The latest version of Node is available to download from the Node website, once this has been downloaded and extracted, Node can be tested to ensure it’s working by running <code>node</code> from your terminal or command prompt:</p>\n<pre><code class="language-bash">$ node\n>\n</code></pre>\n<p>You should see a <code>></code> appearing under the <code>node</code> command. This means your installation was successful! You are now using the <code>REPL</code> terminal which we will explore in-depth in the next insight.</p>\n',
+  },
+}

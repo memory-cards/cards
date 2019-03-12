@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/code-style-recommendations/use-eslint.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Is the following statement true or false?</p>\n<p>ESLint can be integrated with text editors and IDEs.</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'True',
+        correct: true,
+      },
+      {
+        text: 'False',
+        correct: false,
+      },
+    ],
+    comment: '<p>While you can get away with not being too consistent in small, personal projects, the lack of attention to details may be the cause for a lot of problems. Details like <em>semicolons</em>, <em>spacing</em> and even <em>anti-patterns</em> are hard to keep track of when trying to meet a deadline.</p>\n<p>Because of that, <code>linters</code> should be one of the key components of every project. What easily escapes the human eye, linters take care of by default. They might be annoying at first, but they save time in the long run. For example, <em>git</em> conflicts are mostly caused by little things a linter could regulate the use of.  </p>\n<p>The standard is <code>ESLint</code>. It can be installed through <em>npm</em> and integrated with different IDE and text editors. While the default package has recommendations for vanilla JavaScript, there are plugins specific to different frameworks like Node (<code>eslint-plugin-node</code>) or jQuery.</p>\n<p>A lot of customization can go on with <code>ESLint</code>. You can abide by open-source, community supported set of rules or you can write your own. Usually, the best idea is to customize open-source ones. One of the most known is <code>eslint-config-airbnb</code>.</p>\n<p>Any configuration goes into the <code>.eslintrc</code> file that is created after running <code>eslint --init</code> in the main folder, as <code>JSON</code> objects. For example, here\'s how rules are defined:</p>\n<pre><code class="language-json">{\n    "rules": {\n        "semi": ["error", "always"],\n        "quotes": ["warning", "double"]\n    }\n}\n</code></pre>\n<p>You can also have different rules for different types of files: <code>.css</code>, <code>.js</code>, or <code>.html</code>.</p>\n',
+  },
+}

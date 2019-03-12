@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'WebReflection',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-assignments.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">let {a, b} = {a:1, b:2};\nconsole.log(a, b);\n// ???\n</code></pre>\n<p>%exp\nWe assign <code>1</code> to <code>a</code> and <code>2</code> to <code>b</code>.\n%</p>\n',
+    answers: [
+      {
+        text: '1, 2',
+        correct: true,
+      },
+      {
+        text: 'undefined, undefined',
+        correct: false,
+      },
+      {
+        text: '{a: 1}, {b: 2}',
+        correct: false,
+      },
+    ],
+    comment: '<p>What will be shown on the console?</p>\n',
+  },
+}

@@ -1,0 +1,51 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-i/forms-in-react.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the following snippet such that the rendered *<em>controlled component</em></p>\n<pre><code class="language-jsx">class Control extends React.Component {\n    constructor(props) {\n    super(props);\n    this.state = {in: \'\'};\n  }\n\n  handle(e) {\n    this.???({\n        in: e.target.value\n    });\n  }\n\n  render() {\n    return (\n     &#x3C;input type="text"\n        ???={this.state.in}\n        ???={(???) =>\n          this.???(e)} />\n    );\n  }\n};\n\nReactDOM.render(\n  &#x3C;Control />,\n  document.getElementById(\'root\')\n);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'makes sense and works:',
+      },
+      {
+        text: '<code>setState</code>',
+      },
+      {
+        text: '<code>value</code>',
+      },
+      {
+        text: '<code>onChange</code>',
+      },
+      {
+        text: '<code>e</code>',
+      },
+      {
+        text: '<code>handle</code>',
+      },
+      {
+        text: '<code>handleChange</code>',
+      },
+      {
+        text: '<code>state</code>',
+      },
+      {
+        text: '<code>event</code>',
+      },
+      {
+        text: '<code>onHandleChange</code>',
+      },
+      {
+        text: '<code>selected</code>',
+      },
+    ],
+    comment: '<p>While standard <em>HTML behaviour</em> of <code>&#x3C;input /></code>, <code>&#x3C;textarea /></code> or <code>&#x3C;select /></code> elements work in <strong>React</strong>, having <code>JS</code> functions handling updates and submission is highly advised.</p>\n<p><strong>HTML form</strong> elements keep an <strong>internal state</strong> in sync with the user\'s <em>input</em>. Coupling this with components\' <code>state</code> can result in a <strong>controlled component</strong>.</p>\n<p>A controlled component means having the component\'s <code>state</code> as <strong>single source of truth</strong>.</p>\n<p>Consider the following <code>render</code>ing of a component:</p>\n<pre><code class="language-jsx">// set initial state in constructor\nconstructor(props) {\n  super(props);\n  this.state = {in: \'\'}\n}\n// render\nrender() {\n  return (\n    &#x3C;input type="text" value={this.state.in}\n      onChange={(e) => this.handle(e)} />\n    );\n}\n</code></pre>\n<p>The displayed <code>value</code> of the element will always be <code>this.state.in</code>. The <code>onChange</code> attribute is a function - <code>handle()</code> that will be called on every user input.</p>\n<p>To keep the displayed value in sync with the user input the <code>setState()</code> method is used:</p>\n<pre><code class="language-jsx">handle(e) {\n  this.setState({\n    in: e.target.value,\n  });\n}\n</code></pre>\n<p>With consistency in mind, <em>form elements</em> in <strong>React</strong> work a little differently:</p>\n<ul>\n<li>for <code>&#x3C;textarea /></code> the text is specified with <code>value</code> attribute instead of having it as a child:</li>\n</ul>\n<pre><code class="language-html">&#x3C;!-- standard HTML -->\n&#x3C;textarea>\n  Text goes here\n&#x3C;/textarea>\n</code></pre>\n<pre><code class="language-jsx">// React\n&#x3C;textarea value=\'Text goes here\' />\n</code></pre>\n<ul>\n<li>for <code>&#x3C;select /></code>, instead of using <code>selected</code> attribute on an <code>&#x3C;option /></code> to specify the default selection, you can specify the <code>&#x3C;option /></code>\'s <code>value</code> in the root <code>&#x3C;select /></code>:</li>\n</ul>\n<pre><code class="language-html">&#x3C;!-- standard HTML -->\n&#x3C;select>\n  &#x3C;option selected value=\'a\'>A&#x3C;/option>\n&#x3C;/select>\n</code></pre>\n<pre><code class="language-jsx">// React\n&#x3C;select value=\'a\'>\n  &#x3C;option value=\'a\'>A&#x3C;/option>\n&#x3C;/select>\n</code></pre>\n',
+  },
+}

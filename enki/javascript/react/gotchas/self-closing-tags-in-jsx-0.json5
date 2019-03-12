@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/gotchas/self-closing-tags-in-jsx.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which of the following tags is a self closing tag? ???</p>\n<pre><code>// Option A\n&#x3C;div>\n&#x3C;/div>\n\n// Option B\n&#x3C;tag/>\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Option B',
+        correct: true,
+      },
+      {
+        text: 'Option A',
+        correct: false,
+      },
+      {
+        text: 'Neither of them..',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>JSX</strong> is a JavaScript syntax extension that is widely used together with <strong>React</strong>, even though plain JavaScript can also be used.</p>\n<p><strong>JSX</strong> gives the opportunity to use self-closing tags and not only the default closing format.</p>\n<p>Normal tags:</p>\n<pre><code class="language-javascript">&#x3C;MyComponent>\n&#x3C;/MyComponent>\n</code></pre>\n<p>Self-closed tag:</p>\n<pre><code class="language-javascript">&#x3C;MyComponent />\n</code></pre>\n<p>Keep in mind that while <code>&#x3C;div /></code> alone is a valid tag, <code>&#x3C;div></code> is not if it\'s not closed.</p>\n',
+  },
+}

@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/modules-in-es6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Import the <code>foo</code> function from <code>index.js</code>:</p>\n<pre><code class="language-javascript">??? { foo } from \'???\';\n</code></pre>\n',
+    answers: [
+      {
+        text: 'import',
+      },
+      {
+        text: 'index',
+      },
+      {
+        text: 'export',
+      },
+      {
+        text: 'JS',
+      },
+      {
+        text: 'include',
+      },
+      {
+        text: 'enki',
+      },
+      {
+        text: 'log',
+      },
+    ],
+    comment: "<p>In ES6, a module is stored in its own file. You can have multiple named exports in the module file:</p>\n<pre><code>//{enki.js}\nexport function hun(x) {\n    return x * 100;\n}\nexport function thou(x) {\n    return x * 1000;\n}\n</code></pre>\n<p>Then, import the functions individually:</p>\n<pre><code>//{main.js}\nimport { thou } from 'enki';\nconsole.log(thou(99)); // 99000\n</code></pre>\n<p>Or, import the entire module:</p>\n<pre><code>//{main.js}\nimport * as enki from 'enki';\nconsole.log(enki.hun(99)); // 9900\n</code></pre>\n<p>You can also have a single default export:</p>\n<pre><code>//{fun.js}\nexport default function () { ··· }\n</code></pre>\n<p>Which you can import as:</p>\n<pre><code>//{main1.js}\nimport fun from 'fun';\nfun();\n</code></pre>\n<p>Note: there is no semicolon at the end of the export if you default-export a function or class.</p>\n",
+  },
+}

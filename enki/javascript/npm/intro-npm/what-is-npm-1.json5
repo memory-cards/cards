@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/intro-npm/what-is-npm.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p><code>npm</code> stands for</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'node package manager',
+        correct: true,
+      },
+      {
+        text: 'new package manager',
+        correct: false,
+      },
+      {
+        text: 'node packet manager',
+        correct: false,
+      },
+    ],
+    comment: "<p><strong>Npm</strong>, or <strong>node package manager</strong>, is a piece of software that facilitates the process of code sharing. Code can be made available as a package and downloaded using npm for use in a project.</p>\n<p>The principle behind packages is a simple, yet effective one: solving problems and doing it well. Numerous developers of different skill levels might run into the same problem, again and again. Each one of them would have to overcome said blockage, one way or another.</p>\n<p>However, as the developers' expertise level may differ, some applications will be prone to errors others won't struggle with. These bits of working, reusable code are grouped into packages (or modules), to which others have free access.</p>\n<p>A <em>package</em> is a directory containing the actual code that can be split into multiple files. <strong>package.json</strong> is one of the important files in the directory; it contains metadata about the package as well as specifying any dependencies on other packages. Yes, packages can rely on other packages as well.</p>\n<p>A large application can be built on tens or hundreds of these small packages. Think of them as building blocks that you can put together to obtain something nice. For example, <em>enki</em> relies on approximately 175 packages or modules.</p>\n<p>You can find all the available packages on the npm website. <em>Npm</em>, as the name states, started off as the package manager for the <em>Node.js</em> environment, so most of the earlier packages are server-side oriented. Recently, due to its popularity, npm became the go-to package manager for <em>JavaScript</em> in general, be it front-end or back-end.</p>\n",
+  },
+}

@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/user-interaction/handling-click-events.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Add a listener to a <code>click</code> event:</p>\n<pre><code class="language-javascript">myVar.???(???,\n  myCLickFunction);\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>addEventListener</code>',
+      },
+      {
+        text: '<code>click</code>',
+      },
+      {
+        text: '<code>dblclick</code>',
+      },
+      {
+        text: '<code>addClickListener</code>',
+      },
+      {
+        text: '<code>false</code>',
+      },
+      {
+        text: '<code>contextmenu</code>',
+      },
+    ],
+    comment: "<p>JavaScript provides a way to handle different click events such as right clicks and double clicks.</p>\n<p>Keep in mind that click events will also trigger some mouse events.</p>\n<p>Click events supported in JavaScript:</p>\n<ul>\n<li><code>click</code> : <code>mousedown</code> and <code>mouseup</code> events are also triggered before</li>\n<li><code>contextmenu</code> : it's preceded by <code>mousedown</code> and succeded by <code>mouseup</code></li>\n<li><code>dblclick</code> : triggers two complete <code>click</code>s before the double.</li>\n</ul>\n<p>The order is consistent across all browsers except <strong>IE&#x3C;9</strong> which skips second <code>click</code> on <code>dblclick</code>.</p>\n<p>Add a listener to these events:</p>\n<pre><code class=\"language-javascript\">myVar.addEventListener('click',\nmyClickFunction);\nmyVar.addEventListener('dblclick',\nmyDoubleClickFunction);\n</code></pre>\n<p>To handle both single clicks and double clicks <strong>simultaneously</strong> a timer (around <code>100 ms</code>) should be implemented. If after a click another one is registered within the time frame, the double click function is called. Otherwise, the single click function is called.</p>\n",
+  },
+}

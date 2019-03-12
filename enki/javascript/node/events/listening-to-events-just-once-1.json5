@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/events/listening-to-events-just-once.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Complete the code snippet to define the callback function to catch an event just once:</p>\n<pre><code class="language-javascript">test.???(\'uncaughtException\',\n    function(err) {\n      // handler\n    }\n</code></pre>\n',
+    answers: [
+      {
+        text: 'once',
+        correct: true,
+      },
+      {
+        text: 'on',
+        correct: false,
+      },
+      {
+        text: 'catch',
+        correct: false,
+      },
+      {
+        text: 'one',
+        correct: false,
+      },
+      {
+        text: 'onOnce',
+        correct: false,
+      },
+    ],
+    comment: '<p>If more than one uncaught exception was to be caught, the applications equivalent to a <code>closedown</code> method, where the application is shutdown, would be triggered more than once, consequently causing issues with the applications shutdown procedure.</p>\n<p>To only call the <code>closedown</code>  method once, only the first instance of an uncaught exception being caught should be used. This is done using <code>emitter.once</code> , for example, if an application\'s emitter was to be called <em>test</em>:</p>\n<pre><code class="language-javascript">test.once(‘uncaughtException’,\n                  function(err) {\n\n  closeApp(function(err) {\n    // log error\n  });\n\n\n  // exit\n  test.exit(1);\n\n});\n</code></pre>\n<p>This doesn’t solve the issue entirely as if two <code>uncaughtException</code>s do occur the second will trigger an instant process shutdown, interrupting and overriding the <code>closedown</code> method current in progress. To avoid this, log each uncaught exception:</p>\n<pre><code class="language-javascript">test.once(‘uncaughtException’,\n            function(err) {\n\n  console.error(‘uncaught exception: ‘,\n              err.stack || err);\n});\n</code></pre>\n',
+  },
+}

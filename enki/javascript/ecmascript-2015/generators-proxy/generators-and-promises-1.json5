@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/generators-and-promises.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'promise',
+    'async',
+    'functional programming',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">function\n  console.log(`1. ${yield}`);\n  return 'result'\n}\nlet genObj = observer();\ngenObj.next();\ngenObj.next('E');\n\n// what does the console.log ???\n</code></pre>\n<p>%exp\nThe first <code>next()</code> pauses the generator in the middle of a <code>console.log()</code>. The second one sends <code>E</code> to the waiting expression, which ends up logging <code>1. E</code>.\n%</p>\n",
+    answers: [
+      {
+        text: 'observer() {',
+        correct: true,
+      },
+      {
+        text: '1. E',
+        correct: false,
+      },
+      {
+        text: '1. n',
+        correct: false,
+      },
+      {
+        text: '1. k',
+        correct: false,
+      },
+    ],
+    comment: '<p>Some of the most exiting features of ES6 are generators and promises.</p>\n<p>Can you fill in the gaps in the following code snippets such that they make sense?</p>\n',
+  },
+}

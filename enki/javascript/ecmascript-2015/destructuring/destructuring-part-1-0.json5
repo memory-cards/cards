@@ -1,0 +1,48 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-part-1.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: "<p>Swap <code>a</code> and <code>b</code> using ES6 destructuring:</p>\n<pre><code class=\"language-javascript\">let a = 'foo'\nlet b = 'bar'\n\n[a ???] = ???\nconsole.log(a) // bar\nconsole.log(b) // foo\n</code></pre>\n",
+    answers: [
+      {
+        text: ', b',
+      },
+      {
+        text: '[b, a]',
+      },
+      {
+        text: '[, a]',
+      },
+      {
+        text: 'a',
+      },
+      {
+        text: 'b',
+      },
+      {
+        text: ', a',
+      },
+      {
+        text: '[a]',
+      },
+      {
+        text: '[b]',
+      },
+      {
+        text: '[a, b]',
+      },
+      {
+        text: ',',
+      },
+    ],
+    comment: '<p>Destructuring provides a succinct and flexible way to assign values from arrays or objects.</p>\n<p>This is best illustrated with an example. Destructuring is used below to assign <code>x</code> and <code>y</code> the values <code>100</code> and <code>200</code> in just one line of code:</p>\n<pre><code class="language-javascript">var x, y;\n[x, y] = [100, 200];\n//x=100, y=200\n</code></pre>\n<h3>Function Return Values</h3>\n<p>Destructuring works great with functions.</p>\n<p>Let\'s say we have a function that multiplies two input arguments (x and y) by two and returns the result as an array.</p>\n<p>Destructuring can assign the results of this operation to two variables with just one line of code:</p>\n<pre><code class="language-javascript">var x,y;\n\nfunction dblNumbers(x, y) {\n  return [x*2, y*2];\n}\n\n[x, y] = dblNumbers(100,200);\n//x=200, y=400\n</code></pre>\n<h3>Swapping variables</h3>\n<p>Destructuring can also be used to swap the contents of two variables without having to create another temporary variable:</p>\n<pre><code class="language-javascript">var x = 1;\nvar y = 2;\n[y, x] = [x, y];\n// x=2, y=1\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-i/geolocation.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Fill in the missing bits of the following snippet such that, using the Geolocation API, you listen on the position changes of the device:</p>\n<pre><code class="language-javascript">navigator.???.???(\n  function (pos) {\n    console.log(\'new position\', pos);\n});\n</code></pre>\n',
+    answers: [
+      {
+        text: 'geolocation',
+      },
+      {
+        text: 'watchPosition',
+      },
+      {
+        text: 'device',
+      },
+      {
+        text: 'permission',
+      },
+      {
+        text: 'position',
+      },
+      {
+        text: 'detect',
+      },
+      {
+        text: 'watch',
+      },
+      {
+        text: 'listen',
+      },
+      {
+        text: 'onChange',
+      },
+    ],
+    comment: '<p>The Geolocation API provides location information such as the latitude and longitude coordinates.</p>\n<p>The exact information available will depend on the device.</p>\n<p>Note that for privacy reasons the user must grant the API permission.</p>\n<p>To obtain the devices current position use the <strong>getCurrentPosition</strong> API:</p>\n<pre><code class="language-javascript">navigator.geolocation\n  .getCurrentPosition(\n  function(pos) {\n    var lat = pos.coords.latitude,\n        long = pos.coords.longitude;\n        console.log(`${lat} ${long}`);\n  });\n</code></pre>\n<p>If you want to be informed automatically when the devices position changes you can use the <strong>geolocation.watchPosition</strong> API.</p>\n<pre><code class="language-javascript">navigator.geolocation.watchPosition(\n  function(pos) {\n     var lat = pos.coords.latitude,\n         long = pos.coords.longitude;\n         console.log(`${lat} ${long}`);\n  });\n</code></pre>\n',
+  },
+}

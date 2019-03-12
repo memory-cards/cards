@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterators-for-of-spreads.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">// How can we make a\n// noise with this iterator?\n\nfunction\n      yield 'Woof';\n      yield 'Meow';\n      yield 'Ribbit';\n}\nlet noise = onomatopoeia();\nnoise.???();\n</code></pre>\n<p>%exp\nHere, <code>onomatopoeia</code> is a generator function (note the <code>function*</code> notation), returning a *<em>Generator</em></p>\n<p>Calling the <code>next()</code> function on <code>noise</code> will execute the function body until it reaches the first <code>yield</code> statement, returning the specified value (<code>Woof</code>).\n%</p>\n",
+    answers: [
+      {
+        text: 'onomatopoeia() {',
+        correct: true,
+      },
+      {
+        text: 'next',
+        correct: false,
+      },
+      {
+        text: 'call',
+        correct: false,
+      },
+      {
+        text: 'exec',
+        correct: false,
+      },
+      {
+        text: 'object (assigned to <code>noise</code> variable).',
+        correct: false,
+      },
+    ],
+    comment: "<p>Freshen up you knowledge on <code>iterators</code>, <code>for of</code> loops and the <code>spread operator</code> with this exercise.\nThe goal is to fill in the gaps with either the output of the snippet or the missing bit that won't throw any errors.</p>\n",
+  },
+}

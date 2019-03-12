@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/numbers/base-conversion.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Complete the following code snippet:</p>\n<pre><code class="language-javascript">// convert 1423 to base 2\n console.log((1423).toString(???));\n// convert "ad23e1" from base 16 to base 10\nconsole.log(???("ad23e1",???));\n</code></pre>\n',
+    answers: [
+      {
+        text: '2',
+      },
+      {
+        text: 'parseInt',
+      },
+      {
+        text: '16',
+      },
+      {
+        text: '10',
+      },
+      {
+        text: '”base 10”',
+      },
+    ],
+    comment: '<p>Base conversion for <code>int</code> data types is easily achievable with the help of <code>toString</code> and <code>parseInt</code> functions. </p>\n<p>Convert decimal to hexadecimal:</p>\n<pre><code class="language-javascript">(int).toString(16);\n</code></pre>\n<p>Convert decimal to octal:</p>\n<pre><code class="language-javascript">(int).toString(8);\n</code></pre>\n<p>Vice-versa convert hexadecimal to decimal:</p>\n<pre><code class="language-javascript">parseInt(string, 16);\n</code></pre>\n<p>Convert octal to decimal:</p>\n<pre><code class="language-javascript">parseInt(string,8);\n</code></pre>\n',
+  },
+}

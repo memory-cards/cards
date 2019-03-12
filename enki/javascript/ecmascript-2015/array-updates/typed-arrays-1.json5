@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/array-updates/typed-arrays.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What are *<em>Typed Arrays</em></p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'made of ?',
+        correct: true,
+      },
+      {
+        text: 'buffers and views',
+        correct: false,
+      },
+      {
+        text: 'views and streams',
+        correct: false,
+      },
+      {
+        text: 'arrays and buffers',
+        correct: false,
+      },
+      {
+        text: 'iterators and arrays',
+        correct: false,
+      },
+    ],
+    comment: '<p>Typed arrays are array-like objects providing a mechanism for accessing raw binary data. Usually they\'re used to implement network protocols, cryptography algorithms, file format manipulations, and so on.</p>\n<p>Typed arrays are made up of <code>buffers</code> and <code>views</code>.\nA buffer (implemented by an <code>ArrayBuffer</code> object) is an object that represents some data but does not provide a way to access its contents.\nThat\'s when the view comes in - it provides a data type, starting offset, and number of elements.</p>\n<p>Create a chunk of data 16 bytes long:</p>\n<pre><code class="language-javascript">var buffer = new ArrayBuffer(16);\n</code></pre>\n<p>Create a view that treats the data as 32-bit signed integers:</p>\n<pre><code class="language-javascript">var int32View = new Int32Array(buffer);\n</code></pre>\n<p>Now the typed array is indexed and accessible:</p>\n<pre><code class="language-javascript">for (var i = 0; i &#x3C; int32View.length; i++) {\n  int32View[i] = i * 2;\n}\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/symbols-in-es6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Create a symbol with <code>enki</code> description:</p>\n<pre><code class="language-javascript">let sym = ???(???);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Symbol',
+      },
+      {
+        text: '"enki"',
+      },
+      {
+        text: 'Sym',
+      },
+      {
+        text: 'Object',
+      },
+      {
+        text: 'property',
+      },
+    ],
+    comment: "<p>ES6 has a new primitive type called <code>Symbol</code>. A symbol is used as a unique key for an object property.</p>\n<p>You can create a unique symbol using the function <code>Symbol()</code>:</p>\n<pre><code>let sym1 = Symbol();\n</code></pre>\n<p>You can give the symbol a description by passing a string parameter:</p>\n<pre><code>let sym1 = Symbol('sym1');\n</code></pre>\n<p>Symbols can be used as unique property keys:</p>\n<pre><code>const A_KEY = Symbol(); // unique key\nlet obj = {};\nobj[A_KEY] = 'Enki';\nconsole.log(obj[A_KEY]); // 'Enki'\n      \n</code></pre>\n",
+  },
+}

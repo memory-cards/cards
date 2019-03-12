@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/tools-i/lock-down-dependency-versions-by-shrinkwrapping.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'deep',
+    'new',
+  ],
+  card: {
+    question: '<p>What command do you need to run as to generate a snapshot of the current dependency tree and lock down versions inside it?</p>\n<pre><code>$ ??? ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'npm',
+      },
+      {
+        text: 'shrinkwrap',
+      },
+      {
+        text: 'lock',
+      },
+      {
+        text: 'dependencies',
+      },
+      {
+        text: 'package.json',
+      },
+      {
+        text: 'npm-shrinkwrap',
+      },
+    ],
+    comment: '<p><code>npm</code> has great support for semanting versioning because it uses wildcards and expressions for versions of dependencies listed in the <code>package.json</code> file:</p>\n<pre><code class="language-json">{  //other props\n   "dependencies": {\n      "module-a": "2.3.x",\n      "module-b": "&#x3C;=1.5.0"\n  }\n}\n</code></pre>\n<p>However, <strong>unexpected failure</strong> can occur when running <code>npm install</code> over time due to updated versions of your dependencies.</p>\n<p>The command:</p>\n<pre><code class="language-bash">$ npm shrinkwrap\n</code></pre>\n<p>generates a snapshot of the current dependency tree and will lock down versions of dependencies.</p>\n<p>This is done by automatically generating the <code>npm-shrinkwrap.json</code> file which will override dependency versioning of <code>package.json</code>.</p>\n',
+  },
+}

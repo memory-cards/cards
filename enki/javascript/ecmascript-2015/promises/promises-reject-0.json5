@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/promises/promises-reject.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What is the second argument the <code>.then</code> method can take?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'a function that is triggered if there is an error in the promise',
+        correct: true,
+      },
+      {
+        text: 'a number, which represents in <code>ms</code> how long the <code>.then</code> should wait before executing',
+        correct: false,
+      },
+      {
+        text: 'a number, which represents in <code>ms</code> how long the <code>.then</code> should wait before returning ',
+        correct: false,
+      },
+    ],
+    comment: '<p>When using promises we can indicate something has failed by using the <strong>reject</strong> function instead of <strong>resolve</strong>.</p>\n<p>Let\'s try this with our previous example:</p>\n<pre><code class="language-javascript">var p =\nnew Promise(\n function(resolve, reject){\n setTimeout(function(){reject("enki")},\n 2000);\n})\n.then(function(result){\n console.log("success");\n});\n//Exception - Uncaught (in promise) enki\n</code></pre>\n<p>Uh oh - note how the <strong>then</strong> method was not called and how we now have an uncaught exception.</p>\n<p>But don\'t worry as we can use the <strong>catch</strong> handler to define logic to be called when errors occur:</p>\n<pre><code class="language-javascript">var p = new Promise(\n   function(resolve, reject) {\n   setTimeout(function(){reject("enki")},\n   2000);\n})\n.then(function(result){\n console.log("then called");\n})\n.catch(function(error){\n console.log("error " + error)});\n//logs error enki\n</code></pre>\n<p>The <strong>then</strong> method we used actually takes two arguments like promise - a function to be called if the promise is fulfilled and another if it\'s rejected.</p>\n<p>Both are optional so you can pass in a null value if you just want to specify something to be called on rejection:</p>\n<pre><code class="language-javascript">.then(null,\nfunction(error){\n console.log(error);\n}); //enki\n</code></pre>\n',
+  },
+}

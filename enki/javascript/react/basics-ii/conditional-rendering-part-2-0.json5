@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-ii/conditional-rendering-part-2.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Complete the following component such that it will render <code>"Hello, World"</code>:</p>\n<pre><code class="language-jsx">function A(props) {\n  const y = props.y;\n  if (???) {\n    return null;\n  }\n  return (\n    &#x3C;div>\n    {y ??? &#x3C;h2>Hello, World&#x3C;/h2>}\n    &#x3C;???>\n  );\n}\n\nReactDOM.render(\n  &#x3C;A x={true} y={true} />,\n  document.getElementById(\'root\')\n);\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>!props.x</code>',
+      },
+      {
+        text: '<code>&&</code>',
+      },
+      {
+        text: '<code></div></code>',
+      },
+      {
+        text: '<code>props.x</code>',
+      },
+      {
+        text: '<code>x</code>',
+      },
+      {
+        text: '<code>!x</code>',
+      },
+      {
+        text: '<code>||</code>',
+      },
+      {
+        text: '<code></h2></code>',
+      },
+      {
+        text: '<code><div></code>',
+      },
+    ],
+    comment: '<p>Using <strong>React</strong> with <strong>JSX</strong> gives you more power and convenience when writing code by letting you <em>embed JS</em> expressions in <strong>curly braces</strong> (<code>{expression}</code>).</p>\n<p>For example, another approach for <strong>conditional rendering</strong> is using <em>in-line</em> <code>if</code> with help from the <strong>AND</strong> (<code>&#x26;&#x26;</code>)/ <strong>OR</strong> (<code>||</code>) logical operator.</p>\n<p>Consider the following component:</p>\n<pre><code class="language-jsx">function Welcome(props) {\n  const isRaining = props.isRaining;\n  return (\n    &#x3C;div>\n      &#x3C;h2>Welcome&#x3C;/h2>\n      {isRaining &#x26;&#x26;\n        &#x3C;h3>Don\'t forget your umbrella&#x3C;/h3>\n      }\n    &#x3C;/div>\n  )\n}\n</code></pre>\n<p>Regardless of the <code>isRaining</code> prop\'s value, the <code>&#x3C;h2>Welcome&#x3C;/h2></code> is shown. If you pass <code>isRaining</code> as <code>true</code> then the <code>&#x3C;h3></code> element will be displayed as well.</p>\n<p>The reason this approach works is because in <code>JS</code> the <code>true &#x26;&#x26; exp</code> expression will evaluate to <code>exp</code>, while <code>false &#x26;&#x26; exp</code> will evaluate to <code>false</code>.</p>\n<p>Sometimes you might want to <strong>prevent</strong> a component from rendering. This is also simply achievable by <code>return</code>ing <code>null</code> instead of the normal output:</p>\n<pre><code class="language-jsx">function Maybe(props) {\n  if (props.not) {\n    return null;\n  }\n  return &#x3C;p>Heey&#x3C;/p>;\n}\n</code></pre>\n<p>Keep in mind that when returning <code>null</code> during <code>render</code>, this won\'t affect the call on <strong>lifecycle methods</strong> such as <code>componentWillUpdate</code>.</p>\n',
+  },
+}

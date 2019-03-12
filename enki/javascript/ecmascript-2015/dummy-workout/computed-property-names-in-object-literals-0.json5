@@ -1,0 +1,46 @@
+{
+  __meta__: {
+    author: 'nicoburns',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/computed-property-names-in-object-literals.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'es6',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">var x = 3.14;\nvar enki = new Object();\nenki.x = x;\nenki[x + "y"] = 2;\n</code></pre>\n<p>Convert the code snippet above using the extended *<em>ES6</em></p>\n<pre><code class="language-javascript">var x = 3.14;\nvar enki  = {\n  x: ???,\n  [x + ???]: 2\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'object literal syntax:',
+      },
+      {
+        text: 'x',
+      },
+      {
+        text: '"y"',
+      },
+      {
+        text: 'y',
+      },
+      {
+        text: '"x"',
+      },
+      {
+        text: '3.14',
+      },
+      {
+        text: 'new',
+      },
+      {
+        text: 'Object',
+      },
+      {
+        text: '{}',
+      },
+    ],
+    comment: '<p>When using dynamically computed property names, we have traditionally been forced to use the more awkward imperative syntax:</p>\n<pre><code>var color = "pink";\nvar pig = new Object();\npig.color = color;\npig[color + "ness"]  = 10;\n</code></pre>\n<p>Since ES6, object literal syntax has been extended and we can now write direclty:</p>\n<pre><code>var color = "pink";\nvar pig = {\n    color: color,\n    [color + "ness"]: 10\n}\n</code></pre>\n',
+  },
+}

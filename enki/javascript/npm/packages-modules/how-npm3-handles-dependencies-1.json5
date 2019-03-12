@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/packages-modules/how-npm3-handles-dependencies.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'deep',
+    'new',
+  ],
+  card: {
+    question: '<p>Flat installing dependencies of dependencies is a feature of ???.</p>\n',
+    answers: [
+      {
+        text: 'npm3',
+        correct: true,
+      },
+      {
+        text: 'npm2',
+        correct: false,
+      },
+      {
+        text: 'npm1',
+        correct: false,
+      },
+    ],
+    comment: '<p>The main reason why a change to the installation pattern was needed is because of the potential for deep nesting: when multiple packages depend on PackageA each would have the PackageA installed as one of their node_modules. This is not scalable.</p>\n<p><em>npm3</em> tries to fix it by flat installing the same version of PackageA other packages are using. For example, PackageB and PackageC depend on versions 1.0.0 and 1.1.0, respectively, of PackageA. For the following <em>package.json</em>:</p>\n<pre><code class="language-javascript">// project\ndependencies {\n  "PackageB": "2.3.2",\n  "PackageC": "0.1.1"\n}\n// PackageB\ndependencies {\n  "PackageA": "1.0.0"\n}\n// PackageC\ndependencies {\n  "PackageA": "1.1.0"\n}\n</code></pre>\n<p>The <em>node_modules</em> directory tree looks like this:</p>\n<pre><code class="language-bash">/node_modules\n|- PackageB@2.3.2\n|- PackageA@1.0.0\n|- PackageC@0.1.1\n  |- PackageA@1.1.0\n</code></pre>\n<p>As you can see, multiple versions of the same package cannot be installed inside the same folder, so they must be nested. It may not seem like much in this example, but think of a project with more than 50 dependencies: the difference is huge.</p>\n<p>What do you think would happen with the project\'s <em>node_modules</em> structure if the <em>package.json</em> order of dependencies changes?</p>\n<pre><code class="language-javascript">// project\ndependencies {\n  "PackageC": "0.1.1",\n  "PackageB": "2.3.2"\n}\n</code></pre>\n<p>The structure will also change:</p>\n<pre><code class="language-bash">/node_modules\n|- PackageC@0.1.1\n|- PackageA@1.1.0\n|- PackageB@2.3.2\n  |- PackageA@1.0.0\n</code></pre>\n<p>It doesn\'t seem like much, but be aware of this behavior as it might cause <em>not working on my machine</em> bugs.</p>\n',
+  },
+}

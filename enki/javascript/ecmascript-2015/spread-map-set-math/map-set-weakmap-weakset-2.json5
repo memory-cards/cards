@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/spread-map-set-math/map-set-weakmap-weakset.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">// Using WeakMaps the following\n// will result in?\n\nvar map = new WeakMap();\nmap.set(1, 2);\n// ???\n</code></pre>\n<p>%exp\nIntegers can’t be used as weak keys.\n%</p>\n',
+    answers: [
+      {
+        text: 'TypeError: Invalid value ...',
+        correct: true,
+      },
+      {
+        text: "Nothing, it's perfectly valid!",
+        correct: false,
+      },
+      {
+        text: 'ReferenceError: map is not ...',
+        correct: false,
+      },
+    ],
+    comment: '<p>How confident are you about using JavaScript ES6 data structures?</p>\n',
+  },
+}

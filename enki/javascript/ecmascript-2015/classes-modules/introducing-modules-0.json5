@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/classes-modules/introducing-modules.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>How do you expose a method in a ES6 module file?</p>\n<pre><code class="language-javascript">// myModule.js\n\nexport function myFunc() {\n  // function code here\n}\n\n??? myFunc\n</code></pre>\n',
+    answers: [
+      {
+        text: 'export',
+        correct: true,
+      },
+      {
+        text: 'exports',
+        correct: false,
+      },
+      {
+        text: 'module.exports',
+        correct: false,
+      },
+      {
+        text: 'exports.',
+        correct: false,
+      },
+      {
+        text: 'expose',
+        correct: false,
+      },
+      {
+        text: 'import',
+        correct: false,
+      },
+    ],
+    comment: "<p>A major issue in EcmaScript is lack of a good way to divide up and reuse code.</p>\n<p>Over time the community has developed a number of approaches to this issue ranging from custom solutions to the standardized (and incompatible) <strong>CommonJS</strong> and <strong>Asyncronous Module Definition (AMD)</strong>.</p>\n<p>ES6 introduces native support for modules and was influenced by both the CommonJS and AMD approaches.</p>\n<p>It is important to note that at the time of writing no browser has native support for modules so this functionality is only available through transpillers or environments such as Node.</p>\n<h3>Usage</h3>\n<p>Let's create a module called <code>mathFuncs</code>.</p>\n<p>A module always exists in its own file. You cannot put two modules in one file.</p>\n<p>We will first create a file called <code>mathFuncs.js</code> and add the following code to it:</p>\n<pre><code class=\"language-javascript\">export function double(x) {\n return x * 2;\n}\n</code></pre>\n<p>Next when we want to use this code we tell JavaScript we want to import it:</p>\n<pre><code class=\"language-javascript\">import * as mathFuncs from 'mathFuncs';\nconsole.log(mathFuncs.double(4)); //8\n</code></pre>\n<p>Let's recap..</p>\n<p>First we declare our module in a file called <code>mathFuncs.js</code>. This is the name of our module.</p>\n<p>Next we declare that we are exporting a function called double using the <strong>export</strong> keyword. If we don’t use <strong>export</strong> the function wont be available for usage directly.</p>\n<p>We now want to use this functionality in another file so we use the keyword <strong>import</strong> and say we want to import everything (that's the import * bit) from the module and access this through the object we will call mathFuncs.</p>\n<p>Finally we use this functionality with the call mathFuncs.double.</p>\n",
+  },
+}

@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/web-servers/basic-web-server-with-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Complete the following snippet using routing with express:</p>\n<pre><code class="language-javascript">app.???(\'/\',\n   function(???,response){\n  // code\n});\n</code></pre>\n',
+    answers: [
+      {
+        text: 'get',
+      },
+      {
+        text: 'request',
+      },
+      {
+        text: 'server',
+      },
+      {
+        text: 'run',
+      },
+      {
+        text: 'reg',
+      },
+      {
+        text: 'express',
+      },
+    ],
+    comment: '<p>Express JavaScript is a tiny and flexible Node.js framework, providing robust features for <strong>middleware implementation</strong>,  <strong>routing</strong> and <strong>dynamic rendering</strong> of HTML pages.</p>\n<p>Express can be installed globally using the <code>npm</code> package manager:</p>\n<pre><code class="language-javascript">npm install express --save\n</code></pre>\n<p>Import and use express in your Node.js app:</p>\n<pre><code class="language-javascript">var express = require(\'express\');\nvar app = express();\n</code></pre>\n<p>An express application makes use of <strong>callback</strong> functions with <code>request</code> and <code>response</code> as parameters.</p>\n<p>Using the <code>get</code> method, routing can be easily achieved:</p>\n<pre><code class="language-javascript">app.get(\'/\', function(request,response){\n  //your code\n});\n</code></pre>\n',
+  },
+}

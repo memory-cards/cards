@@ -1,0 +1,53 @@
+{
+  __meta__: {
+    author: 'lizTheDeveloper',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/array-updates/array-copywithin.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+    'new',
+    'arrays',
+    'es6',
+  ],
+  card: {
+    question: "<p>Complete the code example to create an array that looks like this:\n<code>['1','2','1','2','5','6']</code></p>\n<pre><code>let ints = ['1','2','3','4','5','6'];\nints.copyWithin(???,???,???)\n</code></pre>\n",
+    answers: [
+      {
+        text: '1',
+      },
+      {
+        text: '2',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: '5',
+      },
+      {
+        text: '6',
+      },
+      {
+        text: '7',
+      },
+      {
+        text: '8',
+      },
+      {
+        text: '9',
+      },
+      {
+        text: '0',
+      },
+    ],
+    comment: '<p><strong>Array.copyWithin(targetArray, [start, [end]])</strong> shallow copies part of an array into the same array without modifying the original array\'s size.</p>\n<p>Look at the following array:</p>\n<pre><code class="language-javascript">var alphabet = ["a","b","c","d","e"];\n</code></pre>\n<p>To copy the first two characters into the 2nd index we could use <strong>Array.copyWithin</strong> as follows:</p>\n<pre><code class="language-javascript">alphabet.copyWithin(2,0,2);\n// ["a","b","a","b","e"]\n</code></pre>\n<p>Using the default values for the last two arguments, we could shorten the above to:</p>\n<pre><code class="language-javascript">alphabet.copyWithin(2)\n// ["a","b","a","b","c"]\n</code></pre>\n<p><strong>Array.copyWithin</strong> also supports negative indexes:</p>\n<pre><code class="language-javascript">alphabet.copyWithin(-2)\n// ["a","b","c","a","b"]\n</code></pre>\n',
+  },
+}

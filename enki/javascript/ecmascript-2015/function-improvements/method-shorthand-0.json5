@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/function-improvements/method-shorthand.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>Consider the function <code>sayHi</code> which is supposed to log the <code>Hi</code> message.\nLikewise, the <code>sayHello</code> function should log the <code>Hello</code> message.</p>\n<p>Complete the following snippet such that both functions are defined within the object <code>return</code>ed, using method shorthand in both cases:</p>\n<pre><code class=\"language-javascript\">return {\n ??? {\n   console.log('Hi')\n },\n ??? ??? {\n   console.log('Hello')\n }\n}\n</code></pre>\n",
+    answers: [
+      {
+        text: 'sayHi()',
+      },
+      {
+        text: 'sayHello',
+      },
+      {
+        text: '()',
+      },
+      {
+        text: 'function',
+      },
+      {
+        text: 'sayHi: function()',
+      },
+      {
+        text: 'sayHello:',
+      },
+      {
+        text: 'function()',
+      },
+      {
+        text: 'sayHello: function()',
+      },
+    ],
+    comment: '<p>ES6 method shorthand allows us to remove the function key word and colon making code more succinct.</p>\n<p>For example, prior to ES6, you would have written something similar to the below:</p>\n<pre><code class="language-javascript">return {\n   func: function func() {\n   ...\n   }\n};\n</code></pre>\n<p>With ES6 this can now become:</p>\n<pre><code class="language-javascript">return {\n    func() {\n    ...\n    }\n};\n</code></pre>\n',
+  },
+}

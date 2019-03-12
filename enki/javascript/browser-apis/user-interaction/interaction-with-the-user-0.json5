@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'ioanna.ki',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/user-interaction/interaction-with-the-user.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'javascript',
+  ],
+  card: {
+    question: '<p>Prompt the user with a message and input option:</p>\n<pre><code class="language-javascript">???(???, default);\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>prompt</code>',
+      },
+      {
+        text: '<code>text</code>',
+      },
+      {
+        text: '<code>alert</code>',
+      },
+      {
+        text: '<code>confirm</code>',
+      },
+    ],
+    comment: '<p>Mainly useful for prototyping, there are multiple ways to interact with the user.</p>\n<pre><code>prompt(text,default)\n</code></pre>\n<p>This outputs a modal window with the text, <code>OK</code>/<code>CANCEL</code> buttons and input field.</p>\n<pre><code>alert(message):\n</code></pre>\n<p>This outputs a window with the message and stops execution until the visitor presses the “OK” button.</p>\n<pre><code>confirm(message):\n</code></pre>\n<p>This outputs the message with two buttons: <code>OK</code> and <code>CANCEL</code>.</p>\n<p>Always set the default value in prompt, otherwise browsers may insert "undefined" into the dialog.</p>\n',
+  },
+}

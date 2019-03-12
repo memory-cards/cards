@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-iii/shortcut-for-transferring-props.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>How would you use the spread syntax to pass the current <code>props</code> to the following <code>&#x3C;p/></code> element?</p>\n<pre><code class="language-javascript">var Sample = React.createClass({\n  render: function() {\n    return (\n      &#x3C;p ??? ??? ??? ??? />\n    )\n  }\n})\n</code></pre>\n',
+    answers: [
+      {
+        text: '{',
+      },
+      {
+        text: '...',
+      },
+      {
+        text: 'this.props',
+      },
+      {
+        text: '}',
+      },
+      {
+        text: 'transfer',
+      },
+      {
+        text: '{this.props}',
+      },
+      {
+        text: '{...}',
+      },
+      {
+        text: '{...props}',
+      },
+      {
+        text: '...props',
+      },
+    ],
+    comment: '<p>With the intention of saving time while typing, the <strong>JSX</strong> <em>spread syntax</em> can be used to transfer props.</p>\n<p>This can be often used because a common type of <strong>React</strong> element is the one that extends a basic <strong>HTML</strong> element. Attributes passed to the component will be inserted in the underlying <strong>HTML</strong>.</p>\n<p>Having the following component:</p>\n<pre><code class="language-jsx">var EnkiLink = React.createClass({\n  render: function() {\n    return (\n      &#x3C;a {...this.props}>\n        {this.props.children}\n      &#x3C;/a>\n    );\n  }\n});\n</code></pre>\n<p>We can directly pass a <em>HTML attribute</em>:</p>\n<pre><code class="language-jsx">ReactDOM.render(\n  &#x3C;EnkiLink href="www.enki.com">\n    Click here!\n  &#x3C;/EnkiLink>,\n  document.getElementById(\'linkID\')\n);\n</code></pre>\n<p>Note how in the component definition we made use of <code>...this.props</code>.</p>\n',
+  },
+}

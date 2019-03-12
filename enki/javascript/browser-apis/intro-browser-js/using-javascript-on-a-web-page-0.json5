@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'nem035',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/intro-browser-js/using-javascript-on-a-web-page.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the missing gaps in the following HTML snippet such that JavaScript code contained by an <code>enki.js</code> file will be ran via a script tag:</p>\n<pre><code class="language-html">??? \n  ???="???" ??? \n???\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code><script</code>',
+      },
+      {
+        text: '<code>src</code>',
+      },
+      {
+        text: '<code>enki.js</code>',
+      },
+      {
+        text: '<code>></code>',
+      },
+      {
+        text: '<code></script></code>',
+      },
+      {
+        text: '<code>/></code>',
+      },
+      {
+        text: '<code><script /></code>',
+      },
+      {
+        text: '<code><script></code>',
+      },
+    ],
+    comment: '<p>JavaScript is an interpreted language and needs a <em>host environment</em> such as a web browser to run (or in Node’s case, Google’s <em>v8 engine</em>).</p>\n<p>There are a number of ways to use JavaScript on a web page.</p>\n<p>One way is inline with the <strong>script</strong> tag:</p>\n<pre><code class="language-html">&#x3C;script>\n  console.log("hello");\n&#x3C;/script>\n</code></pre>\n<p>Another, on HTML elements directly:</p>\n<pre><code class="language-html">&#x3C;input\n  type="button"\n  value="test"\n  onclick="alert(\'hello\');">\n</code></pre>\n<p>Whilst these are valid approaches, both of them lead to HTML which is hard to maintain.</p>\n<p>Common approach is to separate our JavaScript code in another file.</p>\n<p>We can put our code in a file called <em>hello.js</em> (note we remove the script tags when we put JavaScript in another file):</p>\n<pre><code class="language-javascript">console.log("hello");\n</code></pre>\n<p>This script can then be referenced with the src attribute of the script tag:</p>\n<pre><code class="language-html">&#x3C;script \n  src="hello.js">\n&#x3C;/script>\n</code></pre>\n<p>We can even reference scripts hosted on another server – it\'s common to do this when working with third party libraries:</p>\n<pre><code class="language-html">&#x3C;script \n  src="http://www.enki.com/hello.js">\n&#x3C;/script>\n</code></pre>\n',
+  },
+}

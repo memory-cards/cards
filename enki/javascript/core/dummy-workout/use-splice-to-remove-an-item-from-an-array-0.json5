@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'madhavi.penumatsa',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/use-splice-to-remove-an-item-from-an-array.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'delete item from array',
+  ],
+  card: {
+    question: '<p>Complete the following snippet:</p>\n<pre><code class="language-javascript">var ar = [1,2,3,\'5\'];\ndelete ar[2]; // ar = ???\n// splice(startingPos,deleteCount)\nar.splice(2,2); // ar = ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '[1,2,undefined,’5’]',
+      },
+      {
+        text: '[1,2]',
+      },
+      {
+        text: '[1,3,’5’]',
+      },
+      {
+        text: '[1,’5’]',
+      },
+      {
+        text: '[1,2,3,’5’]',
+      },
+    ],
+    comment: "<p>Use <code>splice</code> instead of using <code>delete</code> to erase an item from an array. Using <code>delete</code> replaces the item with <code>undefined</code> instead of removing it from the array entirely.</p>\n<p>Instead of:</p>\n<pre><code>var items = [12, 548 ,'a' , 2];\nitems.length; // returns 4\ndelete items[3]; // return true\nitems.length; // returns 4\n// items = [12, 548, 'a', undefined × 1]\n</code></pre>\n<p>Use <code>splice(startPos, length)</code>:</p>\n<pre><code>var items = [12, 548 ,'a' , 2];\nitems.length; // returns 4\nitems.splice(3,1);\nitems.length; // returns 3\n// items = [12, 548, 'a']\n</code></pre>\n<p>The delete method should <em>only</em> be used to delete an object property.</p>\n",
+  },
+}

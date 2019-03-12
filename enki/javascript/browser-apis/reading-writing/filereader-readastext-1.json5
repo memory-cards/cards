@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/reading-writing/filereader-readastext.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Read from a text file:</p>\n<pre><code>var reader = new FileReader();\nreader.onload = function(e) {\n  var text = reader.result;\n}\n\n???.???(file,encoding);\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>reader</code>',
+      },
+      {
+        text: '<code>readAsText</code>',
+      },
+      {
+        text: '<code>onload</code>',
+      },
+      {
+        text: '<code>read</code>',
+      },
+      {
+        text: '<code>readText</code>',
+      },
+      {
+        text: '<code>readFile</code>',
+      },
+      {
+        text: '<code>file</code>',
+      },
+    ],
+    comment: '<p>The <code>readAsText()</code> method is used to read text files. It takes two parameters, the first is the file or blob object to read. The second is the encoding of the file, by default this is UTF-8.</p>\n<p>Creating a new instance of File Reader.</p>\n<pre><code class="language-javascript">var reader = new FileReader();\n</code></pre>\n<p>Reading the text file.</p>\n<pre><code class="language-javascript">reader.onload = function(e) {\n  var text = reader.result;\n}\nreader.readAsText(file, encoding);\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,63 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/classes-modules/classes-and-constructor.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'es6',
+    'introduction',
+    'oop',
+  ],
+  card: {
+    question: '<p>Fill in the class definition below such that the log statements at the end of the snippet hold true.</p>\n<pre><code class="language-javascript">??? ??? {\n  ???(width, length) {\n    ???.width = ???\n    ??? = length\n  }\n}\n\nconst myRec = ??? Rectangle(20, 30)\nconsole.log(myRec.width)\n// 20\nconsole.log(myRec.length)\n// 30\n</code></pre>\n',
+    answers: [
+      {
+        text: 'class',
+      },
+      {
+        text: 'Rectangle',
+      },
+      {
+        text: 'constructor',
+      },
+      {
+        text: 'this',
+      },
+      {
+        text: 'width',
+      },
+      {
+        text: 'this.length',
+      },
+      {
+        text: 'new',
+      },
+      {
+        text: 'super',
+      },
+      {
+        text: 'this.width',
+      },
+      {
+        text: 'myClass',
+      },
+      {
+        text: 'new Class',
+      },
+      {
+        text: 'inherit',
+      },
+      {
+        text: 'inheritance',
+      },
+      {
+        text: 'data',
+      },
+    ],
+    comment: '<p>It has always been possible to simulate classical inheritance in JavaScript, however it comes with a number of gotchas and caveats, and is widely regarded as "not nice to work with".</p>\n<p>ES6 introduces classes and inheritance to JavaScript with the addition of <code>class</code> keyword. It is important to note a few things:</p>\n<ul>\n<li>These changes don\'t change JavaScript\'s prototype model, they are merely syntactic sugar.</li>\n<li><code>Class</code>es in JavaScript support only one level of inheritance (although there is an approach called <em>mixins</em> for getting around this.)</li>\n<li><code>Class</code>es are not hoisted (moved up to the beginning of a scope block) so must always be declared before they are used.</li>\n</ul>\n<p>We can create a <code>class</code> in JavaScript with the following syntax:</p>\n<pre><code class="language-javascript">class Person {\n}\n\nvar p = new Person();\n</code></pre>\n<h3>Constructor</h3>\n<p>Often you will want the user to supply initialization arguments to the class – we can do this by introducing a <strong>constructor</strong>.</p>\n<p>JavaScript <code>class</code>es can have only a single constructor:</p>\n<pre><code class="language-javascript">class Person {\n  constructor(name) {\n    this.name = name;\n  }\n};\n\nvar p = new Person("Enki");\np.name; //Enki\n</code></pre>\n',
+  },
+}

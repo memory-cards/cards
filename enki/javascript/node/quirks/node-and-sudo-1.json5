@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/quirks/node-and-sudo.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+    'introduction',
+    'workout',
+    'obscura',
+    'deep',
+  ],
+  card: {
+    question: '<p>Is running *<em>Node</em></p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'with <code>sudo</code> considered a safe practice?',
+        correct: true,
+      },
+      {
+        text: 'no',
+        correct: false,
+      },
+      {
+        text: 'yes',
+        correct: false,
+      },
+    ],
+    comment: '<pre><code class="language-bash">$ sudo node myapp.js\n</code></pre>\n<p>You should never do this. Most people that embrace running Node with superuser rights do it with the intention of allowing their <strong>HTTP</strong> server <code>listen()</code> on either port <code>80</code> or <code>443</code>.</p>\n<p>If a bug or an error occurs in your application process it can <strong>bring the whole system down</strong> because it has the credentials to do <strong>anything</strong> on your system.</p>\n<p>The most usual workaround for this is to set up a <strong>HTTP server</strong> / <strong>proxy</strong> to forward the request. This can be easily done with <strong>nginx</strong>, <strong>Apache</strong> or other tools.</p>\n<p>Another workaround in Linux is to use the <code>libcap2-bin</code> package:</p>\n<pre><code class="language-bash">$ sudo apt-get install libcap2-bin\n$ sudo setcap cap_net_bind_service=+ep\n/path/to/node\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express/body-parser-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">//parse application/json\napp.???(bodyParser.???());\n</code></pre>\n',
+    answers: [
+      {
+        text: 'use',
+      },
+      {
+        text: 'json',
+      },
+      {
+        text: 'json()',
+      },
+      {
+        text: 'app',
+      },
+      {
+        text: 'urlencoded',
+      },
+      {
+        text: 'jsonParser',
+      },
+    ],
+    comment: '<p>With the introduction of <strong>Express 4.0</strong>, the separate module <code>body-parser</code> was introduced as a replacement for the previous version.</p>\n<p><code>bodyParser</code> exposes factories in order to create middlewares. The <code>req.body</code> property will be populated by the middlewares with the parsed data.</p>\n<p>Being in a separate module, <code>body-parser</code> must be installed:</p>\n<pre><code class="language-bash">npm install body-parser\n</code></pre>\n<p>Then imported:</p>\n<pre><code class="language-javascript">var bodyParser = require(\'body-parser\');\n</code></pre>\n<p><code>body-parser</code> will parse the data depending on the format that is specified:</p>\n<pre><code class="language-javascript">// parse application/json\napp.use(bodyParser.json());\n// parse application/x-www-form-urlencoded\napp.use(bodyParser.urlencoded({\n extended: false }));\n</code></pre>\n<p>The most common way to use <code>body-parser</code> with <code>express</code> is to add it specifically to the routes:</p>\n<pre><code class="language-javascript">var jsonParser = bodyParser.json()\n// POST /myRoute gets JSON bodies\napp.post(\'/myRoute\', jsonParser,\nfunction (req, res) {\n  //your code here\n };\n</code></pre>\n',
+  },
+}

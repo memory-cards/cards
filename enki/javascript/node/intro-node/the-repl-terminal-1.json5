@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/intro-node/the-repl-terminal.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What does REPL stand for?\n???</p>\n',
+    answers: [
+      {
+        text: 'Read, Eval, Print, Loop',
+        correct: true,
+      },
+      {
+        text: 'Read, Equal, Process, Loop',
+        correct: false,
+      },
+      {
+        text: 'Reiterate, Else, Print, Loop',
+        correct: false,
+      },
+    ],
+    comment: '<p>REPL stands for Read Eval Print Loop. It represents an environment similar to a Windows console or Linux shell, where commands can be entered and the system would respond with the appropriate output.</p>\n<p><em>Read</em> takes an input and parses this into a JavaScript-recognizable expression before storing it into memory.\n<em>Eval</em> evaluates this expression.\n<em>Print</em> prints the result of the evaluation.\n<em>Loop</em> loops the above commands until the user exits the REPL terminal.</p>\n<p>A key benefit of using Node\'s REPL terminal is that it helps iron out any irregularities found in an application, meaning that there are no side effects when the code is ran in the application.</p>\n<p>The REPL terminal can be used for simple expressions as follows:</p>\n<pre><code class="language-bash">$ node\n> 4 + 2 * 9 - 6\n20\n</code></pre>\n<p>Variables can also be used in the terminal, if the <code>var</code> keyword is used then the value is stored but not printed, whereas if the <em>var</em> keyword isn’t used the value is both stored and printed.</p>\n<pre><code class="language-bash">> x = 5\n5\n> var i = 7\nundefined\n> x * y\n35\n</code></pre>\n',
+  },
+}

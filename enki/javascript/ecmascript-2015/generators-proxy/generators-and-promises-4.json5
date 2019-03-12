@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/generators-and-promises.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'promise',
+    'async',
+    'functional programming',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">let pet1 = Promise.resolve("Dog");\nlet pet2 = "Grumpy Cat";\nlet pet3 = new Promise((resolve, reject) => {\n  setTimeout(resolve, 100, "Fish");\n});\n\nPromise.???(\n[pet1, pet2, pet3])\n  .then(function(values) {\n    console.log(values);\n});\n</code></pre>\n<p>%exp\nThe <code>all()</code> function returns a single promise that resolves when all promises passed as an array in the arguments have resolved, or rejects with the first rejected promise\'s error.\n%</p>\n',
+    answers: [
+      {
+        text: 'all',
+        correct: true,
+      },
+      {
+        text: 'multi',
+        correct: false,
+      },
+      {
+        text: 'then',
+        correct: false,
+      },
+    ],
+    comment: '<p>Some of the most exiting features of ES6 are generators and promises.</p>\n<p>Can you fill in the gaps in the following code snippets such that they make sense?</p>\n',
+  },
+}

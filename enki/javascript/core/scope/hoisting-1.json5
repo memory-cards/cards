@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'AlexYancey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/scope/hoisting.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>What will this print</p>\n<pre><code class="language-javascript">var a = 1;\nfunction go(){\n    console.log(a);\n    var a = 2;\n}\ngo();\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>undefined</code>',
+        correct: true,
+      },
+      {
+        text: '<code>1</code>',
+        correct: false,
+      },
+      {
+        text: '<code>2</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p>Think fast, what does this snippet print?</p>\n<pre><code class="language-javascript">    var a = 1;\n    function go(){\n        console.log(a);\n        var a = 2;\n    }\n    go();\n</code></pre>\n<p>If you thought the answer was <code>1</code>, you are incorrect!</p>\n<p><code>> undefined</code></p>\n<p>One quirk of JavaScript is <em>hoisting</em>.</p>\n<p>This default behaviour moves all variable declarations to the top of the current scope.</p>\n<p>This is how the snippet is actually executed, in order:</p>\n<pre><code>var a;\na = 1;\nfunction go(){\n    var a;\n    console.log(a);\n    a = 2;\n}\ngo();\n</code></pre>\n<p>In this case, <code>a</code> is redeclared and reset to <code>undefined</code> before it is logged.</p>\n',
+  },
+}

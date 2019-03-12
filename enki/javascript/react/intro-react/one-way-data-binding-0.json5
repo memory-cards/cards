@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/intro-react/one-way-data-binding.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What type of data flow needs to be used if we want the <code>view</code> to directly update the data <code>model</code>?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'two-way',
+        correct: true,
+      },
+      {
+        text: 'one-way',
+        correct: false,
+      },
+      {
+        text: 'both',
+        correct: false,
+      },
+      {
+        text: 'neither',
+        correct: false,
+      },
+    ],
+    comment: "<p><strong>React</strong> encourages <strong>unidirectional data flow</strong> by design, making it the canonical example of this approach nowadays.</p>\n<p>Along with two-way data binding, these approaches describe the way your application keeps the <code>view</code> in sync with the data <code>model</code>.</p>\n<p>In two-way data binding the <code>model</code> is dynamically bound to the <code>view</code> such that one can change the other and vice-versa.</p>\n<p>In <strong>one-way data binding</strong> the <code>model</code> is the <em>single source of truth</em>.</p>\n<p>Instead of changing the <code>model</code> directly when a <strong>UI field</strong> changes, the <code>model</code> is notified by the intended change and updates the <em>state</em> itself. Afterwards, the <code>view</code> is updated to match the change.</p>\n<p>This technique is often seen as <em>cleaner</em> and it's preferred because it gives better control over the <strong>data flow</strong>.</p>\n<p>Note that you can still implement two-way data binding in <strong>React</strong>, but this require some extra effort.</p>\n",
+  },
+}

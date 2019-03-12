@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-ii/dealing-with-this-props-children.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>What method is used to invoke a function on every immediate child within children, and returns an array? ???</p>\n',
+    answers: [
+      {
+        text: '<code>map</code>',
+        correct: true,
+      },
+      {
+        text: '<code>forEach</code>',
+        correct: false,
+      },
+      {
+        text: '<code>fn</code>',
+        correct: false,
+      },
+      {
+        text: '<code>count</code>',
+        correct: false,
+      },
+      {
+        text: '<code>only</code>',
+        correct: false,
+      },
+      {
+        text: '<code>toArray</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>React</strong> provides the user with the useful class <code>React.Children</code> which provides various utilities for dealing with the opaque data structure <code>this.props.children</code>.</p>\n<p><code>map</code> invokes a function on every immediate child within <code>children</code>, returning an array:</p>\n<pre><code class="language-javascript">array React.Children.map(object children,\n  function fn[, object thisArg]);\n</code></pre>\n<p>Keep in mind that if <code>children</code> is a nested object or an array it will be traversed and also that <code>fn</code> will never be passed the container objects.</p>\n<p><code>forEach</code> works like <code>map</code>, yet it does not return an array:</p>\n<pre><code class="language-javascript">React.Children.forEach(object children,\n  function fn(, object thisArg]);\n</code></pre>\n<p>Return the total number of components in <code>children</code>:</p>\n<pre><code class="language-javascript">number React.Children.count(object children)\n</code></pre>\n<p>Return the only child in <code>children</code>:</p>\n<pre><code class="language-javascript">object React.Children.only(object children);\n</code></pre>\n<p>Manipulate collections of <code>children</code> by converting them into arrays:</p>\n<pre><code class="language-javascript">array React.Children.toArray(object\n  children);\n</code></pre>\n',
+  },
+}

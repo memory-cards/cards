@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/publishing/check-data-about-a-package.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Complete the command in order to get the dependencies for version <code>1.2.3</code> of package <code>enki</code>:</p>\n<pre><code class="language-bash">$ npm ???\n    enki???1.2.3 ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'view',
+      },
+      {
+        text: '@',
+      },
+      {
+        text: 'dependencies',
+      },
+      {
+        text: '--json',
+      },
+      {
+        text: 'list',
+      },
+      {
+        text: 'npm',
+      },
+    ],
+    comment: '<p>You can get details about your package or other packages using:</p>\n<pre><code class="language-bash">$ npm view npm\n</code></pre>\n<p>The <em>latest version</em> of the package is targeted by default. However, older versions can be specified as well:</p>\n<pre><code class="language-bash">$ npm view npm@4.0.0\n</code></pre>\n<p>The output of the command contains an exhaustive list of contributors, maintainers, versions and their release date, and other useful information like a presentational website of the package or its git repository link.</p>\n<p>Any particular field can be retrieved by extending the initial command with the field\'s name:</p>\n<pre><code class="language-bash">$ npm view npm contributors\n# or\n$ npm view npm homepage\n</code></pre>\n<p>The output of the <em>npm view</em> command is structured like a <em>JavaScript</em> object, so you could get nested data as such:</p>\n<pre><code class="language-bash">$ npm view npm repository\n{type: \'git\',\nurl: \'git+https://github.com/npm/npm.git\'}\n\n$ npm view npm repository.url\ngit+https://github.com/npm/npm.git\n</code></pre>\n<p>To obtain the data in <strong>JSON</strong> format instead of JavaScript object literal, use <code>--json</code> flag.</p>\n',
+  },
+}

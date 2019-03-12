@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/proxies-in-es6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Complete the code snippet to create a proxy which can be switched off:</p>\n<pre><code>let {proxy, ???} = \n    Proxy.???(target, handler);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'revoke',
+      },
+      {
+        text: 'revocable',
+      },
+      {
+        text: 'switchoff',
+      },
+      {
+        text: 'switch',
+      },
+      {
+        text: 'switchable',
+      },
+      {
+        text: 'turn_off',
+      },
+      {
+        text: 'end',
+      },
+    ],
+    comment: "<p>In ES6, you can redefine the semantics of some operations using <strong>proxies</strong>. </p>\n<p>Proxies are special objects, created with two parameters:</p>\n<ul>\n<li>\n<p><strong>handler</strong>: for each operation, there is a corresponding handler method (a <strong>trap</strong>) that intercepts the operation on its way to the target and performs that operation. </p>\n</li>\n<li>\n<p><strong>target</strong>: if the handler doesn’t intercept the operation then the operation is performed on the target.</p>\n</li>\n</ul>\n<pre><code>var target = {};\nvar handler = {\n  get: function (receiver, name) {\n    return `Hello, ${name}!`;\n  }\n};\n\nvar proxy = new Proxy(target, handler);\nconsole.log(proxy.world);\n// Hello, world!\n</code></pre>\n<p>However, because the handler doesn't implement a trap <strong>set</strong>(setting properties) alongside <strong>get</strong> trap, the following property can be created for the <code>target</code>:</p>\n<pre><code>proxy.myProp = 'abc';\nconsole.log(target.myProp);\n// abc\n</code></pre>\n<p>ES6 also lets you create proxies that can be switched off (<strong>revoked</strong>):</p>\n<pre><code>let {proxy, revoke} =\n    Proxy.revocable(target, handler);\n// switch off by calling revoke()\n</code></pre>\n<p>Warning: proxies are an advanced ES6 feature, but are not yet implemented by many browsers or transpilers.</p>\n",
+  },
+}

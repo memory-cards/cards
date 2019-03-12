@@ -1,0 +1,43 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/intro-node/executing-programs-with-node.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Consider the file <code>enki.js</code>:</p>\n<pre><code class="language-javascript">// enki.js\nconsole.log(\'Hello, Enki!\')\n</code></pre>\n<p>How would you run from the terminal interface the code in the file, using the NodeJS interpreter:</p>\n<pre><code class="language-bash">$ ??? ???\n# Hello, Enki!\n</code></pre>\n',
+    answers: [
+      {
+        text: 'node',
+      },
+      {
+        text: 'enki.js',
+      },
+      {
+        text: 'enki',
+      },
+      {
+        text: 'nodejs',
+      },
+      {
+        text: 'npm',
+      },
+      {
+        text: 'run',
+      },
+      {
+        text: 'code',
+      },
+      {
+        text: 'enkijs',
+      },
+    ],
+    comment: '<p>The Node.js interpreter can be used to execute JavaScript files and programs in the terminal. First, create a JavaScript file:</p>\n<pre><code class="language-javascript">/* main.js */\nconsole.log(\'Node.js with Enki!\');\n</code></pre>\n<p>To run any JavaScript program using Node use the following generic command:</p>\n<pre><code class="language-bash">$ node filename.js\n# filename.js will be ran\n</code></pre>\n<p>In this case, to run the <em>main.js</em> file the following command would be used:</p>\n<pre><code class="language-bash">$ node main.js\n# that outputs:\nNode.js with Enki!\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/measuring-performance/high-resolution-time-api.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>What is the correct call of the High Resolution Time API that returns the current time in milliseconds, with microseconds precision?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'performance.now()',
+        correct: true,
+      },
+      {
+        text: 'resolution.start()',
+        correct: false,
+      },
+      {
+        text: 'highres.run()',
+        correct: false,
+      },
+      {
+        text: 'resolution.time()',
+        correct: false,
+      },
+    ],
+    comment: '<p>The High Resolution Time API allows you to perform precise timing measurements.</p>\n<p>To use the High Resolution Time API call <code>performance.now()</code>.</p>\n<p>The API will return a numeric value representing the current time (e.g <code>773665.7000000001</code>).</p>\n<p>The values returned by <code>performance.now()</code> always increase constantly and are not subject to time adjustments such as daylight savings and synchronization logic (NTP).</p>\n<p>The API can represent time with up to microsecond precision and is much more accurate than other JavaScript timing features such as <code>Date.now()</code> which return a value to the nearest millisecond.</p>\n<p>You can use the High Resolution Time API to measure the <strong>performance</strong> of your code:</p>\n<pre><code class="language-javascript">var start = performance.now();\n// do something\nvar end = performance.now();\nconsole.log("do something took " +\n           (end - start) + " milliseconds");\n</code></pre>\n<p>The API could also be used for precise timing in game, animation or audio logic.</p>\n',
+  },
+}

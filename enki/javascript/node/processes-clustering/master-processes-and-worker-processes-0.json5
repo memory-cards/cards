@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/processes-clustering/master-processes-and-worker-processes.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>What does the following line of code do? ???</p>\n<pre><code class="language-javascript">if (cluster.isMaster) { ... }\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Identifies the master process.',
+        correct: true,
+      },
+      {
+        text: 'Sets the master process.',
+        correct: false,
+      },
+      {
+        text: 'Sets the master process to null.',
+        correct: false,
+      },
+    ],
+    comment: '<p>The <em>Cluster</em> module allows you to identify the master process as follows:</p>\n<pre><code class="language-javascript">if(cluster.isMaster) { ... }\n</code></pre>\n<p>The master process is the process which a user initiates, there is only one master process. The master  process then initiates worker processes using the <code>fork()</code> method as follows:</p>\n<pre><code class="language-javascript">cluster.fork();\n</code></pre>\n<p>There can be as many or as few worker processes as required, all sharing the same server port handling incoming requests to the server.</p>\n<p>A <em>Worker</em> object contains all the worker\'s public information and methods.</p>\n<p>In the master this can be obtained using the command <code>cluster.workers</code>. In a worker this can be obtained using <code>cluster.worker</code>.</p>\n',
+  },
+}

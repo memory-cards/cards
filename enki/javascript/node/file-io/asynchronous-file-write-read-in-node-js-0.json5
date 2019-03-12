@@ -1,0 +1,44 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/file-io/asynchronous-file-write-read-in-node-js.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Which method of <code>fs</code> writes to a file asynchronously?</p>\n<p>???</p>\n<p>Which method reads from a file asynchronously?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'writeFile',
+      },
+      {
+        text: 'readFile',
+      },
+      {
+        text: 'write',
+      },
+      {
+        text: 'read',
+      },
+      {
+        text: 'writeAsync',
+      },
+      {
+        text: 'readAsync',
+      },
+      {
+        text: 'writeFileAsync',
+      },
+      {
+        text: 'readFileAsync',
+      },
+    ],
+    comment: '<p>The <em>File System</em> (<strong>FS</strong>) module provides file <strong>I/O</strong>. The methods have asynchronous and synchronous forms.</p>\n<p>The last parameter of asynchronous methods will be a <strong>callback function</strong>. This function should have as the first parameter an <strong>error</strong>.</p>\n<p>It is preferred to use asynchronous method over synchronous method as the formers never block program execution.</p>\n<p>Write data to file:</p>\n<pre><code class="language-javascript">fs.writeFile(file, data[,options], callback)\n</code></pre>\n<p><code>data</code> can be a string or a buffer. Options include <code>encoding</code> (default <strong>utf8</strong>), <code>flag</code> and <code>mode</code>.</p>\n<p>Read data from file:</p>\n<pre><code class="language-javascript">fs.readFile(file[, options], callback)\n</code></pre>\n<p>Options include <code>encoding</code> and <code>flag</code>.</p>\n<p>The <strong>callback</strong> can be defined as a function : <code>function (err, data)</code> where <code>data</code> is the actual data from the file.</p>\n',
+  },
+}

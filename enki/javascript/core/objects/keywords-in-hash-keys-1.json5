@@ -1,0 +1,46 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/keywords-in-hash-keys.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'introduction',
+  ],
+  card: {
+    question: "<p>How would you rewrite the commented object property in order to avoid <code>Syntax Error</code> with old JS engines?</p>\n<pre><code class=\"language-javascript\">var dog = {\n  name: 'Max',\n  age: '5',\n  // typeof: 'beagle'\n  ??? ???\n}\n</code></pre>\n",
+    answers: [
+      {
+        text: "'typeof':",
+      },
+      {
+        text: "'beagle'",
+      },
+      {
+        text: 'typeof',
+      },
+      {
+        text: 'type of',
+      },
+      {
+        text: 'beagle',
+      },
+      {
+        text: "'name'",
+      },
+      {
+        text: 'name',
+      },
+      {
+        text: "'typeof'",
+      },
+      {
+        text: 'typeof:',
+      },
+    ],
+    comment: "<p>Object properties can either be presented as strings or ugly characters.</p>\n<pre><code class=\"language-javascript\">var testObject = {\n  'case': 'Random string',\n  delete: 'Another random string'\n}\n</code></pre>\n<p>However, it is considered bad practice to leave unique keywords such as <code>delete</code> unquoted as it may confuse readers and syntax highlighter.</p>\n<p>Instead, you can use quotes:</p>\n<pre><code class=\"language-javascript\">var testObject = {\n  'case': 'Random string',\n  'delete': 'Another random string'\n}\n</code></pre>\n<p>Using unquoted keywords can also be bad for portability and would raise a <code>Syntax Error</code> with old JavaScript engines.</p>\n",
+  },
+}

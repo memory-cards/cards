@@ -1,0 +1,44 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/errors/exceptions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Complete the following block in the code snippet such that the comments make sense:</p>\n<pre><code>??? {\n   throw "my error";\n} ??? (e) {\n   //exception is caught here\n} ??? {\n   // will always run\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>try</code>',
+      },
+      {
+        text: '<code>catch</code>',
+      },
+      {
+        text: '<code>finally</code>',
+      },
+      {
+        text: '<code>final</code>',
+      },
+      {
+        text: '<code>do</code>',
+      },
+      {
+        text: '<code>while</code>',
+      },
+      {
+        text: '<code>new</code>',
+      },
+      {
+        text: '<code>for</code>',
+      },
+    ],
+    comment: '<p>Some operations in our programs can potentially fail due to no fault of the developer. </p>\n<p>For example you could attempt to retrieve data from a remote server that is not currently available or attempt to read from a file that has been deleted.</p>\n<p>One way of handling these situations is to use try, catch blocks and exceptions - you may have come across these constructs in other languages.</p>\n<p>As a general guideline exceptions should be used for <em>exceptional</em> situations such as a file not being available rather than as a way to control a programs flow such as exiting a loop.</p>\n<p>The below example shows how to use try/catch to handle any errors that occur in <em>dangerousFunction</em>:</p>\n<pre><code>try{\n //put code that might fail in try block\n dangerousFunction();\n}\ncatch (ex) {\n //catch will trap any exceptions\n console.log(ex);\n}\nfinally {\n /*finally block will always be run\n   whether errors or not*/\n console.log(\'all done\');\n}\n</code></pre>\n<p><strong>throw</strong></p>\n<p>Let\'s pretend <strong>dangerousFunction</strong> needs to read a file. We might want to test first that the file exists and if it does not then throw an exception that will be handled by the above catch block.</p>\n<p>The below code shows how to do this:</p>\n<pre><code>function dangerousFunction(){\n if(!fileExists()){\n  throw "file does not exist";\n }\n ...\n}\n</code></pre>\n<p>You can create your own exception types which you may do to represent specific situations or hold useful data:</p>\n<pre><code>function BadException(message) {\n  this.message = message;\n}\n\nthrow new \nBadException("something bad");\n</code></pre>\n',
+  },
+}

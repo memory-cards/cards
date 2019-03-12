@@ -1,0 +1,43 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/arrays/arrays.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Fill the gaps such that you get the first element of <code>enkiArray</code>:</p>\n<pre><code>var enkiArray = [1, 2, 3];\nvar firstElement = ??????;\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>enkiArray</code>',
+      },
+      {
+        text: '<code>[0]</code>',
+      },
+      {
+        text: '<code>[1]</code>',
+      },
+      {
+        text: '<code>array</code>',
+      },
+      {
+        text: '<code>getLast()</code>',
+      },
+      {
+        text: '<code>getFirst()</code>',
+      },
+      {
+        text: '<code>push</code>',
+      },
+      {
+        text: '<code>pop</code>',
+      },
+    ],
+    comment: '<p>Arrays are an essential concept in JavaScript and used frequently.</p>\n<p>Declaring an array:</p>\n<pre><code>var myArray = [1,2,3];\nvar anotherArray =["a","b","c"];\n</code></pre>\n<p>Array\'s are <em>zero based/indexed</em> so if you want to retrieve the first value you use 0 as the index parameter:</p>\n<pre><code>console.log(myArray[0]);\n</code></pre>\n<p>We can retrieve the last value of an array by using the <em>length</em> property and subtracting 1 from it (don’t use this on an empty array!)</p>\n<pre><code>var arrayLength=myArray.length;\nvar lastVal= myArray[arrayLength-1];\nconsole.log(lastVal);\n</code></pre>\n<p>Values can be added to the array with the <em>push</em> method which returns the new length of the array:</p>\n<pre><code>myArray.push(555); //4\nmyArray.push(5,6,7); //7\n</code></pre>\n<p>Or the last item can be returned and removed using <em>pop</em>:</p>\n<pre><code>myArray.pop();\n</code></pre>\n<p>You can find the position of any item with the <em>indexOf</em> operator:</p>\n<pre><code>var pos = myArray.indexOf(3); //2\n</code></pre>\n<p>We can iterate over the array items with <em>forEach</em>:</p>\n<pre><code>myArray.forEach(\nfunction (item, index, array) {\n  console.log(item, index);\n}\n);\n</code></pre>\n<p>Another cool feature of JavaScript is that you can initialize an array as such:</p>\n<pre><code class="language-javascript">var myArray = [,,,];\n</code></pre>\n<p>What this does is create an <em>empty</em> array of <em>size 3</em> (not 4, as the last comma is ignored).</p>\n',
+  },
+}

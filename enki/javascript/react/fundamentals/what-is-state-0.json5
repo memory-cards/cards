@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/fundamentals/what-is-state.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>How do you change the value of <code>this.state.a</code> ?</p>\n<pre><code class="language-jsx">???\n</code></pre>\n',
+    answers: [
+      {
+        text: "<code>this.setState({a: 'A'})</code>",
+        correct: true,
+      },
+      {
+        text: "<code>this.state.a = 'A'</code>",
+        correct: false,
+      },
+      {
+        text: "<code>this.setState({state: {a: 'A'}})</code>",
+        correct: false,
+      },
+      {
+        text: "<code>constructor(state) {super({a: 'A'})}</code>",
+        correct: false,
+      },
+    ],
+    comment: '<p>Just like <code>props</code>, <strong>React</strong> components\' <code>state</code> can change their behaviour or how they render.</p>\n<p>You can think of <em>state</em> as a <strong>private</strong> data set only accessible from within the <code>component</code> via <code>this.state</code>.</p>\n<p>Consider the component:</p>\n<pre><code class="language-jsx">class Hello extends React.Component {\n  render() {\n    const show = this.state.show;\n    return &#x3C;p>{this.state.text}&#x3C;/p>;\n  }\n}\n</code></pre>\n<p>This won\'t render however, because <code>this.state</code> is <code>null</code> at the moment.</p>\n<p>To set the <strong>initial state</strong>, by giving <code>text</code> a value, you can make use of the <code>constructor</code> lifecycle method which is called when the component is created:</p>\n<pre><code class="language-jsx">class Hello extends React.Component {\n  constructor(props) {\n    // props aren\'t used now\n    super(props);\n    // set the initial state\n    this.state = {text: \'Hello\'};\n  }\n  // render() ...\n}\n</code></pre>\n<p>If we <code>render</code> the element now, we will see "Hello" inside a <code>&#x3C;p></code>.</p>\n<p>The <code>state</code> value should only be changed through the <code>this.setState()</code> method which behaves asynchronously.\nNote that <code>state</code> shouldn\'t be changed until the component was successfully mounted.</p>\n<pre><code class="language-jsx">class Hello extends React.Component {\n  constructor(props) {\n    // ...set initial state\n\n    setTimeout(() => {\n      this.setState({text: \'World\'});\n    }, 1000);\n  }\n}\n</code></pre>\n<p>The snippet above will update the <code>state</code> one second after construction. Specifically, <code>this.state.text</code> is changed to <code>World</code>.</p>\n<p><code>render</code>ing our component now, we\'ll first see <code>"Hello"</code> which will change to <code>"World"</code> after one second.</p>\n',
+  },
+}

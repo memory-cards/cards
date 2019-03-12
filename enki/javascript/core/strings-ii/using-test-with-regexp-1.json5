@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'fsites',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/strings-ii/using-test-with-regexp.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'strings',
+    'html',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Matching a string with a RegEx is done by </p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'regex.test(string);',
+        correct: true,
+      },
+      {
+        text: 'regex.match(string);',
+        correct: false,
+      },
+      {
+        text: 'regex.check(string);',
+        correct: false,
+      },
+    ],
+    comment: '<p>The <code>.test()</code> method takes a string  and checks it against a RegEx. </p>\n<p>The returned value is boolean. <code>true</code> if there is a match, <code>false</code> if there is no match.</p>\n<pre><code>var str = "I learned a new tip with Enki.";\n\nvar containsEnki = /Enki/i;\ncontainsEnki.test(str); // true\n\nvar containsAtSchool = /At School/i;\ncontainsAtSchool.test(str) // false\n</code></pre>\n',
+  },
+}

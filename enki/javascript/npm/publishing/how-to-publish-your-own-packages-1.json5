@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/publishing/how-to-publish-your-own-packages.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>In order to publish your package to the npm repository, you need</p>\n<p>???.</p>\n',
+    answers: [
+      {
+        text: 'an npm account',
+        correct: true,
+      },
+      {
+        text: 'an initial package version of <code>1.0.0</code>',
+        correct: false,
+      },
+      {
+        text: 'a <code>README.md</code> file',
+        correct: false,
+      },
+    ],
+    comment: '<p>You\'ve been using <em>npm</em> for some time and you have found out that your favorite framework doesn\'t do something you really need. The beauty of npm is that everyone can publish their own packages. So you decide to give something back and extend the framework\'s capabilities.</p>\n<p>All you need to publish your package is an installation of node and accounts at GitHub and npm, both of which can be created for free. To avoid entering your details every time you initialize a new <em>package.json</em>, you can save your email and name inside the <code>~/.npmrc</code> file (a lot like you would do with <code>git config</code>):</p>\n<pre><code class="language-bash">$ npm set init.author.name "Mihai Bercu"\n$ npm set init.author.email "mihai@enki.com"\n</code></pre>\n<p>Running <code>npm login</code> would then prompt you to enter your credentials and you are in!</p>\n<p>Decide whether you want your package to be scoped (which makes sense in order to avoid naming conflicts) or not:</p>\n<pre><code class="language-bash">$ npm init --scope=username\n</code></pre>\n<p>You should also add a short description of what the package does in the <em>description</em> field, but keep the too technical details for the <em>README.md</em> file on GitHub. Don\'t forget to add a license as well.</p>\n<p>Last but not least, specify an initial version of your package, ideally following the semantic versioning discussed in a previous insight.</p>\n',
+  },
+}

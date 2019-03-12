@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/object-part-2.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: "<p>You can invoke an object's method by writing:</p>\n<p>???</p>\n",
+    answers: [
+      {
+        text: 'ob.methodName();',
+        correct: true,
+      },
+      {
+        text: 'ob.methodName;',
+        correct: false,
+      },
+      {
+        text: 'methodName(ob);',
+        correct: false,
+      },
+    ],
+    comment: '<p>Object\'s properties can also be functions.</p>\n<p>For example, we might add a function to our person object to print out a greeting message to the console:</p>\n<pre><code class="language-javascript">var per = {\n    firstName: "alex",\n    lastName: "smith",\n\n    sayHi: function(){\n       console.log("hello");\n    }\n};\n</code></pre>\n<p>You can then invoke the function with:</p>\n<pre><code class="language-javascript">per.sayHi();\n// hello\n</code></pre>\n<h3>Constructor Functions</h3>\n<p>It is common to use functions to create new objects.</p>\n<p>This allows you to encapsulate object creation similar to a class constructor:</p>\n<pre><code class="language-javascript">function Person(firstName,lastName){\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nvar p1 = new Person("john","smith");\nvar p2 = new Person("joe","smith");\n</code></pre>\n<p>You can even implement inheritance in JavaScript by building on this, but this is a more advanced technique.</p>\n',
+  },
+}

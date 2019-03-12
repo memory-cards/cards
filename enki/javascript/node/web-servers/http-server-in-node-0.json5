@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/web-servers/http-server-in-node.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which method is used to declare a new server with what arguments?</p>\n<pre><code class="language-javascript">var http = require(‘http’);\nhttp.???(\n    function(req, ???){\n     //...\n }).listen(port);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'createServer',
+      },
+      {
+        text: 'res',
+      },
+      {
+        text: 'req',
+      },
+      {
+        text: 'newServer',
+      },
+      {
+        text: 'declareServer',
+      },
+      {
+        text: 'server',
+      },
+      {
+        text: 'env',
+      },
+      {
+        text: 'arg',
+      },
+    ],
+    comment: "<p>Create a <code>http</code> server with Node:</p>\n<pre><code class=\"language-javascript\">var http = require('http');\n\nhttp.createServer(function(req, res){\n    res.end('Hello Node', 200);\n    console.log('Request made');\n}).listen(8000);\n</code></pre>\n<p>Going to <code>http://localhost:8000</code>, the text specified in the program should appear!</p>\n<p>To do this the <code>http</code> module is needed:</p>\n<pre><code class=\"language-javascript\">var http = require('http');\n</code></pre>\n<p>The server was created (<code>createServer</code>) with a callback function as an argument. This function has 2 parameters (<code>req</code> - request and <code>res</code>- response) and acts like a gate to the application, handling all incoming <em>requests</em> accordingly.</p>\n<p>The port on which it should listen was also specified: <code>.listen(8000)</code>.</p>\n",
+  },
+}

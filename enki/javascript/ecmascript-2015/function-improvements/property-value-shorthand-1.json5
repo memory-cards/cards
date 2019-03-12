@@ -1,0 +1,46 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/function-improvements/property-value-shorthand.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the missing gap such that the <code>prop</code> value is returned using property value shorthand:</p>\n<pre><code class="language-javascript">function foo() {\n  var prop = \'value\'\n\n  return {\n    ???\n  }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'prop',
+        correct: true,
+      },
+      {
+        text: 'prop: prop',
+        correct: false,
+      },
+      {
+        text: 'prop: this.prop',
+        correct: false,
+      },
+      {
+        text: 'this.prop: prop',
+        correct: false,
+      },
+      {
+        text: 'this.prop',
+        correct: false,
+      },
+      {
+        text: "'value'",
+        correct: false,
+      },
+      {
+        text: "prop: 'value'",
+        correct: false,
+      },
+    ],
+    comment: '<p>It is very common to return an object from a function with a property the same name as a source value declared elsewhere e.g.</p>\n<pre><code class="language-javascript">function test(){\n   var name="Enki";\n\n   return {\n      name: name\n   }\n}\n</code></pre>\n<p>ES6 provides a convenient shortcut to do this that allows you to drop the property name if you want it to be the same as the source variable:</p>\n<pre><code class="language-javascript">function test(){\n   var name = "enki";\n\n   return {\n      name\n   };\n}\n\ntest(); // { name: "enki" }\n</code></pre>\n<p>Note an exception will be thrown at run time if you specify a value that doesn’t exist in your return object.</p>\n',
+  },
+}

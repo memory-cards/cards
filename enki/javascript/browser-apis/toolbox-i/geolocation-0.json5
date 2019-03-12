@@ -1,0 +1,57 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-i/geolocation.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Fill in the gaps in the following code snippet. Using the geolocation API exposed by the browser and assuming you have all the permissions needed, get the current device position and log the latitude and longitude.</p>\n<pre><code class="language-javascript">navigator.???.???(\n  function(pos) {\n    const lat = pos.???.???;\n    const long = ???.???;\n    console.log(lat, long);\n  }\n);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'geolocation',
+      },
+      {
+        text: 'getCurrentPosition',
+      },
+      {
+        text: 'coords',
+      },
+      {
+        text: 'latitude',
+      },
+      {
+        text: 'pos.coords',
+      },
+      {
+        text: 'longitude',
+      },
+      {
+        text: 'pos.latitude',
+      },
+      {
+        text: 'pos.longitude',
+      },
+      {
+        text: 'geoLocation',
+      },
+      {
+        text: 'getPosition',
+      },
+      {
+        text: 'coordiate',
+      },
+      {
+        text: 'watchPosition',
+      },
+      {
+        text: 'getLocation',
+      },
+    ],
+    comment: '<p>The Geolocation API provides location information such as the latitude and longitude coordinates.</p>\n<p>The exact information available will depend on the device.</p>\n<p>Note that for privacy reasons the user must grant the API permission.</p>\n<p>To obtain the devices current position use the <strong>getCurrentPosition</strong> API:</p>\n<pre><code class="language-javascript">navigator.geolocation\n  .getCurrentPosition(\n  function(pos) {\n    var lat = pos.coords.latitude,\n        long = pos.coords.longitude;\n        console.log(`${lat} ${long}`);\n  });\n</code></pre>\n<p>If you want to be informed automatically when the devices position changes you can use the <strong>geolocation.watchPosition</strong> API.</p>\n<pre><code class="language-javascript">navigator.geolocation.watchPosition(\n  function(pos) {\n     var lat = pos.coords.latitude,\n         long = pos.coords.longitude;\n         console.log(`${lat} ${long}`);\n  });\n</code></pre>\n',
+  },
+}

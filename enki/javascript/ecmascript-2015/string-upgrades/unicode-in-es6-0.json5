@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-upgrades/unicode-in-es6.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: "<p>What method is used to get the base-10 numeric representation of a code point at a given position in a string?</p>\n<pre><code>for (let codePoint of '🌲🌲') {\n  console.log(codePoint.???(0));\n}\n</code></pre>\n",
+    answers: [
+      {
+        text: '<code>codePointAt</code>',
+        correct: true,
+      },
+      {
+        text: '<code>codePoint</code>',
+        correct: false,
+      },
+      {
+        text: '<code>codePointRep</code>',
+        correct: false,
+      },
+      {
+        text: '<code>base10point</code>',
+        correct: false,
+      },
+    ],
+    comment: "<p>JavaScript strings are represented using UTF-16 code units. Each code unit can be used to represent a code point in the <code>[U+0000, U+FFFF]</code> range. Code points beyond that range are represented by a surrogate pair.  </p>\n<p>In ES6 the notation has been simplified:</p>\n<pre><code>\\\\ represents U+1F332 (EVERGREEN TREE)\n\"\\u{1F332}\"==\"🌲\"==\"\\uD83C\\uDF32\"\n</code></pre>\n<p>As with ES5, having multiple code units per code point means that <code>.length</code> is not reliable:</p>\n<pre><code>'🌲🌲🌲'.length // length is 6\n</code></pre>\n<p>However in ES6 the string iterator can be used to loop over code <strong>points</strong> rather than code <strong>units</strong>:</p>\n<pre><code>for (let codePoint of '🌲✈❤') {\n  console.log(codePoint);\n}\n// '🌲'\n// '✈'\n// '❤'\n</code></pre>\n<p>Use <code>.codePointAt</code> to get the base-10 numeric representation of a code point at a given position in a string (indexed by code unit).</p>\n<pre><code>for (let codePoint of '🌲✈❤') {\n  console.log(codePoint.codePointAt(0));\n}\n/*\n127794 (EVERGREEN TREE)\n9992 (AIRPLANE)\n10084 (HEAVY BLACK HEART)\n*/\n</code></pre>\n",
+  },
+}

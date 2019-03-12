@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/generators-and-promises.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'promise',
+    'async',
+    'functional programming',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">function timeout(delay) {\n  return new Promise((resolve, reject) => {\n    setTimeout(resolve, delay, Date.now());\n  });\n}\n\n// Usage\ntimeout(1000).???((lastTime) => {\n  let timeNow = Date.now() - lastTime;\n  console.log(`It\'s been: ", ${timeNow} ms`);\n});\n</code></pre>\n<p>%exp\nWhen working with promises, the <code>then()</code> function is used to manipulate values returned by async operations, chaining promises together.</p>\n<p>When the first promise in the chain gets resolved (in this case, <code>timeout</code>\'s promise gets resolved after 1000ms), <code>then()</code> is invoked, logging <code>It\'s been: 1000ms</code>(or a value very close to it) to the console.\n%</p>\n',
+    answers: [
+      {
+        text: 'then',
+        correct: true,
+      },
+      {
+        text: 'next',
+        correct: false,
+      },
+      {
+        text: 'success',
+        correct: false,
+      },
+    ],
+    comment: '<p>Some of the most exiting features of ES6 are generators and promises.</p>\n<p>Can you fill in the gaps in the following code snippets such that they make sense?</p>\n',
+  },
+}

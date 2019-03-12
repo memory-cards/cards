@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/object-part-1.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Consider the following object:</p>\n<pre><code>var car = {\n  model: "AwsomeCar",\n  color: "blue",\n  noDoors: 4\n};\nvar test = "model";\n</code></pre>\n<p>Would the following line print "model"?</p>\n<pre><code>console.log(car.test); // ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'no',
+        correct: true,
+      },
+      {
+        text: 'yes',
+        correct: false,
+      },
+    ],
+    comment: '<p>JavaScript has a particular type called <em>Object</em> which is a collection of keys and values.</p>\n<p>Pretty much everything apart from primitive values inherit from this unique type.</p>\n<p><strong>Creating objects</strong></p>\n<p>There are a couple of ways to create objects in JavaScript.</p>\n<p>Probably the most common is with the object initializer method:</p>\n<pre><code>var per = {\n   firstName:"john",\n   lastName:"smith"\n};\n</code></pre>\n<p><strong>Accessing object properties</strong></p>\n<p>Objects have properties which can be both primitive values and functions.</p>\n<p>These properties are generally accessed via dot notation.</p>\n<p>We can access our person objects name with the dot syntax:</p>\n<pre><code>console.log(per.firstName); //john\n</code></pre>\n<p>We can also access properties using the array syntax.</p>\n<p>This can be useful when you do not know the name of the property you want to change it at runtime dynamically .</p>\n<pre><code>var propName="firstName";\nconsole.log(per[propName]);\n</code></pre>\n<p>We can even add properties anytime we want to our objects:</p>\n<pre><code>per.age="40";\nper["homeTown"]="London";\n</code></pre>\n',
+  },
+}

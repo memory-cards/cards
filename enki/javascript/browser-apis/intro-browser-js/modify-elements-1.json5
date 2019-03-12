@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'elliehoward',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/intro-browser-js/modify-elements.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Change each element with the classname "red" to have a red text color.</p>\n<pre><code class="language-html">&#x3C;p>\n  Hello World!\n&#x3C;/p>\n&#x3C;p class="red">\n  This should be red\n&#x3C;/p>\n&#x3C;p>\n  This is not red\n&#x3C;/p>\n&#x3C;p class="red">\n  This should be red\n&#x3C;/p>\n&#x3C;p>\n  This is not red\n&#x3C;/p>\n&#x3C;p class="red">\n  This should be red\n&#x3C;/p>\n\n&#x3C;script>\nvar redTags = document.???("red");\n//start the loop\nfor (\n  var i = 0;\n  i &#x3C; redTags.length;\n  i++\n) {\n  redTags[i].style.color = \'red\';\n}\n&#x3C;/script>\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>getElementsByClassName</code>',
+        correct: true,
+      },
+      {
+        text: '<code>getElementsByTagName</code>',
+        correct: false,
+      },
+      {
+        text: '<code>getElementById</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p>Elements, once found, can be modified. You can modify any attribute of the element, as well as the style of the element. Here\'s an example that finds all of the paragraphs with the class "blue". There are no style rules associated with that CSS class, so let\'s change the style of each element.</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p>Hello World!&#x3C;/p>\n&#x3C;p class="blue">This should be blue&#x3C;/p>\n&#x3C;p>This is not blue&#x3C;/p>\n&#x3C;p class="blue">This should be blue&#x3C;/p>\n&#x3C;p>This is not blue&#x3C;/p>\n&#x3C;p class="blue">This should be blue&#x3C;/p>\n\n&#x3C;script>\nvar blueTags = document\n  .getElementsByClassName("blue");\n//start the loop\nfor (\n  var i = 0;\n  i &#x3C; blueTags.length;\n  i++\n) {\n  blueTags[i].style.color = \'blue\';\n}\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>We can also change the content of the tag to say "This is blue" rather than "This should be blue".</p>\n<pre><code class="language-javascript"> var blueTags = document\n   .getElementsByClassName("blue");\n for (\n   var i = 0;\n   i &#x3C; blueTags.length;\n   i++\n ) {\n   blueTags[i]\n     .style\n     .color = \'blue\';\n   blueTags[i]\n     .innerHTML = \'This is blue\';\n }\n</code></pre>\n',
+  },
+}

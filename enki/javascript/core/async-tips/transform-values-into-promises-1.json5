@@ -1,0 +1,48 @@
+{
+  __meta__: {
+    author: 'Dral',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async-tips/transform-values-into-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'promises',
+    'functional programming',
+    'async',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Complete the shortcut notation for *<em>Promises</em></p>\n<pre><code class="language-javascript">return ???.???(\'my value\');\n</code></pre>\n',
+    answers: [
+      {
+        text: 'in **ES6**:',
+      },
+      {
+        text: '<code>Promise</code>',
+      },
+      {
+        text: '<code>resolve</code>',
+      },
+      {
+        text: '<code>reject</code>',
+      },
+      {
+        text: '<code>new</code>',
+      },
+      {
+        text: '<code>send</code>',
+      },
+      {
+        text: '<code>return</code>',
+      },
+      {
+        text: '<code>prom</code>',
+      },
+    ],
+    comment: "<p>To keep your API consistent, or prototype for testing, it's often useful to return a <code>Promise</code> that resolves to a value directly.</p>\n<pre><code class=\"language-javascript\">return new Promise(resolve => {\n  resolve('my value')\n})\n</code></pre>\n<p><code>Promises</code> in <code>ES6</code> have a shortcut for this common pattern:</p>\n<pre><code class=\"language-javascript\">return Promise.resolve('my value')\n</code></pre>\n<p>Or to create a <code>Promise</code> representing an error:</p>\n<pre><code class=\"language-javascript\">return Promise.reject(\n  new Error('Boo! :o')\n)\n</code></pre>\n",
+  },
+}

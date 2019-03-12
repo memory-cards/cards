@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/strings-ii/string-replace.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+    'strings',
+    'html',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>??? is used to replace one or more occurrences of a substring with another string.</p>\n',
+    answers: [
+      {
+        text: 'String.replace()',
+        correct: true,
+      },
+      {
+        text: 'String.map()',
+        correct: false,
+      },
+      {
+        text: 'String.change()',
+        correct: false,
+      },
+      {
+        text: 'String.delete()',
+        correct: false,
+      },
+    ],
+    comment: '<p>The <code>String.replace</code> method only changes the first occurrence of a substring, not all possible matches: </p>\n<pre><code>var testString = "An example string for us";\ntestString = testString.replace(/ /,"%20"); \n// testString = "An%20example string for us"\n</code></pre>\n<p>To replace all occurrences, you need to set the global modifier:</p>\n<pre><code>var testString = "An example string for us";\ntestString = testString.replace(/ /g,"%20");\n// "An%20example%20string%20for%20us"\n</code></pre>\n',
+  },
+}

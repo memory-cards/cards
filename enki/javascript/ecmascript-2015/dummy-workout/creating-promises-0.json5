@@ -1,0 +1,21 @@
+{
+  __meta__: {
+    author: 'Dral',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/creating-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'promise',
+    'async',
+    'functional programming',
+    'es6',
+  ],
+  card: {
+    question: '<p>What are the <code>Promise()</code> callbacks?</p>\n<p>???</p>\n<p>???</p>\n<p><em><code>resolve</code>\n</em><code>reject</code>\n<em><code>response</code>\n</em><code>request</code>\n<em><code>url</code>\n</em><code>pass</code>\n*<code>fail</code></p>\n',
+    answers: [],
+    comment: "<p>The ES6 way to create promises is with the <code>new Promise()</code> constructor and two callbacks, <code>resolve</code> and <code>reject</code>, used to alter the promise state.</p>\n<pre><code>function timeout(delay) {\n  return new Promise( (resolve, reject) => {\n    setTimeout(() => resolve(), delay);\n  });\n}\n\n// Usage\ntimeout(1000).then(() => {\n  console.log('One second later');\n})\n</code></pre>\n<p>To reject the promise, call <code>reject</code> instead of <code>resolve</code>:</p>\n<pre><code>function myRequestionFn(url) {\n  return new Promise( (resolve, reject) => {\n    someRequestLib(url, (err, data) => {\n      if (err) {\n        reject(err);\n      } else if (data.status !== 200) {\n        reject(new Error('Non-200 status');\n      } else {\n        resolve(data);\n      }\n    });\n  });\n}\n\n// Usage\nmyRequestionFn('/my-api').then(data => {\n  console.log('Succesful request!');\n}).catch(err => {\n  console.error('Error ocurred:', err);\n});\n</code></pre>\n",
+  },
+}

@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/deleting-properties.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What is the output of the following code snippet?</p>\n<pre><code class="language-javascript">var obj = { one: 1 }\nobj.one = undefined;\nconsole.log(obj);\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>{ one: undefined }</code>',
+        correct: true,
+      },
+      {
+        text: '<code>{ one: null }</code>',
+        correct: false,
+      },
+      {
+        text: '<code>{ }</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p>Setting the property to <code>null</code> or <code>undefined</code> only removes the value associated with given property. It does not remove the key.</p>\n<pre><code>var obj = { one: 1 }\n</code></pre>\n<p>Setting to <code>undefined</code>:</p>\n<pre><code>obj.one = undefined;\nconsole.log(obj); // { one: undefined }\n</code></pre>\n<p>Setting to <code>null</code>:</p>\n<pre><code>obj.one = null;\nconsole.log(obj); // { one: null }\n</code></pre>\n<p>To delete:</p>\n<pre><code>delete obj.one;\nconsole.log(obj); // { }\n</code></pre>\n<p>Using the <code>delete</code> operator returns <code>true</code> for all cases except when the property is an own non-configurable property, in which case, <code>false</code> is returned in non-strict mode.</p>\n',
+  },
+}

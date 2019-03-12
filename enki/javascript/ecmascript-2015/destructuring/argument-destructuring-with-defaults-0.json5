@@ -1,0 +1,26 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/argument-destructuring-with-defaults.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Which of these code snippets will ensure this function doesn\'t throw an error?</p>\n<p>A)</p>\n<pre><code class="language-javascript">function x({ a, b }) {\n\n}\n</code></pre>\n<p>B)</p>\n<pre><code class="language-javascript">function x({ a, b } = {}) {\n\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'B',
+        correct: true,
+      },
+      {
+        text: 'A',
+        correct: false,
+      },
+    ],
+    comment: '<p>Tip: when using a destructuring-hash pattern in a function signature, try and use a fallback default <code>{}</code>:</p>\n<p>Good:</p>\n<pre><code class="language-javascript">function x({ a, b } = {}) {\n\n}\n</code></pre>\n<p>Bad:</p>\n<pre><code class="language-javascript">function x({ a, b }) {\n\n}\n</code></pre>\n<p><strong>Note</strong>: The second function can give a: <em>cannot read property a of undefined</em> error.</p>\n',
+  },
+}

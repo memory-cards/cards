@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/navigation/top-location-href.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Assume current window has no parent. What will the output of the following check be?</p>\n<pre><code class="language-javascript">window === window.top // ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>true</code>',
+        correct: true,
+      },
+      {
+        text: '<code>false</code>',
+        correct: false,
+      },
+      {
+        text: '<code>error</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p><code>top.location.href</code> returns the location of the topmost window in the window hierarchy. If a window has no parent, <code>top</code> is a reference to itself:</p>\n<pre><code>window === window.top\n</code></pre>\n<p>It is useful when dealing with pages that have multiple <code>iframes</code> (e.g. map). Inside the frame, <code>window.location.href</code> returns the current frame, while <code>top.location.href</code> references the main browser window.</p>\n',
+  },
+}

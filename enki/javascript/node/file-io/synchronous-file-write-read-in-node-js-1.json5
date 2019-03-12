@@ -1,0 +1,44 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/file-io/synchronous-file-write-read-in-node-js.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Which method of <code>fs</code> can be used to write from a file in a synchronous fashion?</p>\n<pre><code class="language-javascript">const fs = require(\'fs\')\n\nfs.???(file, data)\n</code></pre>\n',
+    answers: [
+      {
+        text: 'writeFileSync',
+        correct: true,
+      },
+      {
+        text: 'writeSyncFile',
+        correct: false,
+      },
+      {
+        text: 'writeSync',
+        correct: false,
+      },
+      {
+        text: 'write',
+        correct: false,
+      },
+      {
+        text: 'writeFileAsync',
+        correct: false,
+      },
+      {
+        text: 'writeFile',
+        correct: false,
+      },
+    ],
+    comment: '<p>The File System (FS) module provides file I/O. The methods have asynchronous and synchronous forms.</p>\n<p>When using the synchronous form any exceptions are immediately thrown. It is only recommended to use this form during program startup.</p>\n<p>Use <code>fs.writeFileSync</code>  to <strong>write data to a file</strong>:</p>\n<pre><code class="language-javascript">const fs = require(\'fs\')\n\nfs.writeFileSync(file, data[, options])\n</code></pre>\n<p>This is the same syntax as <code>fs.writeFile</code> but it is synchronous and returns undefined rather than a callback function.</p>\n<pre><code class="language-javascript">fs.readFileSync(file[, options])\n</code></pre>\n<p>Use <code>fs.readFileSync</code> to <strong>return the contents of a file</strong>:</p>\n<pre><code class="language-javascript">// suppose file.txt\nconst fileContent =\n  fs.readFileSync(\'./file.txt\')\n</code></pre>\n<p>This is the synchronous version of <code>fs.readFile</code>. It returns a string or a buffer.</p>\n',
+  },
+}

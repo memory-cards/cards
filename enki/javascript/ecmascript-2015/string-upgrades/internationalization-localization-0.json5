@@ -1,0 +1,43 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-upgrades/internationalization-localization.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'locale',
+  ],
+  card: {
+    question: '<p>Create a <code>Collator</code> based on *German</p>\n<pre><code class="language-javascript">var i10nDE = new ???.???("de");\n</code></pre>\n',
+    answers: [
+      {
+        text: 'language:',
+      },
+      {
+        text: 'Intl',
+      },
+      {
+        text: 'Collator',
+      },
+      {
+        text: 'Language',
+      },
+      {
+        text: 'International',
+      },
+      {
+        text: 'Languages',
+      },
+      {
+        text: 'String',
+      },
+      {
+        text: 'Compare',
+      },
+    ],
+    comment: '<p><code>Collator</code> is an object that provides locale-specific string comparisons. It\'s aware of Unicode.</p>\n<p>To sort through a list of letters in two different languages:</p>\n<pre><code class="language-javascript">var list = [ "ä", "a", "z" ];\nvar i10nDE = new Intl.Collator("de");\nvar i10nSV = new Intl.Collator("sv");\n</code></pre>\n<p>In German, <code>ä</code> sorts with <code>a</code>. In Swedish, <code>ä</code> sorts after <code>z</code>.</p>\n<pre><code class="language-javascript">i10nDE.compare("ä", "z") === -1;\ni10nSV.compare("ä", "z") === +1;\n\nconsole.log(list.sort(i10nDE.compare));\n// [ "a", "ä", "z" ]\nconsole.log(list.sort(i10nSV.compare));\n// [ "a", "z", "ä" ]\n</code></pre>\n',
+  },
+}

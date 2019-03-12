@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-ii/optionaldependencies-in-npm.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>In what object of <code>package.json</code> can dispensable dependencies be specified?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'optionalDependenceis',
+        correct: true,
+      },
+      {
+        text: 'peerDependencies',
+        correct: false,
+      },
+      {
+        text: 'devDependenceis',
+        correct: false,
+      },
+      {
+        text: 'dependencies',
+        correct: false,
+      },
+    ],
+    comment: '<p><code>optionalDependencies</code> object in <code>package.json</code> file can be used to specify dependencies that are not <strong>necessarily needed</strong>.</p>\n<p>If <code>npm</code> can\'t find or fails to install the dependency, the installation of your whole module will continue.</p>\n<pre><code class="language-javascript">//package.json\n{ //other props\n  "optionalDependencies": {\n    "enki" : "1.x"\n  }\n  //other props\n}\n</code></pre>\n<p>Keep in mind that is still the user\'s responsibility to handle the lack of the dependency:</p>\n<pre><code class="language-javascript">try {\n  var enki = require(\'enki\');\n  var enkiVer =\n    require(\'enki/package.json\').version;\n} catch (error) {\n  enki = null;\n}\n// later in the code\nif (enki) {\n  enki.enkiMethod();\n}\n</code></pre>\n<p>It is better to put a dependency name just in one place as <code>optionalDependencies</code> will override entries with the same name in <code>dependencies</code>.</p>\n',
+  },
+}

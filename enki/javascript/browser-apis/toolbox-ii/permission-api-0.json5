@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-ii/permission-api.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>How do you check the status of a permission? ???</p>\n',
+    answers: [
+      {
+        text: '<code>permissions.query();</code>',
+        correct: true,
+      },
+      {
+        text: '<code>permissions.status();</code>',
+        correct: false,
+      },
+      {
+        text: '<code>permissions.log();</code>',
+        correct: false,
+      },
+      {
+        text: '<code>permission.status();</code>',
+        correct: false,
+      },
+      {
+        text: '<code>permission.log();</code>',
+        correct: false,
+      },
+      {
+        text: '<code>permission.query();</code>',
+        correct: false,
+      },
+    ],
+    comment: "<p>The <strong>Permission API</strong> is a standard way to check the permission status of an API.</p>\n<p>You can check the status of a permission using <code>permissions.query()</code>. The status is either <strong>granted</strong>, <strong>denied</strong> or <strong>prompt</strong> (if you need to request the permission from the user).</p>\n<p>For example:</p>\n<pre><code>// Check for Geolocation API permissions.\n// Pass permission's name into method\n// as 'permissionDescriptor' object.\nnavigator.permissions\n               .query({name:'geolocation'})\n  // The Promise resolves to\n  // `permissionStatus' object\n  .then(function(permissionStatus) {\n    // print state of geolocation permission\n    console.log('geo permission\n        state is ', permissionStatus.state);\n  });\n</code></pre>\n<p>You can also create an event handler for <code>permissionStatus.onchange</code>.</p>\n<p>Requesting permission from the user still depends on the specific API.</p>\n<p>Currently this API is only available in <strong>Chrome</strong>.</p>\n",
+  },
+}

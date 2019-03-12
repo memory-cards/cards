@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/introducing-iterators.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What method do iterators canonically make use of to advance the iteration?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'iterator.next()',
+        correct: true,
+      },
+      {
+        text: 'iterator.pop()',
+        correct: false,
+      },
+      {
+        text: 'iterator.get()',
+        correct: false,
+      },
+      {
+        text: 'iterator.advance()',
+        correct: false,
+      },
+      {
+        text: 'iterator.step()',
+        correct: false,
+      },
+    ],
+    comment: '<p>An iterator is a special type of object that returns items from a sequence one at a time and remembers its position within the sequence.</p>\n<p>A sequence can be anything but for simplicity let\'s imagine we have an array of numbers from 1 to 5:</p>\n<pre><code class="language-javascript">[1,2,3,4,5];\n</code></pre>\n<p>Whilst we could easily write a loop to iterate through these numbers let\'s write a function to return an iterator to do this.</p>\n<pre><code class="language-javascript">function getIterator(){\n var num = [1,2,3,4,5];\n var nextIndex = 0;\n\n return {\n  next: function(){\n   var x = num[nextIndex];\n   nextIndex++;\n   return {\n    value: x\n   }\n  }\n };\n}\n</code></pre>\n<p>What\'s going on here?</p>\n<p>We have defined two variables - our sequence of numbers (num) and another (nextIndex) to keep track of our current position.</p>\n<p>We then return an object with a next method that will retrieve a value at the current position, increment the position and return an object with our value in the value property.</p>\n<p>We can use this iterator as follows:</p>\n<pre><code class="language-javascript">var it = getIterator();\nit.next(); //Object {value: 1}\nit.next(); //Object {value: 2}\nit.next(); //Object {value: 3}\nit.next(); //Object {value: 4}\nit.next(); //Object {value: 5}\n</code></pre>\n',
+  },
+}

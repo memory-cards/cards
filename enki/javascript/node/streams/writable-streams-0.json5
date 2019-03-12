@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/streams/writable-streams.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Complete the code snippet to write data to the writable stream:</p>\n<pre><code class="language-javascript">rstream.on(\'???\', function(data) {\n  wstream.???(data);\n});\n</code></pre>\n',
+    answers: [
+      {
+        text: 'data',
+      },
+      {
+        text: 'write',
+      },
+      {
+        text: 'input',
+      },
+      {
+        text: 'event',
+      },
+      {
+        text: 'callback',
+      },
+      {
+        text: 'print',
+      },
+    ],
+    comment: '<p>The <code>write()</code>  method is used to write data to a writable stream. Take the following example:</p>\n<pre><code class="language-javascript">var fs = require(‘fs’);\nvar rstream = fs.createReadStream\n                        (‘file.txt’);\nvar wstream = fs.createWriteStream\n                        (‘output.txt’);\n\nrstream.on(‘data’, function(data) {\n\n wstream.write(data);\n\n});\n</code></pre>\n<p>The above example initiates both a readable stream and a writable stream. A callback function is then created which is called when data is read from the readable stream, this data is then written to <code>output.txt</code> using the writable stream.</p>\n<p>The <code>write()</code> method returns a boolean value acting as an indicator to whether the write operation was successful. If the write was successful and more data can now be written then <code>true</code>  is returned. If the write operation was unsuccessful then <code>false</code> is returned.</p>\n',
+  },
+}

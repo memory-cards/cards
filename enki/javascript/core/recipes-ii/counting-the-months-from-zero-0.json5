@@ -1,0 +1,55 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-ii/counting-the-months-from-zero.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+    'workout',
+  ],
+  card: {
+    question: '<p>Fill in the missing gaps to create a date on the 15 December 2019</p>\n<pre><code class="language-javascript">var date = new ???(???, ???, ???)\nconsole.log(date)\n// Sun Dec 15 2019 00:00:00 GMT+0000 (GMT)\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Date',
+      },
+      {
+        text: '2019',
+      },
+      {
+        text: '11',
+      },
+      {
+        text: '15',
+      },
+      {
+        text: '2018',
+      },
+      {
+        text: '12',
+      },
+      {
+        text: '0',
+      },
+      {
+        text: '13',
+      },
+      {
+        text: '14',
+      },
+      {
+        text: 'date',
+      },
+      {
+        text: 'D',
+      },
+      {
+        text: 'DateTime',
+      },
+    ],
+    comment: '<p>The months of the year in a date object begin counting from zero.</p>\n<pre><code class="language-javascript">var date = new Date(2015,1,21);\nconsole.log(date);\n</code></pre>\n<p>The date that will not be the 21st of January, but instead this date object represents: <code>Sat Feb 21 2015 00:00:00 GMT-700</code>.</p>\n<p>To print the 21st of January, use month <code>0</code>:</p>\n<pre><code class="language-javascript">var date = new Date(2015,0,21);\nconsole.log(date);\n</code></pre>\n<p>Similarly, using the 12th month of 2015 in a date object will print January of 2016:</p>\n<pre><code class="language-javascript">var date = new Date(2015,12,21);\nconsole.log(date);\n// date = Thur Jan 21 2016 00:00:00\n</code></pre>\n',
+  },
+}

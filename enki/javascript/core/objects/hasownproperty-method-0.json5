@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/hasownproperty-method.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+  ],
+  card: {
+    question: "<p>What does the following JS code return? ???</p>\n<pre><code class=\"language-javascript\">enki = new Object();\nenki.practiceQuestion = 'true';\n\nfunction tricky() {\n   enki.newQuestion = enki.practiceQuestion;\n   delete enki.practiceQuestion;\n}\n\nenki.hasOwnProperty('practiceQuestion');\nenki.hasOwnProperty('magicPowers');\ntricky();\nenki.hasOwnProperty('practiceQuestion');\n</code></pre>\n",
+    answers: [
+      {
+        text: 'True, False, False',
+        correct: true,
+      },
+      {
+        text: 'True, False, True',
+        correct: false,
+      },
+      {
+        text: 'True, True, False',
+        correct: false,
+      },
+      {
+        text: 'False, True, True',
+        correct: false,
+      },
+    ],
+    comment: "<p>The <code>hasOwnProperty</code> method returns a boolean indicating whether the object has the specified property.</p>\n<pre><code>client = new Object();\nclient.connect = 'true';\n\nfunction foo() {\n  client.newConnect = client.connect\n  delete client.connect\n}\n\nclient.hasOwnProperty('connect');\n// returns true\nfoo();\nclient.hasOwnProperty('connect');\n// returns false\n</code></pre>\n<p>Using <code>hasOwnProperty</code> is a reliable method of checking for the existence of a property of an object.</p>\n<p>It is considered the right practice to use <code>hasOwnProperty</code> in every <code>for in loop</code> to avoid errors from extended native prototypes.</p>\n",
+  },
+}

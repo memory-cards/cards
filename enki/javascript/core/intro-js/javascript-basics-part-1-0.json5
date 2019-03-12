@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/intro-js/javascript-basics-part-1.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What syntax is used in *JavaScript</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'for **single line** comments?',
+        correct: true,
+      },
+      {
+        text: '//',
+        correct: false,
+      },
+      {
+        text: '<code>/* */</code>',
+        correct: false,
+      },
+      {
+        text: '<code>#</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p>Like most programming languages, JavaScript has a number of rules its code must adhere to.</p>\n<h3>Case Sensitivity</h3>\n<p>Everything in JavaScript is case sensitive.</p>\n<h3>Keywords</h3>\n<p>Like most languages, there are a number of reserved words in JavaScript that you cannot use to name your functions and variables.</p>\n<h3>Identifier naming rules</h3>\n<p>When naming any function, property or variable, the first character must be a letter, $ sign or underscore.</p>\n<p>After the first character, you are free to use numbers, letters, dollar signs or underscores.</p>\n<pre><code class="language-javascript">var name = "Enki"; //valid\nvar 2Company = "Enki"; //not valid\n</code></pre>\n<h3>Comments</h3>\n<p>Comments can be created in 2 ways in JavaScript.</p>\n<p>As a single line comment:</p>\n<p><code>//I am a single line comment</code></p>\n<p>You can also add single line comments to the same line as other code:</p>\n<pre><code class="language-javascript">var company="enki"; //define company\n</code></pre>\n<p>Or if you have more text you can use a block comment:</p>\n<pre><code class="language-javascript">/*\nI am a block comment\n*/\n</code></pre>\n',
+  },
+}

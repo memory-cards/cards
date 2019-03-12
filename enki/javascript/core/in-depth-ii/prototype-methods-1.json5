@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'dean',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/in-depth-ii/prototype-methods.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+    'introduction',
+    'workout',
+    'deep',
+    'prototype',
+    'methods',
+    'class',
+    'object',
+  ],
+  card: {
+    question: '<p>An object in JavaScript that can be inherited from is called ???.</p>\n',
+    answers: [
+      {
+        text: 'prototype',
+        correct: true,
+      },
+      {
+        text: 'variable',
+        correct: false,
+      },
+      {
+        text: 'function',
+        correct: false,
+      },
+    ],
+    comment: '<p>Prototypes are objects with properties that other objects inherit. Therefore, any methods defined by the prototype are also inherited, and can be used by the inheriting object.</p>\n<p>As a result, the object that inherits from the prototype object is essentially a subclass of the prototype.</p>\n<pre><code class="language-javascript">function Animal(name) {\n  this.name = name;\n  this.feline = true;\n  this.hasFur = true;\n}\n\n// Inherited prototype method\nAnimal.prototype.sayName = function() {\n  console.log("My name is " +this.name);\n}\n\nfunction Cat(name) {\n  this.name = name;\n}\n\n// Cat becomes a subclass of Animal\n// and inherits its properties/methods\nCat.prototype = new Animal();\nvar Kitty = new Cat("Kitty");\n\nKitty.sayName();\n// "My name is Kitty"\n</code></pre>\n',
+  },
+}

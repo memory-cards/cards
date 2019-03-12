@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/web-servers/custom-node-repl-server.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'workout',
+  ],
+  card: {
+    question: '<p>Listen to exit event of a custom REPL:</p>\n<pre><code class="language-javascript">replServer.???(???, function() {\n  process.exit()\n});\n</code></pre>\n',
+    answers: [
+      {
+        text: 'on',
+      },
+      {
+        text: "'exit'",
+      },
+      {
+        text: "'close'",
+      },
+      {
+        text: "'end'",
+      },
+    ],
+    comment: '<p><strong>Node</strong> allows users to created their own <em>Read-Eval-Print-Loop</em>s (<strong>REPL</strong>).\nBasic usage:</p>\n<pre><code class="language-javascript">repl.start(prompt, stream);\n</code></pre>\n<p><code>prompt</code> is a string that\'s used for the prompt of your <strong>REPL</strong> and defaults to <code>">"</code></p>\n<p><code>stream</code> is the stream that the <strong>REPL</strong> listens on and defaults to <code>process.stdin</code></p>\n<p><strong>REPL</strong> exposed with <code>net</code> module - available with <code>telnet</code> :</p>\n<pre><code class="language-javascript">var net = require("net"),\n    repl = require("repl");\n\nnet.createServer(function (socket) {\n  var replServer = repl.start("remote> ",\nsocket);  \n}).listen(5001);\n</code></pre>\n<p>Listen to <code>exit</code> event:</p>\n<pre><code class="language-javascript">replServer.on(\'exit\', function () {\n  console.log(\'Got "exit" event !\');\n  process.exit();\n});\n</code></pre>\n<p>Custom commands can also be defined:</p>\n<pre><code class="language-javascript">replServer.defineCommand(keyword, cmd)\n</code></pre>\n',
+  },
+}

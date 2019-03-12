@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'Bruno',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-i/use-the-apply-function-to-get-the-min-or-max-of-an-array.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+  ],
+  card: {
+    question: '<p>What is the return value of the following line?</p>\n<pre><code class="language-javascript">Math.max.apply(null, [5,8,2]);\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>8</code>',
+        correct: true,
+      },
+      {
+        text: '<code>NaN</code>',
+        correct: false,
+      },
+      {
+        text: '<code>-Infinity</code>',
+        correct: false,
+      },
+      {
+        text: '<code>5</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p>Common idiom:</p>\n<pre><code class="language-javascript">var nums = [1, 3, 2]\nMath.max.apply(Math,nums) // 3\nMath.min.apply(Math,nums) // 1\n</code></pre>\n<p>Note that <code>apply</code> is required here because <code>Math.max</code> does not directly support arrays as an argument.</p>\n<p>More examples:</p>\n<pre><code class="language-javascript">Math.max(1,3,2)                 // 3\nMath.max([1,3,2])             // NaN\nMath.max.apply([1,3,2]) // -Infinity\nMath.max.apply({},[1,3,2])      // 3\nMath.max.apply(null,[1,3,2])    // 3\nMath.max.apply(Math,[1,3,2])    // 3\n</code></pre>\n<p>The first argument provided to <code>.apply</code> is the "context". The value of this context does not matter in this case, but it is common practice when using <code>.apply</code>\nto provide the relevant class as context.</p>\n',
+  },
+}

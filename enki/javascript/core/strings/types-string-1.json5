@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/strings/types-string.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Which one of the following is correct ?</p>\n<pre><code class="language-javascript">var company = "Enki";\nvar company = \'Enki\';\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'both',
+        correct: true,
+      },
+      {
+        text: 'first',
+        correct: false,
+      },
+      {
+        text: 'second',
+        correct: false,
+      },
+      {
+        text: 'none',
+        correct: false,
+      },
+    ],
+    comment: '<p>You can declare a string value in JavaScript using either single or double quotes - JavaScript will accept either:</p>\n<pre><code>var company = "Enki";\nvar company = \'Enki\';\n</code></pre>\n<p>You can connect, usually called concat, two strings together with the \'+\' operator:</p>\n<pre><code class="language-javascript">var longText = "abc" + "def" + "ghi";\n//longText is equal to "abcdefghi"\n</code></pre>\n<p>You can also use the backslash character to continue writing text on multiple lines (make sure nothing is after the backslash).</p>\n<pre><code class="language-javascript">var longerText = "abc\\\ndef\\\nghi";\n</code></pre>\n<p>There are also special characters that can be used by preceding the character with a backslash. Here are some common ones:</p>\n<pre><code>\\’ single quote\n\\" double quote\n\\\\ backslash\n\\n new line\n\\r character return\n\\t tab\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/intro-react/what-is-jsx.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What will the following *<em>JSX</em></p>\n<pre><code>const el = &#x3C;p>&#x3C;3 JSX&#x3C;/p>\n\n// compiled to:\n\nconst el = React.createElement(???,\n ???, ???)\n</code></pre>\n',
+    answers: [
+      {
+        text: 'expression compile to?',
+      },
+      {
+        text: "<code>'p'</code>",
+      },
+      {
+        text: '<code>null</code>',
+      },
+      {
+        text: "<code>'<3 JSX'</code>",
+      },
+      {
+        text: '<code><p></code>',
+      },
+      {
+        text: '<code>jsx</code>',
+      },
+      {
+        text: "<code>'<p><3 JSX</p>'</code>",
+      },
+      {
+        text: "<code>'</p>'</code>",
+      },
+    ],
+    comment: '<p><strong>JSX</strong> is syntactic sugar that brings an <code>XML</code>-like syntax to <strong>JavaScript</strong>.</p>\n<p>This means that <strong>JSX</strong> is a way of writing your <strong>HTML</strong> inside <code>JS</code> code.</p>\n<p>A <strong>JSX</strong> expression is evaluated to a <strong>React</strong> <code>element</code>, which is short-hand for calling <code>React.createElement()</code> Think of <code>ReactElement</code>s as the <strong>UI</strong> building blocks of <strong>React</strong>. We will come back to this later.</p>\n<p><strong>JSX</strong> expressions are transformed (compiled) into standard <code>JS</code> objects.</p>\n<p>For example, the following <strong>JSX</strong> code:</p>\n<pre><code class="language-jsx">const el = &#x3C;h2>Enki!&#x3C;/h2>;\n</code></pre>\n<p>will be <em>compiled</em> to:</p>\n<pre><code>const el = React.createElement(\'h2\',\n null, \'Enki!\');\n</code></pre>\n<p>From here, you can embed <code>JS</code> expressions within <strong>JSX</strong> by wrapping them with <code>{ }</code> curly brackets:</p>\n<pre><code>const x = "Hey there!";\n\nconst el = &#x3C;h2>{x}&#x3C;/h2>\n</code></pre>\n<p>When rendered, this element will display <code>"Hey there"</code> as a <code>h2</code>.</p>\n<p><strong>JSX</strong> expressions can be used everywhere in <code>JS</code>. You can:</p>\n<ul>\n<li><code>return</code> them</li>\n<li>use them in <code>for</code> loops</li>\n<li>use them in <code>if</code> statements</li>\n<li>accept them as <code>function</code> arguments</li>\n<li>etc.</li>\n</ul>\n<p><strong>React</strong> doesn\'t require <strong>JSX</strong> usage, but its usage is highly encouraged as well as <code>Babel</code> compiling.</p>\n',
+  },
+}

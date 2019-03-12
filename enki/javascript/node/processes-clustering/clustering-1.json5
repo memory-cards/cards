@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/processes-clustering/clustering.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Identify if the code is executed by the master process:</p>\n<pre><code class="language-javascript">var cluster = require(\'cluster\');\nif(cluster.???){\n};\n</code></pre>\n',
+    answers: [
+      {
+        text: 'isMaster',
+        correct: true,
+      },
+      {
+        text: 'master',
+        correct: false,
+      },
+      {
+        text: 'notChild',
+        correct: false,
+      },
+      {
+        text: 'child',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>Node</strong> processes run in a single thread limited by default to <code>512Mb</code> on <code>32-bit</code> machines and <code>1Gb</code> on <code>64-bit</code>.</p>\n<p> In order to avoid processing power bottlenecks the <code>cluster</code> module can be used to split a single process into multiple ones (<em>workers</em>). Child processes share the same server ports with the master process.</p>\n<p>Import the cluster module:</p>\n<pre><code class="language-javascript">var cluster = require(\'cluster\');\n</code></pre>\n<p>As a cluster module executes the same <strong>Node</strong> process multiple times, you need to find what portion of the code is executed by the children or master.\nIdentify the master process:</p>\n<pre><code class="language-javascript">if(cluster.isMaster) { ... };\n</code></pre>\n<p>You can then initiate the master process, as this will initiate other worker processes:</p>\n<pre><code class="language-javascript">cluster.fork();\n</code></pre>\n<p>The most common events contained by <code>cluster</code> are the <code>online</code> and <code>exit</code> events. These are emitted either when the worker process is forked or when the worker process is terminated.</p>\n',
+  },
+}

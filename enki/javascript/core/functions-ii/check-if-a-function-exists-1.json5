@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-ii/check-if-a-function-exists.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Complete the <code>if</code> statement to check if a function exists:</p>\n<pre><code class="language-javascript">if(??? myFunction === ???){\n  myFunction();\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'typeof',
+      },
+      {
+        text: '”function”',
+      },
+      {
+        text: 'function',
+      },
+      {
+        text: '!',
+      },
+      {
+        text: 'undefined',
+      },
+    ],
+    comment: '<p>There are certain scenarios where scripts are shared between different parts of a website. This can result in calling functions that <em>do not exist</em>. </p>\n<p>Check if a <code>function</code> exists beforehand:</p>\n<pre><code class="language-javascript">if (typeof myFunction === "function") { \n    // safe to use the function\n    myFunction();\n}\n</code></pre>\n',
+  },
+}

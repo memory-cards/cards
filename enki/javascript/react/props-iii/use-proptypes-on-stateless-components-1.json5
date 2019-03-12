@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-iii/use-proptypes-on-stateless-components.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Consider the following component defined as a simple function:</p>\n<pre><code class="language-javascript">let enki = ({enki}) => &#x3C;h1>{enki}&#x3C;/h1>;\n</code></pre>\n<p>Complete the code snippet to enforce <strong>prop validation</strong>:</p>\n<pre><code class="language-javascript">???.??? = {\n  enki: React.PropTypes.string,\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>enki</code>',
+      },
+      {
+        text: '<code>propTypes</code>',
+      },
+      {
+        text: '<code>set</code>',
+      },
+      {
+        text: '<code>get</code>',
+      },
+      {
+        text: '<code>React</code>',
+      },
+      {
+        text: '<code>ReactDOM</code>',
+      },
+      {
+        text: '<code>props</code>',
+      },
+    ],
+    comment: '<p>Since <strong>React 0.14</strong> it is possible to define components as a simple function:</p>\n<pre><code>let comp = ({enki}) => &#x3C;h1>{enki}&#x3C;/h1>;\n</code></pre>\n<p>Yet, a type for the arguments can still be specified using <code>propTypes</code>:</p>\n<pre><code>comp.propTypes = {\n  enki: React.PropTypes.string\n};\n</code></pre>\n',
+  },
+}

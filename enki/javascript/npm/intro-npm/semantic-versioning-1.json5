@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/intro-npm/semantic-versioning.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>From the perspective of a package maintainer, incrementing the rightmost number in the version means</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'bug fixes',
+        correct: true,
+      },
+      {
+        text: 'new stable feature',
+        correct: false,
+      },
+      {
+        text: 'new experimental feature',
+        correct: false,
+      },
+    ],
+    comment: "<p>It's almost always better to use the newest version of a package as it often offers fixes or improvements to its functionality. As a package maintainer it is important to communicate any changes made in a release as it may break code[1] depending on the package.</p>\n<p>For package maintainers, there are some guidelines when it comes to versioning:</p>\n<ul>\n<li>the first version should be <em>1.0.0</em>, though it's not a necessity</li>\n<li>patch releases and bug fixes should increment the last number, <em>1.0.0</em> to <em>1.0.1</em></li>\n<li>minor releases and new features that don't break existing functionality should increment the middle number, <em>1.0.0</em> to <em>1.1.0</em></li>\n<li>major releases or changes which break backwards compatibility should increment the first number, <em>1.0.0</em> to <em>2.0.0</em></li>\n</ul>\n<p>You can specify which updates to the packages you would want to receive:</p>\n<ul>\n<li>the latest patch: <em>1.0</em> or <em>1.0.x</em> or <em>~1.0.0</em></li>\n<li>the latest minor release: <em>1</em> or <em>1.x</em> or <em>^1.0.0</em></li>\n<li>the latest major release: <em>* or </em>x*</li>\n</ul>\n",
+  },
+}

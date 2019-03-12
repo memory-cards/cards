@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/symbol/symbol-special-properties.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What will be returned by the following call?</p>\n<pre><code class="language-javascript">const obj = {}\nobj[Symbol(\'enki\')] = 1\nobj[Symbol()] = 2\n\nconsole.log(\n  Object.getOwnPropertyNames(obj)\n)\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '[]',
+        correct: true,
+      },
+      {
+        text: "['Symbol()']",
+        correct: false,
+      },
+      {
+        text: "['Symbol(enki)']",
+        correct: false,
+      },
+      {
+        text: "['Symbol()', 'Symbol(enki)']",
+        correct: false,
+      },
+    ],
+    comment: '<p>Symbols behave differently to other primitives such as strings and numbers.</p>\n<p>Lets imagine for this section we declare the following object:</p>\n<pre><code class="language-javascript">var obj = {}\nobj["company"] = "Enki"\nobj[Symbol()]="You wont see me";\n</code></pre>\n<p>You will find symbols are ignored in <strong>for..in</strong> loops:</p>\n<pre><code class="language-javascript">for(var i in obj){\nconsole.log(i)\n}\n//company\n</code></pre>\n<p>Symbols do not show up in <strong>object.keys</strong></p>\n<pre><code class="language-javascript">Object.keys(obj);\n//["company"]\n</code></pre>\n<p>Symbols are not returned from a call to <strong>getOwnPropertyNames</strong>:</p>\n<pre><code class="language-javascript">Object.getOwnPropertyNames(obj);\n//["company"]\n</code></pre>\n<p><strong>JSON.stringify</strong> ignores symbols:</p>\n<pre><code class="language-javascript">JSON.stringify(obj);\n//"{"company":"enki"}"\n</code></pre>\n<p>Note you can retrieve symbols with <strong>getOwnPropertySymbols</strong></p>\n<pre><code class="language-javascript">Object.getOwnPropertySymbols(obj);\n</code></pre>\n',
+  },
+}

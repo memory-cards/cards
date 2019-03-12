@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-i/page-visibility-api.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which of the following is not a visibleState property value? ???</p>\n',
+    answers: [
+      {
+        text: 'rawview',
+        correct: true,
+      },
+      {
+        text: 'hidden',
+        correct: false,
+      },
+      {
+        text: 'visible',
+        correct: false,
+      },
+      {
+        text: 'prerender',
+        correct: false,
+      },
+      {
+        text: 'unloaded',
+        correct: false,
+      },
+    ],
+    comment: '<p>The <em>Page Visibility API</em> allows you to query whether a page is visible or in focus.</p>\n<p>It is common for users to have multiple tabs open so this information could be used to trigger an action such as starting an animation or stopping network requests to save resources.</p>\n<p>When the user minimises the webpage or moves to a different tab, the API sends a <code>visibilityChange</code> event.</p>\n<p>Note that at the time of writing the name for this event and hidden property differs across browsers.</p>\n<p>Possible property values for <code>visibleState</code> are:</p>\n<ul>\n<li>hidden</li>\n<li>visible</li>\n<li>prerender</li>\n<li>unloaded</li>\n</ul>\n<p>Detecting visibility changes:</p>\n<pre><code class="language-javascript">document\n.addEventListener("visibilitychange",\nfunction(){\n    if(document.hidden){\n        console.log(\'hidden\');\n    }\n    else{\n        console.log(\'shown\');\n    }\n}, false);\n</code></pre>\n',
+  },
+}

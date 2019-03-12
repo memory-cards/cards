@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express-ii/vhost-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What parameters does the <code>vhost</code> parameter need ?</p>\n<pre><code class="language-javascript">vhost(???, ???);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'hostname',
+      },
+      {
+        text: 'handler',
+      },
+      {
+        text: 'app',
+      },
+      {
+        text: 'require',
+      },
+      {
+        text: 'connect',
+      },
+      {
+        text: 'req.vhost',
+      },
+    ],
+    comment: '<p>Virtual hosting represents the method of hosting multiple domain names (with separate handling for each one) on a single server.</p>\n<p>The <strong>Express 4.0</strong> middleware module called <code>vhost</code> deals with this, handing off requests to <code>handle</code> when the incoming host matches <code>hostname</code>. Before using it, the module must be installed:</p>\n<pre><code class="language-bash">$ npm install vhost\n</code></pre>\n<p>And imported:</p>\n<pre><code class="language-javascript">var vhost = require(\'vhost\');\n</code></pre>\n<p>The constructor has two parameters: <code>hostname</code> and <code>handler</code>. The former can be a string or a <strong>RegExp</strong> object.</p>\n<p>After the host is matched and the request is sent to the <code>handler</code>, the <code>req.vhost</code> property will be populated with an object that will have numeric properties corresponding to every wildcard and <code>hostname</code>.</p>\n<pre><code class="language-javascript">var app = connect();\napp.use(vhost(\'ex.example.com\', exApp));\n//vhost routing to main app for ex\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/spread-map-set-math/map-set-weakmap-weakset.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">// ES6 maps are iterable objects,\n// a concise loop format is:\nvar map = new Map();\nfor (let ???) {\n  console.log(`${key}: ${value}`)\n}\n</code></pre>\n<p>%exp\nThe pair <code>[key,value]</code> represents one tuple from the map that the <code>for</code> loop is iterating over.\n%</p>\n',
+    answers: [
+      {
+        text: '<code>[key, value] of map</code>',
+        correct: true,
+      },
+      {
+        text: '<code>i=0; i > map.length; i++;</code>',
+        correct: false,
+      },
+      {
+        text: '<code>i=1; i == true; i++;</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p>How confident are you about using JavaScript ES6 data structures?</p>\n',
+  },
+}

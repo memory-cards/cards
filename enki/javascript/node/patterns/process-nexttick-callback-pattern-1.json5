@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/patterns/process-nexttick-callback-pattern.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'workout',
+    'deep',
+    'obscura',
+  ],
+  card: {
+    question: '<p>What can be used to replicate the basic behaviour of <code>setTimeout(fn, 0)</code>?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'process.nextTick()',
+        correct: true,
+      },
+      {
+        text: 'process.next()',
+        correct: false,
+      },
+      {
+        text: 'process.nextTick(0)',
+        correct: false,
+      },
+    ],
+    comment: '<p><em>Event loop</em> can be viewed as a queue of callbacks that are processed by <strong>Node</strong> on consequent <strong>ticks</strong>.</p>\n<p><code>process.nextTick()</code> basically defers the execution of an action until the next tick of the <em>Event Loop</em>.</p>\n<p>Basic behaviour of <code>process.nextTick()</code> can be achieved with <code>setTimeout(fn,0)</code>, yet the former provide better performance.</p>\n<p>Its usage proves useful when you want to interleave the execution of a <strong>CPU</strong> intensive task with other events.</p>\n<pre><code class="language-javascript">function compute() {\n    // complicated calculations    \n    process.nextTick(compute);}\n//other events\ncompute();\n</code></pre>\n<p>Here, the execution of <code>compute()</code> will be reserved for the next tick of the event loop, after other events are queued in it.</p>\n<p><code>process.nextTick()</code> is also used to keep callbacks truly asynchronous:</p>\n<pre><code class="language-javascript">function asyncFn(data, callback) {\n    process.nextTick(function() {\n        //callback value logic\n  });\n}\n</code></pre>\n<p>It is also used before emitting an event to provide correct functionality.</p>\n',
+  },
+}

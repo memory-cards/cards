@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/publishing/creating-a-node-module.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'workout',
+    'deep',
+    'new',
+  ],
+  card: {
+    question: '<p>In order for the JavaScript file to be a module, it must have</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'a non-empty <code>exports</code> object',
+        correct: true,
+      },
+      {
+        text: 'at least one function',
+        correct: false,
+      },
+      {
+        text: 'constants',
+        correct: false,
+      },
+      {
+        text: 'at least one non-void function',
+        correct: false,
+      },
+    ],
+    comment: '<p>After you have set up the <em>package.json</em> file, it\'s time to start coding. A npm module is a regular JavaScript file that must follow the <em>CommonJS</em> module spec.</p>\n<p>A module contains an object called <strong>module</strong>, that has a read-only <code>id</code> property used to identify the module and an <code>exports</code> object, containing all the methods/constants to be exported. Here\'s an example:</p>\n<pre><code class="language-javascript">// math.js\nmodule.exports.pow = function(a,b){\n  var res = 1;\n  for(var i=0;i&#x3C;b;++i){\n    res *= a;\n  }\n  return res;\n}\n</code></pre>\n<p>Whenever you import the module in another file using the <code>require</code> function, it returns the exported set of functions and constants:</p>\n<pre><code class="language-javascript">// app.js\nvar math = require(\'./math\');\nconsole.log(math.pow(3,4));\n</code></pre>\n<p>Using node to run <code>app.js</code> yields:</p>\n<pre><code class="language-bash">$ node app.js\n81\n</code></pre>\n',
+  },
+}

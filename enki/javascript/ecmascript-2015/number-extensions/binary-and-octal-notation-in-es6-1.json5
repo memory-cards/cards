@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/number-extensions/binary-and-octal-notation-in-es6.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'es6',
+    'numbers',
+  ],
+  card: {
+    question: '<p>What method can be used to convert numbers to hex/bin/oct ?</p>\n<pre><code class="language-javascript">(3.14).???(8) // octal\n</code></pre>\n',
+    answers: [
+      {
+        text: 'toString',
+        correct: true,
+      },
+      {
+        text: 'convert',
+        correct: false,
+      },
+      {
+        text: 'parse',
+        correct: false,
+      },
+      {
+        text: 'rebase',
+        correct: false,
+      },
+    ],
+    comment: "<p>In ES6 you can use <strong>binary</strong> and <strong>octal</strong> notation as well as hexadecimal:</p>\n<pre><code class=\"language-javascript\">0x1 // hex '1'\n0xFF // hex '255'\n0b1 // bin '1'\n0B11111111 // bin '255'\n0o1 // oct '1'\n0O377 // oct '255'\n</code></pre>\n<p>You can use the method <code>.toString(r)</code> to convert numbers to hex/bin/oct:</p>\n<pre><code class=\"language-javascript\">(255).toString(16) // 'ff' in hex\n(1).toString(2) // '1' in bin\n(10).toString(8) // '12' in oct\n</code></pre>\n",
+  },
+}

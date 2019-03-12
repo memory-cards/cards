@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-i/format-currency-in-javascript.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+    'deep',
+    'currency-formatting',
+  ],
+  card: {
+    question: '<p>What does this output?</p>\n<pre><code class="language-javascript">function currency(n){\n  n = parseFloat(n);\n  return isNaN(n) ? false : n.toFixed(2);\n}\nconsole.log(currency(\'1234.567\'));\n\n???\n</code></pre>\n',
+    answers: [
+      {
+        text: '1234.57',
+        correct: true,
+      },
+      {
+        text: '1234.56',
+        correct: false,
+      },
+      {
+        text: '12',
+        correct: false,
+      },
+    ],
+    comment: '<p>The function below will ensure numbers are correctly rounded to 2 decimal places and prevent some null errors: </p>\n<pre><code class="language-javascript">function currency(n){\n  n = parseFloat(n);\n  return isNaN(n) ? false : n.toFixed(2);\n}\n</code></pre>\n',
+  },
+}

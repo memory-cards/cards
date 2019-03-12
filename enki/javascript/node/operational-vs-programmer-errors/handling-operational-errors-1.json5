@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/operational-vs-programmer-errors/handling-operational-errors.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>For correctness and consistency, when writing an asynchronous function, errors raised should be ???</p>\n',
+    answers: [
+      {
+        text: 'returned',
+        correct: true,
+      },
+      {
+        text: 'thrown',
+        correct: false,
+      },
+      {
+        text: 'discarded',
+        correct: false,
+      },
+    ],
+    comment: "<p>There isn't a single place in the application where errors can pop up, so you should be prepared to handle them wherever you are making a HTTP request, performing I/O operations, forking processes or validation input. You may end up handling the same error at different points of the stack, since those functions can't do more than passing the error.</p>\n<p>For most operational errors, the message will most likely point to what is left to do. For example, trying to access a file that is not yet created will <em>return</em> (async) or <em>throw</em> (sync) an <code>ENOENT: no such file or directory</code> error.</p>\n<p>While we're at it, let's focus on the difference between asynchronous and synchronous functions. Consider the following snippet:</p>\n<pre><code class=\"language-javascript\">import fs from 'fs';\n\nfunction readAndParseFile(path,\n  user_callback) {\n    try {\n      fs.readFile(path, (err, text) => {\n        if(err) throw err;\n      });\n    } catch(err) {\n      user_callback(err);\n    }\n}\n</code></pre>\n<p>Can you identify why the following anti-pattern will fail? <code>try/catch</code> expects a synchronous exception (an \"synchronous\" looking approach using <code>async/await</code> won't work either). By the time <code>fs.read()</code> returns the error to the callback (or Promise), the <code>try/catch</code> block will be marked as successful and exited.</p>\n<p>Moreover, always try to document your code and prepare for failure. Take, for example, a case where you want to accept only email addresses as username. Depending on what whether you want the code to work sync or async (but always write this down), you can either throw as soon as you receive the wrong input (<code>if(!input.match(/regex_here/))</code> or return an error to a callback/promise.</p>\n<p>You should follow the same pattern and expect it from the others. Most of the times it will be stated in the documentation if a function is synchronous or asynchronous.</p>\n<p>A stricter approach with regard to handling anything that requires non-standardized input is the safest bet. By regulating the the input range yourself, you are avoiding having to guess what the client meant (or intentionally delivered), which might lead to long-lasting, hard to discover bugs and backwards-compatibility issues after fixing. Otherwise, what should have been an easy to deal with operational error will quickly become a programmer error.</p>\n",
+  },
+}

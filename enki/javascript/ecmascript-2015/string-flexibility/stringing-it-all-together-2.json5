@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-flexibility/stringing-it-all-together.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">/\n['e', 'n', 'k', 'i'] */\nvar arr = [???'enki'];\nalert(arr);\n</code></pre>\n<p>%exp\n<code>...</code> is called spread operator in JavaScript. It is for use on *<em>iterable</em></p>\n<p>As the name implies what it actually does is break any *<em>iterable</em>\n%</p>\n",
+    answers: [
+      {
+        text: 'Make the array',
+        correct: true,
+      },
+      {
+        text: '...',
+        correct: false,
+      },
+      {
+        text: 'String.spread',
+        correct: false,
+      },
+      {
+        text: '$.',
+        correct: false,
+      },
+      {
+        text: 'data types.',
+        correct: false,
+      },
+      {
+        text: 'data types into its pieces.  ',
+        correct: false,
+      },
+    ],
+    comment: '<p>Do you know how to manipulate Strings in ES6?</p>\n',
+  },
+}

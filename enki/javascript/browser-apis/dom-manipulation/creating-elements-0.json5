@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'elliehoward',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dom-manipulation/creating-elements.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Given this code, fill in the blanks to create a new paragraph element:</p>\n<pre><code class="language-javascript">var p = document.???(???);\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>createElement</code>',
+      },
+      {
+        text: '<code>"p"</code>',
+      },
+      {
+        text: '<code>create</code>',
+      },
+      {
+        text: '<code>p</code>',
+      },
+      {
+        text: '<code>element</code>',
+      },
+      {
+        text: '<code>getElementsByTagName</code>',
+      },
+    ],
+    comment: "<p>In order to create a new element on a webpage dynamically with JavaScript, we use the DOM's method <code>createElement</code>:<br>\n<code>var newDiv = document.createElement('div')</code></p>\n<p>Then we can give the element some content. Let's make another tag dynamically and append it to the div tag.</p>\n<pre><code class=\"language-JavaScript\">var newDiv = document\n  .createElement('div')\nvar newTextContent = document\n  .createTextNode('Hello World')\nnewDiv.appendChild(newTextContent)\n</code></pre>\n<p>Now we have to add the new div to the DOM in order to see it on the page:</p>\n<pre><code class=\"language-html\">&#x3C;html>\n  &#x3C;body>\n    &#x3C;div id=\"container\">\n\n    &#x3C;/div>\n  &#x3C;/body>\n  &#x3C;script>\n  var newDiv = document\n    .createElement('div')\n  var newTextContent = document\n    .createTextNode('Hello World')\n  newDiv\n    .appendChild(newTextContent)\n\n  // add the new div to\n  // the HTML document using the DOM.\n  document\n    .getElementById('container')\n    .appendChild(newDiv);\n  &#x3C;/script>\n&#x3C;/html>\n</code></pre>\n",
+  },
+}

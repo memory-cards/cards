@@ -1,0 +1,51 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/yield.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the missing gaps such that the <code>next()</code> calls\' output stand true:</p>\n<pre><code class="language-javascript">??? myGen() {\n  ??? 4;\n  ??? [3,1];\n}\n\nvar x = myGen();\nx.next();\n// { value: 4, done: false }\nx.next()\n// { value: 3, done: false }\nx.next()\n// { value: 1, done: false }\nx.next()\n// { value: undefined, done: true}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'function*',
+      },
+      {
+        text: 'yield',
+      },
+      {
+        text: 'yield*',
+      },
+      {
+        text: 'return',
+      },
+      {
+        text: 'return*',
+      },
+      {
+        text: 'myGen',
+      },
+      {
+        text: 'function',
+      },
+      {
+        text: 'done',
+      },
+      {
+        text: 'next',
+      },
+      {
+        text: 'await',
+      },
+      {
+        text: 'Promise.all',
+      },
+    ],
+    comment: '<p>We can actually make our number example even more succinct by using <strong>yield*</strong>:</p>\n<pre><code class="language-javascript">function* genShort(){\n  yield* [1,2,3,4,5];\n}\n</code></pre>\n<p>When we use <code>yield*</code> it iterates over values supplied to the expression (in this case the array).</p>\n<p>yield* could also be used to split work between two generators:</p>\n<pre><code class="language-javascript">function* gen1() {\n  yield 1;\n  yield* gen2();\n  yield 5;\n}\nfunction* gen2() {\n  yield 2;\n  yield 3;\n  yield 4;\n}\nvar it = gen1();\nit.next();//Object {value: 1, done: false}\nit.next();//Object {value: 2, done: false}\nit.next();//Object {value: 3, done: false}\nit.next();//Object {value: 4, done: false}\nit.next();//Object {value: 5, done: false}\n</code></pre>\n',
+  },
+}

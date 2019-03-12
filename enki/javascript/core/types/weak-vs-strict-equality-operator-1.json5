@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types/weak-vs-strict-equality-operator.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What will the following code output?</p>\n<pre><code class="language-javascript">console.log(0 == "");\nconsole.log("\\n" == 0);\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '<code>true true</code>',
+        correct: true,
+      },
+      {
+        text: '<code>true false</code>',
+        correct: false,
+      },
+      {
+        text: '<code>false true</code>',
+        correct: false,
+      },
+      {
+        text: '<code>false false</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p>JavaScript supports two forms of equality.</p>\n<p><em>Weak Typing</em></p>\n<p>The operator <code>==</code> coerces (converts) types before comparing the terms:</p>\n<pre><code>""  ==  "0"    // false\n0   ==  ""     // true\nfalse == "0"   // true\n" \\t\\r\\n" == 0   // true\n</code></pre>\n<p>Using <code>==</code> is generally considered bad practice as it often leads to difficult-to-locate bugs due to unintuitive conversion rules.</p>\n<p><em>Strict Typing</em></p>\n<p>The strict equality operator is expressed as <code>===</code>. It works as <code>==</code>, but without type coercion:</p>\n<pre><code>""  ===  "0"    // false\n0   ===  ""     // false\nfalse === "0"   // false\n" \\t\\r\\n" === 0   // false\n</code></pre>\n<p>Note: <code>\\t\\r\\n</code> are special characters that you might see in strings. All of them are whitespace, under one for or another. <code>\\t</code> represents a tab (multiple space characters), while <code>\\n</code> - carriage return -  and <code>\\s</code> - line feed - are new line characters (they are not exactly the same and are even used together - CRLF).</p>\n',
+  },
+}

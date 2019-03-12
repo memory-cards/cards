@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/web-servers/the-http-module-for-servers.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Complete the code snippet to create a new HTTP server object:</p>\n<pre><code class="language-javascript">var server = http.???(requestHandler);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'createServer',
+        correct: true,
+      },
+      {
+        text: 'httpServer',
+        correct: false,
+      },
+      {
+        text: 'createHTTP',
+        correct: false,
+      },
+    ],
+    comment: '<p>Node is well suited and frequently used for creating servers which are both lightweight and can handle multiple requests simultaneously. It comes out-of-the-box with the <code>http</code> module providing an intuitive, yet powerful API for this purpose.</p>\n<p>To build the server, first require the <code>http</code> module into your JavaScript file:</p>\n<pre><code>var http = require(‘http’);\n</code></pre>\n<p>As all HTTP communication is done via the request / response pair, Node\'s <code>http</code> module uses the same concept, being designed to work with a <code>request</code> and a <code>response</code> object.</p>\n<p>Next, a handler function needs to be defined to handle and respond to all requests accordingly:</p>\n<pre><code>function requestHandler(request, response) {\n\n  response.end(‘Test response!’);\n\n}\n</code></pre>\n<p>In the function above, the <code>.end()</code> method will <code>write</code> the specified content to the <code>response</code> and signal the server it was sent. This method <strong>must</strong> be called on each response.</p>\n<p>To create the server a new HTTP server object needs to be created with a port number passed to it for it to listen on. First create the server via <code>createServer</code>:</p>\n<pre><code class="language-javascript">var server = http.createServer\n                  (requestHandler);\n</code></pre>\n<p>Then assign a port to the server object using <code>listen</code>:</p>\n<pre><code class="language-javascript">server.listen(8000, function() {\n\n  console.log(‘Server listening here:\n              http://localhost:%s’, 8000);\n\n});\n</code></pre>\n',
+  },
+}

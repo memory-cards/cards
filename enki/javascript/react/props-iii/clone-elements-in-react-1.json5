@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-iii/clone-elements-in-react.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Using the <code>React.cloneElement</code> method what props will be preserved unlike with the  <code>cloneWithProps</code> method. ???</p>\n',
+    answers: [
+      {
+        text: '<code>key</code> and <code>ref</code>',
+        correct: true,
+      },
+      {
+        text: '<code>key</code> and <code>props</code>',
+        correct: false,
+      },
+      {
+        text: '<code>child</code> and <code>ref</code>',
+        correct: false,
+      },
+      {
+        text: '<code>child</code> and <code>props</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>React</strong> provides different ways to clone elements. The <code>React.cloneElement</code> method, unlike <code>React.addons.cloneWithProps</code> can clone an element whilst keeping the <code>key</code> and <code>ref</code> of the original one.</p>\n<p>How to use:</p>\n<pre><code class="language-javascript">ReactElement cloneElement(\n  ReactElement element,\n  [object props],\n  [children ...]\n);\n</code></pre>\n<p>A new <code>ReactElement</code> will be returned using the provided <code>element</code> as the starting point. The old <code>props</code> will be merged in shallowly with the new specified ones. Furthermore, new <code>children</code> will replace old ones.</p>\n<p>Keep in mind that using:</p>\n<pre><code class="language-jsx">React.cloneElement(child, { ref: \'newRef\' })\n</code></pre>\n<p>will override the <code>ref</code>.</p>\n<p>Documentation warns that <code>React.addons.cloneWithProps</code> will be deprecated so you should consider using <code>React.cloneElement</code> instead.</p>\n',
+  },
+}

@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'adamMontgomerie',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/numbers/infinity-game.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">var x = 10/-0;\nconsole.log(x); //prints ???\n</code></pre>\n<p>%exp\nDividing a positive number by a negative 0 results in a negative <code>Infinity</code>.\n%</p>\n',
+    answers: [
+      {
+        text: '-Infinity',
+        correct: true,
+      },
+      {
+        text: 'Infinity',
+        correct: false,
+      },
+      {
+        text: 'NaN',
+        correct: false,
+      },
+    ],
+    comment: '<p>Your goal is to determine what the console\nwill print out for each given value of <code>x</code>.</p>\n',
+  },
+}

@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/in-depth-ii/using-eval.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'obscura',
+    'workout',
+  ],
+  card: {
+    question: '<p>What does the following JS code return when ran? ???</p>\n<pre><code class="language-javascript">var str = "if(flag){2*8;} else{-2*8;}";\nvar flag = false;\nvar b = eval(str);\n</code></pre>\n',
+    answers: [
+      {
+        text: '-16',
+        correct: true,
+      },
+      {
+        text: '16',
+        correct: false,
+      },
+      {
+        text: 'undefined',
+        correct: false,
+      },
+      {
+        text: 'NaN',
+        correct: false,
+      },
+    ],
+    comment: '<p><code>eval</code> ("evil") evaluates the string passed to it as Javascript code:</p>\n<pre><code>var str = "if(a){1+2;} else{1+3;}";\nvar a = true;\nvar b = eval(str);  // returns 3\n</code></pre>\n<p>Avoid using <code>eval</code> if there is an alternative. Code generally runs more slowly if <code>eval</code> is used because it has to disable optimisations. </p>\n<p>The security of <code>eval</code> is poor. The string could be changed by a third party extension to produce malicious code.</p>\n<p>Third party code can access the scope in which <code>eval()</code> was called and this can also lead to attacks.</p>\n',
+  },
+}

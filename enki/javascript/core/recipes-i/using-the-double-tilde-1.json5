@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-i/using-the-double-tilde.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+    'double-tilde',
+  ],
+  card: {
+    question: '<p>The following code will output:</p>\n<pre><code class="language-javascript">console.log( ~~12.34 ); // ???\nconsole.log( ~~"56.78" ); // ???\nconsole.log( ~~"Sunny" ); // ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '12',
+      },
+      {
+        text: '56',
+      },
+      {
+        text: '0',
+      },
+      {
+        text: 'NaN',
+      },
+      {
+        text: '”56”',
+      },
+    ],
+    comment: '<p>The double tilde <code>~~</code> is a quick way to truncate a value to an integer. For example:</p>\n<pre><code class="language-javascript">console.log( ~~12.34 ); // 12\nconsole.log( ~~"56.78" ); // 56\nconsole.log( ~~-2.6 ); // -2\n</code></pre>\n<p>It never returns <code>NaN</code>. If the check fails, it simply returns <code>0</code>.</p>\n<pre><code>console.log( ~~"Sunny" ); // 0\nconsole.log( ~~[] ); // 0\nconsole.log( ~~null ); // 0\n</code></pre>\n',
+  },
+}

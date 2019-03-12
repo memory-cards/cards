@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/errors/catch-is-block-scoped.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+    'workout',
+    'deep',
+    'obscura',
+  ],
+  card: {
+    question: '<p>Even though Javascript is function scoped, the variable in ??? is block scoped.</p>\n',
+    answers: [
+      {
+        text: 'the catch clause',
+        correct: true,
+      },
+      {
+        text: 'the try clause',
+        correct: false,
+      },
+      {
+        text: 'a for loop',
+        correct: false,
+      },
+    ],
+    comment: '<p>The <code>catch</code> clause of a <code>try...catch</code> statement is <strong>block</strong> scoped. This is different to the rest of JavaScript which is <strong>function</strong> scoped.  </p>\n<pre><code>try {\n  // ...\n}\ncatch (err) {\n   // err is block scoped\n}\n</code></pre>\n<p>Many linters fail to recognise that it is valid to have multiple  <code>try...catch</code> statements in the same scope, all using <code>err</code>, without it being a repeated variable declaration.</p>\n',
+  },
+}

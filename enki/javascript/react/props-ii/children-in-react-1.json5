@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-ii/children-in-react.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>What is the minimum number of elements <code>props.children</code> can hold?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<code>zero</code>',
+        correct: true,
+      },
+      {
+        text: '<code>one</code>',
+        correct: false,
+      },
+      {
+        text: '<code>at least two</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>React</strong> provides an <em>opaque</em> data structure backed by a <code>React.Children</code> class called <code>this.props.children</code>.</p>\n<p>This special <code>prop</code> is passed to a <code>component</code> automatically.</p>\n<p>It can be used to access the <code>children</code> of any parent component from within it.</p>\n<pre><code class="language-jsx">&#x3C;Wrapper>\n  &#x3C;A />\n  &#x3C;B />\n&#x3C;/Wrapper>\n\n// &#x3C;A /> and &#x3C;B /> are the children of\n// &#x3C;Wrapper>\n</code></pre>\n<p>Keep in mind that a <code>component</code> can have a <strong>single</strong> child / <strong>no</strong> children, but also an <strong>array</strong> of children.</p>\n<p>You can make use of <code>props.children</code> to dynamically render <code>component</code>s and <code>element</code>s in your parent without explicitly passing them as <code>props</code>.</p>\n<p>Consider the following component:</p>\n<pre><code class="language-jsx">class Wrapper extends React.Component{\n    render() {\n    return (\n        &#x3C;div>\n        {this.props.children}\n      &#x3C;/div>\n    );\n  }\n}\n</code></pre>\n<p>Our component will render nothing but the enclosed <code>&#x3C;div></code> in the following scenario:</p>\n<pre><code class="language-jsx">ReactDOM.render(\n  &#x3C;Wrapper>&#x3C;/Wrapper>,\n  document.getElementById(\'root\')\n);\n</code></pre>\n<p>However, when passing some <code>children</code>, we can see them rendered within that <code>&#x3C;div></code>:</p>\n<pre><code class="language-jsx">ReactDOM.render(\n  &#x3C;Wrapper>\n    &#x3C;h1>Hello&#x3C;/h1>\n    &#x3C;h2>World&#x3C;/h2>\n  &#x3C;/Wrapper>,\n  document.getElementById(\'root\')\n);\n</code></pre>\n<p>The <code>React.Children</code> class provides a bunch of methods useful for iterating and managing <code>children</code>.</p>\n',
+  },
+}

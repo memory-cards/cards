@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/intro-npm/setting-up-npm.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Install the *react</p>\n<pre><code class="language-bash">$ ??? ??? ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'package locally:',
+      },
+      {
+        text: 'npm',
+      },
+      {
+        text: 'install',
+      },
+      {
+        text: 'react',
+      },
+      {
+        text: '-l',
+      },
+      {
+        text: '-g',
+      },
+      {
+        text: 'node',
+      },
+    ],
+    comment: '<p>Now that you have chosen to use <strong>npm</strong>, the next step is to install it: <em>npm</em> is included with <em>Node.js</em>.</p>\n<p>As npm gets updated more often than node, you can update it to its most recent version like follows:</p>\n<pre><code class="language-bash">$ npm install npm@latest -g\n</code></pre>\n<p>This syntax will be used when installing individual packages:</p>\n<pre><code class="language-bash">$ npm install package-name@version (-g)\n# or\n$ npm i package-name@version (-g)\n</code></pre>\n<p>When you install a package globally, by appending the <code>-g</code> flag to the command , every project that relies on it would use the same <em>version</em> of the package, which may cause problems with dependencies.</p>\n<p>The safest way to install packages is in the project folder, or locally. For example, to check whether the installation was successful, look for the <em>express</em> folder inside the <em>node_modules</em> directory:</p>\n<pre><code class="language-bash">$ npm install express\n</code></pre>\n<p>If the version of the package is not specified, npm will install its latest version by default. Once the package is inside the <em>node_modules</em> directory, you can require it in your project:</p>\n<pre><code class="language-javascript">var express = require(\'express\');\nvar app = express();\n</code></pre>\n',
+  },
+}

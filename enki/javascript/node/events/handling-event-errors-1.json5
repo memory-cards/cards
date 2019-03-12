@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/events/handling-event-errors.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>What happens when the event emitter emits an event with no attached listeners?\n???</p>\n',
+    answers: [
+      {
+        text: 'Event is ignored.',
+        correct: true,
+      },
+      {
+        text: 'Event is thrown into the event loop.',
+        correct: false,
+      },
+      {
+        text: 'Event causes an error.',
+        correct: false,
+      },
+    ],
+    comment: '<p>All events are treated equally as all event types are defined by an arbitrary string. When an event emitter[1] emits an event with no attached listeners the event is ignored.</p>\n<p>If the event is called <em>error</em> however, the error is thrown into the event loop, then generating an uncaught exception. To stop this from breaking the application, uncaught exceptions can be caught by listening to the <code>uncaughtException</code> which the global event emitter object emits. Take <code>test</code> as a sample event emitter:</p>\n<pre><code class="language-javascript">test.on(‘uncaughtException’, function(err)\n{\n  console.error(‘uncaught exception: ‘,\n                    err.stack || err);\n\n\n  closeApp(function(err) {\n    if (err)\n      // error closing down\n\n\n    test.exit(1);\n  });\n\n});\n</code></pre>\n',
+  },
+}

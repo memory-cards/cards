@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types/types-undefined-and-null.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What will the following statement evaluate to?</p>\n<pre><code>undefined == null\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'true',
+        correct: true,
+      },
+      {
+        text: 'false',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>undefined</strong></p>\n<p>A variable is of <em>undefined</em> type when it is created but not set to a value:</p>\n<pre><code>var company;\ntypeof company; //undefined\n</code></pre>\n<p>Note that if the <strong>typeof</strong> operator is used on a variable that has never been defined it will also return as undefined:</p>\n<pre><code>typeof randomName; //undefined\n</code></pre>\n<p><strong>null</strong></p>\n<p>null is used to represent a deliberate absence of a value:</p>\n<pre><code>var myNullValue=null;\n</code></pre>\n<p>Confusingly, if you compare null and undefined you will find they are equal when using the standard equals comparison (this will convert types):</p>\n<pre><code>null  == undefined //true\n</code></pre>\n<p>But when using strict comparison (this does not change types) they are not equal:</p>\n<pre><code>null === undefined //false\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/patterns/middleware-pipeline-design-pattern.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'workout',
+  ],
+  card: {
+    question: '<p>Describe the Middleware/pipeline design pattern:</p>\n<p>the ??? of one unit is the ??? for the next one.</p>\n',
+    answers: [
+      {
+        text: 'output',
+      },
+      {
+        text: 'input',
+      },
+      {
+        text: 'error',
+      },
+      {
+        text: 'prototype',
+      },
+    ],
+    comment: '<p>The <strong>middleware</strong> or <strong>pipeline</strong> concept is used everywhere in Node.js. They represent a series of processing units connected subsequently: <strong>the output of one unit is the input for the next one</strong>.</p>\n<pre><code class="language-javascript">function(/*input/output */, next) {\n  next(/* err and/or output */)\n};\n</code></pre>\n<p><strong>Koa</strong> framework does it like this:</p>\n<pre><code class="language-javascript">app.use = function(fn) {\n  this.middleware.push(fn);\n  return this;\n};\n</code></pre>\n<p>This concept is usually implemented through <code>async.waterfall</code> or <code>async.auto</code>:</p>\n<pre><code class="language-javascript">async.waterfall([\n  function(callback) {\n    callback(...);\n  },\n  function(args, callback){\n    callback(...);\n  }\n]};\n</code></pre>\n<p>Famous Node.js streams also use the concept of pipelining:</p>\n<pre><code class="language-javascript">fs.createReadStream("file.gz")\n  .pipe(zlib.createGunzip())\n  .pipe(through(function write(data) {\n      //handle data\n      this.queue(data);\n   })\n  //write to your file\n  .pipe(fs.createWritableStream("out.txt"));\n</code></pre>\n',
+  },
+}

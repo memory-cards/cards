@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-ii/abbreviate-commands-in-npm.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'obscura',
+  ],
+  card: {
+    question: "<p>What's the equivalent abbreviated command of <code>npm link</code>?</p>\n<p>???</p>\n",
+    answers: [
+      {
+        text: 'npm ln',
+        correct: true,
+      },
+      {
+        text: 'npm lk',
+        correct: false,
+      },
+      {
+        text: 'npm l',
+        correct: false,
+      },
+      {
+        text: 'npm k',
+        correct: false,
+      },
+      {
+        text: 'npm n',
+        correct: false,
+      },
+    ],
+    comment: '<p><code>npm</code> uses <code>abbrev</code> program to provide abbreviations for its commands. Shorthands for most common commands are also available.</p>\n<p>Useful abbreviations:</p>\n<pre><code class="language-bash">npm i myPackage\n# same as npm install myPackage\nnpm r myPackage / npm rm myPackage\n# same as npm uninstall myPackage\nnpm ln\n# same as npm link\nnpm ls\n# same as npm list\nnpm bn\n# same as npm bundle\nnpm up\n# same as npm update\nnpm c\n# same as npm config\n</code></pre>\n<p>In addition, <code>npm</code> uses <strong>tab completion</strong> which can be modified in the <code>npm-completion.sh</code> script file located in the <code>npm</code> source folder.</p>\n',
+  },
+}

@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'WebReflection',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-assignments.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">const coords = {\n  latitude: 43.617,\n  longitude: 13.517\n};\nconst {\n  latitude:lat,\n  longitude:lon\n} = coords;\nconsole.log(lat, lon);\n// ???\n</code></pre>\n<p>%exp\nWe define <code>lat</code> and <code>lon</code> variables with the values of <code>latitude</code> and <code>longitude</code>.\n%</p>\n',
+    answers: [
+      {
+        text: '43.617, 13.517',
+        correct: true,
+      },
+      {
+        text: 'ReferenceError',
+        correct: false,
+      },
+      {
+        text: 'undefined, undefined',
+        correct: false,
+      },
+    ],
+    comment: '<p>What will be shown on the console?</p>\n',
+  },
+}

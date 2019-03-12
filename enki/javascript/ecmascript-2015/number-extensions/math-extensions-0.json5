@@ -1,0 +1,48 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/number-extensions/math-extensions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What will the following function calls return?</p>\n<pre><code class="language-javascript">console.log(Math.cbrt(27))\n// ???\n\nconsole.log(Math.sign(-22))\n// ???\n\nconsole.log(Math.trunc(4.522))\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '3',
+      },
+      {
+        text: '-1',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: '1',
+      },
+      {
+        text: '9',
+      },
+      {
+        text: '7',
+      },
+      {
+        text: '8',
+      },
+      {
+        text: '2',
+      },
+      {
+        text: '-2',
+      },
+      {
+        text: '-22',
+      },
+    ],
+    comment: '<p>In ES6 the <em>Math</em> object has been expanded with a lot of functionality. Many of the additions have very specific use cases so let\'s discuss those more likely to be used in every day development. </p>\n<h3>Math.trunc**</h3>\n<p><em>Math.trunc</em> will drop any numbers after the decimal point whether the number is positive or negative.</p>\n<pre><code class="language-javascript">Math.trunc(1.2343); //1\nMath.trunc(-3242.34); //-3242\n</code></pre>\n<h3>Math.cbrt</h3>\n<p>Math.cbrt returns the cube root of a number:</p>\n<pre><code class="language-javascript">Math.cbrt(81); //4.326748710922225\n</code></pre>\n<h3>Math.sign</h3>\n<p>Math.sign returns a value that represents whether a number is positive (1), negative (-1), positve zero (0), negative zero (-0) and NaN:</p>\n<pre><code class="language-javascript">Math.sign(1); //1\nMath.sign(-1); //-1\n</code></pre>\n',
+  },
+}

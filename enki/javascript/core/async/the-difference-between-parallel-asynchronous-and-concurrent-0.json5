@@ -1,0 +1,41 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async/the-difference-between-parallel-asynchronous-and-concurrent.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'workout',
+    'deep',
+    'async',
+    'promises',
+    'npm',
+  ],
+  card: {
+    question: '<p>JavaScript is ??? and therefore has ??? behaviour, this means that once the code in a function starts executing it has to finish before any code can run.</p>\n',
+    answers: [
+      {
+        text: 'single-threaded',
+      },
+      {
+        text: 'run-to-completion',
+      },
+      {
+        text: 'double-threaded',
+      },
+      {
+        text: 'not threaded',
+      },
+      {
+        text: 'run-to-crash',
+      },
+      {
+        text: 'run-to-memoryfull',
+      },
+    ],
+    comment: "<p>'<strong>Asynchronous</strong>' describes tasks occurring out of order, i.e. the main program flow can continue <strong>now</strong> and the asynchronous task will complete <strong>later</strong>.</p>\n<p><strong>Parallel</strong> means more than one operation being able to occur at the same point in time. Multiple <strong>threads</strong> can share the same memory of a <strong>process</strong>. They can execute on different processors or computers.</p>\n<p>JavaScript is <strong>single-threaded</strong> and so has '<strong>run-to-completion</strong>' behaviour (except in new ES6 syntax such as Generators), meaning that once the code in a function begins executing, it will finish before any other code can be run.</p>\n<p><strong>Concurrency</strong> is when two or more tasks are executing in the same time period, but not necessarily in parallel. </p>\n<p>JavaScript has behaviour, known as a '<strong>race condition</strong>', where two concurrent tasks 'race' to see which runs first. If both alter the same data, there could be a difference in the results each time.</p>\n",
+  },
+}

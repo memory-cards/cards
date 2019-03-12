@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/quirks/avoid-command-injection.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'workout',
+    'deep',
+    'obscura',
+  ],
+  card: {
+    question: '<p>Which of the following is not true about <code>child_process.exec</code>?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'is literally the same as <code>child_process.spawn</code>',
+        correct: true,
+      },
+      {
+        text: 'calls to execute <code>/bin/sh</code>',
+        correct: false,
+      },
+      {
+        text: "it's a bash interpreter",
+        correct: false,
+      },
+      {
+        text: 'its calls can be targeted for command injection',
+        correct: false,
+      },
+    ],
+    comment: '<p>Avoiding command injection is highly recommended when the <strong>security</strong> factor of your Node application is taken into consideration.</p>\n<p>Take the following example:</p>\n<pre><code class="language-javascript">child_process.exec(\'ls\', function(err,data){\n  console.log(data);\n});\n</code></pre>\n<p>The problem is that <code>child_process.exec</code> makes a call to execute <code>/bin/sh</code>, meaning that it is a <em>bash interpreter</em> and not a program launcher.</p>\n<p>When the user input is passed to the method - can be either <em>a backtick</em>  or <code>$()</code>, hence a new command can be injected by the attacker.</p>\n<p>The simple way to avoid this threat is by using <code>child_process.execFile</code> or <code>child_process.spawn</code>.</p>\n',
+  },
+}

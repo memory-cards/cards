@@ -1,0 +1,50 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-iii/context-in-javascript.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What represent the *<em>context</em></p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'of a function in Javascript?',
+        correct: true,
+      },
+      {
+        text: 'this',
+        correct: false,
+      },
+      {
+        text: 'undefined',
+        correct: false,
+      },
+      {
+        text: 'Window',
+        correct: false,
+      },
+      {
+        text: 'navigator',
+        correct: false,
+      },
+      {
+        text: 'history',
+        correct: false,
+      },
+      {
+        text: 'bind',
+        correct: false,
+      },
+      {
+        text: 'new',
+        correct: false,
+      },
+    ],
+    comment: '<p>In JavaScript <code>this</code> represents the <strong>context</strong> of a function. The code currently executing belongs to the object that <code>this</code> references.</p>\n<p>If you call an <strong>unbound</strong> function, <code>this</code> will default to the <strong>global context</strong> or <code>Window</code> object in the browser. </p>\n<p>If you execute a function in <strong>strict mode</strong>, the context will default to <code>undefined</code>.</p>\n<p>If you call a function as a <strong>method</strong> of an object, <code>this</code> is set to the object the method is called on.</p>\n<p>If you create a <code>new</code> instance of an object to call a function, <code>this</code> is set to the newly created instance.</p>\n<p>You can use <code>bind()</code> to avoid confusion by specifying the <code>this</code> to use when calling a function.</p>\n',
+  },
+}

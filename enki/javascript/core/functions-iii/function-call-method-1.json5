@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-iii/function-call-method.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>What is the object and the arguments of the function?</p>\n<pre><code class="language-javascript">callObject.call(null, 4, 2);\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Object: null, Arguments: 4,2',
+        correct: true,
+      },
+      {
+        text: 'Object: 4, Arguments 2',
+        correct: false,
+      },
+      {
+        text: 'Object: 4, Arguments: null, 2',
+        correct: false,
+      },
+      {
+        text: 'This gives an error',
+        correct: false,
+      },
+    ],
+    comment: '<p>The <code>call</code> method allows changing the this object of a function from the original context to the context of the new object specified by <code>thisObj</code>. </p>\n<p><code>currObj</code> is the object to be used as the current object.</p>\n<p><code>arg1</code>, <code>arg2</code>, ... , <code>argN</code> are arguments passed onto the method.</p>\n<p>If <code>currObj</code> is not supplied, the <code>currObj</code> is set to the global object.</p>\n<p>Creating a function to call returning a string of the object and arguments:</p>\n<pre><code class="language-javascript">function callObject(arg1, arg2) {\n  var str;\n  str += "Object: " + this + ". ";\n  str += "Arguments: "\n  for (i in callObject.arguments){\n    str += callObject.arguments[i] + " ";\n  }\n  return str;\n}\n</code></pre>\n<p>Calling the function using the call method:</p>\n<pre><code class="language-javascript">callObject.call(2, 4, 6);\n</code></pre>\n<p>The current object would be changed to 2, and the string generated and returned would be:</p>\n<pre><code>str = "Object: 2. Arguments: 4 6 "\n</code></pre>\n',
+  },
+}

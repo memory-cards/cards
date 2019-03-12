@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'Bruno',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/arrays/arrays-can-be-used-as-stack.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Complete the code snippet:</p>\n<pre><code class="language-javascript">var s = [1,2];\ns.??? ; // s = [1,2,3]\ns.??? ; // s = [1,2,3,4]\ns.??? ; // s = [1,2,3]\n</code></pre>\n',
+    answers: [
+      {
+        text: 'push(3)',
+      },
+      {
+        text: 'push(4)',
+      },
+      {
+        text: 'pop()',
+      },
+      {
+        text: 'pop(4)',
+      },
+      {
+        text: 'pop(3)',
+      },
+    ],
+    comment: '<p>Using the following array:</p>\n<pre><code>var stack = [];\n</code></pre>\n<p>We can <code>push</code> items to the stack:</p>\n<pre><code>stack.push(1);\nstack.push(2);\n</code></pre>\n<p>Then, try using <code>stack.pop()</code>:</p>\n<pre><code>console.log(stack.pop())\n// prints 2\nconsole.log(stack.pop())\n// prints 1\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-i/rendering-multiple-components.md',
+  },
+  type: 'choose_options',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What is the name of the *<em>identity attribute</em></p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'that must be included when creating collections of <code>element</code>s with <code>map</code>?',
+        correct: true,
+      },
+      {
+        text: '<code>key</code>',
+        correct: false,
+      },
+      {
+        text: '<code>index</code>',
+        correct: false,
+      },
+      {
+        text: '<code>i</code>',
+        correct: false,
+      },
+      {
+        text: '<code>identity</code>',
+        correct: false,
+      },
+      {
+        text: '<code>ref</code>',
+        correct: false,
+      },
+    ],
+    comment: '<p><strong>React</strong> allows the creation of <code>DOM</code> element collections by harnessing the power of pure <code>JS</code>.</p>\n<p>For example, you can dynamically generate a collection of <code>&#x3C;p></code> items by transforming an <code>array</code> with the <code>map()</code> function:</p>\n<pre><code class="language-jsx">const input = [0, 1, 2, 3];\nconst collection = input.map((no) => {\n    return &#x3C;p>{no}&#x3C;/p>;\n  });\n</code></pre>\n<p>When rendering such lists inside a <code>component</code>, an additional <strong>identity attribute</strong> named <code>key</code> must be included for every element. <code>key</code>s should be unique to each <strong>sibling element</strong>.</p>\n<p>Consider the following <strong>functional component</strong>:</p>\n<pre><code class="language-jsx">function MyList(props) {\n  return (&#x3C;div>\n    {props.input.map(no =>\n      &#x3C;p key={no.toString()}>\n        {no}\n      &#x3C;/p>)}\n  &#x3C;/div>);\n}\n</code></pre>\n<p>When passing an array called <code>input</code> as a <code>prop</code>, this component will return a <code>&#x3C;div></code> with a <code>&#x3C;p></code> for every element in the array:</p>\n<pre><code class="language-jsx">ReactDOM.render(\n  &#x3C;MyList input={[7, 13, 42]} />,\n  document.getElementById(\'root\')\n);\n\n// output in the DOM is:\n// &#x3C;div>\n//   &#x3C;p>7&#x3C;/p>\n//   &#x3C;p>13&#x3C;/p>\n//   &#x3C;p>42&#x3C;/p>\n// &#x3C;/div>\n</code></pre>\n',
+  },
+}

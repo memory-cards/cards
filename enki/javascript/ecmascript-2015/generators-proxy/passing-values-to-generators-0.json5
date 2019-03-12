@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/passing-values-to-generators.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the missing output of the following code snippet:</p>\n<pre><code class="language-javascript">function\n  let toYield = 2\n  while(true) {\n    const i = yield toYield\n    if (i) {\n      toYield = i\n    }\n  }\n}\n\nlet z = myGen()\nz.next()\n// { value: ???, done: false}\nz.next(4)\n// { value: ???, done: false}\nz.next(3)\n// { value: ???, done: false}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'myGen() {',
+      },
+      {
+        text: '2',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: 'undefined',
+      },
+      {
+        text: '5',
+      },
+      {
+        text: 'null',
+      },
+    ],
+    comment: '<p>Generators next method also accepts a parameter.</p>\n<p>When you pass in a parameter it is assigned to the result of the <strong>yield</strong> statement (if you don’t pass anything in this is undefined).</p>\n<p>We could for example use this functionality to reset our number sequence when 0 is passed in:</p>\n<pre><code class="language-javascript">function* getGenerator(){\n var currentNumber = 1;\n\n while(currentNumber &#x3C; 6){\n  var input = yield currentNumber++;\n  if (input==0) currentNumber = 1;\n }\n}\n\nvar g = getGenerator();\n\ng.next().value //1\ng.next().value //2\ng.next().value //3\ng.next(0).value //1\n</code></pre>\n<p>There is however also a gotcha to watch out for when passing values to generators.</p>\n<p>This is best implemented with an example - the below function simply logs to the console any values passed in:</p>\n<pre><code class="language-javascript">function* getGenerator(){\n while(true){\n  console.log(yield);\n }\n}\n</code></pre>\n<p>However, the first value we pass in will be ignored!</p>\n<pre><code class="language-javascript">var g = getGenerator();\ng.next("a") //ignored\ng.next("b") // b\n</code></pre>\n<p>This is because the first time we get our generator we are at the beginning of the function and there is nothing to log from the yield statement.</p>\n<p>The solution is to simply call the generators next method once:</p>\n<pre><code class="language-javascript">var g = getGenerator();\ng.next();\ng.next("a") //a\ng.next("b") // b\n</code></pre>\n',
+  },
+}

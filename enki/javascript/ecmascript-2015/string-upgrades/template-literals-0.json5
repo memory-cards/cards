@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-upgrades/template-literals.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>Complete the gaps such that the log is correct:</p>\n<pre><code class=\"language-javascript\">const dayName = 'Thursday'\nconst dayNumber = '12';\nconst year = '2018'\n\nconst str = `Today is:\n??? ??? ???\n???\n${???}\n`\n\nconsole.log(str)\n// Today is:\n// Thursday\n// 12\n// 2018\n</code></pre>\n",
+    answers: [
+      {
+        text: '${',
+      },
+      {
+        text: 'dayName',
+      },
+      {
+        text: '}',
+      },
+      {
+        text: '${dayNumber}',
+      },
+      {
+        text: 'year',
+      },
+      {
+        text: 'dayNumber',
+      },
+      {
+        text: '${dayName}',
+      },
+      {
+        text: '${year}',
+      },
+      {
+        text: '${dayNumber',
+      },
+    ],
+    comment: '<p>A common task in any programming language is to concatenate and format strings.</p>\n<p>You have probably found yourself writing code similar to the following many times:</p>\n<pre><code class="language-javascript">var greeting = "Hi " + name;\n</code></pre>\n<p>Template Literals provide a more succinct and readable form allowing us to specify values to be replaced within the string by surrounding it with curly braces and a dollar sign.</p>\n<p>Note how the string itself is also enclosed with the <em>backtick</em> characters instead of \' or ":</p>\n<pre><code class="language-javascript">var name = "Enki";\nvar greeting = `Hello ${name}`;\n// "Hello Enki"\n</code></pre>\n<p>We can also use template literals to spread our declaration across multiple lines:</p>\n<pre><code class="language-javascript">var name = "User";\nvar greeting = `Hello ${name}\nLine1\nLine2`;\n\n/*\n"Hello User\nLine1\nLine2"\n*/\n</code></pre>\n<p>We can even use expressions within the placeholders:</p>\n<pre><code class="language-javascript">var x=1;\nvar y=2;\nvar test = `Hello ${x + y}`;\n//Hello 3\n</code></pre>\n<p>Note if for some reason you wanted to use a backtick in your expression this can be done by escaping it with a backslash e.g.</p>\n<pre><code class="language-javascript">var greeting = `hello \\``;\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/proxies.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What is the output of the following logs?</p>\n<pre><code class="language-javascript">var handler = {\n  get: (target, name) =>\n    name in target ? target[name] : -4\n};\n\nvar obj = new Proxy({}, handler);\nobj.a = 5;\n\nconsole.log(obj.a) // ???\nconsole.log(obj.enki) // ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '5',
+      },
+      {
+        text: '-4',
+      },
+      {
+        text: 'NaN',
+      },
+      {
+        text: 'undefined',
+      },
+      {
+        text: '-Infinity',
+      },
+    ],
+    comment: "<p>Proxies enable custom behaviors for fundamental operations (e.g., property lookup, assignment, enumeration, function invocation...).</p>\n<p>For instance:</p>\n<pre><code>// make NaN the default value for getters\nvar handler = {\n  get: (target, name) =>\n    name in target ? target[name] : NaN\n};\n\nvar obj = new Proxy({}, handler);\nobj.a = 1;\nobj.b = 2;\n\nconsole.log(obj.a) // 1\nconsole.log(obj.b) // 2\nconsole.log(obj.c) // NaN\n</code></pre>\n<p><code>obj.c</code> evaluates to <code>NaN</code> (instead of the usual <code>undefined</code>) because of the special behavior defined in the Proxy's handler.</p>\n",
+  },
+}

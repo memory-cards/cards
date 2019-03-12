@@ -1,0 +1,44 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/modules/local-modules.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Consider the following local node module:</p>\n<pre><code class="language-javascript">// myModule.js\nmodule.exports = {\n  hello: function() {\n    console.log(\'Hello from Enki\')\n  }\n}\n</code></pre>\n<p>How would you import and use it in your application?</p>\n<pre><code class="language-javascript">// main.js\nvar myModule = ???(\'./myModule.js\')\n\n???.???\n</code></pre>\n<p>Running <code>$ node myModule</code> should log "Hello from Enki".</p>\n',
+    answers: [
+      {
+        text: 'require',
+      },
+      {
+        text: 'myModule',
+      },
+      {
+        text: 'hello()',
+      },
+      {
+        text: 'hello',
+      },
+      {
+        text: 'req',
+      },
+      {
+        text: 'import',
+      },
+      {
+        text: 'myFile',
+      },
+      {
+        text: 'myLocalModule',
+      },
+    ],
+    comment: '<p>In Node.js a local module is a module created locally to your application. A local module can include different functionalities of the application across different files and folders.</p>\n<p>Local modules must be in their own separate JavaScript file.\nConsider the following example of a local module (filename <code>news.js</code>):</p>\n<pre><code class="language-javascript">var news = {\n  good: function(good) {\n    console.log(\'Good news! \' + good);\n  },\n  bad: function(bad) {\n    console.log(\'Bad news... \' + bad);\n  }\n};\nmodule.export = news\n</code></pre>\n<p>A local module has to be required into an application in the same way a core module does, the only difference being that the path to the module must be specified as follows in <code>main.js</code>:</p>\n<pre><code class="language-javascript">var newsModule = require(`./news.js`);\n</code></pre>\n<p>The local module object can now be called with one of its functions:</p>\n<pre><code class="language-javascript">newsModule.good(\'We\'re working on Node!\');\n</code></pre>\n<p>To run the module:</p>\n<pre><code class="language-bash">$ node main.js\n# Good news! We\'re working on Node!\n</code></pre>\n',
+  },
+}

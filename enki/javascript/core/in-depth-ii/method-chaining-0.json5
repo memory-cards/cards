@@ -1,0 +1,68 @@
+{
+  __meta__: {
+    author: 'dean',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/in-depth-ii/method-chaining.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+    'introduction',
+    'workout',
+    'method',
+    'function',
+    'chaining',
+  ],
+  card: {
+    question: '<p>Complete the missing gaps such that the log statements on the last lines will print the commented output.</p>\n<pre><code class="language-javascript">var Rectangle = function() {\n  this.??? = null\n  this.length = null\n}\n\nRectangle.???\n  .??? = function(width) {\n    this.width = width\n    ???\n }\n\n???.prototype\n  .setLength = function(length)  {\n    this.??? = length\n    return ???\n  }\n\nconst r = (new Rectangle())\n  .setWidth(20)\n  .setLength(30)\n\nconsole.log(r.length) // 30\nconsole.log(r.width) //20\n</code></pre>\n',
+    answers: [
+      {
+        text: 'width',
+      },
+      {
+        text: 'prototype',
+      },
+      {
+        text: 'setWidth',
+      },
+      {
+        text: 'return this',
+      },
+      {
+        text: 'Rectangle',
+      },
+      {
+        text: 'length',
+      },
+      {
+        text: 'this',
+      },
+      {
+        text: 'new',
+      },
+      {
+        text: 'setLength',
+      },
+      {
+        text: 'return r',
+      },
+      {
+        text: 'r',
+      },
+      {
+        text: 'return',
+      },
+      {
+        text: 'return null',
+      },
+      {
+        text: 'return undefined',
+      },
+      {
+        text: 'return width',
+      },
+    ],
+    comment: "<p>Method chaining allows multiple methods to be called one after the other on the same object.</p>\n<pre><code class=\"language-javascript\">var foo = new Bar();\nfoo.setFirst('Fizz').setLast('Buzz');\n// Two functions, called with one line\n</code></pre>\n<p>Method chaining is typically enabled by implementing methods that return <code>this</code> (the object itself):</p>\n<pre><code class=\"language-javascript\">var Bar = function() {\n  this.first = 'Not';\n  this.last = 'FizzBuzz';\n};\n\nBar.prototype.setFirst = function(first)\n{\n  this.first = first;\n  // Returns the object\n  return this;\n};\n\nBar.prototype.setLast = function(last)\n{\n  this.last = last;\n  return this;\n};\n</code></pre>\n",
+  },
+}

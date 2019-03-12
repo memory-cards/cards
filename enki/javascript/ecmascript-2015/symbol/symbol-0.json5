@@ -1,0 +1,48 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/symbol/symbol.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>What will be the output of the following statements ?</p>\n<pre><code class=\"language-javascript\">const sym1 = Symbol('enki')\nconsole.log(sym1)\n// ???\n\nconsole.log(typeof sym1)\n// ???\n\nconst sym2 = Symbol('enki')\nconsole.log(sym1 === sym2)\n// ???\n</code></pre>\n",
+    answers: [
+      {
+        text: 'Symbol(enki)',
+      },
+      {
+        text: '"symbol"',
+      },
+      {
+        text: 'false',
+      },
+      {
+        text: 'true',
+      },
+      {
+        text: 'error',
+      },
+      {
+        text: 'Enki',
+      },
+      {
+        text: '"enki"',
+      },
+      {
+        text: 'Symbol("Enki")',
+      },
+      {
+        text: '"number"',
+      },
+      {
+        text: '"primitive"',
+      },
+    ],
+    comment: '<p>ES 6 introduces a new primitive type - <strong>Symbol</strong>.</p>\n<p>Symbols are unique and immutable. These special characteristics give them a number of usages we will look at shortly.</p>\n<p>But how do you work with symbols?</p>\n<p>The following code creates a symbol:</p>\n<pre><code class="language-javascript">var sym = Symbol();\n</code></pre>\n<p>Be sure not to use the new operator when creating a symbol otherwise you will get an exception.</p>\n<p>During creation you can also set a description for the symbol which is useful mainly for debugging purposes:</p>\n<pre><code class="language-javascript">var sym = Symbol("Enki");\nconsole.log(sym)\n// Symbol(Enki)\n</code></pre>\n<p>Note that supplying a description when creating a symbol does not add the symbol to the symbol registry which we will discuss shortly.</p>\n<p>The typeof method of course returns symbol:</p>\n<pre><code class="language-javascript">typeof Symbol(); //"symbol"\n</code></pre>\n<p>When you create a symbol it is unique even if you create symbols with the same names:</p>\n<pre><code class="language-javascript">var sym1 = Symbol("Enki");\nvar sym2 = Symbol("Enki");\nsym1 === sym2; //false\n</code></pre>\n<p>This probably is not what you would expect but remember Symbols are always unique.</p>\n<p>If you want to be able to access the same symbol using a key, we can use the Symbol registry which we will discuss next.</p>\n',
+  },
+}
