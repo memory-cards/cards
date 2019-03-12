@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterables.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What property does an object in JavaScript need to have in order to be used in a <code>for..of</code> syntax:</p>\n<pre><code class="language-javascript">const x = {}\nx[???] = function() {...}\n\nfor (const y of x) {\n  // iterate\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Symbol.iterator',
+      },
+      {
+        text: 'Symbol()',
+      },
+      {
+        text: 'Iterator',
+      },
+      {
+        text: 'it',
+      },
+      {
+        text: '@@it',
+      },
+      {
+        text: 'Symbol.match',
+      },
+    ],
+    comment: '<p>Javascript has a number of built in objects that are defined as iterables such as arrays, strings, maps and sets. When an object is iterable it defines how it will work with language features such as <strong>for..of</strong> loops.</p>\n<p>In order to be iterable an object must implement the iterable protocol which means that it must have a property marked with <code>Symbol.iterator</code>.</p>\n<p>Let`s try using the iterator we defined previously in a for..of loop:</p>\n<pre><code class="language-javascript">var it = getIterator()\nfor(var i of it){\n console.log(i);\n //TypeError: it[Symbol.iterator]\n //is not a function\n}\n</code></pre>\n<p>This error occurs as we didn\'t conform to the iterable protocol so JavaScript doesn’t know how to work with our iterator.</p>\n<p>Let\'s fix this now by returning an object with a property marked with <strong>[Symbol.iterator]</strong>:</p>\n<pre><code class="language-javascript">function getIterator (){\n var num = [1,2,3,4,5];\n var nextIndex = 0;\n\n return {\n   [Symbol.iterator]() {\n      return {\n        next: function() {\n          if (nextIndex &#x3C; num.length) {\n            var valueToReturn =\n              num[nextIndex];\n            nextIndex++;\n            return {\n              value: valueToReturn,\n              done: false\n            }\n          } else {\n            return{ done: true}\n          }\n        }\n      }\n    }\n  }\n}\n</code></pre>\n<p>Our iterator will now function as expected.\nWe could even use it with the spread operator:</p>\n<pre><code class="language-javascript">const it = getIterator()\nconsole.log([...it]); //[1,2,3,4,5]\n</code></pre>\n',
+  },
+}

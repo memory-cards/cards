@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/fundamentals/the-react-element.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p><code>React</code> elements are</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'immutable',
+      },
+      {
+        text: 'mutable',
+      },
+      {
+        text: '**DOM** elements',
+      },
+      {
+        text: 'components',
+      },
+      {
+        text: 'classes',
+      },
+    ],
+    comment: "<p>An <code>element</code> in <strong>React</strong> is the most basic building block for describing your application's <code>UI</code>.</p>\n<p>Note that <code>element</code>s are <strong>immutable</strong> and their children or attributes can't be updated after rendering. This implies that <code>element</code>s describe the <code>UI</code> at a specific point in time - like a <em>snapshot</em>.</p>\n<p>In <strong>React</strong> you'll work mainly with a more flexible concept - <code>component</code>s. However, these are <em>made of</em> <code>element</code>s therefore it's helpful to understand the <em>fundamentals</em> of how they work.</p>\n<p>To define an element you can simply:</p>\n<pre><code>const element = &#x3C;p>Enki was here&#x3C;/p>;\n</code></pre>\n<p><code>Element</code>s are plain objects and can be created cheaply and rendered into the <strong>DOM</strong>.</p>\n<p>The way <code>element</code>s are rendered is with help from the <strong>React DOM</strong>[1], under the <code>root</code>[2] node.</p>\n<p>Suppose in your <strong>HTML</strong> you have the <code>div</code>:</p>\n<pre><code>&#x3C;div id=\"root\">&#x3C;/div>\n</code></pre>\n<p>Now, using <code>ReactDOM.render()</code> you can display in your webpage the element declared above:</p>\n<pre><code>ReactDOM.render(\n  element,\n  document.getElementById('root')\n);\n</code></pre>\n",
+  },
+}

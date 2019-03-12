@@ -1,0 +1,47 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/error-handling/uncaughtexception-listener-in-node-js.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>How would you catch unhandled exceptions in your NodeJS code, using an event listener?</p>\n<pre><code class="language-javascript">process.???(???,\n  function(err) {\n    console.log(\'caught\')\n  })\n</code></pre>\n',
+    answers: [
+      {
+        text: 'on',
+      },
+      {
+        text: "'uncaughtException'",
+      },
+      {
+        text: 'uncaughtException',
+      },
+      {
+        text: 'listen',
+      },
+      {
+        text: 'addEventListener',
+      },
+      {
+        text: 'process',
+      },
+      {
+        text: 'watch',
+      },
+      {
+        text: "'exception'",
+      },
+      {
+        text: 'exception',
+      },
+    ],
+    comment: "<p>Use an <code>uncaughtException</code> listener to prevent a program crashing due to an unhandled exception.</p>\n<p>For example:</p>\n<pre><code class=\"language-javascript\">process.on('uncaughtException',\n  function(err) {\n     console.log('exception: ' + err);\n  }\n)\n</code></pre>\n<p>An unhandled exception means an application is in an <strong>undefined state</strong>. It is not possible to continue the program safely and should restart.</p>\n<p>Note that <code>uncaughtException</code> is a crude mechanism for exception handling and is therefore not recommended in production.</p>\n",
+  },
+}

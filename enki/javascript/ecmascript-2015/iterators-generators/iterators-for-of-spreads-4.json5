@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterators-for-of-spreads.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">let fish = ['Tuna', 'Trout'];\nlet whales = ['Blue Whale', ...fish,\n'Orca'];\n\n// whales = ???\n</code></pre>\n<p>%exp\nWhen constructing the <code>whales</code> array, we make use of the spread operator (<code>...</code>) which will copy the contents of the <code>fish</code> array and insert them starting at index <code>1</code> (where the operator was used). Sequentially, the <code>\"Orca\"</code> element is appended.\n%</p>\n",
+    answers: [
+      {
+        text: "['Blue Whale', 'Tuna', 'Trout', 'Orca']",
+      },
+      {
+        text: "ReferenceError '... is not defined'",
+      },
+      {
+        text: "TypeError 'Array has no method ...'",
+      },
+    ],
+    comment: "<p>Freshen up you knowledge on <code>iterators</code>, <code>for of</code> loops and the <code>spread operator</code> with this exercise.\nThe goal is to fill in the gaps with either the output of the snippet or the missing bit that won't throw any errors.</p>\n",
+  },
+}

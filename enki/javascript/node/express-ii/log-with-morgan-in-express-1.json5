@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express-ii/log-with-morgan-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Use <code>morgan</code> logger in express with <code>tiny</code> format:</p>\n<pre><code class="language-javascript">app.???(???(\'tiny\'));\n</code></pre>\n',
+    answers: [
+      {
+        text: 'use',
+      },
+      {
+        text: 'morgan',
+      },
+      {
+        text: 'skip',
+      },
+      {
+        text: 'immediate',
+      },
+      {
+        text: 'express',
+      },
+      {
+        text: 'install',
+      },
+      {
+        text: 'make',
+      },
+      {
+        text: 'logger',
+      },
+    ],
+    comment: '<p>To use the new <strong>HTTP</strong> logger (called <code>morgan</code>) from <strong>Express 4.0</strong> you need to install:</p>\n<pre><code class="language-bash">npm install morgan\n</code></pre>\n<p>And import it:</p>\n<pre><code class="language-javascript">var morgan = require(\'morgan\');\n</code></pre>\n<p>When creating a new <code>morgan</code> logger middleware a <code>format</code> must be specified, followed by desired <code>options</code> (which are optional) :</p>\n<pre><code class="language-javascript">app.use(morgan(\'tiny\'));\n</code></pre>\n<p>The <code>format</code> can be a string or a function that will produce a log entry (tokens are of help here). Predefined names include <code>dev</code>, <code>combined</code>, <code>short</code> etc.</p>\n<p>Options worth mentioning are:</p>\n<ul>\n<li><code>immediate</code> that will write log lines on request instead of response (requests will be logged even when server has crashed)</li>\n<li><code>skip</code> that determines when logging should be skipped.</li>\n</ul>\n<p>To only log error responses:</p>\n<pre><code class="language-javascript">morgan(\'combined\', {\n  skip: function (req, res) {\n    return res.statusCode &#x3C; 400 }\n});\n</code></pre>\n<p>Custom <code>token</code>s can be also defined using <code>morgan.token</code> function.</p>\n',
+  },
+}

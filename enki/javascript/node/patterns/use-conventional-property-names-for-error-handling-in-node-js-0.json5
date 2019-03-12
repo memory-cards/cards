@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/patterns/use-conventional-property-names-for-error-handling-in-node-js.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>When handling errors in Node, which class is it best practice to use?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Error',
+      },
+      {
+        text: 'node-error',
+      },
+      {
+        text: 'Node-error',
+      },
+      {
+        text: 'nodeerror',
+      },
+    ],
+    comment: '<p>When you handle errors in Node.js, it is best practice to use the standard <code>Error</code> class.</p>\n<p>You should also use the <strong>conventional property names</strong> to stay consistent with Node core and Node add-ons.</p>\n<p>You should include any properties that are useful for the person who will read it. The caller might want to create a custom error message from the details provided.</p>\n<p>For example:</p>\n<ul>\n<li><code>localHostname</code> the local DNS hostname</li>\n<li><code>localIp</code> the local IP address</li>\n<li><code>localPort</code>the local TCP port</li>\n<li><code>propertyName</code> an object property name, or an argument name</li>\n<li><code>propertyValue</code> an object property value</li>\n</ul>\n',
+  },
+}

@@ -1,0 +1,49 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/flow-control/data-type-comparison-in-switch-statements.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Complete the following code snippet such that <code>A</code> is logged to the <code>console</code>:</p>\n<pre><code class="language-javascript">var x = 1;\nswitch (???) {\n  ??? ???:\n    console.log(\'A\');\n}\n// A\n</code></pre>\n',
+    answers: [
+      {
+        text: 'x',
+      },
+      {
+        text: 'case',
+      },
+      {
+        text: '1',
+      },
+      {
+        text: "'1'",
+      },
+      {
+        text: 'default',
+      },
+      {
+        text: "'5'",
+      },
+      {
+        text: '5',
+      },
+      {
+        text: 'one',
+      },
+      {
+        text: 'A',
+      },
+      {
+        text: "'A'",
+      },
+    ],
+    comment: "<p>The <code>==</code> operator does not care for types. Therefore, the following <code>if</code> condition will pass:</p>\n<pre><code class=\"language-javascript\">var test = 5;\nif (test == '5'){\n  console.log('Ay caramba');  \n}\n// Ay caramba\n</code></pre>\n<p>Instead, the <code>===</code> operator won't do any type conversion and the <code>if</code> condition will be evaluated to <code>false</code>:</p>\n<pre><code class=\"language-javascript\">if (test === '5') {\n  console.log('Ay caramba');\n} else {\n  console.log('Expected');\n}\n// Expected\n</code></pre>\n<p>Keep in mind that <strong>JavaScript</strong> uses <strong>strict comparison</strong> for <code>switch</code> statements:</p>\n<pre><code class=\"language-javascript\">var test = 5;\nswitch (test) {\n  case '5':\n    console.log('Ay caramba');\n}\n</code></pre>\n<p>Therefore, the code snippet above won't <code>log</code> anything.</p>\n",
+  },
+}

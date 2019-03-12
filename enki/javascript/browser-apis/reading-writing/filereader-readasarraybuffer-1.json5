@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/reading-writing/filereader-readasarraybuffer.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Which method of the <code>FileReader</code> class can be used to read data as an array buffer?</p>\n<pre><code class="language-javascript">const reader = new FileReader()\nreader.???()\n</code></pre>\n',
+    answers: [
+      {
+        text: 'readAsArrayBuffer',
+      },
+      {
+        text: 'readAsBuffer',
+      },
+      {
+        text: 'readTypedArray',
+      },
+      {
+        text: 'readArray',
+      },
+      {
+        text: 'readBuffer',
+      },
+    ],
+    comment: '<p>The <code>readAsArrayBuffer()</code> method will read a <em>file</em> or <em>blob</em> object and produce an <em>ArrayBuffer</em>.</p>\n<p>You cannot work with the data contained in <em>ArrayBuffers</em> directly, but can access it via a <code>DataView</code> object. The buffer and the view make together a <strong>typed array</strong>.</p>\n<p>ArrayBuffers can be used to work with raw data containing complex types, convert file formats and when working with the <code>XmlHttpRequest</code> object and binary data.</p>\n<p>Declaring a new File Reader instance.</p>\n<pre><code class="language-javascript">var reader = new FileReader();\n</code></pre>\n<p>Reading data as an array buffer and assign it to an array of 8 bit unsigned integers.</p>\n<pre><code class="language-javascript">reader.onload = function(e) {\n  var chars  =\n    new Uint8Array(reader.result);\n}\nreader.readAsArrayBuffer(file);\n</code></pre>\n',
+  },
+}

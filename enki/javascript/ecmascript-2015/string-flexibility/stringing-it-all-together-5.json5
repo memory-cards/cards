@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-flexibility/stringing-it-all-together.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">/\n'na na na na na '*/\nalert('na '.???);\n</code></pre>\n<p>%exp\nThe <code>repeat()</code> method creates and returns a new string which contains the specified number of copies of the string it was applied on.<br>\n%</p>\n",
+    answers: [
+      {
+        text: 'Make the alert',
+      },
+      {
+        text: 'repeat(5)',
+      },
+      {
+        text: 'again(5)',
+      },
+      {
+        text: '${5}',
+      },
+    ],
+    comment: '<p>Do you know how to manipulate Strings in ES6?</p>\n',
+  },
+}

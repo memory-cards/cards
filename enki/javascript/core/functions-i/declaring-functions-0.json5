@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-i/declaring-functions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What would the following snippet print?</p>\n<pre><code>function mult(x, y){\n  var z = x \n}\n\nconsole.log(mult(2,3));\n???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'x;',
+      },
+      {
+        text: 'undefined',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: '9',
+      },
+      {
+        text: '6',
+      },
+      {
+        text: 'error',
+      },
+    ],
+    comment: '<p>JavaScript supports many different ways of declaring functions.</p>\n<p>The most common is the <em>function declaration</em>:</p>\n<pre><code>//function to add 2 parameters\nfunction add(x, y){\n    return x + y;\n}\n\nadd(1,2);//3\n</code></pre>\n<p><strong>Return Values</strong></p>\n<p>In the above example, we specified that we would return the function argument x plus argument y.</p>\n<p>If we did not specify a return value in the above example, then the function would return <em>undefined</em> e.g.</p>\n<pre><code>function add(x, y){\n    x + y;\n}\n\nadd(1,2);//undefined\n</code></pre>\n<p>Note that there are some more complex cases where a function will not return <em>undefined</em> when no return is specified.</p>\n',
+  },
+}

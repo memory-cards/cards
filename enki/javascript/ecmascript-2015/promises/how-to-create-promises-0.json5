@@ -1,0 +1,51 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/promises/how-to-create-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>Complete the missing words in the code such that the commented scenario stands true:</p>\n<pre><code class=\"language-javascript\">const p = new ???(\n  (???) => {\n    console.log('Hello')\n    setTimeout(() => {\n      ???('..from Enki!', 4000)\n    })\n  })\n  .???(res => {\n    console.log(res)\n  })\n\n// log 'Hello'\n// wait 4 seconds\n// log '..from Enki!'\n</code></pre>\n",
+    answers: [
+      {
+        text: 'Promise',
+      },
+      {
+        text: '(resolve, reject)',
+      },
+      {
+        text: 'resolve',
+      },
+      {
+        text: 'then',
+      },
+      {
+        text: 'catch',
+      },
+      {
+        text: 'reject',
+      },
+      {
+        text: '(reject)',
+      },
+      {
+        text: 'await',
+      },
+      {
+        text: 'async',
+      },
+      {
+        text: 'wait',
+      },
+      {
+        text: 'try',
+      },
+    ],
+    comment: '<p>Promises are easy to create.</p>\n<p>When we create a new Promise we supply a function that has two arguments.</p>\n<p>These two arguments are mapped to special promise <code>resolve</code> and <code>reject</code> functions.</p>\n<p>The below code creates a new promise.</p>\n<pre><code class="language-javascript">var p =\nnew Promise(function(resolve, reject){\n console.log("I run immediately");\n}).\n</code></pre>\n<p>Note how the functions body was run immediately.</p>\n<h3>then</h3>\n<p><code>then</code> is used with a promise object and allows you to define how you want to handle the result of a promise.</p>\n<p>Let\'s pretend we want to call an external service to get a value and on successful completion log the returned value to the console.</p>\n<p>Instead of actually calling an external service we will use the <strong>setTimeout</strong> method to delay the return 2 seconds simulating making a remote call.</p>\n<pre><code class="language-javascript">var p =\nnew Promise(function(resolve, reject) {\n console.log("run immediately");\n setTimeout(function(){\n   resolve("enki")}, 2000);\n})\n.then(function(result){\n console.log(result)\n});\n// logs run immediately\n// waits 2 seconds\n// logs "enki"\n</code></pre>\n<p>We declared a new promise supplying a function with two arguments resolve and reject.</p>\n<p>Next we used setTimeout to asynchronously call the resolve function after two seconds passing the value enki.</p>\n<p>When resolve was called after two seconds we then logged this value to the console.</p>\n<p>It is important to note that you cannot cancel a promise once it\'s being processed and you cant check on its current state either.</p>\n<p>Next let\'s look at how to indicate something went wrong..</p>\n',
+  },
+}

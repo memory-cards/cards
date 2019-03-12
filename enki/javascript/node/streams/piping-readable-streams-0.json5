@@ -1,0 +1,69 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/streams/piping-readable-streams.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>How would you pipe the data from a readStream of <code>fileA.txt</code> to a writeStream of <code>fileB.txt</code>, both created through the <code>fs</code> module? Basically you have to move all the data from <code>fileA</code> to <code>fileB</code>.</p>\n<pre><code class="language-javascript">var fs = require(\'fs\')\n\nvar r = ???(???)\nvar w = ???.???(???)\n\n???.???(???)\n</code></pre>\n',
+    answers: [
+      {
+        text: 'fs.createReadStream',
+      },
+      {
+        text: "'fileA.txt'",
+      },
+      {
+        text: 'fs',
+      },
+      {
+        text: 'createWriteStream',
+      },
+      {
+        text: "'fileB.txt'",
+      },
+      {
+        text: 'r',
+      },
+      {
+        text: 'pipe',
+      },
+      {
+        text: 'w',
+      },
+      {
+        text: 'fs.readStream',
+      },
+      {
+        text: 'readStream',
+      },
+      {
+        text: 'writeStream',
+      },
+      {
+        text: 'fs.writeStream',
+      },
+      {
+        text: 'transfer',
+      },
+      {
+        text: 'move',
+      },
+      {
+        text: 'fileA',
+      },
+      {
+        text: 'fileB',
+      },
+    ],
+    comment: '<p>Piping allows for data to be read from a source, and passed onto a destination without your application having to manage the flow of the data.</p>\n<pre><code class="language-javascript">var fs = require(‘fs’);\nvar rStream = fs.createReadStream(\n  ‘file1.txt’);\nvar wStream = fs.createWriteStream(\n  ‘file2.txt’);\n\nrStream.pipe(wStream);\n</code></pre>\n<p>The <code>pipe()</code> function is used in the above example to write the content of <code>file1</code> (which was read into <code>rstream</code>) into file2 using <code>wstream</code>. <code>pipe()</code> manages the data flow meaning there’s no need to worry about fast or slow data. Also, because <code>pipe()</code> returns the destination stream it can be used chain multiple streams together.</p>\n',
+  },
+}

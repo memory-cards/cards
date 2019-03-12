@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/number-extensions/number-extensions-part-1.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the missing calls with methods introduced in ES6 such that all the statements are true:</p>\n<pre><code class="language-javascript">Number.???(5) // true\n???.???(2.71) // false\nNumber.???(Number.NaN) // true\n</code></pre>\n',
+    answers: [
+      {
+        text: 'isFinite',
+      },
+      {
+        text: 'Number',
+      },
+      {
+        text: 'isInteger',
+      },
+      {
+        text: 'isNaN',
+      },
+      {
+        text: 'isReal',
+      },
+      {
+        text: 'String',
+      },
+      {
+        text: 'isRatio',
+      },
+      {
+        text: 'NaN',
+      },
+      {
+        text: 'isNotNaN',
+      },
+    ],
+    comment: '<p>Number benefits from a number of new methods saving you from writing your own potentially error prone implementation.</p>\n<p>There are a large number so here are some of the ones that are likely to have more use:</p>\n<h3>Number.isFinite</h3>\n<p>Determines whether a number is finite (finite means that it could be measured or have a value).</p>\n<pre><code class="language-javascript">Number.isFinite(Infinity); //false\nNumber.isFinite(100); //true\n</code></pre>\n<h3>Number.isInteger</h3>\n<p>Determines if a number is an integer or not.</p>\n<pre><code class="language-javascript">Number.isInteger(1); // true\nNumber.isInteger(0.1); //false\n</code></pre>\n<h3>Number.isNaN</h3>\n<p>Before ES6 it was difficult to test if a value was equal to <em>NaN</em> (Not a number). This is because NaN == NaN evaluates to false.</p>\n<p>Whilst a global <em>isNaN</em> function has existed in previous versions it has the issue that it converts values which makes it hard to test if something is really <em>NaN</em>:</p>\n<pre><code class="language-javascript">isNaN("Enki") == true; //true\n</code></pre>\n<p>Number.isNaN allows you to easily test if a number really is NaN:</p>\n<pre><code class="language-javascript">Number.isNaN(1); //false\nNumber.isNaN(Number.NaN); //true\n</code></pre>\n',
+  },
+}

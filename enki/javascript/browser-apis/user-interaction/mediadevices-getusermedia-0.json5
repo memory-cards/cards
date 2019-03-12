@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/user-interaction/mediadevices-getusermedia.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Get and return the MediaStream object using the promise below:</p>\n<pre><code class="language-javascript">var p = navigator.???.???({\n   audio: true,\n   video: true\n});\n</code></pre>\n',
+    answers: [
+      {
+        text: 'mediaDevices',
+      },
+      {
+        text: 'getUserMedia',
+      },
+      {
+        text: 'mediaStream',
+      },
+      {
+        text: 'navigator',
+      },
+      {
+        text: 'promise',
+      },
+      {
+        text: 'permission',
+      },
+    ],
+    comment: '<p><em>MediaDevices.getUserMedia()</em> prompts a user for permission to use video/audio input devices such as webcams/microphones.</p>\n<p>If permission is provided then the promise returned is resolved with the <em>MediaStream</em> object.</p>\n<p>Standard syntax:</p>\n<pre><code class="language-javascript">navigator.mediaDevices.getUserMedia\n                            (constraints)\n.then(function(mediaStream) { ... })\n.catch(function(error) { ... })\n</code></pre>\n<p>A full example getting and returning the <em>MediaStream</em> object, using the promise:</p>\n<pre><code class="language-javascript">var p = navigator.mediaDevices.\n           getUserMedia({ audio: true,\n                          video: true });\n</code></pre>\n<p>You can do something with the video here.</p>\n<pre><code class="language-javascript">p.then(function(mediaStream) {\n  var video = document.\n              querySelector(\'video\');\n  video.src = window.URL.\n              createObjectURL(mediaStream);\n  video.onloadedmetadata = function(e) {\n    // ...\n  };\n});\n</code></pre>\n<p>You always check for errors at the end.</p>\n<pre><code class="language-javascript">p.catch(function(err) {\n     console.log(err.name);\n});\n</code></pre>\n',
+  },
+}

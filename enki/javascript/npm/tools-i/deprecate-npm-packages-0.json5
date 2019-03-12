@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/tools-i/deprecate-npm-packages.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'workout',
+    'deep',
+    'introduction',
+  ],
+  card: {
+    question: '<p>How do you un-deprecate <code>enki</code> package?</p>\n<pre><code>$ npm ??? enki ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'deprecate',
+      },
+      {
+        text: '""',
+      },
+      {
+        text: 'un-deprecate',
+      },
+      {
+        text: '"un-deprecated Enki',
+      },
+      {
+        text: '"any message"',
+      },
+    ],
+    comment: '<p>Using the simple <code>npm deprecate</code> command you can deprecate versions of published packages. This only works if you are the <strong>owner</strong> of the specified package.</p>\n<pre><code class="language-bash">npm deprecate jQuery "This is deprecated"\n</code></pre>\n<p>Keep in mind that a message must be also specified after the package name/version.</p>\n<p>Version ranges can also be specified:</p>\n<pre><code class="language-bash">npm deprecate jQuery@"&#x3C;0.1.2" "Bug fixed"\n</code></pre>\n<p>This will deprecate every version that is smaller than <code>0.1.2</code> of the specified package (<code>jQuery</code> in this case).</p>\n<p>Packages can also be un-deprecated by specifying an empty string as the message:</p>\n<pre><code class="language-bash">npm deprecate jQuery@"&#x3C;0.1.2" ""\n</code></pre>\n<p>Deprecation makes sure that users installing such packages are informed though warning/s about it being deprecated.</p>\n',
+  },
+}

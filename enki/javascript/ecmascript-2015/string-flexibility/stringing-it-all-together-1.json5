@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-flexibility/stringing-it-all-together.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">/\n to prevent the new line \\n? */\nvar comment =???`Not a newline: \\n`;\nalert(comment);\n</code></pre>\n<p>%exp\nThe raw string will include any escaped characters and backslashes that are present in the string.\n%</p>\n',
+    answers: [
+      {
+        text: 'What is needed',
+      },
+      {
+        text: 'String.raw',
+      },
+      {
+        text: 'Template.ignore',
+      },
+      {
+        text: '$.',
+      },
+    ],
+    comment: '<p>Do you know how to manipulate Strings in ES6?</p>\n',
+  },
+}

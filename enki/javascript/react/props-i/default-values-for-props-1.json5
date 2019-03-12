@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-i/default-values-for-props.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Fill the missing that such that the default values for the <code>value</code> prop is <code>"xyz"</code>:</p>\n<pre><code class="language-jsx">function Comp(props) {\n  return &#x3C;h2>{props.value}&#x3C;/h2>;\n}\n\nComp.??? = {\n  ???: ???,\n};\n</code></pre>\n',
+    answers: [
+      {
+        text: 'defaultProps',
+      },
+      {
+        text: 'value',
+      },
+      {
+        text: "'xyz'",
+      },
+      {
+        text: 'default',
+      },
+      {
+        text: 'getDefaultProps',
+      },
+    ],
+    comment: '<p><strong>React</strong> provides a way of defining <em>default</em> values for props. This allows the safety usage of props even though they are not specified by the parent component.</p>\n<p>The value assignment is done via the <code>defaultProps</code> special property of your component:</p>\n<pre><code class="language-jsx">function MyComponent(props) {\n  return &#x3C;p>{props.text}&#x3C;/p>;\n}\n\nMyComponent.defaultProps = {\n  text: \'Bonjour le monde!\',\n};\n</code></pre>\n<p>Here, the default value for the <code>text</code> prop is "Bonjour le monde!".</p>\n<p>As a consequence, <code>this.props.text</code> will have a value even if it\'s not specified by the parent component.</p>\n',
+  },
+}

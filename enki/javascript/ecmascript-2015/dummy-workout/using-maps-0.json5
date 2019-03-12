@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'AlexBroadbent',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/using-maps.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'javascript',
+    'ecmascript2015',
+    'ecmascript',
+    'map',
+    'array',
+  ],
+  card: {
+    question: '<p>What\'s the output of the following snippet?</p>\n<pre><code class="language-javascript">var map = new Map();\nmap.set(0,"1");\nmap.set(1,"0");\n\nvar v = map.get(0);\nconsole.log(v);\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '1',
+      },
+      {
+        text: '0',
+      },
+      {
+        text: 'undefined',
+      },
+      {
+        text: 'null',
+      },
+    ],
+    comment: '<p>The <code>Map</code> object is a simple key/value map, in which value (including objects) can be used as either a key or a value.</p>\n<p>An iterable object can be passed into the <code>Map</code> on creation, after which each key/value pair is added to the new map.</p>\n<pre><code class="language-javascript">var map = new Map();\n\nmap.set(0, "zero");\nmap.set(1, "one");\n\n// Get the size of the map\nmap.size; // 2\n\n// Get a value of \nvar v = map.get(1); // v = "one"\n</code></pre>\n<p>Elements are stored in the same order in which they are put into the map.</p>\n<p>Therefore, in the above example, calling the <code>map.values()</code> method will return <code>["zero", "one"]</code> because that is the order they were entered into the map.</p>\n',
+  },
+}

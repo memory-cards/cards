@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterators-for-of-spreads.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">let arr = ['dragon', 'wizard',\n  'monkey'];\n\nfor (let i of arr) {\n   console.log(i);\n   // logs ???\n}\n</code></pre>\n<p>%exp\nA <code>for...of</code> statement will loop over the iterable <code>arr</code> object, assigning to variable <code>i</code> the values in the array, one by one.</p>\n<p>Therefore, <code>'dragon'</code>, <code>'wizard'</code> and <code>'monkey'</code> will be printed one by one.\n%</p>\n",
+    answers: [
+      {
+        text: "'dragon', 'wizard', 'monkey'",
+      },
+      {
+        text: '0, 1, 2',
+      },
+      {
+        text: '1, 2, 3',
+      },
+    ],
+    comment: "<p>Freshen up you knowledge on <code>iterators</code>, <code>for of</code> loops and the <code>spread operator</code> with this exercise.\nThe goal is to fill in the gaps with either the output of the snippet or the missing bit that won't throw any errors.</p>\n",
+  },
+}

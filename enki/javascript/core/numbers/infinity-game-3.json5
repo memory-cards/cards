@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'adamMontgomerie',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/numbers/infinity-game.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">var x = Infinity \nconsole.log(x); //prints ???\n</code></pre>\n<p>%exp\nAny fixed number multiplied by <code>Infinity</code> gives us infinity.\n%</p>\n',
+    answers: [
+      {
+        text: '10;',
+      },
+      {
+        text: 'Infinity',
+      },
+      {
+        text: 'NaN',
+      },
+      {
+        text: '-Infinity',
+      },
+    ],
+    comment: '<p>Your goal is to determine what the console\nwill print out for each given value of <code>x</code>.</p>\n',
+  },
+}

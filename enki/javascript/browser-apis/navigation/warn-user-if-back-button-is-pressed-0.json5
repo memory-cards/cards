@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/navigation/warn-user-if-back-button-is-pressed.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>What is the name of the event fired when a user leaves the webpage?</p>\n<p>???</p>\n<p>What is the name of the event listener triggered before a user leaves the webpage?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'beforeunload',
+      },
+      {
+        text: 'onbeforeunload',
+      },
+      {
+        text: 'onback',
+      },
+      {
+        text: 'back',
+      },
+      {
+        text: 'exit',
+      },
+      {
+        text: 'leave',
+      },
+      {
+        text: 'onexit',
+      },
+      {
+        text: 'onleave',
+      },
+    ],
+    comment: '<p>As to prevent the loss of data in some cases, you will want to warn the user before pressing the <strong>back</strong> button and leave the current page.</p>\n<p>The following snippet will add a warning message if the button is pressed:</p>\n<pre><code class="language-javascript">window.onbeforeunload = function() {\n  alert("Your work will be lost.");\n};\n</code></pre>\n<p><code>onbeforeunload</code> event handler property contains the code executed when the <code>beforeunload</code> is sent. This event fires when a window is about to unload its resources. The document is still visible and the event is still cancelable.</p>\n',
+  },
+}

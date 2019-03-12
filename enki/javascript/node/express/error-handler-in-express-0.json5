@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express/error-handler-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Which express module is designed as a development only error handling middleware?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'errorhandler',
+      },
+      {
+        text: 'error-handler',
+      },
+      {
+        text: 'error-handling',
+      },
+      {
+        text: 'error',
+      },
+    ],
+    comment: '<p>The <strong>Express 4.0</strong> <code>errorhandler</code> module is designed as a <strong>development only</strong> error handling middleware. This is because all information passed through this module is also sent back to the client.</p>\n<p>Installing the API:</p>\n<pre><code class="language-bash">$ npm install errorhandler\n</code></pre>\n<p>Importing the API:</p>\n<pre><code class="language-javascript">var errorHandler = require(\'errorhandler\');\n</code></pre>\n<p>Whenever an object is provided to <strong>Express</strong> as an error, the <code>errorhandler</code> module will print as much as possible about the error, using content negotiation between <strong>HTML</strong>, <strong>JSON</strong> and plain text.</p>\n<p>The constructor can, but is not obliged, to take <code>log</code> as an argument. This can take the values <code>true</code>, <code>false</code> or a function that will handle the errors.</p>\n<pre><code class="language-javascript">app.use(errorhandler({\n  log: errorNotification});\nfunction errorNotification(err,str,req) {\n  ...\n}\n</code></pre>\n<p>Passing <code>true</code> to the log will log errors using <code>console.error(str)</code>.</p>\n',
+  },
+}

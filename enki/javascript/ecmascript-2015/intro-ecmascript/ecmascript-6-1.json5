@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/intro-ecmascript/ecmascript-6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Do browsers have support for ES6?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: "Modern browsers only. A minority of older versions don't support it",
+      },
+      {
+        text: 'ES6 is supported by any browser',
+      },
+      {
+        text: 'Not at all. You need to compile your code',
+      },
+    ],
+    comment: "<p>ECMAScript 6 (also referred to as ECMAScript 2015 and ES6) is the latest version of the standard managed by ECMA International that JavaScript now tracks.</p>\n<p>Version 6 introduces many exciting features that make it easier than ever to write robust and succinct code.</p>\n<p>We'll be looking at features such as constants, arrow functions, the spread/rest operator, default parameters, extensions to existing types, and much more!</p>\n<p>It's important to note that if you intend to use some of the features that we will discuss, support for them varies widely across browsers and is changing all the time.</p>\n<p>If you want to make use of these new features (and you should!) but also want to ensure that your code will run for a broad audience you will probably want to make use of a processor/compiler such as <em>Babel</em> that will transform the newer code into code understood by older platforms.</p>\n",
+  },
+}

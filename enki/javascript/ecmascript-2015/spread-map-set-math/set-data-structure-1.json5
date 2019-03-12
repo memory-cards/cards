@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/spread-map-set-math/set-data-structure.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What method is used to append an element to the <code>Set</code> data structure?</p>\n<p>???</p>\n<p>What method is used to check if an element is contained in the same data structure?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'add',
+      },
+      {
+        text: 'has',
+      },
+      {
+        text: 'append',
+      },
+      {
+        text: 'contains',
+      },
+      {
+        text: 'is',
+      },
+      {
+        text: 'contain',
+      },
+      {
+        text: 'isIn',
+      },
+      {
+        text: 'push',
+      },
+    ],
+    comment: '<p>Set is a new data structure in ES6 that will only store unique values.</p>\n<pre><code class="language-javascript">var mySet = new Set();\nmySet.add(1);\nmySet.add(1);\nmySet.add(1);\nmySet.size; //size still 1\n</code></pre>\n<p>We can test if a set already has a value by using the has method:</p>\n<pre><code class="language-javascript">mySet.has(1); //true\n</code></pre>\n<p>Note that iterating through a set will return objects in their insertion order.</p>\n',
+  },
+}

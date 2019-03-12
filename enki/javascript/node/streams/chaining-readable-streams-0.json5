@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/streams/chaining-readable-streams.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Complete the following snippet such that the output of the first stream is used as input for the second one:</p>\n<pre><code class="language-javascript">var fs = require("fs");\n\nfs.createReadStream(\'in.txt\')\n  .???(fs.createWriteStream(out.txt));\n</code></pre>\n',
+    answers: [
+      {
+        text: 'pipe',
+      },
+      {
+        text: 'chain',
+      },
+      {
+        text: 'stream',
+      },
+      {
+        text: 'feed',
+      },
+      {
+        text: 'input',
+      },
+      {
+        text: 'output',
+      },
+    ],
+    comment: '<p>Chaining is where multiple pipes are used to move (pipe) data along a path where it can be read, written to or modified.</p>\n<p>Take the following example:</p>\n<pre><code>var fs = require(‘fs’);\nvar zlib = require(`zlib’);\n\nfs.createReadStream(‘file.txt.gz’)\n  .pipe(zlib.createGunzip())\n  .pipe(fs.createWriteStream(‘final.txt’));\n</code></pre>\n<p>Here, a readable stream is created which is piped into a second stream, <code>zlib.createGunzip()</code>, to unzip the content passed to it. The final pipe chains the unzipped content to the writable stream which writes the data to the specified file.</p>\n',
+  },
+}

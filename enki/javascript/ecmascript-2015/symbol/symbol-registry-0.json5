@@ -1,0 +1,51 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/symbol/symbol-registry.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the gaps such that the logs are correct:</p>\n<pre><code class="language-javascript">const sym1 = Symbol.???(\'enki\')\nconst sym2 = ???.for(???)\n\nconsole.log(sym1 === sym2)\n// true\n\nconsole.log(Symbol.???(sym1))\n// "enki"\n</code></pre>\n',
+    answers: [
+      {
+        text: 'for',
+      },
+      {
+        text: 'Symbol',
+      },
+      {
+        text: "'enki'",
+      },
+      {
+        text: 'keyFor',
+      },
+      {
+        text: 'new',
+      },
+      {
+        text: '"Enki"',
+      },
+      {
+        text: 'sym1',
+      },
+      {
+        text: 'sym2',
+      },
+      {
+        text: 'get',
+      },
+      {
+        text: 'access',
+      },
+      {
+        text: 'key',
+      },
+    ],
+    comment: '<p>As we saw earlier even if you create two symbols with the same description/key JavaScript considers them unique.</p>\n<pre><code class="language-javascript">var sym1 = Symbol("Enki");\nvar sym2 = Symbol("Enki");\nsym1 === sym2; //false\n</code></pre>\n<h3>Symbol.for</h3>\n<p>If you want to refer to symbols via a keys use the <strong>Symbol.for</strong> method to work with the <strong>Symbol Registry</strong>.</p>\n<p><strong>Symbol.for</strong> will create a symbol if it does not exist already and return the same symbol if it has already been defined.</p>\n<pre><code class="language-javascript">let sym1 = Symbol.for(\'Enki\');\nlet sym2 = Symbol.for(\'Enki\');\nsym1 === sym2; //true\n</code></pre>\n<p>The Symbol registry is even maintained across <strong>realms</strong> such as iframes and service workers.</p>\n<h3>Symbol.keyFor</h3>\n<p>You can use the <strong>Symbol.keyFor</strong> method to pass in a symbol and return the description associated with the symbol when it was first created:</p>\n<pre><code class="language-javascript">Symbol.keyFor(sym1); //"Enki"\n</code></pre>\n',
+  },
+}

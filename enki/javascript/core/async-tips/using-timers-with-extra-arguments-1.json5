@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'WebReflection',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async-tips/using-timers-with-extra-arguments.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>What log is shown each second?</p>\n<pre><code>let t = setInterval(\n  (a, b) => {\n    ++a;\n    console.log(a + b);\n    // ???\n  },\n  1000, // delay\n  0,    // a\n  10    // b\n);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'always 11',
+      },
+      {
+        text: '10 then 11 then 12',
+      },
+      {
+        text: 'NaN',
+      },
+      {
+        text: '11 then 12 then 13',
+      },
+    ],
+    comment: '<p>Both <code>setTimeout</code> and <code>setInterval</code> are a <em>W3C HTML5</em> specification, available as global methods in both client and server engines.</p>\n<pre><code>// signature for both methods\nconst uid = setTimeout(\n  handler,    // Function\n  optMsDelay, // usually a number\n  ...optArgs  // any value\n);\n</code></pre>\n<p>These methods allow authors to schedule timer-based callbacks.</p>\n<pre><code class="language-javascript">function chrono(start) {\n  // same start value is passed each time\n  // the scheduled interval runs\n  console.log((Date.now() - start) / 1000);\n}\nlet t = setInterval(chrono, 0, Date.now());\n</code></pre>\n<p>It is possible to cancel a scheduled interval or timeout using respectively <code>clearInterval</code> or <code>clearTimeout</code></p>\n<pre><code>// to stop previous chronometer\nclearInterval(t);\n</code></pre>\n<p>Please note this API does not guarantee that timers will fire exactly on schedule.</p>\n<p>Delays due to CPU load, other tasks, etc, are to be expected.</p>\n',
+  },
+}

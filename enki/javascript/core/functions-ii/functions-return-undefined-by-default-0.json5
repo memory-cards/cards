@@ -1,0 +1,47 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-ii/functions-return-undefined-by-default.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Fill in the gaps such that the <code>naturalHalf</code> function, given an input number, will return <code>undefined</code> for every odd number and the number\'s half for each even number:</p>\n<pre><code class="language-javascript">function naturalHalf(number) {\n  if (number ??? 2 == 0) {\n    ???\n  }\n  ???\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '%',
+      },
+      {
+        text: 'return number/2',
+      },
+      {
+        text: 'return',
+      },
+      {
+        text: 'return NaN',
+      },
+      {
+        text: 'return number%2',
+      },
+      {
+        text: 'return null',
+      },
+      {
+        text: 'returns undefined',
+      },
+      {
+        text: '/',
+      },
+      {
+        text: 'number',
+      },
+    ],
+    comment: "<p>JavaScript is a <strong>dynamic</strong> programming language which means that it is not necessary to define the return type of a function.</p>\n<p>If the function <code>return</code> statement is empty (or missing) the default value is <code>undefined</code>.</p>\n<p>For example:</p>\n<pre><code class=\"language-javascript\">function doSomething(num) {\n  if (num === 1) {\n    return;\n  }\n  if (num === 2) {\n    return 'Enki';\n  }\n}\n\ndoSomething(1) // undefined\ndoSomething(2) // 'Enki'\ndoSomething(3) // undefined\n</code></pre>\n",
+  },
+}

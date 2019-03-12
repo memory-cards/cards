@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dummy-workout/detect-online-connection.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Complete the check to see if a user is connected to the internet:</p>\n<pre><code>if (???.???) {\n  //\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'navigator',
+      },
+      {
+        text: 'onLine',
+      },
+      {
+        text: 'nav',
+      },
+      {
+        text: 'window',
+      },
+      {
+        text: 'connecte',
+      },
+    ],
+    comment: '<p>Check if a user is connected to internet with the help of <code>navigator</code> property.</p>\n<pre><code class="language-javascript">if(navigator.onLine) { \n    // ...\n}\n</code></pre>\n<p>This will return a <code>Boolean</code> value  for whether or not the user is connected to the internet.</p>\n<p>The <code>offline</code> and <code>online</code> events can also be used with a listener.</p>\n<pre><code class="language-javascript">window.addEventListener(\'online\', \n   myFunction);\nwindow.addEventListener(\'offline\', \n   myFunction);\n</code></pre>\n',
+  },
+}

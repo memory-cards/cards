@@ -1,0 +1,24 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/scope/closures.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>This code ??? run:</p>\n<pre><code class="language-javascript">function foo(){\n  var localVariable = \'lVar\';\n  return function bar(){\n     return localVariable;\n  }\n}\nfoo()();\n</code></pre>\n',
+    answers: [
+      {
+        text: 'will',
+      },
+      {
+        text: 'will not',
+      },
+    ],
+    comment: "<p>A <strong>closure</strong> is created when you access a  variable outside of the immediate scope. </p>\n<p>For example, if you define a function <strong>nested</strong> inside another function, a closure is created. </p>\n<p>You can return the <strong>nested function</strong> <code>bar()</code> and maintain access to the local variables, arguments, and inner function declarations of the <strong>outer function</strong> <code>foo()</code>:</p>\n<pre><code>function foo(){\n    var localVariable = 'private variable';\n    return function bar(){\n        return localVariable;\n    }\n}\nvar getLocalVariable = foo();\ngetLocalVariable() // private variable\n</code></pre>\n<p>Which is the same as:</p>\n<pre><code>foo()(); // private variable\n</code></pre>\n<p>This encapsulation means you can hide and preserve the execution context from outside scopes and expose a <strong>public interface</strong>.</p>\n",
+  },
+}

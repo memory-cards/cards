@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/redux-i/export-selectors-with-related-reducers.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>Selectors are used to compute ???, therefore ensuring that Redux stores the ???.</p>\n',
+    answers: [
+      {
+        text: 'derived data',
+      },
+      {
+        text: 'minimal possible state',
+      },
+      {
+        text: 'maximum possible state',
+      },
+      {
+        text: 'selected data',
+      },
+      {
+        text: 'exported data',
+      },
+      {
+        text: 'exported state',
+      },
+      {
+        text: 'selected state',
+      },
+    ],
+    comment: '<p>Selectors are used to compute derived data, thus making Redux store the minimal possible state. Reducers specify how the application\'s state changes in response to some actions.</p>\n<p>A good practice in Redux is to export your <strong>selectors</strong> with the related <strong>reducers</strong>.\nDoing so, views and action creators can be decoupled from the state shape tree.</p>\n<pre><code class="language-javascript">function visibleIds(state = [], action){\n  switch (action.type) {\n    case RECEIVE_PRODUCTS:\n      return action.products.map(\n        product => product.id)\n    default:\n      return state\n  }\n}\nexport default combineReducers({\n  byId,\n  visibleIds\n})\nexport function getProduct(state,id) {\n  return state.byId[id]\n}\nexport function getVisibleProducts(state) {\n  return state.visibleIds.map(\n    id => getProduct(state,id))\n}\n</code></pre>\n<p>Another example:</p>\n<pre><code class="language-javascript">function mapStateToProps(state) {\n  return {\n    products: getVisibleProducts(\n      state.products)\n  }\n}\nexport default connect(\n  mapStateToProps,\n  { addToCart }\n)(ProductsContainer)\n</code></pre>\n',
+  },
+}

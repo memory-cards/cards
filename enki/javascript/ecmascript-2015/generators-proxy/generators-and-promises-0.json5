@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/generators-and-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'promise',
+    'async',
+    'functional programming',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">function\n  yield 'E';\n  yield 'n';\n  yield 'k';\n  yield 'i';\n}\nlet genObj = genFunc();\nconsole.log(genObj.next());\n// { value: ??? : false }\n</code></pre>\n<p>%exp\nGenerators are functions with multiple <code>yield</code> expressions, which act like \"pause\" buttons. When the <code>next()</code> function is called, the generator goes to the next unvisited yield. The object returned by the generator has the <code>value</code> field, which contains the yielded object, and a <code>done</code> field, which states whether there are any yields left.\n%</p>\n",
+    answers: [
+      {
+        text: 'genFunc() {',
+      },
+      {
+        text: "'E' , done",
+      },
+      {
+        text: "'E' , next",
+      },
+      {
+        text: "'n' , done",
+      },
+    ],
+    comment: '<p>Some of the most exiting features of ES6 are generators and promises.</p>\n<p>Can you fill in the gaps in the following code snippets such that they make sense?</p>\n',
+  },
+}

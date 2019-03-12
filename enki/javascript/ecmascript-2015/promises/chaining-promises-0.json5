@@ -1,0 +1,54 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/promises/chaining-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>Fill in the following promise definition such that the logs stand true:</p>\n<pre><code class=\"language-javascript\">const p = new ???(\n  (resolve, reject) => {\n    ???('enki')\n  })\n  .???(res => console.log(res))\n  .then(res => console.log('says'))\n  .???(err => console.log('hey'))\n  .??? => console.log('hello'))\n// enki\n// says\n// hello\n</code></pre>\n",
+    answers: [
+      {
+        text: 'Promise',
+      },
+      {
+        text: 'resolve',
+      },
+      {
+        text: 'then',
+      },
+      {
+        text: 'catch',
+      },
+      {
+        text: 'then (res',
+      },
+      {
+        text: 'then()',
+      },
+      {
+        text: 'catch()',
+      },
+      {
+        text: 'next',
+      },
+      {
+        text: 'next(',
+      },
+      {
+        text: 'finally',
+      },
+      {
+        text: 'res',
+      },
+      {
+        text: 'reject',
+      },
+    ],
+    comment: '<p>Promises advantages really become apparent when you start working with more complex flows and multiple promises.</p>\n<p>We can chain promises together using the <strong>then</strong> function:</p>\n<pre><code class="language-javascript">var p =\nnew Promise(function(resolve, reject){\n  setTimeout(function(){resolve("enki")},\n  2000);\n})\n.then(function(result){\n console.log("then 1");\n})\n.then(function(result){\n console.log("then 2");\n})\n.then(function(result){\n console.log("finished");\n});\n\n//then 1\n//then 2\n//finished\n</code></pre>\n',
+  },
+}

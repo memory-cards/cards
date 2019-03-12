@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/spread-map-set-math/map-set-weakmap-weakset.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">// With ES6 maps, we set simple\n// key/value pairs:\n\nStrings,\n???\nare acceptable key formats;\n</code></pre>\n<p>%exp\nAll four can be used as keys in ES6 maps.\n%</p>\n',
+    answers: [
+      {
+        text: 'functions, objects and dates',
+      },
+      {
+        text: 'and nothing else',
+      },
+      {
+        text: 'null, NaN, and objects',
+      },
+    ],
+    comment: '<p>How confident are you about using JavaScript ES6 data structures?</p>\n',
+  },
+}

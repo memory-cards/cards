@@ -1,0 +1,46 @@
+{
+  __meta__: {
+    author: 'lizTheDeveloper',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-flexibility/tagged-template-literals-2.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'es6',
+    'deep',
+    'strings',
+  ],
+  card: {
+    question: '<p>Given the following function:</p>\n<pre><code class="language-javascript">function processNumber(strings, value) {\n  let ret = strings[0] + value;\n  if (value % 2 === 0) {\n    ret += \' is even\'\n  } else {\n    ret += \' is odd\'\n  }\n  return ret;\n}\n</code></pre>\n<p>How would you call the the tagged template function such that the log statement is true?</p>\n<pre><code class="language-javascript">const number = 2;\nconsole.log(\n ???`Number ${number}???\n)\n// Number 2 is even\n</code></pre>\n',
+    answers: [
+      {
+        text: 'processNumber',
+      },
+      {
+        text: '`',
+      },
+      {
+        text: '`)',
+      },
+      {
+        text: 'processNumber(',
+      },
+      {
+        text: 'processNumber()',
+      },
+      {
+        text: 'this.processNumber(',
+      },
+      {
+        text: 'String.template(processNumber',
+      },
+      {
+        text: '`))',
+      },
+    ],
+    comment: "<p>For more advanced templating you can use <strong>Tagged Template Literals</strong>, which allow you to define a function that does multiple processing steps in order to produce a string. Our template becomes a function, rather than a simple string, allowing us to abstract the templating process.</p>\n<pre><code class=\"language-javascript\">let price = 5;\n\nfunction currency(strings, priceValue){\n  const str0 = strings[0]; // $ or €\n  const str1 = strings[1]; //.00\n\n  let currencyName = '';\n  if (str0.indexOf('$') !== -1) {\n    currencyName = ' USD';\n  } else if (str0.indexOf('€') !== -1) {\n    currencyName = ' EUR';\n  }\n  return str0 + priceValue +\n    str1 + currencyName;\n}\n\nconsole.log(currency`$${price}.00`)\n// $5.00 USD\nconsole.log(currency`€${price}.00`)\n// €5.00 EUR\n</code></pre>\n<p>The <code>strings</code> parameter is an array of the normal strings that are placed in-between the substitutions.\nThe <code>priceValue</code> parameter receives the value passed in to the first template literal substitution in the string to be interpolated.</p>\n<p>Subsequent values appear as additional arguments, a best practice is to use the <strong>rest</strong> operator to map values to an array rather than define each argument:</p>\n<pre><code class=\"language-javascript\">function price(strings, ...substitution){\n ...\n}\n</code></pre>\n",
+  },
+}

@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/if-else-shortcut-conditional-operator.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">if(animal==='lion'){\n   run = true;\n}else{\n   run = false;\n}\n</code></pre>\n<p>How would you express this using\na conditional operator?</p>\n<pre><code class=\"language-javascript\">var animal = 'lion';\nvar run = (animal === 'lion')? true:???;\n</code></pre>\n",
+    answers: [
+      {
+        text: "'false'",
+      },
+      {
+        text: "'undefined'",
+      },
+      {
+        text: "'null'",
+      },
+      {
+        text: 'true',
+      },
+    ],
+    comment: '<p>Rather than using standard <code>if/else</code> notation such as:</p>\n<pre><code>var count = 101;\nvar stop;\nif (count > 100) {\n  stop = true;\n}\nelse {\n  stop = false;\n}\n// stop = true\n</code></pre>\n<p>It is possible to use a <code>Condition (ternary)</code> operator:</p>\n<pre><code>var count = 99;\nvar stop = (count > 100) ? true : false;\n// stop = false\n</code></pre>\n',
+  },
+}

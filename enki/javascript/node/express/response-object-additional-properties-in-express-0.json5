@@ -1,0 +1,60 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express/response-object-additional-properties-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Consider the response object proposed by the Express library.</p>\n<p>How would you clear the cookie <code>my-rogue-cookie</code>?</p>\n<pre><code class="language-javascript">res.???(???)\n</code></pre>\n<p>If an error happened we would like to send a "There is an error" message to the client. Implement this, together with a *<em>503</em></p>\n<pre><code class="language-javascript">res.???(???, ???)\n</code></pre>\n',
+    answers: [
+      {
+        text: 'status code in the following snippet:',
+      },
+      {
+        text: 'clearCookie',
+      },
+      {
+        text: "'my-rogue-cookie'",
+      },
+      {
+        text: 'send',
+      },
+      {
+        text: "'There is an error'",
+      },
+      {
+        text: '503',
+      },
+      {
+        text: '404',
+      },
+      {
+        text: 'eraseCookie',
+      },
+      {
+        text: 'emptyCookie',
+      },
+      {
+        text: 'cookie',
+      },
+      {
+        text: 'myRogueCookie',
+      },
+      {
+        text: 'back',
+      },
+      {
+        text: 'respond',
+      },
+      {
+        text: 'error',
+      },
+    ],
+    comment: '<p><strong>Express</strong> framework adds many useful properties or methods to the <code>response</code> object.</p>\n<p>This object is usually passed to a callback (therefore it can take any name) and starts its life as an instance of <code>http.ServerObject</code>, a core <strong>Node</strong> object.</p>\n<p>Send a response to the client:</p>\n<pre><code class="language-javascript">res.send(body);\nres.send(status,body);\n//default content type is "text/html"\n</code></pre>\n<p>Send <strong>JSON</strong> to the client:</p>\n<pre><code class="language-javascript">res.json(json);\nres.json(status, json);\n</code></pre>\n<p>Send different content depending on the Accept request header:</p>\n<pre><code class="language-javascript">res.format({\'text/plain\': \'hey\',\n  \'text/html\': \'&#x3C;b>hey&#x3C;/b>\'});\n</code></pre>\n<p>Using <code>res.locals</code> one can get an object containing the default context for rendering views.  Rendering a view using the configured templating engine can be done using:</p>\n<pre><code class="language-javascript">res.render(view,[locals],callback);\n</code></pre>\n<p>If middleware support is present, client cookies can be set/cleared:</p>\n<pre><code class="language-javascript">res.cookie(name,value,[options]);\nres.clearCookie(name,[options]);\n</code></pre>\n',
+  },
+}

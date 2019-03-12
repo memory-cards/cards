@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'WebReflection',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-assignments.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">let axes = [10, 15, -7];\nlet [x, y] = axes;\nconsole.log(x, y);\n// ???\n</code></pre>\n<p>%exp\n<code>x</code> takes the first value in <code>axes</code> array and <code>y</code> the second.\n%</p>\n',
+    answers: [
+      {
+        text: '10, 15',
+      },
+      {
+        text: '10, [15, -7]',
+      },
+      {
+        text: '[10, 15], -7',
+      },
+      {
+        text: '[10, 15, -7], [10, 15, -7]',
+      },
+    ],
+    comment: '<p>What will be shown on the console?</p>\n',
+  },
+}

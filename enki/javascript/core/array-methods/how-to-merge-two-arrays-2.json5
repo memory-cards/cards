@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/array-methods/how-to-merge-two-arrays.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+    'introduction',
+    'workout',
+    'arrays',
+  ],
+  card: {
+    question: '<h3>what is the result of the following addition?</h3>\n<pre><code class="language-javascript">console.log([3, 14] + [2, 71])\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '3,142,71',
+      },
+      {
+        text: '3,14,2,71',
+      },
+      {
+        text: '[3,14,2,71]',
+      },
+      {
+        text: '[5, 85]',
+      },
+    ],
+    comment: '<p><code>concat</code> is not always the best approach to merging arrays as it generates a new array.</p>\n<p>Since <code>var</code>s are passed by reference, <code>concat</code> may mess up a reference.</p>\n<p>Instead:</p>\n<pre><code class="language-javascript">var array1 = [1, 2, 3];\nvar array2 = [4, 5, 6];\n</code></pre>\n<p>Merge them, adding the second one after the first one:</p>\n<pre><code class="language-javascript">Array.prototype.push.apply(array1, array2);\n</code></pre>\n<p>Unlike other languages, JavaScript does not support <code>+</code> for concatenating arrays. The output of such an operation would be a string:</p>\n<pre><code class="language-javascript">console.log([1, 2] + [3, 4])\n// 1,23,4\n</code></pre>\n',
+  },
+}

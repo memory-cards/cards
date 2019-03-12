@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express/response-object-additional-properties-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Send the given JSON file back to the client user Express\'s <code>response</code> object:</p>\n<pre><code class="language-javascript">var myJson; // equal to json we want to send\n//...\nres.???(???);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'json',
+      },
+      {
+        text: 'myJson',
+      },
+      {
+        text: 'status',
+      },
+      {
+        text: 'send',
+      },
+      {
+        text: 'format',
+      },
+      {
+        text: 'render',
+      },
+      {
+        text: 'cookie',
+      },
+      {
+        text: 'toJSON',
+      },
+      {
+        text: 'sendJSON',
+      },
+    ],
+    comment: '<p><strong>Express</strong> framework adds many useful properties or methods to the <code>response</code> object.</p>\n<p>This object is usually passed to a callback (therefore it can take any name) and starts its life as an instance of <code>http.ServerObject</code>, a core <strong>Node</strong> object.</p>\n<p>Send a response to the client:</p>\n<pre><code class="language-javascript">res.send(body);\nres.send(status,body);\n//default content type is "text/html"\n</code></pre>\n<p>Send <strong>JSON</strong> to the client:</p>\n<pre><code class="language-javascript">res.json(json);\nres.json(status, json);\n</code></pre>\n<p>Send different content depending on the Accept request header:</p>\n<pre><code class="language-javascript">res.format({\'text/plain\': \'hey\',\n  \'text/html\': \'&#x3C;b>hey&#x3C;/b>\'});\n</code></pre>\n<p>Using <code>res.locals</code> one can get an object containing the default context for rendering views.  Rendering a view using the configured templating engine can be done using:</p>\n<pre><code class="language-javascript">res.render(view,[locals],callback);\n</code></pre>\n<p>If middleware support is present, client cookies can be set/cleared:</p>\n<pre><code class="language-javascript">res.cookie(name,value,[options]);\nres.clearCookie(name,[options]);\n</code></pre>\n',
+  },
+}

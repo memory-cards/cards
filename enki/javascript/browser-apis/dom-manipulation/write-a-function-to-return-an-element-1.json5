@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'elliehoward',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dom-manipulation/write-a-function-to-return-an-element.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which of the following will return an element?\n???</p>\n<p>Option A:</p>\n<pre><code class="language-javascript">function initializeElement() {\n  var paragraph = document\n    .create(\'p\')\n  return paragraph;\n}\n</code></pre>\n<p>Option B:</p>\n<pre><code class="language-javascript">function initializeElement() {\n  var paragraph = document\n    .createElement(\'p\')\n  return element;\n}\n</code></pre>\n<p>Option C:</p>\n<pre><code class="language-javascript">function initializeElement() {\n  var paragraph = document\n    .createElement(\'p\')\n  return paragraph;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'C',
+      },
+      {
+        text: 'B',
+      },
+      {
+        text: 'A',
+      },
+    ],
+    comment: "<p>Let's say we need to create elements quite often within our code, then we should write a function that creates and returns an element:</p>\n<pre><code class=\"language-javascript\">function initializeElement() {\n  var heading = document\n    .createElement('h1')\n  return heading\n}\n</code></pre>\n<p>We can make our functions more useful by adding some parameters that can change the text inside, and even the type of element itself:</p>\n<pre><code class=\"language-javascript\">function initializeElement(element, text) {\n  var newElement = document\n    .createElement(element)\n  newElement\n    .appendChild(\n      document\n      .createTextNode(text)\n    )\n  return newElement\n}\ncreateElement(\n  'h1',\n  'hello world'\n)\n</code></pre>\n<p>In the example above we create an h1 element that says hello world.</p>\n",
+  },
+}

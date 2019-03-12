@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-i/npm-variables.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>The prefix needed to invoke preconfigured values is:</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '$npm_package_config_',
+      },
+      {
+        text: 'npm_package_config_',
+      },
+      {
+        text: 'npm_package_config',
+      },
+      {
+        text: '$npm_config',
+      },
+    ],
+    comment: '<p>Another feature of npm is allowing the user to set values which would be seen as <em>environmental variables</em> in <em>scripts</em>. All re-used values should be declared inside the <em>config</em> object:</p>\n<pre><code class="language-javascript">"config": {\n  "js_dev": "backend/js/",\n  "js_prod": "prod/backend/js/",\n  "port": "8080"\n},\n"scripts": {\n  "build:js":`browserify\n $npm_package_config_js_dev/main.js\n > $npm_package_config_js_prod/main.js`,\n  "watch:js":`watch \'npm run build:js\'\n        $npm_package_config_js_dev`\n}\n</code></pre>\n<p>The downside of it is that the reference can get quite verbose, as you have to add the <code>$npm_package_config_</code> prefix for every such variable. On the bright side, making changes to the location of the files is easier now as you would only have to change a single line.</p>\n<p>You can locally override an existing config by running:</p>\n<pre><code class="language-bash">$ npm config set\n    packageName:js_dev js/backend/\n</code></pre>\n<p>This would add an entry in the <em>~/.npmrc</em> file (<code>packageName:js_dev=js/backend/</code>), which is read at run time and changes the path on the local machine.</p>\n<p>It is a good idea to include default values as it ensures the scripts can be run without modification. Take <em>port</em> for example, in a <em>server.js</em> file you could retrieve it by:</p>\n<pre><code class="language-javascript">http.createServer(...).listen(\n  process.env.npm_package_config_port);\n</code></pre>\n<p>The same principle as above applies if users want to change the default port:</p>\n<pre><code class="language-bash">$ npm config set packageName:port 80\n</code></pre>\n<p>Keep in mind, however, that the environmental variables in Windows are invoked using <code>%</code>, which may cause OS compatibility problems.</p>\n',
+  },
+}

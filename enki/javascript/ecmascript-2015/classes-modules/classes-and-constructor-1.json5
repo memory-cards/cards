@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/classes-modules/classes-and-constructor.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'es6',
+    'introduction',
+    'oop',
+  ],
+  card: {
+    question: '<p>How would you assign a variable passed to the constructor to a class?</p>\n<pre><code class="language-javascript">class Sphere() {\n  constructor(radius) {\n    ??? = 4 / 3 \n      Math.pow(radius, 3)\n  }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Math.PI *',
+      },
+      {
+        text: 'this.volume',
+      },
+      {
+        text: 'const volume',
+      },
+      {
+        text: 'let volume',
+      },
+    ],
+    comment: '<p>It has always been possible to simulate classical inheritance in JavaScript, however it comes with a number of gotchas and caveats, and is widely regarded as "not nice to work with".</p>\n<p>ES6 introduces classes and inheritance to JavaScript with the addition of <code>class</code> keyword. It is important to note a few things:</p>\n<ul>\n<li>These changes don\'t change JavaScript\'s prototype model, they are merely syntactic sugar.</li>\n<li><code>Class</code>es in JavaScript support only one level of inheritance (although there is an approach called <em>mixins</em> for getting around this.)</li>\n<li><code>Class</code>es are not hoisted (moved up to the beginning of a scope block) so must always be declared before they are used.</li>\n</ul>\n<p>We can create a <code>class</code> in JavaScript with the following syntax:</p>\n<pre><code class="language-javascript">class Person {\n}\n\nvar p = new Person();\n</code></pre>\n<h3>Constructor</h3>\n<p>Often you will want the user to supply initialization arguments to the class – we can do this by introducing a <strong>constructor</strong>.</p>\n<p>JavaScript <code>class</code>es can have only a single constructor:</p>\n<pre><code class="language-javascript">class Person {\n  constructor(name) {\n    this.name = name;\n  }\n};\n\nvar p = new Person("Enki");\np.name; //Enki\n</code></pre>\n',
+  },
+}

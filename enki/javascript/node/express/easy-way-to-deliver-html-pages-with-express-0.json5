@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express/easy-way-to-deliver-html-pages-with-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Require the requisite module used to deliver  HTML pages:</p>\n<pre><code class="language-javascript">var ??? = require(\'???\');\n</code></pre>\n',
+    answers: [
+      {
+        text: 'serveStatic',
+      },
+      {
+        text: 'serve-static',
+      },
+      {
+        text: 'expressHTML',
+      },
+      {
+        text: 'express-html',
+      },
+      {
+        text: 'staticExpress',
+      },
+      {
+        text: 'static-express',
+      },
+      {
+        text: 'nodeHTML',
+      },
+      {
+        text: 'node-html',
+      },
+    ],
+    comment: "<p>Displaying basic <strong>HTML</strong> pages can be achieved in many ways using <strong>Node</strong>'s core API, yet the easiest way is by using the <strong>Express</strong> framework.</p>\n<p>The <code>serve-static</code> module will be used to deliver the page:</p>\n<pre><code class=\"language-javascript\">var express = require('express');\nvar serveStatic = require('serve-static');\n\nvar app = express();\n</code></pre>\n<p>Display <code>index.html</code>:</p>\n<pre><code class=\"language-javascript\">app.use(serveStatic('public/',{'index':\n  ['index.html', `index.htm`]}));\napp.listen(3000);\n</code></pre>\n<p>Multiple roots:</p>\n<pre><code class=\"language-javascript\">app.use(serveStatic(__dirname+ '/first'));\napp.use(serveStatic(__dirname+ '/second'));\n</code></pre>\n<p>Files will be firstly looked for in <code>/first</code> then in <code>/second</code> as a fallback.</p>\n",
+  },
+}

@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/scope/types-hoisting.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'hoisting',
+    'variables',
+    'obscura',
+  ],
+  card: {
+    question: '<p>What does *<em>hoisting</em></p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'mean?',
+      },
+      {
+        text: 'Variable declarations are processed before code is executed',
+      },
+      {
+        text: 'You must first declare variables before methods',
+      },
+      {
+        text: 'A general rule for **linters**',
+      },
+      {
+        text: 'You can have multiple variables with the same name',
+      },
+    ],
+    comment: '<p>In JavaScript, when you declare variables they are always processed first before any code is executed even if they are declared later in the code.</p>\n<p>For example, if you have the following code:</p>\n<pre><code class="language-javascript">x=1;\nvar x;\n</code></pre>\n<p>This is actually executed as:</p>\n<pre><code class="language-javascript">var x;\nx=1;\n</code></pre>\n<p>This process is called <strong>hoisting</strong> and it\'s considered best practice to declare variables at the top of the scope they are declared in.</p>\n<p>In practice, hoisting will rarely impact you but you should be aware it exists and some programs called <strong>linters</strong> (a linter checks code for style and rule breaches) will insist on variables being declared first.</p>\n',
+  },
+}

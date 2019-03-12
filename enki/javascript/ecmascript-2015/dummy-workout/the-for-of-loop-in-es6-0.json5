@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/the-for-of-loop-in-es6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Complete the syntax of <code>for-of</code> loop in <strong>ES6</strong>:</p>\n<pre><code class="language-javascript">??? (??? x ??? iterable) {\n  x = x + 2;\n  console.log(x);\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'for',
+      },
+      {
+        text: 'let',
+      },
+      {
+        text: 'of',
+      },
+      {
+        text: 'in',
+      },
+      {
+        text: 'while',
+      },
+      {
+        text: 'const',
+      },
+    ],
+    comment: "<p>The <code>for-of</code> loop is new in ES6:</p>\n<pre><code> for (let x of iterable) {\n   ···\n }\n</code></pre>\n<p>The loop iterates over <code>iterable</code> and assigns each of the enumerated items to the iteration variable <code>x</code>. <code>let</code> keeps the scope of <code>x</code> to within the loop.</p>\n<p>You can convert data structures into iterable objects using the <code>entries()</code>, <code>keys()</code> and <code>values()</code> methods:</p>\n<pre><code>// entries() returns a [key,value] array\nlet a = ['E', 'n', 'k', 'i'];\nfor (let pair of a.entries()) {\n  console.log(pair);\n}\n// [0, 'E']\n// [1, 'n']\n// [2, 'k']\n// [3, 'i']\n</code></pre>\n<p>Note: you can use this loop on strings, but it loops over Unicode code points which may be represented by more than one character.</p>\n",
+  },
+}

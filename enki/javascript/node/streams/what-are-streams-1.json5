@@ -1,0 +1,29 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/streams/what-are-streams.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Streams are ??? allowing data to be read from a source and for data to be piped to a destination.</p>\n',
+    answers: [
+      {
+        text: 'unix pipes',
+      },
+      {
+        text: 'transport methods',
+      },
+      {
+        text: 'modules',
+      },
+    ],
+    comment: '<p>Streams are unix pipes[1] allowing data to be read from a source and for data to be piped to a destination. A stream is effectively an <code>EventEmitter</code> with implementation of some special methods.</p>\n<p>These special methods define whether a stream is Readable, Writable, or Duplex (readable and writable). Readable streams allow for data to be read from a source and writable streams allow for data to be written to a destination.</p>\n<p>An example use of a Node stream is in a Node based HTTP server, <code>request</code> would be a readable stream, and <code>response</code> a writable stream. The filesystem, <code>fs</code>, module allows readable and writable streams to be implemented.</p>\n',
+  },
+}

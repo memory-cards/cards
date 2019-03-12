@@ -1,0 +1,48 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/good-to-know/load-initial-data-via-ajax.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Suppose you want to load some data via an ajax call to your component after it was mounted. Fill in the gaps such that you make sure you won\'t update the state with your ajax call login if the component is unmounted:</p>\n<pre><code class="language-javascript">const component = React.createClass({\n  ???: {\n    this.??? = ???\n    $.get(this.props.ajaxSource, res => {\n      if (???) {\n        this.setState({\n          propToUpdate: res\n        })\n      }\n    })\n  }\n\n  render() {\n    // ...\n  }\n\n  ??? {\n    this.mounted = false\n  }\n})\n</code></pre>\n',
+    answers: [
+      {
+        text: 'componentDidMount',
+      },
+      {
+        text: 'mounted',
+      },
+      {
+        text: 'true',
+      },
+      {
+        text: 'this.mounted',
+      },
+      {
+        text: 'componentWillUnmount',
+      },
+      {
+        text: 'componentDidUnMount',
+      },
+      {
+        text: 'render',
+      },
+      {
+        text: 'false',
+      },
+      {
+        text: 'isMounted',
+      },
+      {
+        text: 'componentWillReceiveProps',
+      },
+    ],
+    comment: '<p>Data is typically fetched in the  <code>componentDidMount</code> lifecycle method.\nWhen the response has arrived, the data is stored in a state, triggering a render to update your user interface.</p>\n<p>If processing an asynchronous request response, ensure the component is still mounted prior to updating its state. This can be done by tracking mount and unmount within the component, and checking it hasn\'t been unmounted before calling <code>setState</code>:</p>\n<pre><code class="language-javascript">var loadData = React.createClass({\n componentDidMount() {\n    this.mounted = true;\n    $.get(this.props.source, (result) => {\n      if (this.mounted) {\n        this.setState({\n          username: result.owner.login;\n        });\n      }\n    });\n  },\n\n  render() { ... },\n\n  componentWillUnmount() {\n    this.mounted = false;\n  }\n});\n</code></pre>\n',
+  },
+}

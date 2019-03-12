@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/spread-map-set-math/map-data-structure.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the missing method calls in the following snippets such that the logs hold:</p>\n<pre><code class="language-javascript">const myMap = new Map()\n\nmyMap.???(4, \'enki\')\n\nconsole.log(myMap.???(4))\n// enki\nconsole.log(myMap.???(4))\n// true\n</code></pre>\n',
+    answers: [
+      {
+        text: 'set',
+      },
+      {
+        text: 'get',
+      },
+      {
+        text: 'has',
+      },
+      {
+        text: 'add',
+      },
+      {
+        text: 'push',
+      },
+      {
+        text: 'contains',
+      },
+      {
+        text: 'contain',
+      },
+      {
+        text: 'delete',
+      },
+      {
+        text: 'clear',
+      },
+    ],
+    comment: '<p>Map is a new type of key/value object.</p>\n<p>It is common to use an object to store a set of keys and values:</p>\n<pre><code class="language-javascript">var obj = {\n   firstName: "John",\n   lastName: "Smith"\n}\n</code></pre>\n<p>Using this approach however the "key" values can only ever be strings, it is not as easy as it could be to iterate over all the values and you end up having to exclude inbuilt object properties such as toString.</p>\n<p>Maps allow keys and values to be other objects (yes even DOM elements!) and you can iterate over the items with constructs such as <em>for of</em> loops.</p>\n<p>Let\'s create a map and assign keys and values:</p>\n<pre><code class="language-javascript">var map = new Map();\nvar str = "A",\n    func = function (x) {return x*2};\n\nmap.set(str, "a");\nmap.set(func, "b");\n</code></pre>\n<p>We can then use the keys to retrieve values:</p>\n<pre><code class="language-javascript">map.get(func); //b\n</code></pre>\n<p>We can test if a value is stored in a map using the has operator</p>\n<pre><code class="language-javascript">map.has(str); //true\n</code></pre>\n<p>To delete an entry use the delete method:</p>\n<pre><code class="language-javascript">map.delete(str);\n</code></pre>\n<p>And the map can be emptied using clear:</p>\n<pre><code class="language-javascript">map.clear();\n</code></pre>\n',
+  },
+}

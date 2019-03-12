@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-i/setting-default-values-with-short-circuiting.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+    'short-circuiting',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p><code>Short circuit</code> the following code:</p>\n<pre><code class="language-javascript">function shortCir(name){\n  return ??? ??? \'John Doe\';\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'name',
+      },
+      {
+        text: '||',
+      },
+      {
+        text: '&&',
+      },
+      {
+        text: '==',
+      },
+    ],
+    comment: '<p><code>Short circuiting</code> returns the value of the second operand based on the value of the first.</p>\n<p>Instead of setting default values as below:</p>\n<pre><code class="language-javascript">function document(theTitle) {\n if (!theTitle) {\n   theTitle = "Untitled Doc";\n }\n}\n</code></pre>\n<p>We can use:</p>\n<pre><code class="language-javascript">function documentTitle(theTitle) {\n  theTitle = theTitle || "Untitled Doc";\n}\n</code></pre>\n',
+  },
+}

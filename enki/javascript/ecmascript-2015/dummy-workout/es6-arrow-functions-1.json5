@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/es6-arrow-functions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Give the equivalent using <strong>ES6 Arrow Functions</strong>:</p>\n<pre><code>// with ES5\nvar evens = odds.map(\n    function(n){return n + 1}\n  );\n\n// with ES6\n??? evens = odds.map(n ??? n + 1);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'var',
+      },
+      {
+        text: '=>',
+      },
+      {
+        text: 'return',
+      },
+      {
+        text: '()',
+      },
+      {
+        text: '{}',
+      },
+      {
+        text: '=',
+      },
+      {
+        text: '\\>',
+      },
+    ],
+    comment: '<p>ES6 <strong>arrow</strong> functions (<code>=></code>) represent function <strong>expressions</strong> in shorter syntax. Arrow functions turn </p>\n<pre><code>function(arguments){expression}\n</code></pre>\n<p>into </p>\n<pre><code>arguments => expression\n</code></pre>\n<p>For example:</p>\n<pre><code>// with ES5\nvar evens = odds.map(\n    function(n){return n + 1}\n  );\n\n// with ES6\nvar evens = odds.map(n => n + 1);\n</code></pre>\n',
+  },
+}

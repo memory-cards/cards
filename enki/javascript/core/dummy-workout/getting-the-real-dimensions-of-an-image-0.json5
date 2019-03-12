@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/getting-the-real-dimensions-of-an-image.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: "<p>Complete the load listener of <code>enkiImg</code> to get natural width and height:</p>\n<pre><code class=\"language-javascript\">enkiImg.???('???',\n function() {\n    console.log('Width: ',\n this.???);\n    console.log('Height: ',\n this.???);\n});\n</code></pre>\n",
+    answers: [
+      {
+        text: 'addEventListener',
+      },
+      {
+        text: 'load',
+      },
+      {
+        text: 'naturalWidth',
+      },
+      {
+        text: 'naturalHeight',
+      },
+      {
+        text: 'height',
+      },
+      {
+        text: 'width',
+      },
+      {
+        text: 'onload',
+      },
+    ],
+    comment: "<p>Find original dimensions of an image via <code>natural</code> properties:</p>\n<pre><code class=\"language-javascript\">  this.naturalWidth;\n  this.naturalHeight;\n</code></pre>\n<p>Keep in mind that these properties are <em>read-only</em>.\nAn <code>img</code>'s <code>onload()</code>event must be loaded first as you can't check the dimensions prior to loading it.[1]</p>\n<pre><code class=\"language-javasscript\">myImg.addEventListener('load',\n function() {\n    console.log('Width: ',\n this.naturalWidth);\n    console.log('Height: ',\n this.naturalHeight);\n});\n</code></pre>\n<p>The same result can be achieved by defining the <code>.onload</code> property of an image:</p>\n<pre><code class=\"language-javascript\">myImg.onload = function() {\n   console.log('Width: ',\n this.naturalWidth);\n    console.log('Height: ',\n this.naturalHeight);\n}\n</code></pre>\n",
+  },
+}

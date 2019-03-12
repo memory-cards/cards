@@ -1,0 +1,54 @@
+{
+  __meta__: {
+    author: 'Kirill',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/check-if-an-argument-is-a-number.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Complete the code to check if the argument is a number:</p>\n<pre><code class="language-javascript">function isNumber(x) {\n   var float = !isNan(???(x));\n   var finite = ???(x);\n   return float ??? ???;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'parseFloat',
+      },
+      {
+        text: 'isFinite',
+      },
+      {
+        text: '&&',
+      },
+      {
+        text: 'finite',
+      },
+      {
+        text: 'isInfinte',
+      },
+      {
+        text: '++',
+      },
+      {
+        text: '&',
+      },
+      {
+        text: '+',
+      },
+      {
+        text: 'parse',
+      },
+      {
+        text: "'null'",
+      },
+      {
+        text: 'typeof',
+      },
+      {
+        text: 'var',
+      },
+    ],
+    comment: '<pre><code>function isNumber(n){\n  var float  = !isNaN(parseFloat(n));\n  var finite = isFinite(n);\n  return float &#x26;&#x26; finite;\n}\n</code></pre>\n',
+  },
+}

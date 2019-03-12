@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-i/remote-scripts.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>The syntax to add an <code>external_script.sh</code> to *package.json</p>\n<pre><code class="language-javascript">??? : {\n  "external": "???"\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'is:',
+      },
+      {
+        text: 'scripts',
+      },
+      {
+        text: './external_script.sh',
+      },
+      {
+        text: 'script',
+      },
+      {
+        text: 'external_script.js',
+      },
+    ],
+    comment: '<p>Another feature of <em>npm</em> is running external scripts. These include shell scripts, Makefiles or other build tools that you are more familiar with.</p>\n<p>Let\'s say we have both a shell script (<code>.sh</code>) and a Makefile that accomplish different things in your project. This already may be confusing, as you may have to remember what each of these files does. You can simplify everything by invoking them using <em>npm scripts</em>.</p>\n<p>For example:</p>\n<pre><code class="language-javascript">"scripts": {\n  "backend": "cd backend &#x26;&#x26; make",\n  "deploy:complex": "./deploy.sh"\n}\n</code></pre>\n<p>You can then use <code>npm run</code> to run both. In case of the Makefile, the target can also be specified:</p>\n<pre><code class="language-bash">$ npm run backend dev\n</code></pre>\n<p>This would work if the <em>Makefile</em> has <em>dev</em> specified as a target:</p>\n<pre><code class="language-text">dev:\n  cd .. &#x26;&#x26; NODE_ENV=development\n    ENV=development PORT=3000\n    node server.js\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,51 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/tools-i/manipulate-npm-packages-cache.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'deep',
+    'new',
+  ],
+  card: {
+    question: '<p>How can you get the path to your npm cache?</p>\n<pre><code class="language-bash">$ ??? ??? ??? ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'npm',
+      },
+      {
+        text: 'config',
+      },
+      {
+        text: 'get',
+      },
+      {
+        text: 'cache',
+      },
+      {
+        text: 'path',
+      },
+      {
+        text: 'local',
+      },
+      {
+        text: 'pathTo',
+      },
+      {
+        text: 'isAt',
+      },
+      {
+        text: 'getPath',
+      },
+      {
+        text: 'ls',
+      },
+    ],
+    comment: '<p>The <code>npm cache</code> utility is used to <strong>add</strong>, <strong>list</strong> or <strong>clear</strong> the npm cache folder.</p>\n<p>This proves useful as a drop-in <strong>faster</strong> replacement for build scripts that run install commands (e.g. <code>npm install</code> / <code>bower install</code>) because dependencies don\'t frequently change.</p>\n<p>The <code>npm cache add</code> command adds a package to the local cache. The primary intention of this command is to be used internally by <code>npm</code>, but it also provides a way of explicitly adding data to the local installation cache.</p>\n<pre><code class="language-bash">$ npm cache add myFolder\n$ npm cache add myTarballUrl\n$ npm cache add myPackage@myVersion\n</code></pre>\n<p>To show data in the cache, <code>ls</code> can be used:</p>\n<pre><code class="language-bash">$ npm cache ls [myPath]\n</code></pre>\n<p>To clear data from the cache:</p>\n<pre><code class="language-bash">$ npm cache clean [myPath]\n</code></pre>\n<p>If no argument is provided, the entire cache will be deleted.</p>\n<p><code>npm</code> stores data in the directory specified by:</p>\n<pre><code class="language-bash">$ npm config get cache\n</code></pre>\n',
+  },
+}

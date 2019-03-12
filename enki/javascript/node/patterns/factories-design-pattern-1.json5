@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/patterns/factories-design-pattern.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Which of the following statements about the factory design pattern do you consider false?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'factory methods need to return multiple instances of the object in one call',
+      },
+      {
+        text: 'factories begin to be useful when working with complex constructors',
+      },
+      {
+        text: 'specific methods will create objects instead of the constructor',
+      },
+      {
+        text: 'factory methods will call the constructor themselves',
+      },
+    ],
+    comment: '<p>In order to avoid custom object creation with different arguments, <strong>factories</strong> can be used instead. Their usage is obvious when working with complex constructors or you want to avoid <em>copypasta</em>.</p>\n<p>Factories will create objects for you so <em>you don\'t have to</em>.</p>\n<p>Basic factories pattern:</p>\n<pre><code class="language-javascript">//enki.js\nfunction Enki (args) {\n  this.args = args;\n}\n\nfunction create (args) {\n  //args should be modified here\n  return new Enki(args);\n}\n\nmodule.exports.create = create;\n</code></pre>\n',
+  },
+}

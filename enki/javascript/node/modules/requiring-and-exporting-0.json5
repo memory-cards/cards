@@ -1,0 +1,29 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/modules/requiring-and-exporting.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Which of the following is included in all JavaScript files by default?\n???</p>\n',
+    answers: [
+      {
+        text: 'module.exports',
+      },
+      {
+        text: 'module.module',
+      },
+      {
+        text: 'module.object',
+      },
+    ],
+    comment: '<p>To load, cache and use a module you must <code>require</code> it into your <strong>Node</strong> application. The keyword <code>require</code> is used for loading modules and its return value is normally assigned to a variable, for example:</p>\n<pre><code class="language-javascript">var module = require(\'./example.js\');\n</code></pre>\n<p><code>exports</code> or <code>module.exports</code> by default are included by default in all JavaScript files in a Node application as a special object. <code>exports</code> is an object exposed as a module, whereas <code>module</code> is a variable representing the current module. Therefore what you assign to either <code>exports</code> or <code>module.exports</code> will eventually be exposed by the module.</p>\n<p>Take <em>sampleModule.js</em>:</p>\n<pre><code class="language-javascript">module.exports = “Required and exported!”;\n</code></pre>\n<p>Note: <code>exports</code>  could have been used instead of <code>module.exports</code> to the same effect.</p>\n<p>Importing <em>sampleModule.js</em> into a new JavaScript file <em>main.js</em>:</p>\n<pre><code class="language-javascript">var test = require(‘./sampleModule.js’);\nconsole.log(test);\n</code></pre>\n<p>Running <em>main.js</em> from a REPL terminal returns the following:</p>\n<pre><code class="language-bash">$ node main.js\nRequired and exported!\n</code></pre>\n',
+  },
+}

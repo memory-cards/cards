@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/quirks/node-os-module.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Get the total system memory in bytes:</p>\n<pre><code class="language-javascript">var os = require(“os”);\nconsole.log(os.???());\n</code></pre>\n',
+    answers: [
+      {
+        text: 'totalmem',
+      },
+      {
+        text: 'memory',
+      },
+      {
+        text: 'bytesmemory',
+      },
+      {
+        text: 'memorytotal',
+      },
+    ],
+    comment: '<p>Basic operating system related utility functions are available through <strong>Node</strong>\'s <code>os</code> module.</p>\n<p>Firstly, the module must be imported:</p>\n<pre><code class="language-javascript">var os = require("os")\n</code></pre>\n<p>Get operating system name:</p>\n<pre><code class="language-javascript">console.log(os.type());\n</code></pre>\n<p>Get operating system platform:</p>\n<pre><code class="language-javascript">console.log(os.platform());\n</code></pre>\n<p>Get CPU\'s architecture (<code>x64</code>,<code>arm</code> or <code>ia32</code>):</p>\n<pre><code class="language-javascript">console.log(os.arch());\n</code></pre>\n<p>Get an array with various infrormation about the CPUs:</p>\n<pre><code class="language-javascript">console.log(os.cpus());\n</code></pre>\n<p>Get the total system memory in bytes:</p>\n<pre><code class="language-javascript">console.log(os.totalmem());\n</code></pre>\n<p>Get an array with various information about all the Network Interfaces:</p>\n<pre><code class="language-javascript">console.log(os.networkInterfaces());\n</code></pre>\n',
+  },
+}

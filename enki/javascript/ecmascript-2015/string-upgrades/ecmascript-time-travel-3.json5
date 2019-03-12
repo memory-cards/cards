@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-upgrades/ecmascript-time-travel.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">// ES5:\nfunction NicePerson() {\n  this.msg = 'Hello ';\n  this.greet = function(name) {\n    return this.msg + name\n  }.bind(this);\n}\n// ES6 equivalent:  \nfunction NicePerson() {\n  this.msg = 'Hello ';\n  this.greet = (name) ??? {\n    return this.msg + name\n  };\n}\n</code></pre>\n<p>%exp\nES6 *<em>arrow function</em>\n%</p>\n",
+    answers: [
+      {
+        text: '=>',
+      },
+      {
+        text: '->',
+      },
+      {
+        text: '-->',
+      },
+      {
+        text: 'is the shorter way of expressing a function.',
+      },
+    ],
+    comment: '<p>Hello, traveler.</p>\n<p>You will attempt to accurately fill the gaps in the code snippets to recreate ES5 compatible code using the new features of ES6.</p>\n<p>Best of luck. We will be watching you.</p>\n',
+  },
+}

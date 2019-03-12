@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'dean',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/in-depth-ii/method-chaining.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+    'introduction',
+    'workout',
+    'method',
+    'function',
+    'chaining',
+  ],
+  card: {
+    question: '<p>How is method chaining typically enabled?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Implementing methods that return this',
+      },
+      {
+        text: 'No need for implementation',
+      },
+      {
+        text: 'Updating the object to allow this',
+      },
+    ],
+    comment: "<p>Method chaining allows multiple methods to be called one after the other on the same object.</p>\n<pre><code class=\"language-javascript\">var foo = new Bar();\nfoo.setFirst('Fizz').setLast('Buzz');\n// Two functions, called with one line\n</code></pre>\n<p>Method chaining is typically enabled by implementing methods that return <code>this</code> (the object itself):</p>\n<pre><code class=\"language-javascript\">var Bar = function() {\n  this.first = 'Not';\n  this.last = 'FizzBuzz';\n};\n\nBar.prototype.setFirst = function(first)\n{\n  this.first = first;\n  // Returns the object\n  return this;\n};\n\nBar.prototype.setLast = function(last)\n{\n  this.last = last;\n  return this;\n};\n</code></pre>\n",
+  },
+}

@@ -1,0 +1,28 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/precision.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'integer-precision',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">//16 digits\nvar x = 9999999999999999;\nconsole.log(x);\n//x: ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '10000000000000000 // 17 digits',
+      },
+      {
+        text: '9999999999999999 //16 digits',
+      },
+      {
+        text: '99999999999999999//17 digits',
+      },
+    ],
+    comment: '<p>Integers are considered accurate only up to 15 digits.</p>\n<pre><code class="language-javascript">var a = 999999999999999; //15 digits\n// a = 999999999999999\nvar b = 9999999999999999; //16 digits\n// b = 10000000000000000\n</code></pre>\n<p>The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate:</p>\n<pre><code class="language-javascript">var x = 0.2 + 0.1;         \n// x will be 0.30000000000000004\n</code></pre>\n<p>To avoid that we can multiply and divide our result as follows:</p>\n<pre><code class="language-javascript">var x = (0.2 * 10 + 0.1 * 10) / 10;\n// x will be 0.3\n</code></pre>\n',
+  },
+}

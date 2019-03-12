@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/generators-as-iterators-in-es6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: "<p>What's the output of the following JS code snippet? ???</p>\n<pre><code class=\"language-javascript\">function\n  yield 'E';\n  yield 'C';\n  yield 'M';\n  yield 'A';\n}\n\nlet genObj = genFunc();\ngenObj.next();\ngenObj.next();\nconsole.log(genObj.next().value);\n</code></pre>\n",
+    answers: [
+      {
+        text: 'genFunc() {',
+      },
+      {
+        text: 'M',
+      },
+      {
+        text: 'A',
+      },
+      {
+        text: 'E',
+      },
+      {
+        text: 'C',
+      },
+      {
+        text: 'undefined',
+      },
+    ],
+    comment: "<p>Generators can return a value via <code>next()</code> at each <code>yield</code> point to produce a sequence of values. This sequence is known as an <strong>iterable</strong> and the generator function as an <strong>iterator</strong>.</p>\n<p>For example:</p>\n<pre><code>// generator function 'E' 'n' 'k' 'i'\nfunction* genFunc() {\n      yield 'E';\n      yield 'n';\n      yield 'k';\n      yield 'i';\n    }\n</code></pre>\n<p>The yielded values can be obtained one-by-one using <code>next()</code>:</p>\n<pre><code>let genObj = genFunc();\ngenObj.next(); //{value:'E', done:false}\ngenObj.next(); //{value:'n', done:false}\n... // etc\ngenObj.next(); //{value:undefined,done:true}\n</code></pre>\n",
+  },
+}

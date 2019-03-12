@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'adamMontgomerie',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/scope/no-block-scope.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'workout',
+    'scope',
+    'deep',
+    'variables',
+    'obscura',
+  ],
+  card: {
+    question: '<p>What will the following snippet do?</p>\n<pre><code class="language-javascript">var x = \'foo\';\n(function bar() {\n {\n   var x = 5\n }\n console.log(x)\n})()\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'log 5',
+      },
+      {
+        text: "log 'foo'",
+      },
+      {
+        text: 'raise an error',
+      },
+      {
+        text: "can't be compiled",
+      },
+    ],
+    comment: '<p>Functions have their own scopes, however most other blocks do not.</p>\n<pre><code class="language-javascript">var a = 1;\nfunction global() {\n  alert(a); //1\n}\nfunction local() {\n  var a = 2;\n  alert(a); //2\n}\n</code></pre>\n<p>In the example above, <code>global</code> will alert the global value of <code>a</code> which is <code>1</code>. <code>local</code> will alert <code>2</code> because <code>a</code> is defined within the scope of the <code>local</code> function here.</p>\n<pre><code class="language-javascript">var a = 1;\nfunction foo() {\n  if (true) {\n    var a = 3;\n  }\n  alert(a); //3\n}\n</code></pre>\n<p>However, despite <code>a = 3</code> being contained within an <code>if</code> block, the <code>foo</code> function will alert <code>3</code>. This is because (most) blocks do not have their own scope.</p>\n<p>The only exception is the case of <code>catch</code> blocks, which also have their own scope.</p>\n',
+  },
+}

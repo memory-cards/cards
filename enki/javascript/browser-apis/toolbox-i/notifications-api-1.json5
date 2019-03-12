@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-i/notifications-api.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Which method exposed by the Notifications API can be used to ask for user permissions with regard to sending notifications?</p>\n<pre><code class="language-javascript">???.???()\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Notification',
+      },
+      {
+        text: 'requestPermission',
+      },
+      {
+        text: 'request',
+      },
+      {
+        text: 'permission',
+      },
+      {
+        text: 'requestAccess',
+      },
+      {
+        text: 'access',
+      },
+      {
+        text: 'grantAccess',
+      },
+      {
+        text: 'Notif',
+      },
+    ],
+    comment: '<p>The Notifications API displays desktop notifications to the user and is a great way to alert the user of important events occurring in the application.</p>\n<p>It would be annoying if any website could create notifications so the user must grant the notification API permission.</p>\n<p>To check if the user has granted permission check the <em>Notification.permission</em> property:</p>\n<pre><code class="language-javascript">if (Notification.permission === "granted")\n{\n...\n}\n</code></pre>\n<p>To request permission to display notifications use <em>Notification.requestPermission()</em>:</p>\n<pre><code class="language-javascript">Notification.requestPermission(\nfunction (permission) {\n   if (permission === "granted") {\n   //notification logic\n  }\n});\n</code></pre>\n<p>Once permission is granted you can create notifications:</p>\n<pre><code class="language-javascript">var notification =\n  new Notification("Hello");\n</code></pre>\n<p>The notification can be further customised by passing in options to set an icon or body text:</p>\n<pre><code class="language-javascript">var options = {\n    icon: anImage,\n    body: someText\n}\nvar n = new Notification(title, options);\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'elliehoward',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dom-manipulation/write-a-function-to-return-a-complex-element.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>Which function, given an array, will return a list element with a list item element for each element in the array?\n???</p>\n<p>Option A:</p>\n<pre><code class=\"language-javascript\">function createLI(data){\n  var ul = document\n    .createElement('ul');\n  for (\n    var i = 0;\n    i &#x3C; data.length;\n    i++\n  ) {\n    var li = document\n      .createElement('li');\n    var text = document\n      .createTextNode(data[i]);\n    li\n      .appendChild(text);\n    ul\n      .appendChild(li);\n\n  }  \n  return ul;\n}\n</code></pre>\n<p>Option B:</p>\n<pre><code class=\"language-javascript\">function createLI(data){\n  var ul = document\n    .makeElement('ul');\n  for (\n    var i = 0;\n    i &#x3C; data.length;\n    i++\n  ) {\n    var li = document\n      .makeElement('li');\n    var text = document\n      .createTextNode(data[i]);\n    li\n      .appendChild(text);\n    ul\n      .appendChild(li);\n\n  }  \n  return ul;\n}\n</code></pre>\n<p>Option C:</p>\n<pre><code class=\"language-javascript\">function createLI(data){\n  var ul = document\n    .createElement('ul');\n  for (\n    var i = 0;\n    i &#x3C; data.length;\n    i++\n  ) {\n    var li = document\n      .createElement('li');\n    var text = document\n      .createTextNode(data[i]);\n    li\n      .appendElement(text);\n    ul\n      .appendElement(li);\n\n  }  \n  return ul;\n}\n</code></pre>\n",
+    answers: [
+      {
+        text: 'A',
+      },
+      {
+        text: 'C',
+      },
+      {
+        text: 'B',
+      },
+    ],
+    comment: "<p>Let's say we have an array of data and we want to display that data in a list on a webpage.\nInstead of writing out all the HTML elements for each piece of data, we can just use a function to loop through the array and return a list based on the data passed in:</p>\n<pre><code class=\"language-javascript\">var teas = [\n  'chamomile',\n  'green',\n  'breakfast',\n  'earl grey'\n];\nvar container = document\n  .getElementById('container');\n\nfunction createListElement(data){\n  var ul = document\n    .createElement('ul');\n  for (\n    var i = 0;\n    i &#x3C; data.length;\n    i++\n  ) {\n    var li = document\n      .createElement('li');\n    var text = document\n      .createTextNode(data[i]);\n    li.appendChild(text);\n    ul.appendChild(li);\n\n  }  \n  return ul;\n}\n\nvar teaList = createListElement(\n  teas\n);\ncontainer.appendChild(\n  teaList\n);\n</code></pre>\n<p>In the example above we selected a parent element and stored it in a variable called container. Then we created a ul element, looped through our array of teas and created a li element for each type of tea while appending each of them to the ul. Once we created the list we appended it to the parent element.</p>\n",
+  },
+}

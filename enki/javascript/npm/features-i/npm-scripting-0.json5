@@ -1,0 +1,60 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-i/npm-scripting.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Fill in the following <code>package.json</code> file such that it has 2 scripts:\nOne called <code>test</code> which will run <code>jest</code> and another called <code>test:ci</code> which will run the first script with <code>-- --runInBand</code> option:</p>\n<pre><code class="language-json">{\n  "name": "Enki",\n  "???": {\n    "???": "???",\n    "???": "??? ???"\n  }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'scripts',
+      },
+      {
+        text: 'test',
+      },
+      {
+        text: 'jest',
+      },
+      {
+        text: 'test:ci',
+      },
+      {
+        text: 'npm run test',
+      },
+      {
+        text: '-- runInBand',
+      },
+      {
+        text: 'script',
+      },
+      {
+        text: 'node-scripts',
+      },
+      {
+        text: 'testing',
+      },
+      {
+        text: 'test --',
+      },
+      {
+        text: 'runInBand',
+      },
+      {
+        text: 'run test',
+      },
+      {
+        text: 'npm',
+      },
+    ],
+    comment: '<p><code>npm</code> is a lot more than just a package manager for Node. It supports scripting using the <code>run-script</code> (or the abbreviated <code>run</code>) option.</p>\n<p>Scripts can be specified inside <em>package.json</em>:</p>\n<pre><code class="language-javascript">{\n  "name": "enki",\n  // ...\n  "scripts": {\n    "myScript": "echo firstScript"\n  }\n}\n</code></pre>\n<p>And invoked using:</p>\n<pre><code class="language-bash">$ npm run myScript\nfirstScript\n</code></pre>\n<p>Why is this great? Say you are using CSS preprocessors like <em>LESS</em> or <em>SASS</em> and you have to compile them into <em>CSS</em> files. All you have to do is specify <code>less</code> as a <em>devDependency</em> and include this script:</p>\n<pre><code class="language-json">"scripts": {\n  "build-less": `lessc app/less/main.less\n      prod/css/main.css`\n}\n</code></pre>\n<p>Running:</p>\n<pre><code class="language-bash">$ npm run build-less\n</code></pre>\n<p>Will produce the <em>.css</em> file.</p>\n<p>Another cool thing about scripting is that you can combine multiple sub-scripts into a single one like so:</p>\n<pre><code class="language-json">"scripts": {\n  "build-less":`lessc app/less/main.less\n      prod/css/main.css`,\n  "build-js":`coffee --output prod/js/\n      --compile app/js/main.js`,\n  "build":`npm run build-less &#x26;\n      npm run build-js`\n}\n</code></pre>\n<p>This will speed up the process as two subshells will be invoked to resolve each build command (asynchronously) because of the <code>&#x26;</code> token.</p>\n',
+  },
+}

@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/patterns/global-objects-and-environment-variables-in-node.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Get the path of the code being executed:</p>\n<pre><code class="language-javascript">console.log(???);\n</code></pre>\n',
+    answers: [
+      {
+        text: '__filename',
+      },
+      {
+        text: '__dirname',
+      },
+      {
+        text: 'dirname',
+      },
+      {
+        text: 'filename',
+      },
+      {
+        text: 'pathname',
+      },
+      {
+        text: '__pathname',
+      },
+    ],
+    comment: '<p><strong>Node</strong> provides a set of useful objects and environment variables.</p>\n<p>Get the directory of the current running script\n(in <code>User/MyUser/Desktop</code>):</p>\n<pre><code class="language-javascript">console.log(__dirname);\n// will log User/MyUser/Desktop\n</code></pre>\n<p>Get the path of the code being executed:</p>\n<pre><code class="language-javascript">console.log(__filename);\n// will log User/MyUser/Desktop/script.js\n</code></pre>\n<p>This object is not necessarily global, but is local to each module.</p>\n<p>Get command line arguments:</p>\n<pre><code class="language-javascript">console.log(process.argv);\n</code></pre>\n<p>Here <code>process</code> is a global object, <code>process.argv</code> will generate an array containing the command line arguments starting from index <code>2</code> (third element in the array) as the first two represent the path to <strong>Node</strong> application and the path to the current file.</p>\n<p>Get the user environment:</p>\n<pre><code class="language-javascript">console.log(process.env);\n</code></pre>\n<p>Get current platform:</p>\n<pre><code class="language-javascript">console.log(process.platform);\n</code></pre>\n',
+  },
+}

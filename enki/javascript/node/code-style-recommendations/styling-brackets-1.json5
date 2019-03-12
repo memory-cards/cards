@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/code-style-recommendations/styling-brackets.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What is the name of the JavaScript language feature acting upon the following return clause?</p>\n<pre><code class="language-js">function tictac() {\n  return\n  {\n    missing: \'toe\',\n  };\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Automatic semicolon insertion',
+      },
+      {
+        text: 'Scoping',
+      },
+      {
+        text: 'Automatic bracket placement',
+      },
+      {
+        text: 'Object property creation',
+      },
+    ],
+    comment: "<p>Styling is something that shouldn't influence the performance of the code in any way, and differs from team to team. It's rare that developers agree on camel case syntax versus underscore naming conventions, tabs versus spaces, or brackets position. However, for JavaScript in general and Node in particular, brackets location isn't just a debate. Let's look at  an example:</p>\n<pre><code class=\"language-javascript\">function right() {\n  return {\n    status: 'right',\n  };\n}\n\nfunction wrong()\n{\n  return\n  {\n    status: 'wrong',\n  };\n}\n</code></pre>\n<p>At the first glance, both functions seem to return the same <strong>object</strong>, which contains the property <code>status</code>. However, the output is as follows:</p>\n<pre><code class=\"language-javascript\">console.log(right().status);\n// right\n\nconsole.log(wrong().status);\n// undefined\n</code></pre>\n<p>JavaScript's main complex data type is the <code>Object</code>. Object instances are created using brackets:</p>\n<pre><code class=\"language-javascript\">const obj = {\n  status: 'right',\n};\n</code></pre>\n<p>Brackets are also used for separating blocks of code with the same scope (functions, if/else clauses, etc.):</p>\n<pre><code class=\"language-javascript\">function echo() {\n  const status = 'right';\n}\n// or\nfunction echoNew()\n{\n  const status = 'right';\n}\n// or even\nfunction echoNewNew()         {\n  if(true)                    {\n    const status = 'right';\n    console.log('Please stop.');\n                              }\n  else                        {\n    console.log('I\\'m serious.');\n                              }\n                              }\n\nconsole.log(status);\n// undefined\n</code></pre>\n<p>Wherever you choose to place your brackets limiting scope, the result will be the same: <code>status</code> is undefined. However, things are not the same when brackets are used to return an object:</p>\n<pre><code class=\"language-javascript\">function wrong()\n{\n  return\n  {\n    status: 'wrong',\n  };\n}\nconsole.log(wrong())\n</code></pre>\n<p>Will print <code>undefined</code>. This happens because of a JavaScript property called <em>automatic semicolon insertion</em> (ASI). This property is what allows you to write JS code without having to add semicolon after each statement. Hence, the function above effectively becomes:</p>\n<pre><code class=\"language-javascript\">function wrong() {\n  return; // equivalent to return undefined;\n  // this is ignored\n  {\n    status: 'wrong'\n  };\n}\n</code></pre>\n<p>In conclusion, having the open bracket on the same line as the function is recommended as it promotes the correct syntax is cases where JS would normally append a semicolon.</p>\n<p><em>Note:</em> This is not restricted to brackets only. The following syntax:</p>\n<pre><code class=\"language-javascript\">function wrong() {\n  return\n    'wrong';\n}\n</code></pre>\n<p>Will also return undefined.</p>\n",
+  },
+}

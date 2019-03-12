@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/gotchas/using-false-in-jsx.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>What does the following code snippet do? ???</p>\n<pre><code class="language-javascript">ReactDOM.render(&#x3C;div>{false}&#x3C;/div>, aNode);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Specifies that the React element has no child.',
+      },
+      {
+        text: 'Renders the div element false.',
+      },
+      {
+        text: 'Renders there to be no div element.',
+      },
+    ],
+    comment: '<p>The usage of the <code>false</code> keyword in <strong>JSX</strong> and implicitly <strong>React</strong> is worth mentioning because of its volatile behaviour.</p>\n<p>First of all, <code>false</code> is widely used to specify that a <strong>React</strong> element has no child:</p>\n<pre><code>ReactDOM.render(&#x3C;div>{false}&#x3C;/div>,\n                              myNode);\n</code></pre>\n<p>Additional care must be taken when specifying the <code>id</code> of an element with the value <code>false</code> as it will be rendered as a string:</p>\n<pre><code>ReactDOM.render(&#x3C;div id={false} />, myNode);\n</code></pre>\n<p>This will be rendered as <code>id="false"</code>.</p>\n<p>This will also happen when <code>false</code> will be set as value for an <code>input</code> :</p>\n<pre><code>ReactDOM.render(&#x3C;input value={false} />,\n myNode);\n</code></pre>\n',
+  },
+}

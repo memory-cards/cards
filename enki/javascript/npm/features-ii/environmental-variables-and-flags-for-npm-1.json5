@@ -1,0 +1,56 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-ii/environmental-variables-and-flags-for-npm.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>In <code>package.json</code>, define a script that runs <code>node index.js</code>. Add to it the <code>--harmony</code> flag at the end and an env variable called <code>API_KEY</code> that\'s equal to "abc".</p>\n<pre><code class="language-json">{\n  "name": "Enki",\n  "scripts": {\n    "start": "???=??? ??? ??? ???"\n  }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'API_KEY',
+      },
+      {
+        text: 'abc',
+      },
+      {
+        text: 'node',
+      },
+      {
+        text: 'index.js',
+      },
+      {
+        text: '--harmony',
+      },
+      {
+        text: 'add',
+      },
+      {
+        text: 'run',
+      },
+      {
+        text: 'scripts',
+      },
+      {
+        text: 'npm',
+      },
+      {
+        text: '--har',
+      },
+      {
+        text: '-h',
+      },
+      {
+        text: '"abc"',
+      },
+    ],
+    comment: '<p>Configuration options such as <strong>environment variables</strong> and <strong>command line flags</strong> that are used for <em>Node.js</em> are also available for the <code>npm</code> package manager.</p>\n<p>In particular the <code>npm run</code> and <code>npm start</code> commands let you set required <strong>flags</strong> (like the old <code>--harmony</code>) before running.</p>\n<p>For instance:</p>\n<pre><code class="language-javascript">env NODE_PATH=./ node myProject/index.js\n</code></pre>\n<p>The script will add the specified directory to the <code>require()</code> function\'s module search path. If this script is used in the testing modules (supposedly in another directory), <code>require()</code> will know to look in the current directory resulting in better path organization.</p>\n<p>Suppose your application relies on the <code>env NODE_PATH ./</code> trick, but also on other flags, a starting script can be easily defined:</p>\n<pre><code class="language-json">{\n  "scripts": {\n    "start": "env NODE_PATH=./ node\n        --harmony_proxies index.js"\n  }\n}\n</code></pre>\n',
+  },
+}

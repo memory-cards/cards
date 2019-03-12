@@ -1,0 +1,26 @@
+{
+  __meta__: {
+    author: 'fsites',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/strings/double-and-single-quotes.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'obscura',
+    'introduction',
+  ],
+  card: {
+    question: '<p>JSON standard requires every string to be ??? quoted.</p>\n',
+    answers: [
+      {
+        text: 'double',
+      },
+      {
+        text: 'single',
+      },
+    ],
+    comment: "<p>There are different types of values you can store in variables. One type is called a string, which is\na sequence of text. To create a string add either single or double quotes around the text.</p>\n<p>Generally, double and single quotes are handled the same way.</p>\n<pre><code>str1 = 'I\\'m a string.';\nstr2 = \"I'm a string.\";\n</code></pre>\n<p><code>str1</code> and <code>str2</code> output the same string but <code>str2</code> is easier to read since it doesn't require an escape character in <code>I'm</code>.</p>\n<p>JSON standards <em>require</em> strings to be double quoted. For consistency, some developers prefer to stick to double quotes on all strings.</p>\n<p>However, modern linters often recommend using single quotes in JavaScript, with double quotes reserved for HTML only.</p>\n",
+  },
+}

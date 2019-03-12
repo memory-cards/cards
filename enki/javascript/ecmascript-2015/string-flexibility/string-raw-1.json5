@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-flexibility/string-raw.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which <code>String</code> method is used to get the literal value of the string (without applying characters such as <code>\\n</code>)?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'raw',
+      },
+      {
+        text: 'literal',
+      },
+      {
+        text: 'format',
+      },
+      {
+        text: 'rawLiteral',
+      },
+      {
+        text: 'unformat',
+      },
+    ],
+    comment: '<p><code>String.raw</code> is used to work with template strings and is best explained with an example:</p>\n<p>In JavaScript <strong>\\n</strong> is used to indicate a new line.</p>\n<p>Consider if we had the following template literal:</p>\n<pre><code class="language-javascript">`Line1\\nLine2!`;\n</code></pre>\n<p>When output this would be interpreted as below as \\n signifies a new line:</p>\n<pre><code class="language-bash">"Line1\nLine2"\n</code></pre>\n<p>However sometimes it is desirable to work with a string template in its raw format - <strong>String.raw</strong> allows you to do this - note how there is no new line between Line1 and Line2 now just \\n:</p>\n<pre><code class="language-javascript">String.raw`Line1\\nLine2`;\n// "Line1\\nLine2"\n</code></pre>\n',
+  },
+}

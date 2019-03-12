@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-i/vibration-api.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Fill in the gaps to make the device vibrate for two seconds, pause for a second, then vibrate for three more seconds:</p>\n<pre><code class="language-javascript">???.???([2000, 1000,\n  ???]);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'navigator',
+      },
+      {
+        text: 'vibrate',
+      },
+      {
+        text: '3000',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: '300',
+      },
+      {
+        text: 'device',
+      },
+      {
+        text: 'object',
+      },
+      {
+        text: 'start',
+      },
+      {
+        text: 'vibration',
+      },
+    ],
+    comment: '<p>The Vibration API makes a device vibrate with JavaScript. It is intended to be used with mobile devices to provide additional feedback.</p>\n<p>To check if the API is present:</p>\n<pre><code>"vibrate" in navigator\n</code></pre>\n<p>You can specify the number of milliseconds the device should vibrate by passing in a numeric value to the vibrate method.</p>\n<p>To make the device vibrate for 1 second:</p>\n<pre><code>navigator.vibrate(1000);\n</code></pre>\n<p>You can also make the device vibrate in a <strong>pattern</strong> by passing in an array of millisecond values. The values alternate specifying vibration and pause time intervals.</p>\n<pre><code>// vibrate for one second,\n// pause for one second,\n// vibrate for two seconds then stop\nnavigator.vibrate([1000, 1000, 2000]);     \n</code></pre>\n<p>Vibration can be stopped by passing a <code>0</code> or an empty array <code>[]</code> to the vibrate method.</p>\n',
+  },
+}

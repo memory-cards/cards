@@ -1,0 +1,49 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/template-strings.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'template strings',
+  ],
+  card: {
+    question: '<p>Using string templating print the value of <code>a</code>:</p>\n<pre><code class="language-javascript">var a = \'enki\';\nconsole.log(`cool thing -> ???{???} `);\n</code></pre>\n',
+    answers: [
+      {
+        text: '$',
+      },
+      {
+        text: 'a',
+      },
+      {
+        text: 'template',
+      },
+      {
+        text: '%',
+      },
+      {
+        text: '(',
+      },
+      {
+        text: '{',
+      },
+      {
+        text: ')',
+      },
+      {
+        text: '}',
+      },
+      {
+        text: 'string',
+      },
+      {
+        text: 'enki',
+      },
+    ],
+    comment: '<p>String templating lets you evaluate JavaScript expressions inside a string expression when they are wrapped in <code>${}</code>.</p>\n<p>For instance:</p>\n<pre><code>var a = 10; \nvar b = 10;\nconsole.log(`JS: created ${a+b} years ago`);\n//=> JS: created 20 years ago\n</code></pre>\n<p>Complex expressions (e.g. involving functions) are also supported:</p>\n<pre><code>function fn(){return "I am the " + \n             "result. Rarr";}\nconsole.log(`foo ${fn()} bar`);\n//=> foo I am the result. Rarr bar.\n</code></pre>\n',
+  },
+}

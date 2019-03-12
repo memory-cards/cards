@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/promises/promise-api-methods.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which static <code>Promise</code> method will resolve after all promises in the array supplied as input resolve?</p>\n<p>???</p>\n<p>Which static <code>Promise</code> method will resolve when the first promise in the array supplied as input resolves?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Promise.all',
+      },
+      {
+        text: 'Promise.race',
+      },
+      {
+        text: 'Promise.wait',
+      },
+      {
+        text: 'Promise.reject',
+      },
+      {
+        text: 'Promise.array',
+      },
+      {
+        text: 'Promise.vector',
+      },
+      {
+        text: 'Promise.first',
+      },
+    ],
+    comment: '<p>The promise API supplies a number of methods for working with multiple promises.</p>\n<h3>Promise.all</h3>\n<p>Accepts an array of promises and waits until all have completed. This is very useful to ensure all necessary work has been completed before continuing.</p>\n<p>If any of the supplied promises are rejected then the reject method is called immediately:</p>\n<pre><code class="language-javascript">Promise.all([p1, p2, p3])\n.then(values => {\n console.log(values);\n//[3, 1337, "foo"]\n});\n</code></pre>\n<h3>Promise.race</h3>\n<p>Takes an array of promises and resolves when any supplied promises resolve successfully – you could use this for example to call different vendors services and just make use of the first result returned:</p>\n<pre><code class="language-javascript">Promise.race([p1, p2, p3])\n.then(values => {\n console.log(“completed”);\n});\n</code></pre>\n<h3>Promise.reject and Promise.resolve</h3>\n<p>Creates immediately rejected or resolved promises which could be useful for testing scenarios for example:</p>\n<pre><code class="language-javascript">var p1 = Promise.reject(\n new Error("fail")\n);\nvar p2 = Promise.resolve();\n</code></pre>\n',
+  },
+}

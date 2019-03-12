@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-i/custom-proptype-s-to-be-required.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Is there a way to make a custom <code>propTypes</code> validator function implementing the <code>.isRquired</code> behavior of normal <code>propTypes</code> ?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Yes',
+      },
+      {
+        text: 'No',
+      },
+      {
+        text: 'Only in ES6',
+      },
+      {
+        text: 'Only in ES5` and `ES6',
+      },
+      {
+        text: 'Only with an external package',
+      },
+    ],
+    comment: '<p>There is a way of creating your own <code>propTypes</code> validator function that can also be suffixed with <code>.isRequired</code>. This is done by using chained validators and the <code>bind()</code> function.</p>\n<p>Suppose we have a basic <em>validator function</em> for length check. [1]</p>\n<p>The <em>validator function</em> that will be used will be called <code>lengthChecker</code>:</p>\n<pre><code class="language-jsx">let lengthChecker = createChainableChecker(\n  textLengthChecker);\n</code></pre>\n<p>The <code>createChainableChecker</code> should look like:</p>\n<pre><code class="language-jsx">function createChainableChecker(validate) {\n  function checkType(isRequired, props,\n    propName, componentName) {\n    if(props[propName] == null) {\n      if(isRequired) {\n        return new Error("missing prop");\n      }\n    return null;\n    } else {\n      return validate(props, propName,\n        componentName);\n    }\n  }\n  let chainedChecker = checkType.bind(null,\n    false);\n  chainedChecker.isRequired =\n    checkType.bind(null, true);\n  return chainedChecker;\n}\n</code></pre>\n<p>Now we can use it like:</p>\n<pre><code class="language-jsx">text = lengthChecker.isRequired,\n</code></pre>\n',
+  },
+}

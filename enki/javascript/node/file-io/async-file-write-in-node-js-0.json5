@@ -1,0 +1,62 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/file-io/async-file-write-in-node-js.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>Suppose there is a custom file encoding named <code>xyz</code>.</p>\n<p>Using the built-in File System module of NodeJS, how would you write "XXYYZ" to <code>myFile</code>? Remember you must manually set the encoding.</p>\n<pre><code class="language-javascript">const fs = require(\'fs\')\n\n???.???(???, ???,\n  ???, (err) => {\n    console.log(err)\n  }\n</code></pre>\n',
+    answers: [
+      {
+        text: 'fs',
+      },
+      {
+        text: 'writeFile',
+      },
+      {
+        text: "'myFile'",
+      },
+      {
+        text: "'XXYYZ'",
+      },
+      {
+        text: "{ encoding: 'xyz' }",
+      },
+      {
+        text: 'FS',
+      },
+      {
+        text: 'FileSystem',
+      },
+      {
+        text: 'writeFileAsync',
+      },
+      {
+        text: 'write',
+      },
+      {
+        text: 'new myFile()',
+      },
+      {
+        text: 'XXYYZ',
+      },
+      {
+        text: '{ xyz: true }',
+      },
+      {
+        text: '{ xyz }',
+      },
+      {
+        text: 'customEncode(xyz)',
+      },
+    ],
+    comment: "<p>The File System (FS) module provides file I/O. You can use <code>fs.writeFile</code> to <strong>asynchronously write data to a file</strong>. The data can be a string or a buffer.</p>\n<p>The syntax is:</p>\n<pre><code class=\"language-javascript\">fs.writeFile(file, data[, options],\n  callback)\n</code></pre>\n<p><code>file</code> is the filename or descriptor and <code>data</code> is a string or buffer.\nThe <code>options</code> parameter can be a string representing the <code>encoding</code> (eg: <code>utf8</code>) or an object with <code>encoding</code>. <code>mode</code> and <code>flag</code> properties. <code>callback</code> is a function to invoke when the write completes, it receives an error argument on error or no arguments if successful.</p>\n<p>For example:</p>\n<pre><code class=\"language-javascript\">fs.writeFile('msg.txt',\n  'Hello enki',\n  function (err) {\n    if (err) throw err;\n    console.log('it\\'s ok');\n});\n</code></pre>\n<p>Note: The file specified must support writing and the file is overwritten if it already exists.</p>\n<p>It is not recommended to use <code>fs.writeFile</code> multiple times on the same file without waiting for the callback.  Use <code>fs.createWriteStream</code> instead.</p>\n",
+  },
+}

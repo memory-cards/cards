@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/dummy-workout/server-side-rendering.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+  ],
+  card: {
+    question: "<p>The main advantage of server-side rendering in React is that the user doesn't have to wait for JS to be ??? before seeing ???.</p>\n",
+    answers: [
+      {
+        text: 'fetched',
+      },
+      {
+        text: 'the first view of the webapp',
+      },
+      {
+        text: 'written',
+      },
+      {
+        text: 'scripted',
+      },
+      {
+        text: 'results',
+      },
+      {
+        text: 'improved user performance',
+      },
+    ],
+    comment: "<p>JS <strong>isomorphic</strong> (or universal) app proved useful especially on user performance.</p>\n<p>The server renders the React app to a string and generate the first view of the webapp. The user doesn't have to wait for the JS to be fetched before seeing something.</p>\n<pre><code class=\"language-javascript\">var React = require('react');\nReactApp = React.createFactory(require\n              ('../components/ReactApp'));\nmodule.exports = function(app) {\n  app.get('/', function(req, res){\n  var reactHtml =\n    React.renderToString(ReactApp({}));\n  res.render('index.ejs',\n     {reactOutput: reactHtml});\n  });\n};\n</code></pre>\n<p>Inside <code>index.ejs</code>:</p>\n<pre><code class=\"language-html\">&#x3C;div id=\"react-main-mount\">\n  &#x3C;%- reactOutput %> &#x3C;/div>\n&#x3C;!-- bootstrap the app -->\n&#x3C;script src=\"/main.js\">&#x3C;/script>\n</code></pre>\n<p>On the <strong>client</strong> side (<code>main.js</code>):</p>\n<pre><code class=\"language-javascript\">var React = require('react');\nvar ReactApp = require\n    ('./components/ReactApp');\nvar mountNode = document.getElementById(\n    \"react-main-mount\");\nReact.render(new ReactApp({}), mountNode);\n</code></pre>\n",
+  },
+}

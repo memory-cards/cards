@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-ii/type-of-the-children-props.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Consider the following react component:</p>\n<pre><code class="language-javascript">var Enki = React.createClass({\n  componentDidMount: function {\n    console.log(this.props.children)\n  }\n  render: function() {\n    return &#x3C;div />;\n  }\n})\n</code></pre>\n<p>What will the following output?</p>\n<pre><code class="language-javascript">ReactDOM.render(\n  &#x3C;Enki>&#x3C;p/>&#x3C;p/>&#x3C;/Enki>,\n  aNode\n);\n// ???\n\nReactDOM.render(\n  &#x3C;Enki>&#x3C;p/>&#x3C;/Enki>,\n  aSecondNode\n)\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '[<p/> <p/>]',
+      },
+      {
+        text: '<p/>',
+      },
+      {
+        text: '[ <p/>]',
+      },
+      {
+        text: '<p/>, <p/>',
+      },
+      {
+        text: 'null',
+      },
+      {
+        text: 'undefined',
+      },
+    ],
+    comment: "<p>Generally, a components children, <code>this.props.children</code>, would be an array of components.</p>\n<p>When there is a single child, <code>this.props.children</code> will be the the single child component itself <em>without the array wrapper</em>, hence saving the allocation of an array.</p>\n<p>The example shows both with and without an array allocation:</p>\n<pre><code class=\"language-javascript\">var Wrapper = React.createClass({\n  componentDidMount: function() {\n    console.log(\n      Array.isArray(this.props.children)\n    );\n  }\n  render: function() {\n      return &#x3C;div />;\n  }\n});\n\n// an array of components\nReactDOM.render(\n  &#x3C;Wrapper>&#x3C;span/>&#x3C;span/>\n         &#x3C;span/>&#x3C;/Wrapper>,\n  document.getElementById('foo')\n);\n// true\n\n// single child (no array allocation)\nReactDOM.render(\n  &#x3C;Wrapper>hello&#x3C;/Wrapper>,\n  document.getElementById('foo2')\n);\n// false\n</code></pre>\n",
+  },
+}

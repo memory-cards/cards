@@ -1,0 +1,24 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/good-to-know/reactdom-render-ref.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What method will return a <code>ref</code> to a component?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'ReactDOM.render()',
+      },
+      {
+        text: 'render()',
+      },
+    ],
+    comment: "<p>Even though <em>reactive</em> data flow always ensures that latest props are sent to each child outputted from <code>render()</code>, there are few cases where it's necessary or beneficial to <em>reach out</em> to component instances. This is done via <code>refs</code> (references).</p>\n<p>The <code>ReactDOM.render()</code> function (different from the component <code>render()</code>) will return a reference to <strong>DOM</strong> node (virtual component's <strong>backing instance</strong>).</p>\n<pre><code class=\"language-jsx\">var comp = ReactDOM.render(&#x3C;Enki />,\n  container);\n</code></pre>\n<p>An important distinction to make is that <strong>JSX</strong> doesn't return component instances, but <code>ReactElement</code>s which are lightweight representation of how mounted components should look like:</p>\n<pre><code class=\"language-jsx\">var compElement = &#x3C;Enki />; //ReactElement\nvar compInstance = ReactDOM.render(\n  compElement, container);\n\ncompInstance.doSomething();\n</code></pre>\n<p>It's advisable that this shouldn't be used at the <em>top level</em>. Instead <code>props</code> and <code>state</code> should handle communication with child components.</p>\n",
+  },
+}

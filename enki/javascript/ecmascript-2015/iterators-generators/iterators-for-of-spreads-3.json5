@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterators-for-of-spreads.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">// How can we get this to be \'1 2 3 4 5\'\n\nconsole.log(1, ???[2, 3, 4], 5)\n</code></pre>\n<p>%exp\nWe can use the spread operator (<code>...</code>) to copy the contents of the <code>[2, 3, 4]</code> array between the elements <code>1</code> and <code>5</code>, resulting in the wanted array.\n%</p>\n',
+    answers: [
+      {
+        text: '...',
+      },
+      {
+        text: 'concat',
+      },
+      {
+        text: 'map',
+      },
+    ],
+    comment: "<p>Freshen up you knowledge on <code>iterators</code>, <code>for of</code> loops and the <code>spread operator</code> with this exercise.\nThe goal is to fill in the gaps with either the output of the snippet or the missing bit that won't throw any errors.</p>\n",
+  },
+}

@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/strings-ii/most-efficient-way-to-build-html-strings.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'strings',
+    'html',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>What\'s the more efficient way to build <code>HTML</code> strings in modern browsers?</p>\n<pre><code class="language-bash">1) + (plus operator)\n2) join()\n3) concat()\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '1',
+      },
+      {
+        text: '2',
+      },
+      {
+        text: '3',
+      },
+    ],
+    comment: "<p>On modern browsers, building <strong>HTML</strong> strings with <code>.join()</code> is less efficient than concatenating strings with the <code>+</code> operator. This is due to the fact that the plus operator is optimized internally by modern JavaScript egines.</p>\n<p>So, adding the values to an array and then joining them at the end:</p>\n<pre><code class=\"language-javascript\">var html = [];\nfor(var i=0; i&#x3C;100; i++) {\n  html.push('&#x3C;p>', i, '&#x3C;/p>');\n}\nhtml = html.join('');\n</code></pre>\n<p>Runs slower than the straightforward method of building <code>HTML</code> strings using <code>+=</code>:</p>\n<pre><code class=\"language-javascript\">var html = '';\nfor(var i=0; i&#x3C;100; i++) {\n  html += '&#x3C;p>' + i + '&#x3C;/p>'\n}\n</code></pre>\n",
+  },
+}

@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/arrays/setting-the-length-of-an-array.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+    'introduction',
+    'obscura',
+  ],
+  card: {
+    question: '<p>Complete the following snippet:</p>\n<pre><code class="language-javascript">var names = ["John","Mary","Tom"];\nnames.length = 4;\n// names = ???\nnames.length = 0;\n// names = ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '["John","Mary","Tom", undefined]',
+      },
+      {
+        text: '[ ]',
+      },
+      {
+        text: '[undefined,undefined,undefined, undefined]',
+      },
+      {
+        text: '["John","Mary","Tom"]',
+      },
+    ],
+    comment: '<p>Have you ever wondered what happens if you manually change the length of an array?</p>\n<p>Given the array:</p>\n<pre><code>var a = ["one", "two", "three"];\n</code></pre>\n<p>You can manually set the length of the array to truncate or extend it. To truncate:</p>\n<pre><code>a.length = 2;\n// a = ["one", "two"]\n</code></pre>\n<p>Now, to extend the truncated array returned from the above:</p>\n<pre><code>a.length = 4;\n// a = ["one", "two", undefined,\n//               undefined]\n</code></pre>\n<p>Finally, to truncate to zero:</p>\n<pre><code>a.length = 0;\n// a = []\n</code></pre>\n',
+  },
+}

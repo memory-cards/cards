@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'elliehoward',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dom-manipulation/overwriting-dom-nodes-contents.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>Fill in the blanks to overwrite the contents of the div element with <code>id='container'</code>:</p>\n<pre><code class=\"language-HTML\">&#x3C;body>\n  &#x3C;div id='container'>\n    &#x3C;h1>Hello world&#x3C;/h1>\n    &#x3C;p>This is HTML&#x3C;/p>\n  &#x3C;/div>\n&#x3C;/body>\n&#x3C;script>\ndocument\n  .???('container')\n  .??? = 'I love coffee!'\n&#x3C;/script>\n</code></pre>\n",
+    answers: [
+      {
+        text: 'getElementById',
+      },
+      {
+        text: 'innerHTML',
+      },
+      {
+        text: 'appendChild',
+      },
+      {
+        text: 'body',
+      },
+      {
+        text: 'getElementsByClassName',
+      },
+      {
+        text: 'div',
+      },
+      {
+        text: 'string',
+      },
+    ],
+    comment: '<p>Elements have a property called <code>innerHTML</code> that gets or sets the HTML contained within the element. Setting the <code>innerHTML</code> of an element overwrites the contents of an element, including nested elements. Consider the following example:</p>\n<pre><code class="language-HTML">&#x3C;body>\n  &#x3C;h1>Hello world&#x3C;/h1>\n  &#x3C;p>This is HTML&#x3C;/p>\n&#x3C;/body>\n</code></pre>\n<p>The body tag has a couple of elements within it. If we set the <code>innerHTML</code> of the body tag then these elements will be overwritten by the new content.</p>\n<pre><code class="language-javascript">document\n  .body\n  .innerHTML = \'Hello world\'\n</code></pre>\n<p>The DOM now looks like this:</p>\n<pre><code class="language-HTML">&#x3C;body>\n  Hello world\n&#x3C;/body>\n</code></pre>\n<p>Remember: if you want to overwrite the contents of an element, set the <code>innerHTML</code> property. If you just want to add to an element\'s contents you should use the <code>appendChild</code> method.</p>\n',
+  },
+}

@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/operational-vs-programmer-errors/operational-vs-programmer-errors.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: "<p>Can you identify type of error most likely depicted in the following snippet?</p>\n<pre><code class=\"language-javascript\">import http from 'http';\n...\n// create the request header\nhttp.request({host: test.com,\n  port: 80,\n  path: '/signup',\n  method: 'POST'\n  }, (res, err) => err &#x26;&#x26; console.log(err))\n  // add the data\n    .write(\n      'username': 'enki',\n      'password': 'enki'\n    );\n</code></pre>\n<p>???</p>\n",
+    answers: [
+      {
+        text: 'Handled operational error',
+      },
+      {
+        text: 'Unhandled operational error',
+      },
+      {
+        text: 'Handled programmer error',
+      },
+      {
+        text: 'Unhandled programmer error',
+      },
+    ],
+    comment: '<p>Errors in Node start off as scary. What if my server dies when there are hundreds of people connected? Do I restart it and disconnect all users? Do I handle all the possible errors such that no unwanted restart is needed?</p>\n<p>The most accurate answer is likely also the most general one: it depends. Some errors are to be expected. Others are not.</p>\n<p><strong>Operational errors</strong> are a subset of the "expected errors". Your server doesn\'t accept passwords shorter than 10 characters, so it returns an error. You sent the wrong parameter to the API you\'re using and received a 400 Bad Request. You simply ran out of memory by opening too many files without closing them.</p>\n<p>These are usually <em>run-time</em> errors which can be handled gracefully, without the risk of leaking any data or unexpected behavior. They do not represent a bug - mistakes happen everywhere and you are expected as a programmer to handles others\'.</p>\n<p><strong>Programmer errors</strong>, on the other hand, are considered bugs. Reading an undefined value, a leaking database connection, calling async functions without a callback or not validating user input are all examples of errors that usually require the application to be restarted. Moreover, not handling an external operational error (400 or 500 HTTP codes) in your code is also  considered to be a programmer error.</p>\n<p>However, restarting the server won\'t solve bugs and the only permanent solution is to change the code in question.</p>\n<p>To make the distinction between the two types is the first step in being able to properly handle them.</p>\n<p>Note: You might have also heard of "exceptions". An exception is a "thrown error":</p>\n<pre><code class="language-javascript">if(err){\n  throw new Error(\'exception here\');  \n}\n\ncallback(new Error(\'error here\'));\n</code></pre>\n',
+  },
+}

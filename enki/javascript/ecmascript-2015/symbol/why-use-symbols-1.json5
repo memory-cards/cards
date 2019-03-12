@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/symbol/why-use-symbols.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which of the following is true about Symbols?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Symbols are unique and immutable',
+      },
+      {
+        text: 'Symbols can be overwritten',
+      },
+      {
+        text: "Symbols can't be used by libraries",
+      },
+      {
+        text: 'Symbols are unique and mutable',
+      },
+    ],
+    comment: '<p>As symbols are always unique they are great for library authors to defining values without fear of overwriting anything existing e.g.</p>\n<pre><code class="language-javascript">var companyKey = Symbol();\nvar obj = {}\nwindow[companyKey] = "Enki";\n</code></pre>\n<p>They can also be used as a kind of constant within an application:</p>\n<pre><code class="language-javascript">const highDiscountLevel = Symbol();\n</code></pre>\n<p>This is better than just defining a const string as there would be nothing to stop a developer doing the following:</p>\n<pre><code class="language-javascript">const highDiscountLevel = "high";\n\n//uh oh 2 consts\n//representing same thing\nconst anotherDiscountLevel = "high";\n</code></pre>\n<p>Probably Symbols most important purpose is to introduce non-breaking changes to JavaScript let\'s talk about this next.</p>\n',
+  },
+}

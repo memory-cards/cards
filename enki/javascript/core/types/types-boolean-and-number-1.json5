@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types/types-boolean-and-number.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Which of the following statements is considered true?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'The number type in JavaScript support both whole and decimal numbers',
+      },
+      {
+        text: 'Boolean type has three options',
+      },
+      {
+        text: 'You need the Math object to add numbers',
+      },
+      {
+        text: 'Boolean types use **Upper case**',
+      },
+    ],
+    comment: '<h3>Boolean</h3>\n<p>The Boolean type has two options: <em>true</em> or <em>false</em> (these are specified as lower case):</p>\n<pre><code class="language-javascript">var isCold = true;\nvar isHot = false;\n</code></pre>\n<h3>Number</h3>\n<p>JavaScript supports both whole and decimal numbers all using the same number type:</p>\n<pre><code class="language-javascript">var numberOfMonths=12;\nvar temperature=17.2;\n</code></pre>\n<p>You can perform simple maths calculations using the following operators:</p>\n<pre><code class="language-javascript">1+2; //add\n9/3 //divide\n1*5 //multiply\n9-5 //subtract\n10%4 //modulus (division remainder)\n</code></pre>\n<p>More math functionality is available via the <code>Math</code> object e.g.</p>\n<pre><code class="language-javascript">Math.round(5.7);//6\n</code></pre>\n',
+  },
+}

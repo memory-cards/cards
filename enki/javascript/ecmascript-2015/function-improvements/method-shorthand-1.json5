@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/function-improvements/method-shorthand.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the missing gaps of the following snippet such that it makes use of method shorthand:</p>\n<pre><code class="language-javascript">return {\n  ??? ??? {\n    ...\n  }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'func',
+      },
+      {
+        text: '()',
+      },
+      {
+        text: 'func:',
+      },
+      {
+        text: 'function func()',
+      },
+      {
+        text: 'func()',
+      },
+      {
+        text: '() =>',
+      },
+    ],
+    comment: '<p>ES6 method shorthand allows us to remove the function key word and colon making code more succinct.</p>\n<p>For example, prior to ES6, you would have written something similar to the below:</p>\n<pre><code class="language-javascript">return {\n   func: function func() {\n   ...\n   }\n};\n</code></pre>\n<p>With ES6 this can now become:</p>\n<pre><code class="language-javascript">return {\n    func() {\n    ...\n    }\n};\n</code></pre>\n',
+  },
+}

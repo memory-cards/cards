@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-ii/conditional-rendering-part-1.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Complete the following snippet such that <code>"B"</code> is rendered on the screen:</p>\n<pre><code class="language-jsx">function A(props) {\n  return &#x3C;p>A&#x3C;/p>;\n}\n\nfunction B(props) {\n  return &#x3C;p>B&#x3C;/p>;\n}\n\nfunction C(props){\n  const show = ???.???;\n  return show ??? &#x3C;A /> : &#x3C;B />;\n}\n\nReactDOM.render(\n  &#x3C;C show={???} />,\n  document.getElementById(\'root\')\n);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'props',
+      },
+      {
+        text: 'show',
+      },
+      {
+        text: '?',
+      },
+      {
+        text: 'false',
+      },
+      {
+        text: 'true',
+      },
+      {
+        text: 'if',
+      },
+      {
+        text: 'else',
+      },
+      {
+        text: 'C',
+      },
+      {
+        text: 'state',
+      },
+    ],
+    comment: '<p><strong>Conditional rendering</strong> is the long-standing technique of <code>render</code>ing different <code>element</code>s for different scenarios.</p>\n<p>Exploiting the power of pure <code>JS</code>, <strong>React</strong> allows conditional rendering with simple <code>if</code>s or <em>ternary operators</em>[1].</p>\n<p>Consider the following two functional components:</p>\n<pre><code class="language-jsx">function Sunny(props) {\n  return &#x3C;p>Enjoy the weather&#x3C;/p>;\n}\n\nfunction Rainy(props) {\n  return &#x3C;p>You should take an umbrella&#x3C;/p>\n}\n</code></pre>\n<p>You might want to render either <code>&#x3C;Sunny /></code> or <code>&#x3C;Rainy /></code> in different scenarios.\nFurthermore, you might use a <code>props.isRaining</code> deciding which component should be rendered:</p>\n<pre><code class="language-jsx">function Message(props) {\n  const isRaining = props.isRaining;\n  if (isRaining) {\n    return &#x3C;Rainy />;\n  }\n  return &#x3C;Sunny />;\n}\n</code></pre>\n<p>In addition, such <code>element</code>s can be stored using <strong>variables</strong>. This is particularly useful when conditional <code>render</code>ing just parts of the <code>component</code>:</p>\n<pre><code class="language-jsx">class Message extends React.component {\n  render() {\n    const isRaining = props.isRaining;\n    let message = null;\n\n    message = isRaining ?\n      &#x3C;Rainy /> : &#x3C;Sunny/>;\n\n    return (\n      &#x3C;div>\n        {message}\n        &#x3C;p> Anyways, enjoy your day &#x3C;/p>;\n      &#x3C;/div>\n    );\n  }\n}\n</code></pre>\n<p>When rendering <code>Message</code> component with <code>isRaining=true</code>, it will make use of <code>&#x3C;Rainy /></code> while otherwise it will use <code>&#x3C;Sunny /></code>. In both cases the latter <code>&#x3C;p></code> is shown as well.</p>\n',
+  },
+}

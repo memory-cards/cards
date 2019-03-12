@@ -1,0 +1,29 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/tools-i/bump-package-version-in-npm.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'workout',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Fill the gap such that the resulted version of your package will be the same as the one specified:</p>\n<pre><code class="language-bash"># assume current version is 3.2.5\n$ npm version ???\n# new version will be 3.3.5\n</code></pre>\n',
+    answers: [
+      {
+        text: 'minor',
+      },
+      {
+        text: 'major',
+      },
+      {
+        text: 'patch',
+      },
+    ],
+    comment: '<p>The <code>npm version</code> command, when ran in a package directory, will bump the version.</p>\n<p>As an argument, the new version can be specified with a valid <strong>semver</strong> string:</p>\n<pre><code class="language-bash">npm version 1.2.3\n</code></pre>\n<p>Instead of specifying the whole version, a specific <strong>semver</strong> argument can be specified which will increment the field by 1:</p>\n<pre><code class="language-bash"># assume current version is 1.2.3\n$ npm version major\n# new version will be 2.2.3\n$ npm version minor\n# new version will be 2.3.3\n$ npm version patch\n# new version will be 2.3.4\n</code></pre>\n<p><code>from-git</code> can be passed as an argument which will read the latest git tag and use it as the latest npm version:</p>\n<pre><code class="language-bash">$ npm version from-git\n</code></pre>\n<p>Used inside a <strong>git repository</strong>, a version commit and tag will also be created. To avoid this use:</p>\n<pre><code class="language-bash">$ npm --no-git-tag-version version\n</code></pre>\n<p>Using the <code>-m</code> or <code>--message</code> config flag, the specified message will become the commit message. <code>%s</code> is replaced by the resulting version number:</p>\n<pre><code class="language-bash">$ npm version patch -m "New version is %s"\n</code></pre>\n',
+  },
+}

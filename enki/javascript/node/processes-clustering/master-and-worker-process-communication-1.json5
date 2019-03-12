@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/processes-clustering/master-and-worker-process-communication.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>The following code snippet should send a string message from the *<em>master</em></p>\n<pre><code class="language-javascript">???.???(\'From master to worker..\');\n</code></pre>\n',
+    answers: [
+      {
+        text: 'process to a **worker**. Complete the gaps in order to accomplish this functionality:',
+      },
+      {
+        text: 'worker',
+      },
+      {
+        text: 'send',
+      },
+      {
+        text: 'on',
+      },
+      {
+        text: 'master',
+      },
+      {
+        text: 'process',
+      },
+    ],
+    comment: '<p>Messages can be sent between the <em>master</em> process and its <em>worker</em> processes to assign tasks, return that tasks are completed, and other operations.</p>\n<p>An event listener for the message event must be set up in both the master and its workers.</p>\n<p>To listen for messages in the <em>master</em> from a <em>worker</em>:</p>\n<pre><code class="language-javascript">worker.on(\'message\', function(message) {\n    console.log(message);\n});\n</code></pre>\n<p>To listen for messages in a <em>worker</em> from the <em>master</em>:</p>\n<pre><code class="language-javascript">process.on(\'message\', function(message) {\n    console.log(message);\n});\n</code></pre>\n<p>Messages can be sent as strings or serializable objects.\nTo send a message from the <em>master</em> to a <em>worker</em>:</p>\n<pre><code class="language-javascript">worker.send(\'From master to worker...\');\n// or\nworker.send({data: [1, 2, 3]});\n</code></pre>\n<p>To send a message from a <em>worker</em> to a <em>master</em>:</p>\n<pre><code class="language-javascript">process.send(\'From worker to master..., \\\n             with ID num: \' + process.pid);\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/packages-modules/deprecated-peer-dependencies.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'deep',
+    'new',
+  ],
+  card: {
+    question: '<p>In which version of npm were *peerDependencies</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'available?',
+      },
+      {
+        text: 'npm v2',
+      },
+      {
+        text: 'npm v3',
+      },
+      {
+        text: 'npm v4',
+      },
+    ],
+    comment: '<p>By now, the question of what happens if one package depends on another package may have crossed your mind. Do you specify both in dependencies field or just the one you would use and hope npm will take care of everything?</p>\n<p>The answer lies within the npm version you are using. There\'s a quick way to find that out:</p>\n<pre><code class="language-bash">$ npm -v\n# 3.10.3\n</code></pre>\n<p>npm 2 used to handle the problem quite intuitively. If PackageA depended on PackageB, <code>npm install PackageA</code> would build the following folder tree:</p>\n<pre><code class="language-bash">~/app\n |- PackageA\n    |- PackageB\n</code></pre>\n<p>Straight forward, but not quite what you might had been looking for. You could <code>require(\'PackageA\')</code>, but not <code>require(\'PackageB\')</code> even though both were installed. The additional <em>package.json</em> <strong>peerDependencies</strong> property was introduced to solve this.</p>\n<p>If <em>PackageA</em> had the following <em>package.json</em> file, which would tell npm to bundle PackageA and PackageB installations (much like node has to be installed for npm to work):</p>\n<pre><code class="language-javascript">{\n  //props\n  "peerDependencies": {\n    "PackageB": "1.0.0"\n  }\n}\n</code></pre>\n<p>The tree would have the following structure:</p>\n<pre><code>$ npm install PackageA\n~/app\n |- PackageA\n |- PackageB\n</code></pre>\n<p>And you could <code>require(\'PackageB\')</code> without problem.</p>\n',
+  },
+}

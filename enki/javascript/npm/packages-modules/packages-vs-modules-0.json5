@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/packages-modules/packages-vs-modules.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>For a module to be a package as well, it has to</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'have a package.json file',
+      },
+      {
+        text: 'be published',
+      },
+      {
+        text: 'have an index.js file',
+      },
+      {
+        text: 'be required',
+      },
+    ],
+    comment: "<p>So far, we've used the terms <em>package</em> and <em>module</em> somehow interchangeably. However, there is a sensible difference between the two and it has to do with the way in which node works.</p>\n<p>In short, a <strong>package</strong> is a file or directory that contains a <em>package.json</em>. It is something that, by reading its <em>package.json</em> file, can be characterized by a <em>name</em>, a <em>version</em>, a <em>tag</em>, or a <em>git repository url</em>.</p>\n<p>Even if a package is not published to the public registry (you will be shown how to do that in a future workout), it can provide the same benefits, such as avoiding code repetition.</p>\n<p>A <strong>module</strong>, on the other hand, is anything that you can load in a project using <code>require()</code>. To some extent, packages can be modules, but this is not required.</p>\n<p>There are some packages, such as command line interface ones, that contain an executable but don't provide the <em>main</em> field which makes them importable by <em>Node.js</em>.</p>\n<h3><em>package.json</em> and <em>node_modules</em></h3>\n<p>The above definitions explain the nomenclature chosen for the two npm resources: <em>package.json</em> and <em>node_modules</em>.</p>\n<p>The <em>package.json</em> file defines the package, while the <em>node_modules</em> is the place where <em>Node.js</em> will look for imports specified with <code>require()</code>.</p>\n<p>You could have a module <em>node_modules/myModule.js</em>, for which:</p>\n<pre><code>var a = require('myModule.js');\n</code></pre>\n<p>Would be valid. However, <em>myModule</em> isn't a <em>package</em>, as it is missing the attributes of a package specified inside the <em>package.json</em> file.</p>\n<p>Alternatively, if a <em>package</em> doesn't have an <em>index.js</em> or a <em>main</em> field in the <em>package.json</em>, then it isn't a module. Even if you could find it inside the <em>node_modules</em> directory, node won't be able to import it.</p>\n",
+  },
+}

@@ -1,0 +1,28 @@
+{
+  __meta__: {
+    author: 'fsites',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/using-assignment-operators.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'operators, assignment, loops',
+  ],
+  card: {
+    question: '<p><code>x = x + y</code> can be shortened using ???</p>\n',
+    answers: [
+      {
+        text: 'x += y',
+      },
+      {
+        text: 'x ++ y',
+      },
+      {
+        text: 'x =+ y',
+      },
+    ],
+    comment: '<p>Assignment operators are a great way to reassign a value while keeping your code clean.</p>\n<p>Instead of <code>x = x + y</code>, use <code>x += y</code>.</p>\n<p>Assignment operators are particularly useful in loops:</p>\n<pre><code>var list = [1, 2, 3];\nvar sumOfSquares = 0;\nfor (i = 0; i &#x3C; list.length; i++) { \n  sumOfSquares += Math.pow(list[i], 2);\n}\n</code></pre>\n<p>Other examples of assignment operators include <code>-=</code>, <code>*=</code>, <code>/=</code> and <code>%=</code>.</p>\n',
+  },
+}

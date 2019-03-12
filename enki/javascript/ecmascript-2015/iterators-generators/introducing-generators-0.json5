@@ -1,0 +1,48 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/introducing-generators.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the missing gaps of the following generator function:</p>\n<pre><code class="language-javascript">??? myGenerator() {\n  ??? 5;\n}\n\nconst gen = myGenerator();\ngen.next();\n// {value: 5, done: false}\ngen.???;\n// {value: undefined, done: true}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'function*',
+      },
+      {
+        text: 'yield',
+      },
+      {
+        text: 'next()',
+      },
+      {
+        text: 'isDone()',
+      },
+      {
+        text: 'return',
+      },
+      {
+        text: 'done()',
+      },
+      {
+        text: 'function',
+      },
+      {
+        text: '() =>',
+      },
+      {
+        text: 'class',
+      },
+      {
+        text: 'generator',
+      },
+    ],
+    comment: '<p>ES6 provides an easier way of working with iterators called <strong>generators</strong>.</p>\n<p>Mozilla Developer Documentation defines generators as "a special type of function that works as a factory for iterators".</p>\n<p>Let\'s rewrite our simple example that iterates through 1 to 5 to use a generator function.</p>\n<p>To indicate that a function is a generator function we add an asterisk or star after the function keyword.</p>\n<p>The positioning of this is not important so it can be next to the function keyword in the middle or next to the name.</p>\n<p>Generator functions are very special as they maintain their execution context between method calls.</p>\n<p>We can tell our generator function when we want to return a value and exit by using the <strong>yield</strong> keyword.</p>\n<p>When the generator is next called, it will return to the next statement just after the <strong>yield</strong> statement.</p>\n<p>The below example shows one way to implement our 1-5 iterator as a generator:</p>\n<pre><code class="language-javascript">function* getGenerator(){\n  var currentNumber = 1;\n  while(currentNumber &#x3C; 6) {\n    yield currentNumber++;\n  }\n}\n\nvar gen = getGenerator();\ngen.next(); // {value: 1, done: false}\ngen.next(); // {value: 2, done: false}\ngen.next(); // {value: 3, done: false}\ngen.next(); // {value: 4, done: false}\ngen.next(); // {value: 5, done: false}\ngen.next();\n// {value: undefined, done: true}\n</code></pre>\n',
+  },
+}

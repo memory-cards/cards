@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'WebReflection',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-assignments.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">function axes() {\n  return [10, 15, -7];\n}\nlet [x, , z] = axes();\nconsole.log(x, z);\n// ???\n</code></pre>\n<p>%exp\nHere we assign the first value to <code>x</code> and the third to <code>z</code>.\n%</p>\n',
+    answers: [
+      {
+        text: '10, -7',
+      },
+      {
+        text: 'SyntaxError',
+      },
+      {
+        text: '10, [15, -7]',
+      },
+      {
+        text: '10, 15',
+      },
+    ],
+    comment: '<p>What will be shown on the console?</p>\n',
+  },
+}

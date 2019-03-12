@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/in-depth-ii/javascript-compilation.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'deep',
+    'workout',
+    'obscura',
+  ],
+  card: {
+    question: '<p>Find each variable scope in the following code:</p>\n<pre><code class="language-javascript">var a = 1; // a is in global\nvar b = 2; // b is in ???\nfunction foo(){ // foo is in global\n  var a = 2; // a is in foo\n  function fee(){ // fee is in ???\n  var b = 3; // b is in ???\n  }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'global',
+      },
+      {
+        text: 'foo',
+      },
+      {
+        text: 'fee',
+      },
+      {
+        text: 'local',
+      },
+    ],
+    comment: '<p>A common <strong>misconception</strong> is that JavaScript is <strong>not compiled</strong>.</p>\n<p>Javascript source code compiles every time the program runs. The compiler reads the code and looks for blocks of scope.</p>\n<p>The compiler looks for variable and function <strong>declarations</strong> and registers them to their <strong>scope</strong> (e.g. global).</p>\n<p>JavaScript is <strong>function</strong> scoped.</p>\n<p>For example:</p>\n<pre><code>var a = 2; // a is in global\nvar b = 3; // b is in global\nfunction fun(){ // fun is in global\n    var a = 2; // a is in fun\n    function yes(){ // yes is in fun\n        var b = 3; // b is in yes\n    }\n}\n</code></pre>\n<p>Then the code is executed.</p>\n<p>There are many sophisticated compilation techniques such as <strong>jit</strong> compilation, which only compiles a function if it reads a call to that function in the code.</p>\n',
+  },
+}

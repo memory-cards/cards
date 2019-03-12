@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/undefined-empty-null-checks.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+  ],
+  card: {
+    question: "<p>The following code checks for ??? .</p>\n<pre><code class=\"language-javascript\">msg = 'Hello ' + (name || 'friend');\n</code></pre>\n",
+    answers: [
+      {
+        text: 'All 3 of them',
+      },
+      {
+        text: 'Null',
+      },
+      {
+        text: 'undefined',
+      },
+      {
+        text: 'Empty string',
+      },
+    ],
+    comment: "<p>It is common to check if a variable is <code>null</code> or <code>undefined</code> and provide a default value when necessary.</p>\n<p>Instead of: </p>\n<pre><code>var msg;\nif (name !== null &#x26;&#x26; \n    name !== undefined &#x26;&#x26;\n    name !== '') {\n  msg = 'Hello '+ name;\n} else {\n  msg = 'Hello friend';\n}\n</code></pre>\n<p>A shorter alternative is:</p>\n<pre><code>msg = 'Hello ' + (name || 'friend');\n</code></pre>\n",
+  },
+}

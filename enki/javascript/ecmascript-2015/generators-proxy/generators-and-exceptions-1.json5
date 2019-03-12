@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/generators-and-exceptions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What syntax should be used to catch errors within generators?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'try/catch',
+      },
+      {
+        text: 'throw new Error',
+      },
+      {
+        text: 'gen.catch()',
+      },
+      {
+        text: 'gen.throw()',
+      },
+      {
+        text: 'if/else',
+      },
+    ],
+    comment: '<p>All code inside a generator despite appearances works synchronously.</p>\n<p>This means that error handling occurs as you would expect.</p>\n<p>The example below will catch and log out any exceptions:</p>\n<pre><code class="language-javascript">function* getGenerator() {\n  while(true) {\n    try {\n      console.log("normal")\n      yield;\n    } catch(err) {\n    console.log(\n      "something bad: " + err\n      );\n    }\n  }\n}\n\ng = getGenerator();\n</code></pre>\n<p>We can use generators <strong>throw</strong> method to create an exception.</p>\n<p>The exception occurs at the point where the generator is paused from the previous yield statement.</p>\n<pre><code class="language-javascript">g.throw("bad error");\n</code></pre>\n',
+  },
+}

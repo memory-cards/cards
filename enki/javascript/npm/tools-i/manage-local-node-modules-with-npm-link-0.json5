@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/tools-i/manage-local-node-modules-with-npm-link.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Which of the following statements is false about <code>npm link</code>?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'uses the online npm registry to link global packages',
+      },
+      {
+        text: 'creates a symbolic link between packages',
+      },
+      {
+        text: 'allows easier local development when working with multiple libraries',
+      },
+      {
+        text: 'allows you to use a local library without reinstalling it after each time',
+      },
+    ],
+    comment: '<p>A modular Node.js application often implies the usage of certain local modules.</p>\n<p>To support subsequent modification of those modules and to not need to go through re-installations or code changes one can use the <code>npm</code> commmand <code>npm link</code>. This will create a <em>symbolic link</em> between packages.</p>\n<p>The whole linking process consists of two steps, the first being declaring a module as a global link. This is done by running :</p>\n<pre><code class="language-bash">$ npm link\n// must be run in the root module folder\n</code></pre>\n<p>Secondly, to install the linked modules in the target app using the following command:</p>\n<pre><code class="language-bash">$ npm link myImportedModule\n</code></pre>\n<p>This method fails when you have a local module depending on another local module:</p>\n<pre><code class="language-text">modules/moduleOne\nmodules/moduleTwo -> depends on moduleOne\napp/\n</code></pre>\n<p>To solve this steps must be taken:</p>\n<pre><code class="language-bash">$ cd modules/moduleOne\n$ npm link\n$ cd modules/moduleTwo\n$ npm link moduleOne\n$ npm link\n$ cd app/\n$ npm link moduleTwo\n</code></pre>\n',
+  },
+}

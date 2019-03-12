@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/handling-modules.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'modules',
+  ],
+  card: {
+    question: '<p>Import the <code>enki</code> class in another file :</p>\n<pre><code class="language-javascript">??? Enki ??? \'enki\';\n</code></pre>\n',
+    answers: [
+      {
+        text: 'import',
+      },
+      {
+        text: 'from',
+      },
+      {
+        text: 'to',
+      },
+      {
+        text: 'export',
+      },
+      {
+        text: 'default',
+      },
+      {
+        text: 'function',
+      },
+      {
+        text: 'require',
+      },
+    ],
+    comment: "<p>Anything that is declared in a file in an <code>ES6</code> project isn't available outside of the said file. </p>\n<p>Use <code>export</code> to make it accessible. Here's how exporting a user class works:  </p>\n<pre><code>//user.js\n\nvar localVar = 123; // Invisible externally\n\nexport default function User(age){\n    this.age = age;\n}; // Can be imported by other files\n</code></pre>\n<p>Import the class in another file: </p>\n<pre><code>//user_info.js\n\nimport User from 'user';\nvar newbie = new User(22);\n</code></pre>\n",
+  },
+}

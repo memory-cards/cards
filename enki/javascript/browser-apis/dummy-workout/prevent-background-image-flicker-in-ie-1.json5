@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dummy-workout/prevent-background-image-flicker-in-ie.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Flickering image bug in IE10 can be solved by ???</p>\n',
+    answers: [
+      {
+        text: 'force loading the image',
+      },
+      {
+        text: 'loading the image through a script',
+      },
+      {
+        text: 'uninstalling IE10',
+      },
+    ],
+    comment: "<p><strong>Internet Explorer</strong> proved to have problems when loading cached background images as a flicker effect commonly appear.</p>\n<p>A quick fix is adding this <strong>JS</strong> script:</p>\n<pre><code class=\"language-javascript\">&#x3C;script type=\"text/javascript\">\ntry {\ndocument.execCommand\n  ('BackgroundImageCache', false, true);\n}\ncatch(e) {};\n&#x3C;/script>\n</code></pre>\n<p>However, on <strong>IE 10</strong> this won't solve the problem. This version of the browser won't load cached images via <strong>CSS</strong>. As to solve this you need to force load the image:</p>\n<pre><code class=\"language-css\">background-image: url('background1.jpg')\n</code></pre>\n<p>  In <strong>HTML</strong>:</p>\n<pre><code class=\"language-html\">&#x3C;img src='background1.jpg' \nstyle='display:none' />\n</code></pre>\n",
+  },
+}

@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/measuring-performance/async-and-defer-scripts.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'async-scripts',
+    'defer-scripts',
+  ],
+  card: {
+    question: '<p>What type of script is executed as soon as it is downloaded, without blocking the browser in the meantime?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'async',
+      },
+      {
+        text: 'defer',
+      },
+      {
+        text: 'all',
+      },
+      {
+        text: 'none',
+      },
+    ],
+    comment: '<p>Modern browsers support the <code>async</code> and <code>defer</code> attributes on scripts. These attributes tell the browser it is safe to continue parsing while the scripts are being downloaded.</p>\n<pre><code>&#x3C;script type="text/javascript"\nsrc="path/to/script1.js" async>&#x3C;/script>\n</code></pre>\n<p>An <code>async</code> script is executed as soon as it is downloaded, without blocking the browser in the meantime.</p>\n<pre><code>&#x3C;script type="text/javascript"\nsrc="path/to/script1.js" defer>&#x3C;/script>\n</code></pre>\n<p>Scripts with the <code>defer</code> attribute are executed in order. Unlike <code>async</code> scripts, they will only execute when entire document has been loaded.</p>\n',
+  },
+}

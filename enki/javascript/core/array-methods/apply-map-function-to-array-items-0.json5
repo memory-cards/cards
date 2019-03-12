@@ -1,0 +1,43 @@
+{
+  __meta__: {
+    author: 'Dral',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/array-methods/apply-map-function-to-array-items.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'functional-programming arrays',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Create a new array by returning the square of each element:</p>\n<pre><code class="language-javascript">var arr = [1,2,3,4,\'enki\'].???(x => x*x);\n// the result will be [1,4,9,16,???]\n</code></pre>\n',
+    answers: [
+      {
+        text: 'map',
+      },
+      {
+        text: 'NaN',
+      },
+      {
+        text: '32',
+      },
+      {
+        text: "'enkienki'",
+      },
+      {
+        text: 'reduce',
+      },
+      {
+        text: 'iterate',
+      },
+      {
+        text: 'return',
+      },
+    ],
+    comment: "<p>Using <code>.map</code> will apply a function to every element in the array, and return an array with the results.  </p>\n<pre><code>[1,2,3,4].map(x => x * 2)\n// => [2,4,6,8]\n</code></pre>\n<p>This is not limited to simple transformations.  Any features of functions can be used within a <code>mapper function</code>.</p>\n<pre><code>['Jake', 'Jack', 'Mike'].map(\n  name => `Hello ${name}`\n)\n\n// ['Hello Jake',\n//  'Hello Jack,\n//  'Hello Mike']\n</code></pre>\n",
+  },
+}

@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-upgrades/ecmascript-time-travel.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">// ES5\nvar half = function(x) {\n  return x/2;\n}\n// ES6 equivalent:  \nvar half = (x) ??? {\n  return x/2;\n}\n</code></pre>\n<p>%exp\nArrow function expressions have a shorter syntax than a keyword function expression.</p>\n<p>The *<em>arrow function</em>\n%</p>\n',
+    answers: [
+      {
+        text: '=>',
+      },
+      {
+        text: '->',
+      },
+      {
+        text: '==>',
+      },
+      {
+        text: "does not create a new execution context, so it inherits it's parent's this` or `arguments.",
+      },
+    ],
+    comment: '<p>Hello, traveler.</p>\n<p>You will attempt to accurately fill the gaps in the code snippets to recreate ES5 compatible code using the new features of ES6.</p>\n<p>Best of luck. We will be watching you.</p>\n',
+  },
+}

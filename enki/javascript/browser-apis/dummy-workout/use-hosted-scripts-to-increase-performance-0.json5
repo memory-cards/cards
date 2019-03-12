@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dummy-workout/use-hosted-scripts-to-increase-performance.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'Google',
+    'Microsoft',
+    'jQuery',
+    'server-side',
+  ],
+  card: {
+    question: '<p>What happens when you visit a webpage that uses a script *<em>with the same host</em></p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'as a page previously visited?',
+      },
+      {
+        text: 'script is loaded from cache',
+      },
+      {
+        text: 'script is downloaded',
+      },
+      {
+        text: 'script is not loaded',
+      },
+    ],
+    comment: '<p>Many users already have downloaded scripts from the web. </p>\n<p>For example, they may have downloaded jQuery from Google when visiting another site that uses that particular script host. </p>\n<pre><code class="language-html">&#x3C;script src="https:/.../jquery.min.js">\n&#x3C;/script>\n</code></pre>\n<p>The same script will be loaded from a user\'s cache if they visit another website referencing the same location. This leads to faster loading time.</p>\n',
+  },
+}

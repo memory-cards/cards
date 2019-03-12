@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-i/event-handling-in-react.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Add <code>clickCallback</code> as an event handler for the defined <code>&#x3C;button></code> in the following component:</p>\n<pre><code class="language-jsx">class Click extends React.Component {\n  clickCallback() {\n    console.log(\'clicked\');\n  }\n  render() {\n    return (\n      &#x3C;button ???={???}>\n        Click\n      &#x3C;/button>\n    );\n  }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'onClick',
+      },
+      {
+        text: 'this.clickCallback',
+      },
+      {
+        text: 'clickCallback',
+      },
+      {
+        text: 'onMousePressed',
+      },
+      {
+        text: 'onclicked',
+      },
+      {
+        text: 'onclick',
+      },
+      {
+        text: 'this.clickCallback()',
+      },
+    ],
+    comment: '<p>Adding <strong>event handlers</strong> in <strong>React</strong> is done by providing a listener to the element when initially <code>render</code>ed and <strong>not</strong> by calling <code>addEventListener</code>:</p>\n<pre><code class="language-jsx">class Click extends React.Component {\n  render() {\n    return (\n      &#x3C;button onClick={this.myListener}>\n        Click\n      &#x3C;/button>\n    );\n  }\n}\n</code></pre>\n<p>A common practice when using <strong>ES6 classes</strong> is to have event listeners as separate methods in the class:</p>\n<pre><code class="language-jsx">// within Click component:\nmyListener(e) {\n  console.log(\'button clicked\');\n  console.log(this.props.test);\n}\n</code></pre>\n<p>Above, <code>e</code> is the <strong>synthetic event</strong>[1] passed when clicking the button.</p>\n<p>To make the second <code>console.log</code> work a <code>bind</code>ing must be made in the <code>constructor</code> to allow you using <code>this</code> in the method\'s context (as a consequence of how functions work in <code>JS</code>):</p>\n<pre><code class="language-jsx">class Click extends React.Component {\n  constructor(props) {\n    super(props);\n    this.myListener =\n      this.myListener.bind(this);\n  }\n  // ...\n}\n</code></pre>\n<p>Another approach is to <code>bind</code> the function directly:</p>\n<pre><code class="language-jsx">render() {\n  return (\n    &#x3C;button onClick={\n      this.myListener.bind(this)}>\n      Click\n    &#x3C;/button>\n  );\n}\n</code></pre>\n<p>A similar effect can be achieved using either the <strong>property initializer syntax</strong>[2] or an <strong>arrow function</strong>[3] in the callback.</p>\n',
+  },
+}

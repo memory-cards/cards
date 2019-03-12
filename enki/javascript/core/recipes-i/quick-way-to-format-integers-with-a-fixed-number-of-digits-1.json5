@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'Bruno',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-i/quick-way-to-format-integers-with-a-fixed-number-of-digits.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'introduction',
+    'workout',
+    'slice',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">console.log(("123").slice(-4));\n</code></pre>\n<p> outputs ???</p>\n',
+    answers: [
+      {
+        text: '123',
+      },
+      {
+        text: '0123',
+      },
+      {
+        text: '0001',
+      },
+    ],
+    comment: '<p>If we are required to format a number with a particular amount of digits, for example:</p>\n<pre><code class="language-html">0001\n0002\n0102\n0345\n1483\n</code></pre>\n<p>We can use <code>slice()</code> to achieve the desired result.</p>\n<pre><code>var digits = 4;\nvar prefix = "0000";\nvar myNum = 16;\n(prefix+myNum).slice(-digits);\n// "0016"\n</code></pre>\n<p>Pay attention though, as <code>slice()</code> will throw an error if called by a <em>number</em>, not a <em>string</em>.</p>\n',
+  },
+}

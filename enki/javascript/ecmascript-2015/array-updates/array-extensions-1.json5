@@ -1,0 +1,70 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/array-updates/array-extensions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'es6',
+    'workout',
+    'array',
+    'iterators',
+  ],
+  card: {
+    question: '<p>Fill in the gaps such that an iterator will be created from the given array and the code won\'t raise any errors. The last gap should be completed with the right output of the expression above:</p>\n<pre><code class="language-javascript">var arr = [3, 1, 4]\n\nvar arrIt = arr.???()\n\nvar first = arrIt.???()\nconsole.log(first.value[0])\n// 0\nconsole.log(first.???[???])\n// 3\nvar second = arrIt.next()\nconsole.log(???.value)\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'entries',
+      },
+      {
+        text: 'next',
+      },
+      {
+        text: 'value',
+      },
+      {
+        text: '1',
+      },
+      {
+        text: 'second',
+      },
+      {
+        text: '[1, 1]',
+      },
+      {
+        text: '[1, 4]',
+      },
+      {
+        text: '[0, 1]',
+      },
+      {
+        text: 'first',
+      },
+      {
+        text: 'keys',
+      },
+      {
+        text: 'iterator',
+      },
+      {
+        text: 'toIterator',
+      },
+      {
+        text: 'key',
+      },
+      {
+        text: '2',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: '0',
+      },
+    ],
+    comment: '<p>In ES6 the array type is expanded with 3 additional properties:</p>\n<ul>\n<li>keys (the indexes)</li>\n<li>values</li>\n<li>entries</li>\n</ul>\n<p>These properties return a special type of object called an <strong>iterator</strong>.</p>\n<p>If you haven\'t used one before, you can think of an iterator as a special collection that you can move through that will maintain its position.</p>\n<p>The below code uses <code>Array</code>\'s <strong>entries</strong> method to get an iterator and then logs <code>arr</code>\'s <em>keys</em> and <em>values</em>:</p>\n<pre><code class="language-javascript">var arr = ["a", "b", "c"];\n\nvar iEntries = arr.entries();\n\niEntries.next();\n//{value: [0, "a"], done:false}\n\niEntries.next();\n//{value: [1, "b"], done:false}\n\niEntries.next();\n//{value: [2, "c"], done:false}\n\niEntries.next();\n//{value: undefined, done: true}\n</code></pre>\n',
+  },
+}

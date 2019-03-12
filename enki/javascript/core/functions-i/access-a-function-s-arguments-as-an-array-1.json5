@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'Bruno',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-i/access-a-function-s-arguments-as-an-array.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Turn the arguments of a method into a array:</p>\n<pre><code class="language-javascript">function myArray() {\n  var a = ???;\n  a = Array.prototype.???.call(a);\n  return a;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'arguments',
+      },
+      {
+        text: 'slice',
+      },
+      {
+        text: 'splice',
+      },
+      {
+        text: 'argv',
+      },
+      {
+        text: 'args',
+      },
+      {
+        text: 'sort',
+      },
+      {
+        text: 'toArray',
+      },
+    ],
+    comment: '<p>The arguments of a function can be accessed with the <code>arguments</code> keyword, but <code>arguments</code> only returns a <em>pseudo-array</em>.</p>\n<p>Before applying Array methods, <code>arguments</code> needs to be converted to an actual Array, as follows:</p>\n<pre><code class="language-javascript">function sortedArgs() {\n  // pseudo-array of arguments\n  var a = arguments\n  // turn a into a proper Array:\n  a = Array.prototype.slice.call(a)\n  // we can now use Array methods:\n  return a.sort();\n}\n</code></pre>\n<p>Example of use:</p>\n<pre><code class="language-javascript">sortedArgs(3,1,2)\n// [1,2,3]\n</code></pre>\n',
+  },
+}

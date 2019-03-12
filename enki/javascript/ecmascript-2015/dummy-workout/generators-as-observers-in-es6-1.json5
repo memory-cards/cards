@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/generators-as-observers-in-es6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>What statement will terminate a generator?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'return',
+      },
+      {
+        text: 'yield',
+      },
+      {
+        text: 'next',
+      },
+      {
+        text: 'throw',
+      },
+    ],
+    comment: "<p>A generator can pause at a <code>yield</code> point until it receives input. This is described as an <strong>observer</strong>:</p>\n<pre><code>function* observer() {\n       console.log(`1. ${yield}`); \n       console.log(`2. ${yield}`);\n       return 'result';\n    }\n</code></pre>\n<p><code>next()</code> is used to send values:</p>\n<pre><code>// create generator object\nlet genObj = observer(); \ngenObj.next(); // starts the observer\ngenObj.next('E'); // 1. E\ngenObj.next('n'); // 2. n\n// returns: { value: 'result', done: true }\n</code></pre>\n<p><code>return()</code> terminates the generator and <code>throw()</code> signals an error.</p>\n",
+  },
+}

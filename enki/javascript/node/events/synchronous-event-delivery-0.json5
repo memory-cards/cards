@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/events/synchronous-event-delivery.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p>How is the delivery of events treated in Node?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'synchronously',
+      },
+      {
+        text: 'asynchronously',
+      },
+      {
+        text: 'instantly',
+      },
+      {
+        text: 'random',
+      },
+    ],
+    comment: '<p>Node is asynchronous, however as no I/O is involved in emitting events, the delivery of events is treated synchronously. Therefore:</p>\n<pre><code class="language-javascript">var EventEmitter = require(‘events’)\n                        .EventEmitter;\nvar emitter = new EventEmitter();\n\nemitter.on(‘hi’, function() {\n\n  console.log(‘hi!’);\n\n});\n\nemitter.on(‘hi’, function() {\n\n  console.log(‘hi again!’);\n\n});\n\nconsole.log(‘pre hi’);\nemitter.emit(‘hi’);\nconsole.log(‘post hi’);\n</code></pre>\n<p>Gives the following output:</p>\n<pre><code class="language-bash">pre hi\nhi\nhi again\npost hi\n</code></pre>\n<p>Remember that when emitting events, listeners will be called before <code>emitter.emit</code> returns.</p>\n',
+  },
+}

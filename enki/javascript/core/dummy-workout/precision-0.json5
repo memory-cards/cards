@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/precision.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'integer-precision',
+  ],
+  card: {
+    question: '<p>What are the following variable values?</p>\n<pre><code class="language-javascript">var x = 0.6 - 0.2;\n???\nvar y = (0.2 \n???\n</code></pre>\n',
+    answers: [
+      {
+        text: '10 + 0.3 * 10) / 10;',
+      },
+      {
+        text: 'x: 0.39999999999999997',
+      },
+      {
+        text: 'y: 0.5',
+      },
+      {
+        text: 'x: 0.4',
+      },
+      {
+        text: 'x: 0.6',
+      },
+      {
+        text: 'y: 0.49999999999999997',
+      },
+      {
+        text: 'y: 0.50000000000000004',
+      },
+    ],
+    comment: '<p>Integers are considered accurate only up to 15 digits.</p>\n<pre><code class="language-javascript">var a = 999999999999999; //15 digits\n// a = 999999999999999\nvar b = 9999999999999999; //16 digits\n// b = 10000000000000000\n</code></pre>\n<p>The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate:</p>\n<pre><code class="language-javascript">var x = 0.2 + 0.1;         \n// x will be 0.30000000000000004\n</code></pre>\n<p>To avoid that we can multiply and divide our result as follows:</p>\n<pre><code class="language-javascript">var x = (0.2 * 10 + 0.1 * 10) / 10;\n// x will be 0.3\n</code></pre>\n',
+  },
+}

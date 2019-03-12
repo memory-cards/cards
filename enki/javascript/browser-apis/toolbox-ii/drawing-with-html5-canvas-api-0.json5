@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'daniel_adelberg',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-ii/drawing-with-html5-canvas-api.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'canvas',
+  ],
+  card: {
+    question: '<p>Create a 2d blue rectangle using <code>Canvas</code>:</p>\n<pre><code class="language-javascript">var canvas =\n    document.getElementById("canvas");\n// get the 2d context to draw in 2d\nvar context = canvas.getContext("2d");\n\n// color and draw\n???.fillStyle = "???";\ncontext.???(20,20,100,200)\n</code></pre>\n',
+    answers: [
+      {
+        text: 'context',
+      },
+      {
+        text: 'blue',
+      },
+      {
+        text: 'fillRect',
+      },
+      {
+        text: 'canvas',
+      },
+      {
+        text: 'rectangle',
+      },
+      {
+        text: 'drawRectangle',
+      },
+      {
+        text: 'document',
+      },
+    ],
+    comment: '<p>With the <code>Canvas</code> object it is possible to draw simple shapes and graphics directly in the browser.</p>\n<pre><code class="language-html">&#x3C;!-- make a canvas element -->\n&#x3C;canvas id=\'canvas\'>&#x3C;/canvas>\n</code></pre>\n<p><code>Canvas</code> supports drawing lines, rectangles, and more esoteric shapes, in addition to supporting images and animations.</p>\n<pre><code class="language-javascript">var canvas =\n    document.getElementById("canvas");\n// get the 2d context to draw in 2d\nvar context = canvas.getContext("2d");\n\n// color and draw\ncontext.fillStyle = "red";\ncontext.fillRect(20,20,100,200)\n</code></pre>\n',
+  },
+}

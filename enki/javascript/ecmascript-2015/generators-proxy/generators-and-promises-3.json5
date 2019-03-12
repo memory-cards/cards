@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'gregbenner',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/generators-and-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'promise',
+    'async',
+    'functional programming',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">let newPet = new Promise((resolve, reject) => {\n    reject(new Error(\'sad kittens\'));\n});\n\nnewPet.???((err)=> {\n  console.log(err);\n});\n</code></pre>\n<p>%exp\nUnlike <code>then()</code>, <code>catch()</code> is used to handle rejected promises. In this case, the error message is logged.\n%</p>\n',
+    answers: [
+      {
+        text: 'catch',
+      },
+      {
+        text: 'error',
+      },
+      {
+        text: 'fail',
+      },
+    ],
+    comment: '<p>Some of the most exiting features of ES6 are generators and promises.</p>\n<p>Can you fill in the gaps in the following code snippets such that they make sense?</p>\n',
+  },
+}

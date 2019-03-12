@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/numbers/nan-is-a-number.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+  ],
+  card: {
+    question: '<h3>is NaN a number?</h3>\n<p>What is the output of this line?</p>\n<pre><code class="language-javascript">console.log(typeof(NaN));\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'number',
+      },
+      {
+        text: 'object',
+      },
+      {
+        text: 'function',
+      },
+      {
+        text: 'undefined',
+      },
+    ],
+    comment: '<p>When using the <code>typeof</code> operator with <code>NaN</code>, an interesting result is observed:</p>\n<pre><code class="language-javascript">var x = typeof NaN;\nconsole.log(x);\n// \'number\'\n</code></pre>\n<p>To distinguish <code>NaN</code> from other numbers, use <code>Number.isNaN</code>:</p>\n<pre><code class="language-javascript">Number.isNaN(5) // false\nNumber.isNaN(true) // false\nNumber.isNaN(\'\') // false\nNumber.isNaN(NaN) // true\nNumber.isNaN(Infinite) // false\nNumber.isNaN(Number.NaN) // true\n</code></pre>\n<p>Beware that using <code>=== NaN</code> instead of <code>isNaN</code> would not work because <code>NaN</code> is not equal to itself:</p>\n<pre><code class="language-javascript">1 === NaN  // false\nNaN === NaN // false\nInfinity === NaN // false\n</code></pre>\n',
+  },
+}

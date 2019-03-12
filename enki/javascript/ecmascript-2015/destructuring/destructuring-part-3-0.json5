@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-part-3.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Fill in the gaps such that the variables will have the commented value:</p>\n<pre><code class="language-javascript">let x, y, z;\n[??? ??? ???] = [5, 10, 15]\n// x == 5\nconsole.log(y)\n// y == undefined\nconsole.log(z)\n// z == 15\n</code></pre>\n',
+    answers: [
+      {
+        text: 'x,',
+      },
+      {
+        text: ',',
+      },
+      {
+        text: 'z',
+      },
+      {
+        text: 'x',
+      },
+      {
+        text: 'y',
+      },
+      {
+        text: ',y',
+      },
+      {
+        text: 'y,',
+      },
+      {
+        text: ',z',
+      },
+    ],
+    comment: '<p>Destructuring is very useful when working with arrays.</p>\n<h3>Copying Arrays</h3>\n<p>We can use destructuring to easily copy an array when combining it with the spread operator:</p>\n<pre><code class="language-javascript">var myArray;\n[...myArray]=[1,2,3];\n// myArray=[1,2,3]\n</code></pre>\n<p>If the source object to use for destructuring contains more values than you need you don’t necessarily have to use all of them either:</p>\n<pre><code class="language-javascript">var myArray= [1, 2, 3, 4];\nvar [x, y, z] = myArray;\n//x=1, y=2, z=3;\n</code></pre>\n<p>If you don’t want to assign all values from the source object simply leave them out!</p>\n<p>Below we will ignore the second (200) value:</p>\n<pre><code class="language-javascript">[x, , z] = [100, 200, 300];\n</code></pre>\n',
+  },
+}

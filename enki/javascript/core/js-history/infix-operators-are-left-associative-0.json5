@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'adamMontgomerie',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/js-history/infix-operators-are-left-associative.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'operators',
+    'infix-operators',
+    'operator-associativity',
+  ],
+  card: {
+    question: '<p>What does the following JS code output? ???</p>\n<pre><code class="language-javascript">var a = 20;\nvar b = 4;\nvar c = 12;\n\nvar x = a - (-b \nconsole.log(x);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'c);',
+      },
+      {
+        text: '68',
+      },
+      {
+        text: '-28',
+      },
+      {
+        text: '192',
+      },
+      {
+        text: '0',
+      },
+      {
+        text: 'undefined',
+      },
+      {
+        text: '-68',
+      },
+      {
+        text: '-192',
+      },
+    ],
+    comment: '<p>Operator associativity determines the order in which operators of the same type are evaluated.</p>\n<p>Operations are processed from the left-hand side of an equation:</p>\n<pre><code>var x = a - b - c;\n</code></pre>\n<p>The example is evaluated in the following way:</p>\n<pre><code>var x = (a - b) - c;\n</code></pre>\n<p>These brackets can be safely omitted without effecting the outcome of the equation. However, if you wish to evaluate the right-hand side of the equation first, then brackets must be used:</p>\n<pre><code>var x = a - (b - c);\n</code></pre>\n',
+  },
+}

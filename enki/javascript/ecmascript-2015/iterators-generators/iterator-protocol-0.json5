@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterator-protocol.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the following code expressing the iteration protocol in JavaScript:</p>\n<pre><code class="language-javascript">Iterator {\n  ???(): {???}\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'next',
+      },
+      {
+        text: 'value, done',
+      },
+      {
+        text: 'done',
+      },
+      {
+        text: 'value',
+      },
+      {
+        text: 'getAll',
+      },
+      {
+        text: 'get',
+      },
+      {
+        text: 'show',
+      },
+      {
+        text: 'advance',
+      },
+      {
+        text: 'isFinished',
+      },
+    ],
+    comment: '<p>In our previous example above we have not implemented all of the iterator protocol or agreement.</p>\n<p>There is an issue with our current implementation - what happens when have iterated through all the values?</p>\n<p>The iterator protocol defines that we should also return a boolean property called <strong>done</strong> that indicates when we have iterated through the entire sequence.</p>\n<p>You can think of the iterator contract as having the following structure:</p>\n<pre><code class="language-javascript">Iterator {\n    next() : {value, done};\n}\n</code></pre>\n<p>Let’s modify our return statement to use this:</p>\n<pre><code class="language-javascript">//code omitted\nreturn {\n\n next: function() {\n  if (nextIndex &#x3C; num.length) {\n  var valueToReturn = num[nextIndex];\n  nextIndex++;\n  return {\n    value: valueToReturn,\n    done: false\n  }\n  } else {\n      return {done: true}\n    }\n  }\n};\n</code></pre>\n',
+  },
+}

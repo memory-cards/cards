@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'WebReflection',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/destructuring-assignments.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<pre><code class=\"language-javascript\">function abcde() {\n  return ['a','b','c','d','e'];\n}\nlet [a, b, c, ...rest] = abcde();\nconsole.log(rest);\n// ???\n</code></pre>\n<p>%exp\nHere <code>rest</code> is assigned the last two values in the array.\nFinally, they will be printed.\n%</p>\n",
+    answers: [
+      {
+        text: "['d', 'e']",
+      },
+      {
+        text: 'SyntaxError',
+      },
+      {
+        text: "['a','b','c','d','e']",
+      },
+      {
+        text: "'de'",
+      },
+    ],
+    comment: '<p>What will be shown on the console?</p>\n',
+  },
+}

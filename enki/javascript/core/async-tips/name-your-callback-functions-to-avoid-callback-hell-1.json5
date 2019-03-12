@@ -1,0 +1,24 @@
+{
+  __meta__: {
+    author: 'Bruno',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async-tips/name-your-callback-functions-to-avoid-callback-hell.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: "<p>Which of the following pieces of code is the better piece of code, in terms of readabilty?</p>\n<p>???</p>\n<pre><code class=\"language-javascript\">// Option 1\nsetTimeout(function() {\n   console.log('Hey!');\n   setTimeout(function() {\n      console.log('Hey, again!');\n   }, 1500);\n}, 1500);\n\n// Option 2\nfunction Hey() {\n  console.log('Hey!');\n  setTimeout(Hey_again, 1000);\n}\nfunction Hey_again() {\n  console.log('Hey, again!');\n}\nsetTimeout(Hey, 1000);\n</code></pre>\n",
+    answers: [
+      {
+        text: 'Option 2',
+      },
+      {
+        text: 'Option 1',
+      },
+    ],
+    comment: "<p>Instead of:</p>\n<pre><code class=\"language-javascript\">setTimeout(function(){\n  console.log('greeting 1');\n  setTimeout(function(){\n    console.log('greeting 2');\n  },1000);\n},1000);\n</code></pre>\n<p>Prefer:</p>\n<pre><code class=\"language-javascript\">function greeting1() {\n  console.log('greeting 1');\n  setTimeout(greeting2, 1000);\n}\nfunction greeting2() {\n  console.log('greeting 2');\n}\nsetTimeout(greeting1, 1000);\n</code></pre>\n<p>This makes code easier to read and, when exceptions happen, stack traces that reference function names will be much easier to work with.</p>\n<p>This  also allows you to keep your code shallow which makes it more intuitive for editing and refactoring later.</p>\n",
+  },
+}

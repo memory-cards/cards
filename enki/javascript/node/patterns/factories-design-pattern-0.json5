@@ -1,0 +1,53 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/patterns/factories-design-pattern.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: "<p>Fill in the gaps of the following snippets. First you need to define you <code>Enki</code> factory which exposes <code>createWithNumber</code> and <code>createWithString</code>:</p>\n<pre><code class=\"language-javascript\">// myFactory.js\n\nfunction Enki(number) {\n  this.number = number\n}\n\nfunction createWithNumber(number) {\n  console.log('created with number')\n  return ???(number)\n}\n\nfunction createWithNumberString(str) {\n  console.log('created with number string')\n  ???(Number(str))\n}\n\nmodule.exports = {\n  createWithNumber: createWithNumber,\n  createWithNumberString:\n   createWithNumberString,\n}\n</code></pre>\n<p>How would you use this factory?</p>\n<pre><code class=\"language-javascript\">// main.js\nvar Enki = require('./myFactory.js')\n\nconst e1 = ???(42)\nconst e2 = ???.???('55')\n</code></pre>\n",
+    answers: [
+      {
+        text: 'new Enki',
+      },
+      {
+        text: 'return new Enki',
+      },
+      {
+        text: 'Enki.createWithNumber',
+      },
+      {
+        text: 'Enki',
+      },
+      {
+        text: 'createWithNumberString',
+      },
+      {
+        text: 'Enki.createWithNumberString',
+      },
+      {
+        text: 'return new',
+      },
+      {
+        text: 'Enki()',
+      },
+      {
+        text: 'create',
+      },
+      {
+        text: 'factory',
+      },
+      {
+        text: 'init',
+      },
+    ],
+    comment: '<p>In order to avoid custom object creation with different arguments, <strong>factories</strong> can be used instead. Their usage is obvious when working with complex constructors or you want to avoid <em>copypasta</em>.</p>\n<p>Factories will create objects for you so <em>you don\'t have to</em>.</p>\n<p>Basic factories pattern:</p>\n<pre><code class="language-javascript">//enki.js\nfunction Enki (args) {\n  this.args = args;\n}\n\nfunction create (args) {\n  //args should be modified here\n  return new Enki(args);\n}\n\nmodule.exports.create = create;\n</code></pre>\n',
+  },
+}

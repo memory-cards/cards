@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'AlexYancey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dummy-workout/use-string-link-to-create-a-tags-without-messy-concatenation.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Complete the snippet below to create the element commented:</p>\n<pre><code class="language-javascript">// &#x3C;a href="http.enki.com">Enki&#x3C;/a>\n"Enki".???("http.enki.com");\n</code></pre>\n',
+    answers: [
+      {
+        text: 'link',
+      },
+      {
+        text: 'write',
+      },
+      {
+        text: 'to',
+      },
+      {
+        text: 'document',
+      },
+      {
+        text: 'url',
+      },
+    ],
+    comment: '<p>When manipulating the <code>DOM</code> in JavaScript, it is often useful to create your own hyperlinks using <code>&#x3C;a href=""></code>. </p>\n<p>Instead of:</p>\n<pre><code>var text = "Click";\nvar url = "http://test.com";\ndocument.write(\n  \'&#x3C;a href="\' + url + \'">\' +\n   text + \'&#x3C;/a>\'\n);\n// &#x3C;a href="http://test.com">Click&#x3C;/a>\n</code></pre>\n<p>Use:</p>\n<pre><code>document.write(\n  "Click".link("http://test.com")\n);\n// &#x3C;a href="http://test.com">Click&#x3C;/a>\n</code></pre>\n',
+  },
+}

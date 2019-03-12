@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/intro-ecmascript/let-part-2.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What is the output of the following snippet?</p>\n<pre><code class="language-javascript">var letFuncs = [];\nfor (let i = 0; i &#x3C; 3; i++) {\n  letFuncs.push(\n    function() {\n      console.log(i)\n    }\n  )\n}\nfor (func of letFuncs) {\n  func()\n}\n// ???\n</code></pre>\n',
+    answers: [
+      {
+        text: '[0, 1, 2]',
+      },
+      {
+        text: '[1, 2, 3]',
+      },
+      {
+        text: '[3, 3, 3]',
+      },
+    ],
+    comment: '<p><em>let</em> is particularly useful when used with loops and inner functions.</p>\n<p><em>let</em> solves an issue you may have come across before when attempting to add event handlers to multiple elements.</p>\n<p>The code below looks like it will output 0 1 2 3 4 to the console but will output 5 5 5 5 5.</p>\n<pre><code class="language-javascript">var funcs=[];\n\nfor (var i = 0; i &#x3C; 5; i++) {\n   funcs.push(\n      function(){console.log(i)}\n   );\n}\n\nfor(func of funcs){\n   func();\n}\n// 5 5 5 5 5\n</code></pre>\n<p>This happens because each function added to the array is referring to the same instance of <em>i</em>.</p>\n<p>Variable <em>i</em> ends up being five at the end of the loop, so we end up logging this final value in each function.</p>\n<p>Now try changing the loop declaration to use the <em>let</em> keyword:</p>\n<pre><code class="language-javascript">for (let i = 0; i &#x3C; 5; i++) {\n...\n}\n// 0 1 2 3 4\n</code></pre>\n<p>The code will now run as expected as each loop iteration refers to a different rather than the same instance of <em>i</em>.</p>\n',
+  },
+}

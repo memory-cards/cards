@@ -1,0 +1,60 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/classes-modules/multiple-functions-in-single-module.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>The first snippet below represents the module file that should export two functions. The second represents the file in which the module functions are imported.</p>\n<p>Fill in the gaps on both snippets such that the log statements hold true:</p>\n<p>Utilities module:</p>\n<pre><code class="language-javascript">// utils.js\n\nfunction add(x, y) {\n  return x + y;\n}\n\nfunction subtract(x, y) {\n  return x - y;\n}\n\n??? ???, ???;\n</code></pre>\n<p>Main file:</p>\n<pre><code class="language-javascript">??? {\n  add ??? addTwo,\n  subtract ???\n} ??? \'utils\'\n\nconsole.log(addTwo(2, 4))\n// 6\nconsole.log(subtractTwo(5, 3))\n// 2\n</code></pre>\n',
+    answers: [
+      {
+        text: 'export',
+      },
+      {
+        text: '{ add',
+      },
+      {
+        text: 'subtract }',
+      },
+      {
+        text: 'import',
+      },
+      {
+        text: 'as',
+      },
+      {
+        text: 'as subtractTwo',
+      },
+      {
+        text: 'from',
+      },
+      {
+        text: 'add',
+      },
+      {
+        text: 'subtract',
+      },
+      {
+        text: 'modules.exports',
+      },
+      {
+        text: '{',
+      },
+      {
+        text: '}',
+      },
+      {
+        text: 'require',
+      },
+      {
+        text: 'path',
+      },
+    ],
+    comment: '<p>A module always exists in one file but within this file we can declare multiple functions.</p>\n<p>Let\'s expand upon our example and add a second function called triple.</p>\n<p>We will again use the <strong>export</strong> keyword to let JavaScript know we want to expose this:</p>\n<pre><code class="language-javascript">export function triple(x) {\n return x * 3;\n}\n</code></pre>\n<p>If we just want to just use specific functions from a module we can do so with the following syntax:</p>\n<pre><code class="language-javascript">import { triple as mathFuncs }\nfrom \'mathFuncs\';\nmathFuncs(2); //6\n</code></pre>\n<p>As we have seen we can alias the module imported which is especially useful if it has a really long name:</p>\n<pre><code class="language-javascript">import {p as shortName} from\n\'modWithReallyLongNames\';\n</code></pre>\n<p>There are numerous other ways we can export functions:</p>\n<pre><code class="language-javascript">export { dbl, triple };\nexport { dbl as double};\n</code></pre>\n<p>We can also declare a single default function or class to be exported by using the default keyword:</p>\n<pre><code class="language-javascript">export default person { ··· }\n</code></pre>\n<p>When we want to use this in another file we would use the following:</p>\n<pre><code class="language-javascript">import person from \'person\';\n</code></pre>\n<p>Note that modules like variables are hoisted but imports and exports must exist at the top level of a module and cannot be conditional so the below is invalid:</p>\n<pre><code class="language-javascript">if (condition) {\n import \'double\'; //error\n}\n</code></pre>\n',
+  },
+}

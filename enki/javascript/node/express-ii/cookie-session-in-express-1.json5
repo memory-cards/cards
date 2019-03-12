@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express-ii/cookie-session-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: "<p>Import the needed module for implementing sessions in *<em>Express</em></p>\n<pre><code>var cookieSess = ???('???');\n</code></pre>\n",
+    answers: [
+      {
+        text: 'with the help of cookies:',
+      },
+      {
+        text: 'require',
+      },
+      {
+        text: 'cookie-session',
+      },
+      {
+        text: 'cookies',
+      },
+      {
+        text: 'session',
+      },
+      {
+        text: 'import',
+      },
+      {
+        text: 'cookie-express',
+      },
+    ],
+    comment: '<p>By choosing to implement sessions in <strong>Express</strong> with the help of cookies, a <code>session</code> object will be added to the <code>request</code> object.</p>\n<p>With the introduction of <strong>Express 4.0</strong>, <code>cookie-session</code> is a separate module that must be installed:</p>\n<pre><code class="language-bash">npm install cookie-session\n</code></pre>\n<p>Then imported:</p>\n<pre><code class="language-javascript">var cookieSess = require(\'cookie-session\');\n</code></pre>\n<p>Initialize cookie sessions:</p>\n<pre><code class="language-javascript">app.use(cookieSess({\nname: \'session\', keys:[\'key1\',\'key2\']\n//other options\n}));\n</code></pre>\n<p>The default <code>name</code> for a cookie is <code>session</code>.\nIn order to sign and verify cookie values <code>keys</code> can be used or a <code>secret</code> that acts like a single key if <code>keys</code> is not provided.</p>\n<p><code>req.session</code> represents the session for the given request.</p>\n<pre><code class="language-javascript">req.session.isChanged\n// returns true if session has been changed\nreq.session.isNew\n// returns true if the session is new\nreq.session.isPopulated\n// returns true if the session has data\n</code></pre>\n<p>Using <code>req.sessionOptions</code> one can get the current session options and change  them.</p>\n',
+  },
+}

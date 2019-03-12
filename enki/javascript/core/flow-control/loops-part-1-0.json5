@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/flow-control/loops-part-1.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>Complete the syntax of the following <code>do/while</code> loop such that <code>i</code> will be <code>10</code> at the end of it:</p>\n<pre><code>var i = 0;\n??? {\n  i++;\n} ??? (i &#x3C; ???)\n</code></pre>\n',
+    answers: [
+      {
+        text: 'do',
+      },
+      {
+        text: 'while',
+      },
+      {
+        text: '10',
+      },
+      {
+        text: 'if',
+      },
+      {
+        text: 'else',
+      },
+      {
+        text: '9',
+      },
+      {
+        text: 'for',
+      },
+    ],
+    comment: '<p>JavaScript supports the standard loop constructs you have probably come across in other languages:</p>\n<p><strong>for Loop</strong></p>\n<pre><code>//0 to 9:\nfor (var i = 0; i &#x3C; 10; i++) {\n    console.log(i);\n}\n</code></pre>\n<p>We can also count backwards from 9 to 0 by modifying the last parameter:</p>\n<pre><code>//9 to 0\nfor (var i = 9; i >-1; i--) {\n    console.log(i);\n}\n</code></pre>\n<p><strong>while Loops</strong></p>\n<p>The <em>while</em> loop continues to run as long as the expression in brackets is true.</p>\n<p>Note that the loop will never run if the expression is never true:</p>\n<pre><code>//0 to 9\nvar i = 0;\n\nwhile (i &#x3C; 10) {\n console.log(i)\n  i++;\n}\n</code></pre>\n<p><strong>do while</strong></p>\n<p><em>do while</em> loops are similar to while loops but have the important difference that they will always run at least once before the condition is checked:</p>\n<pre><code>var i =0;\n\ndo {\n   console.log(i);\n   i++;\n} while (i &#x3C; 10);\n</code></pre>\n',
+  },
+}

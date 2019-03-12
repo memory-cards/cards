@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-i/battery-api.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Using the battery API, fill in the missing gaps of the following code snippet such that the battery level is outputed properly:</p>\n<pre><code class="language-javascript">???.???\n  .then((battery) => {\n    console.log(battery.level)\n  })\n</code></pre>\n',
+    answers: [
+      {
+        text: 'navigator',
+      },
+      {
+        text: 'getBattery',
+      },
+      {
+        text: 'then',
+      },
+      {
+        text: 'battery',
+      },
+      {
+        text: 'batteryApi',
+      },
+      {
+        text: 'now',
+      },
+      {
+        text: 'run',
+      },
+      {
+        text: 'start',
+      },
+    ],
+    comment: "<p>The Battery API provides information about the system's <strong>battery</strong> status, such as the current charge level, the time left to full charge and the battery time remaining.</p>\n<p>The Battery API exposes event handlers for handling changes to the battery level, charging and discharging times.</p>\n<p>The Battery API could be used to provide a low power mode of your application or to prompt a user to save information before the battery level reaches a critical level.</p>\n<p>To monitor changes to the battery level:</p>\n<pre><code class=\"language-javascript\">navigator.getBattery()\n    .then(function(battery) {\n      LogBatteryLevel();\n      battery.addEventListener(\n        'levelchange', LogBatteryLevel);\n\n      function LogBatteryLevel() {\n        var bat = battery.level * 100;\n        console.log(`Level: ${bat}%`);\n      }\n  });\n</code></pre>\n<p>Keep in mind that this API is currently available for Opera, Firefox and Chrome(Android version as well).</p>\n",
+  },
+}

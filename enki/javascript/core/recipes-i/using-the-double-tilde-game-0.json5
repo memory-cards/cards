@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'adamMontgomerie',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-i/using-the-double-tilde-game.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<pre><code class="language-javascript">var x = 3.5;\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nThe double tilde syntax is just shorthand for truncating numbers to integers. It is used as a shorthand for <code>Math.floor()</code> although it has a key difference in that it just removes any numbers after the decimal place. Therefore 3.5 becomes 3.\n%</p>\n',
+    answers: [
+      {
+        text: '3',
+      },
+      {
+        text: '3.5',
+      },
+      {
+        text: '-3',
+      },
+    ],
+    comment: '<p>Your goal is to determine what the console will print out for each given value of <code>x</code>.</p>\n',
+  },
+}

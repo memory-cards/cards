@@ -1,0 +1,43 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dummy-workout/css-for-when-javascript-is-enabled.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+    'css-javascript',
+  ],
+  card: {
+    question: '<p>Add a class to the root <code>&#x3C;html</code>>: </p>\n<pre><code class="language-javascript">document.???.??? = "js";\n</code></pre>\n',
+    answers: [
+      {
+        text: 'documentElement',
+      },
+      {
+        text: 'className',
+      },
+      {
+        text: 'doc',
+      },
+      {
+        text: 'class',
+      },
+      {
+        text: 'documentClass',
+      },
+      {
+        text: 'root',
+      },
+      {
+        text: 'html',
+      },
+      {
+        text: 'window',
+      },
+    ],
+    comment: '<p>It is possible to add a class to the root <code>&#x3C;html></code>:</p>\n<pre><code>document.documentElement.className = "js"\n</code></pre>\n<p>This could be used to hide a <code>&#x3C;div></code> when JavaScript is enabled, for example:</p>\n<pre><code>.js div#id { display: none; }\n</code></pre>\n',
+  },
+}

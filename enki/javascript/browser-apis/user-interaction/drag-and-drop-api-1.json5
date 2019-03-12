@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/user-interaction/drag-and-drop-api.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What global event handler must be added to an element so that it can be dragged and dropped?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'ondragstart',
+      },
+      {
+        text: 'draggable',
+      },
+      {
+        text: 'dragstart_handler',
+      },
+      {
+        text: 'dataTransfer',
+      },
+      {
+        text: 'dragAndDrop',
+      },
+    ],
+    comment: '<p><em>Drag and Drop interfaces</em> allow applications to use drag and drop features in browsers. This means the user can select elements with their mouse, drag the elements to a droppable element, and drop the element by releasing the mouse button.</p>\n<p>Before dragging and dropping, an elements attribute must be set so it\'s allowed to be dragged, and the <em><code>ondragstart</code></em> global event handler must be added.</p>\n<pre><code class="language-html">&#x3C;div draggable="true"\n ondragstart="dragstart_handler(event);">\n&#x3C;/div>\n</code></pre>\n<pre><code class="language-javascript">function dragstart_handler(ev) {\n  console.log("Start dragging...");\n  ev.dataTransfer.setData("text/plain",\n                          ev.target.id);\n}\n</code></pre>\n',
+  },
+}

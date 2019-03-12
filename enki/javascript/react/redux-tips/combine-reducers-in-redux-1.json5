@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/redux-tips/combine-reducers-in-redux.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What special method is used to combine different reduction functions with the scope of keeping your code scalable?\n???</p>\n',
+    answers: [
+      {
+        text: 'combineReducers()',
+      },
+      {
+        text: 'combine()',
+      },
+      {
+        text: 'createStore()',
+      },
+      {
+        text: 'addReducer()',
+      },
+    ],
+    comment: '<p>When applications become more complex, the <em>reduction function</em> can and should be split into separate functions, managing different parts of the <strong>state</strong> as to keep the code logic tidy and scalable. This is done by using the special method <code>combineReducers()</code>.</p>\n<p>This function will transform an object with different reducer functions as parameters into a single reducer function that can be passed to <code>createStore()</code>.</p>\n<p>Call the function:</p>\n<pre><code class="language-javascript">combineReducers({\n  firstReducer : myFirstReducer,\n  secondReducer : mySecondReducer });\n</code></pre>\n<p>The keys define the shape of the <strong>state object</strong>.</p>\n<pre><code class="language-javascript">{firstReducer,secondReducer}\n</code></pre>\n<p>The common practice is to be consistent with name such as that reducers have the same name as the slices they manage. Therefore, <strong>ES6</strong> shorthand notation can be used:</p>\n<pre><code class="language-javascript">combineReducers({firstReducer,\nsecondReducer});\n</code></pre>\n<p>This is equivalent to:</p>\n<pre><code class="language-javascript">combineReducer({firstReducer:firstReducer,\n  secondReducer:secondReducer});\n</code></pre>\n',
+  },
+}

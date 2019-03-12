@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'Bruno',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types-ii/be-careful-when-using-typeof.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+    'introduction',
+  ],
+  card: {
+    question: '<p>What does the following return? ???</p>\n<pre><code class="language-javascript">typeof new Date();\n</code></pre>\n',
+    answers: [
+      {
+        text: 'An object',
+      },
+      {
+        text: 'Null',
+      },
+      {
+        text: 'A date',
+      },
+      {
+        text: 'Undefined',
+      },
+    ],
+    comment: '<p>Certain data types are objects yet we refer to them as their more specific type, for example arrays\nare objects but they are specialized objects so we call them an array and expect them to behave as an array.\n<code>typeof</code> returns "object" for all objects, and nothing more specific.</p>\n<p>Examples:</p>\n<pre><code>typeof null // "object"\ntypeof new Date() // "object"\ntypeof new Array() // "object"\n</code></pre>\n',
+  },
+}

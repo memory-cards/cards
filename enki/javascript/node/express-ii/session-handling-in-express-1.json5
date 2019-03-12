@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express-ii/session-handling-in-express.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>How can you access sessions through the request object?</p>\n<pre><code class="language-javascript">app.get(\'/\', function(req,res) {\n   mySession = ???.???;\n\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'req',
+      },
+      {
+        text: 'session',
+      },
+      {
+        text: 'res',
+      },
+      {
+        text: 'sess',
+      },
+      {
+        text: 'mySession',
+      },
+      {
+        text: 'request',
+      },
+    ],
+    comment: '<p>Prior to handling sessions in <strong>Express 4.0</strong>, the <code>express-session</code> middleware must be installed:</p>\n<pre><code class="language-bash">$ npm install express-session\n</code></pre>\n<p><code>Session</code> can be accessed through the <code>request</code> object:</p>\n<pre><code class="language-javascript">var sess;\napp.get(\'/\', function(req,res) {\n  sess = req.session;\n  // more code here\n} // sess initialized as homepage is visited\n</code></pre>\n<p>Creating session variables:</p>\n<pre><code class="language-javascript">sess.id = "100";\nsess.myVar = "myValue";\n</code></pre>\n<p>Destroying sessions:</p>\n<pre><code class="language-javascript">req.session.destroy(function(err){\n});\n</code></pre>\n<p>Keep in mind that the <code>express-session</code> module is very big, providing numerous methods and properties of the <code>session</code> object.</p>\n',
+  },
+}

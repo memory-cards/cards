@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'Dral',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/array-methods/filtering-items-out-of-an-array.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'introduction',
+    'workout',
+    'functional-programming',
+    'arrays',
+  ],
+  card: {
+    question: '<p><code>.filter</code>  can be used instead of ??? .</p>\n',
+    answers: [
+      {
+        text: 'for and if',
+      },
+      {
+        text: 'if',
+      },
+      {
+        text: 'for and alert',
+      },
+    ],
+    comment: '<p>A common pattern to filter items from an array is the following:</p>\n<pre><code>let persons = [...];\nlet activated = [];\nfor(let person of persons) {\n  if (person.isActived) {\n    activated.push(person);\n  }\n}\n</code></pre>\n<p>However, using the <code>Array::filter</code> method is generally more concise and readable:</p>\n<pre><code>let persons = [...];\nlet activated = persons.filter(\n  person => person.isActived\n)\n</code></pre>\n<p><code>.filter</code> can be applied to any array. It takes a predicate which should return a boolean, depending on whether or not the item should be preserved in the array.</p>\n<pre><code>[1,2,3,4].filter(x => x % 2);\n// => [1, 3]\n</code></pre>\n',
+  },
+}

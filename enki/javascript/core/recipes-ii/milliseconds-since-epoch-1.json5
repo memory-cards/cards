@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'Bruno',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-ii/milliseconds-since-epoch.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Get the current time in milliseconds(since 1 Jan 1970):</p>\n<pre><code>var time = Date.???;\n</code></pre>\n',
+    answers: [
+      {
+        text: 'now();',
+      },
+      {
+        text: 'getMillis();',
+      },
+      {
+        text: 'getMilliseconds();',
+      },
+    ],
+    comment: '<p>Standard way:</p>\n<pre><code>new Date().getTime()\n// 1259359833574\n</code></pre>\n<p>Shorter way:</p>\n<pre><code>+new Date()\n// 1259359833574\n</code></pre>\n<p>The above is using the <code>+</code> shortcut to convert the date object to a  number.</p>\n<p>For more powerful date manipulation,\ntry <code>moment.js</code>.</p>\n',
+  },
+}

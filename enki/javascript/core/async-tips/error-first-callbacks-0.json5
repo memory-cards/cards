@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async-tips/error-first-callbacks.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: "<p>Fill in the missing gaps in the following function definition such that it can be used as an *<em>error-first</em></p>\n<pre><code class=\"language-javascript\">function myCallback(error, result) {\n  if (???) {\n    console.log('error', error)\n  }\n  console.log('result', ???)\n}\n</code></pre>\n",
+    answers: [
+      {
+        text: 'callback function:',
+      },
+      {
+        text: 'error',
+      },
+      {
+        text: 'result',
+      },
+      {
+        text: 'err',
+      },
+      {
+        text: 'return',
+      },
+      {
+        text: 'this',
+      },
+      {
+        text: 'Error',
+      },
+      {
+        text: 'throw new Error(error)',
+      },
+    ],
+    comment: '<p>Error-first callbacks have an error as the <strong>first argument</strong> of the callback function. If this value is <strong>non-null</strong> then an error has occurred.</p>\n<p>For example for the callback:</p>\n<pre><code class="language-javascript">function pay(order, cardNo, callback){\n  if (exists(cardNo)) {\n    // ... take money from card\n    callback(null, order.paid());\n  } else {\n    callback("Card "+ cardNo +" invalid.");\n  }\n}\n</code></pre>\n<p>An example of a suitable caller would be:</p>\n<pre><code class="language-javascript">pay(myOrder, myCard,\n  function (errorMsg, paidMsg) {\n    if (errorMsg) {\n      return console.error("Error: "\n                  + errorMsg);\n      }\n    console.log("Paid " + paidMsg);\n  });\n</code></pre>\n<p>This pattern is commonly used in Node.js applications.</p>\n',
+  },
+}

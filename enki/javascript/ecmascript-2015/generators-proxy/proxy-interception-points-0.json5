@@ -1,0 +1,48 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/generators-proxy/proxy-interception-points.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill in the gaps such that log statements hold true:</p>\n<pre><code class="language-javascript">const revocable = ???.???({}, {\n  ???: () => 42\n});\n\nconst proxy = revocable.???;\nconsole.log(proxy.enki)\n// 42\n\n???.???()\nconsole.log(proxy.enki)\n// TypeError\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Proxy',
+      },
+      {
+        text: 'revokable',
+      },
+      {
+        text: 'get',
+      },
+      {
+        text: 'proxy',
+      },
+      {
+        text: 'revoke',
+      },
+      {
+        text: 'throw',
+      },
+      {
+        text: 'catch',
+      },
+      {
+        text: 'try',
+      },
+      {
+        text: 'new Proxy',
+      },
+      {
+        text: 'get()',
+      },
+    ],
+    comment: '<p>Proxies allow you to intercept many different operations and methods:</p>\n<ul>\n<li>new operator</li>\n<li>getPrototypeOf</li>\n<li>setPrototypeOf</li>\n<li>isExtensible</li>\n<li>preventExtensions</li>\n<li>getOwnPropertyDescriptor</li>\n<li>in operator</li>\n<li>delete</li>\n<li>defineProperty</li>\n<li>enumerate</li>\n<li>ownKeys</li>\n<li>apply</li>\n</ul>\n<p>Of course you only need to specify those you want to intercept otherwise the default behavior will occur.</p>\n<p>Here is an example of intercepting delete calls:</p>\n<pre><code class="language-javascript">var handler = {\n deleteProperty (target, key) {\n  console.log("ignoring delete");\n  return true\n }\n}\n\nvar obj = { x: \'y\' }\nvar proxy = new Proxy(obj, handler)\ndelete proxy.x; //ignoring delete\nconsole.log(obj.x); //y\n</code></pre>\n<h3>Revokable Proxy</h3>\n<p>There is a special type of proxy called a <strong>revokable proxy</strong>.</p>\n<p>This allows you to later deny access to the proxy by calling the revoke method.</p>\n<p>First we use <strong>Proxy.revocable</strong> to obtain a revokable proxy:</p>\n<pre><code class="language-javascript">var rev = Proxy.revocable({}, {\n  get: function(target, name) {\n    console.log(\'accessed \' + target);\n  }\n});\n\nvar p = rev.proxy;\np.a; // accessed a\n</code></pre>\n<p>Then we can deny access to the proxy by calling the revoke method:</p>\n<pre><code class="language-javascript">p.revoke();\np.a;\n// VM181:1 Uncaught TypeError:\n// p.revoke is not a function(...)\n</code></pre>\n<h3>Potential Usages</h3>\n<p>Proxies have a number of potential usages and we will probably see library and framework authors coming up with some exciting usages.</p>\n<p>Some potential usages:</p>\n<ul>\n<li>Block access to values</li>\n<li>Return different values</li>\n<li>Stop people setting certain values</li>\n<li>Validation &#x26; logging</li>\n<li>Extending constructors</li>\n<li>As a shim/fallback for older browsers in the future</li>\n</ul>\n',
+  },
+}

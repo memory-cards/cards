@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-ii/the-ref-callback-attribute.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the following <code>render()</code> function such that, after <em>mounting</em>, the <code>&#x3C;input /></code> element can be accessed via <code>this.myInput</code>:</p>\n<pre><code class="language-jsx">render() {\n  return (\n    &#x3C;div>\n      &#x3C;input ???={(in) => {\n         this.??? = ???)}} />\n    &#x3C;/div>\n    );\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'ref',
+      },
+      {
+        text: 'myInput',
+      },
+      {
+        text: 'in',
+      },
+      {
+        text: 'refs',
+      },
+      {
+        text: 'input',
+      },
+      {
+        text: '<input />',
+      },
+      {
+        text: 'null',
+      },
+      {
+        text: 'ref.myInput',
+      },
+      {
+        text: 'ref.in',
+      },
+    ],
+    comment: "<p>The <code>ref</code> is a special <em>attribute</em> in <strong>React</strong> that is attachable to any <code>component</code> or <strong>DOM</strong> <code>element</code>.</p>\n<p><strong>Refs</strong> should be <em>callback functions</em> that will be automatically called when the targeted component is mounted or unmounted.</p>\n<p>They are usually used to access components from outside the normal data flow in <strong>React</strong>. Normally, children components can only be modified through their <code>props</code>.</p>\n<p>However, using a <code>ref</code> you can access components and invoke elements' methods directly.</p>\n<p>When attributed to an <strong>HTML</strong> <code>element</code>, the <code>ref</code> callback will take the underlying <strong>DOM</strong> element as input:</p>\n<pre><code class=\"language-jsx\">render() {\n  return (\n    &#x3C;div>\n      &#x3C;input ref={(in) => {\n         this.myInput = in)}} />\n    &#x3C;/div>\n    );\n}\n</code></pre>\n<p>In the <code>ref</code> callback function above, <code>in</code> (input) will be:</p>\n<ul>\n<li>\n<p>the underlying <strong>DOM</strong> element or <strong>React</strong> component <em>instance</em> when <code>&#x3C;input /></code> is <strong>mounted</strong></p>\n</li>\n<li>\n<p><code>null</code> when <code>&#x3C;input /></code> is <strong>unmounted</strong></p>\n</li>\n</ul>\n<p>The referenced element is now accessible via <code>this.myInput</code>:</p>\n<pre><code class=\"language-jsx\">someMethod() {\n  // call raw DOM API method focus()\n  this.myInput.focus();\n}\n</code></pre>\n<p>Note that <code>ref</code> attribute <strong>can't</strong> be used on functional components because they don't have instances. However, it can be used inside a component's <code>render()</code> method.</p>\n<p>Using <code>ref</code>s implies an <em>imperative</em> approach to a problem, while <strong>React</strong> was designed to be <em>declarative</em>. Therefore, to enforce <strong>React</strong>'s data flow it's recommended not to overuse <code>ref</code>s.</p>\n<p>However, there might be scenarios when they are necessary.</p>\n",
+  },
+}

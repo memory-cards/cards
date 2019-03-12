@@ -1,0 +1,64 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types/types-boolean-and-number.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>On the first line declare a <strong>boolean*\nOn the second line declare a </strong>number*</p>\n<pre><code class="language-javascript">var ??? = ???\n??? ??? = ???\n</code></pre>\n',
+    answers: [
+      {
+        text: "variable named a that's true.",
+      },
+      {
+        text: 'variable named b` with the value equal to `3.14.',
+      },
+      {
+        text: 'a',
+      },
+      {
+        text: 'true',
+      },
+      {
+        text: 'var',
+      },
+      {
+        text: 'b',
+      },
+      {
+        text: '3.14',
+      },
+      {
+        text: '"3.14"',
+      },
+      {
+        text: 'True',
+      },
+      {
+        text: '"true"',
+      },
+      {
+        text: 'const',
+      },
+      {
+        text: 'number',
+      },
+      {
+        text: 'boolean',
+      },
+      {
+        text: "'3.14'",
+      },
+      {
+        text: "'true'",
+      },
+    ],
+    comment: '<h3>Boolean</h3>\n<p>The Boolean type has two options: <em>true</em> or <em>false</em> (these are specified as lower case):</p>\n<pre><code class="language-javascript">var isCold = true;\nvar isHot = false;\n</code></pre>\n<h3>Number</h3>\n<p>JavaScript supports both whole and decimal numbers all using the same number type:</p>\n<pre><code class="language-javascript">var numberOfMonths=12;\nvar temperature=17.2;\n</code></pre>\n<p>You can perform simple maths calculations using the following operators:</p>\n<pre><code class="language-javascript">1+2; //add\n9/3 //divide\n1*5 //multiply\n9-5 //subtract\n10%4 //modulus (division remainder)\n</code></pre>\n<p>More math functionality is available via the <code>Math</code> object e.g.</p>\n<pre><code class="language-javascript">Math.round(5.7);//6\n</code></pre>\n',
+  },
+}

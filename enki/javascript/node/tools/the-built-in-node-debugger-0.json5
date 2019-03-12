@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/tools/the-built-in-node-debugger.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>When running the following code snippet in the debugger, which line of code will the debugger break at? ???</p>\n<pre><code class="language-javascript">for(var i=0; i&#x3C;10; i++) {      // line 0\n   debugger;                   // line 1\n   console.log("hello " + i);  // line 2\n}                              // line 3\nconsole.log("end");            // line 4\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Line 1',
+      },
+      {
+        text: 'Line 0',
+      },
+      {
+        text: 'Line 2',
+      },
+      {
+        text: 'Line 3',
+      },
+      {
+        text: 'Line 4',
+      },
+    ],
+    comment: '<p>Use the built-in Node debugger by running your app in <strong>debug mode</strong>:</p>\n<pre><code>node debug [your app]\n</code></pre>\n<p>Place a <code>debugger</code> statement on the line of interest, for example:</p>\n<pre><code>for(var i=0; i&#x3C;3; i++){\n  debugger;\n  console.log("hello " + i);\n}\nconsole.log("end");\n</code></pre>\n<p>Running this in the debugger will <strong>break</strong> at the relevant line.</p>\n<p>Step through your code using these debug commands:</p>\n<ul>\n<li><strong>continue</strong> – <code>cont</code>, <code>c</code></li>\n<li><strong>step</strong> – <code>next</code>, <code>n</code></li>\n<li><strong>step in</strong> – <code>step</code>, <code>s</code></li>\n<li><strong>step out</strong> – <code>out</code>, <code>o</code></li>\n</ul>\n',
+  },
+}

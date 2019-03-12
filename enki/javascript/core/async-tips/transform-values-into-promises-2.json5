@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'Dral',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async-tips/transform-values-into-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'promises',
+    'functional programming',
+    'async',
+    'introduction',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: "<h3>In what order will these console.log() statements occur?</h3>\n<p>In what order will these <code>console.log()</code> statements occur?</p>\n<pre><code class=\"language-javascript\">const element = document.body;\n\nelement.addEventListener('click', () => {\n  Promise.resolve().then(() => console.log('Microtask 1'));\n  console.log('Listener 1')\n})\n\nelement.addEventListener('click', () => {\n  Promise.resolve().then(() => console.log('Microtask 2'));\n  console.log('Listener 2')\n})\n</code></pre>\n<p> ???</p>\n",
+    answers: [
+      {
+        text: 'Listener 1; Microtask 1; Listener 2; Microtask 2;',
+      },
+      {
+        text: 'Listener 1; Listener 2; Microtask 1; Microtask 2;',
+      },
+      {
+        text: 'Microtask 1; Listener 1; Microtask 2; Listener 2;',
+      },
+      {
+        text: 'Microtask 2; Listener 2; Microtask 1; Listener 1;',
+      },
+    ],
+    comment: "<p>To keep your API consistent, or prototype for testing, it's often useful to return a <code>Promise</code> that resolves to a value directly.</p>\n<pre><code class=\"language-javascript\">return new Promise(resolve => {\n  resolve('my value')\n})\n</code></pre>\n<p><code>Promises</code> in <code>ES6</code> have a shortcut for this common pattern:</p>\n<pre><code class=\"language-javascript\">return Promise.resolve('my value')\n</code></pre>\n<p>Or to create a <code>Promise</code> representing an error:</p>\n<pre><code class=\"language-javascript\">return Promise.reject(\n  new Error('Boo! :o')\n)\n</code></pre>\n",
+  },
+}

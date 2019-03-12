@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'rosielowther',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/strings-in-es6.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>What does the following code snippet output? ???</p>\n<pre><code class="language-javascript">let first = `Questions`;\nlet last = `Practice`;\n\nconsole.log(`Time for ${last} ${first}!`);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Time for Practice Questions!',
+      },
+      {
+        text: 'Time for Questions Practice!',
+      },
+      {
+        text: 'Time for ${last} ${first}!',
+      },
+      {
+        text: 'Time for !',
+      },
+    ],
+    comment: "<p>ES6 introduces many new <code>String</code> methods.</p>\n<p>You can <strong>interpolate</strong> template strings:</p>\n<pre><code>let first = `En`;\nlet last = `Ki`;\nconsole.log(`Hello ${first} ${last}!`); \n// Hello En Ki!\n</code></pre>\n<p>Template strings can contain <strong>multiple lines</strong>:</p>\n<pre><code>let multiLine = `\nThe string\nhas\nmultiple lines`;\n</code></pre>\n<p>Template strings are <strong>raw</strong> if you use the tag <code>String.raw</code> as a prefix:</p>\n<pre><code>// special characters like \n// '\\' are not special\nlet raw = String.raw(`no newline: \\n`); \n</code></pre>\n<p>You can check whether a string <strong>exists within</strong> another string:</p>\n<pre><code>`Enki`.startsWith(`Enk`) // true\n`Enki`.endsWith(`ki`) // true\n`Enki`.includes(`nk`) // true\n</code></pre>\n<p>You can <strong>repeat</strong> strings:</p>\n<pre><code>'hi '.repeat(2) // 'hi hi '\n</code></pre>\n",
+  },
+}

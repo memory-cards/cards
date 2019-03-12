@@ -1,0 +1,24 @@
+{
+  __meta__: {
+    author: 'alexjmackey',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/promises/chaining-promises.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Will the two <code>console.log</code> statements output the same number, or different numbers?</p>\n<pre><code class="language-javascript">const p = new Promise(resolve => {\n  resolve(Math.random())\n})\n\n// do these 2 log different or same value?\np.then(console.log)\np.then(console.log)\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Same',
+      },
+      {
+        text: 'Different',
+      },
+    ],
+    comment: '<p>Promises advantages really become apparent when you start working with more complex flows and multiple promises.</p>\n<p>We can chain promises together using the <strong>then</strong> function:</p>\n<pre><code class="language-javascript">var p =\nnew Promise(function(resolve, reject){\n  setTimeout(function(){resolve("enki")},\n  2000);\n})\n.then(function(result){\n console.log("then 1");\n})\n.then(function(result){\n console.log("then 2");\n})\n.then(function(result){\n console.log("finished");\n});\n\n//then 1\n//then 2\n//finished\n</code></pre>\n',
+  },
+}

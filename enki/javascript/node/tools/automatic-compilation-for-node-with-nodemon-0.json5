@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/tools/automatic-compilation-for-node-with-nodemon.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+  ],
+  card: {
+    question: '<p>Which flag must be used to enable debugging?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '--debug',
+      },
+      {
+        text: 'debug',
+      },
+      {
+        text: '-debug',
+      },
+      {
+        text: 'debugging',
+      },
+      {
+        text: '--debugger',
+      },
+    ],
+    comment: '<p><strong>Nodemon</strong> is a replacement for the standard <strong>node</strong> compiler. This utility wraps your application code and watches for any file changes.</p>\n<p>When a change occurs the server is automatically restarted.</p>\n<p>Install <strong>nodemon</strong> with <strong>npm</strong> in to the <em>bin</em> path:</p>\n<pre><code class="language-bash">npm install -g nodemon\n</code></pre>\n<p>Run your application with <strong>nodemon</strong>:</p>\n<pre><code class="language-bash">nodemon myapp.js\n</code></pre>\n<p>If you have a <code>package.json</code> file for your app, you can omit the main script entirely and <strong>nodemon</strong> will read the <code>package.json</code> for the main property and use that value as the app.</p>\n<p>In order to enable debugging just use the <code>--debug</code> flag.</p>\n<p><strong>Nodemon</strong> also supports <strong>CoffeeScript</strong>:</p>\n<pre><code class="language-bash">nodemon myapp.coffee\n</code></pre>\n<p>For the command line interface options just type <code>nodemon --help</code>.</p>\n',
+  },
+}

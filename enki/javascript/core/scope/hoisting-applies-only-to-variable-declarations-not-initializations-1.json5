@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'adamMontgomerie',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/scope/hoisting-applies-only-to-variable-declarations-not-initializations.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'workout',
+    'hoisting',
+    'deep',
+    'variables',
+    'obscura',
+  ],
+  card: {
+    question: '<p>The following code outputs ???</p>\n<pre><code class="language-javascript">console.log(v);\nvar v = "enki";\n</code></pre>\n',
+    answers: [
+      {
+        text: 'undefined',
+      },
+      {
+        text: 'enki',
+      },
+      {
+        text: 'nothing',
+      },
+    ],
+    comment: '<p>Variable declarations are moved to the top of the current scope, either the current function or script. This means that variables can be used before they are declared.</p>\n<pre><code>x = 5;\nalert(x);\nvar x;\n</code></pre>\n<p><code>5</code> will be alerted despite <code>var x</code> not being declared until after the alert. </p>\n<p>However, variable initializations are not hoisted:</p>\n<pre><code>alert(x)\nvar x = 5;\n</code></pre>\n<p>This alert will produce <code>undefined</code> because, although <code>var x</code> is hoisted to the beginning of the script, <code>x</code> is not initialized to the value of <code>5</code> until after the alert.</p>\n',
+  },
+}

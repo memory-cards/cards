@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/strings-ii/string-replace.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'caveats',
+    'strings',
+    'html',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: "<p>Complete the following code snippet to replace <code>+</code> with <code>%2B</code>:</p>\n<pre><code class=\"language-javascript\">var s = 'x+y+z=w';\ns=s.replace(???,'%2B');\nconsole.log(s); // x%2By%2Bz=w\n</code></pre>\n",
+    answers: [
+      {
+        text: '/\\+/g',
+      },
+      {
+        text: '\\\\+/g',
+      },
+      {
+        text: '\\+/g',
+      },
+      {
+        text: '/\\+/',
+      },
+    ],
+    comment: '<p>The <code>String.replace</code> method only changes the first occurrence of a substring, not all possible matches: </p>\n<pre><code>var testString = "An example string for us";\ntestString = testString.replace(/ /,"%20"); \n// testString = "An%20example string for us"\n</code></pre>\n<p>To replace all occurrences, you need to set the global modifier:</p>\n<pre><code>var testString = "An example string for us";\ntestString = testString.replace(/ /g,"%20");\n// "An%20example%20string%20for%20us"\n</code></pre>\n',
+  },
+}

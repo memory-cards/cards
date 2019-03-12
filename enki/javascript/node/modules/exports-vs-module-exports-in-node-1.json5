@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/modules/exports-vs-module-exports-in-node.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<p><code>exports</code> is a helper for?\n???</p>\n',
+    answers: [
+      {
+        text: 'module.exports',
+      },
+      {
+        text: 'module.imports',
+      },
+      {
+        text: 'module',
+      },
+      {
+        text: 'imports',
+      },
+    ],
+    comment: "<p>Exporting a module in <strong>Node</strong> can be done in different ways. The most common is using the <code>exports</code> object:</p>\n<pre><code class=\"language-javascript\">//what is exported (other.js)\nexports.say = function() {\n    console.log('Hello from Enki!');\n};\n//how to import\nvar sample = require('./other.js');\nsample.say(); // 'Hello from Enki!'\n</code></pre>\n<p>However, <code>exports</code> is just a helper for <code>module.exports</code>. The latter is ultimately returned by your module when called. <code>exports</code> only collects properties and attaches them to <code>module.exports</code> if and only if it doesn't have something on it already.</p>\n<pre><code class=\"language-javascript\">module.exports = 'Oops!';\nexports.say = function() {\n  console.log('Hello from Enki!'); }\n</code></pre>\n<p>If we import it the same way as above, this will result in a <code>TypeError</code> because <code>module.exports</code> already had something in it.\nExport an array with <code>module.exports</code>:</p>\n<pre><code class=\"language-javascript\">module.exports = [ 'A', 'B', 'C'];\n\nvar sample = require('./other.js');\nconsole.log(sample[2]); // 'C'\n</code></pre>\n",
+  },
+}

@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'pawel',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-ii/performing-a-function-at-timed-intervals.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'workout',
+    'introduction',
+    'deep',
+    'timed-intervals',
+    'fundamental',
+  ],
+  card: {
+    question: '<p>Make <code>hi</code> run every 2 seconds:</p>\n<pre><code class="language-javascript">function hi(){\n  alert("Hi!");\n}\nvar loop = ???\n   .???(hi,???);\n</code></pre>\n',
+    answers: [
+      {
+        text: 'window',
+      },
+      {
+        text: 'setInterval',
+      },
+      {
+        text: '2000',
+      },
+      {
+        text: '200',
+      },
+      {
+        text: 'function',
+      },
+    ],
+    comment: '<p>To perform functions at regular intervals using <code>setInterval</code>:</p>\n<pre><code class="language-javascript">function myFunction() {\n //doSomething();\n}\nvar loop = \nwindow.setInterval(myFunction, 1000);\n</code></pre>\n<p>The first argument of <code>setInterval</code> is a function we want to run periodically, the second argument is the time in milliseconds.</p>\n<p>To clear the interval:</p>\n<pre><code class="language-javascript">clearInterval(loop);\n</code></pre>\n',
+  },
+}
