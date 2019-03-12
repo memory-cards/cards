@@ -14,27 +14,27 @@
     question: '<p>What is the output of the following code?</p>\n<pre><code class="language-javascript">console.log("" == "0")\nconsole.log("" === "0")\nconsole.log(" \\t\\r\\n" == 0)\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>false false true</code>',
+        text: 'false false true',
         correct: true,
       },
       {
-        text: '<code>false true false</code>',
+        text: 'false true false',
         correct: false,
       },
       {
-        text: '<code>true false true</code>',
+        text: 'true false true',
         correct: false,
       },
       {
-        text: '<code>true false false</code>',
+        text: 'true false false',
         correct: false,
       },
       {
-        text: '<code>true true true</code>',
+        text: 'true true true',
         correct: false,
       },
       {
-        text: '<code>false true true</code>',
+        text: 'false true true',
         correct: false,
       },
     ],

@@ -15,15 +15,15 @@
     question: '<pre><code class="language-javascript">function bar(a = 1) {return a}\n//foo(null) === null\nconst {a = 1} = {a: null}\n// a === ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>null</code>',
+        text: 'null',
         correct: true,
       },
       {
-        text: '<code>undefined</code>',
+        text: 'undefined',
         correct: false,
       },
       {
-        text: '<code>1</code>',
+        text: '1',
         correct: false,
       },
     ],

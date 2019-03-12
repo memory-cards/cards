@@ -14,19 +14,19 @@
     question: '<p>Complete the following code snippet such that <code>A</code> is logged to the <code>console</code>:</p>\n<pre><code class="language-javascript">var x = 1;\nswitch (???) {\n  ??? ???:\n    console.log(\'A\');\n}\n// A\n</code></pre>\n',
     answers: [
       {
-        text: '<code>x</code>',
+        text: 'x',
       },
       {
-        text: '<code>case</code>',
+        text: 'case',
       },
       {
-        text: '<code>1</code>',
+        text: '1',
       },
       {
         text: "<code>'1'</code>",
       },
       {
-        text: '<code>default</code>',
+        text: 'default',
       },
       {
         text: "<code>'5'</code>",
@@ -35,10 +35,10 @@
         text: '5',
       },
       {
-        text: '<code>one</code>',
+        text: 'one',
       },
       {
-        text: '<code>A</code>',
+        text: 'A',
       },
       {
         text: "<code>'A'</code>",

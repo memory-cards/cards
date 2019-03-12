@@ -13,19 +13,19 @@
     question: '<p>Fill the gap to compute the <code>duration</code> between <code>start</code> and <code>end</code> marks:</p>\n<pre><code class="language-javascript">performance.???("???",\n    "start", "end");\n</code></pre>\n',
     answers: [
       {
-        text: '<code>measure</code>',
+        text: 'measure',
       },
       {
-        text: '<code>duration</code>',
+        text: 'duration',
       },
       {
-        text: '<code>time</code>',
+        text: 'time',
       },
       {
-        text: '<code>elapsed</code>',
+        text: 'elapsed',
       },
       {
-        text: '<code>timing</code>',
+        text: 'timing',
       },
     ],
     comment: '<p>The User Timing API is used to measure the <strong>performance</strong> of JavaScript code.</p>\n<p>The main concepts are \'<strong>mark</strong>\' (a timestamp) and \'<strong>measure</strong>\' (the time elapsed between two timestamps).</p>\n<pre><code>// timestamps named \'start\' and \'end\'\nperformance.mark("start");\n// ... do something\nperformance.mark("end");\n// measure the time elapsed\nperformance.measure("duration",\n                      "start", "end");\n</code></pre>\n<p>The main benefit of this API is that it has a higher resolution than the Date API and that you don\'t need to introduce variables when you test your code\'s performance.</p>\n',

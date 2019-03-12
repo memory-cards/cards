@@ -15,19 +15,19 @@
     question: '<p>What type of script is executed as soon as it is downloaded, without blocking the browser in the meantime?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>async</code>',
+        text: 'async',
         correct: true,
       },
       {
-        text: '<code>defer</code>',
+        text: 'defer',
         correct: false,
       },
       {
-        text: '<code>all</code>',
+        text: 'all',
         correct: false,
       },
       {
-        text: '<code>none</code>',
+        text: 'none',
         correct: false,
       },
     ],

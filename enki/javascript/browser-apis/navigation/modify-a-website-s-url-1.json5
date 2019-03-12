@@ -13,19 +13,19 @@
     question: '<p>What method is used to modify a website URL without a full page refresh?</p>\n<pre><code class="language-javascript">history.???([data],\n            [title], [url]);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>pushState</code>',
+        text: 'pushState',
         correct: true,
       },
       {
-        text: '<code>modURL</code>',
+        text: 'modURL',
         correct: false,
       },
       {
-        text: '<code>changeRoute</code>',
+        text: 'changeRoute',
         correct: false,
       },
       {
-        text: '<code>push</code>',
+        text: 'push',
         correct: false,
       },
     ],

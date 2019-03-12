@@ -13,11 +13,11 @@
     question: '<p>Which interface for fetching resources supports promises natively?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>fetch</code>',
+        text: 'fetch',
         correct: true,
       },
       {
-        text: '<code>XMLHttpRequest</code>',
+        text: 'XMLHttpRequest',
         correct: false,
       },
     ],

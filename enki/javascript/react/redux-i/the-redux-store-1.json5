@@ -13,23 +13,23 @@
     question: '<p>What method is used to send an action to the store and to change the state?\n???</p>\n',
     answers: [
       {
-        text: '<code>dispatch()</code>',
+        text: 'dispatch()',
         correct: true,
       },
       {
-        text: '<code>createStore()</code>',
+        text: 'createStore()',
         correct: false,
       },
       {
-        text: '<code>getState()</code>',
+        text: 'getState()',
         correct: false,
       },
       {
-        text: '<code>subscribe()</code>',
+        text: 'subscribe()',
         correct: false,
       },
       {
-        text: '<code>replaceReducer()</code>',
+        text: 'replaceReducer()',
         correct: false,
       },
     ],

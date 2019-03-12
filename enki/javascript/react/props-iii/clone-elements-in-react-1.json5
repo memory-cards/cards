@@ -13,19 +13,19 @@
     question: '<p>Using the <code>React.cloneElement</code> method what props will be preserved unlike with the  <code>cloneWithProps</code> method. ???</p>\n',
     answers: [
       {
-        text: '<code>key</code> and <code>ref</code>',
+        text: 'key</code> and <code>ref',
         correct: true,
       },
       {
-        text: '<code>key</code> and <code>props</code>',
+        text: 'key</code> and <code>props',
         correct: false,
       },
       {
-        text: '<code>child</code> and <code>ref</code>',
+        text: 'child</code> and <code>ref',
         correct: false,
       },
       {
-        text: '<code>child</code> and <code>props</code>',
+        text: 'child</code> and <code>props',
         correct: false,
       },
     ],

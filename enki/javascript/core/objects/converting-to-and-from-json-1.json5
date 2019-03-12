@@ -15,15 +15,15 @@
     question: '<p>What method should be used in example below?</p>\n<pre><code class="language-javascript">const yourJSON = \'{"name":"Coco","age":4}\'\nconst cat = JSON.???(yourJSON);\nconsole.log(cat.name);\n// prints "Coco"\n</code></pre>\n',
     answers: [
       {
-        text: '<code>parse</code>',
+        text: 'parse',
         correct: true,
       },
       {
-        text: '<code>toJSON</code>',
+        text: 'toJSON',
         correct: false,
       },
       {
-        text: '<code>stringify</code>',
+        text: 'stringify',
         correct: false,
       },
     ],

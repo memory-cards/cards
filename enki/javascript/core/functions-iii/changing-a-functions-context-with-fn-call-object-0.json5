@@ -13,19 +13,19 @@
     question: '<p>Which method will change the <code>this</code> context of a JavaScript function call?\n???</p>\n',
     answers: [
       {
-        text: '<code>.call(obj)</code>',
+        text: '.call(obj)',
         correct: true,
       },
       {
-        text: '<code>.context(obj)</code>',
+        text: '.context(obj)',
         correct: false,
       },
       {
-        text: '<code>.this = ___</code>',
+        text: '.this = ___',
         correct: false,
       },
       {
-        text: '<code>.object()</code>',
+        text: '.object()',
         correct: false,
       },
     ],

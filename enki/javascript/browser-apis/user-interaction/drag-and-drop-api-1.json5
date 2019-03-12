@@ -13,23 +13,23 @@
     question: '<p>What global event handler must be added to an element so that it can be dragged and dropped?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>ondragstart</code>',
+        text: 'ondragstart',
         correct: true,
       },
       {
-        text: '<code>draggable</code>',
+        text: 'draggable',
         correct: false,
       },
       {
-        text: '<code>dragstart_handler</code>',
+        text: 'dragstart_handler',
         correct: false,
       },
       {
-        text: '<code>dataTransfer</code>',
+        text: 'dataTransfer',
         correct: false,
       },
       {
-        text: '<code>dragAndDrop</code>',
+        text: 'dragAndDrop',
         correct: false,
       },
     ],

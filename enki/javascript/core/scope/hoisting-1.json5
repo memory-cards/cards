@@ -15,15 +15,15 @@
     question: '<p>What will this print</p>\n<pre><code class="language-javascript">var a = 1;\nfunction go(){\n    console.log(a);\n    var a = 2;\n}\ngo();\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>undefined</code>',
+        text: 'undefined',
         correct: true,
       },
       {
-        text: '<code>1</code>',
+        text: '1',
         correct: false,
       },
       {
-        text: '<code>2</code>',
+        text: '2',
         correct: false,
       },
     ],

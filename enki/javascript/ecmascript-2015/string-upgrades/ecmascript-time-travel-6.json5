@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">let [ , , x, y] == [1, 2, 3, 4];\n// x + y === ???\n</code></pre>\n<p>%exp\nWe assign 1 and 2 to nothing, and 3 and 4 to <code>x</code> and <code>y</code>, respectively. Their sum is 7.\n%</p>\n',
     answers: [
       {
-        text: '<code>7</code>',
+        text: '7',
         correct: true,
       },
       {
-        text: '<code>3</code>',
+        text: '3',
         correct: false,
       },
       {
-        text: '<code>4</code>',
+        text: '4',
         correct: false,
       },
     ],

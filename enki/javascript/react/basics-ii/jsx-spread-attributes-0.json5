@@ -19,7 +19,7 @@
         text: "<code>'dog'</code>",
       },
       {
-        text: '<code>error</code>',
+        text: 'error',
       },
       {
         text: "<code>'dogcat'</code>",

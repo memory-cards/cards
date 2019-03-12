@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">class LogView ??? View {\n  render() {\n    var compiled = super();\n    console.log(compiled);\n  }\n}\n</code></pre>\n<p>%exp\nThe <code>extends</code> keyword is used in class declarations or class expressions to create a child class of another class.\n%</p>\n',
     answers: [
       {
-        text: '<code>extends</code>',
+        text: 'extends',
         correct: true,
       },
       {
-        text: '<code>inherit</code>',
+        text: 'inherit',
         correct: false,
       },
       {
-        text: '<code>generalize</code>',
+        text: 'generalize',
         correct: false,
       },
     ],

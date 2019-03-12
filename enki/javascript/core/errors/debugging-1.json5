@@ -15,19 +15,19 @@
     question: '<p>How can you log variables into the console?</p>\n<pre><code>???.???(myVar);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>console</code>',
+        text: 'console',
       },
       {
-        text: '<code>log</code>',
+        text: 'log',
       },
       {
-        text: '<code>alert</code>',
+        text: 'alert',
       },
       {
-        text: '<code>debugger;</code>',
+        text: 'debugger;',
       },
       {
-        text: '<code>addVar</code>',
+        text: 'addVar',
       },
     ],
     comment: '<p>One of the most common debugging options is the <strong>browser tools</strong>. </p>\n<p>Each browsers tools are slightly different but all will contain a debugger and console where you can add breakpoints, inspect variables etc.</p>\n<p>On most browsers the debugging features can be brought up with the <strong>F12</strong> key. </p>\n<p><strong>debugger;</strong></p>\n<p>If you want the debugger to stop on a line of code and dont want to add a breakpoint you can add the statement <code>debugger;</code> in your code. Then if the browser tools are open the debugger will stop when it reaches this statement.</p>\n<p><strong>Logging Variables</strong></p>\n<p>It can be useful to find out the values of variables when debugging code. </p>\n<p>Some developers will use an alert statement to do this:</p>\n<pre><code>alert(myVar);\n</code></pre>\n<p>A better way is to use the console.log statement to write the variables value out to the console:</p>\n<pre><code>console.log(myVar); \n</code></pre>\n',

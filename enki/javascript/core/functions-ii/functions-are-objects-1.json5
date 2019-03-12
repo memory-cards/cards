@@ -17,25 +17,25 @@
     question: '<p>Complete the function expression in the following code snippet such that it makes sense:</p>\n<pre><code>??? x = ??? add(x, y, z){\n    ??? x + y + z;\n}\nconsole.log(x(1, 2, 3)); \n</code></pre>\n',
     answers: [
       {
-        text: '<code>var</code>',
+        text: 'var',
       },
       {
-        text: '<code>function</code>',
+        text: 'function',
       },
       {
-        text: '<code>return</code>',
+        text: 'return',
       },
       {
-        text: '<code>console.log</code>',
+        text: 'console.log',
       },
       {
-        text: '<code>get</code>',
+        text: 'get',
       },
       {
-        text: '<code>fn</code>',
+        text: 'fn',
       },
       {
-        text: '<code>()</code>',
+        text: '()',
       },
     ],
     comment: '<p>Every function in JavaScript is also an object. </p>\n<p>This means we can assign a function to a variable which can be used to execute the function - this is called a <em>function expression</em>:</p>\n<pre><code>var x = function myFunc(x,y){\n    return x+y;\n};\n\nx(1,2);//3\n</code></pre>\n<p>But why do this? </p>\n<p>One reason is to pass functions into other functions. </p>\n<p>A somewhat contrived example would be if we were creating a calculator we could pass different calculation expressions into the <em>calc</em> function and avoid repeating the console logging code:</p>\n<pre><code>function calc(expression){\n   console.log(expression(2,1));\n}\n\nvar add = function(x, y){\n   return x + y;\n}\n\nvar subtract = function(x, y){\n   return x - y;\n}\n\ncalc(add);//3\ncalc(subtract);//1\n</code></pre>\n<p>We don’t even need to give our functions a name. </p>\n<p>This is called an anonymous function:</p>\n<pre><code>var x = function(x, y){\n    return x + y;\n}\nx(1,2);\n</code></pre>\n',

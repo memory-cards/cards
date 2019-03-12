@@ -17,27 +17,27 @@
         correct: true,
       },
       {
-        text: '<code>componentDidUpdate</code>',
+        text: 'componentDidUpdate',
         correct: false,
       },
       {
-        text: '<code>componentDidMount</code>',
+        text: 'componentDidMount',
         correct: false,
       },
       {
-        text: '<code>componentWillUpdate</code>',
+        text: 'componentWillUpdate',
         correct: false,
       },
       {
-        text: '<code>componentWillMount</code>',
+        text: 'componentWillMount',
         correct: false,
       },
       {
-        text: '<code>componentWillUnmount</code>',
+        text: 'componentWillUnmount',
         correct: false,
       },
       {
-        text: '<code>constructor</code>',
+        text: 'constructor',
         correct: false,
       },
     ],

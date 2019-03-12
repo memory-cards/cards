@@ -18,19 +18,19 @@
     question: "<p>What's the notion describing two or more tasks executed in the same period, but not necessarily in parallel?</p>\n<p>???</p>\n",
     answers: [
       {
-        text: '<code>concurrency</code>',
+        text: 'concurrency',
         correct: true,
       },
       {
-        text: '<code>parallelism</code>',
+        text: 'parallelism',
         correct: false,
       },
       {
-        text: '<code>asynchronous</code>',
+        text: 'asynchronous',
         correct: false,
       },
       {
-        text: '<code>race condition</code>',
+        text: 'race condition',
         correct: false,
       },
     ],

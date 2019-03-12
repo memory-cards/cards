@@ -18,23 +18,23 @@
         correct: true,
       },
       {
-        text: '<code>undefined</code>',
+        text: 'undefined',
         correct: false,
       },
       {
-        text: '<code>4</code>',
+        text: '4',
         correct: false,
       },
       {
-        text: '<code>9</code>',
+        text: '9',
         correct: false,
       },
       {
-        text: '<code>6</code>',
+        text: '6',
         correct: false,
       },
       {
-        text: '<code>error</code>',
+        text: 'error',
         correct: false,
       },
     ],

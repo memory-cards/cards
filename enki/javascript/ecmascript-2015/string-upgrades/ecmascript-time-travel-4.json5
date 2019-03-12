@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">// ES5:\nvar year  =  timeArray[0];\nvar month =  timeArray[1];\nvar day   =  timeArray[2];\n// ES6 equivalent:  \nvar ??? = timeArray;\n</code></pre>\n<p>%exp\nThe *<em>destructuring assignment</em>\n%</p>\n',
     answers: [
       {
-        text: '<code>[year, month, day]</code>',
+        text: '[year, month, day]',
         correct: true,
       },
       {
-        text: '<code>(year, month, day)</code>',
+        text: '(year, month, day)',
         correct: false,
       },
       {
-        text: '<code>{year, month, day}</code>',
+        text: '{year, month, day}',
         correct: false,
       },
       {

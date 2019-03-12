@@ -13,23 +13,23 @@
     question: '<p>Listen for a change in the user connection:</p>\n<pre><code class="language-javascript">// assume connection is initialised\nconnection.addEventListener(\'???\',\n  handlingFunction);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>typechange</code>',
+        text: 'typechange',
         correct: true,
       },
       {
-        text: '<code>type</code>',
+        text: 'type',
         correct: false,
       },
       {
-        text: '<code>change</code>',
+        text: 'change',
         correct: false,
       },
       {
-        text: '<code>update</code>',
+        text: 'update',
         correct: false,
       },
       {
-        text: '<code>statusChange</code>',
+        text: 'statusChange',
         correct: false,
       },
     ],

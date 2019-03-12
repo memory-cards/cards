@@ -13,19 +13,19 @@
     question: '<p>What method is used to invoke a function <code>fn</code> on every immediate child, but not to return an array?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>forEach</code>',
+        text: 'forEach',
         correct: true,
       },
       {
-        text: '<code>map</code>',
+        text: 'map',
         correct: false,
       },
       {
-        text: '<code>count</code>',
+        text: 'count',
         correct: false,
       },
       {
-        text: '<code>only</code>',
+        text: 'only',
         correct: false,
       },
     ],

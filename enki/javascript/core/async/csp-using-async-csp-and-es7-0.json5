@@ -18,19 +18,19 @@
     question: '<p>Which two functions are used to place a value onto a channel and to take a value from a channel? ???</p>\n',
     answers: [
       {
-        text: '<code>.put()</code> and <code>.take()</code>',
+        text: '.put()</code> and <code>.take()',
         correct: true,
       },
       {
-        text: '<code>.add()</code> and <code>.remove()</code>',
+        text: '.add()</code> and <code>.remove()',
         correct: false,
       },
       {
-        text: '<code>.add()</code> and <code>.take()</code>',
+        text: '.add()</code> and <code>.take()',
         correct: false,
       },
       {
-        text: '<code>.put()</code> and <code>.remove()</code>',
+        text: '.put()</code> and <code>.remove()',
         correct: false,
       },
     ],

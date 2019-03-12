@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">// ES5:\nvar y  = timeObject.year;\n// ES6 equivalent:\nvar ??? = timeObject\n</code></pre>\n<p>%exp\nBy using <strong>destructuring assignment</strong>, y is assigned the value of <code>timeObject</code>\'s property <code>year</code>.\n%</p>\n',
     answers: [
       {
-        text: '<code>{year:y} </code>',
+        text: '{year:y} ',
         correct: true,
       },
       {
-        text: '<code>{y:year} </code>',
+        text: '{y:year} ',
         correct: false,
       },
       {
-        text: '<code>{y.year}</code>',
+        text: '{y.year}',
         correct: false,
       },
     ],

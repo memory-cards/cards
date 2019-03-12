@@ -13,25 +13,25 @@
     question: '<p>Complete the missing code bits to implement functionality that is otherwise only available via operators:</p>\n<pre><code class="language-javascript">Reflect.???(target,\n    propertyKey, ???)\n</code></pre>\n',
     answers: [
       {
-        text: '<code>get</code>',
+        text: 'get',
       },
       {
-        text: '<code>receiver?</code>',
+        text: 'receiver?',
       },
       {
-        text: '<code>Reflect</code>',
+        text: 'Reflect',
       },
       {
-        text: '<code>initProp</code>',
+        text: 'initProp',
       },
       {
-        text: '<code>propDesc</code>',
+        text: 'propDesc',
       },
       {
-        text: '<code>defineProperty</code>',
+        text: 'defineProperty',
       },
       {
-        text: '<code>flag</code>',
+        text: 'flag',
       },
     ],
     comment: '<p>ES6 has a global object called <code>Reflect</code> that has methods to implement all interceptable operations of the JavaScript <strong>meta object</strong> protocol.</p>\n<p>Reflect is very useful for implementing <strong>proxies</strong> as the names of the Reflect methods are the same as those of the proxy handler methods. This helps with forwarding operations from the proxy handler to the proxy target.</p>\n<p>Reflect can also be useful for:</p>\n<p><strong>Indicating success</strong></p>\n<p>Some Reflect methods return booleans indicating whether the operation succeeded.</p>\n<pre><code>Reflect.defineProperty\n  (target, propertyKey, propDesc)\n// Like Object.defineProperty()\n// but returns a boolean.\n</code></pre>\n<p><strong>Implementing operator functionality</strong></p>\n<p>Some Reflect methods implement functionality that is otherwise only available via operators:</p>\n<pre><code>Reflect.get\n    (target, propertyKey, receiver?)\n</code></pre>\n<p><strong>Shorten apply</strong></p>\n<p>Produce a cleaner and shorter version of <code>.apply</code>.</p>\n<pre><code>Function.prototype.apply.call\n    (func, thisArg, args) // ES5\nReflect.apply(func, thisArg, args) // ES6\n</code></pre>\n',

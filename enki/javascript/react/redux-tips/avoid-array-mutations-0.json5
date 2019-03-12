@@ -16,19 +16,19 @@
         text: 'fashion:',
       },
       {
-        text: '<code>...</code>',
+        text: '...',
       },
       {
-        text: '<code>enki</code>',
+        text: 'enki',
       },
       {
-        text: '<code>concat</code>',
+        text: 'concat',
       },
       {
-        text: '<code>splice</code>',
+        text: 'splice',
       },
       {
-        text: '<code>slice</code>',
+        text: 'slice',
       },
     ],
     comment: '<p>There are different ways of creating a <strong>pure</strong> function needed in <strong>Redux</strong> for generating a new array of items.</p>\n<p>Using the <code>push()</code> standard method will alter the original object and should be avoided because it is not <strong>pure</strong>.</p>\n<p>Instead, if you want to append an element to the end of the array simply use the <code>concat()</code> method or the new spread operator (<code>...</code>) :</p>\n<pre><code class="language-javascript">return myArray.concat([0]);\n//this will add a 0 to the end of the array\nreturn [...myArray, 0];\n//same result with spread operator\n</code></pre>\n<p>To remove an element from an array at a given index point, rather than using the mutating <code>splice()</code> method, a combination of <code>concat()</code> and  <code>slice()</code> (returning a new array between two indexes) can  be used:</p>\n<pre><code class="language-javascript">return myArray.slice(0,index)\n  .concat(myArray.slice(index+1));\n//will remove a given index from an array\nreturn [ ...myArray.slice(0,index),\n  ...myArray.slice(index+1)];\n//same result with spread operator\n</code></pre>\n<p>Other operations should follow the same strategies described above.</p>\n',

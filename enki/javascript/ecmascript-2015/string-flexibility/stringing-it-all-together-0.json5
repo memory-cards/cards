@@ -17,15 +17,15 @@
         correct: true,
       },
       {
-        text: '<code>${firstName} ${surname}</code>',
+        text: '${firstName} ${surname}',
         correct: false,
       },
       {
-        text: '<code>"+firstName+" "+surname+"</code>',
+        text: '"+firstName+" "+surname+"',
         correct: false,
       },
       {
-        text: '<code>#firstName + #surname</code>',
+        text: '#firstName + #surname',
         correct: false,
       },
     ],

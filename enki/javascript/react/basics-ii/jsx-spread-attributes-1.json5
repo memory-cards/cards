@@ -21,7 +21,7 @@
         correct: false,
       },
       {
-        text: '<code>error</code>',
+        text: 'error',
         correct: false,
       },
       {

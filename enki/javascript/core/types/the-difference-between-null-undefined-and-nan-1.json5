@@ -14,15 +14,15 @@
     question: '<p>What will this print?</p>\n<pre><code class="language-javascript">var x = 0/0;\nconsole.log(x);\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>NaN</code>',
+        text: 'NaN',
         correct: true,
       },
       {
-        text: '<code>undefined</code>',
+        text: 'undefined',
         correct: false,
       },
       {
-        text: '<code>null</code>',
+        text: 'null',
         correct: false,
       },
     ],

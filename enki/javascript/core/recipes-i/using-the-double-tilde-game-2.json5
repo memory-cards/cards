@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">var x = true;\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nDouble tilde <code>true</code> evaluates to 1 since the double tilde is technically a <em>double NOT bitwise operator</em>. <code>True</code> evaluates to <code>1</code> and <code>False</code> evaluates to <code>0</code>.\n%</p>\n',
     answers: [
       {
-        text: '<code>1</code>',
+        text: '1',
         correct: true,
       },
       {
-        text: '<code>true</code>',
+        text: 'true',
         correct: false,
       },
       {
-        text: '<code>NaN</code>',
+        text: 'NaN',
         correct: false,
       },
     ],

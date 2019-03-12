@@ -13,7 +13,7 @@
     question: '<p>How will the <code>id</code> in the following code snippet be rendered as?</p>\n<pre><code class="language-jsx">ReactDOM.render(&#x3C;div id={false} />, myNode);\n</code></pre>\n<p>Result:</p>\n<pre><code>id=???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>"false"</code>',
+        text: '"false"',
         correct: true,
       },
       {
@@ -21,11 +21,11 @@
         correct: false,
       },
       {
-        text: '<code>false</code>',
+        text: 'false',
         correct: false,
       },
       {
-        text: '<code>undefined</code>',
+        text: 'undefined',
         correct: false,
       },
     ],

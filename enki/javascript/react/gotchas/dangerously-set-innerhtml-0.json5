@@ -13,27 +13,27 @@
     question: '<p>Fill the key needed for the <code>dangerouslySetInnerHTML</code> prop:</p>\n<pre><code class="language-javascript">dangerouslySetInnerHTML:\n{ ???: \'&#x3C;p>Enki &#x3C;/p>\' }\n</code></pre>\n',
     answers: [
       {
-        text: '<code>__html</code>',
+        text: '__html',
         correct: true,
       },
       {
-        text: '<code>html</code>',
+        text: 'html',
         correct: false,
       },
       {
-        text: '<code>_html</code>',
+        text: '_html',
         correct: false,
       },
       {
-        text: '<code>value</code>',
+        text: 'value',
         correct: false,
       },
       {
-        text: '<code>id</code>',
+        text: 'id',
         correct: false,
       },
       {
-        text: '<code>text</code>',
+        text: 'text',
         correct: false,
       },
     ],

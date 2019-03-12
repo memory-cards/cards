@@ -16,19 +16,19 @@
     question: '<p>What log is shown each second?</p>\n<pre><code>let t = setInterval(\n  (a, b) => {\n    ++a;\n    console.log(a + b);\n    // ???\n  },\n  1000, // delay\n  0,    // a\n  10    // b\n);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>always 11</code>',
+        text: 'always 11',
         correct: true,
       },
       {
-        text: '<code>10 then 11 then 12</code>',
+        text: '10 then 11 then 12',
         correct: false,
       },
       {
-        text: '<code>NaN</code>',
+        text: 'NaN',
         correct: false,
       },
       {
-        text: '<code>11 then 12 then 13</code>',
+        text: '11 then 12 then 13',
         correct: false,
       },
     ],

@@ -15,23 +15,23 @@
     question: '<p>What will the following functions print? ???</p>\n<pre><code>var e = 1;\nfunction run(){\n    console.log(e);\n    var e = 4;\n}\nrun();\n\nvar c = 1;\nfunction calc() {\n    console.log(c*c);\n    c = 4;\n}\ncalc();\n</code></pre>\n',
     answers: [
       {
-        text: '<code>run: undefined, calc: 1</code>',
+        text: 'run: undefined, calc: 1',
         correct: true,
       },
       {
-        text: '<code>run: 1, calc: 1</code>',
+        text: 'run: 1, calc: 1',
         correct: false,
       },
       {
-        text: '<code>run: 4, calc: 1</code>',
+        text: 'run: 4, calc: 1',
         correct: false,
       },
       {
-        text: '<code>run: 4, calc: 4</code>',
+        text: 'run: 4, calc: 4',
         correct: false,
       },
       {
-        text: '<code>run: undefined, calc: undefined</code>',
+        text: 'run: undefined, calc: undefined',
         correct: false,
       },
     ],

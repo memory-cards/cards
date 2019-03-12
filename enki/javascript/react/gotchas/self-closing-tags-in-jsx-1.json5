@@ -17,15 +17,15 @@
         correct: true,
       },
       {
-        text: '<code>yes</code>',
+        text: 'yes',
         correct: false,
       },
       {
-        text: '<code>no</code>',
+        text: 'no',
         correct: false,
       },
       {
-        text: '<code>depends</code>',
+        text: 'depends',
         correct: false,
       },
     ],

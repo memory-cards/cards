@@ -14,22 +14,22 @@
     question: '<p>How would you remove the first element in the array using <code>splice</code>?</p>\n<pre><code>myArray.???(???, ???);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>splice</code>',
+        text: 'splice',
       },
       {
-        text: '<code>0</code>',
+        text: '0',
       },
       {
-        text: '<code>1</code>',
+        text: '1',
       },
       {
-        text: '<code>2</code>',
+        text: '2',
       },
       {
-        text: '<code>remove</code>',
+        text: 'remove',
       },
       {
-        text: '<code>slice</code>',
+        text: 'slice',
       },
     ],
     comment: '<p>Splice is a handy array function that allows you to add and remove items to an array.</p>\n<p>It accepts 3 arguments with the 3rd being optional:</p>\n<ul>\n<li><em>Start</em> is the 0 based index of where to start manipulating the array</li>\n<li><em>Delete</em> is how many items to remove at the <em>Start</em> position (can be 0)</li>\n<li><em>Array of items to add</em> (optional)</li>\n</ul>\n<p>We can use splice to add and remove items anywhere in the array.</p>\n<p>For example to remove the 3rd element:</p>\n<pre><code>let myArray = [1, 2, 3];\nconsole.log(myArray.splice(2, 1));\n// [3]\nconsole.log(myArray);\n// [1, 2]\n</code></pre>\n<p>As you can see, the function returns the elements removed in case you need them.</p>\n<p>You can also replace a sequence of elements:</p>\n<pre><code>console.log(myArray);\n// [1, 2]\nconsole.log(myArray.splice(0, 2, 3, 4));\n// [1, 2]\nconsole.log(myArray);\n// [3, 4]\n</code></pre>\n',

@@ -15,11 +15,11 @@
     question: '<p>What must be used so explicit arguments are required?</p>\n<pre><code class="language-javascript">function.???(obj, 1, 2, 3);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>call</code>',
+        text: 'call',
         correct: true,
       },
       {
-        text: '<code>apply</code>',
+        text: 'apply',
         correct: false,
       },
     ],

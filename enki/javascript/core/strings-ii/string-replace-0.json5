@@ -17,19 +17,19 @@
     question: "<p>Complete the following code snippet to replace <code>+</code> with <code>%2B</code>:</p>\n<pre><code class=\"language-javascript\">var s = 'x+y+z=w';\ns=s.replace(???,'%2B');\nconsole.log(s); // x%2By%2Bz=w\n</code></pre>\n",
     answers: [
       {
-        text: '<code>/\\+/g</code>',
+        text: '/\\+/g',
         correct: true,
       },
       {
-        text: '<code>\\\\+/g</code>',
+        text: '\\\\+/g',
         correct: false,
       },
       {
-        text: '<code>\\+/g</code>',
+        text: '\\+/g',
         correct: false,
       },
       {
-        text: '<code>/\\+/</code>',
+        text: '/\\+/',
         correct: false,
       },
     ],

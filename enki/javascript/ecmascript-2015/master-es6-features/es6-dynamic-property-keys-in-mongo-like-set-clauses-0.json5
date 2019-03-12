@@ -14,22 +14,22 @@
     question: '<p>Using an index variable, write directly to an element of a nested array:</p>\n<pre><code>object.???({$set:{\n  items:{[???]:{updated: true}}\n}})\n</code></pre>\n',
     answers: [
       {
-        text: '<code>update</code>',
+        text: 'update',
       },
       {
-        text: '<code>index</code>',
+        text: 'index',
       },
       {
-        text: '<code>insert</code>',
+        text: 'insert',
       },
       {
-        text: '<code>const</code>',
+        text: 'const',
       },
       {
-        text: '<code>add</code>',
+        text: 'add',
       },
       {
-        text: '<code>new</code>',
+        text: 'new',
       },
     ],
     comment: '<p>To update the third element of a nested array <code>items</code> you can use:</p>\n<pre><code>object.update({\n  $set:{items:{3:{updated: true}}} \n})\n</code></pre>\n<p>But this becomes tricky when you have a variable <code>index</code> instead of a constant <code>3</code>.\nBefore ES6, you would typically need to write:</p>\n<pre><code>var expression = {}\nexpression[index] = {updated: true}\nobject.update({\n $set:{items:{expression}}\n})\n</code></pre>\n<p>Now, with ES6, you can write directly:</p>\n<pre><code>object.update({$set:{\n  items:{[index]:{updated: true}}\n}})\n</code></pre>\n',

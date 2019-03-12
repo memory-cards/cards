@@ -13,15 +13,15 @@
     question: '<p>Select the element with the id "time" and change it\'s content to "Future"</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p id="time">\n  Present\n&#x3C;/p>\n\n&#x3C;script>\n???\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n',
     answers: [
       {
-        text: '<code>document.getElementById(\'time\').innerHTML = "Future"</code>',
+        text: 'document.getElementById(\'time\').innerHTML = "Future"',
         correct: true,
       },
       {
-        text: '<code>document.getElement(\'time\').HTML = "Future"</code>',
+        text: 'document.getElement(\'time\').HTML = "Future"',
         correct: false,
       },
       {
-        text: '<code>DOM.getElementById(\'time\').content = "Future"</code>',
+        text: 'DOM.getElementById(\'time\').content = "Future"',
         correct: false,
       },
     ],

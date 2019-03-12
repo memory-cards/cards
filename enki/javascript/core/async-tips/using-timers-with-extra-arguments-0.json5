@@ -16,15 +16,15 @@
     question: "<p>How to prevent the <code>shutdown</code> to happen?</p>\n<pre><code>let task = setTimeout(shutdown, 5000);\nif (confirm('cancel shutdown?')) {\n  ???\n}\n</code></pre>\n",
     answers: [
       {
-        text: '<code>clearTimeout(task)</code>',
+        text: 'clearTimeout(task)',
         correct: true,
       },
       {
-        text: '<code>task = null;</code>',
+        text: 'task = null;',
         correct: false,
       },
       {
-        text: '<code>delete task;</code>',
+        text: 'delete task;',
         correct: false,
       },
     ],

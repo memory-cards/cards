@@ -13,15 +13,15 @@
     question: "<pre><code class=\"language-javascript\">// ES5:\nfunction NicePerson() {\n  this.msg = 'Hello ';\n  this.greet = function(name) {\n    return this.msg + name\n  }.bind(this);\n}\n// ES6 equivalent:  \nfunction NicePerson() {\n  this.msg = 'Hello ';\n  this.greet = (name) ??? {\n    return this.msg + name\n  };\n}\n</code></pre>\n<p>%exp\nES6 *<em>arrow function</em>\n%</p>\n",
     answers: [
       {
-        text: '<code>=></code>',
+        text: '=>',
         correct: true,
       },
       {
-        text: '<code>-></code>',
+        text: '->',
         correct: false,
       },
       {
-        text: '<code>--></code>',
+        text: '-->',
         correct: false,
       },
       {

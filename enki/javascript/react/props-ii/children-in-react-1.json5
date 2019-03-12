@@ -13,15 +13,15 @@
     question: '<p>What is the minimum number of elements <code>props.children</code> can hold?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>zero</code>',
+        text: 'zero',
         correct: true,
       },
       {
-        text: '<code>one</code>',
+        text: 'one',
         correct: false,
       },
       {
-        text: '<code>at least two</code>',
+        text: 'at least two',
         correct: false,
       },
     ],

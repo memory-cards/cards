@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">var x = 3.5;\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nThe double tilde syntax is just shorthand for truncating numbers to integers. It is used as a shorthand for <code>Math.floor()</code> although it has a key difference in that it just removes any numbers after the decimal place. Therefore 3.5 becomes 3.\n%</p>\n',
     answers: [
       {
-        text: '<code>3</code>',
+        text: '3',
         correct: true,
       },
       {
-        text: '<code>3.5</code>',
+        text: '3.5',
         correct: false,
       },
       {
-        text: '<code>-3</code>',
+        text: '-3',
         correct: false,
       },
     ],

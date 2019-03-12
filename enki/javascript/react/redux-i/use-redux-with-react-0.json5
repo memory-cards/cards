@@ -13,22 +13,22 @@
     question: '<p>Connect the React component to the Redux store without modifying the component class passed, returning a new connected component class:</p>\n<pre><code class="language-javascript">connect([???], [mapDispatchToProps],\n        [???], [options])\n</code></pre>\n',
     answers: [
       {
-        text: '<code>mapStateToProps</code>',
+        text: 'mapStateToProps',
       },
       {
-        text: '<code>mergeProps</code>',
+        text: 'mergeProps',
       },
       {
-        text: '<code>connectProps</code>',
+        text: 'connectProps',
       },
       {
-        text: '<code>storeProps</code>',
+        text: 'storeProps',
       },
       {
-        text: '<code>componentClass</code>',
+        text: 'componentClass',
       },
       {
-        text: '<code>returnComponent</code>',
+        text: 'returnComponent',
       },
     ],
     comment: '<p><em>Redux</em> has no relation to <em>React</em>, yet it works well with this framework as UI can be described as functions of <em>state</em>, which <strong>Redux</strong> can update in response to actions.</p>\n<p>React bindings are not provided by default in Redux, so <code>react-redux</code> must be installed:</p>\n<pre><code class="language-bash">npm install --save react-redux\n</code></pre>\n<p>The general paradigm is that only top level components (e.g. route handlers) should be aware of Redux.</p>\n<p>To turn a presentational container into a component, the <code>connect</code> function must be imported:</p>\n<pre><code class="language-javascript">import { connect } from \'react-redux\'\n</code></pre>\n<p>Canonical form of <code>connect()</code> function:</p>\n<pre><code class="language-javascript">connect([mapStateToProps],\n[mapDispatchToProps],[mergeProps],[options])\n</code></pre>\n<p>This will connect a React component to a Redux store, not modifying the component class passed, but instead returning a new, connected component class.</p>\n<p>Inject <code>dispatch</code> and don\'t listen to the store:</p>\n<pre><code class="language-javascript">export default connect()(myReducer)\n</code></pre>\n',

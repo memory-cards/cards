@@ -13,19 +13,19 @@
     question: '<p>What special method is used to combine different reduction functions with the scope of keeping your code scalable?\n???</p>\n',
     answers: [
       {
-        text: '<code>combineReducers()</code>',
+        text: 'combineReducers()',
         correct: true,
       },
       {
-        text: '<code>combine()</code>',
+        text: 'combine()',
         correct: false,
       },
       {
-        text: '<code>createStore()</code>',
+        text: 'createStore()',
         correct: false,
       },
       {
-        text: '<code>addReducer()</code>',
+        text: 'addReducer()',
         correct: false,
       },
     ],

@@ -14,7 +14,7 @@
     question: '<p>What will the following snippet output?</p>\n<pre><code class="language-javascript">var x = 10;\nswitch(x){\n  case \'10\':\n     console.log("Hi!");\n}\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>nothing</code>',
+        text: 'nothing',
         correct: true,
       },
       {
@@ -22,7 +22,7 @@
         correct: false,
       },
       {
-        text: '<code>an error</code>',
+        text: 'an error',
         correct: false,
       },
     ],

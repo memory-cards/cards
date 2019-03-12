@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">// ES6 maps are iterable objects,\n// a concise loop format is:\nvar map = new Map();\nfor (let ???) {\n  console.log(`${key}: ${value}`)\n}\n</code></pre>\n<p>%exp\nThe pair <code>[key,value]</code> represents one tuple from the map that the <code>for</code> loop is iterating over.\n%</p>\n',
     answers: [
       {
-        text: '<code>[key, value] of map</code>',
+        text: '[key, value] of map',
         correct: true,
       },
       {
-        text: '<code>i=0; i > map.length; i++;</code>',
+        text: 'i=0; i > map.length; i++;',
         correct: false,
       },
       {
-        text: '<code>i=1; i == true; i++;</code>',
+        text: 'i=1; i == true; i++;',
         correct: false,
       },
     ],

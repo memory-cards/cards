@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">var x = "";\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nDouble tilde never returns <code>NaN</code>, but if a check fails it simply returns <code>0</code>.\n%</p>\n',
     answers: [
       {
-        text: '<code>0</code>',
+        text: '0',
         correct: true,
       },
       {
-        text: '<code> </code>',
+        text: ' ',
         correct: false,
       },
       {
-        text: '<code>1</code>',
+        text: '1',
         correct: false,
       },
     ],

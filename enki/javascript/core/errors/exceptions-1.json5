@@ -15,23 +15,23 @@
     question: '<p>Complete the missing keyword for throwing an exception:</p>\n<pre><code>??? "my exception"\n</code></pre>\n',
     answers: [
       {
-        text: '<code>throw</code>',
+        text: 'throw',
         correct: true,
       },
       {
-        text: '<code>raise</code>',
+        text: 'raise',
         correct: false,
       },
       {
-        text: '<code>catch</code>',
+        text: 'catch',
         correct: false,
       },
       {
-        text: '<code>try</code>',
+        text: 'try',
         correct: false,
       },
       {
-        text: '<code>finally</code>',
+        text: 'finally',
         correct: false,
       },
     ],

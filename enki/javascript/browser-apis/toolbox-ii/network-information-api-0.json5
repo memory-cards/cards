@@ -13,25 +13,25 @@
     question: '<p>Declare the connection and type:</p>\n<pre><code class="language-javascript">var connection = ???.connection ||\n                 navigator.??? ||\n                 navigator.???;\nvar type = connection.type;\n</code></pre>\n',
     answers: [
       {
-        text: '<code>navigator</code>',
+        text: 'navigator',
       },
       {
-        text: '<code>mozConnection</code>',
+        text: 'mozConnection',
       },
       {
-        text: '<code>webkitConnection</code>',
+        text: 'webkitConnection',
       },
       {
-        text: '<code>connection</code>',
+        text: 'connection',
       },
       {
-        text: '<code>apiConnection</code>',
+        text: 'apiConnection',
       },
       {
-        text: '<code>statusConnection</code>',
+        text: 'statusConnection',
       },
       {
-        text: '<code>eventConnection</code>',
+        text: 'eventConnection',
       },
     ],
     comment: '<p>The <em>Network Information API</em> provides information about the system\'s connection. It\'s used to choose either high definition or low definition content for a user, dependent on their connection.</p>\n<p>The API has a <em><code>NetworkInformation</code></em> interface and a single property to the Navigator interface: <em><code>Navigator.connection</code></em>.</p>\n<p>This example watches for changes to the user\'s connection.</p>\n<p>Declaring the connection and type.</p>\n<pre><code class="language-javascript">var connection = navigator.connection ||\n              navigator.mozConnection ||\n              navigator.webkitConnection;\nvar type = connection.type;\n</code></pre>\n<p>Listener for a change to the user\'s connection.</p>\n<pre><code class="language-javascript">connection.addEventListener(\'typechange\',\n           updateConnectionStatus);\n</code></pre>\n<p>Function to output for any change to the user\'s connection if called by the listener.</p>\n<pre><code class="language-javascript">function updateConnectionStatus() {\n  console.log("Connection type is change \\\n  from " + type + " to " + connection.type);\n}\n</code></pre>\n',

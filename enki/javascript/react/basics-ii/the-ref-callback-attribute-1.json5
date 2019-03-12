@@ -13,27 +13,27 @@
     question: '<p>How would you access the referenced <code>&#x3C;input /></code> element from within <code>someMethod()</code> in the example below?</p>\n<pre><code class="language-jsx">render() {\n  return (\n    &#x3C;div>\n      &#x3C;input ref={(in) => {\n         this.i = in)}} />\n    &#x3C;/div>\n    );\n}\n\nsomeMethod() {\n  ???.focus();\n}\n</code></pre>\n',
     answers: [
       {
-        text: '<code>this.i</code>',
+        text: 'this.i',
         correct: true,
       },
       {
-        text: '<code>this.refs.i</code>',
+        text: 'this.refs.i',
         correct: false,
       },
       {
-        text: '<code>i</code>',
+        text: 'i',
         correct: false,
       },
       {
-        text: '<code>this.in</code>',
+        text: 'this.in',
         correct: false,
       },
       {
-        text: '<code>this.refs.in</code>',
+        text: 'this.refs.in',
         correct: false,
       },
       {
-        text: '<code>in</code>',
+        text: 'in',
         correct: false,
       },
     ],

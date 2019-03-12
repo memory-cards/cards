@@ -14,19 +14,19 @@
     question: '<p>What would the following snippet print?</p>\n<pre><code>function add(x, y){\n  var sum = x + y;\n}\n\nconsole.log(add(2,3));\n???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>undefined</code>',
+        text: 'undefined',
         correct: true,
       },
       {
-        text: '<code>5</code>',
+        text: '5',
         correct: false,
       },
       {
-        text: '<code>false</code>',
+        text: 'false',
         correct: false,
       },
       {
-        text: '<code>error</code>',
+        text: 'error',
         correct: false,
       },
     ],

@@ -17,19 +17,19 @@
         correct: true,
       },
       {
-        text: '<code>componentWillMount</code>',
+        text: 'componentWillMount',
         correct: false,
       },
       {
-        text: '<code>componentDidMount</code>',
+        text: 'componentDidMount',
         correct: false,
       },
       {
-        text: '<code>componentWillUnmount</code>',
+        text: 'componentWillUnmount',
         correct: false,
       },
       {
-        text: '<code>render</code>',
+        text: 'render',
         correct: false,
       },
     ],

@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">// ES5:\nvar y  = timeObject.y;\nvar m  = timeObject.m;\nvar d  = timeObject.d;\n// ES6 equivalent:\nvar ??? = timeObject;\n</code></pre>\n<p>%exp\n*<em>Object destructuring assignment</em>\n%</p>\n',
     answers: [
       {
-        text: '<code>{y,m,d}</code>',
+        text: '{y,m,d}',
         correct: true,
       },
       {
-        text: '<code>[y,m,d]</code>',
+        text: '[y,m,d]',
         correct: false,
       },
       {
-        text: '<code>(y,m,d)</code>',
+        text: '(y,m,d)',
         correct: false,
       },
       {

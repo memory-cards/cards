@@ -15,19 +15,19 @@
     question: "<h3>How well do you know JSON?</h3>\n<p>What will be returned by the following code?</p>\n<pre><code class=\"language-javascript\">const enkiObj = {\n    a: 'first',\n    b: 'second',\n    toJSON: () => ({c: 'third'})\n}\n\nJSON.stringify(enkiObj);\n</code></pre>\n<p>???</p>\n",
     answers: [
       {
-        text: '<code>"{"c":"third"}"</code>',
+        text: '"{"c":"third"}"',
         correct: true,
       },
       {
-        text: '<code>"{"a":"first","b":"second"}"</code>',
+        text: '"{"a":"first","b":"second"}"',
         correct: false,
       },
       {
-        text: '<code>"{"a":"first","b":"second","c":"third"}"</code>',
+        text: '"{"a":"first","b":"second","c":"third"}"',
         correct: false,
       },
       {
-        text: '<code>"{a: "first", b: "second"}"</code>',
+        text: '"{a: "first", b: "second"}"',
         correct: false,
       },
     ],

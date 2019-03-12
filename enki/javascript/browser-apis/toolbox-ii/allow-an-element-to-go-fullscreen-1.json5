@@ -17,23 +17,23 @@
         correct: true,
       },
       {
-        text: '<code>requestFullscreen()</code>',
+        text: 'requestFullscreen()',
         correct: false,
       },
       {
-        text: '<code>requestFullScreen()</code>',
+        text: 'requestFullScreen()',
         correct: false,
       },
       {
-        text: '<code>fullScreen()</code>',
+        text: 'fullScreen()',
         correct: false,
       },
       {
-        text: '<code>viewScreen()</code>',
+        text: 'viewScreen()',
         correct: false,
       },
       {
-        text: '<code>applyFullscreen()</code>',
+        text: 'applyFullscreen()',
         correct: false,
       },
     ],

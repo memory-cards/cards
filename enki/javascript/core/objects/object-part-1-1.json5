@@ -14,19 +14,19 @@
     question: '<p>Which line adds a new property to an object that looks like this:</p>\n<pre><code>var per = {\n  firstName = "John",\n  lastName = "Smith"\n};\n???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>per.age = 40;</code>',
+        text: 'per.age = 40;',
         correct: true,
       },
       {
-        text: '<code>var per.age = 40;</code>',
+        text: 'var per.age = 40;',
         correct: false,
       },
       {
-        text: '<code>per[age] = 40;</code>',
+        text: 'per[age] = 40;',
         correct: false,
       },
       {
-        text: '<code>per.addNewProperty(age,40);</code>',
+        text: 'per.addNewProperty(age,40);',
         correct: false,
       },
     ],

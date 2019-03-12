@@ -19,25 +19,25 @@
     question: '<p>Complete the following JS code snippet where co is used to yield a promise: </p>\n<pre><code class="language-javascript">???(function *() {\n   var result = ??? Promise.resolve(true);\n}).catch(onerror);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>co</code>',
+        text: 'co',
       },
       {
-        text: '<code>yield</code>',
+        text: 'yield',
       },
       {
-        text: '<code>run</code>',
+        text: 'run',
       },
       {
-        text: '<code>do</code>',
+        text: 'do',
       },
       {
-        text: '<code>const</code>',
+        text: 'const',
       },
       {
-        text: '<code>argv</code>',
+        text: 'argv',
       },
       {
-        text: '<code>env</code>',
+        text: 'env',
       },
     ],
     comment: "<p><em>co</em> is a <strong>flow control program</strong>, which uses <strong>generators</strong> and <strong>promises</strong>. Use it to write non-blocking code more cleanly. It can be used in the browser and with Node.javascript.</p>\n<p>An example of <em>co</em>:</p>\n<pre><code>co(function *(){\n  // yield any promise \n  var result = yield Promise.resolve(true);\n}).catch(onerror);\n \nco(function *(){\n  // resolve multiple promises in parallel \n  var a = Promise.resolve(1);\n  var b = Promise.resolve(2);\n  var all = yield [a, b];\n  console.log(all);\n  // => [1, 2] \n}).catch(onerror);\n</code></pre>\n<p><code>co()</code> can <code>yield</code> promises, 'thunks', arrays, objects, generators and generator functions.</p>\n<p><code>co()</code> can be used for parallel execution and delegation.</p>\n<p><em>co</em> version 4 returns a promise, similar to ES7 async/await, but with better parallelism capabilites than its previous versions (i.e. you can yield an array of promises and <em>co</em> will handle the parallelism).</p>\n",

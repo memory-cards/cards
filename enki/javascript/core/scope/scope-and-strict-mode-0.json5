@@ -22,11 +22,11 @@
         correct: true,
       },
       {
-        text: '<code>non-strict</code>',
+        text: 'non-strict',
         correct: false,
       },
       {
-        text: '<code>strict</code>',
+        text: 'strict',
         correct: false,
       },
     ],

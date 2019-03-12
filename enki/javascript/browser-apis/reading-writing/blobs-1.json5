@@ -13,23 +13,23 @@
     question: '<p>What method should be used to create a subset of a blob?</p>\n<pre><code class="language-javascript">var blob = instanceOfBlob.???([\n start, [, end [, contentType]]\n]);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>slice</code>',
+        text: 'slice',
         correct: true,
       },
       {
-        text: '<code>subset</code>',
+        text: 'subset',
         correct: false,
       },
       {
-        text: '<code>splice</code>',
+        text: 'splice',
         correct: false,
       },
       {
-        text: '<code>concat</code>',
+        text: 'concat',
         correct: false,
       },
       {
-        text: '<code>stringify</code>',
+        text: 'stringify',
         correct: false,
       },
     ],

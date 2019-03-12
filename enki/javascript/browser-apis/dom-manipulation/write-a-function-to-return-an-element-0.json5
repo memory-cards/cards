@@ -13,22 +13,22 @@
     question: '<p>Fill in the blanks to create a function that returns an element.</p>\n<pre><code class="language-javascript">function initializeElement() {\n  var paragraph = document.???(\'p\')\n  return ???\n}\n</code></pre>\n',
     answers: [
       {
-        text: '<code>createElement</code>',
+        text: 'createElement',
       },
       {
-        text: '<code>paragraph</code>',
+        text: 'paragraph',
       },
       {
-        text: '<code>makeElement</code>',
+        text: 'makeElement',
       },
       {
-        text: '<code>document</code>',
+        text: 'document',
       },
       {
-        text: '<code>function</code>',
+        text: 'function',
       },
       {
-        text: '<code>element</code>',
+        text: 'element',
       },
     ],
     comment: "<p>Let's say we need to create elements quite often within our code, then we should write a function that creates and returns an element:</p>\n<pre><code class=\"language-javascript\">function initializeElement() {\n  var heading = document\n    .createElement('h1')\n  return heading\n}\n</code></pre>\n<p>We can make our functions more useful by adding some parameters that can change the text inside, and even the type of element itself:</p>\n<pre><code class=\"language-javascript\">function initializeElement(element, text) {\n  var newElement = document\n    .createElement(element)\n  newElement\n    .appendChild(\n      document\n      .createTextNode(text)\n    )\n  return newElement\n}\ncreateElement(\n  'h1',\n  'hello world'\n)\n</code></pre>\n<p>In the example above we create an h1 element that says hello world.</p>\n",

@@ -13,19 +13,19 @@
     question: "<p>Which FileReader's function is called after <code>readAsDataURL()</code> is completed?</p>\n<p>???</p>\n",
     answers: [
       {
-        text: '<code>onload</code>',
+        text: 'onload',
         correct: true,
       },
       {
-        text: '<code>onend</code>',
+        text: 'onend',
         correct: false,
       },
       {
-        text: '<code>oncomplete</code>',
+        text: 'oncomplete',
         correct: false,
       },
       {
-        text: '<code>readAsDataURL</code>',
+        text: 'readAsDataURL',
         correct: false,
       },
     ],

@@ -16,25 +16,25 @@
         text: 'attributes for the <code><h1></code> element',
       },
       {
-        text: '<code>...props</code>',
+        text: '...props',
       },
       {
-        text: '<code>{text}</code>',
+        text: '{text}',
       },
       {
-        text: '<code>props</code>',
+        text: 'props',
       },
       {
-        text: '<code>{props}</code>',
+        text: '{props}',
       },
       {
-        text: '<code>text</code>',
+        text: 'text',
       },
       {
-        text: '<code>this.props.text</code>',
+        text: 'this.props.text',
       },
       {
-        text: '<code>props.text</code>',
+        text: 'props.text',
       },
     ],
     comment: '<p>The <strong>destructuring assignment</strong> syntax, introduced in <code>ES6</code>, is used to extract data from either <em>arrays</em> or <em>objects</em> in distinct variables.</p>\n<p>Basic assignment:</p>\n<pre><code class="language-jsx">const obj = {x: 13, y: 42};\nconst {x, y} = obj;\n\nconsole.log(x); //13\nconsole.log(y); //42\n</code></pre>\n<p>Using this, you can easily extract <code>props</code> from a <strong>functional component</strong>:</p>\n<pre><code class="language-jsx">function Display({text}) {\n  return &#x3C;p>{text}&#x3C;/p>;\n}\n// is equivalent to:\nfunction Display(props) {\n  return &#x3C;p>{props.text}&#x3C;/p>;\n}\n</code></pre>\n<p>Additionally, you can use the <strong>JSX spread attributes</strong> to forward <strong>DOM</strong> <code>props</code> to your component:</p>\n<pre><code class="language-jsx">function Display({text, ...props}) {\n  return &#x3C;p {...props}>{text}&#x3C;/p>;\n}\n</code></pre>\n',

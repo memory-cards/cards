@@ -17,23 +17,23 @@
         correct: true,
       },
       {
-        text: '<code>key</code>',
+        text: 'key',
         correct: false,
       },
       {
-        text: '<code>index</code>',
+        text: 'index',
         correct: false,
       },
       {
-        text: '<code>i</code>',
+        text: 'i',
         correct: false,
       },
       {
-        text: '<code>identity</code>',
+        text: 'identity',
         correct: false,
       },
       {
-        text: '<code>ref</code>',
+        text: 'ref',
         correct: false,
       },
     ],

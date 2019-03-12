@@ -14,19 +14,19 @@
     question: '<p>What will the following code output?</p>\n<pre><code class="language-javascript">console.log(0 == "");\nconsole.log("\\n" == 0);\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>true true</code>',
+        text: 'true true',
         correct: true,
       },
       {
-        text: '<code>true false</code>',
+        text: 'true false',
         correct: false,
       },
       {
-        text: '<code>false true</code>',
+        text: 'false true',
         correct: false,
       },
       {
-        text: '<code>false false</code>',
+        text: 'false false',
         correct: false,
       },
     ],

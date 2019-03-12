@@ -19,11 +19,11 @@
         correct: true,
       },
       {
-        text: '<code>bind()</code>',
+        text: 'bind()',
         correct: false,
       },
       {
-        text: '<code>push()</code>',
+        text: 'push()',
         correct: false,
       },
       {
@@ -31,11 +31,11 @@
         correct: false,
       },
       {
-        text: '<code>return</code>',
+        text: 'return',
         correct: false,
       },
       {
-        text: '<code>new</code>',
+        text: 'new',
         correct: false,
       },
     ],

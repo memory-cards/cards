@@ -14,15 +14,15 @@
     question: '<p>What is the output of the following code snippet?</p>\n<pre><code class="language-javascript">var obj = { one: 1 }\nobj.one = undefined;\nconsole.log(obj);\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>{ one: undefined }</code>',
+        text: '{ one: undefined }',
         correct: true,
       },
       {
-        text: '<code>{ one: null }</code>',
+        text: '{ one: null }',
         correct: false,
       },
       {
-        text: '<code>{ }</code>',
+        text: '{ }',
         correct: false,
       },
     ],

@@ -13,28 +13,28 @@
     question: '<p>Retrieve the data from local storage:</p>\n<pre><code class="language-javascript">var localData = ???\n               .???("data");\n</code></pre>\n',
     answers: [
       {
-        text: '<code>localStorage</code>',
+        text: 'localStorage',
       },
       {
-        text: '<code>getItem</code>',
+        text: 'getItem',
       },
       {
-        text: '<code>local</code>',
+        text: 'local',
       },
       {
-        text: '<code>storage</code>',
+        text: 'storage',
       },
       {
-        text: '<code>localStore</code>',
+        text: 'localStore',
       },
       {
-        text: '<code>Window.localStorage</code>',
+        text: 'Window.localStorage',
       },
       {
-        text: '<code>get</code>',
+        text: 'get',
       },
       {
-        text: '<code>item</code>',
+        text: 'item',
       },
     ],
     comment: '<p><em><code>localStorage</code></em> is a storage object used to store data in without an expiry date. A local storage object can be accessed to add (store), access, and remove data. Data stored in <em><code>localStorage</code></em> will remain there once the current browsing session ends and the browser has been closed.</p>\n<p>To create an item in local storage, pass in the item key and the item value:</p>\n<pre><code class="language-javascript">localStorage.setItem(\'country\', \'England\');\n</code></pre>\n<p>Retrieving data from local storage:</p>\n<pre><code class="language-javascript">var localData =   \n    localStorage.getItem("country");\nconsole.log(localData); // prints \'England\'\n</code></pre>\n<p>Removing an item and clearing all data from local storage:</p>\n<pre><code class="language-javascript">localStorage.removeItem(\'country\');\nlocalStorage.clear();\n</code></pre>\n<p>If more websites try to store data with the same key, the old values will be overwritten.</p>\n',

@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">// ES5\nmyList.filter(function(x) {\n    return x > 2;\n})\n// ES6 equivalent:  \nmyList.filter(???)\n</code></pre>\n<p>%exp\nES6 *<em>arrow function</em>\n%</p>\n',
     answers: [
       {
-        text: '<code>x => x > 2</code>',
+        text: 'x => x > 2',
         correct: true,
       },
       {
-        text: '<code>x => return x > 2</code>',
+        text: 'x => return x > 2',
         correct: false,
       },
       {
-        text: '<code>x => {x > 2}</code>',
+        text: 'x => {x > 2}',
         correct: false,
       },
       {

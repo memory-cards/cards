@@ -13,27 +13,27 @@
     question: '<p>What method is used to invoke a function on every immediate child within children, and returns an array? ???</p>\n',
     answers: [
       {
-        text: '<code>map</code>',
+        text: 'map',
         correct: true,
       },
       {
-        text: '<code>forEach</code>',
+        text: 'forEach',
         correct: false,
       },
       {
-        text: '<code>fn</code>',
+        text: 'fn',
         correct: false,
       },
       {
-        text: '<code>count</code>',
+        text: 'count',
         correct: false,
       },
       {
-        text: '<code>only</code>',
+        text: 'only',
         correct: false,
       },
       {
-        text: '<code>toArray</code>',
+        text: 'toArray',
         correct: false,
       },
     ],

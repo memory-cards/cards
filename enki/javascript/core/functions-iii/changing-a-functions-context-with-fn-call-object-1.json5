@@ -13,16 +13,16 @@
     question: '<p>Using the .???() method will change the ??? context of a JavaScript function call</p>\n',
     answers: [
       {
-        text: '<code>call</code>',
+        text: 'call',
       },
       {
-        text: '<code>this</code>',
+        text: 'this',
       },
       {
-        text: '<code>context</code>',
+        text: 'context',
       },
       {
-        text: '<code>scope</code>',
+        text: 'scope',
       },
     ],
     comment: '<p><code>fn.call()</code> allows you to call a function and provide an alternative value for the functions <em>this</em> context.</p>\n<p>The first argument <code>fn.call()</code> accepts is the alternative <em>this</em> context and any following arguments are passed as parameters. </p>\n<p>The code below defines a <em>discount</em> of <em>10</em> that will be retrieved within <em>getDiscount</em> via a call to <code>this.discount</code>:</p>\n<pre><code class="language-javascript">var discountCalc= {\n    discount: 10,\n    getDiscount: function(input){\n      return this.discount + input;\n    }\n}\n\ndiscountCalc.getDiscount(1); //11\n</code></pre>\n<p>Imagine we want to supply a bigger discount. </p>\n<p>We can use <code>fn.call</code> to override discountCalculators <em>discount</em> by supplying an alternative <em>this</em> context:</p>\n<pre><code>discountCalc\n.getDiscount\n.call({discount: 100},1); //101\n</code></pre>\n',

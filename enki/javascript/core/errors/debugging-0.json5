@@ -15,19 +15,19 @@
     question: '<p>What statement will make the debugger stop at its line?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>debugger;</code>',
+        text: 'debugger;',
         correct: true,
       },
       {
-        text: '<code>stop;</code>',
+        text: 'stop;',
         correct: false,
       },
       {
-        text: '<code>break;</code>',
+        text: 'break;',
         correct: false,
       },
       {
-        text: '<code>debug;</code>',
+        text: 'debug;',
         correct: false,
       },
     ],

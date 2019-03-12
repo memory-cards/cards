@@ -14,19 +14,19 @@
     question: '<p>Which of the following is the correct method for outputting information to the console? ???</p>\n',
     answers: [
       {
-        text: '<code>console.log();</code>',
+        text: 'console.log();',
         correct: true,
       },
       {
-        text: '<code>console.write();</code>',
+        text: 'console.write();',
         correct: false,
       },
       {
-        text: '<code>console.print();</code>',
+        text: 'console.print();',
         correct: false,
       },
       {
-        text: '<code>console.println();</code>',
+        text: 'console.println();',
         correct: false,
       },
     ],

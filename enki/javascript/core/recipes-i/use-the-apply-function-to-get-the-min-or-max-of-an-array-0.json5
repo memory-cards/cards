@@ -13,19 +13,19 @@
     question: '<p>What is the return value of the following line?</p>\n<pre><code class="language-javascript">Math.max.apply(null, [5,8,2]);\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '<code>8</code>',
+        text: '8',
         correct: true,
       },
       {
-        text: '<code>NaN</code>',
+        text: 'NaN',
         correct: false,
       },
       {
-        text: '<code>-Infinity</code>',
+        text: '-Infinity',
         correct: false,
       },
       {
-        text: '<code>5</code>',
+        text: '5',
         correct: false,
       },
     ],

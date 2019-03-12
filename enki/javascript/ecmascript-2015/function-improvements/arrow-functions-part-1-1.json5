@@ -16,23 +16,23 @@
     question: '<p>Filter out all of the odd numbers,\nsuch that only even numbers are present\nin the array.</p>\n<pre><code>var integers = [1,2,3,4,5,6,7,8,9];\n\nintegers.filter(???);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>(n) => {return n % 2 == 0}</code>',
+        text: '(n) => {return n % 2 == 0}',
         correct: true,
       },
       {
-        text: '<code>n => {n % 2 === 0}</code>',
+        text: 'n => {n % 2 === 0}',
         correct: false,
       },
       {
-        text: '<code>n => n % 2 !== 0</code>',
+        text: 'n => n % 2 !== 0',
         correct: false,
       },
       {
-        text: '<code>{n} => {n % 2 != 0}</code>',
+        text: '{n} => {n % 2 != 0}',
         correct: false,
       },
       {
-        text: '<code>n => [return n % 2 === 0]</code>',
+        text: 'n => [return n % 2 === 0]',
         correct: false,
       },
     ],

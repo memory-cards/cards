@@ -19,16 +19,16 @@
         text: "<code>'p'</code>",
       },
       {
-        text: '<code>null</code>',
+        text: 'null',
       },
       {
         text: "<code>'<3 JSX'</code>",
       },
       {
-        text: '<code><p></code>',
+        text: '<p>',
       },
       {
-        text: '<code>jsx</code>',
+        text: 'jsx',
       },
       {
         text: "<code>'<p><3 JSX</p>'</code>",

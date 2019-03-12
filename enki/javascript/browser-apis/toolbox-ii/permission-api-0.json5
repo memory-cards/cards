@@ -13,27 +13,27 @@
     question: '<p>How do you check the status of a permission? ???</p>\n',
     answers: [
       {
-        text: '<code>permissions.query();</code>',
+        text: 'permissions.query();',
         correct: true,
       },
       {
-        text: '<code>permissions.status();</code>',
+        text: 'permissions.status();',
         correct: false,
       },
       {
-        text: '<code>permissions.log();</code>',
+        text: 'permissions.log();',
         correct: false,
       },
       {
-        text: '<code>permission.status();</code>',
+        text: 'permission.status();',
         correct: false,
       },
       {
-        text: '<code>permission.log();</code>',
+        text: 'permission.log();',
         correct: false,
       },
       {
-        text: '<code>permission.query();</code>',
+        text: 'permission.query();',
         correct: false,
       },
     ],

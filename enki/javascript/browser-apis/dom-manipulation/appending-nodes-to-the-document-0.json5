@@ -13,23 +13,23 @@
     question: '<p>After creating an element, which method is used to add the element to the HTML document?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>appendChild</code>',
+        text: 'appendChild',
         correct: true,
       },
       {
-        text: '<code>createElement</code>',
+        text: 'createElement',
         correct: false,
       },
       {
-        text: '<code>appendElement</code>',
+        text: 'appendElement',
         correct: false,
       },
       {
-        text: '<code>createTextNode</code>',
+        text: 'createTextNode',
         correct: false,
       },
       {
-        text: '<code>appendNode</code>',
+        text: 'appendNode',
         correct: false,
       },
     ],

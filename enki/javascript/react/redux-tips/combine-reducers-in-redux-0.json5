@@ -13,15 +13,15 @@
     question: '<p>Once the <code>combineReducers()</code> function has transformed an object with different reducer functions into a single reducer function, where is it then passed to? ???</p>\n',
     answers: [
       {
-        text: '<code>createStore()</code>',
+        text: 'createStore()',
         correct: true,
       },
       {
-        text: '<code>createReducer()</code>',
+        text: 'createReducer()',
         correct: false,
       },
       {
-        text: '<code>createObject()</code>',
+        text: 'createObject()',
         correct: false,
       },
     ],

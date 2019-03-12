@@ -13,11 +13,11 @@
     question: '<p>Are <code>WeakMap</code>s enumerable?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>yes</code>',
+        text: 'yes',
         correct: true,
       },
       {
-        text: '<code>no</code>',
+        text: 'no',
         correct: false,
       },
     ],

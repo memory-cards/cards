@@ -13,27 +13,27 @@
     question: '<p>What will be rendered within the <code>div</code> with <code>id="main"</code>?</p>\n<pre><code class="language-jsx">function Exercise(props) {\n    return (\n    &#x3C;div id="main">\n        {props.children}\n    &#x3C;/div>\n    );\n}\n\nReactDOM.render(\n  &#x3C;Exercise>&#x3C;h1>Main&#x3C;/h1>&#x3C;/Exercise>,\n  document.getElementById(\'root\')\n);\n</code></pre>\n<p><code>???</code></p>\n',
     answers: [
       {
-        text: '<code><h1>Main</h1></code>',
+        text: '<h1>Main</h1>',
         correct: true,
       },
       {
-        text: '<code>nothing</code>',
+        text: 'nothing',
         correct: false,
       },
       {
-        text: '<code><p>Main</p></code>',
+        text: '<p>Main</p>',
         correct: false,
       },
       {
-        text: '<code>root</code>',
+        text: 'root',
         correct: false,
       },
       {
-        text: '<code>Exercise</code>',
+        text: 'Exercise',
         correct: false,
       },
       {
-        text: '<code><h2>Main</h2></code>',
+        text: '<h2>Main</h2>',
         correct: false,
       },
     ],

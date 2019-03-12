@@ -13,15 +13,15 @@
     question: '<pre><code class="language-javascript">var x = -7.394;\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nDouble tilde just removes any numbers after the decimal place, retaining any positive or negative.\n%</p>\n',
     answers: [
       {
-        text: '<code>-7</code>',
+        text: '-7',
         correct: true,
       },
       {
-        text: '<code>7</code>',
+        text: '7',
         correct: false,
       },
       {
-        text: '<code>-7.394</code>',
+        text: '-7.394',
         correct: false,
       },
     ],

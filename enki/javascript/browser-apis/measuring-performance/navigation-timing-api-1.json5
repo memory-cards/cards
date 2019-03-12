@@ -13,23 +13,23 @@
     question: '<p>Navigation API stores events as a propriety of which object?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>window.performance.timing</code>',
+        text: 'window.performance.timing',
         correct: true,
       },
       {
-        text: '<code>window.timing</code>',
+        text: 'window.timing',
         correct: false,
       },
       {
-        text: '<code>timing.loadEventEnd</code>',
+        text: 'timing.loadEventEnd',
         correct: false,
       },
       {
-        text: '<code>timing.navigationStart</code>',
+        text: 'timing.navigationStart',
         correct: false,
       },
       {
-        text: '<code>window.performance.navigation</code>',
+        text: 'window.performance.navigation',
         correct: false,
       },
     ],

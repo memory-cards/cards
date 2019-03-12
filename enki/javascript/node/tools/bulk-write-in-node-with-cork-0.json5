@@ -15,15 +15,15 @@
     question: '<p>Which two API calls can be used to specify a range of where bulk writes will occur?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>cork()</code> and <code>uncork()</code>',
+        text: 'cork()</code> and <code>uncork()',
         correct: true,
       },
       {
-        text: '<code>write()</code> and <code>end()</code>',
+        text: 'write()</code> and <code>end()',
         correct: false,
       },
       {
-        text: '<code>writable()</code> and <code>unwritable()</code>',
+        text: 'writable()</code> and <code>unwritable()',
         correct: false,
       },
     ],

@@ -13,19 +13,19 @@
     question: '<p>Import <code>shallowCompare</code> into your React code:</p>\n<pre><code class="language-javascript">var shallowCompare = require(\'???\');\n</code></pre>\n',
     answers: [
       {
-        text: '<code>react-addons-shallow-compare</code>',
+        text: 'react-addons-shallow-compare',
         correct: true,
       },
       {
-        text: '<code>shallow-compare</code>',
+        text: 'shallow-compare',
         correct: false,
       },
       {
-        text: '<code>s-compare</code>',
+        text: 's-compare',
         correct: false,
       },
       {
-        text: '<code>shallowcompare</code>',
+        text: 'shallowcompare',
         correct: false,
       },
     ],

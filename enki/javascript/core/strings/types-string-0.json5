@@ -14,27 +14,27 @@
     question: '<p>What special character is used to add a <code>new line</code> to strings?</p>\n<pre><code class="language-javascript">var myString = \'this will ???\n       be displayed on two lines\';\n</code></pre>\n',
     answers: [
       {
-        text: '<code>\\n</code>',
+        text: '\\n',
         correct: true,
       },
       {
-        text: '<code>+</code>',
+        text: '+',
         correct: false,
       },
       {
-        text: '<code>"</code>',
+        text: '"',
         correct: false,
       },
       {
-        text: '<code>\\</code>',
+        text: '\\',
         correct: false,
       },
       {
-        text: '<code>\\r</code>',
+        text: '\\r',
         correct: false,
       },
       {
-        text: '<code>\\t</code>',
+        text: '\\t',
         correct: false,
       },
     ],

@@ -15,23 +15,23 @@
     question: '<p>What does the following code snippet output? ???</p>\n<pre><code class="language-javascript">console.log(3 - false);\nconsole.log(3 + false);\nconsole.log(3 + true);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>3, 3, 4</code>',
+        text: '3, 3, 4',
         correct: true,
       },
       {
-        text: '<code>2, 4, 3</code>',
+        text: '2, 4, 3',
         correct: false,
       },
       {
-        text: '<code>3, 3, 3</code>',
+        text: '3, 3, 3',
         correct: false,
       },
       {
-        text: '<code>4, 2, 3</code>',
+        text: '4, 2, 3',
         correct: false,
       },
       {
-        text: '<code>2, 4, 4</code>',
+        text: '2, 4, 4',
         correct: false,
       },
     ],

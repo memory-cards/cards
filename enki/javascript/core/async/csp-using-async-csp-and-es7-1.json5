@@ -30,11 +30,11 @@
         correct: false,
       },
       {
-        text: '<code>put()</code>',
+        text: 'put()',
         correct: false,
       },
       {
-        text: '<code>take()</code>',
+        text: 'take()',
         correct: false,
       },
       {

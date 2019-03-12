@@ -13,19 +13,19 @@
     question: "<p>What method is used to get the base-10 numeric representation of a code point at a given position in a string?</p>\n<pre><code>for (let codePoint of '🌲🌲') {\n  console.log(codePoint.???(0));\n}\n</code></pre>\n",
     answers: [
       {
-        text: '<code>codePointAt</code>',
+        text: 'codePointAt',
         correct: true,
       },
       {
-        text: '<code>codePoint</code>',
+        text: 'codePoint',
         correct: false,
       },
       {
-        text: '<code>codePointRep</code>',
+        text: 'codePointRep',
         correct: false,
       },
       {
-        text: '<code>base10point</code>',
+        text: 'base10point',
         correct: false,
       },
     ],

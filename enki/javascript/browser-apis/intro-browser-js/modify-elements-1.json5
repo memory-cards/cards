@@ -13,15 +13,15 @@
     question: '<p>Change each element with the classname "red" to have a red text color.</p>\n<pre><code class="language-html">&#x3C;p>\n  Hello World!\n&#x3C;/p>\n&#x3C;p class="red">\n  This should be red\n&#x3C;/p>\n&#x3C;p>\n  This is not red\n&#x3C;/p>\n&#x3C;p class="red">\n  This should be red\n&#x3C;/p>\n&#x3C;p>\n  This is not red\n&#x3C;/p>\n&#x3C;p class="red">\n  This should be red\n&#x3C;/p>\n\n&#x3C;script>\nvar redTags = document.???("red");\n//start the loop\nfor (\n  var i = 0;\n  i &#x3C; redTags.length;\n  i++\n) {\n  redTags[i].style.color = \'red\';\n}\n&#x3C;/script>\n</code></pre>\n',
     answers: [
       {
-        text: '<code>getElementsByClassName</code>',
+        text: 'getElementsByClassName',
         correct: true,
       },
       {
-        text: '<code>getElementsByTagName</code>',
+        text: 'getElementsByTagName',
         correct: false,
       },
       {
-        text: '<code>getElementById</code>',
+        text: 'getElementById',
         correct: false,
       },
     ],

@@ -13,11 +13,11 @@
     question: '<p>Complete the code snippet below as to get the result commented:</p>\n<pre><code class="language-javascript">var pi = 3.141592;\nconsole.log(pi.???(2));\n// 3.14\n</code></pre>\n',
     answers: [
       {
-        text: '<code>toFixed</code>',
+        text: 'toFixed',
         correct: true,
       },
       {
-        text: '<code>toPrecision</code>',
+        text: 'toPrecision',
         correct: false,
       },
     ],

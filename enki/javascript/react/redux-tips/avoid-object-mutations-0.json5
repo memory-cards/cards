@@ -16,22 +16,22 @@
         text: 'method can be used to create a new object, but with additional properties in a **pure** fashion:',
       },
       {
-        text: '<code>Object</code>',
+        text: 'Object',
       },
       {
-        text: '<code>assign</code>',
+        text: 'assign',
       },
       {
-        text: '<code>...</code>',
+        text: '...',
       },
       {
-        text: '<code>clone</code>',
+        text: 'clone',
       },
       {
-        text: '<code>add</code>',
+        text: 'add',
       },
       {
-        text: '<code>myObject</code>',
+        text: 'myObject',
       },
     ],
     comment: '<p>A <strong>pure</strong> function that returns a new object with the needed modifications can easily be implemented in <strong>Redux</strong>. However, if other properties are added later on to the object, you might need to update several pieces of your code.</p>\n<p>To avoid this, the <code>Object.assign()</code> method introduced in <strong>ES6</strong> can be used because it returns a new object with all enumerable properties of the <em>source</em> object:</p>\n<pre><code class="language-javascript">return Object.assign({}, myObj, {\n  myProperty: newValue\n});\n</code></pre>\n<p>The first argument of this function, <code>{ }</code>, is the one whose properties are going to be assigned. As we want to keep our function <strong>pure</strong> we pass an empty <code>Object</code>. The others represent objects whose properties are going to be copied. If there are two objects that have different values for the same property, the last one wins.</p>\n<p>Another approach to this problem is to use the new <strong>spread operator</strong>(<code>...</code>) available in <strong>Babel</strong> stage two preset:</p>\n<pre><code class="language-javascript">return {\n  ...myObj,\n  myProperty: newValue };\n</code></pre>\n',

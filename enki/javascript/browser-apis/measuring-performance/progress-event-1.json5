@@ -13,15 +13,15 @@
     question: '<p>Which following property of <code>ProgressEvent</code> returns a boolean?</p>\n<p>1) <code>ProgressEvent.loaded</code></p>\n<p>2) <code>ProgressEvent.lengthComputable</code></p>\n<p>3) <code>ProgressEvent.total</code></p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>2</code>',
+        text: '2',
         correct: true,
       },
       {
-        text: '<code>1</code>',
+        text: '1',
         correct: false,
       },
       {
-        text: '<code>3</code>',
+        text: '3',
         correct: false,
       },
     ],

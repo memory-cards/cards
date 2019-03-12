@@ -13,19 +13,19 @@
     question: '<p>What method would you use to parse the following string so that it doesn\'t return <code>NaN</code>:</p>\n<pre><code>???("0.2", 10);\n</code></pre>\n',
     answers: [
       {
-        text: '<code>parseFloat</code>',
+        text: 'parseFloat',
         correct: true,
       },
       {
-        text: '<code>parseInt</code>',
+        text: 'parseInt',
         correct: false,
       },
       {
-        text: '<code>parseString</code>',
+        text: 'parseString',
         correct: false,
       },
       {
-        text: '<code>parseDouble</code>',
+        text: 'parseDouble',
         correct: false,
       },
     ],
