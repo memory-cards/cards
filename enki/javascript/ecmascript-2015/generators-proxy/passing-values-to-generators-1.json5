@@ -13,13 +13,13 @@
     question: '<p>What happens when you pass a value to the <code>next</code> call of a generator?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'it is assigned to the result of the `yield` statement',
+        text: 'it is assigned to the result of the yield statement',
       },
       {
         text: 'nothing',
       },
       {
-        text: 'it instantly returns an object of the form `{value: input, done: false}`',
+        text: 'it instantly returns an object of the form {value: input, done: false}',
       },
       {
         text: 'it will throw an error',

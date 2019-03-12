@@ -20,13 +20,13 @@
         text: 'Backticks (`)',
       },
       {
-        text: "Single quotes (`'`)",
+        text: "Single quotes (')",
       },
       {
-        text: 'Double quotes (`"`)',
+        text: 'Double quotes (")',
       },
       {
-        text: 'Backslash (`\\`)',
+        text: 'Backslash (\\)',
       },
     ],
     comment: '<p>For readability, it may be preferable to write strings over multiple lines:</p>\n<pre><code class="language-javascript">var stringOfHTML = "&#x3C;div>\n  This is a bad example.\n&#x3C;/div>";\n</code></pre>\n<p>However, this will cause an error. </p>\n<p>To preserve both readability and functionality, use string concatenation:</p>\n<pre><code class="language-javascript">var stringOfHTML = \'&#x3C;div>\' +\n  \'  This is a better example.\' +\n\'&#x3C;/div>\';\n</code></pre>\n<p>Or, ES2015 makes it possible to use backticks, in this form:</p>\n<pre><code>var stringOfHTML = `This is a \nmulti-line\nstring in ES6!`;\n</code></pre>\n',

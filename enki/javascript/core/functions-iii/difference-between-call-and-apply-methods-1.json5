@@ -15,10 +15,10 @@
     question: '<p>What must be used so explicit arguments are required?</p>\n<pre><code class="language-javascript">function.???(obj, 1, 2, 3);\n</code></pre>\n',
     answers: [
       {
-        text: '`call`',
+        text: 'call',
       },
       {
-        text: '`apply`',
+        text: 'apply',
       },
     ],
     comment: '<p>The main difference between the two methods is the way they handle arguments.</p>\n<p><code>.call</code> method requires explicit parameters while <code>.apply</code> lets you invoke the method using an array as argument.</p>\n<p><strong>Example</strong></p>\n<pre><code class="language-javascript">function.call(obj, 1, 2, 3);\nfunction.apply(obj, [1, 2, 3]);\n</code></pre>\n',

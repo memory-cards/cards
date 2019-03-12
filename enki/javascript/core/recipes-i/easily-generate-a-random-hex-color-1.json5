@@ -13,22 +13,22 @@
     question: '<p>Create a random <code>hex</code> color:</p>\n<pre><code class="language-javascript">\'#\' + ???.???()\n         .toString(16)\n         .substr(-6);\n</code></pre>\n',
     answers: [
       {
-        text: '`Math`',
+        text: 'Math',
       },
       {
-        text: '`random`',
+        text: 'random',
       },
       {
-        text: '`hex`',
+        text: 'hex',
       },
       {
-        text: '`Number`',
+        text: 'Number',
       },
       {
-        text: '`int`',
+        text: 'int',
       },
       {
-        text: '`Hex`',
+        text: 'Hex',
       },
     ],
     comment: '<p>You can easily generate a string containing a random <code>HEX</code> color :</p>\n<pre><code class="language-javascript">\'#\' + Math.random().toString(16)\n                   .substr(-6);\n</code></pre>\n<p>Hex colors start with the <code>"#"</code> keyword, followed by a sequence of 6 characters ranging from <strong>0</strong> to <strong>9</strong>, <strong>A</strong> to <strong>F</strong>. </p>\n<p><code>Math.random().toString(16)</code> will generate a random number between 0 and 1 converted to hexadecimal. Calling <code>substr(-6)</code> on this will return the last 6 characters of the number.</p>\n',

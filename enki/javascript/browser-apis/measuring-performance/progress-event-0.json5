@@ -13,13 +13,13 @@
     question: '<p>Which following property of <code>ProgressEvent</code> shows the amount of work already done by the underlying process?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '`ProgressEvent.loaded;`',
+        text: 'ProgressEvent.loaded;',
       },
       {
-        text: '`ProgressEvent.lengthComputable;`',
+        text: 'ProgressEvent.lengthComputable;',
       },
       {
-        text: '`ProgressEvent.total;`',
+        text: 'ProgressEvent.total;',
       },
     ],
     comment: '<p>The <em><code>ProgressEvent</code></em> interface is used to represent events which measure the progress of underlying processes taking place in the API. For example, an HTTP request or loading an underlying resource such as <em><img></em>.</p>\n<p><em>ProgressEvent Properties:</em></p>\n<pre><code class="language-javascript">ProgressEvent.lengthComputable;\n</code></pre>\n<p>Is a boolean flag returning whether the progress made on the work to be completed is measurable.</p>\n<pre><code class="language-javascript">ProgressEvent.loaded;\n</code></pre>\n<p>Is an unsigned long showing the amount of work already done by the underlying process.</p>\n<pre><code class="language-javascript">ProgressEvent.total;\n</code></pre>\n<p>Is an unsigned long showing the amount of work the underlying process is currently performing.</p>\n<p>A usage example, measuring the progress of an <em><code>XMLHttpRequest</code></em>.</p>\n<pre><code class="language-javascript">// progress on transfers - server to client\nfunction updateProgress (oEvent) {\n  if (oEvent.lengthComputable) {\n    var percentDone = oEvent.loaded /\n                          oEvent.total;\n    // ...\n  } else {\n    /* Unable to compute progress\n     as size unknown */\n  }\n}\n</code></pre>\n',

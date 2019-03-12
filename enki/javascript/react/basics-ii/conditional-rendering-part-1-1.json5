@@ -16,13 +16,13 @@
         text: 'use for **conditional rendering**?',
       },
       {
-        text: 'standard `JS` - `if`s and ternary operators',
+        text: 'standard JS` - `ifs and ternary operators',
       },
       {
-        text: 'the `renderIf` special method',
+        text: 'the renderIf special method',
       },
       {
-        text: 'the `renderIfElse` special method',
+        text: 'the renderIfElse special method',
       },
       {
         text: "you can't conditional render in **React**",

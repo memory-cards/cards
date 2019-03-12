@@ -18,7 +18,7 @@
     question: '<p>How is method chaining typically enabled?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'Implementing methods that return `this`',
+        text: 'Implementing methods that return this',
       },
       {
         text: 'No need for implementation',

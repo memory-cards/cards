@@ -16,7 +16,7 @@
     question: '<p>What is the main difference between how npm2 and npm3 handles dependencies?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '`node_modules` structure depends on the declaration order',
+        text: 'node_modules structure depends on the declaration order',
       },
       {
         text: 'dependencies are always updated to their latest version',

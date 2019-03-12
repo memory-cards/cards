@@ -25,7 +25,7 @@
         text: 'exec',
       },
       {
-        text: 'object (assigned to `noise` variable).',
+        text: 'object (assigned to noise variable).',
       },
     ],
     comment: "<p>Freshen up you knowledge on <code>iterators</code>, <code>for of</code> loops and the <code>spread operator</code> with this exercise.\nThe goal is to fill in the gaps with either the output of the snippet or the missing bit that won't throw any errors.</p>\n",

@@ -13,13 +13,13 @@
     question: '<pre><code class="language-javascript">// ES5:\nvar y  = timeObject.year;\n// ES6 equivalent:\nvar ??? = timeObject\n</code></pre>\n<p>%exp\nBy using <strong>destructuring assignment</strong>, y is assigned the value of <code>timeObject</code>\'s property <code>year</code>.\n%</p>\n',
     answers: [
       {
-        text: '`{year:y} `',
+        text: '{year:y} ',
       },
       {
-        text: '`{y:year} `',
+        text: '{y:year} ',
       },
       {
-        text: '`{y.year}`',
+        text: '{y.year}',
       },
     ],
     comment: '<p>Hello, traveler.</p>\n<p>You will attempt to accurately fill the gaps in the code snippets to recreate ES5 compatible code using the new features of ES6.</p>\n<p>Best of luck. We will be watching you.</p>\n',

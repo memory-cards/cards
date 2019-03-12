@@ -14,13 +14,13 @@
     question: '<p>What will this print?</p>\n<pre><code class="language-javascript">var x = 0/0;\nconsole.log(x);\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '`NaN`',
+        text: 'NaN',
       },
       {
-        text: '`undefined`',
+        text: 'undefined',
       },
       {
-        text: '`null`',
+        text: 'null',
       },
     ],
     comment: '<p>In JavaScript, a variable that has been declared but not yet defined is of the type <code>undefined</code>:</p>\n<pre><code>var Enki;\nconsole.log(Enki);\n// undefined\n</code></pre>\n<p>In contrast, a variable can be assigned the value <code>null</code>. In which case it is considered <em>defined</em> (even though to nothing):</p>\n<pre><code>var Enki = null;\nconsole.log(Enki);\n// null\n</code></pre>\n<p><code>NaN</code> means <strong>Not-A-Number</strong> and is the result when Math functions fail or when a function expecting a number is given a different type:</p>\n<pre><code>var x = 0/0;\nconsole.log(x);\n// NaN\n</code></pre>\n',

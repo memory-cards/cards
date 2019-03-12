@@ -13,13 +13,13 @@
     question: '<p>Which function in the following JS code snippet is in the <em>tail position</em>? ???</p>\n<pre><code class="language-javascript">const env = () => foo() &#x26;&#x26; test();\n</code></pre>\n',
     answers: [
       {
-        text: '`test()`',
+        text: 'test()',
       },
       {
-        text: '`foo()`',
+        text: 'foo()',
       },
       {
-        text: '`env`',
+        text: 'env',
       },
       {
         text: 'None of them...',

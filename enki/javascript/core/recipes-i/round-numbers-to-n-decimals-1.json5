@@ -13,10 +13,10 @@
     question: '<p>Complete the code snippet below as to get the result commented:</p>\n<pre><code class="language-javascript">var pi = 3.141592;\nconsole.log(pi.???(2));\n// 3.14\n</code></pre>\n',
     answers: [
       {
-        text: '`toFixed`',
+        text: 'toFixed',
       },
       {
-        text: '`toPrecision`',
+        text: 'toPrecision',
       },
     ],
     comment: '<p>Two methods that can be useful in rounding numbers.</p>\n<ul>\n<li><code>toFixed(n)</code>: argument provides the length after the decimal point</li>\n<li><code>toPrecision(n)</code>: argument provides the total length of the number</li>\n</ul>\n<p>Use <code>toFixed</code>:</p>\n<pre><code class="language-javascript">var num = 2.44534;\nconsole.log(num.toFixed(3)); // 2.445\n</code></pre>\n<p>Use <code>toPrecision</code>:</p>\n<pre><code class="language-javascript">var num = 444.3245;\nconsole.log(num.toPrecision(5)); //444.32\n</code></pre>\n',

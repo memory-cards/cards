@@ -16,13 +16,13 @@
         text: 'be set in a component class?',
       },
       {
-        text: 'in `constructor(props)`',
+        text: 'in constructor(props)',
       },
       {
-        text: 'in `render()`',
+        text: 'in render()',
       },
       {
-        text: 'in `this.setState(initialState)`',
+        text: 'in this.setState(initialState)',
       },
       {
         text: 'anywhere in the component',

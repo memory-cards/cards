@@ -13,13 +13,13 @@
     question: '<p>Can a JavaScript object, exposing a <code>next</code> that return <code>{value, done}</code> be iterated with the <code>for..of</code> syntax? Why?</p>\n<pre><code class="language-javascript">const obj = {\n  next: () => {\n    value: 1,\n    done: true\n  }\n}\n\nfor (const y of obj) {\n  // ...\n}\n</code></pre>\n<p>???</p>\n',
     answers: [
       {
-        text: 'No, because it has no iteration protocol implemented via `Symbol.iterator`',
+        text: 'No, because it has no iteration protocol implemented via Symbol.iterator',
       },
       {
-        text: 'Yes, because it has the `next` function exposed',
+        text: 'Yes, because it has the next function exposed',
       },
       {
-        text: 'No, because `done` must be at least one time `false`',
+        text: 'No, because done` must be at least one time `false',
       },
       {
         text: 'Yes, because all objects are iterable by default',

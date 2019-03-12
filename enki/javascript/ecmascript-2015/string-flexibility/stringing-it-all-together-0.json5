@@ -16,13 +16,13 @@
         text: 'Make this',
       },
       {
-        text: '`${firstName} ${surname}`',
+        text: '${firstName} ${surname}',
       },
       {
-        text: '`"+firstName+" "+surname+"`',
+        text: '"+firstName+" "+surname+"',
       },
       {
-        text: '`#firstName + #surname`',
+        text: '#firstName + #surname',
       },
     ],
     comment: '<p>Do you know how to manipulate Strings in ES6?</p>\n',

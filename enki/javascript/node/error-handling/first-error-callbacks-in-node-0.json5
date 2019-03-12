@@ -15,31 +15,31 @@
     question: '<p>Implement a simple error-first callback function that will log the <code>err</code> if there is an error. Otherwise, it should log the data:</p>\n<pre><code class="language-javascript">doSomethingWithCallback(???(???, ???) {\n  ??? {\n    console.log(err)\n  } ??? {\n    console.???\n  }\n})\n</code></pre>\n',
     answers: [
       {
-        text: '`function`',
+        text: 'function',
       },
       {
-        text: '`err`',
+        text: 'err',
       },
       {
-        text: '`data`',
+        text: 'data',
       },
       {
-        text: '`if (err)`',
+        text: 'if (err)',
       },
       {
-        text: '`else`',
+        text: 'else',
       },
       {
-        text: '`log(data)`',
+        text: 'log(data)',
       },
       {
-        text: '`er`',
+        text: 'er',
       },
       {
-        text: '`myData`',
+        text: 'myData',
       },
       {
-        text: '`fn`',
+        text: 'fn',
       },
     ],
     comment: '<p>The <code>"error-first"</code> callback (also "errorback" or "err-back") has become the standard protocol for <strong>Node</strong> as to enable a balanced, non-blocking flow of control and processing power across applications and modules.</p>\n<p>The parameters of an error-first callback functions should look like:</p>\n<pre><code class="language-javascript">function(err, data)\n</code></pre>\n<p>The first argument is an error object. If the response is successful <code>err</code> will be equal to <code>null</code>. Otherwise it will take the type of error.</p>\n<p>Implementing an "error-first" callback:</p>\n<pre><code class="language-javascript">fs.readFile(\'/text.txt\',\n function(err, data) {\n   if (err) {\n     console.log(\'error\')\n     console.log(err)\n   } else {\n     console.log(data);\n   }\n});\n</code></pre>\n<p>Note that the errors can be more specific:</p>\n<pre><code class="language-javascript">// ...\nfunction(err, data) {\n  if (err.fileNotFound) {\n    console.log(\'wrong source\')\n  }\n}\n</code></pre>\n',

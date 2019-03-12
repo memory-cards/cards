@@ -18,25 +18,25 @@
     question: '<p>Create a new csp channel:</p>\n<pre><code class="language-javascript">var ch = ???.???();\n</code></pre>\n',
     answers: [
       {
-        text: '`csp`',
+        text: 'csp',
       },
       {
-        text: '`chan()`',
+        text: 'chan()',
       },
       {
-        text: '`channel()`',
+        text: 'channel()',
       },
       {
-        text: '`new`',
+        text: 'new',
       },
       {
-        text: '`generate()`',
+        text: 'generate()',
       },
       {
-        text: '`putAsync()`',
+        text: 'putAsync()',
       },
       {
-        text: '`takeAsync()`',
+        text: 'takeAsync()',
       },
     ],
     comment: '<p>"<strong>Communicating Sequential Processes</strong>" (CSP) is a method for <strong>concurrent processes</strong> to communicate during processing.</p>\n<p><strong>ES6 Generators</strong> have allowed CSP to be used in JavaScript. A popular library is <em>js-csp</em>. CSP makes it easy to express complex asynchronous flows.</p>\n<p>Message are passed between processes via a <strong>channel</strong>. Each channel can have many writers and readers. It\'s possible to <strong>take</strong> a value from the channel (the taker blocks if one isn\'t available). Or, <strong>put</strong> a value on a channel (the putter blocks if a taker isn\'t available to take it).</p>\n<p>For example:</p>\n<pre><code>var ch = csp.chan(); // new channel\ncsp.takeAsync(ch, function(value) {\n   return console.log("Yay ", value); \n});\ncsp.putAsync(ch, 100); \n// puts 100 ... takes 100, "Yay 100"\n</code></pre>\n',

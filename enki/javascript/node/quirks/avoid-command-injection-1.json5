@@ -16,10 +16,10 @@
     question: '<p>Which of the following is not true about <code>child_process.exec</code>?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'is literally the same as `child_process.spawn`',
+        text: 'is literally the same as child_process.spawn',
       },
       {
-        text: 'calls to execute `/bin/sh`',
+        text: 'calls to execute /bin/sh',
       },
       {
         text: "it's a bash interpreter",

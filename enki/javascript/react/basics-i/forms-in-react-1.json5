@@ -13,13 +13,13 @@
     question: '<p>What is a <strong>controlled component</strong>?</p>\n<p>A component ???.</p>\n',
     answers: [
       {
-        text: 'whose `state` is the **single source of truth**',
+        text: 'whose state is the **single source of truth**',
       },
       {
         text: 'using **React**-specific *form elements*',
       },
       {
-        text: 'without `props`',
+        text: 'without props',
       },
       {
         text: 'with any *HTML form elements*',

@@ -13,19 +13,19 @@
     question: '<p>What will the value of <code>test.props.x</code> in the following snippet?</p>\n<pre><code class="language-jsx">function Test(props) {\n  return &#x3C;p>{props.x}&#x3C;/p>;\n}\n\nconst props = {\n  x: \'dog\',\n  y: \'cat\',\n};\n\nconst test = &#x3C;Test {...props}\n  x="cat" />;\n\n// test.props.x = ???\n</code></pre>\n',
     answers: [
       {
-        text: "`'cat'`",
+        text: "'cat'",
       },
       {
-        text: "`'dog'`",
+        text: "'dog'",
       },
       {
-        text: '`error`',
+        text: 'error',
       },
       {
-        text: "`'dogcat'`",
+        text: "'dogcat'",
       },
       {
-        text: "`'catdog'`",
+        text: "'catdog'",
       },
     ],
     comment: '<p>Props can be passed to <strong>React</strong> components through <strong>JSX</strong> with the help of the <strong>ES6</strong> spread operator (<code>...</code>).</p>\n<p>Suppose we want the following component with <code>name</code> and <code>content</code> props:</p>\n<pre><code class="language-jsx">const component = &#x3C;Component name="enki"\n  content="cool content" />;\n</code></pre>\n<p><code>name</code> and <code>content</code> can be bundled inside an object.</p>\n<pre><code class="language-jsx">const props = {\n  name: \'enki\',\n  content: \'cool content\',\n};\n</code></pre>\n<p>Subsequently, the object can be reused:</p>\n<pre><code class="language-jsx">const component = &#x3C;Component {...props} />;\nconst enki = &#x3C;Component {...props} />;\n</code></pre>\n<p>Note the usage of the spread operator when passing the props: <code>{...props}</code>.</p>\n<p>Props can also be overwritten:</p>\n<pre><code class="language-jsx">const enki = &#x3C;Component {...props}\n  content="other value" />\n</code></pre>\n<p>Now the value of <code>enki.props.content</code> will be <code>"other value"</code>.</p>\n',

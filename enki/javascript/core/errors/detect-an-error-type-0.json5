@@ -15,31 +15,31 @@
     question: '<p>Complete the following code snippet such that the <code>try/catch</code> block will handle <code>SyntaxError</code>s:</p>\n<pre><code class="language-javascript">??? {\n    eval(\'3.14 + /2.71\');\n} catch (???) {\n  if (err.??? == ???) {\n    //handling\n  }\n}\n</code></pre>\n',
     answers: [
       {
-        text: '`try`',
+        text: 'try',
       },
       {
-        text: '`err`',
+        text: 'err',
       },
       {
-        text: '`constructor`',
+        text: 'constructor',
       },
       {
-        text: '`SyntaxError`',
+        text: 'SyntaxError',
       },
       {
-        text: '`e`',
+        text: 'e',
       },
       {
-        text: '`EvalError`',
+        text: 'EvalError',
       },
       {
-        text: '`Error`',
+        text: 'Error',
       },
       {
-        text: '`name`',
+        text: 'name',
       },
       {
-        text: '`typeof`',
+        text: 'typeof',
       },
     ],
     comment: "<p>Using the <code>try/catch</code> block you can catch an exception then figure out what type of error occurred in your code.\nFor example:</p>\n<pre><code class=\"language-javascript\">try {\n    eval('5 + / 3'); }\ncatch(e) {\n\n    if(e.constructor == SyntaxError) {\n        //handle if is SyntaxError\n    }\n    console.log(e.constructor.name);\n}\n</code></pre>\n<p>The code snippet above will try to run <code>eval('5 + / 3');</code> which raises a <code>SyntaxError</code> due to the invalid expression evaluated.</p>\n<p>You can get the name of the error with <code>e.constructor.name</code>.</p>\n<p>In addition, if you think you can handle a specific exception, checking for it is easy: <code>e.constructor == SyntaxError</code>.</p>\n",

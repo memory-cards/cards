@@ -15,7 +15,7 @@
     question: '<p>What does <code>this</code> refer to inside of a callback registered to listen to an event on an <code>EventEmitter</code>?\n???</p>\n',
     answers: [
       {
-        text: 'The instance of `EventEmitter`',
+        text: 'The instance of EventEmitter',
       },
       {
         text: 'global',

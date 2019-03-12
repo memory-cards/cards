@@ -19,7 +19,7 @@
         text: 'no',
       },
       {
-        text: 'only when setting `state`',
+        text: 'only when setting state',
       },
       {
         text: 'if only accompanied by other **lifecycle methods**',

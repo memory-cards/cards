@@ -18,25 +18,25 @@
         text: '?',
       },
       {
-        text: '`function`',
+        text: 'function',
       },
       {
-        text: '`()`',
+        text: '()',
       },
       {
-        text: '`{}`',
+        text: '{}',
       },
       {
-        text: '`(`',
+        text: '(',
       },
       {
-        text: '`)`',
+        text: ')',
       },
       {
-        text: '`name`',
+        text: 'name',
       },
       {
-        text: '`call`',
+        text: 'call',
       },
     ],
     comment: '<p>The <strong>Immediately Invoked Function Expression pattern</strong> (<strong>IIFE</strong> or "iffy") is a function expression (either named or anonymous) that is immediately called. </p>\n<p>The syntax is:</p>\n<pre><code>(function(){\n    // do something\n}());\n</code></pre>\n<p>It is an alternative to:</p>\n<pre><code>// do something\n</code></pre>\n<p>You can use self-executing functions to maintain a <strong>clean scope</strong>, as variables declared within the function are not available outside it.</p>\n<p>Two possible uses are:</p>\n<ul>\n<li>\n<p>To wrap the whole code in an IIFE and pass in the <code>window</code> object. This could be given an alias of <code>global</code>. Global public properties could then be made accessible.</p>\n</li>\n<li>\n<p>To produce an alias for <code>jQuery</code> to <code>$</code> to prevent conflicts with other frameworks.</p>\n</li>\n</ul>\n<p>For example:</p>\n<pre><code>(function(global){\n  function fun(){\n      return "Hello World!";\n  }\n  global.fun = fun;\n}(window)); // reference to window object\n</code></pre>\n',

@@ -13,22 +13,22 @@
     question: '<p>Move forwards once using the <code>History API</code>:</p>\n<pre><code class="language-javascript">window.???.???();\n</code></pre>\n',
     answers: [
       {
-        text: '`history`',
+        text: 'history',
       },
       {
-        text: '`forward`',
+        text: 'forward',
       },
       {
-        text: '`navigation`',
+        text: 'navigation',
       },
       {
-        text: '`previous`',
+        text: 'previous',
       },
       {
-        text: '`next`',
+        text: 'next',
       },
       {
-        text: '`length`',
+        text: 'length',
       },
     ],
     comment: '<p>The History API allows navigation of the browser history.</p>\n<p>To move backward once (like a <em>Back</em> button click)</p>\n<pre><code>window.history.back();\n</code></pre>\n<p>To move forward once (like a <em>Forward</em> button click):</p>\n<pre><code>window.history.forward();\n</code></pre>\n<p>To move backward (negative) or forward (positive) to a particular point in history, an integer can be passed:</p>\n<pre><code>window.history.go(int); /* current page\nat 0, -1 goes back once, 1 goes\nforward once */\n</code></pre>\n<p>The history length can be found by:</p>\n<pre><code>window.history.length;\n</code></pre>\n',

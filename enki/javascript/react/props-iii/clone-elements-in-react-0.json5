@@ -13,25 +13,25 @@
     question: '<p>Complete the code snippet below to clone an element and override the ref:</p>\n<pre><code class="language-javascript">React.???(child, { ???: \'newRef\' })\n</code></pre>\n',
     answers: [
       {
-        text: '`cloneElement`',
+        text: 'cloneElement',
       },
       {
-        text: '`ref`',
+        text: 'ref',
       },
       {
-        text: '`newElement`',
+        text: 'newElement',
       },
       {
-        text: '`spawnElement`',
+        text: 'spawnElement',
       },
       {
-        text: '`key`',
+        text: 'key',
       },
       {
-        text: '`obj`',
+        text: 'obj',
       },
       {
-        text: '`env`',
+        text: 'env',
       },
     ],
     comment: '<p><strong>React</strong> provides different ways to clone elements. The <code>React.cloneElement</code> method, unlike <code>React.addons.cloneWithProps</code> can clone an element whilst keeping the <code>key</code> and <code>ref</code> of the original one.</p>\n<p>How to use:</p>\n<pre><code class="language-javascript">ReactElement cloneElement(\n  ReactElement element,\n  [object props],\n  [children ...]\n);\n</code></pre>\n<p>A new <code>ReactElement</code> will be returned using the provided <code>element</code> as the starting point. The old <code>props</code> will be merged in shallowly with the new specified ones. Furthermore, new <code>children</code> will replace old ones.</p>\n<p>Keep in mind that using:</p>\n<pre><code class="language-jsx">React.cloneElement(child, { ref: \'newRef\' })\n</code></pre>\n<p>will override the <code>ref</code>.</p>\n<p>Documentation warns that <code>React.addons.cloneWithProps</code> will be deprecated so you should consider using <code>React.cloneElement</code> instead.</p>\n',

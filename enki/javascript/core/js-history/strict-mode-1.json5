@@ -18,31 +18,31 @@
         text: 'in EcmaScript 5?',
       },
       {
-        text: '`use`',
+        text: 'use',
       },
       {
-        text: '`strict`',
+        text: 'strict',
       },
       {
-        text: '`mode`',
+        text: 'mode',
       },
       {
-        text: '`str`',
+        text: 'str',
       },
       {
-        text: '`let`',
+        text: 'let',
       },
       {
-        text: '`var`',
+        text: 'var',
       },
       {
-        text: '`strict-mode`',
+        text: 'strict-mode',
       },
       {
-        text: '`enable`',
+        text: 'enable',
       },
       {
-        text: '`on`',
+        text: 'on',
       },
     ],
     comment: '<p>EcmaScript <strong>version 5</strong> introduced a feature called <strong>strict mode</strong> that makes the JavaScript interpreter enforce a more stringent set of rules.</p>\n<p><strong>What does strict mode do?</strong></p>\n<p>Strict mode takes a number of probable mistakes that would either work, or fail silently and turn them into errors.</p>\n<p>Arguably one of the most important issues strict mode will catch is that it will throw errors if you forget to use the <code>var</code> statement when declaring variables, thus preventing global variables being accidentally created.</p>\n<p>All the rules are pretty sensible so it is highly recommended to enable <em>strict mode</em>.</p>\n<p><strong>Enabling strict mode</strong></p>\n<p>Strict mode is an opt in feature to avoid breaking existing code.\nTo enable strict mode, simply add the following string literal:</p>\n<pre><code>"use strict";\n</code></pre>\n<p>Warning! This will apply strict mode to code in the current scope. So you probably don’t want to do this outside code you own as it may impact some older code and third party scripts.</p>\n',

@@ -13,28 +13,28 @@
     question: '<p>Read from a text file:</p>\n<pre><code>reader.onload = function(e) {\n   var text = reader.???;\n}\nreader.readAsText(file, ???);\n</code></pre>\n',
     answers: [
       {
-        text: '`result`',
+        text: 'result',
       },
       {
-        text: '`encoding`',
+        text: 'encoding',
       },
       {
-        text: '`reader`',
+        text: 'reader',
       },
       {
-        text: '`file`',
+        text: 'file',
       },
       {
-        text: '`readAsText`',
+        text: 'readAsText',
       },
       {
-        text: '`readFile`',
+        text: 'readFile',
       },
       {
-        text: '`openFile`',
+        text: 'openFile',
       },
       {
-        text: '`onload`',
+        text: 'onload',
       },
     ],
     comment: '<p>The <code>readAsText()</code> method is used to read text files. It takes two parameters, the first is the file or blob object to read. The second is the encoding of the file, by default this is UTF-8.</p>\n<p>Creating a new instance of File Reader.</p>\n<pre><code class="language-javascript">var reader = new FileReader();\n</code></pre>\n<p>Reading the text file.</p>\n<pre><code class="language-javascript">reader.onload = function(e) {\n  var text = reader.result;\n}\nreader.readAsText(file, encoding);\n</code></pre>\n',

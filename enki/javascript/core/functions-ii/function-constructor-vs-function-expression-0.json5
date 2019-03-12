@@ -17,10 +17,10 @@
         text: 'y;',
       },
       {
-        text: 'A function expression of a function named `times` assigned to the variable `multiply`.',
+        text: 'A function expression of a function named times` assigned to the variable `multiply.',
       },
       {
-        text: 'A function `times` being declared.',
+        text: 'A function times being declared.',
       },
       {
         text: 'Function expression of an anonymous function.',

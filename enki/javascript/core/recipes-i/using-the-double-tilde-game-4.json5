@@ -13,13 +13,13 @@
     question: '<pre><code class="language-javascript">var x = "";\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nDouble tilde never returns <code>NaN</code>, but if a check fails it simply returns <code>0</code>.\n%</p>\n',
     answers: [
       {
-        text: '`0`',
+        text: '0',
       },
       {
-        text: '` `',
+        text: ' ',
       },
       {
-        text: '`1`',
+        text: '1',
       },
     ],
     comment: '<p>Your goal is to determine what the console will print out for each given value of <code>x</code>.</p>\n',

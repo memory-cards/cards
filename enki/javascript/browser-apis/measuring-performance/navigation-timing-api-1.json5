@@ -13,19 +13,19 @@
     question: '<p>Navigation API stores events as a propriety of which object?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '`window.performance.timing`',
+        text: 'window.performance.timing',
       },
       {
-        text: '`window.timing`',
+        text: 'window.timing',
       },
       {
-        text: '`timing.loadEventEnd`',
+        text: 'timing.loadEventEnd',
       },
       {
-        text: '`timing.navigationStart`',
+        text: 'timing.navigationStart',
       },
       {
-        text: '`window.performance.navigation`',
+        text: 'window.performance.navigation',
       },
     ],
     comment: '<p>The Navigation Timing API provides timing information about the page load process. It also monitors how a user navigates to a page.</p>\n<h3>Timing metrics</h3>\n<p>The API records the time at key points in the page load process and stores each event as a propriety of the <code>window.performance.timing</code> object.</p>\n<p>For example you can measure the total page load time experienced by the user:</p>\n<pre><code>window.addEventListener("load", function() {\n  setTimeout(function() {\n    var timing = window.performance.timing;\n    var userTime = timing.loadEventEnd\n              - timing.navigationStart;\n  }, 0);\n}, false);\n</code></pre>\n<h3>Navigation</h3>\n<p>The API also shows how a user navigated on a particular page. The <code>type</code> property can be <code>0</code> (URL, link etc), <code>1</code> (refreshed page), <code>2</code> (history) or <code>255</code> (other).</p>\n<p>You can access this information by:</p>\n<pre><code>var navigation =\n       window.performance.navigation;\nvar navType = navigation.type;\nvar redirectCount =\n       navigation.redirectCount;\n// number of redirects to current page\n</code></pre>\n',

@@ -13,13 +13,13 @@
     question: '<pre><code class="language-javascript">// ES5:\nvar year  =  timeArray[0];\nvar month =  timeArray[1];\nvar day   =  timeArray[2];\n// ES6 equivalent:  \nvar ??? = timeArray;\n</code></pre>\n<p>%exp\nThe *<em>destructuring assignment</em>\n%</p>\n',
     answers: [
       {
-        text: '`[year, month, day]`',
+        text: '[year, month, day]',
       },
       {
-        text: '`(year, month, day)`',
+        text: '(year, month, day)',
       },
       {
-        text: '`{year, month, day}`',
+        text: '{year, month, day}',
       },
       {
         text: 'syntax is a **JavaScript** expression that makes it possible to extract data from arrays or objects into distinct variables.',

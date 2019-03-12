@@ -13,16 +13,16 @@
     question: '<pre><code class="language-javascript">let [a,b,c] == [1, 2, 3];\n// b === ???\n</code></pre>\n<p>%exp\nWhen using *<em>array destructuring</em></p>\n<p>%</p>\n',
     answers: [
       {
-        text: '`2`',
+        text: '2',
       },
       {
-        text: '`1`',
+        text: '1',
       },
       {
-        text: '`3`',
+        text: '3',
       },
       {
-        text: 'the variables `a,b,c,` have their values assigned to the first, second and third value in the array respectively.',
+        text: 'the variables a,b,c, have their values assigned to the first, second and third value in the array respectively.',
       },
     ],
     comment: '<p>Hello, traveler.</p>\n<p>You will attempt to accurately fill the gaps in the code snippets to recreate ES5 compatible code using the new features of ES6.</p>\n<p>Best of luck. We will be watching you.</p>\n',

@@ -19,10 +19,10 @@
         text: 'No',
       },
       {
-        text: 'Only in `ES6`',
+        text: 'Only in ES6',
       },
       {
-        text: 'Only in `ES5` and `ES6`',
+        text: 'Only in ES5` and `ES6',
       },
       {
         text: 'Only with an external package',

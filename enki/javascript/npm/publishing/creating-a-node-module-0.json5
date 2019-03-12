@@ -16,7 +16,7 @@
     question: '<p>In order for the JavaScript file to be a module, it must have</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'a non-empty `exports` object',
+        text: 'a non-empty exports object',
       },
       {
         text: 'at least one function',

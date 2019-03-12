@@ -13,7 +13,7 @@
     question: '<p>Check if a number is a *<em>safe</em></p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'integer using `Number`:',
+        text: 'integer using Number:',
       },
       {
         text: 'isSafeInteger(number)',

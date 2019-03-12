@@ -15,13 +15,13 @@
     question: '<pre><code class="language-javascript">function bar(a = 1) {return a}\n//foo(null) === null\nconst {a = 1} = {a: null}\n// a === ???\n</code></pre>\n',
     answers: [
       {
-        text: '`null`',
+        text: 'null',
       },
       {
-        text: '`undefined`',
+        text: 'undefined',
       },
       {
-        text: '`1`',
+        text: '1',
       },
     ],
     comment: '<p>ES6 defaults values in function parameters and object deconstructions work as expected when given <code>undefined</code>.</p>\n<pre><code>function foo(a = 1) {return a}\n// foo(undefined) === 1\nfunction bar(a = 1) {return a + 1}\n// bar(undefined) === 2\nconst {a = 1} = {a: undefined}\n// a === 1\n</code></pre>\n<p>This is however not the case for <code>null</code>.</p>\n<pre><code>function foo(a = 1) {return a}\n// foo(null) === null\nfunction bar(a = 1) {return a + 1}\n// bar(null) === 1\nconst {a = 1} = {a: null}\n// a === null\n</code></pre>\n',

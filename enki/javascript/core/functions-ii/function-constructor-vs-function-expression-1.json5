@@ -20,10 +20,10 @@
         text: 'function expression of an anonymous function',
       },
       {
-        text: 'function defined with `function` constructor',
+        text: 'function defined with function constructor',
       },
       {
-        text: 'function expression of a `function` named `mult`',
+        text: 'function expression of a function` named `mult',
       },
       {
         text: 'all',

@@ -14,13 +14,13 @@
     question: '<p>What will the following snippet output?</p>\n<pre><code class="language-javascript">var x = 10;\nswitch(x){\n  case \'10\':\n     console.log("Hi!");\n}\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '`nothing`',
+        text: 'nothing',
       },
       {
-        text: "`'Hi!'`",
+        text: "'Hi!'",
       },
       {
-        text: '`an error`',
+        text: 'an error',
       },
     ],
     comment: "<p>The <code>==</code> operator does not care for types. Therefore, the following <code>if</code> condition will pass:</p>\n<pre><code class=\"language-javascript\">var test = 5;\nif (test == '5'){\n  console.log('Ay caramba');  \n}\n// Ay caramba\n</code></pre>\n<p>Instead, the <code>===</code> operator won't do any type conversion and the <code>if</code> condition will be evaluated to <code>false</code>:</p>\n<pre><code class=\"language-javascript\">if (test === '5') {\n  console.log('Ay caramba');\n} else {\n  console.log('Expected');\n}\n// Expected\n</code></pre>\n<p>Keep in mind that <strong>JavaScript</strong> uses <strong>strict comparison</strong> for <code>switch</code> statements:</p>\n<pre><code class=\"language-javascript\">var test = 5;\nswitch (test) {\n  case '5':\n    console.log('Ay caramba');\n}\n</code></pre>\n<p>Therefore, the code snippet above won't <code>log</code> anything.</p>\n",

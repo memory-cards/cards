@@ -13,22 +13,22 @@
     question: '<p>Select the element with the id <code>"title"</code>:</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p id="title">\n  Hello World!\n&#x3C;/p>\n\n&#x3C;script>\nvar title = document.???(???);\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n',
     answers: [
       {
-        text: '`getElementById`',
+        text: 'getElementById',
       },
       {
-        text: '`"title"`',
+        text: '"title"',
       },
       {
-        text: '`title`',
+        text: 'title',
       },
       {
-        text: '`getElementsByTagName`',
+        text: 'getElementsByTagName',
       },
       {
-        text: '`element`',
+        text: 'element',
       },
       {
-        text: '`getElementsByClassName`',
+        text: 'getElementsByClassName',
       },
     ],
     comment: '<p>There are a number of ways to select a tag or group of tags on an HTML document using the DOM.\nOne of the methods we have seen before, <code>getElementById</code>. Here\'s an example of selecting a tag with the <code>id</code> of <code>\'message\'</code>:</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p id="message">\n  Hello World!\n&#x3C;/p>\n\n&#x3C;script>\nvar message = document\n  .getElementById("message");\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>Another way to select tags is by tag name with the method <code>getElementsByTagName</code>. This will return an array of paragraph tags, even if there is only one.</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p>Hello World!&#x3C;/p>\n\n&#x3C;script>\nvar paragraphs = document\n  .getElementsByTagName("p");\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>If you have a group of elements that you want to be able to group and select together you can give them all the same class name and use the <code>getElementsByClassName</code> method. This method also returns an array of tags that match the class name, similar to <code>getElementsByTagName</code>. For example we have a few tags we will eventually want to turn blue, lets give them a class of blue and select them by that class name:</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p>\n  Hello World!\n&#x3C;/p>\n&#x3C;p class="blue">\n  This should be blue\n&#x3C;/p>\n&#x3C;p>\n  This is not blue\n&#x3C;/p>\n&#x3C;p class="blue">\n  This should be blue\n&#x3C;/p>\n&#x3C;p>\n  This is not blue\n&#x3C;/p>\n&#x3C;p class="blue">\n  This should be blue\n&#x3C;/p>\n\n&#x3C;script>\nvar blueTags = document\n  .getElementsByClassName("blue");\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n',

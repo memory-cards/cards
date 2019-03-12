@@ -17,7 +17,7 @@
     question: '<p>Is running *<em>Node</em></p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'with `sudo` considered a safe practice?',
+        text: 'with sudo considered a safe practice?',
       },
       {
         text: 'no',

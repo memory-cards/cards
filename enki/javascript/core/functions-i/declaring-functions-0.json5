@@ -17,19 +17,19 @@
         text: 'x;',
       },
       {
-        text: '`undefined`',
+        text: 'undefined',
       },
       {
-        text: '`4`',
+        text: '4',
       },
       {
-        text: '`9`',
+        text: '9',
       },
       {
-        text: '`6`',
+        text: '6',
       },
       {
-        text: '`error`',
+        text: 'error',
       },
     ],
     comment: '<p>JavaScript supports many different ways of declaring functions.</p>\n<p>The most common is the <em>function declaration</em>:</p>\n<pre><code>//function to add 2 parameters\nfunction add(x, y){\n    return x + y;\n}\n\nadd(1,2);//3\n</code></pre>\n<p><strong>Return Values</strong></p>\n<p>In the above example, we specified that we would return the function argument x plus argument y.</p>\n<p>If we did not specify a return value in the above example, then the function would return <em>undefined</em> e.g.</p>\n<pre><code>function add(x, y){\n    x + y;\n}\n\nadd(1,2);//undefined\n</code></pre>\n<p>Note that there are some more complex cases where a function will not return <em>undefined</em> when no return is specified.</p>\n',

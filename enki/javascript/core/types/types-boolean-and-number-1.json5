@@ -20,7 +20,7 @@
         text: 'Boolean type has three options',
       },
       {
-        text: 'You need the `Math` object to add numbers',
+        text: 'You need the Math object to add numbers',
       },
       {
         text: 'Boolean types use **Upper case**',
