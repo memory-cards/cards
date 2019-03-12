@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-i/function-arguments.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,19 +15,15 @@
     answers: [
       {
         text: 'John',
-        correct: true,
       },
       {
         text: 'Alex',
-        correct: false,
       },
       {
         text: 'undefined',
-        correct: false,
       },
       {
         text: 'null',
-        correct: false,
       },
     ],
     comment: '<p>When we pass primitive variables (such as numbers and strings) to functions in JavaScript, they are <em>passed by value</em> which means that if we manipulate the argument value inside the function, changes will not be reflected outside the function.</p>\n<p>However, if we were to pass an object then changes <em>are</em> reflected on the object itself.</p>\n<p>For example:</p>\n<pre><code>function changeVal(x){\n    x=1000;\n}\n\nvar x = 5;\nchangeVal(x);\nconsole.log(x);//still 5\n\nfunction changeObj(x){\n    x.name="Apple";\n}\n\nvar obj = {name:"Enki"};\nchangeObj(obj);\nconsole.log(obj.name);//Apple\n</code></pre>\n',

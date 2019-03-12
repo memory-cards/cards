@@ -3,7 +3,7 @@
     author: 'Ewa Trzemżalska',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/converting-to-and-from-json.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,20 +15,16 @@
     question: "<h3>How well do you know JSON?</h3>\n<p>What will be returned by the following code?</p>\n<pre><code class=\"language-javascript\">const enkiObj = {\n    a: 'first',\n    b: 'second',\n    toJSON: () => ({c: 'third'})\n}\n\nJSON.stringify(enkiObj);\n</code></pre>\n<p>???</p>\n",
     answers: [
       {
-        text: '"{"c":"third"}"',
-        correct: true,
+        text: '`"{"c":"third"}"`',
       },
       {
-        text: '"{"a":"first","b":"second"}"',
-        correct: false,
+        text: '`"{"a":"first","b":"second"}"`',
       },
       {
-        text: '"{"a":"first","b":"second","c":"third"}"',
-        correct: false,
+        text: '`"{"a":"first","b":"second","c":"third"}"`',
       },
       {
-        text: '"{a: "first", b: "second"}"',
-        correct: false,
+        text: '`"{a: "first", b: "second"}"`',
       },
     ],
     comment: '<p><code>JSON.stringify()</code> method is used to convert a JavaScript object or value to a JSON string. </p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourDog = {\n    name: \'Leo\',\n    \'dog years\': 14\n}\n\nconsole.log(JSON.stringify(ourDog));\n// prints \'{"name":"Leo","dog years":14}\'\n</code></pre>\n<p>To override the default behavior of <code>JSON.stringify()</code> you can provide a key <code>toJSON</code> in your object, mapping to a function with your desired behavior.</p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourDog = {\n    name: \'Rocky\',\n    age: 2,\n    \'dog years\': 14,\n    toJSON: () => ({food: \'dog snacks\'})\n}\n\nconsole.log(JSON.stringify(ourDog));\n//prints {"food":"dog snacks"}\n</code></pre>\n<p>To convert a JSON string back to JavaScript you can use <code>JSON.parse()</code> method.</p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourJSON = \'{"name":"Roxy","age":2}\'\nconst dog = JSON.parse(ourJSON);\nconsole.log(dog.name);\n// prints "Roxy"\n</code></pre>\n',

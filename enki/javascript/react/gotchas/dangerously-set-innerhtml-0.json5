@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/gotchas/dangerously-set-innerhtml.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,28 +13,22 @@
     question: '<p>Fill the key needed for the <code>dangerouslySetInnerHTML</code> prop:</p>\n<pre><code class="language-javascript">dangerouslySetInnerHTML:\n{ ???: \'&#x3C;p>Enki &#x3C;/p>\' }\n</code></pre>\n',
     answers: [
       {
-        text: '__html',
-        correct: true,
+        text: '`__html`',
       },
       {
-        text: 'html',
-        correct: false,
+        text: '`html`',
       },
       {
-        text: '_html',
-        correct: false,
+        text: '`_html`',
       },
       {
-        text: 'value',
-        correct: false,
+        text: '`value`',
       },
       {
-        text: 'id',
-        correct: false,
+        text: '`id`',
       },
       {
-        text: 'text',
-        correct: false,
+        text: '`text`',
       },
     ],
     comment: "<p>React gives you the ability to insert <em>raw</em> HTML.</p>\n<p>Take into  consideration that this practice is definitely to be avoided because it makes your code vulnerable to <em>cross-site scripting</em> (XSS).</p>\n<p> React named the prop which is used to pass this data as <code>dangerouslySetInnerHTML</code>. A key is used to specify the text with <code>__html</code>:</p>\n<pre><code>dangerouslySetInnerHTML:\n{ __html: '&#x3C;p>My HTML text &#x3C;/p>' }\n</code></pre>\n<p>The recommended way of using <code>dangerouslySetInnerHTML</code> when needed is by creating an object containing only the key <code>__html</code> and your <em>sanitized</em> data as the value.</p>\n<pre><code>function createMarkup()\n{ return {__html: '&#x3C;p>My HTML text &#x3C;/p>'};};\n</code></pre>\n<p>This method will prevent incorrect rendering.</p>\n",

@@ -3,7 +3,7 @@
     author: 'pawel',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dummy-workout/use-hosted-scripts-to-increase-performance.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -18,19 +18,15 @@
     answers: [
       {
         text: 'as a page previously visited?',
-        correct: true,
       },
       {
         text: 'script is loaded from cache',
-        correct: false,
       },
       {
         text: 'script is downloaded',
-        correct: false,
       },
       {
         text: 'script is not loaded',
-        correct: false,
       },
     ],
     comment: '<p>Many users already have downloaded scripts from the web. </p>\n<p>For example, they may have downloaded jQuery from Google when visiting another site that uses that particular script host. </p>\n<pre><code class="language-html">&#x3C;script src="https:/.../jquery.min.js">\n&#x3C;/script>\n</code></pre>\n<p>The same script will be loaded from a user\'s cache if they visit another website referencing the same location. This leads to faster loading time.</p>\n',

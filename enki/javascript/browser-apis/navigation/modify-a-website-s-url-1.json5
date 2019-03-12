@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/navigation/modify-a-website-s-url.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,20 +13,16 @@
     question: '<p>What method is used to modify a website URL without a full page refresh?</p>\n<pre><code class="language-javascript">history.???([data],\n            [title], [url]);\n</code></pre>\n',
     answers: [
       {
-        text: 'pushState',
-        correct: true,
+        text: '`pushState`',
       },
       {
-        text: 'modURL',
-        correct: false,
+        text: '`modURL`',
       },
       {
-        text: 'changeRoute',
-        correct: false,
+        text: '`changeRoute`',
       },
       {
-        text: 'push',
-        correct: false,
+        text: '`push`',
       },
     ],
     comment: "<p>The HTML5 History API enables developers to alter a website's URL without a full page refresh. This allows the URL to be more relevant to the content on the page if it has been loaded dynamically. This is also useful if the user wants to share the URL.</p>\n<p>The format is:</p>\n<pre><code>history.pushState([data], [title], [url]);\n</code></pre>\n<p><code>data</code> is a JavaScript object which is associated with the new browser history entry. This is needed if the state of the webpage changes.</p>\n<p><code>title</code> is intended to be a short title for the state to which you're moving (but is actually ignored by most browsers!).</p>\n<p><code>url</code> is the altered URL that should appear in the address bar. It must have the same origin as the current URL.</p>\n",

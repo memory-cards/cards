@@ -3,7 +3,7 @@
     author: 'gregbenner',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterators-for-of-spreads.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: '{ value: "h", done: false }',
-        correct: true,
       },
       {
         text: '["h", false]',
-        correct: false,
       },
       {
         text: '{ value: "h", done: true }',
-        correct: false,
       },
       {
-        text: 'spec defines non-string **symbol** property names of objects to describe particular behaviours, <code>Symbol.iterator</code> specifically describing how iteration works.',
-        correct: false,
+        text: 'spec defines non-string **symbol** property names of objects to describe particular behaviours, `Symbol.iterator` specifically describing how iteration works.',
       },
     ],
     comment: "<p>Freshen up you knowledge on <code>iterators</code>, <code>for of</code> loops and the <code>spread operator</code> with this exercise.\nThe goal is to fill in the gaps with either the output of the snippet or the missing bit that won't throw any errors.</p>\n",

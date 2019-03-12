@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-i/functions-can-be-declared-after-use.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,11 +15,9 @@
     answers: [
       {
         text: "alerts 'Enki'",
-        correct: true,
       },
       {
         text: 'error',
-        correct: false,
       },
     ],
     comment: "<p>Function <strong>declarations</strong> load before other code is executed. This means that the function can be declared after it has been used.</p>\n<p>For example:</p>\n<pre><code>alert(foo()); // Alerts 'Enki'.\n// Function declaration\nfunction foo() { return 'Enki'; }\n</code></pre>\n<p>If however a function <strong>expression</strong> is used rather than a function <strong>declaration</strong> an error will be produced:</p>\n<pre><code>alert(foo()); // Error!\n// Function expression\nvar foo = function() { return 'Enki'; }\n</code></pre>\n<p>This is because function <strong>expressions</strong> are evaluated from the top-down as normal.</p>\n",

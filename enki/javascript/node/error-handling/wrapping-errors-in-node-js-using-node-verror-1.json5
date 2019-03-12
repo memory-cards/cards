@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/error-handling/wrapping-errors-in-node-js-using-node-verror.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,19 +16,15 @@
     answers: [
       {
         text: 'VError & WError',
-        correct: true,
       },
       {
         text: 'VError & Error',
-        correct: false,
       },
       {
         text: 'WError & Error',
-        correct: false,
       },
       {
         text: 'VError & WrapError',
-        correct: false,
       },
     ],
     comment: "<p>The module <code>node-verror</code> can be used to produce useful error messages in Node.js. It has two classes <code>VError</code> and <code>WError</code>.</p>\n<p><strong>VError class</strong></p>\n<p><code>VError</code> is used to <strong>combine errors</strong>. It is possible to nest errors so that each layer in the stack annotates the error:</p>\n<pre><code class=\"language-javascript\">var VError = require('verror');\nvar err1 = new Error('file not found.');\nvar err2 = new VError\n   (err1, 'failed to open \"%s\"', 'eg.txt');\nvar err3 = new\n   VError(err2, 'request failed');\nconsole.error(err3.message);\n</code></pre>\n<p>This gives the message:</p>\n<pre><code class=\"language-bash\">request failed: failed to open \"eg.txt\":\nfile not found\n</code></pre>\n<p><strong>WError class</strong></p>\n<p>To avoid giving detail about the error at every layer in stack, use <code>WError</code> to <strong>wrap errors</strong>.  For example the code above could be changed to:</p>\n<pre><code class=\"language-javascript\">//... same as above\nvar err3 = new\n    WError(err2, 'request failed');\nconsole.error(err3.message);\n// 'request failed'\n</code></pre>\n<p>To see the whole message (as well as the class associated with each error) use <code>console.error(err3.toString());</code>.</p>\n",

@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/packages-modules/dependencies.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,19 +17,15 @@
     answers: [
       {
         text: 'package.json file',
-        correct: true,
       },
       {
         text: 'node_modules directory',
-        correct: false,
       },
       {
         text: 'dependencies.json file',
-        correct: false,
       },
       {
         text: 'devDependencies.json file',
-        correct: false,
       },
     ],
     comment: '<p>There are two types of packages you can include in your project:</p>\n<ul>\n<li><strong>dependencies</strong>: used in production</li>\n<li><strong>devDependencies</strong>: used in development and testing</li>\n</ul>\n<p>In a project that uses the latest minor <em>express 4</em> release in production and <em>jest 18.0.0</em> in development, <em>package.json</em> should have these attributes:</p>\n<pre><code>{\n  "name": "example",\n  "version": "1.0.0",\n  "dependencies": {\n    "express": "^4.0.0",\n  },\n  "devDependencies": {\n    "jest": "18.0.0",\n  }\n}\n</code></pre>\n<p>Another way to specify each dependency is using the command line:</p>\n<pre><code class="language-bash">#dependencies\n$ npm install express@^4.0.0 --save\n#devDependencies\n$ npm install jest --save-dev\n</code></pre>\n<p>Both will install the specified versions of <em>express</em> and <em>jest</em> and also add them to the <em>package.json</em> file.</p>\n<p>You can list all the existing dependencies of your project with:</p>\n<pre><code>$ npm list\n~/project\n|__ express@4.14.0\n|__ jest@18.0.0\n</code></pre>\n<p>This is the true power of <em>npm</em>. What would have required a lot of individual downloading and importing, is now solvable by adding a new line in the <em>package.json</em> file.</p>\n',

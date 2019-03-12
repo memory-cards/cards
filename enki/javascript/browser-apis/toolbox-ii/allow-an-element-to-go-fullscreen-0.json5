@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-ii/allow-an-element-to-go-fullscreen.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,23 +14,18 @@
     answers: [
       {
         text: '?',
-        correct: true,
       },
       {
-        text: 'requestFullscreen()',
-        correct: false,
+        text: '`requestFullscreen()`',
       },
       {
-        text: 'viewFullScreen()',
-        correct: false,
+        text: '`viewFullScreen()`',
       },
       {
-        text: 'viewScreen()',
-        correct: false,
+        text: '`viewScreen()`',
       },
       {
-        text: 'applyFullscreen()',
-        correct: false,
+        text: '`applyFullscreen()`',
       },
     ],
     comment: '<p>The HTML5 Fullscreen API allows an element to be viewed filling the whole screen and hiding everything else. This can be used for example to play a video without distraction.</p>\n<p>To view the element in fullscreen use:</p>\n<pre><code>requestFullscreen()\n</code></pre>\n<p>Users can leave fullscreen mode by pressing the <em>ESC</em> button and will be prompted to do so by an automatic alert.</p>\n<p>There are inconsistencies in the implementation of this API between browsers and specific browsers may require identifiers.</p>\n',

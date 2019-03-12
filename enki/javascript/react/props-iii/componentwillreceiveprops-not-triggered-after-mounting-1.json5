@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-iii/componentwillreceiveprops-not-triggered-after-mounting.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: 'will only be run once',
-        correct: true,
       },
       {
         text: "isn't triggered once the node is mounted",
-        correct: false,
       },
       {
         text: 'can be used to listen to changes in props',
-        correct: false,
       },
       {
         text: 'can be triggered after the initial rendering',
-        correct: false,
       },
     ],
     comment: '<p><code>componentWillReceiveProps</code> isn\'t triggered once the node is added to the scene because of its design.</p>\n<p>It handles the logic of comparing with the old props, then acting upon any changes. It doesn\'t trigger at mounting as there are no old props and this helps define what the methods does.</p>\n<pre><code class="language-javascript">var testingComponent = React.createClass({\n  getDefaultProps() {\n    return {\n     currentProp: "to change"\n    };\n  },\n  getInitialState() {\n    return {\n      change: "no change"\n    };\n  },\n  componentWillReceiveProps(nextProps) {\n    this.setState({\n         modified: nextProps.currentProp\n         + "changed"\n    });\n  },\n  render() {\n    return &#x3C;div class="displayed">\n           {this.state.change}&#x3C;/div>\n  }\n});\n</code></pre>\n<p>Find a link below to check out other lifecycle methods to find the one you need!</p>\n',

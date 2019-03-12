@@ -18,31 +18,31 @@
     question: "<p>Find the first number divisible by <code>4</code>:</p>\n<pre><code>let ints = ['6','2','5','6','5','8'];\nints.???(???)\n</code></pre>\n",
     answers: [
       {
-        text: 'find',
+        text: '`find`',
       },
       {
-        text: 'findIndex',
+        text: '`findIndex`',
       },
       {
-        text: 'fill',
+        text: '`fill`',
       },
       {
-        text: 'includes',
+        text: '`includes`',
       },
       {
-        text: 'get',
+        text: '`get`',
       },
       {
-        text: 'filter',
+        text: '`filter`',
       },
       {
-        text: 'function (e) {return e % 4}',
+        text: '`function (e) {return e % 4}`',
       },
       {
-        text: 'function (e) {return e = 4}',
+        text: '`function (e) {return e = 4}`',
       },
       {
-        text: 'function (e) {return e == 4}',
+        text: '`function (e) {return e == 4}`',
       },
     ],
     comment: "<p>Arrays added a number of prototype methods in ES6 for improved ease of searching Arrays.</p>\n<p><strong>Array.prototype.includes(expr)</strong></p>\n<p><em>includes</em> returns a boolean indicating with an array contains a specific value:</p>\n<pre><code>var people = [\"john\", \"bob\"];\npeople.includes(\"john\"); //true\n</code></pre>\n<p><strong>Array.prototype.find(f)</strong><br>\n<strong>Array.prototype.findIndex(f)</strong>  </p>\n<p><em>find</em> and <em>findIndex</em> return the first value or index that satisfies a testing function <code>f</code>, which will receive the arguments <code>element</code>, <code>index</code>, <code>source</code>.</p>\n<p>If no elements match then <em>undefined</em> will be returned:</p>\n<pre><code>var people = [\n    {name: 'Alex', age: 36},\n    {name: 'John', age: 20},\n    {name: 'Tait', age: 1}\n];\n\npeople.find(function (e, i, src) {\n    return element.age>=18;\n});\n//returns Alex\n\npeople.findIndex(function (e, i, src) {\n    return element.age > 18 &#x26;&#x26;\n           element.age &#x3C; 30;\n});\n//returns 1\n</code></pre>\n<p><strong>Array.prototype.fill(value, [start, [end]])</strong></p>\n<p>Populates an array with a supplied value and optional start &#x26; end position and is great for producing test data.</p>\n<pre><code>[1,1,1].fill(5); //[5,5,5]\n[1,1,1,1,1].fill(5,1,3); //[1,5,5,1,1]\n</code></pre>\n<h2>Practice</h2>\n<p>Find the first number divisible by <code>4</code>:</p>\n<pre><code>let ints = ['6','2','5','6','5','8'];\nints.???(???)\n</code></pre>\n<ul>\n<li><code>find</code></li>\n<li><code>findIndex</code></li>\n<li><code>fill</code></li>\n<li><code>includes</code></li>\n<li><code>get</code></li>\n<li><code>filter</code></li>\n<li><code>function (e) {return e % 4}</code></li>\n<li><code>function (e) {return e = 4}</code></li>\n<li><code>function (e) {return e == 4}</code></li>\n</ul>\n",

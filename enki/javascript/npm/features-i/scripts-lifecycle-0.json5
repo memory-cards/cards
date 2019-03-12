@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-i/scripts-lifecycle.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,19 +17,15 @@
     answers: [
       {
         text: 'postinstall',
-        correct: true,
       },
       {
         text: 'pre-commit',
-        correct: false,
       },
       {
         text: 'gulp',
-        correct: false,
       },
       {
         text: 'link',
-        correct: false,
       },
     ],
     comment: '<p>Scripts are an essential feature of <em>npm</em>. They simplify the process of building and running your application. In the last insight, you saw how to write and invoke scripts using the command line.</p>\n<p>There are, however, some predefined events called <em>lifecycles</em> or <em>hooks</em>, which don\'t need to be run by hand. Whenever you run <code>npm install</code> and one or more hooks has an action declared, <em>npm</em> will invoke those actions by itself. Some of the other event hooks are <em>preinstall</em>, <em>postinstall</em>, <em>pretest</em>, <em>start</em>, <em>test</em>, <em>stop</em> etc.</p>\n<p>Hooks can be extremely useful both in a production or a development environment. One example is using <em>gulp</em> or another package to watch for changes made to JavaScript files and restart the local server.</p>\n<p>You could run start watching the files from within a gulp file, either immediately after <code>npm install</code> has finished (using the <em>postinstall</em> event), or whenever is needed using a custom script:</p>\n<pre><code class="language-javascript">scripts: {\n  "watch:js": "gulp",\n  "postinstall": "watch:js"\n}\n</code></pre>\n<p>Note that <code>npm start</code> runs <code>node server.js</code> by default, in case you have such a file.</p>\n',

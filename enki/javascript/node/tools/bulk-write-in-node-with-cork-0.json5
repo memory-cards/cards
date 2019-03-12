@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/tools/bulk-write-in-node-with-cork.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,16 +15,13 @@
     question: '<p>Which two API calls can be used to specify a range of where bulk writes will occur?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'cork()</code> and <code>uncork()',
-        correct: true,
+        text: '`cork()` and `uncork()`',
       },
       {
-        text: 'write()</code> and <code>end()',
-        correct: false,
+        text: '`write()` and `end()`',
       },
       {
-        text: 'writable()</code> and <code>unwritable()',
-        correct: false,
+        text: '`writable()` and `unwritable()`',
       },
     ],
     comment: '<p>Bulk writing/buffering on <em>writeable</em> streams is possible in <strong>Node</strong>.\nUsing the <code>cork()</code>  and <code>uncork()</code> API calls, one can specify a range where bulk writes will occur.</p>\n<pre><code>writable.cork()\n</code></pre>\n<p>Using the <code>cork()</code> method, the end user modifies the behaviour of writeable streams to buffering. Consequently, streams should accept new writes as long as it does not exceed the <code>highWaterMark</code> option passed to <code>Writable()</code>.</p>\n<pre><code>writable.uncork()\n</code></pre>\n<p><code>uncork()</code> resets the behaviour and attempts to bulk-write all buffered writes to the underlying resource.</p>\n<p>Flushing of buffered data can be also achieved by calling the <code>.end()</code> method.</p>\n',

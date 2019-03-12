@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/intro-react/what-is-react.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: 'library',
-        correct: true,
       },
       {
         text: 'framework',
-        correct: false,
       },
       {
         text: 'application',
-        correct: false,
       },
       {
         text: 'implementation of HTML',
-        correct: false,
       },
     ],
     comment: '<p><strong>React</strong> is a <em>JavaScript</em> library[1] (not a framework[2]) created and maintained by <strong>Facebook</strong>. It\'s used for creating user interfaces.</p>\n<p>The big and frequent problem that <strong>React</strong> solves is keeping the <code>DOM</code>[3] in sync with the data model.</p>\n<p>It does that by generating a <code>DOM</code>-like custom object whenever a change is made in the data model. This complex data type is then compared with the real <code>DOM</code>, updating the latter only when necessary, thus minimising execution time.</p>\n<p>Many developers have adopted this library because of these key features:</p>\n<ul>\n<li><strong>one-way data flow</strong>: only the model can change the app\'s state, making it the "single source of truth"</li>\n<li><strong>JSX</strong>: JavaScript syntactic sugar used to quote <strong>HTML</strong> elements, allowing their usage in JS code</li>\n<li><strong>virtual DOM</strong>: the <code>DOM</code>-like in-memory data structure cache used to efficiently update the real <code>DOM</code></li>\n</ul>\n<p><strong>React</strong> is an open-source project that was released in 2013 and has already become one of the top 5 starred projects on <strong>GitHub</strong>. Due to the large number of contributors, this library is improving at a rapid pace.</p>\n<p>Being built with performance in mind, <strong>React</strong> has become the first choice for both beginners and experts of Front-End Web Development.</p>\n',

@@ -13,25 +13,25 @@
     question: '<p>What validator must be used to make sure there is exactly one child passed to <code>children</code>?</p>\n<pre><code class="language-jsx">children: React.PropTypes.???.???,\n</code></pre>\n',
     answers: [
       {
-        text: 'element',
+        text: '`element`',
       },
       {
-        text: 'isRequired',
+        text: '`isRequired`',
       },
       {
-        text: 'node',
+        text: '`node`',
       },
       {
-        text: 'arrayOf',
+        text: '`arrayOf`',
       },
       {
-        text: 'mandatory',
+        text: '`mandatory`',
       },
       {
-        text: 'one',
+        text: '`one`',
       },
       {
-        text: 'any',
+        text: '`any`',
       },
     ],
     comment: '<p>Making use of the <code>propTypes</code> you can enforce a <em>warning</em> fired when you pass more than one child to a component as children.</p>\n<p>The validator used is <code>React.PropTypes.element</code>.</p>\n<p>Suppose the following scenario:</p>\n<pre><code class="language-jsx">React.createClass({\n  //propTypes\n\n  render: function() {\n    return (\n      &#x3C;div>\n        {this.props.children}\n      &#x3C;/div>\n    );\n  }\n});\n</code></pre>\n<p>To make sure <code>this.props.children</code> is <strong>exactly</strong> a single element we suffix the validation with <code>isRequired</code>:</p>\n<pre><code class="language-jsx">propTypes: {\n  children:\n     React.PropTypes.element.isRequired,\n}\n</code></pre>\n',

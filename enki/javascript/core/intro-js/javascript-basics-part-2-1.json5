@@ -3,7 +3,7 @@
     author: 'nem035',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/intro-js/javascript-basics-part-2.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,19 +15,15 @@
     answers: [
       {
         text: 'undefined',
-        correct: true,
       },
       {
         text: '42',
-        correct: false,
       },
       {
         text: 'answer',
-        correct: false,
       },
       {
         text: 'local',
-        correct: false,
       },
     ],
     comment: '<p>Like most programming languages, JavaScript has a number of syntax rules that must be adhered to.</p>\n<h3>Semicolon</h3>\n<p>In EcmaScript it is best practice to add a semicolon at the end of a statement:</p>\n<pre><code class="language-javascript">var company="enki";\n</code></pre>\n<p>It’s not strictly necessary to do this as the parser will try to determine the end of a statement and add a semicolon automatically. However, it will help you be sure that the code runs as expected because automatic semicolon insertion sometimes causes errors.</p>\n<h3>Variables</h3>\n<p>Variables are essential for programming. They are used to store a modifiable value and are given a name. Declare a variable in JavaScript with the <code>var</code> keyword.</p>\n<pre><code class="language-javascript">var firstName="John";\n</code></pre>\n<p>If <code>var</code> is omitted the variable will still be created and referenced, but it will behave in unintended ways because of a concept in JavaScript called scope.</p>\n<p>JavaScript has two scopes, global and local. If a variable is defined <em>outside</em> of a function then it is in the global scope which means it can be read and changed throughout the program. If a variable is declared <em>inside</em> a function then it will only "exist" or be accessible inside the function.  For example, here enki is declared inside a function and will exist only inside the function:</p>\n<pre><code class="language-javascript">function hello(){\n   var company="enki";\n   console.log(company); // "enki"\n}\n// variable out of scope\nconsole.log(company); // undefined\n</code></pre>\n',

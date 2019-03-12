@@ -13,37 +13,37 @@
     question: '<p>Complete the second code snippet such that it\'s equivalent to the first:\nFirst:</p>\n<pre><code class="language-jsx">class Test extend React.Component {\n  render() {\n    return &#x3C;h1>{this.props.test}\n  }\n}\n</code></pre>\n<p>Second:</p>\n<pre><code class="language-jsx">??? Test(???) {\n  ??? &#x3C;p>???&#x3C;/p>;\n}\n</code></pre>\n',
     answers: [
       {
-        text: 'function',
+        text: '`function`',
       },
       {
-        text: 'props',
+        text: '`props`',
       },
       {
-        text: 'return',
+        text: '`return`',
       },
       {
-        text: '{props.test}',
+        text: '`{props.test}`',
       },
       {
-        text: '{this.props.test}',
+        text: '`{this.props.test}`',
       },
       {
-        text: 'render',
+        text: '`render`',
       },
       {
-        text: 'state',
+        text: '`state`',
       },
       {
-        text: 'func',
+        text: '`func`',
       },
       {
-        text: 'props.test',
+        text: '`props.test`',
       },
       {
-        text: 'test',
+        text: '`test`',
       },
       {
-        text: 'this.props.test',
+        text: '`this.props.test`',
       },
     ],
     comment: '<p>As stated before, <strong>React</strong> components behave just like functions, taking <code>props</code> as input and returning <strong>React elements</strong>.</p>\n<p>Simple <code>component</code>s that don\'t have an internal <code>state</code> and don\'t make use of any <strong>lifecycle</strong> methods such as <code>constructor()</code> can be written as <strong>functional components</strong>.</p>\n<p>Consider the component:</p>\n<pre><code class="language-jsx">class Enki extends React.Component {\n  render() {\n    return &#x3C;p>{this.props.enki}&#x3C;/p>;\n  }\n}\n</code></pre>\n<p>A <strong>stateless</strong> component is <strong>functional</strong> when written literally as a <code>JS</code> function:</p>\n<pre><code class="language-jsx">function Enki(props) {\n  return &#x3C;p>{props.enki}&#x3C;/p>;\n}\n</code></pre>\n<p>The two components defined above are completely equivalent from <strong>React</strong>\'s point of view.</p>\n<p><strong>Functional components</strong> are preferred for <strong>UI</strong> because they enforce the best practice of having <em>dumb presentational components</em>, but also require less typing (e.g. no <code>this</code> keyword).</p>\n',

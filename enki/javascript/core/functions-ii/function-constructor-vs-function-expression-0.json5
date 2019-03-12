@@ -3,7 +3,7 @@
     author: 'NomaDube',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-ii/function-constructor-vs-function-expression.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,19 +15,15 @@
     answers: [
       {
         text: 'y;',
-        correct: true,
       },
       {
-        text: 'A function expression of a function named <code>times</code> assigned to the variable <code>multiply</code>.',
-        correct: false,
+        text: 'A function expression of a function named `times` assigned to the variable `multiply`.',
       },
       {
-        text: 'A function <code>times</code> being declared.',
-        correct: false,
+        text: 'A function `times` being declared.',
       },
       {
         text: 'Function expression of an anonymous function.',
-        correct: false,
       },
     ],
     comment: '<p>The concepts of constructors, declaration and expressions are often misused. Here is the official terminology according to MDN:</p>\n<p>A function defined with the <code>function</code> <em>constructor</em> assigned to the variable <code>multiply</code>:</p>\n<pre><code>function multiply(x, y) {\n   return x * y;\n}\n</code></pre>\n<p>Function <em>expression</em> of an anonymous function assigned to the variable <code>multiply</code>:</p>\n<pre><code>var multiply = function(x, y) {\n   return x * y;\n}\n</code></pre>\n<p>Function <em>expression</em> of a <code>function</code> named <code>mult</code> assigned to the variable <code>multiply</code>:</p>\n<pre><code>var multiply = function mult(x, y) {\n   return x * y;\n};\n</code></pre>\n',

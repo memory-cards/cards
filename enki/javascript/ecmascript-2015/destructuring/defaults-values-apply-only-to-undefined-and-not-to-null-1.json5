@@ -3,7 +3,7 @@
     author: 'Bruno',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/destructuring/defaults-values-apply-only-to-undefined-and-not-to-null.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,16 +15,13 @@
     question: '<pre><code class="language-javascript">function bar(a = 1) {return a}\n//foo(null) === null\nconst {a = 1} = {a: null}\n// a === ???\n</code></pre>\n',
     answers: [
       {
-        text: 'null',
-        correct: true,
+        text: '`null`',
       },
       {
-        text: 'undefined',
-        correct: false,
+        text: '`undefined`',
       },
       {
-        text: '1',
-        correct: false,
+        text: '`1`',
       },
     ],
     comment: '<p>ES6 defaults values in function parameters and object deconstructions work as expected when given <code>undefined</code>.</p>\n<pre><code>function foo(a = 1) {return a}\n// foo(undefined) === 1\nfunction bar(a = 1) {return a + 1}\n// bar(undefined) === 2\nconst {a = 1} = {a: undefined}\n// a === 1\n</code></pre>\n<p>This is however not the case for <code>null</code>.</p>\n<pre><code>function foo(a = 1) {return a}\n// foo(null) === null\nfunction bar(a = 1) {return a + 1}\n// bar(null) === 1\nconst {a = 1} = {a: null}\n// a === null\n</code></pre>\n',

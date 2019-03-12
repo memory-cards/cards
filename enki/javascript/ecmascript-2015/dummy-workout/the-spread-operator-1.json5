@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/the-spread-operator.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,19 +15,15 @@
     answers: [
       {
         text: '...',
-        correct: true,
       },
       {
         text: 'const',
-        correct: false,
       },
       {
         text: 'push',
-        correct: false,
       },
       {
         text: 'Object.assign',
-        correct: false,
       },
     ],
     comment: '<p>In ES5 you can pass arguments from a list or dynamic array to a function by using <code>.apply</code>:</p>\n<pre><code>console.log.apply(console, [1, 2, 3])\n// 1 2 3\n</code></pre>\n<p>In ES6 the <code>spread</code> operator can be used instead. This is done by prepending three dots <code>...</code> to the array. You can use this operator alongside regular arguments.</p>\n<pre><code>console.log(1, ...[2, 3, 4], 5)\n// 1 2 3 4 5\n</code></pre>\n<p>For example, this is useful in destructuring:</p>\n<pre><code>const a = 1;\nconst b = 2;\nconst c = [3, 4, 5];\n[a, b, ...c] = [1, 2, 3, 4, 5];\n</code></pre>\n',

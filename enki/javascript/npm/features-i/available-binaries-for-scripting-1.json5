@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-i/available-binaries-for-scripting.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,19 +17,15 @@
     answers: [
       {
         text: 'command line invocation of the module',
-        correct: true,
       },
       {
         text: 'importing the module',
-        correct: false,
       },
       {
         text: 'publishing the module',
-        correct: false,
       },
       {
         text: 'explaining the functionalities of the module',
-        correct: false,
       },
     ],
     comment: '<p>Scripting is great for compiling and processing. However, not all the modules you have installed can be used for scripting: binaries are required for the packages to be invoked from the command line.</p>\n<p>Linters, precompilers and testing frameworks are examples of packages that should provide such a binary file. All of the available commands are commonly located inside the <em>node_modules/.bin/</em> directory.</p>\n<p>You can check the exact location by running:</p>\n<pre><code class="language-bash">$ npm bin\n/home/user/project/node_modules/.bin\n</code></pre>\n<p>Add an extra <code>-g</code> flag (<code>--global</code>) to check where global packages are installed:</p>\n<pre><code class="language-bash">$ npm bin\n/usr/local/bin\n</code></pre>\n<p>There isn\'t a predefined command for listing the available binaries, but you can manually do it using <em>ls</em>:</p>\n<pre><code class="language-bash">$ ls node_modules/.bin/\nbabel   mocha    phantomjs\ncoffee  nodemon  semver\n</code></pre>\n',

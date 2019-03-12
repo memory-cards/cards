@@ -3,7 +3,7 @@
     author: 'elliehoward',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/intro-browser-js/modifying-the-body.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,15 +14,12 @@
     answers: [
       {
         text: 'You overwrite all elements inside the body tag with the new content.',
-        correct: true,
       },
       {
         text: 'The content is appended to the existing content of the body tag.',
-        correct: false,
       },
       {
         text: 'A syntax error is thrown.',
-        correct: false,
       },
     ],
     comment: '<p>To reference the body element with the DOM you simply use <code>document.body</code> rather than selecting the body element with <code>getElementsByTagName</code> method. For example, this is how to store a reference to the body in a variable:<br>\n<code>var bodyElement = document.body</code>  </p>\n<h2>Overwriting the body</h2>\n<p>If you change the content of the body it will overwrite all elements inside the body.</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n&#x3C;h1>\n  Welcome to my page\n&#x3C;/h1>\n&#x3C;p>\n  Hello World!\n&#x3C;/p>\n&#x3C;p>\n  My page has so much content\n&#x3C;/p>\n\n&#x3C;script>\ndocument\n .body\n .innerHTML = "Changed!";\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>In the example above, the <code>h1</code> element and the two paragraph elements would be overwritten with the word "Changed!"</p>\n<h2>Modifying the body</h2>\n<p>You can also do cool things like change the background color of the page by setting attributes on the body element:</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;h1>Hello World!&#x3C;/h1>\n\n&#x3C;script>\ndocument\n.body\n.style\n.backgroundColor = "pink";\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n',

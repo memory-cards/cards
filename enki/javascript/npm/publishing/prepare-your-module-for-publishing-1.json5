@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/publishing/prepare-your-module-for-publishing.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,11 +17,9 @@
     answers: [
       {
         text: 'private',
-        correct: true,
       },
       {
         text: 'public',
-        correct: false,
       },
     ],
     comment: '<p>If you decide to publish your module, a good <em>README.md</em> file is necessary. It does not only help you keep track of the capabilities of the module, but also it helps others understand how to use your module.</p>\n<p>There are many ways to write the README file but it\'s worth considering the following sections:</p>\n<pre><code class="language-md">## Introduction\n The introduction should consist of one or\n two paragraphs summarizing the\n purpose of the project.\n\n## Installation\n This should contain dependencies that are\n required for the module to work and how\n to set up the module.\n\n## Usage\n You should specify the main methods of\n the module here and maybe add some example\n outputs for sanity checking.\n\n## Tests\n If you have included tests,\n provide the code that runs them.\n</code></pre>\n<p>When you consider your module ready, run the following to publish it:</p>\n<pre><code class="language-bash">$ npm publish\n</code></pre>\n<p>Scoped packages are private by default, but you have to pay a subscription to keep them private. It is free, however, to publish <em>public packages</em>. In case your module is scoped and you want it to be public, run:</p>\n<pre><code class="language-bash">$ npm publish --access=public\n</code></pre>\n<p>You should now be able to find your package in the npm registry.</p>\n',

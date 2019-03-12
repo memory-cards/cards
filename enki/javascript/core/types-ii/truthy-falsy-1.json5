@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types-ii/truthy-falsy.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,15 +15,12 @@
     answers: [
       {
         text: 'falsy',
-        correct: true,
       },
       {
         text: 'truthy',
-        correct: false,
       },
       {
         text: 'neither falsy nor truthy',
-        correct: false,
       },
     ],
     comment: '<p>All values in JavaScript have a special inherit <em>boolean</em> value of either <em>true</em> or <em>false</em>.</p>\n<p>The following are always considered false or falsy values:</p>\n<ul>\n<li>null</li>\n<li>0</li>\n<li>false</li>\n<li>"" (empty string)</li>\n<li>undefined</li>\n<li>NaN (Not A Number)</li>\n</ul>\n<p>Every other value is considered to have a value of true.</p>\n<p>This includes some things you might not expect such as:</p>\n<ul>\n<li>Empty objects</li>\n<li>The string version of zero e.g. "0"</li>\n<li>Empty arrays and functions</li>\n</ul>\n<p><strong>But why is this important?</strong></p>\n<p>This is often used as a shortcut for conditional logic such as testing if an object is null.</p>\n<p>For example as <em>null</em> or <em>undefined</em> objects have an inherent value of <em>false</em> we can use this with an if statement to perform different logic:</p>\n<pre><code>if (myObj){\n   //object exists\n}\nelse {\n   //object does not exist\n}\n</code></pre>\n',

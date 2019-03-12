@@ -13,31 +13,31 @@
     question: '<pre><code class="language-javascript">myData.x.y = 3;\nmyData.a.b.push(4);\n</code></pre>\n<p>Give the equivalent of the code above with the help of immutability helpers:</p>\n<pre><code class="language-javascript">var update = require(\'react-addons-update\');\nvar newObj = ???(myData, {\n x: {y: {???set :3}},\n a: {b: {$???: [4]}},\n});\n</code></pre>\n',
     answers: [
       {
-        text: 'update',
+        text: '`update`',
       },
       {
-        text: '$',
+        text: '`$`',
       },
       {
-        text: 'push',
+        text: '`push`',
       },
       {
-        text: 'set',
+        text: '`set`',
       },
       {
-        text: '$unshift',
+        text: '`$unshift`',
       },
       {
-        text: 'splice',
+        text: '`splice`',
       },
       {
-        text: 'arrray',
+        text: '`arrray`',
       },
       {
-        text: '{',
+        text: '`{`',
       },
       {
-        text: '}',
+        text: '`}`',
       },
     ],
     comment: '<p>Opting out for an immutable style of data management, a significant speed up can be achieved by easily implementing a fast <code>shouldComponentUpdate()</code> lifecycle method.</p>\n<p>Given the fact that <strong>JavaScript</strong> wasn\'t designed for dealing with immutable data, <strong>React</strong> provides an immutability helper <code>update()</code> with a  syntax inspired by <strong>MongoDB</strong>.</p>\n<p>Mutate without having any way of determining which data has changed:</p>\n<pre><code class="language-javascript">myData.x.y.z = 7;\nmyData.a.b.push(9);\n</code></pre>\n<p>Using the immutability helper:</p>\n<pre><code class="language-javascript">var update = require(\'react-addons-update\');\nvar newData = update(myData, {\n  x: {y: {z: {$set: 7}}},\n  a: {b: {$push: [9]}}\n});\n</code></pre>\n<p>The <code>$</code> is a prefix for keys that are called commands such as <code>{$push: array}</code> or <code>{$apply: function}</code>.</p>\n<p>(Shallow) merge:</p>\n<pre><code class="language-javascript">var obj = {a: 5, b:3};\nvar newObj = update(obj, {\n  $merge: {b: 6, c: 7}});\n//newObj = {a: 5, b:6, c:7}\n</code></pre>\n<p>Other worth mentioning intuitive commands are <code>{$unshift: array}</code> and <code>{$splice: array of arrays}</code>.</p>\n',

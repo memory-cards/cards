@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/processes-clustering/the-worker-class.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,27 +16,21 @@
     answers: [
       {
         text: 'isConnected',
-        correct: true,
       },
       {
         text: 'process',
-        correct: false,
       },
       {
         text: 'connected',
-        correct: false,
       },
       {
         text: 'worker',
-        correct: false,
       },
       {
         text: 'isIPC',
-        correct: false,
       },
       {
         text: 'send',
-        correct: false,
       },
     ],
     comment: '<p>Given NodeJS works on a single thread, you can still make use of all processing-power of multi-core systems by spawning <strong>workers</strong>.</p>\n<p>A <em>worker</em> object contains all the public information and methods from a worker.</p>\n<p>From the <em>master</em>, the object can be obtained using <code>cluster.workers</code>. From a <em>worker</em>, the object can be obtained using <code>cluster.worker</code>.</p>\n<p>The <em>worker</em> class has many built in functions which can be used to obtain information from the worker.</p>\n<p>Each new <em>worker</em> is given a unique <em>workers</em> <em>ID</em>, while the worker is alive, the ID number is the key that indexes it in <code>cluster.wokers</code>. To get the ID number:</p>\n<pre><code class="language-javascript">worker.id();\n</code></pre>\n<p>To check if a <em>worker</em> is connected to its master via its <em>IPC</em> channel. The function returns <em>true</em> if connected, and <em>false</em> if disconnected.</p>\n<pre><code class="language-javascript">if (worker.isConnected()) {\n  process.send(\'Worker connected!\');\n}\n</code></pre>\n',

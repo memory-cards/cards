@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/intro-ecmascript/const-part-2.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,19 +17,15 @@
     answers: [
       {
         text: "will log 'enki'",
-        correct: true,
       },
       {
         text: "will log 'baz'",
-        correct: false,
       },
       {
         text: 'will raise an error',
-        correct: false,
       },
       {
-        text: 'will log <code>null</code>',
-        correct: false,
+        text: 'will log `null`',
       },
     ],
     comment: '<p>Assigning a <code>const</code> to another variable and then changing the source variable will not change the value of the <code>const</code>:</p>\n<pre><code class="language-javascript">var x = 1;\nconst y = x;\nx = 5;\nconsole.log(y); //still 1\n</code></pre>\n<p>Additionally, note that modifying a property of an object referenced by a constant will <em>not</em> throw an error and the property will be changed.</p>\n<h3>const and objects</h3>\n<p>Objects can also be declared as <code>const</code>.</p>\n<pre><code class="language-javascript">const p = {first: "john", last: "smith"};\n\n//below will cause errors:\np = 5;\np = {first: "bob", last: "smith"};\n</code></pre>\n<p>It is important to note however that the values of the object can be modified, so the below is valid:</p>\n<pre><code class="language-javascript">p.first = "bob"; //valid\n</code></pre>\n<p>If you do not want anyone to be able to modify the the object at all be sure to use <code>Object.freeze</code>[1] function.</p>\n',

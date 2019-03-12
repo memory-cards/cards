@@ -13,22 +13,22 @@
     question: '<p>What is missing from the following code snippet for getting the current time in milliseconds? </p>\n<pre><code class="language-javascript">???new ???();\n</code></pre>\n',
     answers: [
       {
-        text: '+',
+        text: '`+`',
       },
       {
-        text: 'Date',
+        text: '`Date`',
       },
       {
-        text: '=',
+        text: '`=`',
       },
       {
-        text: 'typeof',
+        text: '`typeof`',
       },
       {
-        text: 'milliseconds',
+        text: '`milliseconds`',
       },
       {
-        text: 'mseconds',
+        text: '`mseconds`',
       },
     ],
     comment: '<p>Standard way:</p>\n<pre><code>new Date().getTime()\n// 1259359833574\n</code></pre>\n<p>Shorter way:</p>\n<pre><code>+new Date()\n// 1259359833574\n</code></pre>\n<p>The above is using the <code>+</code> shortcut to convert the date object to a  number.</p>\n<p>For more powerful date manipulation,\ntry <code>moment.js</code>.</p>\n',

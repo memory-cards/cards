@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/array-updates/array-extensions.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -18,19 +18,15 @@
     answers: [
       {
         text: 'log e',
-        correct: true,
       },
       {
         text: 'log en',
-        correct: false,
       },
       {
         text: 'raise an error',
-        correct: false,
       },
       {
         text: 'log undefined',
-        correct: false,
       },
     ],
     comment: '<p>In ES6 the array type is expanded with 3 additional properties:</p>\n<ul>\n<li>keys (the indexes)</li>\n<li>values</li>\n<li>entries</li>\n</ul>\n<p>These properties return a special type of object called an <strong>iterator</strong>.</p>\n<p>If you haven\'t used one before, you can think of an iterator as a special collection that you can move through that will maintain its position.</p>\n<p>The below code uses <code>Array</code>\'s <strong>entries</strong> method to get an iterator and then logs <code>arr</code>\'s <em>keys</em> and <em>values</em>:</p>\n<pre><code class="language-javascript">var arr = ["a", "b", "c"];\n\nvar iEntries = arr.entries();\n\niEntries.next();\n//{value: [0, "a"], done:false}\n\niEntries.next();\n//{value: [1, "b"], done:false}\n\niEntries.next();\n//{value: [2, "c"], done:false}\n\niEntries.next();\n//{value: undefined, done: true}\n</code></pre>\n',

@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/events/consuming-events.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,15 +16,12 @@
     answers: [
       {
         text: '.on',
-        correct: true,
       },
       {
         text: '.event',
-        correct: false,
       },
       {
         text: '.start',
-        correct: false,
       },
     ],
     comment: "<p>Node applications are event driven applications, an event occurs upon a change of state in an application, for example, a button being clicked, or data being inputted.</p>\n<p>Node events are consumed when an in-application event occurs, modules subscribe to events by listening to the event on a given object. For example, in a file system, an event could be that a file has been edited:</p>\n<pre><code class=\"language-javascript\">var system = require('.filesytem.js');\nsystem.file.on('edit', function() {\n\n  // do something...\n\n});\n</code></pre>\n<p>In this example, the <code>system.file</code> object is an event emitter, a module can listen to this object by both using the <code>.on</code> method and passing in a function which is called whenever an event with that given name occurs.</p>\n<p>Events can also produce relevant data, for example if you wanted to know who edited a file in the system:</p>\n<pre><code class=\"language-javascript\">system.file.on('edit', function\n                      (fileID, initials) {\n\n  console.log('File number %d was edited'\n          + 'by %s', fileID, initials);\n\n});\n</code></pre>\n<p>To unsubscribe to events, use the <code>.removeListener</code>  method and specify the event type and the event listener function.</p>\n<pre><code class=\"language-javascript\">function onEdit(fileID, initials) {\n  // on edit, do something...\n}\n\nsystem.file.removeListener('edit', onEdit);\n</code></pre>\n",

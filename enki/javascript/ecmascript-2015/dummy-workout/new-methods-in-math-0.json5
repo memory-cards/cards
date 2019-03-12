@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/new-methods-in-math.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,23 +14,18 @@
     answers: [
       {
         text: '1',
-        correct: true,
       },
       {
         text: '0',
-        correct: false,
       },
       {
         text: '-1',
-        correct: false,
       },
       {
         text: 'NaN',
-        correct: false,
       },
       {
         text: 'Math error',
-        correct: false,
       },
     ],
     comment: '<p>ES6 introduces several methods to <code>Math</code>, for example:</p>\n<p><code>.sign(n)</code> returns the sign of <code>n</code> as -1 or +1. <code>n</code> is returned if <code>n</code> is NaN or zero.</p>\n<pre><code>Math.sign(-Infinity); // -1\nMath.sign(0); // 0\nMath.sign(NaN); // NaN\n</code></pre>\n<p><code>.trunc(n)</code> removes the decimal fraction of <code>n</code>.</p>\n<pre><code>Math.trunc(-2.4); // -2\n</code></pre>\n<p><code>.log2(n)</code> finds the logarithm to base 2 of <code>n</code>.</p>\n<pre><code>Math.log2(16); // 4\n</code></pre>\n<p><strong>Bitwise operations</strong>, e.g. <code>.clz32(int)</code> counts the leading zero bits in the 32 bit integer <code>int</code>.</p>\n<p><strong>Trigonometric methods</strong>, e.g. <code>.acosh(n)</code> finds the inverse hyperbolic cosine of n.</p>\n',

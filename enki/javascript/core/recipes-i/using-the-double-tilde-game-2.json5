@@ -3,7 +3,7 @@
     author: 'adamMontgomerie',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-i/using-the-double-tilde-game.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,16 +13,13 @@
     question: '<pre><code class="language-javascript">var x = true;\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nDouble tilde <code>true</code> evaluates to 1 since the double tilde is technically a <em>double NOT bitwise operator</em>. <code>True</code> evaluates to <code>1</code> and <code>False</code> evaluates to <code>0</code>.\n%</p>\n',
     answers: [
       {
-        text: '1',
-        correct: true,
+        text: '`1`',
       },
       {
-        text: 'true',
-        correct: false,
+        text: '`true`',
       },
       {
-        text: 'NaN',
-        correct: false,
+        text: '`NaN`',
       },
     ],
     comment: '<p>Your goal is to determine what the console will print out for each given value of <code>x</code>.</p>\n',

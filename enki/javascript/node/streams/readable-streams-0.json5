@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/streams/readable-streams.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,15 +17,12 @@
     answers: [
       {
         text: 'File system',
-        correct: true,
       },
       {
         text: 'http',
-        correct: false,
       },
       {
         text: 'readStream',
-        correct: false,
       },
     ],
     comment: '<p>A readable stream reads data from a source. A source could be a file on a system, another stream, an array or buffer in memory or a variety of other options. Streams are <code>EventEmitters</code>, therefore they emit a number of events whilst running.</p>\n<p>The most efficient way of reading data from a stream is to add a <em>listener</em> to the <em>data</em> event and attach a callback. When data is available to be read, the (readable) stream will emit a data event causing the callback to run, for example:</p>\n<pre><code class="language-javascript">// require file system\nvar fs = require(‘fs’);\nvar rstream = fs.createReadStream\n                        (‘file.txt’);\nvar data = ‘’;\n\nrstream.on(‘data’, function(avail) {\n\n  data+=avail;\n\n});\n</code></pre>\n<p>Calling <code>fs.createReadStream</code> creates a readable stream, this stream then beings to flow once a callback has been attached.</p>\n<p>A callback also needs to be added for when the stream has reached the end of the data:</p>\n<pre><code class="language-javascript">rstream.on(‘end’, function() {\n\n  console.log(data);\n\n});\n</code></pre>\n<p>Encoding can be set on the stream like follows:</p>\n<pre><code class="language-javascript">rstream.setEncoding(‘utf8’);\n</code></pre>\n',

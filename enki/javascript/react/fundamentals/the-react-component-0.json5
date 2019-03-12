@@ -13,28 +13,28 @@
     question: '<p>Complete the missing gaps such that a <code>component</code> is defined using <code>ES6</code> syntax:</p>\n<pre><code>??? MyComponent ??? React.??? {\n  ???() {\n    return &#x3C;h1>Hello, World!&#x3C;/h1>;\n  }\n}\n</code></pre>\n',
     answers: [
       {
-        text: 'class',
+        text: '`class`',
       },
       {
-        text: 'extends',
+        text: '`extends`',
       },
       {
-        text: 'Component',
+        text: '`Component`',
       },
       {
-        text: 'render',
+        text: '`render`',
       },
       {
-        text: 'return',
+        text: '`return`',
       },
       {
-        text: 'Enki',
+        text: '`Enki`',
       },
       {
-        text: 'createClass',
+        text: '`createClass`',
       },
       {
-        text: 'createElement',
+        text: '`createElement`',
       },
     ],
     comment: "<p>In <strong>React</strong> a <code>component</code> represents a fundamental <em>class</em> you can work with to build re-usable and independent <code>UI</code> blocks.</p>\n<p>These <code>component</code>s behave like simple functions, they can take input arguments called <code>props</code> and will return what should be <em>rendered</em>.</p>\n<p>The <em>rendered</em> output needs to be specified inside a function called <code>render()</code>.</p>\n<p>To create a component you can <code>extend</code> the <code>ES6</code>[1] class <code>React.Component</code>:</p>\n<pre><code>class Enki extends React.Component {\n  render() {\n    return &#x3C;p>Enki aka Ea&#x3C;/p>;\n  }\n}\n</code></pre>\n<p>You can pass dynamic values to a component via <code>props</code> which will be discussed next. In addition, you can use other components when <code>render</code>ing.</p>\n<p><code>Component</code> names should start with a capital letter such that you can differentiate them from <strong>DOM tags</strong>.</p>\n<p>An <code>element</code> can represent your <code>component</code> as well:</p>\n<pre><code>const element = &#x3C;Enki />;\n</code></pre>\n<p>Giving you the means to <code>render</code> it:</p>\n<pre><code>ReactDOM.render(\n  element,\n  document.getElementById('root')\n);\n</code></pre>\n<p>Because our <code>component</code> didn't use any input (<code>prop</code>) we didn't need to specify those values in the <code>element</code>.</p>\n",

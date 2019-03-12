@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/redux-i/the-redux-store.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,24 +13,19 @@
     question: '<p>What method is used to send an action to the store and to change the state?\n???</p>\n',
     answers: [
       {
-        text: 'dispatch()',
-        correct: true,
+        text: '`dispatch()`',
       },
       {
-        text: 'createStore()',
-        correct: false,
+        text: '`createStore()`',
       },
       {
-        text: 'getState()',
-        correct: false,
+        text: '`getState()`',
       },
       {
-        text: 'subscribe()',
-        correct: false,
+        text: '`subscribe()`',
       },
       {
-        text: 'replaceReducer()',
-        correct: false,
+        text: '`replaceReducer()`',
       },
     ],
     comment: '<p>The <strong>Redux</strong> store is simply an object with few <em>methods</em> that holds the whole <em>state tree</em> of your application. The only way to change this state is by <code>dispatching</code> an action to the store.</p>\n<p>To create your store you need to pass your main <code>reducer</code> to the <code>createStore</code> function :</p>\n<pre><code class="language-javascript">import { createStore } from \'redux\';\nlet store = createStore(reducer, initState);\n</code></pre>\n<p>Get the current <em>state tree</em> of the application:</p>\n<pre><code class="language-javascript">store.getState();\n</code></pre>\n<p>Change the <em>state</em>, providing an action:</p>\n<pre><code class="language-javascript">store.dispatch(myAction());\n</code></pre>\n<p>The <code>action</code> object must have a <code>type</code> that designates the type of the action wanted to be performed. <code>Strings</code> should be used for <code>types</code> as they are serializable.</p>\n<p>Add a change listener that is called whenever an action is dispatched , and parts of the <em>state tree</em> may have changed:</p>\n<pre><code class="language-javascript">store.subscribe(listener);\n</code></pre>\n<p>The current <strong>reducer</strong> function can be changed:</p>\n<pre><code class="language-javascript">store.replaceReducer(newReducer);\n</code></pre>\n',

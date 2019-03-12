@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types-ii/truthy-falsy-gotchas.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,15 +15,12 @@
     answers: [
       {
         text: 'true',
-        correct: true,
       },
       {
         text: 'false',
-        correct: false,
       },
       {
         text: 'error',
-        correct: false,
       },
     ],
     comment: '<p>You should be aware that JavaScript has a complex set of rules that contain a few gotchas about how primitive values are compared that can lead to some unexpected comparisons.</p>\n<p>For example:</p>\n<pre><code class="language-javascript">false == "0" //true\nfalse == "" //true\n</code></pre>\n<h3>Null</h3>\n<p>Null is also one to beware of as behaves strangely:</p>\n<pre><code class="language-javascript">null == false\n//false\n</code></pre>\n<p><code>null</code> and <code>undefined</code> are special and equal only to themselves and each other.</p>\n<p>... And there are many more of these strange cases so watch out!</p>\n',

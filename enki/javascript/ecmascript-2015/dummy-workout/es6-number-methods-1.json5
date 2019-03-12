@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/es6-number-methods.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,20 +13,16 @@
     question: '<p>Check if a number is a *<em>safe</em></p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'integer using <code>Number</code>:',
-        correct: true,
+        text: 'integer using `Number`:',
       },
       {
         text: 'isSafeInteger(number)',
-        correct: false,
       },
       {
         text: 'isInteger(number)',
-        correct: false,
       },
       {
         text: 'isFinite()',
-        correct: false,
       },
     ],
     comment: "<p>ES6 introduces several methods to <code>Number</code>.</p>\n<p>The method <code>.isFinite()</code> is false if the number is +/- infinity or NaN.</p>\n<pre><code>Number.isFinite(Infinity) //false\nNumber.isFinite(10) // true\nNumber.isFinite('10') // false\n</code></pre>\n<p><code>.isNaN()</code> is true if the value of the number is NaN.</p>\n<p><code>.EPSILON</code> specifies a margin of error when comparing floating point values which can't be exactly represented e.g. decimal fractions.</p>\n<p><code>.isInteger(number)</code> returns true if <code>number</code> is an integer.</p>\n<p><code>.isSafeInteger(number)</code> returns true if <code>number</code> is in the range <strong>−2^53 &#x3C; i &#x3C; 2^53</strong>. The result of applying an integer operator is only guaranteed to be correct if <strong>all</strong> operands and the result are safe.</p>\n",

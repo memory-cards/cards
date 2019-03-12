@@ -3,7 +3,7 @@
     author: 'Bruno',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/types-ii/be-careful-when-using-typeof.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,19 +15,15 @@
     answers: [
       {
         text: 'An object',
-        correct: true,
       },
       {
         text: 'Null',
-        correct: false,
       },
       {
         text: 'A date',
-        correct: false,
       },
       {
         text: 'Undefined',
-        correct: false,
       },
     ],
     comment: '<p>Certain data types are objects yet we refer to them as their more specific type, for example arrays\nare objects but they are specialized objects so we call them an array and expect them to behave as an array.\n<code>typeof</code> returns "object" for all objects, and nothing more specific.</p>\n<p>Examples:</p>\n<pre><code>typeof null // "object"\ntypeof new Date() // "object"\ntypeof new Array() // "object"\n</code></pre>\n',

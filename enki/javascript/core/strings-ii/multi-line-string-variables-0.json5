@@ -3,7 +3,7 @@
     author: 'jordanfish',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/strings-ii/multi-line-string-variables.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -18,19 +18,15 @@
     answers: [
       {
         text: 'Backticks (`)',
-        correct: true,
       },
       {
-        text: "Single quotes (<code>'</code>)",
-        correct: false,
+        text: "Single quotes (`'`)",
       },
       {
-        text: 'Double quotes (<code>"</code>)',
-        correct: false,
+        text: 'Double quotes (`"`)',
       },
       {
-        text: 'Backslash (<code>\\</code>)',
-        correct: false,
+        text: 'Backslash (`\\`)',
       },
     ],
     comment: '<p>For readability, it may be preferable to write strings over multiple lines:</p>\n<pre><code class="language-javascript">var stringOfHTML = "&#x3C;div>\n  This is a bad example.\n&#x3C;/div>";\n</code></pre>\n<p>However, this will cause an error. </p>\n<p>To preserve both readability and functionality, use string concatenation:</p>\n<pre><code class="language-javascript">var stringOfHTML = \'&#x3C;div>\' +\n  \'  This is a better example.\' +\n\'&#x3C;/div>\';\n</code></pre>\n<p>Or, ES2015 makes it possible to use backticks, in this form:</p>\n<pre><code>var stringOfHTML = `This is a \nmulti-line\nstring in ES6!`;\n</code></pre>\n',

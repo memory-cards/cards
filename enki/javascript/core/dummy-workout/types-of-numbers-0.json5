@@ -3,7 +3,7 @@
     author: 'pawel',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/dummy-workout/types-of-numbers.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,15 +16,12 @@
     answers: [
       {
         text: 'types of numbers.',
-        correct: true,
       },
       {
         text: 'data types.',
-        correct: false,
       },
       {
         text: 'data structures.',
-        correct: false,
       },
     ],
     comment: "<p>Unlike many other programming languages, JavaScript doesn't differentiate between types of numbers, such as integers or floating-points.</p>\n<p>Instead, numbers are always stored as <em>double precision floating point numbers</em>, following the international <code>IEEE 754</code> standard.</p>\n<p>This format stores numbers in 64 bits, where the fraction is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63.</p>\n<p>JavaScript also has multiple helpful constants accessible through the <code>Number</code> object:</p>\n<ul>\n<li><code>Number.MIN_VALUE</code> = <strong>5e-324</strong> (the smallest possible value above 0)</li>\n<li><code>Number.MAX_VALUE</code> = <strong>1.7976931348623157e+308</strong></li>\n<li><code>Number.NaN</code> = <strong>NaN</strong></li>\n<li><code>Number.POSITIVE_INFINITY</code></li>\n</ul>\n",

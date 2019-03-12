@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async/async-a-history.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,19 +17,15 @@
     answers: [
       {
         text: 'await',
-        correct: true,
       },
       {
         text: 'yield',
-        correct: false,
       },
       {
         text: 'return',
-        correct: false,
       },
       {
         text: 'throw',
-        correct: false,
       },
     ],
     comment: '<p>There are several ways of programming <strong>asynchronously</strong> in JavaScript. Each method was introduced as an improvement over the existing method. </p>\n<p><strong>ES5 callbacks</strong> </p>\n<p>Use a callback function to encapsulate the continuation of the program. Some problems are "callback hell", error handling and no use of <code>return</code> or <code>throw</code>.</p>\n<p><strong>ES6 promises</strong> </p>\n<p>Use promises as a placeholder for a future value, like an order number at a fast-food restaurant. This allows decisions to be made before the value is known.</p>\n<p><strong>ES6 generators</strong> </p>\n<p>Pause and continue a generator function from a <code>yield</code> point. This is designed for synchronous programming but can be hacked into working asynchronously.</p>\n<p><strong>ECMAScript2017 async</strong> </p>\n<p>In ECMAScript2017 it will be possible to use the <code>async</code> keyword to create an async function. The <code>await</code> keyword works similarly to <code>yield</code>.</p>\n',

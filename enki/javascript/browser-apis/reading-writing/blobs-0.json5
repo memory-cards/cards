@@ -13,25 +13,25 @@
     question: '<p>Use the blob constructor to create a blob:</p>\n<pre><code class="language-javascript">var debug = {hello: "Enki"};\n\nvar blob = new ???([\n    JSON.???(debug, null, 2)],\n    {type : \'application/json\'});\n</code></pre>\n',
     answers: [
       {
-        text: 'Blob',
+        text: '`Blob`',
       },
       {
-        text: 'stringify',
+        text: '`stringify`',
       },
       {
-        text: 'Instance',
+        text: '`Instance`',
       },
       {
-        text: 'slice',
+        text: '`slice`',
       },
       {
-        text: 'start',
+        text: '`start`',
       },
       {
-        text: 'config',
+        text: '`config`',
       },
       {
-        text: 'Class',
+        text: '`Class`',
       },
     ],
     comment: '<p>A <em>blob</em> object represents an "almost file" object of raw data. It represents data that isn\'t in JavaScript\'s standard format. You use <em>FileReader</em> to read data from a blob.</p>\n<p>To create a blob, use the blob constructor:</p>\n<pre><code class="language-javascript">var debug = {hello: "world"};\nvar blob = new Blob([\n  JSON.stringify(debug, null, 2)\n], {type : \'application/json\'});\n</code></pre>\n<p>To create a subset of a blob, use the <em>slice()</em> method:</p>\n<pre><code class="language-javascript">var blob = instanceOfBlob.slice([\n  start [, end [, contentType]]\n]);\n</code></pre>\n',

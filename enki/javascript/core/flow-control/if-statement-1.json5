@@ -14,28 +14,28 @@
     question: '<p>How would you write an <code>if/else</code> statement?</p>\n<pre><code>if (condition &#x3C;= 0) {\n  ...\n} ??? ??? (condition > 0) {\n  ...\n}\n</code></pre>\n',
     answers: [
       {
-        text: 'else',
+        text: '`else`',
       },
       {
-        text: 'if',
+        text: '`if`',
       },
       {
-        text: 'case',
+        text: '`case`',
       },
       {
-        text: 'break',
+        text: '`break`',
       },
       {
-        text: 'if else',
+        text: '`if else`',
       },
       {
-        text: 'else if',
+        text: '`else if`',
       },
       {
-        text: 'switch',
+        text: '`switch`',
       },
       {
-        text: '==',
+        text: '`==`',
       },
     ],
     comment: '<p>Like most programming languages JavaScript has a number of flow control statements including the standard <em>if</em>, <em>if else</em> and <em>switch</em> statements.</p>\n<pre><code>var isNewCustomer=true;\n\nif(isNewCustomer===true){\n   ...\n}\n\nif(invalidLogins > 3){\n   ...\n}\n</code></pre>\n<p><strong>If else</strong></p>\n<p>We can test multiple conditions using if else. The first expression that is found to be true will be executed and if none of them are true then the else condition (if it exists):</p>\n<pre><code>if(isNewCustomer){\n ..\n}\nelse if (isVipCustomer){\n...\n}\nelse {\n...\n}\n</code></pre>\n<p><strong>Switch Statements</strong></p>\n<p>Code can be more readable using the switch statement if there are many cases for a single value.</p>\n<pre><code>switch (customerType){\n   case: "normal" :\n         ...\n         break;\n   case: "vip":\n         ...\n         break;\n   default:\n         ...\n}\n</code></pre>\n',

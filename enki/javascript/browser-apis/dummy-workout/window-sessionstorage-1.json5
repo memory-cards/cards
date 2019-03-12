@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dummy-workout/window-sessionstorage.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: 'When tab is closed.',
-        correct: true,
       },
       {
         text: 'When page is refreshed.',
-        correct: false,
       },
       {
         text: 'When page is reloaded.',
-        correct: false,
       },
       {
         text: 'When page is scrolled.',
-        correct: false,
       },
     ],
     comment: '<p><em><code>sessionStorage</code></em> is an object which stores data for just one navigation session. Session storage lasts for as long as the tab is open, it remains when the page is refreshed and or reloaded but terminates once the tab has been closed.</p>\n<p>Opening a new tab or window will initiate a new session storage object.</p>\n<p>Saving data to session storage and retrieving it:</p>\n<pre><code class="language-javascript">sessionStorage.setItem(\'itemName\', \'info\');\nvar data = sessionStorage.\n                  getItem(\'itemName\');\nconsole.log(data); // prints \'info\'\n</code></pre>\n<p>Example of session storage autosaving the value of a text field and restoring this field if a browser is refreshed:</p>\n<pre><code class="language-javascript">var test = document.getElementById("input");\n// find autosaved value caused by refresh\nif (sessionStorage.getItem("autosave")) {\n  test.value = sessionStorage.\n                   getItem("autosave");\n}\n// listen for text field changes\ntest.addEventListener("change", function() {\n  sessionStorage.setItem("autosave", \n                         test.value);\n});\n</code></pre>\n',

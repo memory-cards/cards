@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/scope/scope-and-strict-mode.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -19,15 +19,12 @@
     answers: [
       {
         text: 'or **strict** mode?',
-        correct: true,
       },
       {
-        text: 'non-strict',
-        correct: false,
+        text: '`non-strict`',
       },
       {
-        text: 'strict',
-        correct: false,
+        text: '`strict`',
       },
     ],
     comment: '<p>In <strong>non-strict mode</strong>, a variable not found in a <strong>local</strong> scope will be created in the <strong>global</strong> scope.</p>\n<p>For example, the variable <code>baz</code> is undeclared in the scope of the function <code>bar()</code> so will be created in the global scope:</p>\n<pre><code class="language-javascript">function bar(foo){\n    foo = "hello"; // local scope\n    baz = "world"; // global scope\n}\n</code></pre>\n<p>This occurs on <strong>execution</strong> of the code rather than in compilation.</p>\n<p>In <strong>strict mode</strong> this does not happen and would give a reference error of <code>undeclared</code>. </p>\n<p><code>undeclared</code> means that there is no present declaration of the variable in any of the scopes.</p>\n<p>Note: this is not the same as <code>undefined</code>.</p>\n<p>It is recommended that you use strict mode for your code to prevent <strong>variable leaks</strong>.</p>\n',

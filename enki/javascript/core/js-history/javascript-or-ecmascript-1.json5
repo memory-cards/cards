@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/js-history/javascript-or-ecmascript.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,15 +16,12 @@
     answers: [
       {
         text: 'JavaScript',
-        correct: true,
       },
       {
         text: 'ECMAScript-262',
-        correct: false,
       },
       {
         text: 'ECMAScript 2016',
-        correct: false,
       },
     ],
     comment: '<p>The language that would become JavaScript was created by <strong>Brendan Eich</strong> in 1995 and then standardized by an organization called ECMA as <strong>ECMAScript-262</strong>. The standardization was needed as two versions of the initial JavaScript (Netscape\'s JavaScript and Microsoft\'s JScript) came out, similar enough to be considered "versions", but different enough to cause confusion.</p>\n<p>What ECMAScript does is to provide a schema which regulates the underlying behavior of the implementing languages.</p>\n<p>The current JavaScript is considered a <strong>dialect</strong> (or implementation) of ECMAScript, but there are other popular dialects in use such as Adobe’s ActionScript.</p>\n<p>At the time of writing the current version of ECMAScript is <strong>ECMAScript 2015</strong> which is also sometimes referred to as <strong>ECMAScript 6</strong> or just <strong>ES6</strong>.</p>\n<h3>ECMAScript and Web Pages</h3>\n<p>ECMAScript has no methods for manipulating or working with web pages.</p>\n<p>When people use the word JavaScript, they are usually referring to ECMAScript and extensions such as the <strong>DOM</strong> (Document Object Model) that defines methods for manipulating web pages and the <strong>BOM</strong> (Browser Object Model) that provide functionality for working with the browser.</p>\n<p>In conclusion, JavaScript and ECMAScript are not precisely the same, but the development of the JavaScript language is driven by the new standards introduced in revised versions of ECMAScript.</p>\n',

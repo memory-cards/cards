@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/string-upgrades/string-extensions.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,23 +14,18 @@
     answers: [
       {
         text: 'Z',
-        correct: true,
       },
       {
         text: 'z',
-        correct: false,
       },
       {
         text: 'a',
-        correct: false,
       },
       {
         text: '90.0',
-        correct: false,
       },
       {
         text: '90',
-        correct: false,
       },
     ],
     comment: '<p>ES6 expands on existing primitives to fix some long time issues and add useful functionality.</p>\n<p>In previous versions of EcmaScript if you wanted to use Unicode characters one method was to use <em>String.fromCharCode</em>:</p>\n<pre><code class="language-javascript">String.fromCharCode(65); // A\n</code></pre>\n<p>However <em>fromCharCode</em> doesn’t work with all possible unicode values, but only ranging from <code>1</code> to <code>65535</code> (<code>0xFFFF</code>). Greater number used as input will be truncated automatically.</p>\n<pre><code class="language-javascript">String.fromCharCode(0x2014) // —\nString.fromCharCode(0x12014) // -\n// the first 1 is truncated\n</code></pre>\n<p>ES6 introduces a new method <em>fromCodePoint</em> that can be used to work with all Unicode values up to 21 bits:</p>\n<pre><code class="language-javascript">String.fromCodePoint(65); // A\nString.fromCodePoint(65,66,67); // ABC\nString.fromCodePoint(0x12014) // 𒀔\n</code></pre>\n',

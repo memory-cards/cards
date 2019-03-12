@@ -14,25 +14,25 @@
     question: '<p>Consider the following url:</p>\n<pre><code>http://example.com/data/index.html\n</code></pre>\n<p>Get the host of the url:</p>\n<pre><code class="language-javascript">window.???.???;\n</code></pre>\n',
     answers: [
       {
-        text: 'location',
+        text: '`location`',
       },
       {
-        text: 'host',
+        text: '`host`',
       },
       {
-        text: 'navigator',
+        text: '`navigator`',
       },
       {
-        text: 'history',
+        text: '`history`',
       },
       {
-        text: 'url',
+        text: '`url`',
       },
       {
-        text: 'protocol',
+        text: '`protocol`',
       },
       {
-        text: 'pathname',
+        text: '`pathname`',
       },
     ],
     comment: '<p>It is possible to access the current <code>URL</code> in parts, so for a website such as:</p>\n<p><em><a href="http://example.com/data/index.html">http://example.com/data/index.html</a></em></p>\n<ul>\n<li>window.location.protocol = <code>http:</code></li>\n<li>window.location.host = <code>example.com</code></li>\n<li>window.location.pathname = <code>data/index.html</code></li>\n</ul>\n<p>From this, we can construct the full <code>URL</code> path:</p>\n<pre><code class="language-javascript">var newURL = window.location.protocol +\n"//" + window.location.host +\n "/" + window.location.pathname;\n</code></pre>\n',

@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/operational-vs-programmer-errors/handling-programmer-errors.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,23 +16,18 @@
     answers: [
       {
         text: 'Allowing a request to fail and reverting the state changes',
-        correct: true,
       },
       {
         text: 'Allowing a request to fail',
-        correct: false,
       },
       {
         text: 'Restarting the system',
-        correct: false,
       },
       {
         text: 'Fixing the programmer error',
-        correct: false,
       },
       {
         text: 'Handling the programmer error properly',
-        correct: false,
       },
     ],
     comment: "<p>Programmer errors are <em>bugs</em>. Hence, they <strong>can't and shouldn't</strong> be handled. The only way to deal with them is to debug and fix the problem. If the error is expected, that makes it operational.</p>\n<p>In production, if such an error is encountered while fulfilling a request, there are two workarounds until the next deploy: <em>recover</em> or <em>crash immediately</em>.</p>\n<p>Recovering means allowing the operation to fail but continue handling requests. But this is a problem you hadn't considered, so there is no way to know if this will be an one time only or it will wreak havoc among the other connections. For example, a variable left <code>null</code> or <code>undefined</code> will cause following requests to blow up as well, a connection can be left in an authenticated state, also used for new connections or memory may leak.</p>\n<p>Undoubtedly, the best response is to <em>crash and restart</em> the server. This is the fastest way to fully restore the service - or as much as possible, considering the bug - until the problem is fixed for good. Going straight for the cause instead of wasting time treating the symptoms will often reduce the number of times a server crashes.</p>\n<p>Remember that programmer errors on the server become operational errors on the client. They are the ones that have to deal with servers crashes and network issues. Most of the times, even just logging the error message for the user to see is better than providing no feedback of what is happening.</p>\n",

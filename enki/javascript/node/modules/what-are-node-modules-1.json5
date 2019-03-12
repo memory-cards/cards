@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/modules/what-are-node-modules.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,19 +16,15 @@
     answers: [
       {
         text: 'node_modules',
-        correct: true,
       },
       {
         text: 'local_modules',
-        correct: false,
       },
       {
         text: 'libraries',
-        correct: false,
       },
       {
         text: 'libs',
-        correct: false,
       },
     ],
     comment: '<p>A module encapsulates an amount of code into one single code unit. Node has a module system implemented which allows for other JavaScript files to be included and used in your application. A substantial amount of Node’s core functionality was implemented using JavaScript modules.</p>\n<p>Node incorporates 3 different module types, modules can either be core modules, local modules or third party modules. An example of a core Node module is the <code>http</code> module. Local modules are Node.js files in your project that have an <code>exports</code> object declared. Third party modules usually have a <code>package.json</code> and are installed from a remote host into your <code>node_modules/</code> folder.</p>\n<p>Using modules when building Node applications give a number of advantages:</p>\n<ul>\n<li>easy and straightforward inclusion of external libraries</li>\n<li>increased modularity</li>\n<li>reduced amount of code per file</li>\n<li>easier to read and maintain code</li>\n</ul>\n',

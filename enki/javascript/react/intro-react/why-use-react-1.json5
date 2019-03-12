@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/intro-react/why-use-react.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,27 +14,21 @@
     answers: [
       {
         text: '**Virtual DOM** diff algorithm',
-        correct: true,
       },
       {
         text: 'JSX',
-        correct: false,
       },
       {
         text: 'SEO',
-        correct: false,
       },
       {
         text: 'React Native',
-        correct: false,
       },
       {
         text: 'React Chrome Extension',
-        correct: false,
       },
       {
         text: 'one-way data binding',
-        correct: false,
       },
     ],
     comment: "<p><strong>React</strong> is considered a great choice for building the <strong>UI</strong> of web applications - be it simple <em>SPAs</em>[1] or\nlarge projects with numerous authors due to the <strong>self-containing</strong> nature of its <em>components</em>.</p>\n<p>In addition to the previously stated reasons developers are eager to adopt this library, <strong>React</strong> comes with many more interesting features such as:</p>\n<ul>\n<li>great <em>performance</em> as a result of the <strong>Virtual DOM</strong> diff algorithm</li>\n<li><strong>React</strong>'s syntax is simple. Unlike other popular <code>JS</code> frameworks with specific syntax, <strong>React</strong> makes use of pure <code>JS</code></li>\n<li>easier debugging with <strong>out-of-the-box tools</strong> such as <code>React Chrome Extension</code></li>\n<li><strong>React</strong> is good for <em>Search Engine Optimisation</em> when employing server-side rendering</li>\n<li>knowing <strong>React</strong> allows you to easily switch to <strong>React Native</strong> to build applications</li>\n</ul>\n<p><strong>React Native</strong> is a different <code>JS</code> open source library released by <em>Facebook</em> that follows the same design patterns as <strong>React</strong>.\nIt's used to create applications for specific operating systems such as <code>Android</code>, <code>iOS</code> or <code>UWP</code>[2], but it lets you share a large percentage of code between them.</p>\n",

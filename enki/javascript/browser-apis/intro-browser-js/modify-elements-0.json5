@@ -13,25 +13,25 @@
     question: '<p>Change the content of each paragraph tag to say <code>"My content was changed!"</code>:</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p>Hello World!&#x3C;/p>\n&#x3C;p>I am a paragraph tag&#x3C;/p>\n&#x3C;p>my content can be changed&#x3C;/p>\n\n&#x3C;script>\nvar paragraphTags = document.???(???);\nfor (\n  var i = 0;\n  i &#x3C; paragraphTags.length;\n  i++\n) {\n  ???[i].??? = \'My content was changed!\';\n}\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n',
     answers: [
       {
-        text: 'getElementsByTagName',
+        text: '`getElementsByTagName`',
       },
       {
-        text: 'p',
+        text: '`p`',
       },
       {
-        text: 'paragraphTags',
+        text: '`paragraphTags`',
       },
       {
-        text: 'innerHTML',
+        text: '`innerHTML`',
       },
       {
-        text: 'document',
+        text: '`document`',
       },
       {
-        text: 'i',
+        text: '`i`',
       },
       {
-        text: 'getElementsByClassName',
+        text: '`getElementsByClassName`',
       },
     ],
     comment: '<p>Elements, once found, can be modified. You can modify any attribute of the element, as well as the style of the element. Here\'s an example that finds all of the paragraphs with the class "blue". There are no style rules associated with that CSS class, so let\'s change the style of each element.</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p>Hello World!&#x3C;/p>\n&#x3C;p class="blue">This should be blue&#x3C;/p>\n&#x3C;p>This is not blue&#x3C;/p>\n&#x3C;p class="blue">This should be blue&#x3C;/p>\n&#x3C;p>This is not blue&#x3C;/p>\n&#x3C;p class="blue">This should be blue&#x3C;/p>\n\n&#x3C;script>\nvar blueTags = document\n  .getElementsByClassName("blue");\n//start the loop\nfor (\n  var i = 0;\n  i &#x3C; blueTags.length;\n  i++\n) {\n  blueTags[i].style.color = \'blue\';\n}\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>We can also change the content of the tag to say "This is blue" rather than "This should be blue".</p>\n<pre><code class="language-javascript"> var blueTags = document\n   .getElementsByClassName("blue");\n for (\n   var i = 0;\n   i &#x3C; blueTags.length;\n   i++\n ) {\n   blueTags[i]\n     .style\n     .color = \'blue\';\n   blueTags[i]\n     .innerHTML = \'This is blue\';\n }\n</code></pre>\n',

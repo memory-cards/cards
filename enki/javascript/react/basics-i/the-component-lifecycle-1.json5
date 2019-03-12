@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-i/the-component-lifecycle.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: 'yes',
-        correct: true,
       },
       {
         text: 'no',
-        correct: false,
       },
       {
-        text: 'only when setting <code>state</code>',
-        correct: false,
+        text: 'only when setting `state`',
       },
       {
         text: 'if only accompanied by other **lifecycle methods**',
-        correct: false,
       },
     ],
     comment: "<p><strong>Lifecycle methods</strong> are special methods that can be overridden by a <strong>React</strong> <code>component</code> to run code at a particular point in time.</p>\n<p>These methods correspond to exact points in the <strong>component's lifecycle</strong>.</p>\n<p>A <strong>lifecycle hook</strong> is the <code>constructor(props)</code> which is commonly used to set the initial <code>state</code> of your component, but not only.</p>\n<p>Suppose you want to <code>log</code> a message when a component <strong>will</strong> be mounted[1] (before being <code>render</code>ed). For this, you can use the <code>componentWillMount</code> method:</p>\n<pre><code class=\"language-jsx\">class Spawn extends React.Component {\n  componentWillMount() {\n    console.log('I will spawn');\n  }\n  render() {\n    return &#x3C;p>I'm basic&#x3C;/p>;\n  }\n}\n</code></pre>\n<p>This <code>component</code> can be dynamically <strong>mounted</strong> multiple times in an application, when this happens we'll see the <code>log</code> in console.</p>\n<p>If you also want to mark the <strong>un-mounting</strong>, you can use the <code>componentWillUnmount()</code>:</p>\n<pre><code class=\"language-jsx\">// ...\n  componentWillUnmount() {\n    console.log('I will despawn');\n  }\n// ...\n</code></pre>\n<p>By convention, methods starting with <code>will</code> are run <strong>before</strong> an event happens while those starting with <code>did</code> are run <strong>afterwards</strong>.</p>\n<p>Making use of <strong>lifecycle methods</strong> grants you improved control over the <code>component</code>, letting you perform optimisations, free up resources, integrate third-party libraries or even handle <code>props</code> and <code>state</code> better.</p>\n",

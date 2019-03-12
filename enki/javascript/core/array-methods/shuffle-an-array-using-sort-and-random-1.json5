@@ -3,7 +3,7 @@
     author: 'Bruno',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/array-methods/shuffle-an-array-using-sort-and-random.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,15 +16,12 @@
     answers: [
       {
         text: 'shuffle the array',
-        correct: true,
       },
       {
         text: 'sort the array decreasingly',
-        correct: false,
       },
       {
         text: 'do nothing to the array',
-        correct: false,
       },
     ],
     comment: '<p>Given the array:</p>\n<pre><code class="language-javascript">var array = [1,2,3,4,5,6,7,8,9];\n</code></pre>\n<p>Sort randomly with:</p>\n<pre><code class="language-javascript">array.sort(function() {\n  return Math.random() - 0.5\n});\n</code></pre>\n<p>The <code>- 0.5</code> means the returned value exists between the range <code>-0.5 &#x3C; x &#x3C; 0.5</code>, allowing the sort function to decide where to position the next item.</p>\n<p>An example result:</p>\n<pre><code class="language-javascript">array = [4,3,1,2,9,5,6,8,7]\n</code></pre>\n',

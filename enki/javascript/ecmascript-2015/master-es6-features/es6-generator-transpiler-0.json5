@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/master-es6-features/es6-generator-transpiler.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,15 +14,12 @@
     answers: [
       {
         text: 'A transpiler or trans-compiler.',
-        correct: true,
       },
       {
         text: 'An Integrated Development Environment.',
-        correct: false,
       },
       {
         text: 'A bash terminal.',
-        correct: false,
       },
     ],
     comment: '<p>Generators are a new syntax in ES6. Unlike other ES6 features (such as Promises), Generators cannot be simply polyfilled on top of ES5. </p>\n<p>If you need to make your JavaScript available to pre-ES6 browsers you can use a <strong>transpiler</strong> or <strong>trans-compiler</strong>.  </p>\n<p>Transpilers take the ES6 syntax and transform it into pre-ES6 code with the same behaviour.</p>\n<p>An example of this is the <strong>regenerator</strong> transpiler by facebook:\n<em><a href="https://facebook.github.io/regenerator/">https://facebook.github.io/regenerator/</a></em></p>\n',

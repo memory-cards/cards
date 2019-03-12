@@ -3,7 +3,7 @@
     author: 'elliehoward',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dom-manipulation/write-a-function-to-return-a-complex-element.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,15 +14,12 @@
     answers: [
       {
         text: 'A',
-        correct: true,
       },
       {
         text: 'C',
-        correct: false,
       },
       {
         text: 'B',
-        correct: false,
       },
     ],
     comment: "<p>Let's say we have an array of data and we want to display that data in a list on a webpage.\nInstead of writing out all the HTML elements for each piece of data, we can just use a function to loop through the array and return a list based on the data passed in:</p>\n<pre><code class=\"language-javascript\">var teas = [\n  'chamomile',\n  'green',\n  'breakfast',\n  'earl grey'\n];\nvar container = document\n  .getElementById('container');\n\nfunction createListElement(data){\n  var ul = document\n    .createElement('ul');\n  for (\n    var i = 0;\n    i &#x3C; data.length;\n    i++\n  ) {\n    var li = document\n      .createElement('li');\n    var text = document\n      .createTextNode(data[i]);\n    li.appendChild(text);\n    ul.appendChild(li);\n\n  }  \n  return ul;\n}\n\nvar teaList = createListElement(\n  teas\n);\ncontainer.appendChild(\n  teaList\n);\n</code></pre>\n<p>In the example above we selected a parent element and stored it in a variable called container. Then we created a ul element, looped through our array of teas and created a li element for each type of tea while appending each of them to the ul. Once we created the list we appended it to the parent element.</p>\n",

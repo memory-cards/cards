@@ -3,7 +3,7 @@
     author: 'pawel',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/keywords-in-hash-keys.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,23 +15,18 @@
     answers: [
       {
         text: 'when the name is a special keyword',
-        correct: true,
       },
       {
         text: 'always',
-        correct: false,
       },
       {
         text: 'never',
-        correct: false,
       },
       {
         text: 'when the property type is "string"',
-        correct: false,
       },
       {
         text: 'only when the property name is "delete"',
-        correct: false,
       },
     ],
     comment: "<p>Object properties can either be presented as strings or ugly characters.</p>\n<pre><code class=\"language-javascript\">var testObject = {\n  'case': 'Random string',\n  delete: 'Another random string'\n}\n</code></pre>\n<p>However, it is considered bad practice to leave unique keywords such as <code>delete</code> unquoted as it may confuse readers and syntax highlighter.</p>\n<p>Instead, you can use quotes:</p>\n<pre><code class=\"language-javascript\">var testObject = {\n  'case': 'Random string',\n  'delete': 'Another random string'\n}\n</code></pre>\n<p>Using unquoted keywords can also be bad for portability and would raise a <code>Syntax Error</code> with old JavaScript engines.</p>\n",

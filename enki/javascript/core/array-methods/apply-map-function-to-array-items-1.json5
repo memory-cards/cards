@@ -3,7 +3,7 @@
     author: 'Dral',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/array-methods/apply-map-function-to-array-items.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -18,19 +18,15 @@
     answers: [
       {
         text: 'map()',
-        correct: true,
       },
       {
         text: 'filter()',
-        correct: false,
       },
       {
         text: 'splice()',
-        correct: false,
       },
       {
         text: 'reduce()',
-        correct: false,
       },
     ],
     comment: "<p>Using <code>.map</code> will apply a function to every element in the array, and return an array with the results.  </p>\n<pre><code>[1,2,3,4].map(x => x * 2)\n// => [2,4,6,8]\n</code></pre>\n<p>This is not limited to simple transformations.  Any features of functions can be used within a <code>mapper function</code>.</p>\n<pre><code>['Jake', 'Jack', 'Mike'].map(\n  name => `Hello ${name}`\n)\n\n// ['Hello Jake',\n//  'Hello Jack,\n//  'Hello Mike']\n</code></pre>\n",

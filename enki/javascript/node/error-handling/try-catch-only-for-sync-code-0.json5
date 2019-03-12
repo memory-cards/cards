@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/error-handling/try-catch-only-for-sync-code.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,15 +16,12 @@
     answers: [
       {
         text: 'Option C',
-        correct: true,
       },
       {
         text: 'Option A',
-        correct: false,
       },
       {
         text: 'Option B',
-        correct: false,
       },
     ],
     comment: '<p>All <em>JavaScript</em> errors are handled as exceptions that will <strong>instantly</strong> generate and <code>throw</code> and error. To handle them, <code>try-catch</code> constructor is used.</p>\n<p>However, most errors from within <strong>asynchronous</strong> APIs behave differently (mostly with callbacks or <code>EventEmitters</code>) so they can\'t be handled with <code>try-catch</code>.</p>\n<p>For example, <code>JSON.parse</code> method happens <strong>synchronously</strong>. We can handle its errors with a <code>try-catch</code> block:</p>\n<pre><code class="language-javascript">function readJSON(filePath, callback) {  \n  fs.readFile(filePath, (err, data) => {\n    var parsedJson;\n\n    // Handle error\n    if (err) {\n       return callback(err);\n    }\n\n    // Parse JSON with JSON.parse method\n    try {\n      parsedJson = JSON.parse(data);\n    } catch (exception) {\n      return callback(exception);\n    }\n\n    return callback(null, parsedJson);\n  });\n}\n</code></pre>\n',

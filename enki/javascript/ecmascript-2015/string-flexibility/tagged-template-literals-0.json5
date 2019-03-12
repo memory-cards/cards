@@ -18,31 +18,31 @@
     question: '<p>Complete the following code snippet to assemble a template string that says "Beam me up Scotty!"</p>\n<pre><code class="language-javascript">let what = "Beam" ;\nlet who = "Scotty";\n\nlet line = `??? me up ???!`;\n</code></pre>\n',
     answers: [
       {
-        text: '${what}',
+        text: '`${what}`',
       },
       {
-        text: '${who}',
+        text: '`${who}`',
       },
       {
-        text: '#{who}',
+        text: '`#{who}`',
       },
       {
-        text: '%s',
+        text: '`%s`',
       },
       {
-        text: '$(who)',
+        text: '`$(who)`',
       },
       {
-        text: '#(who)',
+        text: '`#(who)`',
       },
       {
-        text: '#{what}',
+        text: '`#{what}`',
       },
       {
-        text: '$(what)',
+        text: '`$(what)`',
       },
       {
-        text: '#(what)',
+        text: '`#(what)`',
       },
     ],
     comment: '<p>ES6 introduces a new feature called template strings that make it easier to work with strings by adding string interpolation and multi-line strings:</p>\n<pre><code>let company = "Enki";\nconsole.log(`Hello ${company}!`);\n//prints: "Hello Enki!"\n</code></pre>\n<p>Template literals are denoted by the Ó character, rather than <code>\'\'</code> or <code>""</code>. When you use template strings, you can have multiline strings:</p>\n<pre><code>let aMultilineString = `\nHello\nI am a multiline string\n`\n</code></pre>\n<p>As well as embedding <em>any</em> JavaScript expression inside of a pair of curly braces prefixed by a dollar sign: <code>${5 + 5}</code>. The expression will be cast to a string, then replaced inside the template string.</p>\n<pre><code>let item = "Oranges";\nlet itemPrice = 2.50;\nlet money = 10;\nlet compositeString = `Hi,\nI have ${money} dollars,\nand I would like to purchase :\n${itemPrice / money} ${item}s.\n`\n\nconsole.log(compositeString);\n</code></pre>\n<p>The above would output:</p>\n<pre><code>Hi,\nI have 10 dollars,\nand I would like to purchase :\n4 Oranges.\n</code></pre>\n',

@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/redux-tips/async-flow-in-redux.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: 'application?',
-        correct: true,
       },
       {
         text: 'bluebird',
-        correct: false,
       },
       {
         text: 'redux-thunk',
-        correct: false,
       },
       {
         text: 'redux-promise',
-        correct: false,
       },
     ],
     comment: "<p>The default <strong>Redux</strong> store only supports synchronous data flow. However, with the help of <code>middleware</code>s, asynchronous data flow is also possible.</p>\n<p>Packages such as <code>redux-thunk</code> and <code>redux-promise</code> provide syntax sugar as to help you achieve such data flow.</p>\n<p>The main difference between a custom implementation of middleware or using a specific package is that the former wraps the store’s <code>dispatch()</code> method and allows you to dispatch something other than actions such as functions. This functions do not have to be <strong>pure</strong> so asynchronous API calls are permitted.</p>\n<p>Code sample for using <code>redux-thunk</code>:</p>\n<pre><code class=\"language-javascript\">// action creator\nfunction loadData(userId) {\n  return dispatch => fetch(\n`http://data.com/${userId}`)\n// Redux Thunk handles these\n    .then(res => res.json())\n    .then(\n      data => dispatch({\ntype: 'LOAD_DATA_SUCCESS', data }),\n      err => dispatch({\ntype: 'LOAD_DATA_FAILURE', err })\n    );\n}\n//component\ncomponentWillMount() {\n  this.props.dispatch(\n    loadData(this.props.userId));\n}\n</code></pre>\n",

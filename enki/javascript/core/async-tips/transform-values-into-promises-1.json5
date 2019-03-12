@@ -22,25 +22,25 @@
         text: 'in **ES6**:',
       },
       {
-        text: 'Promise',
+        text: '`Promise`',
       },
       {
-        text: 'resolve',
+        text: '`resolve`',
       },
       {
-        text: 'reject',
+        text: '`reject`',
       },
       {
-        text: 'new',
+        text: '`new`',
       },
       {
-        text: 'send',
+        text: '`send`',
       },
       {
-        text: 'return',
+        text: '`return`',
       },
       {
-        text: 'prom',
+        text: '`prom`',
       },
     ],
     comment: "<p>To keep your API consistent, or prototype for testing, it's often useful to return a <code>Promise</code> that resolves to a value directly.</p>\n<pre><code class=\"language-javascript\">return new Promise(resolve => {\n  resolve('my value')\n})\n</code></pre>\n<p><code>Promises</code> in <code>ES6</code> have a shortcut for this common pattern:</p>\n<pre><code class=\"language-javascript\">return Promise.resolve('my value')\n</code></pre>\n<p>Or to create a <code>Promise</code> representing an error:</p>\n<pre><code class=\"language-javascript\">return Promise.reject(\n  new Error('Boo! :o')\n)\n</code></pre>\n",

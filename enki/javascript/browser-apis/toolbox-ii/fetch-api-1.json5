@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/toolbox-ii/fetch-api.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,12 +13,10 @@
     question: '<p>Which interface for fetching resources supports promises natively?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'fetch',
-        correct: true,
+        text: '`fetch`',
       },
       {
-        text: 'XMLHttpRequest',
-        correct: false,
+        text: '`XMLHttpRequest`',
       },
     ],
     comment: "<p>The <em>Fetch API</em> provides an interface to fetch resources from across a network.</p>\n<p>The <code>fetch()</code> method is used for making requests and fetching resources. It takes one compulsory argument - the path to the resource you want to fetch.</p>\n<p> It returns a promise that resolves to the response to that request, whether it's successful or not.</p>\n<p>It provides a more powerful and flexible interface than <code>XMLHttpRequest</code>.</p>\n<p>Example of fetch response handling:</p>\n<pre><code class=\"language-javascript\">var myHeaders = new Headers();\n\nvar myOptions = { method: 'GET',\n               headers: myHeaders,\n               mode: 'cors',\n               cache: 'default' };\n\nfetch('/the/url', myOptions)\n  .then(function(response) {\n    return // ...\n  }).then(function(returnValue) {\n    // ...\n  }).catch(function(error) {\n    console.log(\"Problem occurred: \" +\n                  error.message);\n  });\n</code></pre>\n",

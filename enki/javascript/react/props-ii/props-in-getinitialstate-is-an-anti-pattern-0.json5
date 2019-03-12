@@ -3,7 +3,7 @@
     author: 'tommarshall',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-ii/props-in-getinitialstate-is-an-anti-pattern.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: "it's an anti-pattern",
-        correct: true,
       },
       {
         text: "it's a good practice",
-        correct: false,
       },
       {
         text: 'can cause application crashes',
-        correct: false,
       },
       {
         text: "it's useful when working with many props",
-        correct: false,
       },
     ],
     comment: '<p>Passing down props from the parent to generate state in <code>getInitialState</code> can lead to duplication of <em>source of truth</em>, where the real data is located. This is considered an "anti-pattern".</p>\n<p>An example of a duplication of source of truth:</p>\n<pre><code class="language-javascript">var Duplication = React.createClass({\n  getInitialState: function() {\n    return {\n      nameWithQualifier: \'Country \' +\n        this.props.country\n    };\n  }\n  render: function() {\n    return &#x3C;div>\n      {this.state.nameWithQualifier}\n    &#x3C;/div>;\n  }\n});\n</code></pre>\n<p>This is bad due to <code>getInitialState</code> being invoked when the component is first created, therefore the example allows a value to get out of sync.</p>\n<p>Computing values on-the-fly ensures that values don\'t get out of sync later and cause maintenance issues.</p>\n<pre><code class="language-javascript">var OnTheFly = React.createClass({\n  render: function() {\n    return &#x3C;div>{\n      \'Country: \' + this.props.country\n    }&#x3C;/div>;\n  }\n});\n\nReactDOM.render(\n  &#x3C;OnTheFly country="England" />,\n  document.getElementByID(\'foo\')\n);\n</code></pre>\n',

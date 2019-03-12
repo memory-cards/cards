@@ -3,7 +3,7 @@
     author: 'jordanfish',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-ii/counting-the-months-from-zero.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,19 +15,15 @@
     answers: [
       {
         text: 'July 1 2016',
-        correct: true,
       },
       {
         text: 'June 31 2016',
-        correct: false,
       },
       {
         text: 'May 31 2016',
-        correct: false,
       },
       {
         text: 'June 1 2016',
-        correct: false,
       },
     ],
     comment: '<p>The months of the year in a date object begin counting from zero.</p>\n<pre><code class="language-javascript">var date = new Date(2015,1,21);\nconsole.log(date);\n</code></pre>\n<p>The date that will not be the 21st of January, but instead this date object represents: <code>Sat Feb 21 2015 00:00:00 GMT-700</code>.</p>\n<p>To print the 21st of January, use month <code>0</code>:</p>\n<pre><code class="language-javascript">var date = new Date(2015,0,21);\nconsole.log(date);\n</code></pre>\n<p>Similarly, using the 12th month of 2015 in a date object will print January of 2016:</p>\n<pre><code class="language-javascript">var date = new Date(2015,12,21);\nconsole.log(date);\n// date = Thur Jan 21 2016 00:00:00\n</code></pre>\n',

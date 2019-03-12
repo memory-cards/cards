@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/good-to-know/null-value-for-controlled-components-in-react.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,11 +14,9 @@
     answers: [
       {
         text: 'Controlled',
-        correct: true,
       },
       {
         text: 'Uncontrolled',
-        correct: false,
       },
     ],
     comment: '<p>Using <strong>React</strong>, an <code>&#x3C;input></code> form element that has a set <code>value</code> prop is a <em>controlled</em> component.</p>\n<p>In a controlled <code>&#x3C;input></code>, the value of the rendered element will always reflect the <code>value</code> property.</p>\n<p>There is a known bug in <strong>React</strong> when you set the <code>&#x3C;input></code> value to <code>null</code> or <code>undefined</code> that makes the component <em>uncontrolled</em>.</p>\n<p>This is a controlled <code>&#x3C;input></code>:</p>\n<pre><code class="language-javascript">ReactDOM.render(&#x3C;input value="hi" />, node)\n</code></pre>\n<p>This will make it uncontrolled:</p>\n<pre><code class="language-javascript">ReactDOM.render(&#x3C;input value={null} />,node)\n</code></pre>\n<p>An <em>uncontrolled</em> component will give the user the ability to change its content without consent.</p>\n<p>Taking all of this into consideration, setting the <code>value</code> of <code>&#x3C;input></code> to <code>null</code> is best to be avoided.</p>\n',

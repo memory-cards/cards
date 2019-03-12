@@ -13,25 +13,25 @@
     question: '<p>Select the element with the id "message" and change it\'s content using the DOM:</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p id="message">Hello World!&#x3C;/p>\n\n&#x3C;script>\ndocument\n  .???("message")\n  .??? = "Changed!";\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n',
     answers: [
       {
-        text: 'getElementById',
+        text: '`getElementById`',
       },
       {
-        text: 'innerHTML',
+        text: '`innerHTML`',
       },
       {
-        text: 'message',
+        text: '`message`',
       },
       {
-        text: 'DOM',
+        text: '`DOM`',
       },
       {
-        text: 'HTML',
+        text: '`HTML`',
       },
       {
-        text: '<p>',
+        text: '`<p>`',
       },
       {
-        text: 'id',
+        text: '`id`',
       },
     ],
     comment: '<p>The Document Object Model, also called the DOM, is a representation of an HTML or XML document. Nesting elements are arranged into a Tree, similar to the file structure in your computer. It is an API for using a programming language to add, read, edit, and delete HTML elements and attributes. Through this interface, scripts can also change the CSS styles, react to events, and create new elements on the page.</p>\n<h2>JavaScript and the DOM</h2>\n<p>The HTML DOM can be accessed by JavaScript through an object called <code>document</code>.</p>\n<p>In the DOM, all HTML elements are objects. Each object has properties and methods for interacting with the element. For example, you can use the getElementById method with the <code>innerHTML</code> property to change the content of a paragraph tag with <code>id="message"</code>.</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;body>\n\n&#x3C;p id="message">Hello World!&#x3C;/p>\n\n&#x3C;script>\ndocument\n  .getElementById("message")\n  .innerHTML = "Changed!";\n&#x3C;/script>\n\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n',

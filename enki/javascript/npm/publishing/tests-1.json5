@@ -15,7 +15,7 @@
     question: '<p>Complete the following *package.json</p>\n<pre><code class="language-javascript">{\n  // ...\n  ???: {\n    ???: "jslint ???"\n  }\n}\n</code></pre>\n',
     answers: [
       {
-        text: 'file with code that would make <code>npm run test</code> lint *index.js* file:',
+        text: 'file with code that would make `npm run test` lint *index.js* file:',
       },
       {
         text: '"scripts"',

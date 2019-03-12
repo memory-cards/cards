@@ -14,25 +14,25 @@
     question: '<p>Log a message in the <code>console</code>:</p>\n<pre><code class="language-javascript">???.???("my message");\n</code></pre>\n',
     answers: [
       {
-        text: 'console',
+        text: '`console`',
       },
       {
-        text: 'log',
+        text: '`log`',
       },
       {
-        text: 'print',
+        text: '`print`',
       },
       {
-        text: 'system',
+        text: '`system`',
       },
       {
-        text: 'output',
+        text: '`output`',
       },
       {
-        text: 'show',
+        text: '`show`',
       },
       {
-        text: 'warn',
+        text: '`warn`',
       },
     ],
     comment: '<p>The <code>console.*</code> methods output information to a console.</p>\n<p>For example, <code>console.log</code> can print out a message:</p>\n<pre><code>console.log("This is my message");\n// This is my message\n</code></pre>\n<p> More commonly it is used to show the current value of a variable when debugging. In this example we are logging the value of a variable called username:</p>\n<pre><code>console.log("Username: " + username);\n// Username: enkilondon\n</code></pre>\n<p>A few other useful console methods include:\nSending a warning to the console.</p>\n<pre><code>console.warn("Resource not changed")\n</code></pre>\n<p>Sending an error message to the console.</p>\n<pre><code>console.error("File not found!")\n</code></pre>\n<p>Viewing the current stack trace.</p>\n<pre><code>console.trace()\n</code></pre>\n<p>In JavaScript, there is no specification for how <code>console.*</code> methods behave. Each environment adds its own methods and behavior.</p>\n<p>When creating a web application, the use of <code>console.*</code> is critical for quickly debugging problems. Whenever you need more information on a variable or would like to know where your code stops working, you should apply a console statement at the area in question. <code>console.*</code> statements can be viewed in Google Chrome by pressing <code>Ctrl+Shift+i</code>, and in Firefox by pressing <code>Ctrl+Shift+k</code>.</p>\n<p>In addition to this, <code>console.*</code> can be used to pipe information to <code>stdout</code> in NodeJS.</p>\n<p><strong>It is considered best practice to not include any <code>console.*</code> methods in production code.</strong></p>\n',

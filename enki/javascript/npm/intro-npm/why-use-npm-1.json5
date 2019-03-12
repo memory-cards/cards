@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/intro-npm/why-use-npm.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,19 +15,15 @@
     answers: [
       {
         text: 'yarn',
-        correct: true,
       },
       {
         text: 'browserify',
-        correct: false,
       },
       {
         text: 'react',
-        correct: false,
       },
       {
         text: 'node',
-        correct: false,
       },
     ],
     comment: "<p>There are several options when it comes to JavaScript package managers.</p>\n<p>The first one, <strong>npm</strong>, started off as the package manager for <em>node</em>. However, it transitioned to hosting both front-end and back-end packages, meaning there's no need for multiple package managers.</p>\n<p><strong>Bower</strong> used to solve the problem <em>npm</em> had: missing browser/front-end support. Nowadays, this is not the case.</p>\n<p>Another option is <strong>duo</strong>. It uses <code>require()</code> statements inside the JavaScript files to look and download packages. The disadvantage of using <em>duo</em> is requiring the same package in multiple places: you would have to look for and update multiple statements to change the package version.</p>\n<p>The latest package manager released is <strong>Yarn</strong>. One of the main differences between Yarn and npm is that the former installs dependencies deterministically (the <em>node_modules</em> directory will have the same structure across all machines), which makes the installation process faster.</p>\n<p>Of these options npm is usually seen as the current best-choice.</p>\n",

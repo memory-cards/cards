@@ -15,28 +15,28 @@
     question: '<p>What will be printed by this <code>console.log()</code>?</p>\n<pre><code class="language-javascript">const ourDog = {\n    name: \'Leo\',\n    \'dog years\': 14\n}\n\nconsole.log(JSON.stringify(ourDog));\n</code></pre>\n<p>prints <code>\'{"???":"???","???":???}\'</code></p>\n',
     answers: [
       {
-        text: 'name',
+        text: '`name`',
       },
       {
-        text: 'Leo',
+        text: '`Leo`',
       },
       {
-        text: 'dog years',
+        text: '`dog years`',
       },
       {
-        text: '14',
+        text: '`14`',
       },
       {
-        text: '12',
+        text: '`12`',
       },
       {
-        text: 'dog',
+        text: '`dog`',
       },
       {
-        text: 'JSON',
+        text: '`JSON`',
       },
       {
-        text: 'years',
+        text: '`years`',
       },
     ],
     comment: '<p><code>JSON.stringify()</code> method is used to convert a JavaScript object or value to a JSON string. </p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourDog = {\n    name: \'Leo\',\n    \'dog years\': 14\n}\n\nconsole.log(JSON.stringify(ourDog));\n// prints \'{"name":"Leo","dog years":14}\'\n</code></pre>\n<p>To override the default behavior of <code>JSON.stringify()</code> you can provide a key <code>toJSON</code> in your object, mapping to a function with your desired behavior.</p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourDog = {\n    name: \'Rocky\',\n    age: 2,\n    \'dog years\': 14,\n    toJSON: () => ({food: \'dog snacks\'})\n}\n\nconsole.log(JSON.stringify(ourDog));\n//prints {"food":"dog snacks"}\n</code></pre>\n<p>To convert a JSON string back to JavaScript you can use <code>JSON.parse()</code> method.</p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourJSON = \'{"name":"Roxy","age":2}\'\nconst dog = JSON.parse(ourJSON);\nconsole.log(dog.name);\n// prints "Roxy"\n</code></pre>\n',

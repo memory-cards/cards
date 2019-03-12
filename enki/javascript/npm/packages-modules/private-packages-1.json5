@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/packages-modules/private-packages.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -17,19 +17,15 @@
     answers: [
       {
         text: '@scope/',
-        correct: true,
       },
       {
         text: 'scope/',
-        correct: false,
       },
       {
         text: '@/',
-        correct: false,
       },
       {
         text: 'nothing',
-        correct: false,
       },
     ],
     comment: '<p>Since <em>npm</em> started supporting scoping, multiple packages can have the same name while they are under a different <strong>scope</strong> (that acts like a namespace).</p>\n<p>The naming convention for scopes is the same as with package names: <strong>url-safe characters</strong>, <strong>no leading dots or underscores</strong>. Scopes are prefixed by the <code>@</code> symbol, followed by a <code>/</code> and the whole construct precedes the package name:</p>\n<pre><code class="language-javascript">@myscope/mypackagename\n</code></pre>\n<p>This syntax must be used when trying to <code>install</code> a package or specify a package in <em>package.json</em>:</p>\n<pre><code class="language-bash">$ npm install @myscope/mypackagename\n</code></pre>\n<pre><code class="language-json">//package.json\n"dependencies: {\n  "@myscope/mypackagename: "~1.3.3"\n}\n</code></pre>\n<p>To initialize a scoped package, the scope must be specified in the package name:</p>\n<pre><code class="language-json">{\n  "name": "@myscope/myprojectname"\n}\n</code></pre>\n<p><code>--scope</code> flag for <code>npm init</code> also works:</p>\n<pre><code class="language-bash">$ npm init -scope=myscope\n</code></pre>\n<p>To use a scoped package you need to <code>require</code> it using the scoped name:</p>\n<pre><code class="language-javascript">var scopedPackage =\n  require(\'@myscope/somePackage\');\n</code></pre>\n',

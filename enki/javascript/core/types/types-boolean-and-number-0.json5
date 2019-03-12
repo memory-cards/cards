@@ -14,10 +14,10 @@
     question: '<p>On the first line declare a <strong>boolean*\nOn the second line declare a </strong>number*</p>\n<pre><code class="language-javascript">var ??? = ???\n??? ??? = ???\n</code></pre>\n',
     answers: [
       {
-        text: "variable named <code>a</code> that's true.",
+        text: "variable named `a` that's true.",
       },
       {
-        text: 'variable named <code>b</code> with the value equal to <code>3.14</code>.',
+        text: 'variable named `b` with the value equal to `3.14`.',
       },
       {
         text: 'a',

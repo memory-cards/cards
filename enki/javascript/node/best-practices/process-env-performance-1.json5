@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/best-practices/process-env-performance.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,15 +14,12 @@
     answers: [
       {
         text: 'A',
-        correct: true,
       },
       {
         text: 'B',
-        correct: false,
       },
       {
         text: 'same performance',
-        correct: false,
       },
     ],
     comment: '<p>Each process is linked to a set of <strong>environmental variables</strong> that your application can use for various configurations.</p>\n<p><strong>Node.js</strong> supports accessing environment variables out of the box. At boot, the <code>process</code> global object is extended through the <code>.env</code> propriety.</p>\n<p>One way of setting <em>env</em> variables is through prefixing the <code>node</code> command:</p>\n<pre><code class="language-shell">$ PORT=8080 node index.js\n</code></pre>\n<p>Then we can access our <code>PORT</code> variable like:</p>\n<pre><code class="language-javascript">// index.js\nconsole.log(process.env.PORT)\n// 8080\n</code></pre>\n<p>Note <code>process.env</code> is a special object which gets the values through the unix <code>environ</code> system variable. It\'s also considered a <strong>live</strong> object, because at any point during runtime it will express the live values of <em>environmental variables</em> (although changed since boot time).</p>\n<p>Having lots of calls to this object, which are expensive, throughout your project, might show up in its performance.</p>\n<p>If your application <strong>doesn\'t rely</strong> on <em>live</em> environmental variables edits there is a simple hack to overcome some performance issues. You can simply replace the live object with a <em>plain JavaScript</em> one:</p>\n<pre><code class="language-javascript">process.env = JSON.parse(\n  JSON.stringify(\n    progress.env\n  )\n);\n</code></pre>\n<p>This hack doesn\'t guarantee a big performance increase, but for servers making use of <em>React Server Side rendering</em>, using it increased their <strong>throughput</strong> by up to <code>50%</code>.</p>\n<p>In a similar fashion, it\'s better to cache the value of a variable that can be used multiple time instead of accessing <code>process.env</code> each time.</p>\n',

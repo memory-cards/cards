@@ -3,7 +3,7 @@
     author: 'ailiea',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/dummy-workout/hoisting-with-var-and-let.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,15 +15,12 @@
     answers: [
       {
         text: '3.14',
-        correct: true,
       },
       {
         text: '10',
-        correct: false,
       },
       {
         text: 'undefined',
-        correct: false,
       },
     ],
     comment: '<p>Consider the following functions which are using <code>var</code> and <code>let</code> respectively.</p>\n<pre><code class="language-javascript">function f1(){\n  var flag = true;\n  var i = 5;\n  if (flag){\n    var i = 10;\n  }\n  return i;\n}\n\nfunction f2(){\n  let flag = true;\n  let i = 5;\n  if (flag){\n    let i = 10;\n  }\n  return i;\n}\n</code></pre>\n<p>Note how these functions return different values:</p>\n<pre><code>console.log(f1());\n// 10\nconsole.log(f2());\n// 5\n</code></pre>\n<p>  The reason for this is that <code>var</code> declarations get hoisted up to <strong>local-scope</strong> inside a function and thus they point to the same instance of <code>i</code>.\nWith <code>let</code> however the declarations are separated into a <strong>local-scope</strong> <code>i</code> with a value of <em>5</em> and <strong>block-scope</strong> <code>i</code> with a value of <em>10</em>.</p>\n<p>Using <code>let</code> instead of <code>var</code> is considered best practice because it operates on a more precise and natural scope.</p>\n',

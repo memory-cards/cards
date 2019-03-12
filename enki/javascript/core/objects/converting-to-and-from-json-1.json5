@@ -3,7 +3,7 @@
     author: 'Ewa Trzemżalska',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/objects/converting-to-and-from-json.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,16 +15,13 @@
     question: '<p>What method should be used in example below?</p>\n<pre><code class="language-javascript">const yourJSON = \'{"name":"Coco","age":4}\'\nconst cat = JSON.???(yourJSON);\nconsole.log(cat.name);\n// prints "Coco"\n</code></pre>\n',
     answers: [
       {
-        text: 'parse',
-        correct: true,
+        text: '`parse`',
       },
       {
-        text: 'toJSON',
-        correct: false,
+        text: '`toJSON`',
       },
       {
-        text: 'stringify',
-        correct: false,
+        text: '`stringify`',
       },
     ],
     comment: '<p><code>JSON.stringify()</code> method is used to convert a JavaScript object or value to a JSON string. </p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourDog = {\n    name: \'Leo\',\n    \'dog years\': 14\n}\n\nconsole.log(JSON.stringify(ourDog));\n// prints \'{"name":"Leo","dog years":14}\'\n</code></pre>\n<p>To override the default behavior of <code>JSON.stringify()</code> you can provide a key <code>toJSON</code> in your object, mapping to a function with your desired behavior.</p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourDog = {\n    name: \'Rocky\',\n    age: 2,\n    \'dog years\': 14,\n    toJSON: () => ({food: \'dog snacks\'})\n}\n\nconsole.log(JSON.stringify(ourDog));\n//prints {"food":"dog snacks"}\n</code></pre>\n<p>To convert a JSON string back to JavaScript you can use <code>JSON.parse()</code> method.</p>\n<p>Example:</p>\n<pre><code class="language-javascript">const ourJSON = \'{"name":"Roxy","age":2}\'\nconst dog = JSON.parse(ourJSON);\nconsole.log(dog.name);\n// prints "Roxy"\n</code></pre>\n',

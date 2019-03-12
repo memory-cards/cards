@@ -3,7 +3,7 @@
     author: 'elliehoward',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/browser-apis/dom-manipulation/appending-nodes-to-the-document.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,16 +13,13 @@
     question: "<p>Fill in the blanks to add the new element to the HTML document.</p>\n<pre><code class=\"language-javascript\">var container = document\n  .getElementsById('container');\nvar paragraph = document\n  .createElement('p');\n\ncontainer.???(paragraph)\n</code></pre>\n",
     answers: [
       {
-        text: 'appendChild',
-        correct: true,
+        text: '`appendChild`',
       },
       {
-        text: 'appendNode',
-        correct: false,
+        text: '`appendNode`',
       },
       {
-        text: 'appendElement',
-        correct: false,
+        text: '`appendElement`',
       },
     ],
     comment: "<p>Once you have created an element you need to add it to the HTML document, or it won't show up anywhere. The <code>appendChild</code> method adds an element to a parent element. You must select the desired parent element with one of the various methods available.</p>\n<p>In this example we will use the <code>getElementById</code> to select the parent, then our <code>initializeElement</code> function to create a heading and then use <code>appendChild</code> to add it to the document:</p>\n<pre><code class=\"language-javascript\">var container = document\n  .getElementsById('container');\n\nfunction initializeElement(element, text) {\n  var newElement = document\n    .createElement(element)\n  newElement\n   .appendChild(document.\n      createTextNode(text))\n  return newElement\n}\n\nvar heading = initializeElement(\n  'h1',\n  'hello world'\n)\n\ncontainer\n  .appendChild(heading)\n</code></pre>\n",

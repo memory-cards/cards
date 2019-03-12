@@ -3,7 +3,7 @@
     author: 'adamMontgomerie',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/recipes-i/using-the-double-tilde-game.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,16 +13,13 @@
     question: '<pre><code class="language-javascript">var x = -7.394;\nconsole.log(~~x); //prints ???\n</code></pre>\n<p>%exp\nDouble tilde just removes any numbers after the decimal place, retaining any positive or negative.\n%</p>\n',
     answers: [
       {
-        text: '-7',
-        correct: true,
+        text: '`-7`',
       },
       {
-        text: '7',
-        correct: false,
+        text: '`7`',
       },
       {
-        text: '-7.394',
-        correct: false,
+        text: '`-7.394`',
       },
     ],
     comment: '<p>Your goal is to determine what the console will print out for each given value of <code>x</code>.</p>\n',

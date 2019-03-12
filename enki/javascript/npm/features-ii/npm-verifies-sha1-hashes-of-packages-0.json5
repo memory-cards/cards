@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/features-ii/npm-verifies-sha1-hashes-of-packages.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,19 +16,15 @@
     answers: [
       {
         text: 'npm will refuse and stop the installation',
-        correct: true,
       },
       {
         text: 'npm will continue',
-        correct: false,
       },
       {
         text: 'npm will continue, but will show warnings',
-        correct: false,
       },
       {
         text: 'npm will crash your system',
-        correct: false,
       },
     ],
     comment: '<p>When your <em>Node.js</em> app is compiled with <strong>openssl crypto</strong> support, <code>npm</code> package manager  provides automatic  <strong>checksumming</strong> support.</p>\n<p>Since version <code>0.2.9</code> of npm, <strong>sha1 hashes</strong> get generated for all packages as they\'re published:</p>\n<pre><code class="language-bash">npm publish myProject\n</code></pre>\n<p>They are also verified after they are downloaded by other users.</p>\n<p>In case an error occurs during downloading, or if something gets corrupted in transit, <code>npm</code> will <strong>refuse to proceed</strong> with the installation.</p>\n<p>Checksumming in <code>npm</code> is completely silent and provides another layer of security for all packages.</p>\n',

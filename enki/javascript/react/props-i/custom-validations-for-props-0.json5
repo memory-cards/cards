@@ -13,25 +13,25 @@
     question: '<p>What are the basic arguments of a validator function?</p>\n<pre><code class="language-jsx">function (???, ???, ???) {\n //check here\n}\n</code></pre>\n',
     answers: [
       {
-        text: 'props',
+        text: '`props`',
       },
       {
-        text: 'propName',
+        text: '`propName`',
       },
       {
-        text: 'componentName',
+        text: '`componentName`',
       },
       {
-        text: 'validator',
+        text: '`validator`',
       },
       {
-        text: 'value',
+        text: '`value`',
       },
       {
-        text: 'text',
+        text: '`text`',
       },
       {
-        text: 'name',
+        text: '`name`',
       },
     ],
     comment: '<p><strong>React</strong> allows  you to define and use custom <em>validator functions</em> for your props. These can be used inside <code>propTypes</code>.</p>\n<p>The standard arguments[1] for a validator function are</p>\n<pre><code>function(props, propName, componentName) {\n  //check here\n}\n</code></pre>\n<p>Suppose we want to check if the <code>text</code> prop is a <code>string</code> and has fewer than 200 characters.</p>\n<p>First things first, we need a function to check this:</p>\n<pre><code class="language-jsx">function lengthCheck(props, propName,\n  componentName) {\n  if(props[propName]){\n    let text = props[propName];\n    if (typeof text === \'string\') {\n      return text.length &#x3C; 200 ? null :\n        new Error (propName + " too long");\n    }\n  }\n  //assume everything is ok\n  return null;\n}\n</code></pre>\n<p>Now the function can be used inside <code>propTypes</code>:</p>\n<pre><code class="language-jsx">MyComponent.propTypes = {\n  text: lengthCheck,\n};\n</code></pre>\n<p>Note that an <code>Error</code> should be returned instead of being <code>throw</code>n or using <code>console.warn</code> in order to make the validator function work inside <code>oneOfType</code>.</p>\n',

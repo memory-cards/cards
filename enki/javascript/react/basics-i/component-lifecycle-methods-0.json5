@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/basics-i/component-lifecycle-methods.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,31 +14,24 @@
     answers: [
       {
         text: 'rendering, but not after the first one.',
-        correct: true,
       },
       {
-        text: 'componentDidUpdate',
-        correct: false,
+        text: '`componentDidUpdate`',
       },
       {
-        text: 'componentDidMount',
-        correct: false,
+        text: '`componentDidMount`',
       },
       {
-        text: 'componentWillUpdate',
-        correct: false,
+        text: '`componentWillUpdate`',
       },
       {
-        text: 'componentWillMount',
-        correct: false,
+        text: '`componentWillMount`',
       },
       {
-        text: 'componentWillUnmount',
-        correct: false,
+        text: '`componentWillUnmount`',
       },
       {
-        text: 'constructor',
-        correct: false,
+        text: '`constructor`',
       },
     ],
     comment: "<p>As discussed before, <strong>lifecycle methods</strong> can be used to target a specific point in the <em>life</em> of a <code>component</code>.</p>\n<p>We can split them into three broader categories by the <em>type of event</em> that will trigger them:</p>\n<h3>1. Mounting</h3>\n<ul>\n<li><code>constructor(props)</code> - the first method called in the lifecycle, <strong>before mounting</strong>. It's most commonly used to set the initial <code>state</code> and to <code>bind</code> methods. If used, it must include <code>super(props)</code> as first call:</li>\n</ul>\n<pre><code class=\"language-jsx\">constructor(props) {\n  super(props);\n  this.state = {\n    time: new Date();\n  }\n}\n</code></pre>\n<ul>\n<li>\n<p><code>componentWillMount()</code> - is invoked <strong>just before</strong> <code>render</code>. Modifying the <code>state</code> here won't trigger a <strong>re-render</strong>.</p>\n</li>\n<li>\n<p><code>componentDidMount()</code> - is invoked <strong>after</strong> <code>render</code>. Useful for initialisations that require <code>DOM</code> nodes.</p>\n</li>\n</ul>\n<h3>2. Updating</h3>\n<ul>\n<li>\n<p><code>componentWillReceiveProps(nextProps)</code> - is only called after <code>render</code>ing, but <strong>before</strong> receiving new <code>props</code>. Because <strong>React</strong> may call this method although <code>props</code> stay the same its recommended to manually implement a check to see if there's a difference.</p>\n</li>\n<li>\n<p><code>shouldComponentUpdate(nxtProps, nxtState)</code> - the method is called <strong>before</strong> receiving new <code>props</code> or <code>state</code>. By default it returns <code>true</code> meaning <code>render</code> is triggered by any change. Modifying this method allows you to only re-<code>render</code> in intended scenarios.</p>\n</li>\n<li>\n<p><code>componentWillUpdate(nextProps, nextState)</code> - is invoked if <code>shouldComponentUpdate</code> returns <code>true</code>, <strong>before</strong> <code>render</code>. Note you can't use <code>this.setState()</code> here.</p>\n</li>\n<li>\n<p><code>componentDidUpdate(prevProps, prevState)</code> - is invoked <strong>after</strong> <code>render</code>, but not after the initial one. This method is useful for manipulating the <code>DOM</code> when updated</p>\n</li>\n</ul>\n<h3>3. Unmounting</h3>\n<ul>\n<li><code>componentWillUnmount()</code> - is invoked immediately <strong>before</strong> a <code>component</code> is unmounted and destroyed. Useful for resource cleanup.</li>\n</ul>\n",

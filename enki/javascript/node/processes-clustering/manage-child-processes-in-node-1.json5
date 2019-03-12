@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/processes-clustering/manage-child-processes-in-node.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,19 +16,15 @@
     answers: [
       {
         text: 'child_process',
-        correct: true,
       },
       {
         text: 'child_processes',
-        correct: false,
       },
       {
         text: 'spawn_process',
-        correct: false,
       },
       {
         text: 'child-cpu',
-        correct: false,
       },
     ],
     comment: "<p><strong>Node</strong> has the ability to externalize <em>CPU-intensive</em> processing in order to free the event loop by <em>spawning</em> child processes that can communicate seamlessly with their parents.</p>\n<p>The <code>child_process</code> module is required for any operation of this sort:</p>\n<pre><code class=\"language-javascript\">var child = require('child_process');\n</code></pre>\n<p>The <code>exec(command,callback)</code> can be used to to run <strong>UNIX</strong> commands:</p>\n<pre><code class=\"language-javascript\">child.exec('ls',function\n(err,stdout,stderr){\n    if (err) { err.code);}\n    console.log(stdout);\n});\n</code></pre>\n<p>This method does not provide any mean of communicating with the parent and gives a buffered output. The <code>spawn()</code> method is an improved version of the first:</p>\n<pre><code class=\"language-javascript\">var spawn = require('child_process').spawn;\n// Create a child process\nvar child = spawn('tail',\n    ['-f', '/var/log/system.log']);\n// \"tail\" command is run in the argument\n</code></pre>\n<p>Listeners to <code>stdout</code> and <code>stderr</code> streams can be added:</p>\n<pre><code class=\"language-javascript\">child.stdout.on('data',\n    function (data) {\n        console.log(data);});\n</code></pre>\n",

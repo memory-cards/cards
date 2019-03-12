@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/express/easy-way-to-deliver-html-pages-with-express.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,23 +14,18 @@
     answers: [
       {
         text: 'serve-static',
-        correct: true,
       },
       {
         text: 'express-html',
-        correct: false,
       },
       {
         text: 'easy-html',
-        correct: false,
       },
       {
         text: 'static-express',
-        correct: false,
       },
       {
         text: 'node-html',
-        correct: false,
       },
     ],
     comment: "<p>Displaying basic <strong>HTML</strong> pages can be achieved in many ways using <strong>Node</strong>'s core API, yet the easiest way is by using the <strong>Express</strong> framework.</p>\n<p>The <code>serve-static</code> module will be used to deliver the page:</p>\n<pre><code class=\"language-javascript\">var express = require('express');\nvar serveStatic = require('serve-static');\n\nvar app = express();\n</code></pre>\n<p>Display <code>index.html</code>:</p>\n<pre><code class=\"language-javascript\">app.use(serveStatic('public/',{'index':\n  ['index.html', `index.htm`]}));\napp.listen(3000);\n</code></pre>\n<p>Multiple roots:</p>\n<pre><code class=\"language-javascript\">app.use(serveStatic(__dirname+ '/first'));\napp.use(serveStatic(__dirname+ '/second'));\n</code></pre>\n<p>Files will be firstly looked for in <code>/first</code> then in <code>/second</code> as a fallback.</p>\n",

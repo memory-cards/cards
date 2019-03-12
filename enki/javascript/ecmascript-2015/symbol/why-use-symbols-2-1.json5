@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/symbol/why-use-symbols-2.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,23 +14,18 @@
     answers: [
       {
         text: 'undefined',
-        correct: true,
       },
       {
         text: 'null',
-        correct: false,
       },
       {
         text: '"Iterator"',
-        correct: false,
       },
       {
         text: '"iterate"',
-        correct: false,
       },
       {
         text: '"internalIterator"',
-        correct: false,
       },
     ],
     comment: '<p>Probably the primary use of symbols is to introduce changes into EcmaScript. We can this in action with <em>iterators</em>.</p>\n<p><strong>Symbol.iterator</strong> is used to identify something that can be iterated over. It is used by language features such as <em>for of</em> loops to understand how to work with an object.</p>\n<p>Don\'t worry too much about what the below code does just understand we are using a special inbuilt (referred to as well known) symbol to access the iterator functionality:</p>\n<pre><code class="language-javascript">let p = ["alex","bill","john"];\nlet it = p[Symbol.iterator]();\nit.next().value; //alex\nit.next().value; //bill\n</code></pre>\n<p>JavaScript contains many "well known symbols" that could not be accessed prior to ES6 such as <strong>Symbol.iterator</strong> and <strong>Symbol.match</strong>.</p>\n<p>Note that you won’t find any built-in symbols in the symbol registry either:</p>\n<pre><code class="language-javascript">Symbol.keyFor(Symbol.iterator);\n//undefined\n</code></pre>\n<p>Symbols can also implement a kind of limited (they are still accessible via other means) privacy – let\'s discuss this next.</p>\n',

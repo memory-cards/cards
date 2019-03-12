@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/functions-iii/bind.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -15,28 +15,22 @@
     question: '<p>What can be used to make a function be always called with a *<em>particular</em></p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<code>this</code> value?',
-        correct: true,
+        text: '`this` value?',
       },
       {
-        text: 'bind()',
-        correct: false,
+        text: '`bind()`',
       },
       {
-        text: 'push()',
-        correct: false,
+        text: '`push()`',
       },
       {
         text: 'nothing',
-        correct: false,
       },
       {
-        text: 'return',
-        correct: false,
+        text: '`return`',
       },
       {
-        text: 'new',
-        correct: false,
+        text: '`new`',
       },
     ],
     comment: '<p>The <code>bind()</code> function creates a new <strong>bound function</strong> with the same function body as the function it is being called on. </p>\n<p>You can use <code>bind()</code> to make a function that is always called with a <strong>particular</strong> <code>this</code> value:</p>\n<pre><code>bind(thisArg, [p1, [p2, [...]]])\n// returns a new function \n// that has this equal to thisArg\n</code></pre>\n<p>The other parameters are optional and bind the parameters of the function, for example:</p>\n<pre><code>var sum = function(a, b) {\n  return a + b;\n};\nvar add10 = sum.bind(null, 10); \n// binds a = 10\nconsole.log(add10(10)); // 20\n</code></pre>\n',

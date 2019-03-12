@@ -3,7 +3,7 @@
     author: 'lizTheDeveloper',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/function-improvements/arrow-functions-part-1.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,24 +16,19 @@
     question: '<p>Filter out all of the odd numbers,\nsuch that only even numbers are present\nin the array.</p>\n<pre><code>var integers = [1,2,3,4,5,6,7,8,9];\n\nintegers.filter(???);\n</code></pre>\n',
     answers: [
       {
-        text: '(n) => {return n % 2 == 0}',
-        correct: true,
+        text: '`(n) => {return n % 2 == 0}`',
       },
       {
-        text: 'n => {n % 2 === 0}',
-        correct: false,
+        text: '`n => {n % 2 === 0}`',
       },
       {
-        text: 'n => n % 2 !== 0',
-        correct: false,
+        text: '`n => n % 2 !== 0`',
       },
       {
-        text: '{n} => {n % 2 != 0}',
-        correct: false,
+        text: '`{n} => {n % 2 != 0}`',
       },
       {
-        text: 'n => [return n % 2 === 0]',
-        correct: false,
+        text: '`n => [return n % 2 === 0]`',
       },
     ],
     comment: '<p><strong>Arrow functions</strong> (called lambda or "fat arrow" functions in some other languages) provide a shorthand syntax to declare function expression.</p>\n<pre><code>(parameters) => {}\n</code></pre>\n<p>The parenthesis are optional if there is a single parameter:</p>\n<pre><code>parameter => {}\n</code></pre>\n<p>The braces are optional if the returned expression is one line:</p>\n<pre><code>parameter => expression\n</code></pre>\n<p>Below we use arrow function syntax to declare a function that accepts two parameters (x and y) and will add them together:</p>\n<pre><code>let add = (x,y) => { x + y }\nadd(2,4); //6\n</code></pre>\n',

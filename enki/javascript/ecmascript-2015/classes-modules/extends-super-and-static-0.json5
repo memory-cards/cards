@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/classes-modules/extends-super-and-static.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: '1',
-        correct: true,
       },
       {
         text: '2',
-        correct: false,
       },
       {
         text: '3',
-        correct: false,
       },
       {
         text: '4',
-        correct: false,
       },
     ],
     comment: '<p>The <strong>extends</strong> keyword allows you to inherit from another class and the <strong>super</strong> keyword allows us to access functionality on the parent.</p>\n<p>The below example creates a new class called <code>Engineer</code> that inherits from <code>Person</code> calling Person\'s constructor with the super keyword.</p>\n<p>Our Engineer class also has a method called greet that will call the parent classes sayHello method:</p>\n<pre><code class="language-javascript">class Engineer extends Person {\n constructor(name, age){\n  super(name)\n  this.age = age;\n }\n\n greet: function(){\n  super.sayHello();\n }\n}\n\nvar e = new Engineer("alex", 35);\n</code></pre>\n<h3>Static</h3>\n<p>The static keyword creates a method on the class type itself and is often used for utility methods as allows them to be called without instantiating the class:</p>\n<pre><code class="language-javascript">class UtilityMethods {\n  static log() {\n    console.log("hello enki");\n  }\n};\n\nUtilityMethods.log();\n</code></pre>\n<p>Note if you instantiate a class with static methods then you cannot call static methods on the instantiated class:</p>\n<pre><code class="language-javascript">var a = new UtilityMethods();\na.log(); //error\n</code></pre>\n',

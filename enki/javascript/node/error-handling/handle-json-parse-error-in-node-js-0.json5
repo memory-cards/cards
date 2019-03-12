@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/node/error-handling/handle-json-parse-error-in-node-js.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,19 +16,15 @@
     answers: [
       {
         text: 'a try/catch',
-        correct: true,
       },
       {
         text: 'an if statement',
-        correct: false,
       },
       {
         text: 'a loop',
-        correct: false,
       },
       {
         text: 'an error message',
-        correct: false,
       },
     ],
     comment: "<p>Handling a <code>JSON.parse</code> error is one of the few situations when you'd use a <code>try/catch</code> in Node.</p>\n<p>This is because <strong>synchronous operational errors</strong> are very rare in Node and only occur due to bad user input. <code>JSON.parse</code> is a synchronous function and you have to deliver the error synchronously.</p>\n<p>For example:</p>\n<pre><code>webSocket.on('msg', function (msg) {\n  var msgObj;\n  try {\n    msgObj = JSON.parse(msg);\n  } catch (e) {\n    return console.error(e);\n  }\n}\n</code></pre>\n",

@@ -13,16 +13,16 @@
     question: '<p>Consider the following react component:</p>\n<pre><code class="language-javascript">var Enki = React.createClass({\n  componentDidMount: function {\n    console.log(this.props.children)\n  }\n  render: function() {\n    return &#x3C;div />;\n  }\n})\n</code></pre>\n<p>What will the following output?</p>\n<pre><code class="language-javascript">ReactDOM.render(\n  &#x3C;Enki>&#x3C;p/>&#x3C;p/>&#x3C;/Enki>,\n  aNode\n);\n// ???\n\nReactDOM.render(\n  &#x3C;Enki>&#x3C;p/>&#x3C;/Enki>,\n  aSecondNode\n)\n// ???\n</code></pre>\n',
     answers: [
       {
-        text: '[<p/> <p/>]',
+        text: '`[<p/> <p/>]`',
       },
       {
-        text: '<p/>',
+        text: '`<p/>`',
       },
       {
-        text: '[ <p/>]',
+        text: '`[ <p/>]`',
       },
       {
-        text: '<p/>, <p/>',
+        text: '`<p/>, <p/>`',
       },
       {
         text: 'null',

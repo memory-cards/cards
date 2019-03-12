@@ -3,7 +3,7 @@
     author: 'AlexYancey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/array-methods/get-a-random-item-from-an-array.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,15 +14,12 @@
     answers: [
       {
         text: 'floor',
-        correct: true,
       },
       {
         text: 'ceil',
-        correct: false,
       },
       {
         text: 'wall',
-        correct: false,
       },
     ],
     comment: '<p>Given the array:</p>\n<pre><code>var food = ["Sushi", "Pizza", "Tacos"];\n</code></pre>\n<p>Select an item using <code>Math.random()</code> with a range of <code>food.length</code>.</p>\n<pre><code>var randIndex =\n  Math.floor(Math.random() * food.length);\n</code></pre>\n<p>Now, print out the result.</p>\n<pre><code>console.log("Let\'s get " + food[randIndex]);\n</code></pre>\n',

@@ -3,7 +3,7 @@
     author: 'alexjmackey',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/ecmascript-2015/iterators-generators/iterator-usages.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -14,19 +14,15 @@
     answers: [
       {
         text: 'Yes',
-        correct: true,
       },
       {
         text: 'Only objects',
-        correct: false,
       },
       {
         text: 'All apart from strings',
-        correct: false,
       },
       {
         text: 'Only numbers',
-        correct: false,
       },
     ],
     comment: "<p>Of course, iterators can work with any sequence of items you want so you could use iterator for:</p>\n<ul>\n<li>More efficient resource and memory usage as values are computed on demand and not held in memory</li>\n<li>Mathematical sequences of numbers e.g. the classic example is Fibonacci numbers</li>\n<li>Records from the database</li>\n<li>Infinite sequences (remember to never return done as true!)</li>\n<li>Generate sequences of id's</li>\n<li>As a state machine, e.g. you might have different discount levels for a customer and could move from new customer to regular to VIP</li>\n</ul>\n<p>It's a fair amount of code to create even a simple iterator. ES6 offers another way that is usually a better option for most scenarios called <strong>Generators</strong> which we will look at next.</p>\n",

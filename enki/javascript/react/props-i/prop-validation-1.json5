@@ -13,34 +13,34 @@
     question: '<p>Complete the missing validation such that the first prop is a function and the second an object:</p>\n<pre><code class="language-jsx">function Test(props) { return &#x3C;p>A&#x3C;/p>; };\nTest.propTypes = {\n  myFunction: React.???.???,\n  myObject: React.PropTypes.???,\n};\n</code></pre>\n',
     answers: [
       {
-        text: 'PropTypes',
+        text: '`PropTypes`',
       },
       {
-        text: 'func',
+        text: '`func`',
       },
       {
-        text: 'object',
+        text: '`object`',
       },
       {
-        text: 'function',
+        text: '`function`',
       },
       {
-        text: 'obj',
+        text: '`obj`',
       },
       {
-        text: 'node',
+        text: '`node`',
       },
       {
-        text: 'element',
+        text: '`element`',
       },
       {
-        text: 'method',
+        text: '`method`',
       },
       {
-        text: 'Props',
+        text: '`Props`',
       },
       {
-        text: 'Primitives',
+        text: '`Primitives`',
       },
     ],
     comment: '<p><code>JavaScript</code> being a loosely typed language you can experience runtime errors when you expect data of one type but receive another. <em>React</em> helps us in this by providing a feature called <code>propTypes</code>.</p>\n<p>This helps you in validating if the data (<code>props</code>) received in components is valid compared to what you expect. If not, warnings will be displayed in the <em>JavaScript</em> console.</p>\n<p>All validators are available through <code>React.PropTypes</code> and should be specified as part of your <em>React</em> component, on the property <code>propTypes</code>:</p>\n<pre><code class="language-jsx">// class MyComponent extends ...\n\nMyComponent.propTypes = {\n  myArray: React.PropTypes.array,\n  myBoolean: React.PropTypes.bool,\n  myFunction: React.PropTypes.func,\n  myNumber: React.PropTypes.number,\n  myObject: React.PropTypes.object,\n  myString: React.PropTypes.string,\n};\n</code></pre>\n<p>The validations above state that the specified <code>props</code> should be <strong>JS</strong> primitives. By default, they are <strong>optional</strong> so no warnings are shown if they are not passed to the component.</p>\n<p> However, they can be required by appending <code>.isRequired</code> to the type:</p>\n<pre><code>MyComponent.propTypes = {\n myFunc: React.PropTypes.func.isRequired,\n};\n</code></pre>\n<p>Note that <code>propTypes</code> are only checked in development mode due to performance reasons.</p>\n',

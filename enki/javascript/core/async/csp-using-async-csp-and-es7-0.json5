@@ -3,7 +3,7 @@
     author: 'rosielowther',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/core/async/csp-using-async-csp-and-es7.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -18,20 +18,16 @@
     question: '<p>Which two functions are used to place a value onto a channel and to take a value from a channel? ???</p>\n',
     answers: [
       {
-        text: '.put()</code> and <code>.take()',
-        correct: true,
+        text: '`.put()` and `.take()`',
       },
       {
-        text: '.add()</code> and <code>.remove()',
-        correct: false,
+        text: '`.add()` and `.remove()`',
       },
       {
-        text: '.add()</code> and <code>.take()',
-        correct: false,
+        text: '`.add()` and `.take()`',
       },
       {
-        text: '.put()</code> and <code>.remove()',
-        correct: false,
+        text: '`.put()` and `.remove()`',
       },
     ],
     comment: '<p><em>async-csp</em> is a npm package which creates Communicating Sequential Processes (CSP) style <strong>channels</strong> using <strong>ES7 async/await</strong>.</p>\n<p>A <strong>Channel</strong> is a container which makes use of <strong>Promises</strong> to handle the flow of data.</p>\n<p>Put a value on a channel by using <code>.put()</code> and take a value from a channel by using <code>.take()</code>.</p>\n<p>For example, this function places a value on the channel every second:</p>\n<pre><code>async function puts(channel) {\n    for (let i = 0; i &#x3C; 5; i++) {\n        await timeout(1000);\n        await channel.put(i);\n    }\n}\n</code></pre>\n',

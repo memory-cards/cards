@@ -3,7 +3,7 @@
     author: 'catalin',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/react/props-iii/shallow-compare-in-react.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -13,20 +13,16 @@
     question: '<p>Import <code>shallowCompare</code> into your React code:</p>\n<pre><code class="language-javascript">var shallowCompare = require(\'???\');\n</code></pre>\n',
     answers: [
       {
-        text: 'react-addons-shallow-compare',
-        correct: true,
+        text: '`react-addons-shallow-compare`',
       },
       {
-        text: 'shallow-compare',
-        correct: false,
+        text: '`shallow-compare`',
       },
       {
-        text: 's-compare',
-        correct: false,
+        text: '`s-compare`',
       },
       {
-        text: 'shallowcompare',
-        correct: false,
+        text: '`shallowcompare`',
       },
     ],
     comment: '<p>A performance boost can be achieved with the helper function <code>shallowCompare</code> when used on a <strong>React</strong> component render function that is <em>"pure"</em>.</p>\n<p>The same functionality of <code>PureRenderMixin</code> can be achieved while using <strong>ES6</strong> classed with this helper function.</p>\n<p>Import <code>shallowCompare</code>:</p>\n<pre><code class="language-javascript">var shallowCompare = require(\n  \'react-addons-shallow-compare\');\n</code></pre>\n<p>Use shallow compare:</p>\n<pre><code class="language-javascript">export class SampleComponent extends\n                        React.Component {\nshouldComponentUpdate(nextProps,nextState){\n  return shallowCompare(this,\n    nextProps,nextState);\n  }\nrender() {\n  return &#x3C;div className={\n    this.props.className}>foo&#x3C;/div>;\n  }\n}\n</code></pre>\n<p>A shallow equality check is performed on the current <code>props</code> and <code>nextProps</code>, but also on <code>state</code> and <code>nextState</code> objects, returning <code>true</code> if the comparison fails (component should update) and <code>false</code> otherwise.</p>\n',

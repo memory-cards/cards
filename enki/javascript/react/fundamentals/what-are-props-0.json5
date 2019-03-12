@@ -13,31 +13,31 @@
     question: '<p>Complete the missing gaps so that the <code>render</code>ed output is "Enki":</p>\n<pre><code class="language-jsx">class Enki extends React.Component {\n  render() {\n    return &#x3C;p>{this.props.myValue}&#x3C;/p>;\n  }\n}\n\nEnki.??? = {\n  ???: "Enki",\n}\n\nconst element = &#x3C;??? />;\n\nReactDOM.render(\n  ???,\n  document.getElementById(\'root\')\n);\n</code></pre>\n',
     answers: [
       {
-        text: 'defaultProps',
+        text: '`defaultProps`',
       },
       {
-        text: 'myValue',
+        text: '`myValue`',
       },
       {
-        text: 'Enki',
+        text: '`Enki`',
       },
       {
-        text: 'element',
+        text: '`element`',
       },
       {
-        text: 'default',
+        text: '`default`',
       },
       {
-        text: 'props',
+        text: '`props`',
       },
       {
-        text: 'Enki myValue="Enki"',
+        text: '`Enki myValue="Enki"`',
       },
       {
-        text: 'class',
+        text: '`class`',
       },
       {
-        text: 'createElement',
+        text: '`createElement`',
       },
     ],
     comment: '<p>As discussed before, <code>component</code>s can take input in a similar way to a function, via <code>props</code>.</p>\n<p><code>props</code> is a plain <code>JS</code> object accessible via <code>this.props</code>, its properties representing the arguments of a <code>component</code>.</p>\n<p>An important aspect of the <code>props</code> object is that it is <strong>immutable</strong>. That means <code>props</code> can\'t and shouldn\'t be changed within a <code>component</code>, but only from its <em>parent</em>(s).</p>\n<p>Consider the component:</p>\n<pre><code class="language-jsx">class Greeting extends React.Component {\n  render() {\n    return &#x3C;h1>Enki greets\n      {this.props.name}&#x3C;/h1>;\n  }\n}\n</code></pre>\n<p>If we want to <code>render</code> it, the <code>element</code> must specify the value of <code>name</code> prop:</p>\n<pre><code class="language-jsx">const element = &#x3C;Greeting\n  name="John" />;\n</code></pre>\n<p>Now, when <code>render</code>ed, <code>element</code> will display "Enki greets John".</p>\n<p>You can also define <strong>default props</strong> in the following manner:</p>\n<pre><code class="language-jsx">Greeting.defaultProps = {\n  name: "User",\n}\n</code></pre>\n<p>This allows us to create a <code>Greeting</code> element without specifying the <code>name</code>:</p>\n<pre><code class="language-jsx">const element = &#x3C;Greeting />;\n</code></pre>\n<p>If we <code>render</code> it now (using <code>ReactDOM.render</code>), we will see "Enki greets User";</p>\n',

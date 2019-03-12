@@ -3,7 +3,7 @@
     author: 'mihaiberq',
     source: 'https://github.com/enkidevs/curriculum/blob/master/javascript/npm/publishing/tests.md',
   },
-  type: 'choose_options',
+  type: 'choose_sequence',
   lang: 'en',
   tags: [
     'enki',
@@ -16,23 +16,18 @@
     answers: [
       {
         text: 'npm test',
-        correct: true,
       },
       {
         text: 'npm run test',
-        correct: false,
       },
       {
         text: 'jest all',
-        correct: false,
       },
       {
         text: 'test',
-        correct: false,
       },
       {
         text: 'test .',
-        correct: false,
       },
     ],
     comment: '<p>The easiest way to ensure that changes or additions to your module don\'t break any existing features is to thoroughly <strong>test</strong> them.</p>\n<p>Some people even think that writing tests and building your module around them is the safest way of providing the best possible code[1].</p>\n<p>In your <code>package.json</code> you can specify which <strong>script</strong> should be run when <code>test</code>ing.</p>\n<pre><code class="language-javascript">{\n  "scripts": {\n    "test": "jest test/mytest.js"\n  }\n}\n</code></pre>\n<p>This will provide a shortcut for you, invokable by running:</p>\n<pre><code class="language-bash">$ npm test\n# instead of\n$ npm run test\n</code></pre>\n<p>One of the most straightforward ways to test your code is <em>linting</em>. A linter checks for errors in your code syntax and helps ensure you follow coding best-practices. Some examples include missing parenthesis, semi-colons, unnecessary keywords or the use of quotes.</p>\n<p>A JavaScript linter is JSLint:</p>\n<pre><code class="language-bash">$ npm install jslint\n</code></pre>\n<p>To lint your entire project, add this to the <em>test</em> event:</p>\n<pre><code class="language-javascript">{\n  "scripts": {\n    "test": `jslint \'**/*.js\'\n        &#x26;&#x26; node test/mytest.js`\n  }\n}\n</code></pre>\n<p>The options are limitless when it comes to what to test and which tools to use. However, for any package maintainer, as well as package users, tests provides assurance that the module provides the functionality it is supposed.</p>\n',
