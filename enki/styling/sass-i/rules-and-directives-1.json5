@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-i/rules-and-directives.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>Which of the following lines of SassScript code *wouldn\'t</p>\n<pre><code class="language-css">Line 1 DEBUG: 80%\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'produce the following output?',
+      },
+      {
+        text: '@debug percentage(200px / 120px);',
+      },
+      {
+        text: '@debug abs(80);',
+      },
+      {
+        text: '@debug round(80.42);',
+      },
+    ],
+    comment: '<p>On top of supporting all CSS3 @-rules, Sass has it\'s own specific @-rules, known as <em><code>directives</code></em>.</p>\n<p><code>@import</code> is extended by Sass to allow SCSS and Sass files to be imported. All imported files are merged together into one CSS file.</p>\n<p><code>@import</code> takes a filename to import, it\'s default is to look for a <em>.sass</em> file to import.</p>\n<pre><code class="language-css">// both import the same file\n@import "file.sass";       \n@import "file";\n</code></pre>\n<p><code>@debug</code> prints the value of a <em>SassScript</em> expression to the output stream. It\'s used for debugging Sass files which include complicated SassScript code.</p>\n<pre><code class="language-css">@debug 6px + 12px;\n</code></pre>\n<p>This would output:</p>\n<pre><code class="language-css">Line 1 DEBUG: 18px\n</code></pre>\n',
+  },
+}

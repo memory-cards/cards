@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-ii/referencing-parent-selectors.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>When referencing parent selectors, what symbol is used and what happens to this symbol upon compilation from Sass to CSS? ???</p>\n',
+    answers: [
+      {
+        text: "&, it's replaced by the referenced parent selector.",
+      },
+      {
+        text: '&, nothing, it remains there alongside the parent selector.',
+      },
+      {
+        text: "+, it's replaced by the referenced parent selector.",
+      },
+      {
+        text: '+, nothing, it remains there alongside the parent selector.',
+      },
+      {
+        text: "!, it's replaced by the referenced parent selector.",
+      },
+      {
+        text: '!, nothing, it remains there alongside the parent selector.',
+      },
+    ],
+    comment: '<p>It can often be useful to use a nested rule\'s parent selector in more ways than just the default.</p>\n<p>For example, using special styles when the selector is hovered over. To implement this, you can specify the location the parent selector should be inserted using <code>&#x26;</code>.</p>\n<p>The <code>&#x26;</code> is replaced by the parent selector as it appears in the CSS.</p>\n<pre><code class="language-css">p {\n  font-weight: bold;\n  &#x26;:hover { text-decoration: underline; }\n  body.firefox &#x26; { font-weight: normal; }\n}\n</code></pre>\n<p>The above sass code example would generate the following CSS code:</p>\n<pre><code class="language-css">p {\n  font-weight: bold;\n}\np:hover {\n  text-decoration: underline;\n}\nbody.firefox p {\n    font-weight: normal;\n}\n</code></pre>\n',
+  },
+}

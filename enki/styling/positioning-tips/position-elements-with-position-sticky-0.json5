@@ -1,0 +1,16 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/positioning-tips/position-elements-with-position-sticky.md',
+  },
+  type: 'info',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Which of the following browsers *does not</p>\n',
+    comment: '<p><code>position: sticky</code> is a new way to position elements and is conceptually similar to <code>position: fixed</code>.</p>\n<p>The difference is that an element with <code>position: sticky</code> behaves like <code>position: relative</code> within its parent, until a given offset threshold is met in the viewport.</p>\n<p>By simply adding <code>position: sticky</code> (vendor prefixed), we can tell an element to be <code>position: relative</code> until the user scrolls the item (or its parent) to be 15px from the top:</p>\n<pre><code class="language-css">.sticky {\n    position: sticky;\n    top: 15px;\n}\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-basics/applying-css.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the HTML snippet to import an external CSS file:</p>\n<pre><code class="language-html">&#x3C;head>\n  &#x3C;??? ???="stylesheet"\n           ???="index.css" />\n&#x3C;/head>\n</code></pre>\n',
+    answers: [
+      {
+        text: 'link',
+      },
+      {
+        text: 'rel',
+      },
+      {
+        text: 'href',
+      },
+      {
+        text: 'import',
+      },
+      {
+        text: 'name',
+      },
+    ],
+    comment: '<p>We talked about CSS and what it can do, but we didn\'t mention how to actually make the browser use it alongside the HTML file.</p>\n<p>There are 3 ways of doing so. In terms of specificity, the external CSS file is the weakest.</p>\n<h3>External CSS file</h3>\n<p>To create an external CSS document, all you have to do is create new text file with a <code>.css</code> extension, in any text editor. Saving the file in the same enclosing folder as the HTML document will prevent path incompatibilities.</p>\n<p>Within the <code>&#x3C;head></code> element of the HTML document, add a new <code>&#x3C;link></code> element pointing to the CSS file, like so:</p>\n<pre><code class="language-html">&#x3C;head>\n  &#x3C;link rel="stylesheet" href="main.css">\n&#x3C;/head>\n</code></pre>\n<p>The <code>href</code> attribute contains the path to the <code>.css</code> file, much like it would work for the <code>a</code> element. The above snippet refers to a style sheet located in the same directory as the HTML document. To link a CSS file inside a subdirectory:</p>\n<pre><code class="language-html">&#x3C;link rel="stylesheet"\n   href="subdir/main.css"/>\n</code></pre>\n',
+  },
+}

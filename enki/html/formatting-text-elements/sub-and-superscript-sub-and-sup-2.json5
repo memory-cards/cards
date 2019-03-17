@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'shoutmatt',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/formatting-text-elements/sub-and-superscript-sub-and-sup.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'deep',
+  ],
+  card: {
+    question: '<h3>How much do you know about text in HTML?</h3>\n<p>Which of these is not a proper MathML formula for sub and superscript?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<msubsuper>',
+      },
+      {
+        text: '<msub>',
+      },
+      {
+        text: '<msup>',
+      },
+      {
+        text: '<msubsup>',
+      },
+    ],
+    comment: '<p>The HTML <code>&#x3C;sub></code>, or the <strong>Subscript</strong> element is used to display some text as subscript (written or printed <strong>below</strong> the line), whereas the <code>&#x3C;sup></code>, or the <strong>Superscript</strong> element is used to display some text as superscript (written or printed <strong>above</strong> the line).</p>\n<p>Both elements are only used for typographical reasons and neither should be used for styling and/or appearance only. If you want to style your text sub or superscript, you can use the appropriate CSS properties:</p>\n<ul>\n<li><code>vertical-align: sub;</code></li>\n<li><code>vertical-align: -25%;</code></li>\n<li><code>vertical-align: super;</code></li>\n<li><code>vertical-align: 50%;</code></li>\n</ul>\n<p>For instance, you can use the subscript for properly display the 2 in H20 and you can use the superscript to properly display the 2 in E = mc2.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;p>\n  Both\n  H&#x3C;sub>2&#x3C;/sub>O\n  and\n  E = mc&#x3C;sup>2&#x3C;/sup>\n  are fun to learn about.\n&#x3C;/p>\n</code></pre>\n<p><img src="%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%2278%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%2278%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Ctext%20font-family%3D%22Roboto-Regular%2C%20Roboto%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2220%22%20y%3D%2234%22%20fill%3D%22%23000%22%3EBoth%20H%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2268.49219%22%20y%3D%2234%22%20fill%3D%22%23FFF%22%20font-size%3D%2212%22%3E2%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2275.23047%22%20y%3D%2234%22%20fill%3D%22%23000%22%3EO%20and%20E%20%3D%20mc%3C%2Ftspan%3E%20%3Ctspan%20x%3D%22168.90234%22%20y%3D%2234%22%20fill%3D%22%23FFF%22%20font-size%3D%2212%22%3E%20%3C%2Ftspan%3E%20%3Ctspan%20x%3D%22174.84375%22%20y%3D%2234%22%20fill%3D%22%23000%22%3E%20%3C%2Ftspan%3E%3C%2Ftext%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Roboto-Regular%2C%20Roboto%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2220%22%20y%3D%2254%22%3Elearn%20about.%3C%2Ftspan%3E%3C%2Ftext%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Roboto-Regular%2C%20Roboto%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%22181%22%20y%3D%2234%22%3Eare%20fun%20to%20%3C%2Ftspan%3E%3C%2Ftext%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22ArialMT%2C%20Arial%22%20font-size%3D%2212%22%3E%3Ctspan%20x%3D%2269%22%20y%3D%2238%22%3E2%3C%2Ftspan%3E%3C%2Ftext%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22ArialMT%2C%20Arial%22%20font-size%3D%2212%22%3E%3Ctspan%20x%3D%22169%22%20y%3D%2230%22%3E2%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="element-sub-sup"></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/xzQvPv)-->\n<p>The most common <code>&#x3C;sup></code> elements uses are to display exponents (x^2) or ordinal numbers (3rd, 4th, 5th). The most common use for the <code>&#x3C;sub></code> element is marking footnotes, variable numbers (X1, X2...Xn), and denoting numbers in chemical formulas.</p>\n<p><strong>Note:</strong> Both <code>&#x3C;sup></code> and <code>&#x3C;sub></code> cannot be used at the same time to make a subscript appear directly below a superscript number and vice versa. To do so, you need to use the MathML (Mathematical Markup Language).</p>\n<p><strong>The MathML elements:</strong> <code>&#x3C;msub></code>, <code>&#x3C;msup></code> and <code>&#x3C;msubsup></code></p>\n',
+  },
+}

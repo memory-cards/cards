@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/box-model/borders.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>In the shorthand declaration, where is the style of the border located?</p>\n<pre><code class="language-css">border: 1 2 3;\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '2',
+      },
+      {
+        text: '1',
+      },
+      {
+        text: '3',
+      },
+    ],
+    comment: '<p>Borders occupy the space between margin and padding, providing an outline of the element. For a <code>border</code> to be displayed, it requires 3 properties: <code>width</code>, <code>style</code> and <code>color</code>. Those properties can be declared individually:</p>\n<pre><code class="language-css">div{\n  border-width: 4px;\n  border-style: solid;\n  border-color: red;\n}\n</code></pre>\n<p>Or using the shorthand notation, that respects the same order:</p>\n<pre><code class="language-css">div{\n  border: 4px solid red;\n}\n</code></pre>\n<p>Borders can have different styles, of which the most common is <code>solid</code>. Others are <code>dashed</code>,<code>dotted</code> or <code>double</code>.</p>\n<p>You can also set borders for sides individually:</p>\n<pre><code class="language-css">div{\n  border-left: 4px dashed red;\n  border-top: 2px double blue;\n  border-right: 10px dotted green;\n}\n</code></pre>\n',
+  },
+}

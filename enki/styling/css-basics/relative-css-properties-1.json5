@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-basics/relative-css-properties.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>In CSS, <code>width: 10%</code> is equal to</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: "10% of parent's width",
+      },
+      {
+        text: '100px',
+      },
+      {
+        text: "10% of parent's font-size",
+      },
+      {
+        text: "10% of body's width",
+      },
+    ],
+    comment: '<p>Alongside absolute values, CSS allows the use of relative ones: <em>percentages</em>, <em>ems</em>, and <em>vw</em> and <em>vh</em>, which scale with container\'s properties.</p>\n<p><strong>Percentages</strong> are represented using <code>%</code> notation. A percentage depends on the size of the container or parent element:</p>\n<pre><code class="language-css">#rect{\n width: 20%;\n height: 100px;\n}\n</code></pre>\n<p>The rectangle above will have <code>100px height</code> on every device, but its width will depend on the container\'s width. If the parent\'s width is <code>500px</code>, the rectangle would become a square (20% of 500px is 100px).</p>\n<p><strong>Em</strong> is a bit trickier. <code>1em</code> is equal to the element\'s <strong>font size</strong>:</p>\n<pre><code class="language-css">div{\n  font-size: 16px;\n  height: 10em;\n}\n</code></pre>\n<p>In this case, <code>1em</code> equals <code>16px</code>. Hence, the <code>div</code> above is <em>160px</em> in height.</p>\n<p>Consider another example:</p>\n<pre><code class="language-html">&#x3C;head>\n  &#x3C;style>\n  .container{\n    font-size: 20px;\n  }\n  #elem{\n    width: 10em;\n    height: 15em;\n  }\n  &#x3C;/style>\n&#x3C;/head>\n&#x3C;body>\n  &#x3C;div class="container">\n    &#x3C;div id="elem">\n    &#x3C;/div>\n  &#x3C;/div>\n&#x3C;/body>\n</code></pre>\n<p>As there is no <code>font-size</code> specified for the <code>elem</code> class, <em>em</em> looks for the closest ancestor with that property. For <em>#elem</em>, <code>1em</code> represents <code>20px</code>. Therefore, it would be <em>200px in width and 300px in height</em>.</p>\n<p>If no ancestor has a <em>font size</em> defined, the browser would use its default value, which is often <em>16px</em>.</p>\n<p>The last relative values are <strong>vw(viewport-width)</strong> and <strong>vh(viewport-height)</strong>. The viewport represents the browser windows size (windows object). If the window is <code>2000x1000</code> and:</p>\n<pre><code class="language-css">p {\n  font-size: 2vh;\n}\n</code></pre>\n<p>Every <em>p</em>\'s font-size would be <em>2/100 </em> 1000 = 20px<em>. As the browser window gets resized, the font-size would change accordingly. <code>vmin</code> and <code>vmax</code> are also available: they represent the smallest value between </em>1vh<em> and </em>1vw*, and the largest, respectively.</p>\n<p>Relative values are a great way of making pages responsive.</p>\n',
+  },
+}

@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-i/the-hover-pseudo-class.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Is the following statement true?</p>\n<p>The <code>:hover</code> pseudo-class can only be applied to <code>&#x3C;a></code> (link) elements.</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'False',
+      },
+      {
+        text: 'True',
+      },
+      {
+        text: 'Partially true, applicable to some browsers',
+      },
+    ],
+    comment: '<p>One of the most versatile and used pseudo-classes is <code>:hover</code>. Whenever an element on a website reacts to the mouse pointer being on top of it, usually it is because of the <code>:hover</code> pseudo-class matching.</p>\n<p>In the previous insight, the example was:</p>\n<pre><code class="language-css">a:hover {\n  color: yellow;\n}\n</code></pre>\n<p>Unlike other pseudo-classes that are link-related (e.g. <code>:visited</code>) , you can use <code>:hover</code> for almost any element. <em>Buttons</em> are usually styled using this property to inform the user that by performing a click action, the webpage will respond in some way.</p>\n<p>The drawback of this pseudo-class is that it doesn\'t work on most mobile devices, as the screen can\'t recognize a <em>hovering</em> state. Depending on the browser, the <code>:hover</code> pseudo-class might never match, match only for a very short time after touching the element or even continue lasting the user stopped touching the element.</p>\n',
+  },
+}

@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-introduction/css-defined.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>How well do you know the basics of CSS?</h3>\n<p>What does CSS provide to a web page?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Styling for such content as text, images, & links.',
+      },
+      {
+        text: 'Content such as text, images, & links.',
+      },
+      {
+        text: 'Interactive elements of the page',
+      },
+      {
+        text: 'Web hosting',
+      },
+    ],
+    comment: "<p><code>CSS</code> or <strong>Cascading Style Sheets</strong> is a <code>stylesheet</code> language used to describe the presentation of an HTML, XML, or XHTML document. It's used to provide styling for text, images, &#x26; links.</p>\n<p>In short, CSS is used to create responsive layouts, animations, styling text, and positioning containers. By applying CSS, you add the look and feel that you'd like to your websites.</p>\n<p>However, CSS is not good for inserting media, creating links, and it also doesn't allow math expressions and database storage.</p>\n",
+  },
+}

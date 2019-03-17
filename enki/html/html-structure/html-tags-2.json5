@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/html-structure/html-tags.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>How much do you know about HTML tags?</h3>\n<p>Which language requires HTML tags to be written in lowercase and has influenced  developers to continue to write HTML tags that way?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'XHTML',
+      },
+      {
+        text: 'HTML1',
+      },
+      {
+        text: 'HTML4',
+      },
+      {
+        text: 'CSS',
+      },
+    ],
+    comment: '<p>In HTML everything is written in tags. There is a start tag and an end tag and they differ by 1 character: "<code>/</code>".</p>\n<p>Elements are written with tags:</p>\n<pre><code>Start tag: &#x3C;element-name>\nEnd tag: &#x3C;/element-name>\n</code></pre>\n<p>Common elements:</p>\n<ul>\n<li><code>&#x3C;html></code> (Defines an HTML document)</li>\n<li><code>&#x3C;body></code> (Documents body)</li>\n<li><code>&#x3C;p></code> (Paragraph Text)</li>\n<li><code>&#x3C;h1></code> (Heading Text)</li>\n</ul>\n<p>Tags are not case sensitive. However, they are usually written in lowercase. This is because there is a wide range of developers who do not use HTML5, but rather XHTML. Because of that, they were influenced to write tags in lowercase so their HTML can be read by both markup languages.</p>\n<p>Also, there are elements which have no ending tag and are only written with a single opening tag. These are called self-closing tags and there are only a few of them. </p>\n<p>Most common self-closing elements:</p>\n<ul>\n<li><code>&#x3C;img></code> (Inserts an image)</li>\n<li><code>&#x3C;br></code> (Defines a line break)</li>\n<li><code>&#x3C;hr></code> (Commonly referred to as horizonal rule)</li>\n</ul>\n<p>The first line of every HTML document starts with the <code>&#x3C;!DOCTYPE></code>, which isn\'t an HTML element, but a definition for the browser to identify that the code is written in HTML5. This is the only HTML/CSS code that is commonly written in all caps.</p>\n',
+  },
+}

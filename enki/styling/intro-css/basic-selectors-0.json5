@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/intro-css/basic-selectors.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>The <code>div</code> selector targets</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'all div elements',
+      },
+      {
+        text: 'all div elements within a class',
+      },
+      {
+        text: 'all elements with class div',
+      },
+    ],
+    comment: '<p>As stated in the second insight, selectors are a way of targeting particular HTML elements styling. we should explain what a <strong>selector</strong> is.</p>\n<p><em>Selectors</em> range from the simplest:</p>\n<pre><code class="language-css">/* type selector */\np {}\n/* class selector */\na.outer-links {}\n/* ID selector */\n#my-div {}\n</code></pre>\n<p>To the most complex:</p>\n<pre><code class="language-css">div p.main:first-line span.my-span {}\n</code></pre>\n<p>These selectors behave as patterns used to target specific <strong>HTML elements</strong>. Styling attributes (e.g. <code>color: white</code>) added within selectors will then be applied to the <strong>HTML elements</strong>.</p>\n<h3>Type Selectors</h3>\n<p>They are the most generic selectors, which target elements by their type: to select all <code>&#x3C;div></code> elements in the HTML document, <code>div</code> selector is needed:</p>\n<pre><code class="language-css">div {}\np {}\nbody{}\n</code></pre>\n<p>And the HTML:</p>\n<pre><code class="language-html">&#x3C;body>\n  &#x3C;div>&#x3C;/div>\n  &#x3C;p>&#x3C;/p>\n&#x3C;/body>\n</code></pre>\n<p>The type selector doesn\'t require HTML elements to have any attributes, unlike the next two.</p>\n<p>Consider the following stylesheet:</p>\n<pre><code class="language-css">p { font-size: 20px; }\n</code></pre>\n<p>When applied to an HTML page such as:</p>\n<pre><code class="language-html">&#x3C;body>\n  &#x3C;p>Hello, Enki&#x3C;/p>\n&#x3C;/body>\n</code></pre>\n<p>Will set the <code>font-size</code> of all <code>&#x3C;p></code> elements to <code>20px</code>. Therefore, the <code>Hello, Enki</code> paragraph will also have a size of <code>20px</code>.</p>\n',
+  },
+}

@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/forms-iv/height-and-width.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the code by adding the appropriate input form attributes to assign the size of the submit button (20 pixels wide by 30 pixels tall).</p>\n<pre><code class="language-html">&#x3C;form\n action="file.php">\n  Name:\n    &#x3C;input type="text"\n      name="name">&#x3C;br>\n  &#x3C;input type="image"\n    src="submit.svg"\n    alt="Submit"\n    ???="20" ???="30">\n&#x3C;/form>\n</code></pre>\n',
+    answers: [
+      {
+        text: 'width',
+      },
+      {
+        text: 'height',
+      },
+      {
+        text: 'wide',
+      },
+      {
+        text: 'tall',
+      },
+      {
+        text: 'vert',
+      },
+      {
+        text: 'hor',
+      },
+    ],
+    comment: '<p>When using HTML input form attributes, if your input is of type <code>image</code> you can set it\'s height and width properties. These properties are set in Pixels(px)</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;form\n  action="/page.php">\n  Full name:\n    &#x3C;input type="text"\n      name="fname">&#x3C;br>\n  &#x3C;input type="image"\n    src="submit.gif"\n    alt="Submit"\n    width="36" height="36">\n&#x3C;/form>\n</code></pre>\n<p>It is very important to set both the height and width in HTML to reserve space while the page loads. If you do not set these properties, the browser won\'t know how much space to allocate for the image and your web page can change during loading.\n<strong>Note: never specify only the height or only the width property, always specify both.</strong></p>\n<p>Also, you can edit the height and width properties using CSS rules.</p>\n',
+  },
+}

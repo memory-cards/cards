@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'priyankinirmal',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-i/use-pseudo-classes-to-describe-a-special-state-of-an-element.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+    'css',
+    'pseudo-class',
+    'links',
+  ],
+  card: {
+    question: '<p>What symbol must a pseudo-class be preceded by?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: ':',
+      },
+      {
+        text: ';',
+      },
+      {
+        text: '+',
+      },
+      {
+        text: '=',
+      },
+      {
+        text: '::',
+      },
+    ],
+    comment: '<p>Unlike regular classes, pseudo-classes are not specified in the HTML. They are preceded by a colon, for example <code>a:hover</code>. This is a dynamic pseudo-class and its effects  are applied in response to  the user\'s actions.</p>\n<p>The order of the declaration of dynamic pseudo-classes is important in order for it to be effective.</p>\n<p>The following is a common order used for links (<code>&#x3C;a></code> elements):</p>\n<pre><code class="language-css">a:link {  /* unvisited link */\n  color: black;\n}\na:visited {   /* visited link */\n  color: blue;\n}\na:hover { /* user hovers over link */\n  color: yellow;\n}\na:active  { /* selected link */\n  color: red;\n}   \n</code></pre>\n<p>If defined in a different order (other than <em>LVHA</em>), there\'s a big chance they will override one another.</p>\n',
+  },
+}

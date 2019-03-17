@@ -1,0 +1,44 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/recipes/fixed-navigation-bar.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'navigation',
+    'layout',
+  ],
+  card: {
+    question: '<p>For a navigation bar to stay permanently at the bottom of a page when a user scrolls, what are the missing pieces of code below?</p>\n<pre><code class="language-css">.permanent-nav-bar {\n   position: ???;\n   ???: 0;\n   left: ???;\n   z-index: 9999;\n   width: 100%;\n   height: 50px;\n   background-color: #00a087;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'fixed',
+      },
+      {
+        text: 'bottom',
+      },
+      {
+        text: '0',
+      },
+      {
+        text: 'stay',
+      },
+      {
+        text: 'permanent',
+      },
+      {
+        text: 'top',
+      },
+      {
+        text: '100',
+      },
+      {
+        text: '50',
+      },
+    ],
+    comment: '<p>To make a navigation bar stay fixed on top of the page when a user scrolls:</p>\n<pre><code class="language-css">.fixed-nav-bar {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100;\n  width: 100%;\n  height: 50px;\n  background-color: #00a087;\n}\n</code></pre>\n<p><code>z-index</code> property determines which element to display on top of the others. If two elements collide (they occupy the same space at the same time), the one with the higher <code>z-index</code> will be shown over the lower <code>z-index</code>.</p>\n<p>It is important that the navigation bar has priority over every other element on the page, so its <code>z-index</code> value should be the largest. One way is to give it an astronomical value, such as 999999, but that is bad practice. The best way is to count the layers on your page and increase the index by a small, more relevant value for each layer.</p>\n<p>In case you want the navigation bar at the bottom of the page, replace <code>top: 0;</code> with <code>bottom: 0;</code>.</p>\n',
+  },
+}

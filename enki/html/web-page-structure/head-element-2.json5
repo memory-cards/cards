@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-page-structure/head-element.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>How much do you know about the <code>&#x3C;head></code> HTML element?</h3>\n<p>What order is recommended for adding CSS &#x26; JS in the <code>&#x3C;head></code> of an HTML page?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'CSS first, then JS',
+      },
+      {
+        text: 'JS first, then CSS',
+      },
+      {
+        text: "CSS only, JS can't be.",
+      },
+      {
+        text: "JS only, CSS can't be.",
+      },
+    ],
+    comment: '<p>The <code>&#x3C;head></code> element is a container for metadata (data about the web page\'s data) and is placed between the <code>&#x3C;html></code> tag and the <code>&#x3C;body></code> tag. The <code>&#x3C;head></code> elements content is never displayed on the page, unlike the content of the <code>&#x3C;body></code> element.</p>\n<p>Example of metadata:</p>\n<ul>\n<li>character set</li>\n<li>document title</li>\n<li>links to external files</li>\n<li>CSS styles</li>\n<li>JavaScript scripts</li>\n<li>etc.</li>\n</ul>\n<p>Simple example:</p>\n<pre><code class="language-html">&#x3C;html>\n  &#x3C;head>\n    &#x3C;meta charset="utf-8">\n    &#x3C;title>Enki&#x3C;/title>\n  &#x3C;/head>\n  &#x3C;body>\n    &#x3C;p>Enki page&#x3C;/p>\n  &#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>In the example above, we have a simple head element with character encoding and a title of the page.</p>\n<p>The <code>&#x3C;head></code> element can also contain a page description for search engines or links to CSS and JS files. On the other hand, the <code>&#x3C;head></code> element should never contain the web page\'s logo, the primary heading of the page, nor the documents primary language.</p>\n<p>Larger example:</p>\n<pre><code class="language-html">&#x3C;html>\n  &#x3C;head>\n  \n    &#x3C;meta charset="UTF-8">\n    &#x3C;meta name="description"  \n      content="Free Web tutorials">\n    &#x3C;title>Enki&#x3C;/title>\n    \n    &#x3C;link rel="stylesheet"\n    href="css/layout.css"\n    type="text/css">\n    \n    &#x3C;script type="text/javascript"\n    src="script.js">&#x3C;/script>\n    \n  &#x3C;/head>\n  &#x3C;body>\n    &#x3C;p>Enki page&#x3C;/p>\n  &#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p><strong>Note:</strong> When it comes to ordering CSS and JS, always add CSS first. And JS can be loaded in the <code>&#x3C;head></code> element, or more commonly before the closing <code>&#x3C;/body></code> tag. For an explanation check the <code>learn more</code> links section of this insight.</p>\n',
+  },
+}

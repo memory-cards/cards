@@ -1,0 +1,28 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/animations/prepare-for-will-change.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+    'future',
+  ],
+  card: {
+    question: '<p>In what way does <code>will-animate</code> make your pages run faster? ???</p>\n',
+    answers: [
+      {
+        text: 'It makes animations run faster.',
+      },
+      {
+        text: 'It makes code faster.',
+      },
+      {
+        text: 'It helps people read your page faster.',
+      },
+    ],
+    comment: "<p>If you've used <code>-webkit-transform: translateZ(0)</code> to magically make your pages faster, the hack, which in many browsers simply creates a new compositor layer, is being replaced by <code>will-change</code>.</p>\n<p>Soon, you'll be able to tell the browser what you plan to change about an element (its position, size, contents or scroll position) and the browser will apply the right optimisation under the hood.</p>\n",
+  },
+}

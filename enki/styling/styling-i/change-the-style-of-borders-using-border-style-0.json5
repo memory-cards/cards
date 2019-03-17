@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'priyankinirmal',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-i/change-the-style-of-borders-using-border-style.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'css',
+    'border',
+    'border-style',
+  ],
+  card: {
+    question: '<p>Which of the following is not a <code>border-style</code>? ???</p>\n',
+    answers: [
+      {
+        text: 'curve',
+      },
+      {
+        text: 'groove',
+      },
+      {
+        text: 'ridge',
+      },
+      {
+        text: 'double',
+      },
+      {
+        text: 'dashed',
+      },
+    ],
+    comment: '<p>Use right/left/top/bottom to specify which border of the element you want to apply the style to.</p>\n<pre><code class="language-css">p.right {\n  border-right-style: dotted;\n}\n</code></pre>\n<p>Using <code>border-style</code> will change all four borders around the element.</p>\n<pre><code class="language-css">p.all {\n  border-style: dashed;\n}\n</code></pre>\n',
+  },
+}

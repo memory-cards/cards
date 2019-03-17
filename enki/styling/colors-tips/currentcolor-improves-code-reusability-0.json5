@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/colors-tips/currentcolor-improves-code-reusability.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>What does the <code>currentColor</code> property in CSS do? ???</p>\n',
+    answers: [
+      {
+        text: "Reuse's the calculated value of the element's colour property.",
+      },
+      {
+        text: 'Sets colour equal to the most used colour in the stylesheet.',
+      },
+      {
+        text: 'Sets colour equal to the least used colour in the stylesheet.',
+      },
+    ],
+    comment: '<p><code>currentColor</code> will reuse the calculated value of the element’s <code>color</code> property.</p>\n<p>Given:</p>\n<pre><code class="language-css">a {\n  color: green;\n}\na.office {\n  color: blue;\n}\n</code></pre>\n<p>Instead of:</p>\n<pre><code class="language-css">a:hover {\n  border: 1px solid green;\n}\na.office:hover {\n  border: 1px solid blue;\n}\n</code></pre>\n<p>Use:</p>\n<pre><code class="language-css">a:hover {\n  border: 1px solid currentColor;\n}\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-introduction/html-css-code.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>How well can you identify HTML and CSS?</h3>\n<p>What lines of code are HTML?</p>\n<p>1) <code>&#x3C;p>I\'m a style.&#x3C;/p></code><br>\n2) <code>p {font-size: 16px;}</code>\n3) <code>&#x3C;img src="logo.jpg" alt="Enki Logo"></code>\n4) <code>body {font-size: 100%;}</code></p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '1 & 3',
+      },
+      {
+        text: '1, 3, 4',
+      },
+      {
+        text: '1, 2, 3, 4',
+      },
+      {
+        text: '2, 4',
+      },
+      {
+        text: '1, 2, 3',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: '1',
+      },
+      {
+        text: 'none',
+      },
+    ],
+    comment: '<p><strong>CSS</strong> and <strong>HTML</strong> are the core languages used for creating web pages and web-based applications.</p>\n<p><strong>HTML</strong> creates the structure and content of a webpage with text, images, links, and containers, while <strong>CSS</strong> modifies the design and display of those items in the HTML page.</p>\n<p><strong>HTML</strong> is made up of content between tags; <code>&#x3C;tag>Content here&#x3C;/tag></code>.</p>\n<p><strong>CSS</strong> is made of selectors followed by a declaration block; <code>selector {declaration block}</code>.</p>\n<p>HTML example:</p>\n<pre><code class="language-html">&#x3C;h2>\n  This is a heading\n&#x3C;/h2>\n&#x3C;p>\n  This is a paragraph\n&#x3C;/p>\n</code></pre>\n<p>CSS example:</p>\n<pre><code class="language-css">p { color: red; }\nh2 { font-size: 24px; }\n</code></pre>\n<p>In the <strong>HTML</strong> example above, we create a heading and paragraph elements.<br>\nIn the <strong>CSS</strong> example above, we set the <strong>HTML</strong> <code>&#x3C;p></code> elements content to the color <code>red</code>, and the font size of the <code>&#x3C;h2></code> elements content to 24 pixels.</p>\n',
+  },
+}

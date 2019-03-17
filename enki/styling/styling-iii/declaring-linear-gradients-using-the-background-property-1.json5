@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'priyankinirmal',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-iii/declaring-linear-gradients-using-the-background-property.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'css',
+    'gradient',
+    'linear-gradient',
+    'background',
+  ],
+  card: {
+    question: '<p>What does the following CSS code snippet do? ???</p>\n<pre><code class="language-css">span.gradient {\n   background: linear-gradient(to left, red,\n                               white);\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Transitions the gradient from red to white, starting from right to left.',
+      },
+      {
+        text: 'Transitions the gradient from red to white, starting from left to right.',
+      },
+      {
+        text: 'Transitions the gradient from white to red, starting from right to left.',
+      },
+      {
+        text: 'Transitions the gradient from white to red, starting from left to right.',
+      },
+    ],
+    comment: '<p>Use the shorthand <code>background</code> property to declare gradients.</p>\n<p>The most common type of  gradient is <code>linear-gradient()</code>. Declare the direction of the gradient (you can even use degrees) followed by the color stops. For example:</p>\n<pre><code class="language-css">div.gradient {\n  /* webkit browser */\n  background: -webkit-linear-gradient(right,\n  blue, green);\n  /* standard syntax */\n  background: linear-gradient(to right,\n  blue, green);\n}\n</code></pre>\n<p>This gradient will transition from blue to green from left to right.</p>\n',
+  },
+}

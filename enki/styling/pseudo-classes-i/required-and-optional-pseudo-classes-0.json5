@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-i/required-and-optional-pseudo-classes.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What does the following CSS code do? ???</p>\n<pre><code class="language-css">:required {\n   border: 2px solid black;\n}\n:optional {\n   border: 2px dotted blue;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Sets the border of compulsory fields solid and black. Sets the border of optional fields dotted and blue.',
+      },
+      {
+        text: 'Sets the border of compulsory fields dotted and blue. Sets the border of optional fields solid and black.',
+      },
+      {
+        text: 'Returns an error.',
+      },
+      {
+        text: 'Makes the border of all fields solid and black.',
+      },
+      {
+        text: 'Makes the border of all fields dotted and blue.',
+      },
+    ],
+    comment: '<p>Especially when creating a form, some fields in it are mandatory for user to complete.</p>\n<p>All modern browsers support the <code>:required</code> and <code>:optional</code> pseudo classes:</p>\n<pre><code class="language-css">:required {\n  border: 2px solid red;\n}\n\n:optional {\n  border: 2px solid blue;\n}\n</code></pre>\n<p>An example of a form they can be applied on:</p>\n<pre><code class="language-html">&#x3C;form>\n  &#x3C;label>Name:&#x3C;/label>\n  &#x3C;input type="text"/>\n  &#x3C;br />\n  &#x3C;label>Username:&#x3C;/label>\n  &#x3C;input type="text" required/>\n  &#x3C;br/>\n  &#x3C;input type="submit"\n              value="Submit">\n&#x3C;/form>\n</code></pre>\n<p><code>:required</code> and :<code>optional</code> can be chained together with other pseudo class selectors:</p>\n<pre><code class="language-css">input:required:focus {\n  border: 1px solid pink;\n  outline: none;\n}\n</code></pre>\n<p><em>Note</em>: Any element that doesn\'t have the <code>required</code> attribute is considered <code>optional</code>.</p>\n',
+  },
+}

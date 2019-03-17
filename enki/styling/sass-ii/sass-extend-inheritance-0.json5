@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-ii/sass-extend-inheritance.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>Which is the correct way to use Sass @extend to extend the class <em>properties</em>? ???</p>\n',
+    answers: [
+      {
+        text: '@extend .properties;',
+      },
+      {
+        text: 'properties(@extend);',
+      },
+      {
+        text: '@extend(properties);',
+      },
+      {
+        text: 'extend .properties;',
+      },
+    ],
+    comment: '<p>The <code>@extend</code> feature of <em>Sass</em> is one of its most useful features. Using <code>@extend</code> allows you to share a set of CSS properties between different selectors.</p>\n<p><code>@extend</code> is used when there is a case where one class should have all the same styles of another already defined class, plus its own specific styles.</p>\n<pre><code class="language-css">.message {\n  border: 1px solid #6699ff;\n  padding: 10px;\n  color: #ffff66;\n}\n.success {\n  @extend .message;\n  border-color: green;\n}\n</code></pre>\n<p>The code in CSS that this generates:</p>\n<pre><code class="language-css">.message, .success {\n  border: 1px solid #6699ff;\n  padding: 10px;\n  color: #ffff66;\n}\n\n.success {\n  border-color: green;\n}\n</code></pre>\n',
+  },
+}

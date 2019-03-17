@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-basics/css-specificity.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>What is the specificity of the following CSS code snippet?</p>\n<pre><code class="language-css">#div.selected a{}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '0-1-1-1',
+      },
+      {
+        text: '0-0-2-1',
+      },
+      {
+        text: '1-1-2-1',
+      },
+      {
+        text: '0-2-1-0',
+      },
+      {
+        text: '1-1-1-0',
+      },
+      {
+        text: '1-2-1-2',
+      },
+    ],
+    comment: '<p>Although a difficult topic, understanding how properties can be overridden will make you more confident when writing CSS code.</p>\n<p>In the previous workout, we discussed three basic types of selectors:</p>\n<ul>\n<li>type (<code>div</code>, <code>p</code>)</li>\n<li>class (<code>.container</code>, <code>.title</code>)</li>\n<li>id (<code>#contact</code>)</li>\n</ul>\n<p>In order to better visualize which one has priority over the other, we can turn the list into a horizontal list:</p>\n<pre><code class="language-text">id priority > class priority > type priority\n</code></pre>\n<p>The last step in calculating a selector\'s specificity is to see the above as the header of a table with three columns:</p>\n<pre><code class="language-text">         id - class - type\nselector  0 -   0   -  0  \n</code></pre>\n<p>For each basic selector that is part of a more complex selector, we increment the value in the appropriate column.</p>\n<p>For example, consider the following selector that aims to style a heading, nested inside a div of class <em>my-class</em>, which is another div\'s child:</p>\n<pre><code class="language-css">div div.my-class h2{}\n</code></pre>\n<p>There are three <em>type</em> selectors (<em>div, div and h2</em>) and one <em>class</em> selector (<em>.my-class</em>). We can use the previous syntax to represent the <strong>specificity</strong> of the selector:</p>\n<pre><code class="language-text">id - class - type\n0  -   1   -  3\n</code></pre>\n<p>However, this should not be seen as a base 10 representation. Adding an id selector on top of 99 class selectors would yield:</p>\n<pre><code class="language-text">         id - class - type\nselector  1 -   99   -  0\n</code></pre>\n<p>Moreover, when comparing two selectors, you should always be aware of one thing: it doesn\'t matter how many type or class basic selectors make up a more complex one, they will always be outweighed by a class or an id selector, respectively:</p>\n<pre><code class="language-text">         id - class - type\nselector1  0 - 110  -  0\nselector2  1 -   0  -  0\n</code></pre>\n<p>In the above example, <em>selector2</em>\'s styling is applied in case they target the same elements.</p>\n<p>Let\'s go back to the first example. Say we decide to give the heading the id of <em>title</em>:</p>\n<pre><code class="language-css">div div.my-class #title{}\n</code></pre>\n<p>And use two selectors to target the title of the page:</p>\n<pre><code class="language-css">div div.my-class #title{\n  font-size: 30px;\n}\ndiv div.my-class h2{\n  font-size: 40px;\n}\n</code></pre>\n<p>If cascading alone was the way to go, the heading <em>font-size</em> would be 40. Taking specificity into account:</p>\n<pre><code class="language-text">                        id - class - type\ndiv div.my-class #title  1 -   1   -  2\ndiv div.my-class h2      0 -   1   -  3\n</code></pre>\n<p>The font size is <em>30</em>.</p>\n<p>As discussed earlier, inline CSS has the highest inherited specificity:</p>\n<pre><code class="language-html">&#x3C;div>\n  &#x3C;div class="my-class">\n    &#x3C;h2 id="title"\n      style="font-size:20px;">\n      Title\n    &#x3C;/h2>\n  &#x3C;/div>\n&#x3C;/div>\n</code></pre>\n<p>We would have to add a new column to the previous notation in order to represent inline CSS specificity:</p>\n<pre><code class="language-text">internal - id - class - type\n    1    - 0  -   0   -  0\n</code></pre>\n<p>This means that no matter how specific a selector might be, it can never outweigh the inline styling.</p>\n<p>There are three other factors that influence the specificity of a selector. However, we won\'t go into details right now. All you have to know is:</p>\n<ul>\n<li>attribute selectors increment the middle value: <code>a[href="www.example.com"]</code> (targets hyperlinks that have the href equals to <em>www.example.com</em>) has <code>0-1-1</code> specificity.</li>\n<li>pseudo-classes increment the middle value as well: <code>li:nth-of-type(2n)</code> (targets list items with an even index) has <code>0-1-1</code> specificity.</li>\n<li>the <code>!important</code> keyword added to the end of a CSS declaration:</li>\n</ul>\n<pre><code class="language-css">/* `1-0-1-0-0` specificity. */\n#title{\n  font-size: 60px !important;\n}\n</code></pre>\n',
+  },
+}

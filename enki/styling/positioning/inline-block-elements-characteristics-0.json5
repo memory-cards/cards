@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/positioning/inline-block-elements-characteristics.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Whose behavior is <code>display:inline-block</code> trying to replicate?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: "Replaced elements'",
+      },
+      {
+        text: "Inline elements'",
+      },
+      {
+        text: "Block elements'",
+      },
+      {
+        text: "Newer elements'",
+      },
+    ],
+    comment: "<p>There aren't any <em>inline-block</em> elements per se: they are <em>inline</em> elements that accept some <em>block-specific</em> properties.</p>\n<p>With that being said, the <code>inline-block</code> behavior has the following characteristics:</p>\n<ul>\n<li>It can fit on the same line as other <code>inline</code> or <code>inline-block</code> elements (inline)</li>\n<li>Its <code>height</code>, <code>line-height</code>, <code>top-margin</code> and <code>bottom-margin</code> can be specified (block)</li>\n<li>Its width defaults to 100% of its containing element, but it can be changed. (block)</li>\n</ul>\n<p>The only elements which inherently <em>behave</em> like this are <em>replaced elements</em>, such as <code>img</code>, <code>video</code> or <em>form elements</em>, like <code>input</code> and <code>textarea</code>.</p>\n<p>What's so special about replaced elements is that they have internal sizes (think of an 1024×768 image) and can be rendered without manually specifying their <code>width</code> or <code>height</code>.</p>\n<p>In short, <code>inline-block</code> is trying to replicate the behavior of replaced elements and make it available to others.</p>\n",
+  },
+}

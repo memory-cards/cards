@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/best-practices/lowercase-element-names.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>For what reason is HTML encouraged to be written in lowercase?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Easier to read.',
+      },
+      {
+        text: "Code doesn't work in Uppercase letters.",
+      },
+      {
+        text: 'Lowercase letters take up less space.',
+      },
+      {
+        text: 'It is not just encouraged, it is also mandatory.',
+      },
+    ],
+    comment: '<p>In HTML5 it is not mandatory to write in lowercase. However, it is encouraged.</p>\n<p>This is because being consistent in writing lowercase makes your code more readable and easier for most developers to spot mistakes in the code.</p>\n<pre><code class="language-html">&#x3C;div>\n  &#x3C;h1>Lowercase&#x3C;/h1>\n  &#x3C;h2>Which is better?!?&#x3C;/h2>\n  &#x3C;p>Which seems to be easier to read?&#x3C;/p>\n&#x3C;/div>\n</code></pre>\n<p>or </p>\n<pre><code class="language-html">&#x3C;DIV>\n  &#x3C;H1>Lowercase&#x3C;/H1>\n  &#x3C;H2>Which is better?!?&#x3C;/H2>\n  &#x3C;P>Which seems to be easier to read?&#x3C;/P>\n&#x3C;/DIV>\n</code></pre>\n<p>Many developers today are used to working with older versions of HTML, like XHTML, which required stricter coding and only lowercase tags. So if you are coding by yourself or others, you\'ll typically find it a best practice to write your HTML in lowercase.</p>\n',
+  },
+}

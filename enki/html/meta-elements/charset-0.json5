@@ -1,0 +1,57 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/charset.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Write the meta tag for the necessary HTML5 character set.</p>\n<p><code>&#x3C;??? ???="???"></code></p>\n<p>As a best practice, where is the HTML5 character set best placed?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'meta',
+      },
+      {
+        text: 'charset',
+      },
+      {
+        text: 'utf-8',
+      },
+      {
+        text: 'First line of code within the <head> element.',
+      },
+      {
+        text: 'char',
+      },
+      {
+        text: 'metatag',
+      },
+      {
+        text: 'iso-8859-1',
+      },
+      {
+        text: '8-utf',
+      },
+      {
+        text: 'First line of code in the document.',
+      },
+      {
+        text: 'Immediately after the DOCTYPE.',
+      },
+      {
+        text: 'Anywhere within the <head> element.',
+      },
+      {
+        text: 'Last line of code within the <head> element.',
+      },
+      {
+        text: 'Anywhere before the first character in the document.',
+      },
+    ],
+    comment: '<p>The HTML5 meta <code>charset</code> attribute is used to declare the character encoding of that particular page. This attribute must contain a standard IANA MIME name for character encodings. There is no specific standard encoding, however, authors are recommended to use <code>UTF-8</code>.</p>\n<p>As a best practice, the <code>charset</code> attribute should be the first line of code within the <code>&#x3C;head></code> element.\nIf you choose not to put the charset in the first place you need to place it within the first 1024 bytes of the HTML because some browsers only look within that first KB before choosing the encoding.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;meta\n  charset="UTF-8">\n</code></pre>\n<p>For security reasons, authors should not use any encoding that is ASCII-incompatible. The reason is, if a browser doesn\'t support the encoding it may interpret the harmful content as HTML.</p>\n',
+  },
+}

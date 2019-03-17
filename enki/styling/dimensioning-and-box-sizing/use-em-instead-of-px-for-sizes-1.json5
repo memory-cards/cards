@@ -1,0 +1,47 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/dimensioning-and-box-sizing/use-em-instead-of-px-for-sizes.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'fonts',
+    'formatting',
+  ],
+  card: {
+    question: '<p><code>em</code> is directly ??? to the current ??? . This makes it simpler for future changes and ??? design.</p>\n',
+    answers: [
+      {
+        text: 'proportional',
+      },
+      {
+        text: 'font size',
+      },
+      {
+        text: 'responsive',
+      },
+      {
+        text: 'related',
+      },
+      {
+        text: 'correlated',
+      },
+      {
+        text: 'style',
+      },
+      {
+        text: 'look',
+      },
+      {
+        text: 'different',
+      },
+      {
+        text: 'changing',
+      },
+    ],
+    comment: '<p><code>em</code> is directly proportional to the font size currently in use. This makes it easier to keep the proportions intact for future changes and responsive design.</p>\n<p>With <code>px</code> :</p>\n<pre><code class="language-css">.bodytext p {\n    font-size:14px;\n}\n.image {\n    width:80px;\n}\n</code></pre>\n<p>Or, using <code>em</code> :</p>\n<pre><code class="language-css">.bodytext p {\n    font-size:0.875em; /* 16x.875=14 */\n}\n.sidenote {\n    font-size:5em; /* 16x5=80 */\n}\n</code></pre>\n<p>Another advantage of <code>em</code> relates to a browser\'s support for custom font sizes (which can override your CSS). These custom sizes could break a layout if the font sizes are in <code>px</code>.</p>\n',
+  },
+}

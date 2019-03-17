@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/intro-css/what-is-cascading.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Where should a style block be located in the CSS file for it to be applied last?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Bottom of the file.',
+      },
+      {
+        text: 'Middle of the file.',
+      },
+      {
+        text: 'Top of the file.',
+      },
+      {
+        text: "Doesn't matter.",
+      },
+    ],
+    comment: '<p>When we talk about "Cascading Style Sheets", what do we mean by <em>cascade</em>?\nStyle blocks <em>cascade</em> from the top of the style sheet to the bottom, like a waterfall.</p>\n<p>Here\'s an example:</p>\n<pre><code class="language-css">p {\n  color: red;\n  font-weight: bold;\n}\np {\n  color: green;\n}\n</code></pre>\n<p>First, select all paragraphs on the page, then set their font color to <code>red</code> and their style to <code>bold</code>. Then, we select the all paragraphs again and set their font color to <code>green</code>.</p>\n<p>Because the selector that sets their color to <code>green</code> comes after the selector that sets their color to <code>red</code>, it will <em>override</em> the initial value. Paragraphs will still be <code>bold</code> as the second selector doesn\'t specify another value for the <code>font-weight</code> property.</p>\n<p>The same cascading property works for declaring different values in the same selector:</p>\n<pre><code class="language-css">/* paragraphs will be green */\np {\n  color: red;\n  color: green;\n}\n</code></pre>\n<p>CSS doesn\'t always behave like this, however. There is a property of selectors, called <strong>specificity</strong>, which breaks the rule. We will talk about specificity in the course of next workout.</p>\n',
+  },
+}

@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/best-practices/html-vs-htm.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>When was the “.htm” extension used?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'When early DOS limited all extensions to 3 characters.',
+      },
+      {
+        text: 'It was never used.',
+      },
+      {
+        text: 'It is still mandatory on MAC OS',
+      },
+      {
+        text: 'When only 3 letter extensions existed.',
+      },
+    ],
+    comment: '<p><code>.html</code> and <code>.htm</code> are both file extensions for HTML.</p>\n<p>The only difference is that <code>.htm</code> was used in the early days when operating systems like DOS did not support file extensions past 3 characters. </p>\n<p>There was no 3 character limitation for early Mac users, so they often used the full <code>.html</code> extension when Unix systems (even the web servers) still had to use <code>.htm</code> creating some technical problems. </p>\n<p>Today, limiting extensions to 3 characters is no longer necessary on any operating system.</p>\n',
+  },
+}

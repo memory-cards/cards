@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'oj14henry',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-animation/manipulating-shapes-using-css-clip-path.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'clip-path',
+    'shapes',
+  ],
+  card: {
+    question: '<p>Which two properties have to be combined in order for you to be able to wrap text around a shape?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'clip-path and shape-outside',
+      },
+      {
+        text: 'clip-path and inset',
+      },
+      {
+        text: 'inset and shape-outside',
+      },
+      {
+        text: 'path-wrap and shape-wrap',
+      },
+    ],
+    comment: '<p>You can use functions that are applied to <code>shape-outside</code> to <code>clip-path</code>, ie, <code>inset()</code>, <code>polygon()</code>, <code>ellipse()</code>.\nBelow is an example of <code>clip-path</code> in action:</p>\n<pre><code class="language-css">#element {\n  width: 300px;\n  height: 150px;\n  clip-path:\n    polygon(0% 0%, 100% 100%, 0% 100%);\n}\n</code></pre>\n<p>The list separated by commas define the <em>(x,y)</em> coordinates for each point. Translated into <em>px</em>, its equivalent would be <code>polygon(0px 0px, 300px 150px, 0px 150px)</code>. Three points will determine a triangle.</p>\n<p><img src="%3Csvg%20version%3D%221.2%22%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%22auto%22%20viewBox%3D%220%200%20612%20200%22%3E%0A%20%20%3Cpath%20fill%3D%22%23596294%22%20stroke%3D%22%23fff%22%20stroke-miterlimit%3D%225%22%20d%3D%22M0%200h612v200H0z%22%2F%3E%0A%20%20%3Cpath%20fill%3D%22%23FFF%22%20stroke%3D%22%23fff%22%20d%3D%22M1%20199h610L1%201%22%2F%3E%0A%3C%2Fsvg%3E" alt="clippathtriangle.svg"></p>\n<p>If you want text to wrap around a shape, you have to combine <code>clip-path</code> with the <code>shape-outside</code> property.</p>\n<p><strong>Note:</strong> Top-left corner of the <code>element</code> is located at <em>(0%,0%)</em>, while the bottom-right one at <em>(100%, 100%)</em>.</p>\n',
+  },
+}

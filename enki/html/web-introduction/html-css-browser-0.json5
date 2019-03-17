@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-introduction/html-css-browser.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>An HTML page without CSS in a browser will appear as what?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Only text, images, and links are displayed.',
+      },
+      {
+        text: 'HTML pages open, but no content is displayed.',
+      },
+      {
+        text: 'HTML pages are not viewable without CSS.',
+      },
+      {
+        text: 'A document error occurs and nothing displays properly.',
+      },
+      {
+        text: 'Web page opens without error, but only text is displayed.',
+      },
+    ],
+    comment: "<p><strong>HTML</strong> and <strong>CSS</strong> are languages used by browsers to present information to the users.</p>\n<p>An <strong>HTML</strong> web page will display text, images, links, and containers, but has little control over how that content appears.</p>\n<p>A <strong>CSS</strong> document will provide the rules for how the text, images, links, and containers should appear - whether it's setting text to bold or italic, setting width, height, and position for an image or container. If a <code>.css</code> file is opened in a browser, the browser would just display the <strong>CSS</strong> code exactly as it is written in a code editor.</p>\n<p>Let's say we have 2 files:</p>\n<pre><code>HTML file:\n&#x3C;p>\n  This is a paragraph\n&#x3C;/p>\n\nCSS file:\n\np { color: green; }\n</code></pre>\n<p>Loading only the <strong>HTML</strong> file gives the paragraph mentioned above.</p>\n<p>Loading both files gives the paragraph mentioned above and colors it green.</p>\n<p>However, loading just the <strong>CSS</strong> file will only show the text <code>p { color: green; }</code>.</p>\n<p><strong>Note:</strong> XHTML or XML can be used instead of <strong>HTML</strong> to produce the same result. The only difference between them is the syntax; some have looser syntax while other have stricter.</p>\n",
+  },
+}

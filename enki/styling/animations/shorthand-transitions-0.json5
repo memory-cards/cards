@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/animations/shorthand-transitions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Which of the following examples are using the CSS <code>transition</code> property with the transition values in the correct order? ???</p>\n<pre><code class="language-css">// Option A\ntransition: background .2s linear;\n\n// Option B\ntransition: .2s linear background;\n\n// Option C\ntransition: linear background .2s;\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Option A',
+      },
+      {
+        text: 'Option B',
+      },
+      {
+        text: 'Option C',
+      },
+    ],
+    comment: '<p>Declaring each transition property individually can be intensive, especially using <code>vendor prefixes</code>.</p>\n<p>Instead, try the shorthand property <code>transition</code> that supports all the different values.</p>\n<p>Using only this alone it is possible to set every transition value in order of <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and lastly <code>transition-delay</code>.</p>\n<pre><code class="language-css">.box {\n  background: #2db34a;\n  border-radius: 6px;\n  transition: background .2s linear;\n}\n.box:hover {\n  background: #ff7b29;\n  border-radius: 50%;\n}\n</code></pre>\n<p>For setting many transitions at once, set every individual group of transition values, then use a comma to separate each group of additional ones.</p>\n',
+  },
+}

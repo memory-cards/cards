@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/typography/change-the-color-of-the-decoration-with-text-decoration-color.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What is the default text decoration colour? And with what property can this be changed? ???</p>\n',
+    answers: [
+      {
+        text: 'Default colour is the text colour. Changed with text-decoration-color:.',
+      },
+      {
+        text: 'Default colour is black. Changed with text-decoration-colour:.',
+      },
+      {
+        text: 'Default colour is white. Cannot be changed.',
+      },
+    ],
+    comment: '<p>The default for the color of the decoration lines is the same as the <code>color</code> of the text. But you can change that:</p>\n<pre><code class="language-css">a {\n  text-decoration: underline;\n  text-decoration-color: #c0ffee;\n}\n</code></pre>\n<p>The only browser that currently supports this property is <code>Firefox</code>.</p>\n',
+  },
+}

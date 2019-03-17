@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-i/comma-separated-lists.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+  ],
+  card: {
+    question: '<p>What does the following CSS code do?</p>\n<pre><code class="language-css">ul > li:not(:last-child)::after {\n   content: "//";\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Adds // after each item in the list except for after the final item.',
+      },
+      {
+        text: "Changes the list so it's just a list of forward slashes.",
+      },
+      {
+        text: 'Changes the content of the last child to //.',
+      },
+    ],
+    comment: '<p>To make list items look like a real, comma-separated list:</p>\n<pre><code class="language-css">ul > li:not(:last-child)::after {\n  content: ",";\n}\n</code></pre>\n<p>The <code>:not()</code> pseudo-class specifies that no comma is added to the last item in the list.</p>\n',
+  },
+}

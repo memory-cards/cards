@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/centring-recipes/vertically-center-anything.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>You can verically-center elements inside a flex container with:</p>\n<pre><code class="language-css">.container{\n display: flex;\n ??? : ???;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'align-items',
+      },
+      {
+        text: 'center',
+      },
+      {
+        text: 'justify-content',
+      },
+      {
+        text: 'vertical-center',
+      },
+      {
+        text: 'flex-center',
+      },
+    ],
+    comment: '<p>Use <code>flexbox</code> to center anything vertically:</p>\n<pre><code class="language-css">html, body {\n  height: 100%;\n  margin: 0;\n}\n\nbody {\n  align-items: center;\n  display: flex;\n}\n</code></pre>\n<p>There may be some unwanted behaviour in IE11.</p>\n',
+  },
+}

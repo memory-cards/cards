@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/links/anchor-links.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the following snippet in order for it to be valid:</p>\n<pre><code class="language-html">Link to the \n&#x3C;tag ???="???contact.html">\n contact section\n&#x3C;/tag> of the page.\n</code></pre>\n<p>tag = ???</p>\n',
+    answers: [
+      {
+        text: 'href',
+      },
+      {
+        text: '#',
+      },
+      {
+        text: 'a',
+      },
+      {
+        text: 'style',
+      },
+      {
+        text: 'p',
+      },
+      {
+        text: 'link',
+      },
+      {
+        text: 'id=',
+      },
+    ],
+    comment: '<p><strong>Anchor Tags</strong> represent a way to tell the browser to move up or down the same web page (think of content summaries) or to open other HTML pages in certain locations further down from the top.</p>\n<p>Anchor links are still defined by the typical link <code>&#x3C;a></code> tag, but rather than linking to only to a file, they link to an <code>id</code> tag on the webpage. In this example, the link is navigating down to the <code>id</code> with the value <code>content</code>, which is usually written in HTML like this:</p>\n<pre><code class="language-html">&#x3C;a href="#contact">\n    Contact\n&#x3C;/a>\n&#x3C;!-- further down the page -->\n&#x3C;div id="contact">\n  &#x3C;!-- contact section -->\n&#x3C;/div>\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/Zjegoq)-->\n<p>One common trick by developers is to use this anchor tag as a placeholder for links during the page development. Links require the <code>href</code> attribute, so when the linked pages aren\'t ready to be linked yet, a simple <code>#</code> can be used. This placeholder technique makes the link valid and active without actually navigating anywhere.</p>\n<p>Placeholder links are written like this and look and act like links without navigating anywhere:</p>\n<pre><code class="language-html">This is a \n&#x3C;a href="#">placeholder link&#x3C;/a>.\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/NBpQzw)-->\n',
+  },
+}

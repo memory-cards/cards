@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/best-practices/doctype-always-first.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What declaration is always first in an HTML web page?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<!DOCTYPE html>',
+      },
+      {
+        text: '<body>',
+      },
+      {
+        text: '<html>',
+      },
+      {
+        text: '<!HTML document>',
+      },
+    ],
+    comment: '<p>In every HTML web page, the very first line of code should always be the <code>&#x3C;!DOCTYPE html></code> declaration.</p>\n<p>This is because the <code>&#x3C;!DOCTYPE html></code> declaration is used to tell the browser what type of HTML document it is rendering.</p>\n<p>For HTML5 the declaration is typed as:</p>\n<pre><code class="language-html">&#x3C;!DOCTYPE html>\n</code></pre>\n<p><strong>Note:</strong> The DOCTYPE tag is <em>not</em> an HTML element, but a tag specific for browsers to identify the type of code in the document.</p>\n',
+  },
+}

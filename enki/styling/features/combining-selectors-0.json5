@@ -1,0 +1,25 @@
+{
+  __meta__: {
+    author: 'Billiexu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/features/combining-selectors.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'webdevelopment',
+  ],
+  card: {
+    question: '<p>Which of the following two selectors is an adjacent selector? ???</p>\n',
+    answers: [
+      {
+        text: '+',
+      },
+      {
+        text: '~',
+      },
+    ],
+    comment: '<p>Two selectors can be combined to refer to a certain element. The most common ones are \'+\' and \'~\'.  </p>\n<h3>X+Y</h3>\n<pre><code class="language-css">ul + p {\n   color: orangered;\n}\n</code></pre>\n<p>This is referred to as <em>an adjacent selector</em>. It will select only the element that is <strong>immediately preceded</strong> by the former element. In this case, only the first paragraph after each <code>ul</code> will have red text.</p>\n<h3>X~Y</h3>\n<pre><code class="language-css">ul ~ p {\n   font-weight: bold;\n}\n</code></pre>\n<p>This sibling combinator is similar to <code>X + Y</code>, however, it\'s less strict. While an adjacent selector <code>(ul + p)</code> will only select the first element that is immediately preceded by the former selector, this one is more generalized. It will select, referring to our example above, any p elements, as long as they follow a <code>ul</code>.</p>\n<p>Consider the HTML code:</p>\n<pre><code class="language-html">&#x3C;ul>\n &#x3C;li>First list item.&#x3C;/li>\n &#x3C;p> A paragraph nested inside the\n                 list.&#x3C;/p>\n&#x3C;/ul>\n&#x3C;p>A paragraph immediately after ul.&#x3C;/p>\n&#x3C;p>A second paragraph after ul.&#x3C;/p>\n</code></pre>\n<p>Both of the selectors are used in this example:</p>\n<p><img src="%3Csvg%20height=%22auto%22%20viewBox=%220%200%20800%20300%22%20xmlns=%22http://www.w3.org/2000/svg%22%20version=%221.2%22%20baseProfile=%22tiny%22%3E%3Cdesc%3ECreated%20by%20HiQPdf%3C/desc%3E%3Cg%20fill=%22none%22%20stroke=%22#000%22%20fill-rule=%22evenodd%22%20stroke-linecap=%22square%22%20stroke-linejoin=%22bevel%22%3E%3Cpath%20d=%22M8%208h800v300H8V8%22%20fill=%22#596193%22%20stroke=%22none%22/%3E%3Ctext%20stroke=%22none%22%20x=%2238%22%20y=%2246%22%20font-family=%22&#x27;Roboto&#x27;,sans-serif%22%20font-size=%2230%22%20font-weight=%22300%22%20fill=%22#fff%22%3EFirst%20list%20item.%3C/text%3E%3Ctext%20stroke=%22none%22%20x=%2238%22%20y=%22122%22%20font-family=%22&#x27;Roboto&#x27;,sans-serif%22%20font-size=%2230%22%20font-weight=%22300%22%20fill=%22#fff%22%3EA%20paragraph%20nested%20inside%20the%20list.%3C/text%3E%3Ctext%20stroke=%22none%22%20x=%2238%22%20y=%22198%22%20font-family=%22&#x27;Roboto&#x27;,sans-serif%22%20font-size=%2230%22%20font-weight=%22800%22%20fill=%22#ff4500%22%3EA%20paragraph%20immediately%20after%20ul.%3C/text%3E%3Ctext%20stroke=%22none%22%20x=%2238%22%20y=%22274%22%20font-family=%22&#x27;Roboto&#x27;,sans-serif%22%20font-size=%2230%22%20font-weight=%22800%22%20fill=%22#fff%22%3EA%20second%20paragraph%20after%20ul.%3C/text%3E%3C/g%3E%3C/svg%3E" alt="HtmlToSvgmin.svg"></p>\n',
+  },
+}

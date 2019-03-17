@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/images/image-map.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>When using the map element to create clickable areas within a single image, what are the available shapes?</p>\n<pre><code class="language-html">&#x3C;map name="imagemap">\n  &#x3C;area shape="_____"\n    coords="" alt="" href="page.htm">\n&#x3C;/map>\n\n&#x3C;img usemap="#imagemap"\n  src="#" alt="">\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'rect, circle, poly',
+      },
+      {
+        text: 'rectangle, polygon, square',
+      },
+      {
+        text: 'triangle, oval, square',
+      },
+      {
+        text: 'rect, square, poly, oval',
+      },
+    ],
+    comment: '<p>The HTML <code>&#x3C;map></code> element is used for creating links on selected portions of an image when used alongside the <code>&#x3C;area></code> attribute. </p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/ajbxbX)-->\n<p>The clickable area has 3 available shapes:</p>\n<ul>\n<li><code>rect</code> (Rectangle)</li>\n<li><code>circle</code> (Circle)</li>\n<li><code>poly</code> (Polygon)</li>\n</ul>\n<p>The coordinates for each shape differ and are mandatory. They are as follows:</p>\n<p>rect: shape="x1,y1,x2,y2"</p>\n<ul>\n<li>left corner = <code>x1</code></li>\n<li>top corner = <code>y1</code></li>\n<li>right corner = <code>x2</code></li>\n<li>bottom corner = <code>y2</code></li>\n</ul>\n<p>circle: shape="x,y,r"</p>\n<ul>\n<li>x/y values specify the circle center</li>\n<li>r specifies the radius of the circle</li>\n</ul>\n<p>poly: shape="x1,y1,x2,y2,x3,y3...xn,yn"</p>\n<ul>\n<li>(x1,y1),(x2,y2).. pairs specify the coordinates of an edge for the polygon.</li>\n<li>First and last coordinate pairs must be the same for the polygon to close.</li>\n<li>If the first and last coordinate differ, the browsers will add the last coordinate pair.</li>\n</ul>\n<p><strong>Important notes:</strong> Each shape has to have a certain number of values inside the <code>coords</code> attribute for it to work.\n<strong>- Circle:</strong> Exactly 3\n<strong>- Rectangle:</strong> Exactly 4\n<strong>- Polygon:</strong> Any even number of values with the minimum number of 6 values\n<strong>- (0,0)</strong> are the top left corner coordinates of an area.\n<strong>-</strong> <code>coords</code> attribute is specified in pixels.</p>\n<p> Finding the coordinates can be tricky and tedious. Luckily, there are free services like <a href="http://www.image-maps.com/">http://www.image-maps.com/</a> to make this much easier!</p>\n',
+  },
+}

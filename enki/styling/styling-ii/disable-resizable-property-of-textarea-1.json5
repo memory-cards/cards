@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'oj14henry',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-ii/disable-resizable-property-of-textarea.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'textarea',
+    'disable',
+    'resizable',
+  ],
+  card: {
+    question: '<p>When disabling the resizing behavior of <code>textarea</code> elements, <code>overflow</code> property must be set to what value in order for the disabling to work?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'any value other than visible',
+      },
+      {
+        text: 'visible',
+      },
+      {
+        text: 'resize',
+      },
+      {
+        text: 'none',
+      },
+    ],
+    comment: '<p>To disable the resizing behavior of <code>textarea</code> elements, do the following:</p>\n<pre><code class="language-css">textarea {\n    resize: none;\n}\n</code></pre>\n<p>To disable some <code>textarea</code> elements, do the following:</p>\n<pre><code class="language-css">/*\nnote the textarea with the name, foo,\nis  what will be disabled\n*/\ntextarea[name=foo] {\n    resize: none;\n}\n</code></pre>\n<p>Note this only works when the overflow property is something other than visible, ie:</p>\n<pre><code class="language-css">overflow: scroll;\n</code></pre>\n',
+  },
+}

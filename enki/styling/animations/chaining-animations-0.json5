@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/animations/chaining-animations.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'chain',
+    'animations',
+  ],
+  card: {
+    question: '<p>What property is used to chain animations?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'animation-delay',
+      },
+      {
+        text: 'animation-chained',
+      },
+      {
+        text: 'delay',
+      },
+      {
+        text: 'animation-chain',
+      },
+    ],
+    comment: '<p>It\'s possible to achieve this by using the <code>animation-delay</code> property; it delays the execution of an animation by a specified amount of time.</p>\n<p>In this example there are two animations.</p>\n<p>If the first one takes 1 second to complete, a chain can be created by using the aforementioned property on the second animation :</p>\n<pre><code class="language-css">@keyframes first {\n    from { left: 0; }\n    to { left: 100px; }\n}\n@keyframes second {\n    from { left: 0; }\n    to { left: 200px; }\n}\n#first, #second { position: relative; }\n#first {\n  animation: first 1s linear both;\n}\n#second {\n  animation: second 3s linear both;\n  animation-delay: 1s;\n}\n</code></pre>\n',
+  },
+}

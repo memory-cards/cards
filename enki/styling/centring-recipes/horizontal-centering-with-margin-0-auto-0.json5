@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/centring-recipes/horizontal-centering-with-margin-0-auto.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What does the following piece of CSS code do? ???</p>\n<pre><code class="language-css">#class {\n   width: 960px;\n   margin: 0 auto;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Horizontally centres a block element with a known width.',
+      },
+      {
+        text: 'Gets rid of the margin.',
+      },
+      {
+        text: 'Vertically centres a block element with a known width.',
+      },
+      {
+        text: 'Horizontally centres a block element with an unknown width.',
+      },
+    ],
+    comment: '<p>To horizontally center <strong>block elements</strong> of a known width:</p>\n<pre><code class="language-css">#horizontal-center {\n  width: 960px;\n  margin: 0 auto;\n}\n</code></pre>\n<p>The 2 value shorthand notation of <code>margin</code> targets <code>top/bottom-margins</code> and <code>left/right-margins</code>. Because the element is <strong>block</strong>, it occupies the whole width of the container.</p>\n<p>The element also has a known width, so the browser can calculate the container\'s unused width. The <code>auto</code> value tells the browser to equally distantiate the block element from the left and the right margin, which effectively centers it horizontally.</p>\n',
+  },
+}

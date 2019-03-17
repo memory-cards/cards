@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-ii/in-range-and-out-of-range.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>For either <code>:in-range</code> and <code>:out-of-range</code> pseudo-classes to match, the element has to have</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'min`, `max or both attributes',
+      },
+      {
+        text: 'range attribute',
+      },
+      {
+        text: 'the type of input',
+      },
+    ],
+    comment: '<p>Another set of pseudo-classes that can be applied only to elements that have (and can take) a range limitation, such as <code>&#x3C;input></code>s, are <code>:in-range</code> and <code>:out-of-range</code>.</p>\n<p><code>:in-range</code> and <code>:out-of-range</code> match if values contained in the <code>&#x3C;input></code> field are inside the range limits (specified by the <code>min</code> and <code>max</code> attributes) and outside, respectively. They can be used to provide feedback to the user without the use of <code>JavaScript</code>:</p>\n<pre><code class="language-html">&#x3C;form>\n  &#x3C;label>How old are you?&#x3C;/label>\n  &#x3C;input type="number" min="1" max="120">\n&#x3C;/form>\n</code></pre>\n<p>And the CSS:</p>\n<pre><code class="language-css">input:in-range {\n  background-color: green;\n}\n\ninput:out-of-range {\n  background-color: red;\n  border: 2px solid red;\n}\n</code></pre>\n<p>Would change the background color of the field depending on the value introduced.</p>\n',
+  },
+}

@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/responsive-design-tips/use-text-transform-to-avoid-screen-reader-pronunciation-errors.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>What is the key benefit and use case of <code>text-transform</code>?</p>\n<p> ???</p>\n',
+    answers: [
+      {
+        text: 'It avoids pronunciation errors and preserves styles.',
+      },
+      {
+        text: 'It can render text in uppercase.',
+      },
+      {
+        text: 'It can render text in lowercase.',
+      },
+    ],
+    comment: '<p>A screen-reader handling CONTACT US (in uppercase) would be read out "Contact U S", which is not correct.</p>\n<p>By using <code>text-transform: uppercase</code>, you don\'t have to write in uppercase in the HTML and so the separation of content and style is preserved.</p>\n<p>For instance:</p>\n<pre><code class="language-html"> &#x3C;div class="bad"> CONTACT US &#x3C;/div>\n &#x3C;div class="good"> Contact us &#x3C;/div>\n</code></pre>\n<pre><code class="language-css">.good {\n  text-transform: uppercase;\n  /* will render text in uppercase */\n}\n</code></pre>\n',
+  },
+}

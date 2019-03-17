@@ -1,0 +1,57 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/core-html-elements/update-hyperlinks.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>When will the cursor change to a pointer with the following code?</p>\n<pre><code class="language-html">&#x3C;main>\n  &#x3C;a\n    href="http://www.enkipro.com">\n    Check out Enki\n  &#x3C;/a>\n&#x3C;/main>\n</code></pre>\n<p>When the mouse hovers: ???</p>\n<p>How is a placeholder link created, where the link works, but it doesn\'t open a new page?</p>\n<p><code>&#x3C;a href="???">Empty href&#x3C;/a></code></p>\n<p>What is the default style of a text link in HTML?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'over the text within the <a> element.',
+      },
+      {
+        text: '#',
+      },
+      {
+        text: 'It is blue and underlined.',
+      },
+      {
+        text: 'anywhere within the <main> element.',
+      },
+      {
+        text: 'anywhere within the web page.',
+      },
+      {
+        text: 'The cursor doesn’t change in this case',
+      },
+      {
+        text: '""',
+      },
+      {
+        text: '*',
+      },
+      {
+        text: '_empty',
+      },
+      {
+        text: '_self',
+      },
+      {
+        text: 'Leave empty',
+      },
+      {
+        text: 'It is blue and bold.',
+      },
+      {
+        text: 'There is no visual change to a text link.',
+      },
+    ],
+    comment: '<p>Hyperlinks are more commonly called just \'links\' in HTML. They are very useful for navigating from one document to another or even different sections of long web pages.</p>\n<ul>\n<li>By default, unvisited links are blue and underlined.</li>\n<li>Whereas links you have already clicked on at least once are red.</li>\n<li>Hovering over hyperlinks changes the cursor to a pointer.</li>\n</ul>\n<p>The hyperlink is defined with the <code>&#x3C;a></code> tag:</p>\n<pre><code class="language-html">&#x3C;a\n  href="URL">This is linked text.\n&#x3C;/a>\n</code></pre>\n<p>or</p>\n<pre><code class="language-html">&#x3C;a\n  href="https://www.enki.com/">\n  Visit Enki\'s 5-minute workouts!\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<p><img src="%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22width%3A100%25%22%20viewBox%3D%220%200%20320%2052%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%2252%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Ctext%20fill%3D%22%230001EE%22%20font-family%3D%22ArialMT%2C%20Arial%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2220%22%20y%3D%2232%22%3EVisit%20Enki%26apos%3Bs%205-minute%20workouts!%3C%2Ftspan%3E%3C%2Ftext%3E%3Cpath%20stroke%3D%22%230001EE%22%20stroke-linecap%3D%22square%22%20d%3D%22M20.5%2033.5h215%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="link-visit-enki"></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/vaKKQZ)-->\n<p>In the example above, the <code>Visit Enki\'s 5-minute workouts!</code> is the hyperlink, and by clicking on the text will open the URL provided in the <code>href="URL"</code> attribute. The attribute <code>href</code> is the most important element because it specifies the destination(URL) of where the link should open. </p>\n<p>By default, links open within the existing tab or window. The linked page can be directed to open differently by setting  \\the <code>_target="???"</code> attribute with these options:</p>\n<ul>\n<li>_self     = Default setting. Opens the link in the same tab or window.</li>\n<li>_top      = Opens the link in the full body of the window.</li>\n<li>_parent   = Opens the link in the parent frame.</li>\n<li>_blank    = Opens the link in a new tab or window.</li>\n<li>framename = Opens the link in a named frame.</li>\n</ul>\n<p>Opening the link in a new tab is written like this:</p>\n<pre><code class="language-html">&#x3C;a\n  href="https://www.enki.com/"\n  target="_blank">\n  Visit Enki\'s 5-minute workouts!\n&#x3C;/a>\n</code></pre>\n<p>During the web page development process, if web pages aren\'t created yet or you don\'t want to link them yet while still creating the linked object, <code>placeholder</code> links can be used. These provide the same interactivity as real links in that they can be clicked, but they do not open any new pages.</p>\n<pre><code class="language-html">&#x3C;a href="#">This link is interactive,\n but doesn\'t work yet.&#x3C;/a>\n</code></pre>\n<p>It is also common to add links to images. To link images, the same tags are used, but wrap around an image element like this: </p>\n<pre><code class="language-html">&#x3C;a href="https://enki.com/" \n   target="_blank">\n  &#x3C;img src ="logo.svg" \n       alt ="Enki Logo" />\n&#x3C;/a>\n</code></pre>\n<p>In the example above, the image of the Enki Logo will link to this page <code>https://www.enki.com</code> when clicked.</p>\n',
+  },
+}

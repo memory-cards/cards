@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-iii/sass-operators.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Fill the gaps such that <code>font</code> will be equal to the division of <code>font-size</code> and <code>line-height</code> :</p>\n<pre><code class="language-css">p {\n  $font-size: 12px;\n  $line-height: 30px;\n  font: #{???}???#{???};\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '$font-size',
+      },
+      {
+        text: '/',
+      },
+      {
+        text: '$line-height',
+      },
+      {
+        text: 'font-size',
+      },
+      {
+        text: 'line-height',
+      },
+      {
+        text: '\\',
+      },
+    ],
+    comment: '<p><em>Sass</em> has a number of standard mathematical operators such as the following <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, and <code>%</code>.</p>\n<p><em>Sass</em> allows us to carry out numeric operations in code, with the generated CSS code consisting of the calculated value.</p>\n<p>Operators will only work for numbers with compatible units. For example:</p>\n<pre><code class="language-css">h1 {\n  // compatibility error\n  font-size: 3px + 8em;\n  // generated as 3px + 8em\n  font-size: unquote("3px + 8em");\n  // generated as 9px\n  font-size: 7px + 2px;\n}\n</code></pre>\n<p>Using variables along with plain CSS with numeric operators:</p>\n<pre><code class="language-css">p {\n  $font-size: 12px;\n  $line-height: 30px;\n  font: #{$font-size}/#{$line-height};\n}\n</code></pre>\n<p>Would generate this CSS:</p>\n<pre><code class="language-css">p {\n  font: 12px/30px;\n}\n</code></pre>\n',
+  },
+}

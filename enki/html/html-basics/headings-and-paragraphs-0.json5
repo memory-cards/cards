@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/html-basics/headings-and-paragraphs.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>The smallest sized heading is</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<h6>',
+      },
+      {
+        text: '<h1>',
+      },
+      {
+        text: '<h2>',
+      },
+      {
+        text: '<h3>',
+      },
+      {
+        text: '<h4>',
+      },
+      {
+        text: '<h5>',
+      },
+    ],
+    comment: '<p>Even the simplest of web pages must contain at least one block of text. Usually, these fields are semantically delimited by the <code>&#x3C;h></code> and <code>&#x3C;p></code> tags.</p>\n<pre><code class="language-html">  &#x3C;h1>Page title&#x3C;/h1>\n  &#x3C;h3>Subtitle&#x3C;/h3>\n  &#x3C;h6>The smallest of the headings&#x3C;/h6>\n  &#x3C;p>The first paragraph of the page&#x3C;/p>\n  &#x3C;p>The second paragraph&#x3C;/p>\n</code></pre>\n<p>In a browser, the above code looks like this: </p>\n<p><img src="%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22224%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%22224%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22ArialMT%2C%20Arial%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2219%22%20y%3D%22169%22%3EThe%20first%20paragraph%20of%20the%20page%3C%2Ftspan%3E%20%20%3Ctspan%20x%3D%2219%22%20y%3D%22203%22%3EThe%20second%20paragraph%3C%2Ftspan%3E%3C%2Ftext%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Arial-BoldMT%2C%20Arial%22%20font-size%3D%2211%22%20font-weight%3D%22bold%22%3E%3Ctspan%20x%3D%2219%22%20y%3D%22128%22%3EThe%20smallest%20of%20the%20headings%3C%2Ftspan%3E%3C%2Ftext%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Arial-BoldMT%2C%20Arial%22%20font-size%3D%2232%22%20font-weight%3D%22bold%22%3E%3Ctspan%20x%3D%2220%22%20y%3D%2245%22%3EPage%20title%3C%2Ftspan%3E%3C%2Ftext%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Arial-BoldMT%2C%20Arial%22%20font-size%3D%2220%22%20font-weight%3D%22bold%22%3E%3Ctspan%20x%3D%2218%22%20y%3D%2289%22%3ESubtitle%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="headings-and-paragraphs"></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/djNpBW)-->\n<p>The visual difference between <em>headings</em> and <em>paragraph</em> are:</p>\n<ul>\n<li>Headings are styled as bold text and paragraphs are not.</li>\n<li>Typically, <code>&#x3C;h1></code>,<code>&#x3C;h2></code>, &#x26; <code>&#x3C;h3></code> are all larger than paragraph text size. </li>\n<li>While a <code>&#x3C;h4></code> element has the same font size as <code>&#x3C;p></code>, search engines give it more importance when reviewing the content of the page.</li>\n</ul>\n<p>Each of these elements occupy a whole line, and the spacing above and below them is constant, even when nested. This behavior is specific for <strong>block elements</strong>, which both headings and paragraphs display as. Here, you can see the whole line and spacing of nested paragraphs: </p>\n<pre><code class="language-html"> &#x3C;p>Main paragraph.\n   &#x3C;p>Nested paragraph.&#x3C;/p>\n   &#x3C;p>A second nested paragraph.&#x3C;/p>\n &#x3C;/p>\n &#x3C;p>Another main paragraph.&#x3C;/p>\n</code></pre>\n<p>This HTML will look like this in the browser:</p>\n<p><img src="%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22157%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%22157%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22ArialMT%2C%20Arial%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2219%22%20y%3D%2233%22%3EMain%20paragraph.%3C%2Ftspan%3E%20%20%3Ctspan%20x%3D%2219%22%20y%3D%2267%22%3ENested%20paragraph.%3C%2Ftspan%3E%20%20%3Ctspan%20x%3D%2219%22%20y%3D%22101%22%3EA%20second%20nested%20paragraph.%3C%2Ftspan%3E%20%20%3Ctspan%20x%3D%2219%22%20y%3D%22135%22%3EAnother%20main%20paragraph.%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="nested-paragraph"></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/rrjMXV)-->\n',
+  },
+}

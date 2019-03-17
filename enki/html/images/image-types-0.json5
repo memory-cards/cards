@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/images/image-types.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Match the image format with the most accurate description.</p>\n<p>??? = best for photographs and other information-dense images.\n??? = best for Logos, icons, and simple image patterns.</p>\n<p>Graphics that are created in the SVG format are defined by?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'raster',
+      },
+      {
+        text: 'vector',
+      },
+      {
+        text: 'XML',
+      },
+      {
+        text: 'compound',
+      },
+      {
+        text: 'stereo',
+      },
+      {
+        text: 'CSS',
+      },
+      {
+        text: 'HTML',
+      },
+      {
+        text: 'SVX',
+      },
+      {
+        text: 'Graphical data',
+      },
+    ],
+    comment: "<p>When using images in your web page or document, whether it's for a logo, product photographs, etc, it is important to know which web image formats to use.</p>\n<p>Image formats are divided into 2 categories:</p>\n<ul>\n<li>\n<p><strong>Raster images</strong></p>\n<ul>\n<li>JPG/JPEG</li>\n<li>GIF</li>\n<li>PNG</li>\n</ul>\n</li>\n<li>\n<p><strong>Vector images</strong></p>\n<ul>\n<li>SVG</li>\n</ul>\n</li>\n</ul>\n<h5>--> image-types.svg</h5>\n<p><strong>Raster images</strong></p>\n<p>Raster images consist of a two-dimensional grid of pixels. They do not scale well. If you enlarge or zoom in on a raster image, the quality will decline, and it will look pixelated. Using these images are necessary for creating photographs or other information-dense images. Each raster format compresses the image differently resulting in smaller file sizes.</p>\n<p><strong>JPEG/JPG:</strong> Best for photography and supports millions of colors with the best image compresses, although unseen data is removed from the image during compression making images blur if later they are enlarged. </p>\n<p><strong>GIF:</strong> Best for graphics with flat colors and no gradients since they only support a maximum of 256 colors. Simple  animations made by displaying a sequence of still shots is only possible with GIFs.</p>\n<p><strong>PNG:</strong> The key factor is data is lost during compression making it perfect when working with images that need re-editing and re-exporting. They also support transparency and animation.</p>\n<p>There are two categories of PNG images that help keep file sizes down depending on the number of colors available.</p>\n<ul>\n<li>PNG 8: limited with a maximum of 256 colors.</li>\n<li>PNG 24: unlimited colors.</li>\n</ul>\n<p><strong>Vector images</strong></p>\n<p>Vector images are made of thin lines, curves, and shapes, stored in mathematical drawing instructions. No matter how much you zoom in or rescale your image, the clear resolution stays the same.</p>\n<p><strong>SVG:</strong> Has unlimited colors and supports transparency and are best to use when creating a logo, an icon, or any other simple image pattern that may be displayed as multiple screen sizes. Also, SVG images can be directly inserted into an HTML page as code(since they are defined using XML) without being linked to a standalone image file.</p>\n<p><strong>Note: All image formats are animatable by CSS</strong></p>\n",
+  },
+}

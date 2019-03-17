@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/semantic-sections/section.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which of these rules of thumb is not associated with using a <code>&#x3C;section></code> element?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Use <section> when there is naturally a footer at the end of it.',
+      },
+      {
+        text: "If <article>`, `<aside>`, or `<nav>` are more appropriate, don't use `<section>.",
+      },
+      {
+        text: 'Use <section> when there is naturally a heading at the start of it.',
+      },
+      {
+        text: 'When a container for styling or scripting is needed, use a <div>` and not `<section>.',
+      },
+    ],
+    comment: "<p>The HTML <code>&#x3C;section></code> element is used to represent a standalone section. Usually, This is a section which doesn't have a better element to represent it within that HTML document.</p>\n<p><strong>Note:</strong> Each <code>&#x3C;section></code> element should be properly identified, usually with a heading <code>&#x3C;h1></code>-<code>&#x3C;h6></code>.</p>\n<p>Example:</p>\n<pre><code class=\"language-html\">&#x3C;section>\n  &#x3C;h1>Page name&#x3C;/h1>\n  &#x3C;p>Related info to page&#x3C;/p>\n&#x3C;/section>\n</code></pre>\n<p>If an <code>&#x3C;article></code>, <code>&#x3C;aside></code>, or <code>&#x3C;nav></code> element is more appropriate in your HTML document, don't use the <code>&#x3C;section></code> element. If you need a container for styling and/or scripting don't use the <code>&#x3C;section></code> element, use <code>&#x3C;div></code> instead.</p>\n<p>The <code>&#x3C;section></code> container element should be used only when the contents would be the information stored as an individual record in a database.</p>\n<p>It is encouraged to use the <code>&#x3C;article></code> element instead of the <code>&#x3C;section></code> element when it would make more sense to syndicate the contents of the element.</p>\n",
+  },
+}

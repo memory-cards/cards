@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'vbaron',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/recipes/load-custom-fonts-on-a-web-page-using-font-face.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'custom font',
+    'font-face',
+  ],
+  card: {
+    question: '<p>Consider the following snippet:</p>\n<pre><code class="language-css">p {\n   font-family: \'enkiFont\',\n       sans-serif;\n}\n</code></pre>\n<p>When using custom fonts with <code>@font-face</code>, <code>sans-serif</code> is considered to be the</p>\n<p>???.</p>\n',
+    answers: [
+      {
+        text: 'fallback font',
+      },
+      {
+        text: 'italic font',
+      },
+      {
+        text: 'next font',
+      },
+      {
+        text: 'inline font',
+      },
+    ],
+    comment: "<p>Custom fonts are hosted server-side and downloaded then displayed using CSS.</p>\n<p>Example:</p>\n<pre><code class=\"language-css\">@font-face {\nfont-family: 'MyCustomFont';\nsrc: /* Firefox, Chrome, Opera, Edge*/\n  url('webfont.woff2') format('woff2'),\n  url('webfont.woff') format('woff'),\n    /* Supported by all browsers\n       but Opera Mini */\n  url('webfont.ttf')  format('truetype');\n}\n</code></pre>\n<p>Style elements using:</p>\n<pre><code class=\"language-css\">a {\n font-family: 'MyCustomFont', sans-serif;\n}\n</code></pre>\n<p>In case the custom font import failed, <em>sans-serif</em> will be used as the fallback font.</p>\n",
+  },
+}

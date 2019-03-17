@@ -1,0 +1,46 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/links/link-mailto.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<h3>How much do you know about HTML links opening email programs?</h3>\n<p>Create a link that when clicked opens the user’s default email program with an auto-loaded email address and email subject?</p>\n<pre><code class="language-html">&#x3C;a\n  href="??? ??? ??? ???=???">\nEmail Me\n&#x3C;/a>\n</code></pre>\n',
+    answers: [
+      {
+        text: 'mailto:',
+      },
+      {
+        text: 'me@enkipro.com',
+      },
+      {
+        text: '?',
+      },
+      {
+        text: 'subject',
+      },
+      {
+        text: 'Email%20Subject',
+      },
+      {
+        text: 'src',
+      },
+      {
+        text: 'mail:',
+      },
+      {
+        text: 'address:',
+      },
+      {
+        text: 'email:',
+      },
+    ],
+    comment: '<p>The HTML anchor <code>mailto:EMAILHERE</code> attribute is used to create a hyperlink, which when clicked opens the users default email program with the email address auto loaded to allow them to send a message.</p>\n<p>Creating a link to open the user\'s default email program:</p>\n<pre><code class="language-html">&#x3C;a\n  href="mailto:me@enkipro.com">\n  Email me here\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<pre><code>Email me here\n</code></pre>\n<p>Next to just opening the user\'s default email program, you can also populate the subject area.</p>\n<p><strong>Note: When adding the subject, it is important to remember that instead of space you need to write <code>%20</code>.</strong></p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;a\n  href="mailto:me@enkipro.com?\n        subject=Email%20Subject">\nEmail me\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<pre><code class="language-html">Email me\n</code></pre>\n',
+  },
+}

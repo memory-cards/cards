@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/meta-intro.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>Answer a quick question about the HTML meta element!</h3>\n<p>Can you name three types of the most common meta tags?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Title, Description and Robots',
+      },
+      {
+        text: 'Follow, Advertise and Keyword',
+      },
+      {
+        text: 'Facebook, Twitter and Google',
+      },
+      {
+        text: 'Title, Keyword and Advertise',
+      },
+    ],
+    comment: '<p>In HTML the <code>&#x3C;meta></code> element is used to describe essentially information about your HTML document or web page. It can contain attributes that share more info about the author, keywords, page description, how to encode your document etc.</p>\n<p>The <code>&#x3C;meta></code> element should always be inside the <code>&#x3C;head></code> element.</p>\n<p>Data within the <code>&#x3C;meta></code> element will never be displayed on a webpage. However, the data within some of the tags within the <code>&#x3C;meta></code> element will help improve SEO(Search Engine Optimization). Some of the data will also be displayed in the search engine results.</p>\n<p>Here\'s an example of how metadata is written within an HTML webpage.</p>\n<pre><code class="language-html">&#x3C;head>\n &#x3C;meta\n   charset="UTF-8">\n &#x3C;meta\n   name="title"\n   content="Page Title">\n &#x3C;meta\n   name="description"\n   content="Meta Element Intro">\n &#x3C;meta\n   name="author"\n   content="John Doe">\n &#x3C;meta\n  name="robots"\n  content="NOINDEX, NOFOLLOW">\n&#x3C;/head>\n</code></pre>\n<p>Next to the <code>&#x3C;meta name="title" content="Page Title"></code> tag, the <code>&#x3C;title></code> tag also describes metadata. The difference is the <code>&#x3C;title></code> is more important than the <code>&#x3C;meta></code> title tag. This is because the <code>&#x3C;title></code> tag is used as the valid markup for a title that will be displayed. Whereas the <code>&#x3C;meta></code> title tag is used for crawling(web indexing with internet bots).</p>\n<p><strong>Note:</strong> Google will ignore any meta tags it doesn\'t recognize.</p>\n',
+  },
+}

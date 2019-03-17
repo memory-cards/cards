@@ -1,0 +1,43 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/links/link-relative-paths.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+  ],
+  card: {
+    question: '<p>When is it better to use relative paths over absolute paths?</p>\n<p>???</p>\n<p>Working with your own website on your own domain, are absolute links possible to add to the primary navigation buttons of your website?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'When the files being linked are managed within the existing website.',
+      },
+      {
+        text: 'Yes, but it is not the best way.',
+      },
+      {
+        text: 'When the files being linked are located within other domains.',
+      },
+      {
+        text: 'It is never better to use relative paths.',
+      },
+      {
+        text: 'It is always better to use relative paths.',
+      },
+      {
+        text: 'Yes, this is the best way.',
+      },
+      {
+        text: 'Yes, but it will not validate. ',
+      },
+      {
+        text: 'No, it is not possible. ',
+      },
+    ],
+    comment: '<p>When wanting to link to other web pages or images from a web page located in the same file directory, it is best to use relative link paths.</p>\n<p>A relative path is used to point to a file or the location of the file you want to be linked in relation to the webpage being viewed.</p>\n<p>Example of linking a logo located within the same directory as the web page:</p>\n<pre><code class="language-html">&#x3C;img src="logo.svg">\n</code></pre>\n<p>Example of linking a logo located within the <code>images</code> folder:</p>\n<pre><code class="language-html">&#x3C;img src="images/logo.svg">\n</code></pre>\n<p><strong>Note that the <code>images</code> folder is located within the current directory, which is the same directory as the website.</strong></p>\n<p>More example of how you can link with relative paths:</p>\n<ul>\n<li><code>&#x3C;img src="images/branding/logo.svg"></code>: Link within the images folder and a subfolder.</li>\n<li><code>&#x3C;img src="../logo.svg"></code>: Link within the folder above the current folder.  </li>\n<li><code>&#x3C;img src="../../logo.svg"></code>: Link within two folders above the current folder.  </li>\n<li><code>&#x3C;img src="../images/logo.svg"></code>: Link within the folder above the current folder and then into the images folder.</li>\n</ul>\n<p>Furthermore, using relative link paths to link files located within your server domain is much better and faster than using absolute(full URL) link paths. The reason for this is, when using relative paths, the browser knows to only look within the specified folder/file path. Whereas when using absolute paths, the browser would go to the linked file like it is located outside of the page, meaning it would load the webpage again just this time with the desired file which is inconvenient and time-consuming.</p>\n<p>Also, using relative links has a few more benefits:</p>\n<ul>\n<li>easier to move an entire site to a different domain</li>\n<li>easy for local management</li>\n<li>link paths do not need to be updated when the domain is changed.</li>\n</ul>\n<p>Relative links can never be used to link to pages or images located on other web servers.</p>\n',
+  },
+}

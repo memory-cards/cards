@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-introduction/html-defined.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>How well do you know the basics of HTML?</h3>\n<p>What does HTML provide on a web page?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Content such as text, images, & links.',
+      },
+      {
+        text: 'Styling for such content as text, images, & links.',
+      },
+      {
+        text: 'Interactive elements of the page.',
+      },
+      {
+        text: 'Web hosting.',
+      },
+    ],
+    comment: "<p><strong>HTML</strong>, or <strong>Hypertext Markup Language</strong>, is an essential building block of every web page.</p>\n<p><strong>HTML</strong>'s primary purpose is to list the content used in the web page. HTML will display text, labels, lists, insert photos and other media, create hyperlinks, buttons, and containers. This is all done with appropriate <strong>HTML</strong> elements. Additionally, each <strong>HTML</strong> element can be used to separate content into sections. You can also nest <strong>HTML</strong> elements with one another for better control over the page layouts and content.</p>\n<p>However, <strong>HTML</strong> is not good for creating animations, managing responsive layouts, and other similar interactions within the content.</p>\n",
+  },
+}

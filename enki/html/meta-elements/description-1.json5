@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/description.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which line of code shares info about the website for search engines?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<meta name="description" content="Info here.">',
+      },
+      {
+        text: '<meta name="desc" content="Info here.">',
+      },
+      {
+        text: '<meta content="description" info="Info here.">',
+      },
+      {
+        text: '<desc meta="description" content="Info here.">',
+      },
+      {
+        text: '<meta name="description" info="Info here.">',
+      },
+    ],
+    comment: '<p>The HTML meta <code>description</code> attribute is used to add a short summary of the content of the web page.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;meta\n  name="description"\n  content="Short summary here">\n</code></pre>\n<p>The description meta tag is useful for search engines and browsers for different reasons. For instance, Firefox uses this description as info for bookmarked pages. </p>\n<p>Whereas some search engines use descriptions as information to review and see if they should display that web page to the user.</p>\n',
+  },
+}

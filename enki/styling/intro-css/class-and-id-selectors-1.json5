@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/intro-css/class-and-id-selectors.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>In CSS, the syntax for targeting elements within a certain class is:</p>\n<pre><code class="language-css">???\n</code></pre>\n',
+    answers: [
+      {
+        text: '.class',
+      },
+      {
+        text: '#class',
+      },
+      {
+        text: 'class',
+      },
+    ],
+    comment: '<h3>Class Selectors</h3>\n<p>Class selectors are more specific than <em>type selectors</em> because they select a smaller group of elements rather than all of one type. In the style sheet, they are always invoked with a period before the name of the class:</p>\n<pre><code class="language-css">.my-div{}\n.main-content{}\n.cities {}\n</code></pre>\n<p>And the HTML:</p>\n<pre><code class="language-html">&#x3C;div class="my-div">&#x3C;/div>\n&#x3C;div class="main-content cities">\n                       &#x3C;/div>\n&#x3C;p class="cities">&#x3C;/p>\n&#x3C;div class="my-div">&#x3C;/div>\n</code></pre>\n<p>An element can have multiple classes, as you can see above. The <code>&#x3C;div></code> with <code>main-content</code> and <code>cities</code> will be styled by both classes. Because of cascading, if both of them are changing the same property, the class defined lower will have the higher priority (in this case, <code>cities</code>).</p>\n<h3>ID Selectors</h3>\n<p>ID selectors have the most priority out the three, as they target one unique element at a time. In the style sheet, they are always invoked with a hashtag before the id:</p>\n<pre><code class="language-css">#my-div{}\n#title{}\n</code></pre>\n<p>And the HTML:</p>\n<pre><code class="language-html">&#x3C;div id="my-div">&#x3C;/div>\n&#x3C;h2 id="title">&#x3C;/h2>\n</code></pre>\n',
+  },
+}

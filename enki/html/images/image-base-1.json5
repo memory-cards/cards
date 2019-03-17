@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/images/image-base.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>The link path to every image on the webpage can be assigned using what HTML element?</p>\n<p>???</p>\n<p>Complete the code if a <code>&#x3C;base></code> URL is assigned and an image is used within an OpenGraph meta-tag.</p>\n<pre><code class="language-html">&#x3C;head>\n  &#x3C;base href="http://enkipro.com/">\n  &#x3C;meta property=\'og:image\'\n    content=\'???facebook-image.jpg\'>\n&#x3C;/head>\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'base',
+      },
+      {
+        text: 'http://enkipro.com/',
+      },
+      {
+        text: 'image',
+      },
+      {
+        text: 'link',
+      },
+      {
+        text: 'target',
+      },
+      {
+        text: '[no path is needed]',
+      },
+      {
+        text: 'enkipro.com/',
+      },
+      {
+        text: 'path',
+      },
+    ],
+    comment: '<p>The <code>&#x3C;base></code> element is used to specify a link path for all relative URL attributes. There can be only one <code>&#x3C;base></code> element per page or document, and it is written inside the <code>&#x3C;head></code> element. If more than one <code>&#x3C;base></code> element is present, only the first <code>href</code> and <code>target</code> values are used, while the others are ignored.</p>\n<p>Also, the <code>&#x3C;base></code> element cannot be empty, it must contain either the target attribute, the href attribute, or both of them.</p>\n<p>All links in the web page or document are set to open in a new tab:</p>\n<pre><code class="language-html">&#x3C;head>\n   &#x3C;base\n      target="_self">\n&#x3C;/head>\n</code></pre>\n<p>All links in the web page or document will lead to the <code>https://www.enki.com</code> link:</p>\n<pre><code class="language-html">&#x3C;head>\n   &#x3C;base\n    href="https://www.enki.com">\n&#x3C;/head>\n</code></pre>\n<p>All links in the web page or document will lead to the <code>https://www.enki.com</code> link, and open in a new tab:</p>\n<pre><code class="language-html">&#x3C;head>\n   &#x3C;base href="https://www.enki.com"\n      target="_blank">\n&#x3C;/head>\n</code></pre>\n<p><strong>Note: In HTML5 the <code>&#x3C;base></code> end tag has to be omitted. On the other hand, in XHTML it has to be closed.</strong></p>\n',
+  },
+}

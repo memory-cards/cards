@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/keywords.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>Answer a quick question about meta element tags!</h3>\n<p>What is the least influential tag for search engines in a web page?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Keywords',
+      },
+      {
+        text: 'Title',
+      },
+      {
+        text: 'Description',
+      },
+      {
+        text: 'Headings',
+      },
+      {
+        text: 'Paragraphs  ',
+      },
+    ],
+    comment: '<p>The HTML <code>keyword</code> meta tag contains important words that are relevant to the content of the page. Years ago, it was used for search engines and ranking, but it is no longer useful for SEO(Search Engine Optimization). </p>\n<p>It is useful to know since the <code>keyword</code> attribute comes up often with new developers, but today it can be completely ignored.  </p>\n<p>How you write keyword meta tag:</p>\n<pre><code class="language-html"> &#x3C;meta\n  name="keywords"\n  content="HTML,XHTML, \n  web terms, learn code">\n</code></pre>\n',
+  },
+}

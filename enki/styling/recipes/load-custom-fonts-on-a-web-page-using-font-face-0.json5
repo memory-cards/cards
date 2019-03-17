@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'vbaron',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/recipes/load-custom-fonts-on-a-web-page-using-font-face.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'custom font',
+    'font-face',
+  ],
+  card: {
+    question: '<p>Which of the following font format is supported by most browsers?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'truetype',
+      },
+      {
+        text: 'woff',
+      },
+      {
+        text: 'woff2',
+      },
+      {
+        text: 'eot',
+      },
+    ],
+    comment: "<p>Custom fonts are hosted server-side and downloaded then displayed using CSS.</p>\n<p>Example:</p>\n<pre><code class=\"language-css\">@font-face {\nfont-family: 'MyCustomFont';\nsrc: /* Firefox, Chrome, Opera, Edge*/\n  url('webfont.woff2') format('woff2'),\n  url('webfont.woff') format('woff'),\n    /* Supported by all browsers\n       but Opera Mini */\n  url('webfont.ttf')  format('truetype');\n}\n</code></pre>\n<p>Style elements using:</p>\n<pre><code class=\"language-css\">a {\n font-family: 'MyCustomFont', sans-serif;\n}\n</code></pre>\n<p>In case the custom font import failed, <em>sans-serif</em> will be used as the fallback font.</p>\n",
+  },
+}

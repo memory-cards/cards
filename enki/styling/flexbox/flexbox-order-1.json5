@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'Billiexu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/flexbox/flexbox-order.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'flexbox',
+  ],
+  card: {
+    question: '<p>Take 6 boxes originally ordered 1, 2, 3, 4, 5 and 6. What order are the boxes after the following piece of CSS code?</p>\n<pre><code class="language-css">.flex-item:nth-of-type(1) { order: 2; }\n.flex-item:nth-of-type(2) { order: 4; }\n.flex-item:nth-of-type(3) { order: 6; }\n.flex-item:nth-of-type(4) { order: 3; }\n.flex-item:nth-of-type(5) { order: 5; }\n.flex-item:nth-of-type(6) { order: 1; )\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '6, 1, 4, 2, 5, 3',
+      },
+      {
+        text: '6, 1, 2, 4, 5, 3',
+      },
+      {
+        text: '6, 2, 1, 4, 5, 3',
+      },
+      {
+        text: '6, 1, 4, 5, 2, 3',
+      },
+      {
+        text: '6, 1, 4, 2, 3, 5',
+      },
+      {
+        text: '6, 1, 4, 2, 5, 0',
+      },
+    ],
+    comment: '<p>Flex items are displayed in the same order as they appear in the source document by default. The order property can be used to change this ordering.</p>\n<p>HTML:</p>\n<pre><code class="language-html">&#x3C;ul class="flex-container">\n  &#x3C;li class="flex-item">1&#x3C;/li>\n  &#x3C;li class="flex-item">2&#x3C;/li>\n  &#x3C;li class="flex-item">3&#x3C;/li>\n  &#x3C;li class="flex-item">4&#x3C;/li>\n  &#x3C;li class="flex-item">5&#x3C;/li>\n&#x3C;/ul>\n</code></pre>\n<p>CSS:</p>\n<pre><code class="language-css">.flex-item:nth-of-type(1) {order: 3;}\n.flex-item:nth-of-type(2) {order: 4;}\n.flex-item:nth-of-type(3) {order: 1;}\n.flex-item:nth-of-type(4) {order: 5;}\n.flex-item:nth-of-type(5) {order: 2;}\n</code></pre>\n<p>Original order of the boxes: 1.2.3.4.5</p>\n<p>Altered order: 3.5.1.2.4</p>\n',
+  },
+}

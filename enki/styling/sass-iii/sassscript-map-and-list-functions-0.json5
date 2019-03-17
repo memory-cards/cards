@@ -1,0 +1,24 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-iii/sassscript-map-and-list-functions.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>What's the first item index in <strong>SassScript</strong>?\n???</p>\n",
+    answers: [
+      {
+        text: '1',
+      },
+      {
+        text: '0',
+      },
+    ],
+    comment: '<p>In <em>SassScript</em> neither maps or lists support any special operations, they\'re manipulated by their respective map and list functions.</p>\n<p>All list functions work for maps too, maps are seen as a list of pairs.</p>\n<p><em>Remember</em>, the first item is index 1 in SassScript, not 0. A few examples of the functions for both maps and lists:</p>\n<pre><code class="language-css">// returns the length of a list or map\nlength(6px 8px 10px) => 3\nlength(loc1: val1, loc2: val2) => 2\n\n// returns nth item of a list or map\nnth((6px, 8px, 10px), 3) => 10px\nnth((loc1: val1, loc2: val2), 2)\n=> loc2: val2\n\n// returns multiple lists as a single\n// multidimensional list\nzip(a b c, 1 2 3, x y z)\n=> a 1 x, b 2 y, c 3 z\n</code></pre>\n',
+  },
+}

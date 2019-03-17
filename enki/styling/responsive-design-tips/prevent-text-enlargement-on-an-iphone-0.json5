@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'SeanWalters',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/responsive-design-tips/prevent-text-enlargement-on-an-iphone.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What does the following piece of CSS code do? ???</p>\n<pre><code class="language-css">-webkit-text-size-adjust: none;\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Prevents font enlarging when using an iPhone.',
+      },
+      {
+        text: 'Prevents font enlarging when using an Android phone.',
+      },
+      {
+        text: 'Prevents a user from zooming in on a webpage.',
+      },
+    ],
+    comment: '<p>By default, an iPhone will increase the size of the font on a webpage.</p>\n<p>To disable:</p>\n<pre><code class="language-css">-webkit-text-size-adjust: none;\n</code></pre>\n<p>This can be applied to any elements within the webpage to prevent mistakenly enlarging text.</p>\n',
+  },
+}

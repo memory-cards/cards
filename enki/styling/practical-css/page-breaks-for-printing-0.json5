@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/practical-css/page-breaks-for-printing.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Which of the following is not a CSS page break? ???</p>\n',
+    answers: [
+      {
+        text: 'page-break-prior',
+      },
+      {
+        text: 'page-break-before',
+      },
+      {
+        text: 'page-break-after',
+      },
+      {
+        text: 'page-break-inside',
+      },
+    ],
+    comment: '<p><strong>CSS</strong> provide with a set of properties in order to define how a document is printed:</p>\n<ul>\n<li><code>page-break-before</code> : will break the page before the element on which is applied</li>\n<li><code>page-break-after</code> : will break the page after the element on which is applied</li>\n<li><code>page-break-inside</code> : will add a page break inside the element</li>\n</ul>\n<p>These properties also have values to specify how the formatting is done. Apart from <code>auto</code> and <code>avoid</code>, the <code>before</code> and <code>after</code> properties have the <code>right</code>, <code>left</code> and <code>always</code> values which will refer to a spread layout like a book.</p>\n<p>Syntax:</p>\n<pre><code class="language-css">&#x3C;style type="text/css">\n@media print\ntable {page-break-inside: avoid}\n&#x3C;/style>\n</code></pre>\n<p>This will prevent the table to be broken into multiple pages while printing.</p>\n<p>Do not forget that the ruling must be preceded by <code>@media print</code>.</p>\n',
+  },
+}
