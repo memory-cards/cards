@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-i/partials.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Sass knows that some <code>.scss</code> files are partials because</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'their name is starts with an _',
+      },
+      {
+        text: 'they contain the @partial directive',
+      },
+      {
+        text: 'they contain the @partial mixin',
+      },
+      {
+        text: 'there are no CSS files generated for them',
+      },
+    ],
+    comment: '<p><em>Sass</em> allows the creation of <strong>partial</strong> CSS/SCSS files that you can include in other Sass files through imports. This feature promotes modular code, thus keeping files easier to maintaining.</p>\n<p>All you have to do to mark a file as <em>partial</em> is to include an underscore before its name: if the partial should style the header, a good name would be <code>_header.scss</code>. The underscore lets Sass know that the file is partial and a CSS file should not be generated for it.</p>\n<p>Partials are used with the <code>@import</code> directive, of which we will talk in the next insight.</p>\n',
+  },
+}

@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-i/use-not-to-apply-unapply-styles.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What does the following CSS code do?</p>\n<pre><code class="language-css">.div li:not(:last-child) {\n\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Allows styles to be applied to all elements except for the final element.',
+      },
+      {
+        text: 'Allows styles to be applied specifically to the final element.',
+      },
+      {
+        text: 'Allows styles to be applied to every other element.',
+      },
+    ],
+    comment: '<p>Rather than adding a border to a navigation bar, and then removing it for the last element:</p>\n<pre><code class="language-css">/* add border */\n.nav li {\n  border-right: 2px solid #FFF;\n}\n\n/* last element */\n.nav li:last-child {\n  border-right: none;\n}\n</code></pre>\n<p>Use the <code>:not()</code> pseudo-class to only apply to the elements you want:</p>\n<pre><code class="language-css">.nav li:not(:last-child) {\n  border-right: 2px solid #FFF;\n}\n</code></pre>\n',
+  },
+}

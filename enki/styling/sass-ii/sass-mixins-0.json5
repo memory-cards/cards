@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-ii/sass-mixins.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>What's the main advantage of Sass Mixins taking arguments? ???</p>\n",
+    answers: [
+      {
+        text: 'Large combinations of styles with only a few mixins.',
+      },
+      {
+        text: 'Flexible values.',
+      },
+      {
+        text: 'Mixins can be reused throughout a site.',
+      },
+    ],
+    comment: '<p>A <em>mixin</em> is used to allow you to create groups of CSS declarations which you can then reuse throughout your website. A good use for a mixin is for vendor prefixes.</p>\n<p><em>Mixins</em> can contain CSS rules, and anything which is allowed in a Sass document. They can take arguments which allows you to produce a large combination of style with only a few mixins.</p>\n<pre><code class="language-css">@mixin border-radius($radius) {\n  -webkit-border-radius: $radius;\n     -moz-border-radius: $radius;\n      -ms-border-radius: $radius;\n          border-radius: $radius;\n}\n.box { @include border-radius(10px); }\n</code></pre>\n<p>Generating your CSS would produce this:</p>\n<pre><code class="language-css">.box {\n  -webkit-border-radius: 10px;\n  -moz-border-radius: 10px;\n  -ms-border-radius: 10px;\n  border-radius: 10px;\n}\n</code></pre>\n',
+  },
+}

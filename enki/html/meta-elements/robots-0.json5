@@ -1,0 +1,47 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/robots.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'workout',
+    'deep',
+  ],
+  card: {
+    question: '<p>Write the meta tag that tells search engines not to index you webpage.</p>\n<p><code>&#x3C;??? ???="???" ???="???, ???"></code></p>\n',
+    answers: [
+      {
+        text: 'meta',
+      },
+      {
+        text: 'name',
+      },
+      {
+        text: 'robots',
+      },
+      {
+        text: 'content',
+      },
+      {
+        text: 'noindex',
+      },
+      {
+        text: 'nofollow',
+      },
+      {
+        text: 'search',
+      },
+      {
+        text: 'engines',
+      },
+      {
+        text: 'end',
+      },
+    ],
+    comment: '<p>The HTML meta <code>robot</code> attribute is used to define the behavior that robots, or cooperative crawlers, should follow on a page.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;meta\n  name="robots"\n  content="noindex, nofollow\'>\n</code></pre>\n<p>In the example above, with the <code>noindex</code> parameter we have told the search engine not to index the page, and with the <code>nofollow</code> parameter we have told crawlers not to follow any links on a page.</p>\n<p>If no robot tag is present, the default value is <code>content="index, follow"></code>. Which tells the robot to index the page and crawl through the rest of the pages.</p>\n<p>There are a couple of more parameters you can set. These are:</p>\n<ul>\n<li><code>noimageindex</code></li>\n<li><code>none</code></li>\n<li><code>noarchive</code></li>\n<li><code>nocache</code></li>\n<li><code>nosnippet</code></li>\n<li><code>nodp</code></li>\n</ul>\n<p>The <code>index</code>, <code>noindex</code>, <code>follow</code> and <code>nofollow</code> values are used by all browsers.</p>\n<p>The <code>noimageindex</code> value is used to instruct the crawler not to index any images on a page. Used by Google.</p>\n<p>The <code>none</code> value is equivalent to using the <code>noindex</code> and <code>nofollow</code> tags simultaneously. Used by Google.</p>\n<p>The <code>noarchive</code> value is used to tell search engines not to cache the content of the page. Used by Google, Yahoo, and Bing.</p>\n<p>The <code>nocache</code> value is the same as the <code>noarchive</code> value. Used only by Bing.</p>\n<p>The <code>nosnippet</code> value is used to prevent search engines from displaying any page description in the search engines result. Used by Google and Bing.</p>\n<p>The <code>nodp</code> value is used to prevent the use of the <code>Open Directory Project</code> description as the description of the page in the search engine result. Used by Google, Yahoo, and Bing.</p>\n',
+  },
+}

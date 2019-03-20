@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/intro-css/what-is-css.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What does *CSS</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'stand for?',
+      },
+      {
+        text: 'Cascading Style Sheets',
+      },
+      {
+        text: 'Cross Site Scripting',
+      },
+      {
+        text: 'Customer Service Site',
+      },
+      {
+        text: 'Computer Styling Sheets',
+      },
+    ],
+    comment: '<p><strong>CSS</strong>, also known as <strong>Cascading Style Sheets</strong>, is a styling language that can be applied to HTML, XML or SVG documents. Here\'s an example:</p>\n<pre><code class="language-css">p {\n  color: orange;\n}\n</code></pre>\n<p>CSS is very important to get to know about, because pretty much every website nowadays uses it to customize HTML elements.</p>\n<p>As for any project, functional separation of the files is recommended. Following this rule, we can split the files of a website into three categories: <em>structure</em>, <em>presentation</em> and <em>behavior</em>.</p>\n<p>CSS is the one that takes care of the <em>presentation</em>. (HTML takes care of the structure and JavaScript looks after the behavior.)</p>\n<p>There are several advantages to splitting the roles:</p>\n<ul>\n<li>No code duplication, as the CSS file can be used for similar looking pages of the website.</li>\n<li>A consequence of less code is less data to be transmitted, which is important for users with a slow internet connection.</li>\n<li>The <em>presentation</em> can be changed without modifying the <em>content</em>.</li>\n</ul>\n<p>CSS can change the HTML elements\' color and size, their positioning, and can even animate them.</p>\n',
+  },
+}

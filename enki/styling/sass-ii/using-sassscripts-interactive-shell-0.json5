@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-ii/using-sassscripts-interactive-shell.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>How can you launch *SassScript</p>\n<pre><code>$ ??? ???\n</code></pre>\n',
+    answers: [
+      {
+        text: 'interactive shell?',
+      },
+      {
+        text: 'sass',
+      },
+      {
+        text: '--interactive',
+      },
+      {
+        text: 'sassscript',
+      },
+      {
+        text: '-s',
+      },
+      {
+        text: '--shell',
+      },
+      {
+        text: '-c',
+      },
+      {
+        text: '--cli',
+      },
+    ],
+    comment: '<p><em>SassScript\'s</em> interactive shell gives you the chance to experiment with SassScript expressions.</p>\n<p>To launch the shell, run the Sass command-line with either the <code>--interactive</code> or  <code>-i</code> option.</p>\n<pre><code class="language-css">$ sass -i\n</code></pre>\n<p>Then at the prompt enter your chosen SassScript expressions and have them evaluated with the results printed to the terminal.</p>\n<pre><code class="language-css">>> "Enki insights are best..!"\n"Enki insights are best..!"\n>> 7px + 2px - 4px\n5px\n>> 1em + 1px\nSyntaxError: Incompatible units: \'em\' and\n\'px\'\n>> lighten(#333, 10%)\n#4d4d4d\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'Mathieu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-animation/pause-and-play-css-animations.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>How do you restart an animation?</p>\n<pre><code class="language-css">.animation:hover{\n  ???:\n        ???;\n</code></pre>\n',
+    answers: [
+      {
+        text: 'animation-play-state',
+      },
+      {
+        text: 'running',
+      },
+      {
+        text: 'play',
+      },
+      {
+        text: 'start',
+      },
+      {
+        text: 'animation-state',
+      },
+    ],
+    comment: '<p>You can <em>pause</em> and <em>play</em> CSS animation by changing its <code>animation-play-state</code> property.</p>\n<p>Setting it to <em>paused</em> stops your animation in place, until you change <code>animation-play-state</code> to running, for example on hover.</p>\n<pre><code class="language-css">.animating_thing {\n    animation: spin 10s linear infinite;\n    animation-play-state: paused;\n}\n.animating_thing:hover {\n    animation-play-state: running;\n}\n</code></pre>\n',
+  },
+}

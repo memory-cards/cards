@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/practical-css/add-line-height-to-body.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>What does the following piece of code do?</p>\n<pre><code class="language-css">body {\n   font-family: "Arial Narrow";\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Sets the font family to Arial Narrow for all elements in the body.',
+      },
+      {
+        text: 'Sets the font family to Arial Narrow for all elements outside the body.',
+      },
+      {
+        text: 'Sets the font family to Arial Narrow for the first element in the body,',
+      },
+      {
+        text: 'It does nothing.',
+      },
+    ],
+    comment: '<p>Rather than adding <code>line-height</code> to each element:</p>\n<pre><code class="language-css">p {\n  line-height: 1;\n}\n\nh1 {\n  line-height: 1;\n}\n\nh2 {\n  line-height: 1;\n}\n</code></pre>\n<p>Add it to <code>body</code> directly:</p>\n<pre><code class="language-css">body {\n  line-height: 1;\n}\n</code></pre>\n',
+  },
+}

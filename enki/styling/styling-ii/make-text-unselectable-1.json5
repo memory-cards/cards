@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'SeanWalters',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-ii/make-text-unselectable.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'NoSelection',
+  ],
+  card: {
+    question: '<p>What does the following CSS code do?</p>\n<pre><code class="language-css">.noselect {\n   user-select: none;\n}\n\n&#x3C;p class="noselect">\n   Hello, from Enki!\n&#x3C;/p>\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'It makes the contents of &lt;p&gt; unable to be selected.',
+      },
+      {
+        text: 'It makes the contents of &lt;p&gt; able to be selected.',
+      },
+      {
+        text: "It changes the colour of &lt;p&gt;'s contents.",
+      },
+      {
+        text: 'It automatically highlights the contents of &lt;p&gt;.',
+      },
+    ],
+    comment: '<p>This is a method in CSS to make text in a web page unselectable.</p>\n<pre><code class="language-css">.noselect {\n  user-select: none;\n}\n</code></pre>\n<p>Once the class is assigned to a paragraph like below, the text will no longer be selectable.</p>\n<pre><code class="language-html">&#x3C;p>\n  Selectable text.\n&#x3C;/p>\n</code></pre>\n<pre><code class="language-html">&#x3C;p class="noselect">\n  Unselectable text.\n&#x3C;/p>\n</code></pre>\n',
+  },
+}

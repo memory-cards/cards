@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'NomaDube',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/animations/using-animation-delay-in-debugging.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+  ],
+  card: {
+    question: '<p>Pause the animation at second 4:</p>\n<pre><code class="language-css">.debugAnimation{\n  animation: animate 6s\n             linear infinite;\n  ???: ???;\n  ???: ???;\n</code></pre>\n',
+    answers: [
+      {
+        text: 'animation-play-state',
+      },
+      {
+        text: 'paused',
+      },
+      {
+        text: 'animation-delay',
+      },
+      {
+        text: '-4',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: 'stop',
+      },
+      {
+        text: 'animation-time',
+      },
+    ],
+    comment: '<p>Set <code>animation-play-state: paused;</code> and <code>animation-delay</code> to different negative times to help with animation debugging:</p>\n<pre><code class="language-css">.animated {\n  animation: move 3s linear\n             infinite\n             alternate;\n  /* for debugging only: */\n  animation-play-state: paused;\n  /* to show expected state at 2s: */\n  animation-delay: -2s;  \n}\n</code></pre>\n<p>The example above shows the animation paused at the 2 second point of the animation lifecycle.</p>\n',
+  },
+}

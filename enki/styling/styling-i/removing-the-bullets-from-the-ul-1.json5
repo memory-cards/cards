@@ -1,0 +1,29 @@
+{
+  __meta__: {
+    author: 'koenvanlent',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-i/removing-the-bullets-from-the-ul.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'ul',
+    'bullets',
+  ],
+  card: {
+    question: '<p>What does the following CSS code do?</p>\n<pre><code class="language-css">ul {\n   list-style-type: square;\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Tells the list to use squares instead of bullet points.',
+      },
+      {
+        text: 'Removes the bullet points from the unordered list.',
+      },
+      {
+        text: 'Sets the unordered list to format text into the shape of a square.',
+      },
+    ],
+    comment: '<p>Once you have created your unordered list (<code>ul</code>) in HTML, simply add the <code>list-style-type</code> property and set it to <em>none</em> in your stylesheet.</p>\n<pre><code class="language-css">ul {\n    list-style-type: none;\n}\n</code></pre>\n<p>To remove any spacing, add <code>margin: 0;</code> and <code>padding: 0</code> to your ul-style.</p>\n',
+  },
+}

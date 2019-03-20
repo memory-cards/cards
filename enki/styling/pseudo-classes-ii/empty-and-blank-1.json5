@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'Billiexu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-ii/empty-and-blank.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which lines of HTML code would a *:blank</p>\n<pre><code class="language-html">1 &#x3C;p>Pseudo classes!&#x3C;/p>\n2 &#x3C;p>&#x3C;/p>\n3 &#x3C;p>:empty and :blank&#x3C;/p>\n4 &#x3C;p> &#x3C;/p>\n5 &#x3C;p>.&#x3C;/p>\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'pseudo class apply to?',
+      },
+      {
+        text: '2nd and 4th',
+      },
+      {
+        text: '2nd, 4th, 5th',
+      },
+      {
+        text: '1st, 3rd, 5th',
+      },
+      {
+        text: '4th and 5th',
+      },
+      {
+        text: '2nd and 5th',
+      },
+      {
+        text: '1st and 3rd',
+      },
+    ],
+    comment: '<p>With <code>:empty</code> you can select an element based on there being no children in it, whether that be elements, text nodes, or even white space nodes. So with <code>:empty</code>, even if the element contains a single space and nothing else, it will not be considered “empty”.</p>\n<p>The <code>:blank</code> pseudo-class, however, will select an element as long as it has no text and no other child elements, regardless of white space. So it could contain white space, line breaks, etc., and it would still qualify.</p>\n<p>Example:</p>\n<p>HTML:</p>\n<pre><code class="language-html">&#x3C;p>&#x3C;/p>\n&#x3C;p> &#x3C;/p>\n</code></pre>\n<p>CSS:</p>\n<pre><code class="language-css">p:blank {\n  outline: solid 1px red;\n}\n\np:empty {\n  border: solid 1px green;\n}\n</code></pre>\n<p>The <code>:empty</code> pseudo-class will select only the first element, because it’s completely empty. But the <code>:blank</code> pseudo-class will apply to both, because they are both “blank” with respects to text and elements.</p>\n',
+  },
+}

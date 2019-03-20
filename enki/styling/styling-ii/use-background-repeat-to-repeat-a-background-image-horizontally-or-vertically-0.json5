@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'priyankinirmal',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-ii/use-background-repeat-to-repeat-a-background-image-horizontally-or-vertically.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'css',
+    'background-repeat',
+    'background',
+    'background-image',
+  ],
+  card: {
+    question: '<p>Complete the code snippet to repeat an image vertically:</p>\n<pre><code class="language-css">body {\n  background-image: url(\n      \'image.jpg\');\n  background-repeat: ???;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'repeat-y',
+      },
+      {
+        text: 'y-repeat',
+      },
+      {
+        text: 'repeat-x',
+      },
+      {
+        text: 'x-repeat',
+      },
+      {
+        text: 'vertical',
+      },
+      {
+        text: 'horizontal',
+      },
+    ],
+    comment: '<p>The background image will repeat in both directions by default. Use <code>repeat-x</code>  to repeat the image horizontally and <code>repeat-y</code> to repeat it vertically.</p>\n<pre><code class="language-css">body {\n  background-image: url(\'image.jpg\');\n  background-repeat: repeat-x;\n}\n</code></pre>\n<p>Use <code>no-repeat</code> to prevent any background repetition.</p>\n',
+  },
+}

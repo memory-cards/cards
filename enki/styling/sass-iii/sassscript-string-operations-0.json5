@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-iii/sassscript-string-operations.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the code snippet to dynamically insert a value:</p>\n<pre><code class="language-css">p:before {\n  content: "Here we go: ???{1 + 13}";\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '#',
+      },
+      {
+        text: '=',
+      },
+      {
+        text: '~',
+      },
+      {
+        text: '[]',
+      },
+    ],
+    comment: '<p>The <code>+</code> operation is used in <em>SassScript</em> for the concatenation of strings.</p>\n<p>Take note of the quotation marks in these examples:</p>\n<pre><code class="language-css">p {\n  font-family: "sans-" + serif;\n  font-family: Times + " New Roman";\n}\n</code></pre>\n<p>Compiles to:</p>\n<pre><code class="language-css">p {\n  font-family: "sans-serif";\n  font-family: Times New Roman;\n}\n</code></pre>\n<p>When concatenating, if the first string has quote marks, the concatenated string has quote marks surrounding it. If not, then the string does not have quote marks around it.</p>\n<p>Within a text string, <em><code>#{} style interpolation</code></em> can be used to place dynamic values into a string:</p>\n<pre><code class="language-css">p:before {\n  content: "Dynamic value insertion:\n            #{10 + 10}!";\n}\n</code></pre>\n<p>Compiles to:</p>\n<pre><code class="language-css">p:before {\n  content: "Dynamic value insertion: 20!";\n }\n</code></pre>\n',
+  },
+}

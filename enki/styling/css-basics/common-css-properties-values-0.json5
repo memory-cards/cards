@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-basics/common-css-properties-values.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+  ],
+  card: {
+    question: '<p>If *purple</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'is the combination of *red* and *blue*, which of the following is not representing purple?',
+      },
+      {
+        text: '#00ffff',
+      },
+      {
+        text: '#ff00ff',
+      },
+      {
+        text: 'rgb(255,0,255)',
+      },
+      {
+        text: 'purple',
+      },
+    ],
+    comment: '<p>We\'ve talked about <em>selectors</em> and <em>specificity</em> using almost the same CSS properties in every insight: <code>color</code>, <code>background-color</code>,<code>font-size</code> or <code>font-weight</code>. Now of course there are a lot of other existing properties, and more importantly there are many ways to declare them.</p>\n<h3>Colors</h3>\n<p>Each of these CSS declarations specifies the same thing: that every <code>div</code> tag should have a white background by default.</p>\n<pre><code class="language-css">.div-hex {\n/* hexadecimal value */\nbackground-color: #ffffff;\n}\n.div-rgb {\n/* rgb */\nbackground-color: rgb(255,255,255);\n}\n.div-color{\n/* color name */\nbackground-color: white;\n</code></pre>\n<p>All the <code>divs</code> above will be white, as the values are equivalent: <code>ff</code> is the <em>hexadecimal</em> representation of <code>255</code> and <code>white</code> is self-explanatory.</p>\n<p>Keeping this in mind, it should be easier to understand how <em>hex</em> values work: there are <strong>6</strong> characters slots to fill (which can take values from <code>0</code> to <code>f</code>). Each <strong>two</strong> characters represent the intensity of <code>red</code>, <code>green</code>, <code>blue</code>, in this order.</p>\n<p>Here is the representation of some basic colors:</p>\n<pre><code class="language-javascript">/* black */\n#000000   rgb(0,0,0)   black\n\n/* red */\n#ff0000   rgb(255,0,0)   red\n\n/* green */\n#00ff00   rgb(0,255,0)   green\n\n/* blue */\n#0000ff   rgb(0,0,255)   blue\n</code></pre>\n<p>You can obtain all kinds of colors and shades from mixing the values together, and there are a lot of tools online to help you with that.</p>\n<h3>Lengths</h3>\n<p>Like colors, there are different types of values for <em>lengths</em>. The most popular value is the <em>pixel</em>, <code>px</code>.</p>\n<p>Each pixel is a unit of absolute length. That means they are the same size on all devices: a <code>16px</code> font-size should have the same apparent dimension on a printed sheet of paper, on a computer screen or on a mobile screen.</p>\n<pre><code class="language-css">p {\n  font-size: 16px;\n}\n</code></pre>\n',
+  },
+}

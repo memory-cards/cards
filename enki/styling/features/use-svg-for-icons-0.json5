@@ -1,0 +1,27 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/features/use-svg-for-icons.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>What does SVG stand for?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Scalable Vector Graphics',
+      },
+      {
+        text: 'System Vector Graphics',
+      },
+      {
+        text: 'Scalable Variable Graphics',
+      },
+    ],
+    comment: '<p>Since <code>SVG</code> (Scalable Vector Graphics) scales well for all resolution types, it is useful for icons:</p>\n<pre><code class="language-css">.logo {\n  background: url("logo.svg");\n}\n</code></pre>\n<p><code>SVG</code> is supported in all browsers back to IE9.</p>\n',
+  },
+}

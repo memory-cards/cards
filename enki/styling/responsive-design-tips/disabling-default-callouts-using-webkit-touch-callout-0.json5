@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'SeanWalters',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/responsive-design-tips/disabling-default-callouts-using-webkit-touch-callout.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+  ],
+  card: {
+    question: '<p>Which property is missing in the following CSS code when disabling the defauly callout shown when a touch target is touched and held?</p>\n<pre><code class="language-css">-webkit-???: none;\n</code></pre>\n<p>And which browser is this only compatible with? ???</p>\n',
+    answers: [
+      {
+        text: 'touch-callout',
+      },
+      {
+        text: 'Safari',
+      },
+      {
+        text: 'touch-held',
+      },
+      {
+        text: 'callout-touch',
+      },
+      {
+        text: 'callout-held',
+      },
+      {
+        text: 'Chrome',
+      },
+      {
+        text: 'Internet Explorer',
+      },
+      {
+        text: 'Firefox',
+      },
+    ],
+    comment: '<p>On iOS, when you touch and hold a touch target such as a link, the browser displays a callout containing information about the link.</p>\n<p>You can use <code>-webkit-touch-callout</code> to disable the callout:</p>\n<pre><code class="language-css">-webkit-touch-callout: none;\n</code></pre>\n<p><em>Note:</em> This is only compatible with Safari.</p>\n',
+  },
+}

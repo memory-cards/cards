@@ -1,0 +1,39 @@
+{
+  __meta__: {
+    author: 'koenvanlent',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/typography/a-great-font-resource-google-font-api.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'fonts',
+    'css',
+    'font-family',
+  ],
+  card: {
+    question: "<p>Once you've chosen a font, add the ??? to your HTML and the ??? to your element in CSS.</p>\n",
+    answers: [
+      {
+        text: 'stylesheet link',
+      },
+      {
+        text: 'font-family',
+      },
+      {
+        text: 'font name',
+      },
+      {
+        text: 'Google font database',
+      },
+      {
+        text: 'Google font API',
+      },
+      {
+        text: 'font description',
+      },
+    ],
+    comment: "<p>The Google Font API is an easy and useful source for fonts.</p>\n<p>Steps:</p>\n<p>1) Go to the Google font database in the link provided in the insight.</p>\n<p>2) Pick your font and add the stylesheet link to your HTML</p>\n<pre><code>&#x3C;head>\n...\n\n  &#x3C;link href='http://fonts.googleapis.\ncom/css?family=Font+Name' rel='style\nsheet' type='text/css'>\n\n&#x3C;/head>\n</code></pre>\n<p>3) Add the font-family to your element in CSS:</p>\n<pre><code>h1 {\nfont-family: 'Font name', Arial;\nfont-weight: 300; /*if available\n  for your Google font*/\n}\n</code></pre>\n<p>Voila, you are done!</p>\n",
+  },
+}

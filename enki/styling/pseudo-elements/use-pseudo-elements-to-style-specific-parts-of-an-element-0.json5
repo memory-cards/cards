@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'priyankinirmal',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-elements/use-pseudo-elements-to-style-specific-parts-of-an-element.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+    'css',
+    'pseudo-elements',
+  ],
+  card: {
+    question: '<p>Which of the following is NOT a pseudo-element?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '::first-paragraph',
+      },
+      {
+        text: '::first-line',
+      },
+      {
+        text: '::first-letter',
+      },
+      {
+        text: '::before',
+      },
+    ],
+    comment: "<p>To distinguish them from pseudo-classes, <strong>pseudo-elements</strong> should be preceded by two colons <code>::</code>. In some older browser versions the two colon notation might not be supported, so the single colon notation (<code>:</code>) must be used.</p>\n<p>The syntax is as follows:</p>\n<pre><code class=\"language-css\">selector::pseudo-element {\n  property: value;\n}\n</code></pre>\n<p>An example of a pseudo-element is <code>::before</code>. This will create and style a pseudo-element placed before the real element.</p>\n<p>Some of the pseudo-elements are:</p>\n<ul>\n<li><code>::before</code>: comes before the element's content.</li>\n<li><code>::after</code>: comes after the element's content.</li>\n<li><code>::first-letter</code>: targets the first letter of a paragraph.</li>\n<li><code>::first-line</code>: targets the first line of a paragraph.</li>\n<li><code>::selection</code>: targets a portion that is selected by the user.</li>\n</ul>\n<p>It is worth noting that some browsers don't support <code>::before</code> and <code>::after</code> pseudo-elements for <code>img</code> and <code>input</code> fields.</p>\n",
+  },
+}

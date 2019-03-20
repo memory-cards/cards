@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/global-attributes/global-attributes-3.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: "<p>Attribute used to set the language of an element: ???</p>\n<p>Attribute used for translating an element's content to another language: ???</p>\n<p>Attribute used for setting the direction of text: ???</p>\n<p>Attribute used for autocapitalization: ???</p>\n",
+    answers: [
+      {
+        text: 'lang',
+      },
+      {
+        text: 'translate',
+      },
+      {
+        text: 'dir',
+      },
+      {
+        text: 'autocapitalize',
+      },
+      {
+        text: 'language',
+      },
+      {
+        text: 'translatetext',
+      },
+      {
+        text: 'direction',
+      },
+      {
+        text: 'capitalize',
+      },
+    ],
+    comment: '<p>In the previous insight we explained: <code>contenteditable</code>, <code>draggable</code>, <code>dropzone</code> and <code>hidden</code>.  In this one, we will cover: <code>autocapitalize</code>, <code>dir</code>, <code>lang</code>, <code>spellcheck</code> and <code>translate</code>.</p>\n<h3>autocapitalize</h3>\n<p>The <code>autocapitalize</code> attribute is used to set the automatic capitalization of letters and has 4 possible values; <code>off</code> or <code>none</code>, <code>on</code> or <code>sentences</code>, <code>words</code> and <code>characters</code>.</p>\n<ol>\n<li>The <code>off</code>/<code>none</code> value sets the default for all letter to lowercase.</li>\n<li>The <code>on</code>/<code>sentences</code> value sets the first letter of each sentence as capitalized.</li>\n<li>The <code>words</code> value sets the first letter of every word as capitalized.</li>\n<li>The <code>characters</code> value sets every letter as capitalized.</li>\n</ol>\n<h3>dir</h3>\n<p>The <code>dir</code> attribute is used to set the direction of text and has 3 possible values; <code>ltr</code>, <code>rtl</code> and <code>auto</code>.</p>\n<ol>\n<li>The <code>ltr</code> value is used for any language that is written left-to-right.</li>\n<li>The <code>rtl</code> value is used for any language that is written right-to-left.</li>\n<li>The <code>auto</code> value is used to give the user agent the option to decide which way of writing to use.</li>\n</ol>\n<h3>lang</h3>\n<p>The <code>lang</code> attribute is used to define the language of the element.\nExample:</p>\n<pre><code class="language-html">&#x3C;p lang="es">\n  ¿Cómo estás?\n&#x3C;/p>\n</code></pre>\n<h3>spellcheck</h3>\n<p>The <code>spellcheck</code> attribute is used to indicate if an elements content should be spellchecked and has 2 possible values; <code>true</code> and <code>false</code>.</p>\n<p>The <code>true</code> value states that the element should be checked for spelling errors.\nThe <code>false</code> value states that the element should not be checked for spelling errors.</p>\n<h3>translate</h3>\n<p>The <code>translate</code> attribute is used to indicate if an element and its content should be translated. This attribute has 2 possible values; <code>yes</code> and <code>no</code>.</p>\n<p>The <code>"yes"</code> value(which can also be an empty string,<code>""</code>) says the content should be translated.\nThe <code>"no"</code> value says the content should not be translated.</p>\n<p><strong>Note:</strong> The attribute does not immediately translate the element but rather specifies if it should or should not translate when the user translates the page.\nExample:</p>\n<pre><code class="language-html">&#x3C;p translate="no">\n  Contents of this paragraph\n  won\'t translate.\n  &#x3C;/p>\n</code></pre>\n',
+  },
+}

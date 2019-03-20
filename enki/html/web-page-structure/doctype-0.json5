@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-page-structure/doctype.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which DOCTYPE is needed for viewing HTML5 webpages?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<!DOCTYPE html>',
+      },
+      {
+        text: '<!DOCTYPE html5>',
+      },
+      {
+        text: '<!DOCTYPE HTML5>',
+      },
+      {
+        text: '<!DOCTYPE "html">',
+      },
+      {
+        text: '<!DOCTYPE html en>',
+      },
+    ],
+    comment: '<p>In HTML, every page, no matter the version of HTML it is written in, requires a doctype declaration telling the browser how to render the document properly.</p>\n<p>Technically, the doctype declaration isn\'t an HTML element, but a specific direction for browsers to understand they type of web page being delivered.</p>\n<p>The doctype declaration for HTML5 is:</p>\n<pre><code class="language-html">&#x3C;!DOCTYPE html>\n</code></pre>\n<p>Although the doctype declaration can be written both in lower and uppercase letters, it tends to be most widely accepted for <code>DOCTYPE</code> to be written in uppercase and <code>html</code> to be written in lowercase letters. </p>\n<p>This is only one doctype declaration for HTML5 compared to the three doctype declarations used for HTML 4.01 making this much similar for developers.</p>\n',
+  },
+}

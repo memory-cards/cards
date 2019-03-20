@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-elements/use-attribute-selectors-with-empty-links.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+  ],
+  card: {
+    question: '<p>Complete the code snippet to display links when the <code>&#x3C;a></code> element has no text value yet the <code>href</code> attribute has an external link:</p>\n<pre><code class="language-css">a[???="http"]:empty::before {\n   content: ???(href);\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'href^',
+      },
+      {
+        text: 'attr',
+      },
+      {
+        text: 'href',
+      },
+      {
+        text: 'link',
+      },
+      {
+        text: 'display',
+      },
+      {
+        text: 'disp^',
+      },
+    ],
+    comment: '<p>Display links when the <code>&#x3C;a></code> element has no text value but the <code>href</code> attribute has an external link:</p>\n<pre><code class="language-css">a[href^="http"]:empty::before {\n  content: attr(href);\n}\n</code></pre>\n<p>The above code targets:</p>\n<pre><code class="language-html">&#x3C;a href="http://anysite.com">&#x3C;/a>\n</code></pre>\n<p>And it effectively copies the value of <code>&#x3C;a></code>\'s <code>href</code> attribute as the content of the <code>::before</code> pseudo element. The element will look like this:</p>\n<pre><code class="language-html">&#x3C;a href="http://anysite.com">\nhttp://anysite.com\n&#x3C;/a>\n</code></pre>\n',
+  },
+}

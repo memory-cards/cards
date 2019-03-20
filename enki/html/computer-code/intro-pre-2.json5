@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/computer-code/intro-pre.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>How much do you know about text formatting with HTML elements?</h3>\n<p>Which HTML element is best used for "???" to properly display this code within a webpage:  </p>\n<p><code>&#x3C;???></code>\n.alert {\ncolor:red;\n}\n<code>&#x3C;???></code></p>\n',
+    answers: [
+      {
+        text: '<pre>',
+      },
+      {
+        text: '<code>',
+      },
+      {
+        text: '<perf>',
+      },
+      {
+        text: '<samp>',
+      },
+    ],
+    comment: '<p>The HTML <code>&#x3C;pre></code>, or the <strong>Pre-formatted Text</strong> element, is used to display text exactly as it is within the HTML file. This means that text and all the spaces within the <code>&#x3C;pre></code> element will all be displayed in the space exactly. This is useful since HTML typically ignores multiple spaces. </p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;pre>.enki-highlight {\n  color: #F46C43;\n}\n&#x3C;/pre>\n</code></pre>\n<p>Pre-formatted Result:</p>\n<p><img src="%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%2292%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%2292%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Courier%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2218%22%20y%3D%2232%22%3E%20.enki-highlight%20%7B%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2218%22%20y%3D%2251%22%3E%20color%3A%20%23F46C43%3B%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2218%22%20y%3D%2270%22%3E%20%7D%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="pre-element"></p>\n<p>In the example above, the <code>&#x3C;pre></code> element is used to display some sample CSS code within the HTML with the appropriate spaces, which otherwise would be taken out by the browser. As you can see, the text within the <code>&#x3C;pre></code> element is set to display as a monospace font by default. </p>\n<p>Using the <code>&#x3C;pre></code> and <code>&#x3C;code></code> elements together with a little CSS can really improve the presentation of your code within your web pages.</p>\n<p><img src="%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22122%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%22122%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Cpath%20fill%3D%22%23F4F5F6%22%20d%3D%22M20%2020h271v82H20z%22%2F%3E%3Cpath%20fill%3D%22%239B4DCB%22%20d%3D%22M20%2020h3v82h-3z%22%2F%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Courier%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2240%22%20y%3D%2248%22%3E%20.enki-highlight%20%7B%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2240%22%20y%3D%2267%22%3E%20color%3A%20%23F46C43%3B%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2240%22%20y%3D%2286%22%3E%20%7D%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="pre-element-styled"></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/BVqPgZ)-->\n<p>Since all spaces within the <code>&#x3C;pre></code> element are used, pay attention to adding any unnecessary spaces or hard returns after the opening tag. </p>\n<p><strong>Bad Example:</strong> An extra hard return will display at the top of the code sample in the HTML page:</p>\n<pre><code class="language-html">&#x3C;pre>\n .enki-highlight {\n  color: #F46C43;\n }\n&#x3C;/pre>\n</code></pre>\n<p><strong>Good Example:</strong> The displayed code is written immediately after the opening tag:</p>\n<pre><code class="language-html">&#x3C;pre>.enki-highlight {\n  color: #F46C43;\n }\n&#x3C;/pre>\n</code></pre>\n',
+  },
+}

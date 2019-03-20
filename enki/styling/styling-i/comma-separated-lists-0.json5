@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'jordanfish',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-i/comma-separated-lists.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'hack',
+  ],
+  card: {
+    question: '<p>Complete the snippet to target every list item’s after element, but the last one:</p>\n<pre><code class="language-css">ul > ??? :not(???)\n           ::after{\n  /\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'code */',
+      },
+      {
+        text: 'li',
+      },
+      {
+        text: ':last-child',
+      },
+      {
+        text: ':nth-child(last)',
+      },
+      {
+        text: ':li',
+      },
+      {
+        text: ':not(:first-child)',
+      },
+    ],
+    comment: '<p>To make list items look like a real, comma-separated list:</p>\n<pre><code class="language-css">ul > li:not(:last-child)::after {\n  content: ",";\n}\n</code></pre>\n<p>The <code>:not()</code> pseudo-class specifies that no comma is added to the last item in the list.</p>\n',
+  },
+}

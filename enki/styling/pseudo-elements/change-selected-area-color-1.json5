@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-elements/change-selected-area-color.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+  ],
+  card: {
+    question: '<p>Which pseudo element is used to select a text area, for example if you wanted to change its background colour? ???</p>\n',
+    answers: [
+      {
+        text: '::selection',
+      },
+      {
+        text: ':selection',
+      },
+      {
+        text: '::select',
+      },
+      {
+        text: ':select',
+      },
+      {
+        text: '::selector',
+      },
+      {
+        text: ':selector',
+      },
+    ],
+    comment: '<p>Highlighted text area colors can be easily change with the <code>::selection</code> pseudo element.</p>\n<p>Apply <code>::selection</code> on a paragraph:</p>\n<pre><code class="language-css">p::selection {\n  background: black;\n  color: white;\n}\n</code></pre>\n<p>Gecko is the only engine requiring the prefix, so adding an other rule is required to support all browsers :</p>\n<pre><code class="language-css">p::-moz-selection {\n  background: black;\n  color: white;\n}\n</code></pre>\n',
+  },
+}

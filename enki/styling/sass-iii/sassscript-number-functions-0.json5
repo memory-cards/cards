@@ -1,0 +1,16 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-iii/sassscript-number-functions.md',
+  },
+  type: 'info',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>What are the outputs to the following Sass code:</p>\n<pre><code class="language-css">percentage(100px / 50px); /\nabs(-2px); /\n</code></pre>\n',
+    comment: '<p><em>SassScript</em> has a number of implemented number functions which can be used for the manipulation and creation of numeric values.</p>\n<p>These include:</p>\n<pre><code class="language-css">// turning a number into a percentage\npercentage(0.74) => 74%\npercentage(100px / 80px) => 125%\n\n// returning a numbers absolute value\nabs(12px) => 12px\nabs(-4px) => 4px\n\n// rounding a number\nround(6.9px) => 7px\nround(9.2px) => 9px\n\n// returns a random number between 0 and 1\nrandom => 0 &#x3C;= num &#x3C; 1\n\n// returns a random number between 1 and\n// the limit\nrandom(3) => 1 &#x3C;= num &#x3C;= 3\n</code></pre>\n',
+  },
+}

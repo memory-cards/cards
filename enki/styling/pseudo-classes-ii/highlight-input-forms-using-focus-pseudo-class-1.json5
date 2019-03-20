@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'Demonus',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-ii/highlight-input-forms-using-focus-pseudo-class.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'Pseudo-class',
+    ':focus',
+    'forms',
+  ],
+  card: {
+    question: '<p>What does the following CSS code do?</p>\n<pre><code class="language-css">name:focus {\n   background-color: red;\n}\ndob:focus {\n   background-color: green;\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Sets the background colour of the name input to red, and of the date of birth input to green.',
+      },
+      {
+        text: 'Sets the background colour of the name input to red and the rest of the page to green.',
+      },
+      {
+        text: 'Sets the background colour of the date of birth input to green and the rest of the page to red.',
+      },
+    ],
+    comment: '<p>Responsiveness can make the forms more user-friendly and easier to read.</p>\n<p>The <code>:focus</code> pseudo-class allows us to target the form element that is clicked on. This means we can change how the input is displayed to better inform the user on what to input.  </p>\n<pre><code class="language-css">input:focus{\n  background-color: red;\n}\n</code></pre>\n<p>Pseudo-classes can be combined with classes, or other selectors, to specify different elements:</p>\n<pre><code class="language-css">.name:focus{\n  background-color: red;\n}\n\n.surname:focus{\n  background-color: blue;\n}\n</code></pre>\n',
+  },
+}

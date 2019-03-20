@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-introduction/html-css-intro.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>Do you know what HTML &#x26; CSS stands for?</h3>\n<p>What do HTML and CSS stand for?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'HyperText Markup Language & Cascading StyleSheets',
+      },
+      {
+        text: 'Hyperlink Text Markup Language & Computer SheetStyles',
+      },
+      {
+        text: 'Home Tool Markup Listing & Custom ScriptStyles',
+      },
+      {
+        text: 'Hyper Text Mark Language & Cascading SheetStyles',
+      },
+    ],
+    comment: '<p><strong>CSS</strong> and <strong>HTML</strong> are the core languages used for creating web pages and web-based applications. <strong>HTML</strong> was invented in 1989, while <strong>CSS</strong> was invented in 1996.</p>\n<p><strong>HTML</strong>, or <strong>HyperText Markup Language</strong> is a markup language for creating the structure and content of a webpage using text, images, links, and containers. Meanwhile <strong>CSS</strong>, or <strong>Cascading Style Sheets</strong>, is used to modify the design and display of those <strong>HTML</strong> elements.</p>\n<p><strong>HTML</strong> is made up of content between <code>&#x3C;tags></code>, whereas <strong>CSS</strong> is made of selectors followed by a {declaration block}.</p>\n<p>When creating a website, all of your unique HTML and CSS files for the same website are usually located inside one primary folder.</p>\n',
+  },
+}

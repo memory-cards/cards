@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'Billiexu',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-ii/drag-and-drop-pseudo-class-drop.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'css',
+    'app',
+    'draganddrop',
+    'webdevelopment',
+  ],
+  card: {
+    question: '<p>What will the following CSS code do whilst dragging and not dragging? ???</p>\n<pre><code class="language-css">.bg {\n   background-color: white;\n}\n\n.bg:drop {\n   background-color: red;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Whilst dragging, the background colour is red. Whilst not dragging, the background colour is white.',
+      },
+      {
+        text: 'Whilst dragging, the background colour is white. Whilst not dragging, the background colour is red.',
+      },
+      {
+        text: 'The background colour is always red.',
+      },
+      {
+        text: 'The background colour is always white.',
+      },
+    ],
+    comment: '<p>The <code>:drop</code> selector allows styling of the drop zone (the place where the element is supposed to be dropped), during the time when the user is dragging (or carrying) the element to be dropped.</p>\n<pre><code class="language-css">.spot {\n  background: #ccc;\n}\n\n.spot:drop {\n  background: hotpink;\n}\n</code></pre>\n<p>The above CSS will apply a neutral gray background color to the .spot element when the user is not dragging. But when the user starts dragging to the <code>.spot</code> element, the background color will change and stay that way until the item is dropped.</p>\n',
+  },
+}

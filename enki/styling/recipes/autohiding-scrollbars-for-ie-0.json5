@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'catalin',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/recipes/autohiding-scrollbars-for-ie.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'tip',
+  ],
+  card: {
+    question: '<p>What\'s the missing command in the following CSS code which makes a scrollbar visible only when needed?</p>\n<pre><code class="language-css">html {\n   -ms-overflow-style: ???;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'ms-autohiding-scrollbar',
+      },
+      {
+        text: '-ms-autohiding-scrollbar',
+      },
+      {
+        text: 'autohide-scrollbar',
+      },
+      {
+        text: 'show-hover-scrollbar',
+      },
+      {
+        text: 'autohiding-scrollbar-style',
+      },
+    ],
+    comment: '<p>Note this only works in <strong>Edge</strong> and <strong>IE 10/11</strong> .\nInstead of always showing a scrollbar, you can make it only show when needed :</p>\n<pre><code class="language-css">html {\n  -ms-overflow-style:\n    ms-autohiding-scrollbar;\n}\n</code></pre>\n',
+  },
+}

@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'oj14henry',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-animation/making-shapes-with-transform.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'transform',
+  ],
+  card: {
+    question: '<p>What are the missing values required to transform a diamond into a square?</p>\n<pre><code class="language-css">#transform {\n   transform: ???(???);\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'rotate',
+      },
+      {
+        text: '-45deg',
+      },
+      {
+        text: 'translate',
+      },
+      {
+        text: '45%',
+      },
+      {
+        text: '-45%',
+      },
+      {
+        text: '90deg',
+      },
+      {
+        text: 'center',
+      },
+    ],
+    comment: '<p><code>Rotate</code> certain shapes using <code>transform</code> can be used to obtain other shapes.</p>\n<p>Applying the <code>transform</code> property on a regular square can create a diamond, for example:</p>\n<pre><code class="language-css">#diamond {\n  transform: rotate(45deg);\n}\n</code></pre>\n<p>The default rotation point is the center of the element. <code>transform-origin</code> can change that: it can take 2 (for 2D shapes) or 3 (for 3D shapes) values, as the <code>x</code> and <code>y</code> coordinates of the new rotation point.</p>\n<p>The center of a 2D shape is:</p>\n<pre><code class="language-css">transform-origin: 50% 50%;\n/* or */\ntransform-origin: center center;\n/* for known dimensions: 500px × 20em*/\ntransform-origin: 250px 10em;\n</code></pre>\n<p>Other values :</p>\n<pre><code class="language-css">transform-origin: top left;\ntransform-origin: right bottom;\ntransform-origin: left center;\n</code></pre>\n<p>This is the default rotation around its center:</p>\n<p><img src="%3Csvg%20version%3D%221.2%22%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%22auto%22%20viewBox%3D%220%200%20612%20200%22%3E%0A%20%20%3Cpath%20fill%3D%22%23596294%22%20stroke%3D%22%23000%22%20stroke-miterlimit%3D%225%22%20d%3D%22M0%200h612v200H0z%22%2F%3E%0A%20%20%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%23000%22%20stroke-miterlimit%3D%222%22%20d%3D%22M150%2050h100v100H150zM428.9878%2029.6985l70.7107%2070.7107-70.7107%2070.7106-70.7107-70.7106z%22%2F%3E%0A%3C%2Fsvg%3E%0A" alt="diamondtransform.svg"></p>\n',
+  },
+}

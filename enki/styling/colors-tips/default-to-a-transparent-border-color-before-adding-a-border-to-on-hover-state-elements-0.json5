@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'fsites',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/colors-tips/default-to-a-transparent-border-color-before-adding-a-border-to-on-hover-state-elements.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'pattern',
+    'borders, border, :hover, hover',
+  ],
+  card: {
+    question: '<p>What does the following code do? ???</p>\n<pre><code class="language-css">label {\n   border: 2px dotted transparent;\n}\n\nlabel:hover {\n   border-color: black\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Makes the border black instead of transparent when the label is hovered over.',
+      },
+      {
+        text: 'Makes the border transparent instead of block when the label is hovered over.',
+      },
+      {
+        text: 'Makes the label solid instead of transparent when hovered over.',
+      },
+      {
+        text: 'Makes the label disappear when hovered over.',
+      },
+    ],
+    comment: '<p>By using a transparent border as a default, then changing the <code>border-color</code> on hover, you will avoid moving other elements on hover.</p>\n<p>Instead of:</p>\n<pre><code class="language-css">button:hover {\n  border: 2px solid black;\n}\n</code></pre>\n<p>Use this:</p>\n<pre><code class="language-css">button {\n  border: 2px solid transparent;\n}\n\nbutton:hover {\n  border-color: black;\n}\n</code></pre>\n<p>The second example applies the same black border on <code>:hover</code> without pushing out the other page elements by <code>2px</code> in every direction.</p>\n',
+  },
+}

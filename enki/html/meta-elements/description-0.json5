@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/description.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Complete the code that provides info for search engines to review and display within the results:</p>\n<p><code>&#x3C;??? ???="???" ???="This would be the write-up."></code></p>\n',
+    answers: [
+      {
+        text: 'meta',
+      },
+      {
+        text: 'name',
+      },
+      {
+        text: 'description',
+      },
+      {
+        text: 'content',
+      },
+      {
+        text: 'metatag',
+      },
+      {
+        text: 'desc',
+      },
+      {
+        text: 'type',
+      },
+      {
+        text: 'info',
+      },
+    ],
+    comment: '<p>The HTML meta <code>description</code> attribute is used to add a short summary of the content of the web page.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;meta\n  name="description"\n  content="Short summary here">\n</code></pre>\n<p>The description meta tag is useful for search engines and browsers for different reasons. For instance, Firefox uses this description as info for bookmarked pages. </p>\n<p>Whereas some search engines use descriptions as information to review and see if they should display that web page to the user.</p>\n',
+  },
+}

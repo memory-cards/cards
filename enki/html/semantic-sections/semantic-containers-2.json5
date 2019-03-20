@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/semantic-sections/semantic-containers.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<h3>How much do you know about sectioning elements?</h3>\n<p>What is the term that refers to "when both developers and search engines understand the organization of the page content"?</p>\n<p>???</p>\n<h2>Game</h2>\n<p>Play the game determining if the HTML elements are the new HTML5 that HTML4 didn’t support or not.</p>\n<p>HTML4:HTML5</p>\n<pre><code class="language-false">&#x3C;div>\n%exp\nAlthough &#x3C;div> is a HTML5 container, it was also the primary block element commonly used in layouts in HTML4.\n%\n\n&#x3C;span>\n%exp\nAlthough &#x3C;span> is a HTML5 container, it was also the primary inline element commonly used in HTML4.\n%\n\n&#x3C;space>\n%exp\n&#x3C;space> is not a valid HTML4 or HTML5 element.\n%\n\n&#x3C;container>\n%exp\n&#x3C;container> is not a valid HTML4 or HTML5 element.\n%\n\n&#x3C;form>\n%exp\nAlthough &#x3C;form> is a HTML5 container, it was also commonly used in HTML4.\n%\n\n&#x3C;semantic>\n%exp\n&#x3C;semantic> is not a valid HTML4 or HTML5 element.\n%\n\n&#x3C;navigation>\n%exp\n&#x3C;navigation> is not a valid HTML4 or HTML5 element, although the &#x3C;nav> element is a new HTML5 element specific for site navigation.\n%\n</code></pre>\n<pre><code class="language-true">&#x3C;header>\n%exp\n&#x3C;header> is new HTML5 element. In HTML4, techniques like &#x3C;div class="header"> had to be used.\n%\n\n&#x3C;footer>\n%exp\n&#x3C;footer> is new HTML5 element. In HTML4, techniques like &#x3C;div class="footer"> had to be used.\n%\n\n&#x3C;nav>\n%exp\n&#x3C;nav> is new HTML5 element. In HTML4, techniques like &#x3C;div class="nav"> had to be used.\n%\n\n&#x3C;main>\n%exp\n&#x3C;main> is new HTML5 element. In HTML4, techniques like &#x3C;div class="main"> had to be used.\n%\n\n&#x3C;aside>\n%exp\n&#x3C;aside> is new HTML5 element. In HTML4, techniques like &#x3C;div class="aside"> had to be used.\n%\n\n&#x3C;section>\n%exp\n&#x3C;section> is new HTML5 element. In HTML4, techniques like &#x3C;div class="section"> had to be used.\n%\n\n&#x3C;article>\n%exp\n&#x3C;article> is new HTML5 element. In HTML4, techniques like &#x3C;div class="article"> had to be used.\n%\n</code></pre>\n',
+    answers: [
+      {
+        text: 'semantic',
+      },
+      {
+        text: 'curated',
+      },
+      {
+        text: 'embedded',
+      },
+      {
+        text: 'impressionistic',
+      },
+      {
+        text: 'influenced',
+      },
+      {
+        text: 'organic',
+      },
+      {
+        text: 'affiliated',
+      },
+      {
+        text: 'optimized',
+      },
+    ],
+    comment: '<p>Semantic elements are elements that clearly define their content both for the browser and developer.</p>\n<p>Some new semantic elements introduced in HTML5:</p>\n<ul>\n<li><code>&#x3C;header></code></li>\n<li><code>&#x3C;nav></code></li>\n<li><code>&#x3C;main></code></li>\n<li><code>&#x3C;footer></code></li>\n<li><code>&#x3C;article></code></li>\n<li><code>&#x3C;aside></code></li>\n<li><code>&#x3C;details></code></li>\n<li><code>&#x3C;section></code></li>\n<li><code>&#x3C;summary></code></li>\n<li><code>&#x3C;time></code></li>\n</ul>\n<p>Short explanation of each element:</p>\n<ul>\n<li><code>&#x3C;header></code> = represents introductory content.</li>\n<li><code>&#x3C;nav></code> = represents a section of the page for navigational links.</li>\n<li><code>&#x3C;main></code> = represents dominant or main content</li>\n<li><code>&#x3C;footer></code> = represents a root element</li>\n<li><code>&#x3C;article></code> = self-contained content that is distributable and reusable.</li>\n<li><code>&#x3C;aside></code>= content only slightly related to the main content.</li>\n<li><code>&#x3C;details></code> = widget that appears only when toggled with a <code>&#x3C;summary></code> or <code>&#x3C;label></code></li>\n<li><code>&#x3C;section></code> = represents a standalone section</li>\n<li><code>&#x3C;summary></code> = specifies a summary or caption for a <code>&#x3C;details></code> element</li>\n<li><code>&#x3C;time></code> = represents a specific period in time</li>\n</ul>\n<p>For some of the elements above, the equivalent way of coding these container in HTML4 was:</p>\n<ul>\n<li><code>&#x3C;div class="header"></code></li>\n<li><code>&#x3C;div class="main"></code></li>\n<li><code>&#x3C;div class="nav"></code></li>\n<li><code>&#x3C;div class="section"></code></li>\n<li><code>&#x3C;div class="footer"></code></li>\n</ul>\n<p>The problem with the HTML4 technique was that the class names could be named anything by the developer, thus there was no way from the class names search engine or for the developers to know what content was in the containers. </p>\n<p>The <code>&#x3C;div></code> and <code>&#x3C;span></code> elements are HTML containers, however, they are not semantic elements.</p>\n<ul>\n<li><code>&#x3C;div></code> defines a division or section</li>\n<li><code>&#x3C;span></code> used to group inline elements</li>\n</ul>\n',
+  },
+}

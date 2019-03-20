@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/best-practices/conditional-comments-ie9.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Conditional comments only work in Internet Explorer, versions prior to IE10. Which version are these?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'versions 5 through 9.',
+      },
+      {
+        text: 'versions 1 through 9.',
+      },
+      {
+        text: 'versions 7 through 9.',
+      },
+      {
+        text: 'versions 8 and 9.',
+      },
+    ],
+    comment: '<p>Internet Explorer (IE) is a web browser specifically for Windows. Older versions of IE often run into certain technical issues when displaying current web pages and end up displaying the pages differently compared to all other popular web browsers today. When web developers are creating web pages for these older versions of IE, there is a unique way of providing (and hiding) code from these specific browsers - and that is with conditional comments.</p>\n<p>Conditional comments are conditional statements used only by Internet Explorer versions 5 through 9. Since these versions of IE are the only ones that support this code, it is easy to use this technique to target them with special needs as all other browsers will view this code as comments and completely ignore it.</p>\n<p>Any code within this condition will be completely hidden by older versions of IE, referred to as "downlevel hidden":</p>\n<pre><code class="language-html">&#x3C;!--[if expression]>\n  HTML goes here\n&#x3C;![endif]-->\n</code></pre>\n<p>Any code within this condition will only run in older versions of IE, referred to as "downlevel revealed":</p>\n<pre><code class="language-html">&#x3C;![if expression]>\n  HTML goes here\n&#x3C;![endif]>\n</code></pre>\n<p>If certain code is meant to display on non-IE browsers and on some versions of IE, then both conditional comments and HTML comments can be written in a unique way like this:</p>\n<pre><code class="language-html">&#x3C;!--[if expression]>&#x3C;!-->\n  HTML goes here\n&#x3C;!--&#x3C;![endif]-->\n</code></pre>\n',
+  },
+}

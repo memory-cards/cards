@@ -1,0 +1,36 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/images/image-title.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What adds a visual tooltip when the cursor is over the image?</p>\n<p><code>&#x3C;img src="logo.svg" ???="Tooltip Text Here"></code></p>\n',
+    answers: [
+      {
+        text: 'title',
+      },
+      {
+        text: 'tooltip',
+      },
+      {
+        text: 'tool',
+      },
+      {
+        text: 'tip',
+      },
+      {
+        text: 't',
+      },
+      {
+        text: 'text',
+      },
+    ],
+    comment: '<p>The <code>title</code> attribute can be added to any HTML element, but is most often used with images and links for when the use mouses over these elements, a tooltip will appear. </p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;img src="logo.svg"\n  title="Enki: Official Logo">\n</code></pre>\n<h5>--> image-title.svg</h5>\n',
+  },
+}

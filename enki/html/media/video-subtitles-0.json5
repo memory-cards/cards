@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/media/video-subtitles.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What HTML element is used to connect subtitles to a video?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<track>',
+      },
+      {
+        text: '<captions>',
+      },
+      {
+        text: '<subtitles>',
+      },
+      {
+        text: '<scrlang>',
+      },
+      {
+        text: '<vtt>',
+      },
+    ],
+    comment: '<p>Subtitles can be added to the videos via the <code>&#x3C;track></code> element like this:</p>\n<pre><code class="language-html">&#x3C;video src=\'video/tina.mp4\'">\n  &#x3C;track src="video/subtitles.vtt"\n  kind="subtitles"\n  srclang="en" />\n&#x3C;/video>\n</code></pre>\n<p>The WebVTT (.vtt), which stands for “Web Video Text Track” file can look like this below and are often created using software programs vs typing all of that out by hand. As you can see, the time stamp states the starting and ending of the subtitle. There are also tags in this case like <code>&#x3C;v></code>, <code>&#x3C;c></code>, and <code>&#x3C;i></code> which allow for unique CSS styling, which can be found in the CodePen Example:  </p>\n<pre><code class="language-WEBVTT">1\n00:00:01.300 --> 00:02.300\n&#x3C;v>Tina...&#x3C;/v>\n\n2\n00:00:03.900 --> 00:00:05.000\nWho the Hell is that?\n\nSounds\n00:00:06.500 --> 00:00:22.500\n&#x3C;c>eerie sounds&#x3C;/c>\n\n3\n00:00:23.500 --> 00:00:24.500\n&#x3C;i>[ gasps ]&#x3C;/i>\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/YjPYKm)-->\n<p>All WebVTT files start with the line <strong>WebVTT</strong>.</p>\n<p><strong> Multiple Subtitles</strong></p>\n<p>In the case you have videos that support multiple languages, you can provide them like this and in this case the English track was also set as the <code>default</code>:</p>\n<pre><code class="language-html">&#x3C;video src="video/short.mp4">\n   &#x3C;track label="English"\n   kind="subtitles"\n   srclang="en"\n   src="captions/en.vtt"\n   default>\n\n   &#x3C;track label="Deutsch"\n   kind="subtitles"\n   srclang="de"\n   src="captions/de.vtt">\n\n   &#x3C;track label="Español"\n   kind="subtitles"\n   srclang="es"\n   src="captions/es.vtt">\n&#x3C;/video>\n</code></pre>\n',
+  },
+}

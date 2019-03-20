@@ -1,0 +1,28 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/css-animation/animations-in-webkit-browsers.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+    'browsers',
+  ],
+  card: {
+    question: "<p>What's the tool called which calculates which prefixes are required and which are outdated? ???</p>\n",
+    answers: [
+      {
+        text: 'Autoprefixer',
+      },
+      {
+        text: 'Prefixer',
+      },
+      {
+        text: 'Webkitprefixer',
+      },
+    ],
+    comment: '<p>Many Webkit browsers still use the <code>-webkit-prefixed</code> version of animations, keyframes, and transitions.</p>\n<p>Until they fully adopt the standard version, it\'s good practice to include both versions (<code>unprefixed</code> &#x26; <code>webkit</code>) in your code:</p>\n<pre><code class="language-css">div {\n  -webkit-animation-duration: 2s;\n  animation-duration: 2s;\n  -webkit-animation-name: bounceIn;\n  animation-name: bounceIn;\n}\n</code></pre>\n<p><code>Autoprefixer</code> is a tool which calculates which prefixes are required and which are outdated. When autoprefixer adds prefixes to the code, it also fixes any differences the syntax may have.</p>\n',
+  },
+}

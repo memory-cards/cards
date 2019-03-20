@@ -1,0 +1,37 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-ii/matches-any-pseudo-class-matches.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'css4',
+  ],
+  card: {
+    question: '<p>Complete the following code snippet to set the color of the chosen selectors text blue:</p>\n<pre><code class="language-css">p???(s1, s2, s3){\n    ???:blue;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: ':matches',
+      },
+      {
+        text: 'color',
+      },
+      {
+        text: ':selects',
+      },
+      {
+        text: 'background-color',
+      },
+      {
+        text: '.matches',
+      },
+      {
+        text: '.selects',
+      },
+    ],
+    comment: '<p>The <code>:matches</code> pseudo-class allows the application of rules to groups of selectors.</p>\n<pre><code class="language-css">p:matches(.alert,.error,.warn){\n    color:red;\n}\n</code></pre>\n<p>The above will make the text of all elements matching <code>.alert</code>, <code>.error</code> and <code>.warn</code> red.</p>\n<p>Could be used to apply a particular style rule to a similar element group.</p>\n',
+  },
+}

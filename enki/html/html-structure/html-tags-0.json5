@@ -1,0 +1,54 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/html-structure/html-tags.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which of these characters is used to represent an end tag?</p>\n<p>???</p>\n<p>HTML tags are recommended to be written in which case?</p>\n<p>???</p>\n<p>How many unique tags are used in this code? ???</p>\n<pre><code>&#x3C;h1>Large Text Heading&#x3C;/h1>\n&#x3C;img src="photos/image.jpg">\n&#x3C;p>I’m just a simple paragraph.&#x3C;/p>\n</code></pre>\n',
+    answers: [
+      {
+        text: '/',
+      },
+      {
+        text: 'lowercase',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: '^',
+      },
+      {
+        text: '<',
+      },
+      {
+        text: '>',
+      },
+      {
+        text: '*',
+      },
+      {
+        text: 'uppercase',
+      },
+      {
+        text: 'camelcase',
+      },
+      {
+        text: '2',
+      },
+      {
+        text: '5',
+      },
+      {
+        text: '4',
+      },
+    ],
+    comment: '<p>In HTML everything is written in tags. There is a start tag and an end tag and they differ by 1 character: "<code>/</code>".</p>\n<p>Elements are written with tags:</p>\n<pre><code>Start tag: &#x3C;element-name>\nEnd tag: &#x3C;/element-name>\n</code></pre>\n<p>Common elements:</p>\n<ul>\n<li><code>&#x3C;html></code> (Defines an HTML document)</li>\n<li><code>&#x3C;body></code> (Documents body)</li>\n<li><code>&#x3C;p></code> (Paragraph Text)</li>\n<li><code>&#x3C;h1></code> (Heading Text)</li>\n</ul>\n<p>Tags are not case sensitive. However, they are usually written in lowercase. This is because there is a wide range of developers who do not use HTML5, but rather XHTML. Because of that, they were influenced to write tags in lowercase so their HTML can be read by both markup languages.</p>\n<p>Also, there are elements which have no ending tag and are only written with a single opening tag. These are called self-closing tags and there are only a few of them. </p>\n<p>Most common self-closing elements:</p>\n<ul>\n<li><code>&#x3C;img></code> (Inserts an image)</li>\n<li><code>&#x3C;br></code> (Defines a line break)</li>\n<li><code>&#x3C;hr></code> (Commonly referred to as horizonal rule)</li>\n</ul>\n<p>The first line of every HTML document starts with the <code>&#x3C;!DOCTYPE></code>, which isn\'t an HTML element, but a definition for the browser to identify that the code is written in HTML5. This is the only HTML/CSS code that is commonly written in all caps.</p>\n',
+  },
+}

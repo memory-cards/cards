@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-iii/sassscript-color-operations.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>What does the following code snippet compile to?</p>\n<pre><code class="language-css">p {\n  color: #810421 + #010511;\n}\n/\np {\n   color: ???;\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: 'Compiles to */',
+      },
+      {
+        text: '#820932',
+      },
+      {
+        text: '#800110',
+      },
+      {
+        text: '810421',
+      },
+    ],
+    comment: '<p><em>SassScript\'s</em> arithmetic operations are supported for all color values, they perform on each component of a color in order.</p>\n<p>The operation will be performed on the red, blue and green components respectively.</p>\n<pre><code class="language-css">p {\n  color: #080200 + #010501;\n}\n</code></pre>\n<p>Would be computed as:</p>\n<pre><code class="language-css">08 + 01 = 09\n02 + 05 = 07\n00 + 01 = 01\n</code></pre>\n<p>And then compiled to:</p>\n<pre><code class="language-css">p {\n  color: #090701\n}\n</code></pre>\n<p>Colours with an alpha channel must have the same alpha value for color arithmetic to work. The arithmetic operation does not affect the alpha value.</p>\n<pre><code class="language-css">p {\n  color: rgba(255, 0, 100, 0.75) +\n         rgba(0, 255, 0, 0.75);\n}\n</code></pre>\n<p>Compiles to:</p>\n<pre><code class="language-css">p {\n  color: rgba(255, 255, 100, 0.75); }\n</code></pre>\n',
+  },
+}

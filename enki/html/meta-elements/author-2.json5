@@ -1,0 +1,35 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/author.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'introduction',
+    'workout',
+  ],
+  card: {
+    question: '<h3>How much do you know about meta-elements?</h3>\n<p>What is the least influential tag for search engines in a web page?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Author',
+      },
+      {
+        text: 'Title',
+      },
+      {
+        text: 'Description',
+      },
+      {
+        text: 'Headings',
+      },
+      {
+        text: 'Paragraphs  ',
+      },
+    ],
+    comment: '<p>The HTML meta <code>author</code> attribute is used to provide information about who the author of the web page is.</p>\n<pre><code class="language-html">&#x3C;meta\n  name="author"\n  content="John Doe">\n</code></pre>\n<p>The author metadata has no effect on search engine optimization or SEO.</p>\n<p>Some content management systems (CMS) have an easier time tracking signed-in editors and will add the name of who last made changes to the page in order to make it easier to track who is responsible for the content on that page.</p>\n',
+  },
+}

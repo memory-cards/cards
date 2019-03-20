@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-i/what-is-sass.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>The CSS extensions with indented syntax is ???</p>\n',
+    answers: [
+      {
+        text: 'Sass',
+      },
+      {
+        text: 'SCSS',
+      },
+      {
+        text: 'less',
+      },
+      {
+        text: 'CSS',
+      },
+    ],
+    comment: '<p><strong>Sass</strong>, or <em>Syntactically Awesome StyleSheets</em>, is a CSS preprocessor which unlocks some features that are yet to have a concrete syntax in CSS. Some of these features are variables, inheritance, nesting and mixins.</p>\n<p>A preprocessor is a program that takes an input and produces an output to be used by another program. <em>Sass</em> understands two types of syntaxes:</p>\n<ul>\n<li><strong>SCSS</strong> (Sassy CSS): an extension to the CSS syntax, similar enough that any valid <em>.css</em> file is a valid <em>.scss</em> file.</li>\n<li><strong>Sass</strong>: the indented syntax version of SCSS, using indentation instead of brackets and new lines instead of semicolon; the files have <em>.sass</em> extension.</li>\n</ul>\n<p>The <code>sass-convert</code> command line utility allows fast conversion between the two syntaxes:</p>\n<pre><code class="language-bash"># Sass to SCSS\n$ sass-convert main.sass main.scss\n# SCSS to Sass\n$ sass-convert main.scss main.sass\n</code></pre>\n<p>In the following insights, we will be using the <em>SCSS</em> syntax.</p>\n<p>To see the difference between <em>Sass</em>, <em>SCSS</em> and the resulting <em>CSS</em> code, consider the following example:</p>\n<pre><code class="language-html">&#x3C;div>\n  &#x3C;h2>Title&#x3C;/h2>\n  &#x3C;p>Hello Sass!&#x3C;/p>\n&#x3C;/div>\n</code></pre>\n<p>With the <em>.sass</em> file:</p>\n<pre><code class="language-css">$blue: #0022ff\n$size: 34px\n\ndiv\n  background-color: $blue\n  h2\n    font-weight: normal\n    font-size: $size\n    &#x26;:hover\n      color: $blue\n  p\n    font-size: $size / 2\n</code></pre>\n<p>The equivalent <em>.scss</em> syntax:</p>\n<pre><code class="language-css">$blue: #0022ff;\n$size: 34px;\n\ndiv {\n  background-color: $blue;\n  h2 {\n    font-weight: normal;\n    font-size: $size;\n    &#x26;:hover {\n      color: $blue;\n    }\n  }\n  p {\n    font-size: $size / 2;\n  }\n}\n</code></pre>\n<p>And, finally, the compiled <em>.css</em> file:</p>\n<pre><code class="language-css">div {\n  background-color: #0022ff;\n}\ndiv h2 {\n  font-weight: normal;\n  font-size: 34px;\n}\ndiv h2:hover {\n  color: #0022ff;\n}\ndiv p {\n  font-size: 17px;\n}\n</code></pre>\n',
+  },
+}

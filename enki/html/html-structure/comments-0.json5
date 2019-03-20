@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/html-structure/comments.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>In regards to HTML comments, which of the following is true?:</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'The code <!--` starts a comment. The code `--> ends a comment.',
+      },
+      {
+        text: 'The comment is placed within <!- xxx ->.',
+      },
+      {
+        text: 'The comment is placed within */ xxx /*.',
+      },
+      {
+        text: 'The comment is placed within /* xxx */.',
+      },
+      {
+        text: 'HTML does not support comments.',
+      },
+    ],
+    comment: '<p>In HTML, you can add notes that will not render within the web page and are useful for yourself and other developers via a comment tag.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;!-- HTML Comment Goes Here -->\n</code></pre>\n<p>HTML comments are very useful. They can be used as reminders for what our code does or help us with adding comments when debugging. Instead of removing a block of code, you can just wrap it in a comment and later on decide what to do with it.</p>\n<p>Comments are never visible within the website and are only visible in the source code.</p>\n<p>Also, comments can be on a single line or span multiple rows.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;!-- Single line comment -->\n\n&#x3C;!--\n&#x3C;h1 Some header&#x3C;/h1>\n&#x3C;p>Random paragraph.&#x3C;/p>\n&#x3C;a\n  href="https://www.enki.com">\n  This is a link\n&#x3C;/a>\n-->\n</code></pre>\n',
+  },
+}

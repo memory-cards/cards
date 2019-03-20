@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/responsive-design-tips/responsive-images-in-a-layout.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'responsive design',
+    'layout',
+    'images',
+  ],
+  card: {
+    question: '<p>Complete the following snippets such that the <code>max-width</code> of your <code>img</code>s is set to <code>50%</code> on devices with a screen size at least 450px:</p>\n<pre><code class="language-css">img {\n   max-width: 70%;\n}\n\n??? (min-width: ???) {\n   img {\n     ???: 50%\n   }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '@media',
+      },
+      {
+        text: '450px',
+      },
+      {
+        text: 'max-width',
+      },
+      {
+        text: 'min-width',
+      },
+      {
+        text: 'width',
+      },
+      {
+        text: 'tablet',
+      },
+      {
+        text: 'screen-size',
+      },
+      {
+        text: '@resize',
+      },
+    ],
+    comment: '<p>It\'s good practice to have conditional breakpoints for responsive images.</p>\n<p>This way, they\'re displayed in columns so that when they get too small, the columns will collapse.</p>\n<p>To do this, make use of media queries.</p>\n<pre><code class="language-css">/* For small devices (e.g. smartphones) */\nimg {\n  max-width: 100%;\n  display: inline-block;\n}\n/* For medium devices (e.g. tablets) */\n@media (min-width: 420px) {\n  img {\n    max-width: 48%;\n  }\n}\n/* For large devices (e.g. desktops) */\n@media (min-width: 760px) {\n  img {\n    max-width: 24%;\n  }\n}\n</code></pre>\n<p>In this example, the images will show up in one column on smartphones, two columns on tablets, and four columns on larger screens.</p>\n',
+  },
+}

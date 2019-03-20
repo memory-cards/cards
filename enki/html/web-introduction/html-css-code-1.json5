@@ -1,0 +1,24 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/web-introduction/html-css-code.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which is HTML code and which is CSS code?</p>\n<p>HTML: ???\nCSS: ???</p>\n',
+    answers: [
+      {
+        text: "<p>I'm a style.</p>",
+      },
+      {
+        text: 'p { font-size: 16px; }',
+      },
+    ],
+    comment: '<p><strong>CSS</strong> and <strong>HTML</strong> are the core languages used for creating web pages and web-based applications.</p>\n<p><strong>HTML</strong> creates the structure and content of a webpage with text, images, links, and containers, while <strong>CSS</strong> modifies the design and display of those items in the HTML page.</p>\n<p><strong>HTML</strong> is made up of content between tags; <code>&#x3C;tag>Content here&#x3C;/tag></code>.</p>\n<p><strong>CSS</strong> is made of selectors followed by a declaration block; <code>selector {declaration block}</code>.</p>\n<p>HTML example:</p>\n<pre><code class="language-html">&#x3C;h2>\n  This is a heading\n&#x3C;/h2>\n&#x3C;p>\n  This is a paragraph\n&#x3C;/p>\n</code></pre>\n<p>CSS example:</p>\n<pre><code class="language-css">p { color: red; }\nh2 { font-size: 24px; }\n</code></pre>\n<p>In the <strong>HTML</strong> example above, we create a heading and paragraph elements.<br>\nIn the <strong>CSS</strong> example above, we set the <strong>HTML</strong> <code>&#x3C;p></code> elements content to the color <code>red</code>, and the font size of the <code>&#x3C;h2></code> elements content to 24 pixels.</p>\n',
+  },
+}

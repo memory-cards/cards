@@ -1,0 +1,32 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/recipes/hide-the-scrollbar-in-webkit-browser.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'how to',
+    'browser',
+    'scrollbar',
+  ],
+  card: {
+    question: '<p>What does the following piece of code do?</p>\n<pre><code class="language-css">::-webkit-scrollbar {\n   display: none;\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Hides all the scrollbars on the page.',
+      },
+      {
+        text: 'Hides all the scrollbars of a particular element.',
+      },
+      {
+        text: 'Displays all scrollbars on the page.',
+      },
+      {
+        text: 'Displays all the scrollbars of a particular element.',
+      },
+    ],
+    comment: '<p>To hide the scrollbar on a particular element:</p>\n<pre><code class="language-css">#element::-webkit-scrollbar {\n    display: none;\n}\n</code></pre>\n<p>Or, hide all scrollbars on the page:</p>\n<pre><code class="language-css">::-webkit-scrollbar {\n    display: none;\n}\n</code></pre>\n',
+  },
+}

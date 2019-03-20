@@ -1,0 +1,29 @@
+{
+  __meta__: {
+    author: 'oj14henry',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/styling-ii/underline-feature-on-html-elements.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'hyperlink',
+    'underline',
+  ],
+  card: {
+    question: '<p>What does the following CSS code do?</p>\n<pre><code class="language-css">a {\n   text-decoration: none;\n}\n</code></pre>\n<p> ???</p>\n',
+    answers: [
+      {
+        text: 'Removes the natural underline feature on all &lt;a&gt; elements.',
+      },
+      {
+        text: 'Reverts and changes made to the text in all &lt;a&gt; elements, such as different colors.',
+      },
+      {
+        text: 'Adds the natural underline feature to all &lt;a&gt; elements.',
+      },
+    ],
+    comment: '<p>To remove the natural underline feature that comes with <code>a</code> elements:</p>\n<pre><code class="language-css">a {\n    text-decoration: none;\n}\n</code></pre>\n<p>To underline a <code>span</code>:</p>\n<pre><code class="language-html">&#x3C;span class="underline"> Span &#x3C;/span>\n</code></pre>\n<p>Use:</p>\n<pre><code class="language-css">span.underline {\n  text-decoration: underline;\n}\n</code></pre>\n',
+  },
+}

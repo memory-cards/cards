@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/global-attributes/global-attributes-2.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which of these is not a value for the <code>dropzone</code> attribute?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'auto',
+      },
+      {
+        text: 'copy',
+      },
+      {
+        text: 'link',
+      },
+      {
+        text: 'move',
+      },
+    ],
+    comment: '<p>In the previous insight we explained: <code>class</code>, <code>id</code>, <code>style</code> and <code>title</code>. In this one, we will cover: <code>contenteditable</code>, <code>draggable</code>, <code>dropzone</code> and <code>hidden</code>.</p>\n<h3>contenteditable</h3>\n<p>The <code>contenteditable</code> attribute is used specify whether the content of the element is editable or not. There are 2 possible values; <code>true</code> and <code>false</code>.</p>\n<p>The <code>true</code> value, can also be an empty string, indicates the content as editable.\nThe <code>false</code> value indicates that the content is not editable.</p>\n<h3>draggable</h3>\n<p>The <code>draggable</code> attribute is used used to indicate if an element is draggable with the <code>Drag and Drop API</code> and has 2 possible values; <code>true</code> and <code>false</code>.</p>\n<p>The <code>true</code> value makes the element draggable.\nThe <code>false</code> value makes the element non-draggable.</p>\n<h3>dropzone</h3>\n<p>The <code>dropzone</code> attribute also used the <code>Drag and Drop API</code> and is used to determine what type of content is dropped. There are 3 possible values; <code>copy</code>, <code>link</code> and <code>move</code>.</p>\n<p>The <code>copy</code> value indicates that the content dropped will be copied.\nThe <code>link</code> value indicates that a link should be created for the content dropped.\nThe <code>move</code> value indicates that the content dropped will be moved to this location.</p>\n<h3>hidden</h3>\n<p>The <code>hidden</code> attribute is used set some element and its content as no longer valid/relevant and therefore hidden. This attribute should never be used on elements you want to show to the users.</p>\n<pre><code class="language-html">&#x3C;h3 hidden>\n  content invisible to the user\n  &#x3C;h3>\n</code></pre>\n',
+  },
+}

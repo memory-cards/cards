@@ -1,0 +1,40 @@
+{
+  __meta__: {
+    author: 'Demonus',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/responsive-design-tips/using-media-rule-to-create-cross-platform-responsiveness.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'media',
+    'responsive',
+    'css',
+    'multidevice',
+  ],
+  card: {
+    question: '<p>Complete the following code snippet to align text to the centre if the device is being used is less than 600 pixels:</p>\n<pre><code class="language-css">.standard {\n   text-align: left;\n}\n\n???(max-width: ???){\n   .standard{\n      text-align:center;\n   }\n}\n</code></pre>\n',
+    answers: [
+      {
+        text: '@media',
+      },
+      {
+        text: '600px',
+      },
+      {
+        text: '@inherit',
+      },
+      {
+        text: '@device',
+      },
+      {
+        text: '600pix',
+      },
+      {
+        text: '750px',
+      },
+    ],
+    comment: '<p>The <code>@media</code> rule is a way to communicate with the designated device and can be used to change the CSS rules depending on the device properties.</p>\n<p><code>@media</code> rule works like a function. In the brackets we specify the media feature we are going to use  and in the following curly brackets we input the CSS code.</p>\n<pre><code class="language-css">.exampleclass{\n  text-align: center;\n}\n\n@media(max-width: 750px){\n  .exampleclass{\n    text-align: left;\n  }\n}\n</code></pre>\n<p>In the example above the elements encapsulated in the <code>exampleclass</code> class will have their text aligned to <code>center</code> unless it is viewed on a device with less than 750 pixels width at which point the text will be aligned <code>left</code>.</p>\n',
+  },
+}

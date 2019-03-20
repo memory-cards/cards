@@ -1,0 +1,34 @@
+{
+  __meta__: {
+    author: 'priyankinirmal',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/features/use-z-index-to-specify-the-stack-order-of-elements-that-overlap.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+    'css',
+    'z-index',
+    'overlap',
+    'position',
+  ],
+  card: {
+    question: '<p>Which of the following elements will be displayed on top?</p>\n<pre><code class="language-css">#A {\n position: absolute;\n z-index: 10;\n}\n#B{\n position: absolute;  \n z-index: -10;\n}\n#C {\n position: absolute;\n z-index: 0;\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'A',
+      },
+      {
+        text: 'B',
+      },
+      {
+        text: 'C',
+      },
+      {
+        text: 'They are all on the same level.',
+      },
+    ],
+    comment: '<p>This property can only be used for elements which aren\'t in the normal stack. For example, those with a <code>position</code> value which is not <code>static</code> (default).</p>\n<p>Elements with a higher <code>z-index</code> value will appear on top of elements with a lower <code>z-index</code> value.</p>\n<pre><code class="language-css">img {\n  position: absolute;\n  z-index: -1;\n  /* negative values are accepted */\n}\n\ndiv.a {\n  position: absolute;\n  z-index: 1;\n}\n</code></pre>\n<p>In the above example, the image will appear to be under the <code>div</code> element if they overlap.</p>\n',
+  },
+}

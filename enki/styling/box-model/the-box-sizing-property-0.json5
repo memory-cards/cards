@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/box-model/the-box-sizing-property.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>For which <code>box-sizing</code> value, the <code>width</code> property contains both the content and the padding?</p>\n<pre><code class="language-css">box-sizing: ???;\n</code></pre>\n',
+    answers: [
+      {
+        text: 'padding-box',
+      },
+      {
+        text: 'border-box',
+      },
+      {
+        text: 'content-box',
+      },
+      {
+        text: 'margin-box',
+      },
+    ],
+    comment: '<p>In the previous examples, the size of the containing box size was always the sum of horizontal and vertical dimensions. However, as you might have noticed, it gets trickier and trickier to properly calculate the <code>width</code> and <code>height</code> as you nest elements.</p>\n<p>This is where <code>box-sizing</code> comes in. The property may be changed to set the outer limit of the element to a specific enclosing property: <code>content</code>, <code>padding</code>, or <code>border</code>. <em>By default</em>, <code>box-sizing</code> is set to be  <code>content-box</code>.</p>\n<p>That means the <code>width</code> and <code>height</code> specified for the element are not its final sizes, and additional <code>padding</code>, <code>border</code> or <code>margin</code> will push its border.</p>\n<p>The next possible value is <code>padding-box</code>. As the name states, the new limit is set to enclose the <code>padding</code> as well. In this case, the <code>content</code> will be shrunk to make room for the padding:</p>\n<pre><code class="language-css">/* the final width of the box will be 500px\n  leaving only 440px for the content */\ndiv{\n  box-sizing: padding-box;\n  width: 500px;\n  height: 300px;\n  padding: 30px;\n}\n</code></pre>\n<p>The last value is <code>border-box</code>. In this case, any <code>border</code> or <code>padding</code> property is included within the <code>width</code> and <code>height</code> of the element. In other words, only <code>margin</code> will increase its size.</p>\n<pre><code class="language-css">/* only 500-2*30-2*5= 430px width left\n for the content */\ndiv{\n  box-sizing: border-box;\n  width: 500px;\n  height: 300px;\n  padding:30px;\n  border: 5px solid green;\n</code></pre>\n<p>Usually, the best model to use is <code>border-box</code>. It makes the math easier, as the only additional property to watch for is <code>margin</code>.</p>\n',
+  },
+}

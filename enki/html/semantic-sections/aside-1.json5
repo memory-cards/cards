@@ -1,0 +1,45 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/semantic-sections/aside.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Which HTML container element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content?</p>\n<p>???</p>\n<p>An <code>&#x3C;aside></code> should usually contain a navigation list on either the left- or right-hand side of the webpage.</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: '<aside>',
+      },
+      {
+        text: '<article>',
+      },
+      {
+        text: '<section>',
+      },
+      {
+        text: '<comment>',
+      },
+      {
+        text: '<news>',
+      },
+      {
+        text: '<record>',
+      },
+      {
+        text: '<forum>',
+      },
+      {
+        text: 'False',
+      },
+      {
+        text: 'True',
+      },
+    ],
+    comment: '<p>The HTML <code>&#x3C;aside></code> element is a container element used to represent a section of a page that consists of content that is tangentially related to the content around the <code>&#x3C;aside></code> element. This content is held separate from the page content and frequently presented as sidebars or call-out boxes.</p>\n<p>The <code>&#x3C;aside></code> element can contain a sidebar, pull quotes, advertising, groups of navigational <code>&#x3C;nav></code> elements and more.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;p>\n  My family and I visited\n  the Louvre this summer.\n&#x3C;/p>\n&#x3C;aside>\n  &#x3C;h4>Louvre Museum&#x3C;/h4>\n  &#x3C;p>\n    The Louvre Museum is the world\'s\n    largest art museum in Paris, France.\n  &#x3C;/p>\n&#x3C;/aside>\n</code></pre>\n',
+  },
+}

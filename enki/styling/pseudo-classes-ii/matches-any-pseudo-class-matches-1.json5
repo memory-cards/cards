@@ -1,0 +1,31 @@
+{
+  __meta__: {
+    author: 'nene',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/pseudo-classes-ii/matches-any-pseudo-class-matches.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'css4',
+  ],
+  card: {
+    question: '<p>What does the following CSS code snippet do?</p>\n<pre><code class="language-css">p:matches(s1, s2, s3) {\n   font-family: "Arial Narrow";\n   background-color: red;\n}\n</code></pre>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Sets the font family and background colour for all elements matching s1, s2 and s3.',
+      },
+      {
+        text: 'Sets the font family and background colour for all elements not matching s1, s2 and s3.',
+      },
+      {
+        text: 'Sets the font family and background colour for all elements.',
+      },
+      {
+        text: 'Does nothing.',
+      },
+    ],
+    comment: '<p>The <code>:matches</code> pseudo-class allows the application of rules to groups of selectors.</p>\n<pre><code class="language-css">p:matches(.alert,.error,.warn){\n    color:red;\n}\n</code></pre>\n<p>The above will make the text of all elements matching <code>.alert</code>, <code>.error</code> and <code>.warn</code> red.</p>\n<p>Could be used to apply a particular style rule to a similar element group.</p>\n',
+  },
+}

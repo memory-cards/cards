@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-i/sass-supported-comments.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'best practice',
+  ],
+  card: {
+    question: '<p>Which type of comment is preserved when CSS code is generated from Sass code?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'Multi-line comments',
+      },
+      {
+        text: 'Single-line commments',
+      },
+      {
+        text: 'All comments',
+      },
+      {
+        text: 'No comments',
+      },
+    ],
+    comment: '<p>There are two ways to comment out code in Sass. The first is a single-line comment:</p>\n<pre><code class="language-css">// a double forward slash is used for\n// commenting out single lines of code\n</code></pre>\n<p>The second is a multiline comment:</p>\n<pre><code class="language-css">/*\nEverything in between the multiline comment\nparentheses is commented out. Multiline\ncomments can be used to comment out multiple\nlines of code such as Sass declarations.\n*/\n</code></pre>\n<p>Any single-line comments are removed when CSS code is generated from Sass code, all multiline comments will be preserved as they use the CSS comment syntax.</p>\n',
+  },
+}

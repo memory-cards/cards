@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/html-structure/elements.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>What is an HTML element called that does not have a closing tag?</p>\n<p>???</p>\n',
+    answers: [
+      {
+        text: 'self closing',
+      },
+      {
+        text: 'tag',
+      },
+      {
+        text: 'closed element',
+      },
+      {
+        text: 'opening tag',
+      },
+      {
+        text: '< />',
+      },
+    ],
+    comment: '<p>Most HTML elements consist of a start and end tag with content in-between.</p>\n<p>Some common elements:</p>\n<ul>\n<li>Paragraph:<code>&#x3C;p>Paragraph text is written here.&#x3C;/p></code></li>\n<li>Anchors: <code>&#x3C;a>Link text is written here.&#x3C;/a></code></li>\n<li>Headers: <code>&#x3C;h3>Header text is written here&#x3C;/h3></code></li>\n<li>Script: <code>&#x3C;script>JavaScript code is written here&#x3C;/script></code></li>\n</ul>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;h1>\n  Large heading is wrapped by h1 tags.\n&#x3C;/h1>\n</code></pre>\n<p>It is also very common for HTML elements to be nested. This is common even for the most simple websites.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;p>\n  Check out this\n  &#x3C;a href="http://www.enkipro.com">\n    website.\n  &#x3C;/a>\n&#x3C;/p>\n</code></pre>\n<p><strong>Note:</strong> Nested elements are very useful and every website or document has them.</p>\n<p>In HTML we also have empty elements or <strong>void</strong> elements.  These elements don\'t have to be closed because they don\'t actually wrap around any content.</p>\n<p>The break element <code>&#x3C;br></code> is one of those elements. It can be placed anywhere and forces a line break at that point. </p>\n<p><strong>Note:</strong> Even though the closing tag is optional in HTML5, it is best practice to use the closing tag. This is especially necessary if you want your document to be readable in either XML or XHTML.</p>\n',
+  },
+}

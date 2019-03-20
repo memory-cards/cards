@@ -1,0 +1,42 @@
+{
+  __meta__: {
+    author: 'stefan.stojanovic',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/meta-elements/http-equiv.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Write the meta tag that automatically redirects users from one webpage to another after 30 seconds.</p>\n<p><code>&#x3C;??? ???="???" ???="??? ???"></code></p>\n',
+    answers: [
+      {
+        text: 'meta',
+      },
+      {
+        text: 'http-equiv',
+      },
+      {
+        text: 'refresh',
+      },
+      {
+        text: 'content',
+      },
+      {
+        text: '30;',
+      },
+      {
+        text: 'URL=redirectedpage.html',
+      },
+      {
+        text: 'redirect',
+      },
+      {
+        text: 'http://redirectedpage.html',
+      },
+    ],
+    comment: '<p>The HTML <code>http-equiv</code> meta attribute defines an instruction that can alter user-agent and server behavior. It can contain the name of an HTTP header or it can be used to simulate an HTTP response header.</p>\n<p>The value of <code>http-equiv</code> is defined inside the <code>content</code> attribute.</p>\n<p>Example 1: The document will refresh every 30 seconds.</p>\n<pre><code class="language-html">&#x3C;head>\n  &#x3C;meta\n    http-equiv="refresh"\n    content="30">\n&#x3C;/head>\n</code></pre>\n<p>Example 2: The document will automatically redirect users from one webpage to another after 30 seconds.</p>\n<pre><code class="language-html">&#x3C;head>\n  &#x3C;meta\n    http-equiv="refresh"\n    content="30;\n    URL=redirectedpage.html">\n&#x3C;/head>\n</code></pre>\n<p><strong>Note:</strong> The better option is using JS:</p>\n<pre><code class="language-html">&#x3C;script>\n  window.location =\n  "http://new-website.com";\n&#x3C;/script>\n</code></pre>\n<p>Next to the <code>refresh</code> attribute we have:</p>\n<ul>\n<li><code>content-language</code></li>\n<li><code>content-security-policy</code></li>\n<li><code>content-type</code></li>\n<li><code>set-cookie</code></li>\n</ul>\n<p>Attributes explanation:</p>\n<p>The <code>content-language</code> attribute is used to specify the default language, However, you should always use the <code>lang</code> attribute to set your default language of the page because the <code>http-equiv="content-language</code> is obsolete.</p>\n<p>The <code>content-security-policy</code> allows authors to define a content policy for the current page. Those policies mostly specify the allowed server origins and script endpoints which help guard against cross-site scripting attacks.</p>\n<p>Before HTML5 you would use the <code>http-equiv="content-type</code> attribute to specify the character set of an HTML document. Like so:</p>\n<pre><code class="language-html">&#x3C;meta\n  http-equiv="content-type"\n  content="text/html;\n  charset=UTF-8">\n</code></pre>\n<p>Now it is way simpler to specify the character set thanks to the <code>charset</code> attribute:</p>\n<pre><code>&#x3C;meta charset="UTF-8">\n</code></pre>\n<p><strong>Note:</strong> You should always use the <code>charset</code> attribute to set you character encoding because the <code>http-equiv="content-type</code> is obsolete.</p>\n<p>The <code>set-cookie</code> attribute is used to define a <code>cookie</code> for the page. However, you should always use the HTTP header <code>Set-Cookie</code> to set Cookies for the page because the <code>http-equiv="set-cookie</code> is obsolete.</p>\n',
+  },
+}

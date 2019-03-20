@@ -1,0 +1,33 @@
+{
+  __meta__: {
+    author: 'tommarshall',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/sass-ii/strings-in-sassscript.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>Pick the right index at which you should insert a character as to result in "enki" string:</p>\n<pre><code class="language-javascript">str-insert("eki", "n", ???)\n</code></pre>\n',
+    answers: [
+      {
+        text: '2',
+      },
+      {
+        text: '1',
+      },
+      {
+        text: '3',
+      },
+      {
+        text: '4',
+      },
+      {
+        text: '0',
+      },
+    ],
+    comment: '<p>There are two types of strings in CSS and both of these are recognised in <em>SassScript</em>. The first is <code>"with quotations"</code>, and the second is <code>without quotations</code>.</p>\n<p>If one type of string is used in a Sass document, that string type will be used in the resulting CSS.</p>\n<p><em>SassScript</em> has a number of string functions:</p>\n<pre><code class="language-css">// to remove quotations\nunquote("Enki") => Enki\n// returns the string length\nstr-length("Sass") => 4\n// returns the string in upper case\nto-upper-case("upper") => UPPER\n</code></pre>\n<p>Unlike in some languages, the first character in a string is number 1, not 0.</p>\n<pre><code class="language-css">str-insert("Eni", "k", 3) => "Enki"\nstr-insert("SassScript is ", "fun", 15)\n=> "SassScript is fun"\n</code></pre>\n',
+  },
+}

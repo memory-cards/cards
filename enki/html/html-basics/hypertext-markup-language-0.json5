@@ -1,0 +1,30 @@
+{
+  __meta__: {
+    author: 'mihaiberq',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/html/html-basics/hypertext-markup-language.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'must-know',
+  ],
+  card: {
+    question: '<p>The two main components of a HTML document are ???.</p>\n',
+    answers: [
+      {
+        text: '<head>` and `<body>',
+      },
+      {
+        text: '<heading>` and `<body>',
+      },
+      {
+        text: '<p>` and  `<a>',
+      },
+      {
+        text: '<h>` and `<body>',
+      },
+    ],
+    comment: '<p>HyperText Markup Language, more often just referred to as <strong>HTML</strong>, is the standard markup language used to create websites. HTML describes the structure of a web page semantically and uses elements that are made up of <strong>tags</strong>. Tags are easy to recognize as they use <em>less than</em> (&#x3C;) and <em>greater than</em> (>) signs.</p>\n<p>To denote the end of most HTML elements, a closing tag is used. It has an extra forward slash before the name of the element:</p>\n<pre><code class="language-html">&#x3C;element>Content&#x3C;/element>\n</code></pre>\n<p>HTML <em>elements</em> are the foundation on which the page is built. To specify that the following code is HTML, an <code>&#x3C;html></code> tag should open and close the document:</p>\n<pre><code class="language-html">&#x3C;html>\n &#x3C;!-- more code here -->\n&#x3C;/html>\n</code></pre>\n<p>Elements give content meaning based on their function. For example, a page heading becomes <code>&#x3C;h_></code>, ranging from <code>&#x3C;h1></code>, the most important (and typically largest), to <code>&#x3C;h6></code>, the least important (and typically visually smallest) heading. </p>\n<p>Paragraphs: <code>&#x3C;p></code>, images: <code>&#x3C;img></code>, and hyperlinks: <code>&#x3C;a></code> are also important semantic building blocks.</p>\n<p>To give them meaning, however, they must be enclosed in a <code>&#x3C;body></code> element, which establishes what part of the HTML document the browser has to represent:</p>\n<pre><code class="language-html">&#x3C;body>\n  &#x3C;h1> Title &#x3C;/h1>\n  &#x3C;h3> Subtitle &#x3C;/h3>\n  &#x3C;p> This is a paragraph in\n      the page with an\n      &#x3C;a href="mywebsite.com">\n      external link&#x3C;/a>.&#x3C;/p>\n&#x3C;/body>\n</code></pre>\n<p>The part of the HTML that is not <em>displayed</em> in the web page itself, but helps the browser decide <em>how</em> to display the content is called <strong>head</strong>. It usually contains information such as the title of the web page displayed in the browser\'s tab and links to the CSS document that contains the styles used in this page:</p>\n<pre><code class="language-html">&#x3C;html>\n&#x3C;head>\n  &#x3C;title>Page Tab Title&#x3C;/title>\n  &#x3C;link rel="stylesheet"\n        href="mystyle.css">\n&#x3C;/head>\n&#x3C;body>\n ...\n&#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>You can bookmark this insight to receive a link to the <em>first online web page</em>.</p>\n',
+  },
+}

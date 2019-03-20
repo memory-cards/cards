@@ -1,0 +1,38 @@
+{
+  __meta__: {
+    author: 'oj14henry',
+    source: 'https://github.com/enkidevs/curriculum/blob/master/web/styling/colors-tips/hexadecimal-color-system.md',
+  },
+  type: 'choose_sequence',
+  lang: 'en',
+  tags: [
+    'enki',
+    'feature',
+    'hexadecimal',
+    'colour',
+  ],
+  card: {
+    question: '<p>Hexadecimal numbers run from 0 to ???, and from A to ???.</p>\n',
+    answers: [
+      {
+        text: '9',
+      },
+      {
+        text: 'F',
+      },
+      {
+        text: '10',
+      },
+      {
+        text: '1',
+      },
+      {
+        text: 'G',
+      },
+      {
+        text: 'Z',
+      },
+    ],
+    comment: '<p>The hexadecimal color system starts with <code>#</code> and is case-insensitive.</p>\n<p><code>#FFC125</code> displays the same color as <code>#ffc125</code>.</p>\n<p><code>#RRGGBB</code> is the standard format for hexadecimal.\n<code>RR</code> relates to the degree of red.\n<code>GG</code> relates to the degree of green.\n<code>BB</code> relates to the degree of blue.</p>\n<p><strong>Note:</strong> <code>#FFFFFF</code> is the same as <code>#FFF</code>.</p>\n<p>Hexadecimal runs from <code>0</code> to <code>F</code>\n(<code>0</code>, <code>1</code>, <code>2</code>, ..., <code>9</code>, <code>A</code>, <code>B</code>, ..., <code>F</code>)</p>\n',
+  },
+}
