@@ -13,16 +13,16 @@
     question: '<h3>Do you know how HTML elements are structured?</h3>\n<p>Which of these HTML elements is structured properly?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<a href="http://enki.com/">Enki</a>',
+        text: '&lt;a href="http://enki.com/"&gt;Enki&lt;/a&gt;',
       },
       {
-        text: '<a></a> href="http://enki.com/">Enki',
+        text: '&lt;a&gt;&lt;/a&gt; href="http://enki.com/"&gt;Enki',
       },
       {
-        text: '<a>Enki</a> href="http://enki.com/">',
+        text: '&lt;a&gt;Enki&lt;/a&gt; href="http://enki.com/"&gt;',
       },
       {
-        text: '<href a="http://enki.com/">Enki</href>',
+        text: '&lt;href a="http://enki.com/"&gt;Enki&lt;/href&gt;',
       },
     ],
     comment: '<p>As you learn to work with HTML, it can be useful to learn the terminology of HTML code. This will help you learn the code as well as help you communicate with others.</p>\n<p>The typical structure of HTML elements are defined as:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="159"><g fill="none" fill-rule="evenodd"><rect width="320" height="159" fill="#FFF" rx="9"/><text font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="34" y="78" fill="#FF6000">&lt;a href=&quot;http://enki.com/&quot;&gt;</tspan> <tspan x="225.46094" y="78" fill="#0065FF">Enki</tspan> <tspan x="255.375" y="78" fill="#FF6000">&lt;/a&gt;</tspan></text><path stroke="#C0113A" stroke-linecap="square" d="M69.5 88.5v4"/><text fill="#A8216B" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="130" y="32">Element</tspan></text><text fill="#2E9598" font-family="Roboto-Regular, Roboto" font-size="14"><tspan x="71" y="58">Opening Tag</tspan></text><text fill="#EC1B4C" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="105" y="139">Attribute</tspan></text><text fill="#C0113A" font-family="Roboto-Regular, Roboto" font-size="14"><tspan x="65" y="107">Attribute</tspan> <tspan x="73.28857" y="121">Name</tspan></text><text fill="#C0113A" font-family="Roboto-Regular, Roboto" font-size="14"><tspan x="149" y="108">Attribute</tspan> <tspan x="158.56006" y="122">Value</tspan></text><text fill="#2E9598" font-family="Roboto-Regular, Roboto" font-size="13"><tspan x="261" y="100">End</tspan> <tspan x="261" y="114">Tag</tspan></text><path stroke="#A8216B" d="M31.8898 60.14304V37.64227c1.71944-7.52807 6.80145-11.2921 15.24604-11.2921h79.32711"/><path stroke="#EC1B4C" d="M55 84.42086v39.07991c1.71943 7.52807 6.80145 11.2921 15.24604 11.2921h31.05313m115.27398-48.58723v37.29513c-1.71943 7.52807-6.80144 11.2921-15.24604 11.2921h-30.15133"/><path stroke="#2E9598" d="M34.88973 60.11974v-3.74505c.54743-2.3968 2.16545-3.59519 4.85404-3.59519H67.4428m157.11026 7.31306v-3.49737C224.00563 54.19839 222.38761 53 219.69902 53h-67.89043M255 87v3.49737c.54743 2.3968 2.16545 3.59519 4.85404 3.59519m29-7.09256v3.49737c-.54743 2.3968-2.16544 3.59519-4.85404 3.59519"/><path stroke="#A8216B" d="M287.46285 60.1574V37.64226c-1.71944-7.52807-6.80145-11.2921-15.24604-11.2921H192.8897"/><path fill="#C0113A" stroke="#C6284D" d="M69.5 85l2.5 4h-5z"/><path stroke="#C0113A" stroke-linecap="square" d="M153.5 88.5v4"/><path fill="#C0113A" stroke="#C6284D" d="M153.5 85l2.5 4h-5z"/></g></svg></p>\n',

@@ -16,7 +16,7 @@
         text: 'Works with min and max range input type, separated by |.',
       },
       {
-        text: 'When present, more than one value can be added in the <input> element.',
+        text: 'When present, more than one value can be added in the &lt;input&gt; element.',
       },
       {
         text: 'Works with email input type, separated by commas.',

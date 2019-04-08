@@ -19,10 +19,10 @@
         text: 'Contact information of author',
       },
       {
-        text: 'When placed in <body> represents information for the document',
+        text: 'When placed in &lt;body&gt; represents information for the document',
       },
       {
-        text: 'When placed in <article> represents information for that article',
+        text: 'When placed in &lt;article&gt; represents information for that article',
       },
       {
         text: 'Displayed as block element',

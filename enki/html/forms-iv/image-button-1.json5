@@ -13,16 +13,16 @@
     question: "<p>What code is used to replace a form's submit button with an image?</p>\n<p>???</p>\n",
     answers: [
       {
-        text: '<input type="image" src="button.png" >',
+        text: '&lt;input type="image" src="button.png" &gt;',
       },
       {
-        text: '<img type="submit" src="button.png" >',
+        text: '&lt;img type="submit" src="button.png" &gt;',
       },
       {
-        text: '<input type="submit" src="button.png" >',
+        text: '&lt;input type="submit" src="button.png" &gt;',
       },
       {
-        text: '<img type="image" src="button.png" >',
+        text: '&lt;img type="image" src="button.png" &gt;',
       },
     ],
     comment: '<p>The HTML input form of type <code>image</code> is used to create a submit button with a graphical image instead of the default text.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;form\n  action="/page.php">\n  Full name:\n    &#x3C;input type="text"\n      name="fname">\n  &#x3C;input type="image"\n    src="send.png"\n    alt="Submit"\n    width="100" height="100">\n&#x3C;/form>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="157"><g fill="none" fill-rule="evenodd"><rect width="320" height="157" fill="#FFF" rx="9"/><text fill="#000" font-family="ArialMT, Arial" font-size="16"><tspan x="20" y="31">Full Name:</tspan></text><path d="M16 58h85v85H16z"/><g fill="#0099E5" fill-rule="nonzero"><path d="M56.42857 65.09124c-8.59355.63871-16.43226 4.17235-22.5871 10.18618-8.09585 7.89677-11.97788 19.07834-10.54285 30.30968 1.7917 14.04331 11.69585 25.73917 25.29954 29.87834 10.51797 3.20184 22.22212 1.3023 31.13917-5.04332 10.9576-7.80553 16.65622-20.75392 14.96405-34.00922-1.7917-14.04332-11.69585-25.73917-25.29954-29.87834-4.04792-1.23594-8.76774-1.75852-12.97327-1.44332zM81.2636 77.97327c.40645.23226.6553.61383.73824 1.12811.04148.19908-1.21106 7.88019-3.88202 23.8811-3.71613 22.31337-3.9401 23.60738-4.16406 23.96406-.29032.47281-.8046.76314-1.34378.76314-.30691 0-1.86636-.59724-8.0295-3.06083l-7.64792-3.05254-1.59262 2.66268c-.87097 1.4599-1.70876 2.7871-1.84977 2.9447-.3235.34838-.68848.50599-1.16959.50599-.51428 0-.87926-.1659-1.19447-.54747-.14101-.18249-1.54286-2.56313-3.1106-5.30046l-2.84516-4.97696-6.25438-2.49677c-5.75668-2.306-6.27926-2.52996-6.51981-2.81198-.4894-.56406-.53088-1.52627-.08295-2.02397.23226-.24884 47.38064-31.69493 47.67097-31.78617.34838-.11613.87926-.02489 1.27742.20737z"/><path d="M62.55023 99.6894c-7.96313 8.54378-14.48295 15.56959-14.49124 15.61936 0 .04147.95391 1.75023 2.1235 3.78248l2.1401 3.70784.17418-.26544c.09954-.14101 5.45807-8.5106 11.91153-18.58894 6.45345-10.08664 11.9447-18.6553 12.20184-19.06175.25714-.39816.45622-.72166.43963-.72166-.0083 0-6.5364 6.99263-14.49954 15.52811zm-7.61475-1.50968c-9.78801 6.51982-17.79262 11.88664-17.79262 11.91982 0 .03318 2.09861.91244 4.67004 1.94101 2.56314 1.02857 4.72811 1.93272 4.81106 1.99908.13272.11613.8295-.61382 9.40646-9.79631 5.09308-5.45807 10.941-11.72074 12.99815-13.9272 2.05714-2.19815 3.73272-3.99815 3.72446-3.99815-.01662.0083-8.02953 5.34194-17.81755 11.86175zm12.38434 4.46268l-10.1364 15.73548.38985.07465c.21567.03318 3.39263 1.27742 7.05899 2.76222 3.66636 1.4765 6.66912 2.67926 6.67742 2.66267.03318-.04148 6.18802-36.92903 6.1632-36.94563-.00836-.00829-4.57887 7.059-10.15306 15.7106z"/></g><path fill="#FFF" stroke="#CCC" d="M20.5 39.5h130v18h-130z"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/vrvvJO)--> \n<p>In the example above, the input type is set as <code>image</code>. The image source is currently in the same folder as the HTML page with the filename <code>send.png</code>. The <code>width</code> and <code>height</code> properties are set in pixels, both to <code>100</code> by <code>100</code>.</p>\n',

@@ -14,19 +14,19 @@
     question: '<p>What HTML element is used to make dates &#x26; times machine-readable?</p>\n<p>???</p>\n<p>When using the <code>&#x3C;time></code> element, what attribute is used to declare the machine-readable date?</p>\n<pre><code class="language-html">&#x3C;time\n  ???="2007-06-29">\n  June 29th, 2007\n&#x3C;/time>\n</code></pre>\n',
     answers: [
       {
-        text: '<time>',
+        text: '&lt;time&gt;',
       },
       {
         text: 'datetime',
       },
       {
-        text: '<date>',
+        text: '&lt;date&gt;',
       },
       {
-        text: '<event>',
+        text: '&lt;event&gt;',
       },
       {
-        text: '<timedate>',
+        text: '&lt;timedate&gt;',
       },
       {
         text: 'date',

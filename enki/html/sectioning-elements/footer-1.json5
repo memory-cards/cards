@@ -13,22 +13,22 @@
     question: '<p>Which container is best to organize the bottom of a web page or content section?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<footer>',
+        text: '&lt;footer&gt;',
       },
       {
-        text: '<foot>',
+        text: '&lt;foot&gt;',
       },
       {
-        text: '<bottom>',
+        text: '&lt;bottom&gt;',
       },
       {
-        text: '<section>',
+        text: '&lt;section&gt;',
       },
       {
-        text: '<main>',
+        text: '&lt;main&gt;',
       },
       {
-        text: '<nav>',
+        text: '&lt;nav&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;footer></code> element is used to represent a footer for a whole document, or even footers of a grouping of related content as it is possible to have multiple <code>&#x3C;footer></code> elements. </p>\n<p>The <code>&#x3C;footer></code> element should contain some information about its containing element. That can be the author, some copyright information, a link to the terms of use, contact info, link back to the top of the page, a link to related documents, a sitemap, etc.</p>\n<p>Using <code>&#x3C;footer></code> for contact information:</p>\n<pre><code class="language-html">&#x3C;footer>\n  &#x3C;p>\n    Author: Jane Doe\n  &#x3C;/p>\n  &#x3C;p>\n  Contact:\n    &#x3C;a\n      href="mailto:janedoe@example.com">\n      janedoe@example.com\n    &#x3C;/a>.\n  &#x3C;/p>\n&#x3C;/footer>\n</code></pre>\n<p>The <code>&#x3C;footer></code> container doesn\'t have any visual style without CSS. The CSS in this example may be a bit complex at this time, but hopefully it inspires you to learn more CSS! </p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="166"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M9 0h302c4.97056 0 9 4.02944 9 9v124H0V9c0-4.97056 4.02944-9 9-9z"/><path fill="#3E94EC" d="M0 133h320v24c0 4.97056-4.02944 9-9 9H9c-4.97056 0-9-4.02944-9-9v-24z"/><text fill="#FFF" font-family="DINCondensed-Bold, DIN Condensed" font-size="17" font-weight="bold"><tspan x="129" y="154">COPYRIGHT </tspan></text><text fill="#000" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400"><tspan x="20" y="104">Footer</tspan></text><g stroke="#000"><path stroke-linecap="square" stroke-width="2" d="M55.69188 125.4463l-12.35524-17.00554"/><path fill="#000" d="M57.74913 128.27786l-7.75507-3.01809 7.28115-5.29006z"/></g></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/PaXVmR)-->\n',

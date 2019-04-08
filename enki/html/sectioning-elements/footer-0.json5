@@ -16,7 +16,7 @@
         text: 'copyright or contact information, links to related or to the top of the page and sitemap',
       },
       {
-        text: 'additional <footer>` elements and to be added within `<header> element.',
+        text: 'additional &lt;footer&gt;` elements and to be added within `&lt;header&gt; element.',
       },
       {
         text: 'display one or more heading (h1-h6) elements be used only once in a page for validation.',

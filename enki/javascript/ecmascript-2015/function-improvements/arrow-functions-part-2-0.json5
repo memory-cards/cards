@@ -17,10 +17,10 @@
     question: '<p>Create a counter that can successfully count up and down:</p>\n<pre><code>function Counter () {\n  this.counter = 0;\n  this.countUp = setInterval(???, 1000)\n  this.countDown = setInterval(???, 1000)\n}\n\nlet count = new Counter();\n</code></pre>\n',
     answers: [
       {
-        text: '() => {this.counter++;}',
+        text: '() =&gt; {this.counter++;}',
       },
       {
-        text: '() => {this.counter--;}',
+        text: '() =&gt; {this.counter--;}',
       },
       {
         text: 'function() {this.counter++;}',

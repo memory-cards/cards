@@ -13,7 +13,7 @@
     question: '<p>When will the cursor change to a pointer with the following code?</p>\n<pre><code class="language-html">&#x3C;main>\n  &#x3C;a\n    href="http://www.enkipro.com">\n    Check out Enki\n  &#x3C;/a>\n&#x3C;/main>\n</code></pre>\n<p>When the mouse hovers: ???</p>\n<p>How is a placeholder link created, where the link works, but it doesn\'t open a new page?</p>\n<p><code>&#x3C;a href="???">Empty href&#x3C;/a></code></p>\n<p>What is the default style of a text link in HTML?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'over the text within the <a> element.',
+        text: 'over the text within the &lt;a&gt; element.',
       },
       {
         text: '#',
@@ -22,7 +22,7 @@
         text: 'It is blue and underlined.',
       },
       {
-        text: 'anywhere within the <main> element.',
+        text: 'anywhere within the &lt;main&gt; element.',
       },
       {
         text: 'anywhere within the web page.',

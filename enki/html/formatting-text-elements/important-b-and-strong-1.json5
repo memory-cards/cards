@@ -14,19 +14,19 @@
     question: '<p>When text needs to bring users attention, you should use which element?</p>\n<p>???</p>\n<p>When a text needs to be presented with strong importance, seriousness, or urgency for its contents, you should use which element?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<b>',
+        text: '&lt;b&gt;',
       },
       {
-        text: '<strong>',
+        text: '&lt;strong&gt;',
       },
       {
-        text: '<em>',
+        text: '&lt;em&gt;',
       },
       {
-        text: '<i>',
+        text: '&lt;i&gt;',
       },
       {
-        text: '<important>',
+        text: '&lt;important&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;b></code>, or the <strong> Bring Attention To</strong> element, is used to bring readers attention to some text and <code>&#x3C;strong></code>, or the <strong>Strong Importance</strong> element, is used to give importance to some content.</p>\n<p>The <code>&#x3C;b></code> element was also formerly known as the <strong>Boldface</strong> element.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;p>\n  &#x3C;strong>Warning&#x3C;/strong>:\n  The latest\n  &#x3C;b>iPhone&#x3C;/b> is expensive.\n&#x3C;/p>\n</code></pre>\n<p>Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="78"><g fill="none" fill-rule="evenodd"><rect width="320" height="78" fill="#FFF" rx="9"/><text fill="#000" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold"><tspan x="20" y="34">Warning</tspan> <tspan x="79.44531" y="34" font-family="Roboto-Regular, Roboto" font-weight="normal">: The latest </tspan> <tspan x="161.49219" y="34">iPhone</tspan> <tspan x="211.66406" y="34" font-family="Roboto-Regular, Roboto" font-weight="normal"> is </tspan> <tspan x="20" y="53" font-family="Roboto-Regular, Roboto" font-weight="normal">expensive.</tspan></text></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/mjRemb)-->\n<p>The HTML <code>&#x3C;strong></code> and <code>&#x3C;b></code> elements appear similar since they both have the same default styling, <strong>bold</strong>, but they both identify the content differently.   </p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;strong>\n  Attention!\n&#x3C;/strong>\nThe floor is\n&#x3C;b>slippery&#x3C;/b>\n and &#x3C;b>wet&#x3C;/b>!\n</code></pre>\n<p>Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="78"><g fill="none" fill-rule="evenodd"><rect width="320" height="78" fill="#FFF" rx="9"/><text fill="#000" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold"><tspan x="20" y="34">Attention!</tspan> <tspan x="91.0625" y="34" font-family="Roboto-Regular, Roboto" font-weight="normal"> The floor is </tspan> <tspan x="178.3125" y="34">slippery</tspan> <tspan x="235.69531" y="34" font-family="Roboto-Regular, Roboto" font-weight="normal"> and </tspan> <tspan x="20" y="53">wet</tspan> <tspan x="45.8125" y="53" font-family="Roboto-Regular, Roboto" font-weight="normal">!</tspan></text></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/NBdGvb)-->\n<p>In the above example, the <code>&#x3C;strong></code> element is used to specify that the word <code>Warning</code> is very important and the <code>&#x3C;b></code> element is used to give attention to a text <code>iPhone</code> without giving it a higher importance.</p>\n<p>Rather than wrapping <code>&#x3C;b></code> or <code>&#x3C;strong></code> elements around text that is only meant to be used for visually styling purposes, it is more appropriate in those cases to use the CSS property <code>font-weight:bold;</code>.</p>\n',

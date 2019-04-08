@@ -14,19 +14,19 @@
     question: '<p>Use ??? when the content is related, but not required to follow along.\nUse ??? when the content is required to follow along, but it can be placed anywhere in the flow of the content.\nUse ??? when the content is required and the position is important in the context of the content.</p>\n',
     answers: [
       {
-        text: '<aside>',
+        text: '&lt;aside&gt;',
       },
       {
-        text: '<figure>',
+        text: '&lt;figure&gt;',
       },
       {
-        text: '<div>',
+        text: '&lt;div&gt;',
       },
       {
-        text: '<content>',
+        text: '&lt;content&gt;',
       },
       {
-        text: '<article>',
+        text: '&lt;article&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;figure></code> element is used to represent self-contained content. Also, the <code>&#x3C;figure></code> element frequently has a <code>&#x3C;figcaption></code> element within it which is used to display a caption of the content and must be either the first or last child of the <code>&#x3C;figure></code> element.</p>\n<p>The <code>&#x3C;figure></code> element is usually an image, code snippet, diagram, illustration, etc., which is referenced in the main flow of the document. Also, the <code>&#x3C;figure></code> elements content can also be moved to another part of the document without having any effect on the main flow.</p>\n<p>Example with a poem:</p>\n<pre><code class="language-html">&#x3C;figure>\n &#x3C;p>\n   Old cave, hidden door,&#x3C;br>\n   Carved ceiling, ancient floor,&#x3C;br>\n   Statue of old, a hero bold,&#x3C;br>\n   Sitting on his throne of gold,&#x3C;br>\n   King of legend, time forgot,&#x3C;br>\n   Now all that is left is for him to rot.\n &#x3C;/p>\n &#x3C;figcaption>&#x3C;cite>Old Cave&#x3C;/cite>.\n  Author: Unknown&#x3C;/figcaption>\n&#x3C;/figure>\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/YjqEWp)-->\n',

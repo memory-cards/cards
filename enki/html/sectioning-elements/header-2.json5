@@ -13,7 +13,7 @@
     question: '<h3>Anwer a quick question about the <code>&#x3C;header></code> element!</h3>\n<p>The HTML <code>&#x3C;header></code> element cannot what?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'be added within a <footer> element.',
+        text: 'be added within a &lt;footer&gt; element.',
       },
       {
         text: 'contain website navigation',
@@ -28,7 +28,7 @@
         text: 'display authorship information',
       },
       {
-        text: 'have multiple <header> elements within the same doc.',
+        text: 'have multiple &lt;header&gt; elements within the same doc.',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;header></code> element is used to represent some introductory content.</p>\n<p>This can be an introduction, some navigational aid, a graphical logo, the authors\' name, a search form, display one or more heading (h1-h6) elements, and more.</p>\n<p>You can also have multiple <code>&#x3C;header></code> elements on your web page, one for the primary layout and for each grouping of related content.</p>\n<p>This example showcases two headers within a web page:</p>\n<pre><code class="language-html">&#x3C;header>\n  &#x3C;h1>Logo&#x3C;/h1>\n&#x3C;/header>\n\n&#x3C;article>\n  &#x3C;header>\n    &#x3C;h1>\n      First order 50% off!!\n    &#x3C;/h1>\n    &#x3C;h2>Order pizza now&#x3C;/h2>\n    &#x3C;p>\n    Order two pizza\'s get 2L Pepsi free!\n    &#x3C;/p>\n  &#x3C;/header>\n  &#x3C;p>\n    We also have:\n    We also have: Chicken, Pineapple,\n    Ghost Peppers and more..\n  &#x3C;/p>\n&#x3C;/article>\n</code></pre>\n<p>The <code>&#x3C;header></code> container doesn\'t have any visual style without CSS. The CSS in this example may be a bit complex at this time, but hopefully it inspires you to learn more CSS! </p>\n<h5>header-styled.svg</h5>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="174"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M311 174H9c-4.97056 0-9-4.02944-9-9V55h320v110c0 4.97056-4.02944 9-9 9z"/><path fill="#3E94EC" d="M320 55H0V9c0-4.97056 4.02944-9 9-9h302c4.97056 0 9 4.02944 9 9v46z"/><text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="124" y="160">Copyright </tspan></text><text fill="#FFF" font-family="DINCondensed-Bold, DIN Condensed" font-size="28" font-weight="bold"><tspan x="27" y="38">LOGO</tspan></text><text fill="#000" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400"><tspan x="222" y="94">Header</tspan></text><g stroke="#000"><path stroke-linecap="square" stroke-width="2" d="M227.70021 62.5034l12.65015 16.78731"/><path fill="#000" d="M225.59386 59.70817l7.80657 2.88228-7.18772 5.41633z"/></g></g></svg></p>\n<p>The <code>&#x3C;header></code> container doesn\'t have any visual style without CSS. The CSS in this example may be a bit complex at this time, but hopefully it inspires you to learn more CSS! </p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/NBrNPx)--> \n<p>Even though you can have multiple <code>&#x3C;header></code> elements, you can\'t nest  <code>&#x3C;header></code> elements within another <code>&#x3C;header></code> element. Also, the <code>&#x3C;header></code> element can\'t be within a <code>&#x3C;footer></code> or an <code>&#x3C;address></code> element.</p>\n',

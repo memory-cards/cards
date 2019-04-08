@@ -13,13 +13,13 @@
     question: '<pre><code class="language-javascript">// ES5\nmyList.filter(function(x) {\n    return x > 2;\n})\n// ES6 equivalent:  \nmyList.filter(???)\n</code></pre>\n<p>%exp\nES6 *<em>arrow function</em>\n%</p>\n',
     answers: [
       {
-        text: 'x => x > 2',
+        text: 'x =&gt; x &gt; 2',
       },
       {
-        text: 'x => return x > 2',
+        text: 'x =&gt; return x &gt; 2',
       },
       {
-        text: 'x => {x > 2}',
+        text: 'x =&gt; {x &gt; 2}',
       },
       {
         text: 'is the shorter way of expressing a function.',

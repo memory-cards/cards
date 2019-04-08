@@ -17,7 +17,7 @@
     question: '<p>Fill in the gaps of the following snippet such that the <code>squares</code> string will contain, one after the other, the square value of all numbers from <code>1</code> to <code>10</code>:</p>\n<pre><code class="language-javascript">var squares = \'\';\nfor (var i = 1; i ??? 10; i ++) {\n  squares ??? i*i ??? \' \'\n}\nconsole.log(squares)\n// "1 4 9 16 25 36 49 64 81 100 "\n</code></pre>\n',
     answers: [
       {
-        text: '<=',
+        text: '&lt;=',
       },
       {
         text: '+=',
@@ -29,10 +29,10 @@
         text: '=+',
       },
       {
-        text: '<',
+        text: '&lt;',
       },
       {
-        text: '>',
+        text: '&gt;',
       },
       {
         text: '++',

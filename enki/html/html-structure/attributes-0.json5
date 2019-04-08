@@ -19,10 +19,10 @@
         text: 'Quotation marks',
       },
       {
-        text: '<p>` and `<a>',
+        text: '&lt;p&gt;` and `&lt;a&gt;',
       },
       {
-        text: 'href` and `<p>',
+        text: 'href` and `&lt;p&gt;',
       },
       {
         text: 'https://www.enkipro.com` and `_blank',

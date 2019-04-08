@@ -13,13 +13,13 @@
     question: '<h3>How much do you know about HTML input form attributes?</h3>\n<p>Identify which statement is true regarding the use of height and width with input form attributes?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'Both the height and width attribute are used only with <input type="image">.',
+        text: 'Both the height and width attribute are used only with &lt;input type="image"&gt;.',
       },
       {
-        text: 'The height attribute is used with <input type="image">` and `<input type="button">.',
+        text: 'The height attribute is used with &lt;input type="image"&gt;` and `&lt;input type="button"&gt;.',
       },
       {
-        text: 'The width attribute is used with <input type="image">` and `<input type="button">.',
+        text: 'The width attribute is used with &lt;input type="image"&gt;` and `&lt;input type="button"&gt;.',
       },
       {
         text: 'You can only set the attributes height and width with CSS.',

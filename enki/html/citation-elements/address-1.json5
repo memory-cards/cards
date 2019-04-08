@@ -13,19 +13,19 @@
     question: '<p>Which HTML element is used to contain contact information for its nearest <code>&#x3C;article></code> or <code>&#x3C;body></code> that is not related to the primary contact information of the site?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<address>',
+        text: '&lt;address&gt;',
       },
       {
-        text: '<contact>',
+        text: '&lt;contact&gt;',
       },
       {
-        text: '<info>',
+        text: '&lt;info&gt;',
       },
       {
-        text: '<postal>',
+        text: '&lt;postal&gt;',
       },
       {
-        text: '<authorship>',
+        text: '&lt;authorship&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;address></code> element is used to provide contact information about the author. This element is displayed as a block element and has a default styling like the <code>&#x3C;i></code> and <code>&#x3C;em></code> elements (the text is italic).</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="88"><g fill="none" fill-rule="evenodd"><rect width="320" height="88" fill="#FFF" rx="9"/><text fill="#000" font-family="Arial-ItalicMT, Arial" font-size="16" font-style="italic"><tspan x="18" y="32">1107 Pearl Street, </tspan> <tspan x="18" y="49">Boulder, Colorado </tspan> <tspan x="18" y="66">80302</tspan></text></g></svg></p>\n<p>This element can contain different types of content: </p>\n<ul>\n<li>Physical address</li>\n<li>URL</li>\n<li>E-mail address</li>\n<li>Phone number</li>\n<li>Geographical coordinates</li>\n<li>And more...</li>\n</ul>\n<p>The content of the <code>&#x3C;address></code> element should include the name of the person, people, or organization to which the contact information refers.</p>\n<p>Address Example:</p>\n<pre><code class="language-html">&#x3C;address>\n  Authors Email:\n  &#x3C;a href="http://www.web.com/contact">\n    www.web.com/contact\n  &#x3C;/a>.&#x3C;br>\n  Author address:&#x3C;br>\n  Company name&#x3C;br>\n  Some Street address&#x3C;br>\n  City, State&#x3C;br>\n  Country\n&#x3C;/address>\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/OEoaVN)-->\n<p>Beside representing contact information about the author of the document, the <code>&#x3C;address></code> element can be used with different types of context. When placed within a <code>&#x3C;body></code> element it represents information about the document. When placed within an <code>&#x3C;article></code> element it represents information about an article.</p>\n<p>On the other hand, if you want to represent an arbitrary address (such as postal addresses), which are not related to the contact information, you should use the <code>&#x3C;p></code> element rather than the <code>&#x3C;address></code> element.</p>\n',

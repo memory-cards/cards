@@ -14,7 +14,7 @@
     question: '<p>The goal is to display text like this:  </p>\n<pre><code class="language-htmlhtml">Apple\n1 Infinite Loop\nCupertino, CA\n95014\n</code></pre>\n<p>So what must happen to this address to display as separate lines of text within a single paragraph?</p>\n<pre><code class="language-html">&#x3C;p>Apple\n1 Infinite Loop\nCupertino, CA\n95014&#x3C;/p>\n</code></pre>\n<p>???</p>\n',
     answers: [
       {
-        text: "Add <br>'s to create each new line.",
+        text: "Add &lt;br&gt;'s to create each new line.",
       },
       {
         text: 'Add paragraphs to each new line.',

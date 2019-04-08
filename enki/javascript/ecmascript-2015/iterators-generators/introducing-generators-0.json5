@@ -34,7 +34,7 @@
         text: 'function',
       },
       {
-        text: '() =>',
+        text: '() =&gt;',
       },
       {
         text: 'class',

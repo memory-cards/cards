@@ -13,16 +13,16 @@
     question: '<h3>What code assigns the default of every link within the web page to open a new page?</h3>\n<p>???</p>\n',
     answers: [
       {
-        text: '<base target="_blank">',
+        text: '&lt;base target="_blank"&gt;',
       },
       {
-        text: '<link target="_blank">',
+        text: '&lt;link target="_blank"&gt;',
       },
       {
-        text: '<a target="_blank">',
+        text: '&lt;a target="_blank"&gt;',
       },
       {
-        text: '<* target="_blank">',
+        text: '&lt;* target="_blank"&gt;',
       },
     ],
     comment: '<p>The <code>&#x3C;base></code> element is used to specify a link path for all relative URL attributes. There can be only one <code>&#x3C;base></code> element per page or document, and it is written inside the <code>&#x3C;head></code> element. If more than one <code>&#x3C;base></code> element is present, only the first <code>href</code> and <code>target</code> values are used, while the others are ignored.</p>\n<p>Also, the <code>&#x3C;base></code> element cannot be empty, it must contain either the target attribute, the href attribute, or both of them.</p>\n<p>All links in the web page or document are set to open in a new tab:</p>\n<pre><code class="language-html">&#x3C;head>\n   &#x3C;base\n      target="_self">\n&#x3C;/head>\n</code></pre>\n<p>All links in the web page or document will lead to the <code>https://www.enki.com</code> link:</p>\n<pre><code class="language-html">&#x3C;head>\n   &#x3C;base\n    href="https://www.enki.com">\n&#x3C;/head>\n</code></pre>\n<p>All links in the web page or document will lead to the <code>https://www.enki.com</code> link, and open in a new tab:</p>\n<pre><code class="language-html">&#x3C;head>\n   &#x3C;base href="https://www.enki.com"\n      target="_blank">\n&#x3C;/head>\n</code></pre>\n<p><strong>Note: In HTML5 the <code>&#x3C;base></code> end tag has to be omitted. On the other hand, in XHTML it has to be closed.</strong></p>\n',

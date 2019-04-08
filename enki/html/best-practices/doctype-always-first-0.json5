@@ -13,16 +13,16 @@
     question: '<p>What declaration is always first in an HTML web page?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<!DOCTYPE html>',
+        text: '&lt;!DOCTYPE html&gt;',
       },
       {
-        text: '<body>',
+        text: '&lt;body&gt;',
       },
       {
-        text: '<html>',
+        text: '&lt;html&gt;',
       },
       {
-        text: '<!HTML document>',
+        text: '&lt;!HTML document&gt;',
       },
     ],
     comment: '<p>In every HTML web page, the very first line of code should always be the <code>&#x3C;!DOCTYPE html></code> declaration.</p>\n<p>This is because the <code>&#x3C;!DOCTYPE html></code> declaration is used to tell the browser what type of HTML document it is rendering.</p>\n<p>For HTML5 the declaration is typed as:</p>\n<pre><code class="language-html">&#x3C;!DOCTYPE html>\n</code></pre>\n<p><strong>Note:</strong> The DOCTYPE tag is <em>not</em> an HTML element, but a tag specific for browsers to identify the type of code in the document.</p>\n',

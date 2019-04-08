@@ -21,7 +21,7 @@
         text: 'col',
       },
       {
-        text: 'must be placed before any <caption> elements',
+        text: 'must be placed before any &lt;caption&gt; elements',
       },
       {
         text: 'colstyle',
@@ -33,13 +33,13 @@
         text: 'column',
       },
       {
-        text: 'must be used as a child of a <table> element.',
+        text: 'must be used as a child of a &lt;table&gt; element.',
       },
       {
-        text: 'must be placed after any <caption> elements',
+        text: 'must be placed after any &lt;caption&gt; elements',
       },
       {
-        text: 'must be placed before any <thead>`, `<tbody>`, `<tfoot>`, & `<tr> elements.',
+        text: 'must be placed before any &lt;thead&gt;`, `&lt;tbody&gt;`, `&lt;tfoot&gt;`, & `&lt;tr&gt; elements.',
       },
     ],
     comment: '<p>Tables within HTML use the <code>&#x3C;colgroup></code> &#x26; <code>&#x3C;col></code> elements to help define groups of columns. The <code>&#x3C;colgroup></code> element is useful for applying styles to entire columns, rather than repeating styles for each cell in every row.</p>\n<p>However this is rarely useful because if you set the background of a row element or table cell element, that will always beat a background of a <code>&#x3C;col></code> element - regardless of specificity.</p>\n<p>The <code>&#x3C;col></code> element has one element-specific attribute: <code>span</code>, and is used to specify how many columns the <code>&#x3C;col></code> element extends. If the attribute is not provided, the default value is <code>1</code>.</p>\n<p>You can edit the <code>&#x3C;col></code> element by using the appropriate CSS properties, for instance:</p>\n<ul>\n<li><code>width</code></li>\n<li><code>text-align</code></li>\n</ul>\n<p>Example with both elements:</p>\n<pre><code class="language-html">&#x3C;table>\n &#x3C;colgroup>\n  &#x3C;col span="2"\n    style="background-color:lightblue">\n  &#x3C;col\n    style="background-color:hotpink">\n  &#x3C;col span="3"\n    style="background-color:mediumpurple">\n &#x3C;/colgroup>\n  &#x3C;tr>\n    &#x3C;td>col 1&#x3C;/td>\n    &#x3C;td>col 2&#x3C;/td>\n    &#x3C;td>col 3&#x3C;/td>\n    &#x3C;td>col 4&#x3C;/td>\n    &#x3C;td>col 5&#x3C;/td>\n    &#x3C;td>col 6&#x3C;/td>\n  &#x3C;/tr>\n&#x3C;/table>\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/bjWGNy)-->\n<p>In the example above, the <code>&#x3C;colgroup></code> element is used to create a group of 3 <code>&#x3C;col></code> elements and the <code>&#x3C;tr></code> element is used to create a single row with 6 <code>&#x3C;td></code> elements. Each col element spans differently and has a different style; first <code>&#x3C;col></code> spans 2 columns and is <code>lightblue</code>, 2nd <code>&#x3C;col></code> spans 1 column and is <code>hotpink</code> and the third and last <code>&#x3C;col></code> spans 3 columns and is <code>mediumpurple</code>.</p>\n',

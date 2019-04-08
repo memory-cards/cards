@@ -13,22 +13,22 @@
     question: '<h3>How much do you know about creating meters in HTML?</h3>\n<p>Check out this \'<a href="https://www.dropbox.com/s/azi3gl1th52zwrs/Screen%20Shot%202018-06-17%20at%2011.06.47%20PM.png?dl=0">meter</a>\' picture, then choose which answer creates such a meter.</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<meter value="0.75" max="1"></meter>',
+        text: '&lt;meter value="0.75" max="1"&gt;&lt;/meter&gt;',
       },
       {
-        text: '<progress value="60" max="100"></progress>',
+        text: '&lt;progress value="60" max="100"&gt;&lt;/progress&gt;',
       },
       {
-        text: '<meter value="60%" max="100"></meter>',
+        text: '&lt;meter value="60%" max="100"&gt;&lt;/meter&gt;',
       },
       {
-        text: '<progress value="0.6" max="1"></progress>',
+        text: '&lt;progress value="0.6" max="1"&gt;&lt;/progress&gt;',
       },
       {
-        text: '<bar value="0.6" max="1"></bar>',
+        text: '&lt;bar value="0.6" max="1"&gt;&lt;/bar&gt;',
       },
       {
-        text: '<bar value="60" max="100"></bar>',
+        text: '&lt;bar value="60" max="100"&gt;&lt;/bar&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;progress></code>, or the <strong>Progress Indicator</strong> element, is used to display a progress bar.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;progress\n  value="25"\n  max="100">\n  25%\n&#x3C;/progress>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="46"><g fill="none" fill-rule="evenodd"><rect width="320" height="46" fill="#FFF" rx="9"/><path fill="#EDEDED" stroke="#CFCFCF" d="M52.5 20.5v5H169c1.38071 0 2.5-1.11929 2.5-2.5s-1.11929-2.5-2.5-2.5H52.5z"/><path fill="#3B99FC" stroke="#3385DB" d="M52.5 25.5v-5H17c-1.38071 0-2.5 1.11929-2.5 2.5s1.11929 2.5 2.5 2.5h35.5z"/><path stroke="#3B99FC" stroke-linecap="square" d="M52.5 21.5v3"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/eKbYJv)--> \n<p>The <code>&#x3C;progress></code> element has 2 element-specific attributes:\n1. <code>max</code>\n2. <code>value</code></p>\n<p>The <code>max</code> attribute is used to indicate the total work that the progress bars task requires. If the <code>max</code> attribute is not present, the default value is set to 1. On the other hand, if you add the <code>max</code> attribute, its value has to be 1 or above and be a valid floating point number.</p>\n<p>The <code>value</code> attribute is used to specify the amount of work that\'s been completed. The value of the <code>value</code> attribute has to either be between 0 and 1 or if <code>max</code> is specified, between 0 and <code>max</code>. On the other hand, if you don\'t add the <code>value</code> attribute, the amount of work needed to be done is unknown.</p>\n',

@@ -13,19 +13,19 @@
     question: '<p>Which of the following elements is not inline?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<p>',
+        text: '&lt;p&gt;',
       },
       {
-        text: '<em>',
+        text: '&lt;em&gt;',
       },
       {
-        text: '<span>',
+        text: '&lt;span&gt;',
       },
       {
-        text: '<input>',
+        text: '&lt;input&gt;',
       },
       {
-        text: '<img>',
+        text: '&lt;img&gt;',
       },
     ],
     comment: '<p>An inline element has the following characteristics:</p>\n<ul>\n<li>It begins on the same line as its siblings</li>\n<li>Its <code>height</code>, <code>line-height</code>, <code>top-margin</code> and <code>bottom-margin</code> can\'t be changed</li>\n<li>Its width is as wide as the content and can\'t be modified</li>\n</ul>\n<p>Examples of inline elements include <code>&#x3C;span></code>, <code>&#x3C;a></code>, <code>&#x3C;label></code>, <code>&#x3C;input></code>, <code>&#x3C;img></code>, <code>&#x3C;strong></code> and <code>&#x3C;em></code>.</p>\n<p>Example of useless CSS:</p>\n<pre><code class="language-css">span {\n  height: 20px; /* no effect! */\n  top: 20px; /* no effect! */\n}\n</code></pre>\n',

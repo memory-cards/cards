@@ -13,7 +13,7 @@
     question: "<p>When you want to provide fallback content for user's that do not have browsers that support HTML5 audio, what do you need to do?</p>\n<p>???</p>\n",
     answers: [
       {
-        text: 'Add any content between the start and end <audio> tags.',
+        text: 'Add any content between the start and end &lt;audio&gt; tags.',
       },
       {
         text: 'CSS can be used to notify the user.',

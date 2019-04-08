@@ -19,7 +19,7 @@
         text: 'Works with fractions, like 1/2 written as ".5".',
       },
       {
-        text: 'Specifies the legal number intervals for an <input> element.',
+        text: 'Specifies the legal number intervals for an &lt;input&gt; element.',
       },
       {
         text: 'Can be used with min & max to create range of legal values.',
