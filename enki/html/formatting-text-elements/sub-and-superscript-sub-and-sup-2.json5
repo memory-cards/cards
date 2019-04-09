@@ -14,16 +14,16 @@
     question: '<h3>How much do you know about text in HTML?</h3>\n<p>Which of these is not a proper MathML formula for sub and superscript?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<msubsuper>',
+        text: '&lt;msubsuper&gt;',
       },
       {
-        text: '<msub>',
+        text: '&lt;msub&gt;',
       },
       {
-        text: '<msup>',
+        text: '&lt;msup&gt;',
       },
       {
-        text: '<msubsup>',
+        text: '&lt;msubsup&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;sub></code>, or the <strong>Subscript</strong> element is used to display some text as subscript (written or printed <strong>below</strong> the line), whereas the <code>&#x3C;sup></code>, or the <strong>Superscript</strong> element is used to display some text as superscript (written or printed <strong>above</strong> the line).</p>\n<p>Both elements are only used for typographical reasons and neither should be used for styling and/or appearance only. If you want to style your text sub or superscript, you can use the appropriate CSS properties:</p>\n<ul>\n<li><code>vertical-align: sub;</code></li>\n<li><code>vertical-align: -25%;</code></li>\n<li><code>vertical-align: super;</code></li>\n<li><code>vertical-align: 50%;</code></li>\n</ul>\n<p>For instance, you can use the subscript for properly display the 2 in H20 and you can use the superscript to properly display the 2 in E = mc2.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;p>\n  Both\n  H&#x3C;sub>2&#x3C;/sub>O\n  and\n  E = mc&#x3C;sup>2&#x3C;/sup>\n  are fun to learn about.\n&#x3C;/p>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="78"><g fill="none" fill-rule="evenodd"><rect width="320" height="78" fill="#FFF" rx="9"/><text font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="20" y="34" fill="#000">Both H</tspan> <tspan x="68.49219" y="34" fill="#FFF" font-size="12">2</tspan> <tspan x="75.23047" y="34" fill="#000">O and E = mc</tspan> <tspan x="168.90234" y="34" fill="#FFF" font-size="12"> </tspan> <tspan x="174.84375" y="34" fill="#000"> </tspan></text><text fill="#000" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="20" y="54">learn about.</tspan></text><text fill="#000" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="181" y="34">are fun to </tspan></text><text fill="#000" font-family="ArialMT, Arial" font-size="12"><tspan x="69" y="38">2</tspan></text><text fill="#000" font-family="ArialMT, Arial" font-size="12"><tspan x="169" y="30">2</tspan></text></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/xzQvPv)-->\n<p>The most common <code>&#x3C;sup></code> elements uses are to display exponents (x^2) or ordinal numbers (3rd, 4th, 5th). The most common use for the <code>&#x3C;sub></code> element is marking footnotes, variable numbers (X1, X2...Xn), and denoting numbers in chemical formulas.</p>\n<p><strong>Note:</strong> Both <code>&#x3C;sup></code> and <code>&#x3C;sub></code> cannot be used at the same time to make a subscript appear directly below a superscript number and vice versa. To do so, you need to use the MathML (Mathematical Markup Language).</p>\n<p><strong>The MathML elements:</strong> <code>&#x3C;msub></code>, <code>&#x3C;msup></code> and <code>&#x3C;msubsup></code></p>\n',

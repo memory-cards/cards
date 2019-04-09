@@ -28,7 +28,7 @@
         text: 'HTML',
       },
       {
-        text: '<p>',
+        text: '&lt;p&gt;',
       },
       {
         text: 'id',

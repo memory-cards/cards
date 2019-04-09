@@ -13,19 +13,19 @@
     question: '<h3>How much do you know about using CSS with HTML?</h3>\n<p>Using a <code>:root</code> selector in CSS will target which HTML element?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<html>',
+        text: '&lt;html&gt;',
       },
       {
-        text: '<body>',
+        text: '&lt;body&gt;',
       },
       {
-        text: '<head>',
+        text: '&lt;head&gt;',
       },
       {
-        text: '<main>',
+        text: '&lt;main&gt;',
       },
       {
-        text: '<root>',
+        text: '&lt;root&gt;',
       },
       {
         text: 'every HTML element',

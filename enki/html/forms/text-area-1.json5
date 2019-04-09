@@ -13,16 +13,16 @@
     question: '<p>Which element creates a multi-line input field that is 10 lines of text in height and 50 average characters in width.</p>\n<p>???</p>\n',
     answers: [
       {
-        text: ' <textarea name="message" rows="10" cols="30"></textarea>',
+        text: ' &lt;textarea name="message" rows="10" cols="30"&gt;&lt;/textarea&gt;',
       },
       {
-        text: ' <textarea name="message" rows="30" cols="10"></textarea>',
+        text: ' &lt;textarea name="message" rows="30" cols="10"&gt;&lt;/textarea&gt;',
       },
       {
-        text: ' <input type="textarea" name="message" rows="10" cols="30">',
+        text: ' &lt;input type="textarea" name="message" rows="10" cols="30"&gt;',
       },
       {
-        text: ' <input name="message" rows="10" cols="30"></input>',
+        text: ' &lt;input name="message" rows="10" cols="30"&gt;&lt;/input&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;textarea></code> element is used to represent a multi-line input text area.</p>\n<p>Simple example:</p>\n<pre><code class="language-html">&#x3C;textarea\n  name="textbox">\n&#x3C;/textarea>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="69"><g fill="none" fill-rule="evenodd"><rect width="320" height="69" fill="#FFF" rx="9"/><path fill="#FFF" stroke="#999" d="M20.5 15.5h142v38h-142z"/><path stroke="#666" stroke-linecap="square" d="M153.5 50.5l6-6"/><path fill="#D8D8D8" stroke="#979797" d="M153.5 50.5l6-6"/><path stroke="#666" stroke-linecap="square" d="M157 50.76777L158.76777 49"/><path fill="#D8D8D8" stroke="#979797" d="M157 50.76777L158.76777 49"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/MBJjjz)--> \n<p>The <code>&#x3C;textarea></code> element has many attributes. Some of the more common are:</p>\n<ul>\n<li><code>autocomplete</code> enables autocomplete for text area</li>\n<li><code>autofocus</code> sets focus on text area upon page load</li>\n<li><code>cols</code>  </li>\n<li><code>maxlength</code></li>\n<li><code>minlength</code></li>\n<li><code>readonly</code></li>\n<li><code>placeholder</code></li>\n<li><code>rows</code></li>\n</ul>\n<p>Example with attributes:</p>\n<pre><code class="language-html">&#x3C;textarea\n   name="textarea" rows="10"\n   cols="30"\n   placeholder="Enter text here">\n&#x3C;/textarea>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="165"><g fill="none" fill-rule="evenodd"><rect width="320" height="121" fill="#FFF" rx="9"/><rect width="320" height="121" fill="#FFF" rx="9"/><rect width="320" height="165" fill="#FFF" rx="9"/><path fill="#FFF" stroke="#999" d="M20.5 15.5h142v135h-142z"/><text fill="#757575" font-family="Roboto-Regular, Roboto" font-size="11"><tspan x="26" y="29">Enter text here</tspan></text><path stroke="#666" stroke-linecap="square" d="M152.5 146.5l6-6m-2.5 6.26777L157.76777 145"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/ajpmme)-->\n<p>In the example above, <code>rows="10"</code> specifies the number of visible text lines for the control,  <code>cols="30"</code> specifies the average characters width and the <code>placeholder</code> attribute presents a hint which disappears after the user types something and reappears if there is no input.</p>\n',

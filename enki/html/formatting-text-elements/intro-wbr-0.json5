@@ -14,16 +14,16 @@
     question: '<p>Mark the true statement regarding the <code>&#x3C;wbr></code> element.</p>\n<pre><code class="language-html">&#x3C;p>\n  http://www.enkipro.com/\n  &#x3C;wbr>path/filename.html\n&#x3C;/p>\n</code></pre>\n<p>???</p>\n',
     answers: [
       {
-        text: "<wbr> refers to 'line break opportunity'.",
+        text: "&lt;wbr&gt; refers to 'line break opportunity'.",
       },
       {
-        text: "<wbr> stands for 'Will Break Rows'.",
+        text: "&lt;wbr&gt; stands for 'Will Break Rows'.",
       },
       {
-        text: '<wbr> will force a line break.',
+        text: '&lt;wbr&gt; will force a line break.',
       },
       {
-        text: '<wbr> works best with a very long sentence.',
+        text: '&lt;wbr&gt; works best with a very long sentence.',
       },
     ],
     comment: "<p>The HTML <code>&#x3C;wbr></code>, or sometimes referred to as the <strong>Line Break Opportunity</strong> element, is used to indicate a position in a text where the browser 'may' break a line.</p>\n<p>You can use this to tell the browser that it can break a line in a place the browser wouldn't normally do it. Also, by doing so, you make the browser only break where the <code>&#x3C;wbr></code> element is. This means, for instance if you have a link where only the last word of the link doesn't fit the browser window and you have a <code>&#x3C;wbr></code> element at the middle of that link, as soon as the link can't fit the browsers breaks it at the <code>&#x3C;wbr></code> elements position.</p>\n<p>Let's say you have this link:</p>\n<pre><code class=\"language-html\">&#x3C;p>\n  http://www.enkipro.com/path/filename.html\n&#x3C;/p>\n</code></pre>\n<p>If you add a <code>&#x3C;wbr></code> element before the word <code>path</code> like so: <code>&#x3C;wbr>/path/filename.html</code>, then as soon as the link doesn't fit the browser's window, the browser creates a line break like so:</p>\n<p><img src=\"%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%2274%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%2274%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Roboto-Regular%2C%20Roboto%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2220%22%20y%3D%2234%22%3Ehttp%3A%2F%2Fwww.enkipro.com%2F%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2220%22%20y%3D%2253%22%3Epath%2Ffilename.html%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E\" alt=\"element-wbr\"></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/rrjxao)-->\n<p>Here's another example of adding a <code>&#x3C;wbr></code> element to a long word to tell the browser where to break in case it doesn't fit the screen.</p>\n<p>Lets take the unusually long name for a town in northern Wales, England.</p>\n<p>Name: <strong>Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch</strong>.</p>\n<p>Example with a <code>&#x3C;wbr></code> element between <code>Llanfairpwllgwyngyllgogerychwyrn</code> and <code>drobwllllantysiliogogogoch</code>:</p>\n<p><img src=\"%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%2274%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%22320%22%20height%3D%2274%22%20fill%3D%22%23FFF%22%20rx%3D%229%22%2F%3E%3Ctext%20fill%3D%22%23000%22%20font-family%3D%22Roboto-Regular%2C%20Roboto%22%20font-size%3D%2216%22%3E%3Ctspan%20x%3D%2220%22%20y%3D%2234%22%3ELlanfairpwllgwyngyllgogerychwyrn%3C%2Ftspan%3E%20%3Ctspan%20x%3D%2220%22%20y%3D%2253%22%3Edrobwllllantysiliogogogoch%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E\" alt=\"element-wbr-2\"></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/wxgMKr)-->\n<p><strong>Note:</strong> Don't confused <code>&#x3C;wbr></code> with the <code>&#x3C;br></code> element. The <code>&#x3C;br></code> elements always creates a line break, whereas the <code>&#x3C;wbr></code> only specifies the position where the line should break if it needs to.</p>\n",

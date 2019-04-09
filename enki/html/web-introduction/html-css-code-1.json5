@@ -13,7 +13,7 @@
     question: '<p>Which is HTML code and which is CSS code?</p>\n<p>HTML: ???\nCSS: ???</p>\n',
     answers: [
       {
-        text: "<p>I'm a style.</p>",
+        text: "&lt;p&gt;I'm a style.&lt;/p&gt;",
       },
       {
         text: 'p { font-size: 16px; }',

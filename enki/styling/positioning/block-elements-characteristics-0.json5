@@ -16,16 +16,16 @@
         text: 'not * a block element?',
       },
       {
-        text: '<span>',
+        text: '&lt;span&gt;',
       },
       {
-        text: '<form>',
+        text: '&lt;form&gt;',
       },
       {
-        text: '<ul>',
+        text: '&lt;ul&gt;',
       },
       {
-        text: '<article>',
+        text: '&lt;article&gt;',
       },
     ],
     comment: '<p>A block element has the following characteristics:</p>\n<ul>\n<li>It always begins on a new line</li>\n<li>Its <code>height</code>, <code>line-height</code>, <code>top-margin</code> and <code>bottom-margin</code> can be specified</li>\n<li>Its width defaults to 100% of its containing element, unless otherwise specified</li>\n</ul>\n<p>Examples of block elements include <code>&#x3C;div></code>, <code>&#x3C;p></code>, <code>&#x3C;h1></code>, <code>&#x3C;form></code>, <code>&#x3C;ul></code> and <code>&#x3C;li></code>.</p>\n<p>Most of the newer tags, such as <code>&#x3C;article></code>, <code>&#x3C;aside></code>, <code>&#x3C;main></code> etc. are also displayed as <code>block</code> by default.</p>\n',

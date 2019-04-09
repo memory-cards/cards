@@ -19,7 +19,7 @@
         text: 'Important to add to reserve space during page load.',
       },
       {
-        text: 'The height attribute is used only with <input type="image">.',
+        text: 'The height attribute is used only with &lt;input type="image"&gt;.',
       },
       {
         text: 'The measurements are in pixels.',

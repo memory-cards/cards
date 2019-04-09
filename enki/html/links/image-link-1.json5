@@ -13,22 +13,22 @@
     question: '<p>What is the correct HTML for creating a linked image?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<a href="http://enkipro.com"><img src="icon.svg" alt="Click Here"></a>',
+        text: '&lt;a href="http://enkipro.com"&gt;&lt;img src="icon.svg" alt="Click Here"&gt;&lt;/a&gt;',
       },
       {
-        text: '<a href="http://enkipro.com"><img href="icon.svg" alt="Click Here"></a>',
+        text: '&lt;a href="http://enkipro.com"&gt;&lt;img href="icon.svg" alt="Click Here"&gt;&lt;/a&gt;',
       },
       {
-        text: '<a href="http://enkipro.com"><img src="icon.svg" alt="Click Here">',
+        text: '&lt;a href="http://enkipro.com"&gt;&lt;img src="icon.svg" alt="Click Here"&gt;',
       },
       {
-        text: '<a url="http://enkipro.com"><img src="icon.svg"></a>',
+        text: '&lt;a url="http://enkipro.com"&gt;&lt;img src="icon.svg"&gt;&lt;/a&gt;',
       },
       {
-        text: '<img src="icon.svg"><a>http://enkipro.com</a></img>',
+        text: '&lt;img src="icon.svg"&gt;&lt;a&gt;http://enkipro.com&lt;/a&gt;&lt;/img&gt;',
       },
       {
-        text: '<a link="http://enkipro.com"><img src="icon.svg" alt="Click Here"></a>',
+        text: '&lt;a link="http://enkipro.com"&gt;&lt;img src="icon.svg" alt="Click Here"&gt;&lt;/a&gt;',
       },
     ],
     comment: '<p>In order to add a link onto an image, simply place the link <code>&#x3C;a> &#x3C;/a></code> element around any image element <code>&#x3C;img></code>:</p>\n<pre><code class="language-html">&#x3C;a href="http://enki.com">\n  &#x3C;img\n    src="icon.png"\n    alt="Click to visit Enki"\n  >\n&#x3C;/a>\n</code></pre>\n<p>Actually, anything added within a link element in HTML5 will be linked - this includes any blocks of text, any number of images, etc. But just because anything can be linked, doesn\'t mean it all should. Best practices typically encourage all elements to be individually linked. But, linking both an image and text would be written like this: </p>\n<pre><code class="language-html">&#x3C;a href="http://enki.com">\n  &#x3C;img\n    src="icon.svg"\n    alt="Click Here"\n  >\n  &#x3C;p>Link to Enki&#x3C;/p>\n&#x3C;/a>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="93"><g fill="none" fill-rule="evenodd"><rect width="320" height="93" fill="#FFF" rx="9"/><text fill="#0001EE" font-family="ArialMT, Arial" font-size="16"><tspan x="20" y="71">Link to Enki</tspan></text><path fill="#262B32" d="M33 28l-13 8.44444v2.11112L33 47v-3.69444L23.9 37.5l9.1-5.80556z"/><path fill="#FB703E" d="M41 36.21212v-.24242C41 25.32318 45.49495 20 54.48498 20c1.8821 0 3.58898.29798 5.1207.89394 1.5317.59596 2.74804 1.29798 3.64905 2.10606.901.80808 1.69187 1.86363 2.37263 3.16667.68076 1.30303 1.1663 2.40908 1.45662 3.31818.29033.9091.51557 2.0101.67575 3.30303.16018 1.25253.24027 2.0404.24027 2.36364v1.33333l-.12013 2.18182H45.505c.2803 3.11112 1.22134 5.36868 2.82313 6.77272 1.60179 1.40405 3.9744 2.10606 7.11791 2.10606 4.0503 0 7.31796-.6317 9.7826-1.91536l.75911 4.2184C63.02446 51.28283 59.4305 52 55.20578 52h-.1802c-1.802 0-3.45383-.21717-4.9555-.65152-1.50168-.43434-2.9783-1.18686-4.42992-2.25757-1.45162-1.07071-2.58788-2.6818-3.4088-4.83333C41.41047 42.10605 41 39.49496 41 36.42424v-.21212zm5.03525-1.51515h17.95996c0-.70707-.0851-1.49495-.25529-2.36364-.17019-.86869-.51056-1.98484-1.02113-3.34848-.51057-1.36364-1.43159-2.5-2.76307-3.4091-1.33149-.90909-2.9783-1.36363-4.9405-1.36363-3.04339 0-5.25082.79797-6.62235 2.39394-1.37153 1.59597-2.1574 4.29291-2.35762 8.09091z"/><path fill="#262B32" d="M83.88889 17H87L76.11111 51H73zM102 28l-13 8.44444v2.11112L102 47v-3.69444L92.9 37.5l9.1-5.80556z"/><path stroke="#0001EE" stroke-linecap="square" d="M21 73h84"/></g></svg></p>\n',

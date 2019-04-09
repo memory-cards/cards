@@ -14,22 +14,22 @@
     question: '<p>What code is used to create a link that when clicked will download...\na) a non-web file: ???\nb) a web file: ???</p>\n',
     answers: [
       {
-        text: '<a href="enki.zip">Download File</a>',
+        text: '&lt;a href="enki.zip"&gt;Download File&lt;/a&gt;',
       },
       {
-        text: '<a href="enki.jpg" download>Download Image</a>',
+        text: '&lt;a href="enki.jpg" download&gt;Download Image&lt;/a&gt;',
       },
       {
-        text: '<a href="enki.png">Download File</a>',
+        text: '&lt;a href="enki.png"&gt;Download File&lt;/a&gt;',
       },
       {
-        text: '<a src="enki.png">Download File</a>',
+        text: '&lt;a src="enki.png"&gt;Download File&lt;/a&gt;',
       },
       {
-        text: '<a src="enki.jpg">Download Image</a>',
+        text: '&lt;a src="enki.jpg"&gt;Download Image&lt;/a&gt;',
       },
       {
-        text: '<a href="enki.jpg download">Download File</a>',
+        text: '&lt;a href="enki.jpg download"&gt;Download File&lt;/a&gt;',
       },
     ],
     comment: '<p>When links connect to web files or images, the page will navigate to that content and display accordingly. But when non-web files or images are linked, those files will be downloaded to the user\'s computer.  </p>\n<p>Example of a non-web download link:</p>\n<pre><code class="language-html">&#x3C;a href="enki.zip">\nDownload Zip\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="54"><g fill="none" fill-rule="evenodd"><rect width="320" height="54" fill="#FFF" rx="9"/><text fill="#0001EE" font-family="ArialMT, Arial" font-size="16"><tspan x="20" y="33">Download Zip</tspan></text><path stroke="#0001EE" stroke-linecap="square" d="M20.5 34.5h97"/></g></svg></p>\n<p>When web files and images are meant to be downloaded by the user, then the download attribute can be used to force that content to download just like a non-web file or image.   </p>\n<p>Example of a web download link:</p>\n<pre><code class="language-html">&#x3C;a\n  href="summary.html"\n  download="Today\'s%20Summary">\nDownload Web File\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="54"><g fill="none" fill-rule="evenodd"><rect width="320" height="54" fill="#FFF" rx="9"/><text fill="#0001EE" font-family="ArialMT, Arial" font-size="16"><tspan x="20" y="33">Download Web File</tspan></text><path stroke="#0001EE" stroke-linecap="square" d="M20.5 34.5h137"/></g></svg></p>\n<p>When the download attribute has a value, it will rename the downloaded file. This can be useful when your file is named <code>123z12zv824.docx</code> on your server, but you want it downloaded with something more friendly like <code>Enki%20Notes.docx</code>. Keep in mind that <code>%20</code> needs to replace any spaces in the filename.</p>\n<p>When the value within the download attribute is empty (like <code>download=""></code>, then the downloaded file will retain its original filename. Of course, since the file will be a local file for the user, they can always rename that file as they wish, too.</p>\n',

@@ -28,7 +28,7 @@
         text: 'href',
       },
       {
-        text: '<a>',
+        text: '&lt;a&gt;',
       },
       {
         text: 'write',

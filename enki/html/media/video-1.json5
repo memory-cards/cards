@@ -13,22 +13,22 @@
     question: '<p>Which HTML element is used to insert a movie clip or video stream into the document?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<video>',
+        text: '&lt;video&gt;',
       },
       {
-        text: '<vid>',
+        text: '&lt;vid&gt;',
       },
       {
-        text: '<media>',
+        text: '&lt;media&gt;',
       },
       {
-        text: '<youtube>',
+        text: '&lt;youtube&gt;',
       },
       {
-        text: '<stream>',
+        text: '&lt;stream&gt;',
       },
       {
-        text: '<movie>',
+        text: '&lt;movie&gt;',
       },
     ],
     comment: '<p>The <code>&#x3C;video></code> tag was introduced in HTML5 and is used to embed videos on a web page or document.</p>\n<pre><code class="language-html">&#x3C;video src="/video/time-lapse.mp4"\n   width="525" height="360" controls>\n  &#x3C;p>\n    You\'re seeing this because\n    your old browser does not \n    support the &#x3C;video> element.\n  &#x3C;/p>\n&#x3C;/video>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="206"><defs><linearGradient id="a" x1="50%" x2="50%" y1=".57352%" y2="100%"><stop offset="0%" stop-color="#9C9C9C"/><stop offset="100%" stop-color="#D8D8D8"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><rect width="320" height="206" fill="#FFF" rx="9"/><g transform="translate(20 20)"><path fill="url(#a)" stroke="#979797" d="M.5.5h279v165H.5z"/><rect width="240" height="4" x="20" y="149" fill="#6A686A" rx="2"/><circle cx="22" cy="151" r="6" fill="#D8D8D8" stroke="#979797"/></g><text fill="#6A686A" font-family="Roboto-Regular, Roboto" font-size="14"><tspan x="37" y="158">0:00 / 3:14</tspan></text><g stroke="#ECE8E6" transform="translate(134 64)"><circle cx="26" cy="26" r="26" fill="#EEE"/><path fill="#000" d="M36 26.5L22 35V18z"/></g><g fill="#6A686A" transform="translate(275 144)"><circle cx="2" cy="2" r="2"/><circle cx="2" cy="8" r="2"/><circle cx="2" cy="14" r="2"/></g><g fill="#6A686A"><path d="M238 145h5v2h-5z"/><path d="M240 145v5h-2v-5zm-2 14v-5h2v5z"/><path d="M238 157h5v2h-5zm14 2h-5v-2h5z"/><path d="M250 159v-5h2v5zm2-14v5h-2v-5z"/><path d="M252 147h-5v-2h5z"/></g><path fill="#6A686A" d="M204 149h9v6h-9z"/><path fill="#6A686A" d="M206 152l7-8v16z"/><path stroke="#6A686A" d="M215.4487 144.49083c2.994.84816 4.68394 2.50877 5.06981 4.98183.38587 2.47305.20052 4.52745-.55604 6.16321-1.036 1.6601-2.5406 3.05044-4.51376 4.17103"/><path fill="#6A686A" d="M215 149c1.30582.605 1.95873 1.49717 1.95873 2.67654 0 1.17937-.65291 2.28719-1.95873 3.32346v-6z"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/MBYOJb)--> \n<p>In the example, the paragraph within the <code>video</code> element provides a text note to uses that do not have browsers that support HTML5 video - this is called \'fallback content\'. Images can be used as fall backs, too!</p>\n<p>Adding the <code>controls</code> attribute allows the browser to offer controls to the user for play/pause playback, increase/decrease volume buttons, and audio playback.</p>\n<p>There are many more functionalities you can add to your videos with attributes. Here are some of them:</p>\n<ul>\n<li><code>poster</code> = adds a poster for when the video can\'t play or hasn\'t loaded yet</li>\n<li><code>autoplay</code> = plays the video as soon as it\'s available</li>\n<li><code>muted</code> = sets the default setting for the audio part of the video</li>\n<li><code>loop</code> = makes the video play again as soon as it finishes</li>\n</ul>\n',

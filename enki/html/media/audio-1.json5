@@ -13,19 +13,19 @@
     question: '<p>Which HTML element is used to insert an audio file into the document?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<audio>',
+        text: '&lt;audio&gt;',
       },
       {
-        text: '<mp3>',
+        text: '&lt;mp3&gt;',
       },
       {
-        text: '<sound>',
+        text: '&lt;sound&gt;',
       },
       {
-        text: '<music>',
+        text: '&lt;music&gt;',
       },
       {
-        text: '<itunes>',
+        text: '&lt;itunes&gt;',
       },
     ],
     comment: '<p>Since HTML5, the <code>&#x3C;audio></code> tag is used to embed audio on a web page or document. </p>\n<p>Like so:</p>\n<pre><code class="language-html">&#x3C;audio src="audio.mp3" controls>\n  &#x3C;p>\n    You\'re seeing this because\n     your browser does not support\n     the &#x3C;audio> element.\n  &#x3C;/p>\n&#x3C;/audio>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="92"><g fill="none" fill-rule="evenodd"><rect width="320" height="92" fill="#FFF" rx="9"/><rect width="280" height="52" x="20" y="20" fill="#F1F3F4" rx="26"/><g transform="translate(150 38)"><rect width="74" height="4" x="6" y="4" fill="#C1C2C3" rx="2"/><circle cx="6" cy="6" r="6" fill="#0B0B0B"/></g><text fill="#6A686A" font-family="Roboto-Regular, Roboto" font-size="14"><tspan x="69.5" y="49">0:00 / 0:06</tspan></text><path fill="#000" stroke="#ECE8E6" d="M56 44.5L42 53V36z"/><g fill="#000" transform="translate(274 36)"><circle cx="2" cy="2" r="2"/><circle cx="2" cy="8" r="2"/><circle cx="2" cy="14" r="2"/></g><path fill="#000" d="M243.5 41h9v6h-9z"/><path fill="#000" d="M245.5 44l7-8v16z"/><path stroke="#000" d="M254.9487 36.49083c2.994.84816 4.68394 2.50877 5.06981 4.98183.38587 2.47305.20052 4.52745-.55604 6.16321-1.036 1.6601-2.5406 3.05044-4.51376 4.17103"/><path fill="#000" d="M254.5 41c1.30582.605 1.95873 1.49717 1.95873 2.67654 0 1.17937-.65291 2.28719-1.95873 3.32346v-6z"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/ajzGRe)--> \n<p>The paragraph in the example above is to provide fallback content for user\'s that do not have browsers that support HTML5 audio.</p>\n<p>Adding the <code>controls</code> attribute allows the browser to offer controls to the user for play/pause playback, increase/decrease volume buttons, and audio playback.</p>\n<p>You can also add more songs via the <code>&#x3C;source></code> element.</p>\n<p>Example 1:</p>\n<pre><code class="language-html">&#x3C;audio controls>\n  &#x3C;source src="one_song.mp3"\n    type="audio/mpeg">\n     You\'re seeing this because\n     your browser does not support\n     the &#x3C;audio> element.\n&#x3C;/audio>\n</code></pre>\n<p>Example 2:</p>\n<pre><code class="language-html">&#x3C;audio controls>\n  &#x3C;source src="some_song.mp3"\n    type="audio/mpeg">\n  &#x3C;source src="some_song.ogg"\n    type="audio/ogg">\n  &#x3C;source src="some_song"\n    type="some_song.wav">\n     You\'re seeing this because\n     your browser does not support\n     the &#x3C;audio> element.\n&#x3C;/audio>\n</code></pre>\n<p>In the first example, we have added a song and specified a file format through the <code>source/type</code> attributes.</p>\n<p>In the second example above, we have added an audio player with the same song, but 3 different file formats.\nThese 3, <code>.mp3</code>,<code>.ogg</code> and <code>.wav</code> are currently the supported formats for most browsers.</p>\n<p>Adding more file formats is good for when a browser can\'t play a particular file format, so when it can\'t load it goes down to try the second one, and later the third.</p>\n',

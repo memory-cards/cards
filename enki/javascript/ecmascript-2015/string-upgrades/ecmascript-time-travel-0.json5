@@ -13,13 +13,13 @@
     question: '<pre><code class="language-javascript">// ES5\nvar half = function(x) {\n  return x/2;\n}\n// ES6 equivalent:  \nvar half = (x) ??? {\n  return x/2;\n}\n</code></pre>\n<p>%exp\nArrow function expressions have a shorter syntax than a keyword function expression.</p>\n<p>The *<em>arrow function</em>\n%</p>\n',
     answers: [
       {
-        text: '=>',
+        text: '=&gt;',
       },
       {
-        text: '->',
+        text: '-&gt;',
       },
       {
-        text: '==>',
+        text: '==&gt;',
       },
       {
         text: "does not create a new execution context, so it inherits it's parent's this` or `arguments.",

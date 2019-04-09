@@ -19,7 +19,7 @@
         text: "Google will ignore meta tags it doesn't recognize.",
       },
       {
-        text: 'Are added to the <head> of nearly every web page.',
+        text: 'Are added to the &lt;head&gt; of nearly every web page.',
       },
       {
         text: 'Are used to provide information to all sorts of clients.',

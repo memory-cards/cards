@@ -13,7 +13,7 @@
     question: '<p>Complete the following functional component such that:</p>\n<ul>\n<li><code>text</code> prop is displayed within a <code>&#x3C;h1></code></li>\n<li>all other <code>props</code> properties are used as *<em>DOM</em></li>\n</ul>\n<pre><code class="language-jsx">function Enki({text, ???}) {\n  return &#x3C;h1 {...props}>???&#x3C;/h1>;\n}\n</code></pre>\n',
     answers: [
       {
-        text: 'attributes for the <h1> element',
+        text: 'attributes for the &lt;h1&gt; element',
       },
       {
         text: '...props',

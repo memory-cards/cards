@@ -22,7 +22,7 @@
         text: 'utf-8',
       },
       {
-        text: 'First line of code within the <head> element.',
+        text: 'First line of code within the &lt;head&gt; element.',
       },
       {
         text: 'char',
@@ -43,10 +43,10 @@
         text: 'Immediately after the DOCTYPE.',
       },
       {
-        text: 'Anywhere within the <head> element.',
+        text: 'Anywhere within the &lt;head&gt; element.',
       },
       {
-        text: 'Last line of code within the <head> element.',
+        text: 'Last line of code within the &lt;head&gt; element.',
       },
       {
         text: 'Anywhere before the first character in the document.',

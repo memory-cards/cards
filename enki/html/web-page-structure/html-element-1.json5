@@ -13,19 +13,19 @@
     question: '<p>What is the root element of an HTML document?</p>\n<p>???</p>\n<p>What HTML element is best to assign the document’s primary language?</p>\n<p><code>&#x3C;??? lang="en-GB"></code></p>\n',
     answers: [
       {
-        text: '<html>',
+        text: '&lt;html&gt;',
       },
       {
         text: 'html',
       },
       {
-        text: '<head>',
+        text: '&lt;head&gt;',
       },
       {
-        text: '<body>',
+        text: '&lt;body&gt;',
       },
       {
-        text: '<root>',
+        text: '&lt;root&gt;',
       },
       {
         text: 'tree',

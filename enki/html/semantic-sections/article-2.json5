@@ -13,25 +13,25 @@
     question: '<h3>How much do you know about the HTML sectioning elements?</h3>\n<p>Which HTML container would be best when used on its own in a feed reader?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<article>',
+        text: '&lt;article&gt;',
       },
       {
-        text: '<section>',
+        text: '&lt;section&gt;',
       },
       {
-        text: '<main>',
+        text: '&lt;main&gt;',
       },
       {
-        text: '<comment>',
+        text: '&lt;comment&gt;',
       },
       {
-        text: '<news>',
+        text: '&lt;news&gt;',
       },
       {
-        text: '<aside>',
+        text: '&lt;aside&gt;',
       },
       {
-        text: '<forum>',
+        text: '&lt;forum&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;article></code> element is used to represent independent, self-contained content in a document, page, website or an application. This content is independently reusable and shared outside or within a web page.</p>\n<p>The <code>&#x3C;article></code> element can contain:</p>\n<ul>\n<li>a forum post</li>\n<li>a magazine</li>\n<li>a newspaper article</li>\n<li>blog entry</li>\n</ul>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;article>\n  &#x3C;h1>Facebook&#x3C;/h1>\n  &#x3C;p>\n    Connect with friends,\n    family and other people you know.\n    Share photos and videos,\n    send messages and get updates.\n  &#x3C;/p>\n&#x3C;/article>\n</code></pre>\n<p>Additionally, each <code>&#x3C;article></code> element should be properly identified by adding a heading element(<code>&#x3C;h1></code>-<code>&#x3C;h6></code>) as it\'s child.</p>\n<p>You can also nest <code>&#x3C;article></code> elements. When nested within another <code>&#x3C;article></code> element, the inner <code>&#x3C;article></code> element represents an article related to the outer element. For instance, comments on a social media post can be <code>&#x3C;article></code> elements nested within the <code>&#x3C;article></code> element representing that social media post.</p>\n',

@@ -30,7 +30,7 @@
         text: 'shuffle',
       },
       {
-        text: '() =>',
+        text: '() =&gt;',
       },
       {
         text: 'arr',

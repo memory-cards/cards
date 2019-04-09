@@ -14,25 +14,25 @@
     question: '<p>What HTML element is used to make the text font size one size smaller?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<small>',
+        text: '&lt;small&gt;',
       },
       {
-        text: '<smaller>',
+        text: '&lt;smaller&gt;',
       },
       {
-        text: '<text-size>',
+        text: '&lt;text-size&gt;',
       },
       {
-        text: '<sp>',
+        text: '&lt;sp&gt;',
       },
       {
-        text: '<fp>',
+        text: '&lt;fp&gt;',
       },
       {
-        text: '<sub>',
+        text: '&lt;sub&gt;',
       },
       {
-        text: '<sup>',
+        text: '&lt;sup&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;small></code> element, often referred to as <code>fine print</code>, is used to change the font size of some text to one size smaller (from large to medium or medium to small, etc.), up to the smallest size the browsers allows.</p>\n<p>This element is used for adding short phrases or comments, short blocks of text, a copyright notice, or other legal text.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;p>Enki is an educational\ntechnology company.&#x3C;/p>\n&#x3C;hr>\n&#x3C;p>&#x3C;small>The content is licensed\nunder a &#x3C;a rel="license" href="#">\nCreative Commons License&#x3C;/a> and\nby using this site, you agree to\nour &#x3C;a href="#">Terms of Use&#x3C;/a>\nand our &#x3C;a href="#">Privacy Policy\n&#x3C;/a>&#x3C;/small>.&#x3C;/p>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="194"><g fill="none" fill-rule="evenodd"><rect width="320" height="194" fill="#FFF" rx="9"/><text font-family="Roboto-Regular, Roboto" font-size="13"><tspan x="20" y="96" fill="#000">The content is licensed under a </tspan> <tspan x="203.04102" y="96" fill="#0001EE">Creative </tspan> <tspan x="20" y="111" fill="#0001EE">Commons License</tspan> <tspan x="127.77685" y="111" fill="#000"> and by using this site, you </tspan> <tspan x="20" y="126" fill="#000">agree to our </tspan> <tspan x="92.33154" y="126" fill="#0B00CD">Terms of Use</tspan> <tspan x="169.22705" y="126" fill="#000"> and our </tspan> <tspan x="219.43701" y="126" fill="#0B00CD">Privacy </tspan> <tspan x="20" y="141" fill="#0B00CD">Policy</tspan> <tspan x="54.11865" y="141" fill="#000">.</tspan></text><path stroke="#0001EE" stroke-linecap="square" d="M202.5 98.5h48m-157 30h76m51.5.5h32M21 144h25"/><path stroke="#000" stroke-linecap="square" d="M21.5 71.5h277"/><text fill="#000" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="20" y="34">Enki is an educational technology </tspan> <tspan x="20" y="53">company.</tspan></text></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/NBdxNX)-->\n<p>By default, the font-size is generally set to .8em smaller than the existing text, which is also often 1 font size smaller. In this example the "Test" text will display at the same size:</p>\n<pre><code class="language-html">&#x3C;h1>&#x3C;small>Test&#x3C;/small>&#x3C;/h1>\n&#x3C;h2>Test&#x3C;/h2>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="105"><g fill="none" fill-rule="evenodd"><rect width="320" height="105" fill="#FFF" rx="9"/><text fill="#000" font-family="Roboto-Bold, Roboto" font-size="24" font-weight="bold"><tspan x="20" y="85">Test</tspan></text><text fill="#000" font-family="Roboto-Bold, Roboto" font-size="24" font-weight="bold"><tspan x="20" y="34">Test</tspan></text></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/OwWMbj)-->\n',

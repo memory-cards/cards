@@ -13,22 +13,22 @@
     question: '<p>Which HTML container element should only be used once within a page layout?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<main>',
+        text: '&lt;main&gt;',
       },
       {
-        text: '<nav>',
+        text: '&lt;nav&gt;',
       },
       {
-        text: '<head>',
+        text: '&lt;head&gt;',
       },
       {
-        text: '<footer>',
+        text: '&lt;footer&gt;',
       },
       {
-        text: '<one>',
+        text: '&lt;one&gt;',
       },
       {
-        text: '<solo>',
+        text: '&lt;solo&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;main></code> element is used to specify the main content of a web page, document or an application and there should <strong>only be one per web page</strong>. </p>\n<p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="202"><defs><path id="a" d="M21 36h274v130H21V36z"/><mask id="b" width="274" height="130" x="0" y="0" fill="#fff"><use xlink:href="#a"/></mask></defs><g fill="none" fill-rule="evenodd"><rect width="320" height="147" y="27" fill="#FFF" rx="9" transform="rotate(-180 160 100.5)"/><path fill="#3E94EC" d="M320 28H0V9c0-4.97056 4.02944-9 9-9h302c4.97056 0 9 4.02944 9 9v19zM0 174h320v19c0 4.97056-4.02944 9-9 9H9c-4.97056 0-9-4.02944-9-9v-19z"/><text fill="#FFF" font-family="DINCondensed-Bold, DIN Condensed" font-size="16" font-weight="bold"><tspan x="23" y="21">LOGO</tspan></text><use stroke="#000" stroke-dasharray="3" stroke-linecap="square" stroke-width="2" mask="url(#b)" xlink:href="#a"/><text fill="#FFF" font-family="DINCondensed-Bold, DIN Condensed" font-size="16" font-weight="bold"><tspan x="132" y="195">COPYRIGHT</tspan></text><text fill="#000" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400"><tspan x="33" y="58">Main</tspan></text></g></svg></p>\n<p>It usually consists of content that is directly related to the central topic, or the central functionality of an application.   </p>\n<p>Also, the <code>&#x3C;main></code> element should not contain content that is repeated throughout the whole website, or across multiple documents, such as:</p>\n<ul>\n<li>copyright information</li>\n<li>navigational links</li>\n<li>search forms</li>\n<li>sidebars</li>\n<li>site logo</li>\n</ul>\n<p>Example of the main content of a page, in this case, a page describing vehicles:</p>\n<pre><code class="language-html">&#x3C;header>\n  &#x3C;img src="logo.svg" alt="Company Logo">\n&#x3C;/header>\n&#x3C;main>\n  &#x3C;h1>Vehicles&#x3C;/h1>\n  &#x3C;p>\n    Vehicles are ways of transports\n    humans made of ease of transport.\n  &#x3C;/p>\n\n &#x3C;article>\n    &#x3C;h2>Cars&#x3C;/h2>\n    &#x3C;p>\n      This is a ground vehicle\n      which has 4 tires,\n      is very stable and is\n      perfect for driving\n      small groups\n      like family or friends,\n      between 4-6 people.\n    &#x3C;/p>\n    &#x3C;p>... &#x3C;/p>\n &#x3C;/article>\n\n &#x3C;article>\n    &#x3C;h2>Bus&#x3C;/h2>\n    &#x3C;p>\n      This is also a ground vehicle\n      which has 8-12 tires,\n      is also very stable,\n      and is used to transport\n      large groups of people\n      at once(80 max).\n    &#x3C;/p>\n    &#x3C;p>... &#x3C;/p>\n  &#x3C;/article>\n\n &#x3C;article>\n    &#x3C;h2>Aeroplane&#x3C;/h2>\n    &#x3C;p>\n      This is a flying vehicle,\n      which is used to transport\n      large amounts of people\n      (up to 200 people),\n      usualy to places that\n      ground vehicles can\'t\n      get too easily, or\n      can\'t get fast enough.\n    &#x3C;/p>\n    &#x3C;p>... &#x3C;/p>\n &#x3C;/article>\n&#x3C;/main>\n&#x3C;footer>\n    &#x3C;p>© Copyright&#x3C;/p>\n&#x3C;/footer>\n</code></pre>\n<p>The <code>&#x3C;main></code> container doesn\'t have any visual style without CSS. The CSS in this example may be a bit complex at this time, but hopefully it inspires you to learn more CSS! </p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/QBEyxw)-->\n<p>As you can see in the example above, we have added <code>&#x3C;article></code> within our <code>&#x3C;main></code> element to clearly separate each type of vehicle. The <code>main</code> is also between the <code>header</code> and <code>footer</code>.</p>\n',

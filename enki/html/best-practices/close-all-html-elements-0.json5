@@ -19,7 +19,7 @@
         text: 'Although HTML5 isn’t strict about using open and close tags, using them certainly does makes the document easier to inspect.',
       },
       {
-        text: "Certain elements like <body>` or `<head> don't require the use of either of the tags, however, it helps with readability.",
+        text: "Certain elements like &lt;body&gt;` or `&lt;head&gt; don't require the use of either of the tags, however, it helps with readability.",
       },
       {
         text: 'HTML elements have to have a closing tag to be displayed properly.',

@@ -13,19 +13,19 @@
     question: '<p>Complete the missing HTML tags to make the JavaScript code run directly on the web page.</p>\n<pre><code class="language-html">???\n  console.log("enki");\n???\n</code></pre>\n',
     answers: [
       {
-        text: '<script>',
+        text: '&lt;script&gt;',
       },
       {
-        text: '</script>',
+        text: '&lt;/script&gt;',
       },
       {
-        text: '<script/>',
+        text: '&lt;script/&gt;',
       },
       {
-        text: '/>',
+        text: '/&gt;',
       },
       {
-        text: '<script',
+        text: '&lt;script',
       },
       {
         text: 'src=',

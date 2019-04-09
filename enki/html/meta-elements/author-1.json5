@@ -15,19 +15,19 @@
     question: '<p>Which line of code shares info about the creator of the web page?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<meta name="author" content="John Doe">',
+        text: '&lt;meta name="author" content="John Doe"&gt;',
       },
       {
-        text: '<meta creator="author" content="John Doe">',
+        text: '&lt;meta creator="author" content="John Doe"&gt;',
       },
       {
-        text: '<meta author="name" content="John Doe">',
+        text: '&lt;meta author="name" content="John Doe"&gt;',
       },
       {
-        text: '<meta name="author" author="John Doe">',
+        text: '&lt;meta name="author" author="John Doe"&gt;',
       },
       {
-        text: '<meta name="author" creator="John Doe">',
+        text: '&lt;meta name="author" creator="John Doe"&gt;',
       },
     ],
     comment: '<p>The HTML meta <code>author</code> attribute is used to provide information about who the author of the web page is.</p>\n<pre><code class="language-html">&#x3C;meta\n  name="author"\n  content="John Doe">\n</code></pre>\n<p>The author metadata has no effect on search engine optimization or SEO.</p>\n<p>Some content management systems (CMS) have an easier time tracking signed-in editors and will add the name of who last made changes to the page in order to make it easier to track who is responsible for the content on that page.</p>\n',

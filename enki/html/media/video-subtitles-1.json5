@@ -16,10 +16,10 @@
         text: 'Add the default attribrute to one of them.',
       },
       {
-        text: 'The first file assigned in the <track>.',
+        text: 'The first file assigned in the &lt;track&gt;.',
       },
       {
-        text: 'The last file assigned in the <track>.',
+        text: 'The last file assigned in the &lt;track&gt;.',
       },
       {
         text: 'Subtitles are always off and must be selected by the user.',

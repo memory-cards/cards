@@ -28,7 +28,7 @@
         text: 'func()',
       },
       {
-        text: '() =>',
+        text: '() =&gt;',
       },
     ],
     comment: '<p>ES6 method shorthand allows us to remove the function key word and colon making code more succinct.</p>\n<p>For example, prior to ES6, you would have written something similar to the below:</p>\n<pre><code class="language-javascript">return {\n   func: function func() {\n   ...\n   }\n};\n</code></pre>\n<p>With ES6 this can now become:</p>\n<pre><code class="language-javascript">return {\n    func() {\n    ...\n    }\n};\n</code></pre>\n',

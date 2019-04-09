@@ -43,7 +43,7 @@
         text: 'switch',
       },
       {
-        text: '() =>',
+        text: '() =&gt;',
       },
     ],
     comment: '<p><strong>JSX</strong> is a JavaScript extension intended to be a syntactic sugar for function calls and object construction.</p>\n<p>Due to this, <code>if-else</code> statements won\'t work inside <strong>JSX</strong> as they would translate as the following:</p>\n<pre><code class="language-jsx">&#x3C;div id={if (condition){\'msg\'}}> Hello&#x3C;/div>\n// will translate into:\nReact.createElement("div",\n{id: if (condition) { \'msg\' }}, "Hello");\n</code></pre>\n<p>Instead, ternary expressions can be used:</p>\n<pre><code class="language-jsx">&#x3C;div id={condition ?\'msg\':null}> Hello&#x3C;/div>\n</code></pre>\n<p>If ternary expressions are too convoluted, an <code>if-else</code> statement can be used outside the <strong>JSX</strong> to determine what components to use.</p>\n<p>Another alternative is that <em>immediately-invoked function expressions</em> can be used in-line inside <strong>JSX</strong>:</p>\n<pre><code class="language-jsx">&#x3C;p>\n  {(() => {\n    switch (this.state.somestate) {\n      case "one": return "enki";\n      case "two" : return "enki2";\n      case "three" : return "enki3";\n    }\n  })()}\n&#x3C;/p>\n</code></pre>\n',

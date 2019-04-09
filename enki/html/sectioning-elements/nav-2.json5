@@ -13,16 +13,16 @@
     question: '<h3>Quick question about organizing buttons in HTML?</h3>\n<p>Which container is best to organize the buttons that link the primary pages of the website?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<nav>',
+        text: '&lt;nav&gt;',
       },
       {
-        text: '<navigation>',
+        text: '&lt;navigation&gt;',
       },
       {
-        text: '<header>',
+        text: '&lt;header&gt;',
       },
       {
-        text: '<div>',
+        text: '&lt;div&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;nav></code> element is used to group the navigation of the page, such as primary website navigational links, table of contents, previous/next buttons, or breadcrumbs.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;nav>\n  &#x3C;a href="index.html">Home&#x3C;/a>\n  &#x3C;a href="about.html">About&#x3C;/a>\n  &#x3C;a href="contact.html">Contact&#x3C;/a>\n&#x3C;/nav>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="174"><defs><filter id="b" width="288.9%" height="168%" x="-94.4%" y="-34%" filterUnits="objectBoundingBox"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/><feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter><path id="a" d="M182 15h124v28H182V15z"/><mask id="c" width="124" height="28" x="0" y="0" fill="#fff"><use xlink:href="#a"/></mask></defs><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M311 174H9c-4.97056 0-9-4.02944-9-9V55h320v110c0 4.97056-4.02944 9-9 9z"/><path fill="#3E94EC" d="M320 55H0V9c0-4.97056 4.02944-9 9-9h302c4.97056 0 9 4.02944 9 9v46z"/><text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="124" y="160">Copyright </tspan></text><text fill="#FFF" font-family="DINCondensed-Bold, DIN Condensed" font-size="28" font-weight="bold"><tspan x="27" y="38">LOGO</tspan></text><text fill="#FFF" font-family="DINCondensed-Bold, DIN Condensed" font-size="16" font-weight="bold"><tspan x="191" y="35">Home About Contact</tspan></text><text fill="#000" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400"><tspan x="240" y="87">Nav</tspan></text><path stroke="#FFF" stroke-linecap="square" stroke-width="2" d="M245.84342 50.25509l7.87423 19.4894"/><g stroke="#000" filter="url(#b)" transform="rotate(-22 245.439 -593.925)"><path stroke-linecap="square" stroke-width="2" d="M4.5 3.5v21.02"/><path fill="#000" d="M4.5 0L9 7H0z"/></g><use stroke="#000" stroke-dasharray="3" stroke-linecap="square" stroke-width="2" mask="url(#c)" xlink:href="#a"/></g></svg></p>\n<p>The <code>&#x3C;nav></code> container doesn\'t have any visual style without CSS. The CSS in this example may be a bit complex at this time, but hopefully it inspires you to learn more CSS!   </p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/MBeKBe)-->\n<p><strong>Note:</strong> Not all links should be inside a <code>&#x3C;nav></code> element. The <code>&#x3C;nav></code> element is intended for major blocks of navigational links. For instance, links within the content of articles don\'t need to be wrapped within the <code>&#x3C;nav></code> element.</p>\n<p>Multiple <code>&#x3C;nav></code> elements can be placed within the web page or document, when appropriate.</p>\n<p>The <code>&#x3C;nav></code> element is also important for screen readers of visually disabled users. They use this element to determine whether the initial rendering of navigation-only content should be omitted.</p>\n',

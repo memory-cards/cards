@@ -14,16 +14,16 @@
     question: '<p>What code is used to create a link that when clicked opens the user’s default email program with an auto-loaded email address?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<a href="mailto:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="mailto:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
       {
-        text: '<a href="mail:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="mail:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
       {
-        text: '<a href="address:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="address:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
       {
-        text: '<a href="email:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="email:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
     ],
     comment: '<p>Although links typically navigate to other pages, using the anchor <code>mailto:</code> attribute in the path will open the user\'s default web program on their computer. The link will also auto load the assigned email address making it easy for user\'s to quickly send an email.</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="100" height="58"><g fill="#FFF"><path d="M99.99398 10.52613c0-1.67597-1.35523-3.04226-3.02366-3.04226H45.27895l7.27607 4.93685c.4698.32183.8553.7226 1.19862 1.15375h38.87995L62.61381 35.49576 47.9352 24.84481l-5.81242 3.94704L60.86105 42.2604c1.02395.7469 2.48157.73476 3.50552 0l29.5861-21.26547v30.90841H31.27495V36.15158l-1.21669.83191c-.95167.63153-2.01176.9473-3.10196.9473-.59028 0-1.16248-.12753-1.72265-.3097v17.33058C25.23364 56.6337 26.58887 58 28.25731 58h68.71903C98.64477 58 100 56.63371 100 54.95167V15.08042c0-.15788-.0241-.30362-.04819-.43721.03614-.16396.04819-.32791.04819-.4858v-3.63128h-.00602z"/><path d="M25.87327 31.65554c0 .40108.22222.77179.57656.96017.36035.1884.78077.16409 1.11109-.06077l22.4319-15.27779c.2943-.20054.47447-.54086.47447-.91156 0-.36463-.18018-.69887-.47446-.90549L27.56693.1884c-.33033-.21878-.75675-.24916-1.1111-.06077-.35434.19447-.57655.56517-.57655.97233v8.83608c-3.53145-.0243-6.4503-.1823-8.88268-.48009C5.3332 8.05821 2.21016.97234 2.08404.66848 1.90987.25524 1.51348 0 1.08706 0 1.015 0 .94292 0 .87686.01823.36036.12762 0 .57733 0 1.09388 0 18.9848 20.9905 22.79515 25.86726 23.43932l.00601 8.21622z"/></g></svg></p>\n<p>Creating a link to open the user\'s default email program:</p>\n<pre><code class="language-html">&#x3C;a\n  href="mailto:heya@enki.com">\n  Email me here\n&#x3C;/a>\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/ejvqXx)-->\n<p>The subject area of the email can also be auto loaded.</p>\n<p><strong>Note:</strong> When adding the subject, rather than using spaces between words it is important to write <code>%20</code> in place of each space.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;a\n  href="mailto:heya@enki.com?\n        subject=Sign%20me%20up!">\nEmail me to sign up.\n&#x3C;/a>\n</code></pre>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/OwpKGj)-->\n',

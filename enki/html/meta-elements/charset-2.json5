@@ -13,16 +13,16 @@
     question: '<h3>Answer a quick question about character encoding!</h3>\n<p>The <code>&#x3C;meta charset="utf-8"></code> will best help the browser understand which line of code?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<p>I love a good soufflé.<p>',
+        text: '&lt;p&gt;I love a good soufflé.&lt;p&gt;',
       },
       {
-        text: '<p><sup>1 tsp.</sup> sugar<p>',
+        text: '&lt;p&gt;&lt;sup&gt;1 tsp.&lt;/sup&gt; sugar&lt;p&gt;',
       },
       {
-        text: '<h3>The total cost was $24.50</h3>',
+        text: '&lt;h3&gt;The total cost was $24.50&lt;/h3&gt;',
       },
       {
-        text: '<p>Bunt cake takes 3 c. flour<p>',
+        text: '&lt;p&gt;Bunt cake takes 3 c. flour&lt;p&gt;',
       },
     ],
     comment: '<p>The HTML5 meta <code>charset</code> attribute is used to declare the character encoding of that particular page. This attribute must contain a standard IANA MIME name for character encodings. There is no specific standard encoding, however, authors are recommended to use <code>UTF-8</code>.</p>\n<p>As a best practice, the <code>charset</code> attribute should be the first line of code within the <code>&#x3C;head></code> element.\nIf you choose not to put the charset in the first place you need to place it within the first 1024 bytes of the HTML because some browsers only look within that first KB before choosing the encoding.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;meta\n  charset="UTF-8">\n</code></pre>\n<p>For security reasons, authors should not use any encoding that is ASCII-incompatible. The reason is, if a browser doesn\'t support the encoding it may interpret the harmful content as HTML.</p>\n',

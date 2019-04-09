@@ -19,7 +19,7 @@
         text: '// Option B',
       },
       {
-        text: '<!-- Option C -->',
+        text: '&lt;!-- Option C --&gt;',
       },
       {
         text: '# Option D',

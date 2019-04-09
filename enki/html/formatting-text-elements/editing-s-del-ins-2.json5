@@ -14,19 +14,19 @@
     question: '<h3>How much do you know about formatting text elements?</h3>\n<p>Mark the false statement:</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'The <del> tag defines elements that are being delayed during the start of an animation.',
+        text: 'The &lt;del&gt; tag defines elements that are being delayed during the start of an animation.',
       },
       {
-        text: 'Avoid using the <u> element where it can be confused with links.',
+        text: 'Avoid using the &lt;u&gt; element where it can be confused with links.',
       },
       {
-        text: 'It is best to use <ins>` together with `<del> to properly showcase text updates to a document.',
+        text: 'It is best to use &lt;ins&gt;` together with `&lt;del&gt; to properly showcase text updates to a document.',
       },
       {
-        text: 'The <s> element that defined strikethrough is used to represent text that is no longer correct.',
+        text: 'The &lt;s&gt; element that defined strikethrough is used to represent text that is no longer correct.',
       },
       {
-        text: ' The <s>` and `<del> elements visually appear the same by default but have different semantic meaning.',
+        text: ' The &lt;s&gt;` and `&lt;del&gt; elements visually appear the same by default but have different semantic meaning.',
       },
     ],
     comment: '<h3>Strikethrough Text</h3>\n<p>The HTML <code>&#x3C;s></code>,  or the <strong>Strikethrough Text</strong> element, is used to create a strikethrough in a text. This is usually used to specify that some text is no longer correct or relevant.</p>\n<p>Example:</p>\n<pre><code class="language-html">I have $40 left in my account.\nI have &#x3C;s>$40&#x3C;/s> $35 left in my account\n</code></pre>\n<p>Strikethrough Text Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="88"><g fill="none" fill-rule="evenodd"><rect width="320" height="88" fill="#FFF" rx="9"/><text fill="#000" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="20" y="34">I have $40 left in my account.</tspan></text><text fill="#000" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="20" y="64">I have $40 $35 left in my account.</tspan></text><path stroke="#000" stroke-linecap="square" d="M66.5 59.5h26"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/LBxVxz)-->\n<p><strong>Notes:</strong> If you want to indicate a document edit, don\'t use the <code>&#x3C;s></code> element, you should use the <code>&#x3C;del></code> and/or <code>&#x3C;ins></code> elements instead.</p>\n<h3>Deleted &#x26; Inserted Text</h3>\n<p>Next, the <code>&#x3C;del></code>, or the <strong>Deleted Text</strong> element, is used to specify that some text has been deleted and the <code>&#x3C;ins></code>, or the <strong>Inserted Text</strong> element, is used to indicate that some text was inserted/added to the document.</p>\n<p>Both elements have the same 2 element-specific attributes:\n1. <code>cite</code>\n2. <code>datetime</code></p>\n<p>The <code>cite</code> attribute is used to specify the URL which explains the change.</p>\n<p>The <code>datetime</code> attribute is used to indicate the time of the change and the date has to be properly specified (YYMMDD), otherwise it won\'t parse properly and the element won\'t have a time stamp.</p>\n<p>The <code>&#x3C;del></code> element is usually rendered with strikethrough text, whereas the <code>&#x3C;ins></code> is usually rendered with underlined text.</p>\n<pre><code class="language-html">&#x3C;del>&#x3C;p>Old Text&#x3C;/p>&#x3C;/del>\n&#x3C;ins>&#x3C;p>New Text&#x3C;/p>&#x3C;/ins>\n</code></pre>\n<p>Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="88"><g fill="none" fill-rule="evenodd"><rect width="320" height="88" fill="#FFF" rx="9"/><text fill="#000" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="20" y="34">Old Text</tspan></text><text fill="#000" font-family="Roboto-Regular, Roboto" font-size="16"><tspan x="20" y="64">New Text</tspan></text><path stroke="#000" stroke-linecap="square" d="M20.5 29.5h58M21 67h65"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/ejgNyd)-->\n',

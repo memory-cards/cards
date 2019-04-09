@@ -14,16 +14,16 @@
     question: '<p>What code is used to create a link that when clicked opens the user’s default email program with an auto-loaded email address?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<a href="mailto:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="mailto:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
       {
-        text: '<a href="mail:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="mail:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
       {
-        text: '<a href="address:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="address:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
       {
-        text: '<a href="email:me@enkipro.com">Email Me</a>',
+        text: '&lt;a href="email:me@enkipro.com"&gt;Email Me&lt;/a&gt;',
       },
     ],
     comment: '<p>The HTML anchor <code>mailto:EMAILHERE</code> attribute is used to create a hyperlink, which when clicked opens the users default email program with the email address auto loaded to allow them to send a message.</p>\n<p>Creating a link to open the user\'s default email program:</p>\n<pre><code class="language-html">&#x3C;a\n  href="mailto:me@enkipro.com">\n  Email me here\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<pre><code>Email me here\n</code></pre>\n<p>Next to just opening the user\'s default email program, you can also populate the subject area.</p>\n<p><strong>Note: When adding the subject, it is important to remember that instead of space you need to write <code>%20</code>.</strong></p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;a\n  href="mailto:me@enkipro.com?\n        subject=Email%20Subject">\nEmail me\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<pre><code class="language-html">Email me\n</code></pre>\n',

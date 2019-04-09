@@ -13,19 +13,19 @@
     question: '<p>Which line of code provides the necessary HTML5 character set?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<meta charset="utf-8">',
+        text: '&lt;meta charset="utf-8"&gt;',
       },
       {
-        text: '<meta charset="iso-8859-1">',
+        text: '&lt;meta charset="iso-8859-1"&gt;',
       },
       {
-        text: '<charset meta="utf-8">',
+        text: '&lt;charset meta="utf-8"&gt;',
       },
       {
-        text: '<meta char="utf-8">',
+        text: '&lt;meta char="utf-8"&gt;',
       },
       {
-        text: '<meta character="utf-8">',
+        text: '&lt;meta character="utf-8"&gt;',
       },
     ],
     comment: '<p>The HTML5 meta <code>charset</code> attribute is used to declare the character encoding of that particular page. This attribute must contain a standard IANA MIME name for character encodings. There is no specific standard encoding, however, authors are recommended to use <code>UTF-8</code>.</p>\n<p>As a best practice, the <code>charset</code> attribute should be the first line of code within the <code>&#x3C;head></code> element.\nIf you choose not to put the charset in the first place you need to place it within the first 1024 bytes of the HTML because some browsers only look within that first KB before choosing the encoding.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;meta\n  charset="UTF-8">\n</code></pre>\n<p>For security reasons, authors should not use any encoding that is ASCII-incompatible. The reason is, if a browser doesn\'t support the encoding it may interpret the harmful content as HTML.</p>\n',

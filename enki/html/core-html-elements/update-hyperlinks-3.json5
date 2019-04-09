@@ -13,16 +13,16 @@
     question: '<h3>How much do you know about HTML hyperlinks?</h3>\n<p>Which line of code will link text to open a new window?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<a href="http://enki.com" target="_blank">Link to Enki</a>',
+        text: '&lt;a href="http://enki.com" target="_blank"&gt;Link to Enki&lt;/a&gt;',
       },
       {
-        text: '<link href="http://enki.com" open="new">Link to Enki</link>',
+        text: '&lt;link href="http://enki.com" open="new"&gt;Link to Enki&lt;/link&gt;',
       },
       {
-        text: '<a src="http://enki.com" window="_new">Link to Enki</a>',
+        text: '&lt;a src="http://enki.com" window="_new"&gt;Link to Enki&lt;/a&gt;',
       },
       {
-        text: '<a href="http://enki.com" target="_new">Link to Enki</a>',
+        text: '&lt;a href="http://enki.com" target="_new"&gt;Link to Enki&lt;/a&gt;',
       },
     ],
     comment: '<p>Hyperlinks are more commonly called just \'links\' in HTML. They are very useful for navigating from one document to another or even different sections of long web pages.</p>\n<ul>\n<li>By default, unvisited links are blue and underlined.</li>\n<li>Whereas links you have already clicked on at least once are red.</li>\n<li>Hovering over hyperlinks changes the cursor to a pointer.</li>\n</ul>\n<p>The hyperlink is defined with the <code>&#x3C;a></code> tag:</p>\n<pre><code class="language-html">&#x3C;a\n  href="URL">This is linked text.\n&#x3C;/a>\n</code></pre>\n<p>or</p>\n<pre><code class="language-html">&#x3C;a\n  href="https://www.enki.com/">\n  Visit Enki\'s 5-minute workouts!\n&#x3C;/a>\n</code></pre>\n<p>Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" style="width:100%" viewBox="0 0 320 52"><g fill="none" fill-rule="evenodd"><rect width="320" height="52" fill="#FFF" rx="9"/><text fill="#0001EE" font-family="ArialMT, Arial" font-size="16"><tspan x="20" y="32">Visit Enki&apos;s 5-minute workouts!</tspan></text><path stroke="#0001EE" stroke-linecap="square" d="M20.5 33.5h215"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/vaKKQZ)-->\n<p>In the example above, the <code>Visit Enki\'s 5-minute workouts!</code> is the hyperlink, and by clicking on the text will open the URL provided in the <code>href="URL"</code> attribute. The attribute <code>href</code> is the most important element because it specifies the destination(URL) of where the link should open. </p>\n<p>By default, links open within the existing tab or window. The linked page can be directed to open differently by setting  \\the <code>_target="???"</code> attribute with these options:</p>\n<ul>\n<li>_self     = Default setting. Opens the link in the same tab or window.</li>\n<li>_top      = Opens the link in the full body of the window.</li>\n<li>_parent   = Opens the link in the parent frame.</li>\n<li>_blank    = Opens the link in a new tab or window.</li>\n<li>framename = Opens the link in a named frame.</li>\n</ul>\n<p>Opening the link in a new tab is written like this:</p>\n<pre><code class="language-html">&#x3C;a\n  href="https://www.enki.com/"\n  target="_blank">\n  Visit Enki\'s 5-minute workouts!\n&#x3C;/a>\n</code></pre>\n<p>During the web page development process, if web pages aren\'t created yet or you don\'t want to link them yet while still creating the linked object, <code>placeholder</code> links can be used. These provide the same interactivity as real links in that they can be clicked, but they do not open any new pages.</p>\n<pre><code class="language-html">&#x3C;a href="#">This link is interactive,\n but doesn\'t work yet.&#x3C;/a>\n</code></pre>\n<p>It is also common to add links to images. To link images, the same tags are used, but wrap around an image element like this: </p>\n<pre><code class="language-html">&#x3C;a href="https://enki.com/" \n   target="_blank">\n  &#x3C;img src ="logo.svg" \n       alt ="Enki Logo" />\n&#x3C;/a>\n</code></pre>\n<p>In the example above, the image of the Enki Logo will link to this page <code>https://www.enki.com</code> when clicked.</p>\n',

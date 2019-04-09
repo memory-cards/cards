@@ -15,16 +15,16 @@
     question: '<h3>what does the pseudo-class :root refer to?</h3>\n<p>In a HTML document, what does the pseudo-class <code>:root</code> refer to?</p>\n<p> ???</p>\n',
     answers: [
       {
-        text: '<html> element',
+        text: '&lt;html&gt; element',
       },
       {
-        text: '<body> element',
+        text: '&lt;body&gt; element',
       },
       {
-        text: '<root> element',
+        text: '&lt;root&gt; element',
       },
       {
-        text: 'highest-level <div> element',
+        text: 'highest-level &lt;div&gt; element',
       },
     ],
     comment: '<p><code>inherit</code> takes an extra step in checking whether there are other properties it can use in the cascade before using the <code>initial</code> value that has been set.</p>\n<p>For example:</p>\n<pre><code class="language-css">h1 {\n  color: /* initial or inherit */; }\nbody {\n  color: olive; }\n:root {\n  color: black; }\n</code></pre>\n<p>With <code>initial</code>, <code>h1</code> is required to use <code>initial</code> value, so it bypasses the <code>body</code> element and goes to the <code>root</code>.</p>\n<p>With <code>inherit</code>, <code>h1</code> is required to <code>inherit</code> a color which it takes from <code>body</code>, giving it a color of <code>olive</code>.</p>\n<p><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="100%" height="auto" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><g><rect x="0" y="0" width="800px" height="300px" fill="#596193" /></g><g><rect x="100px" y="75px" width="250px" height="150px" fill="#fff" /><text x="120px" y="163px" style="font-size:40px;font-family:&#x27;Roboto&#x27;,sans-serif">color: initial</text></g><g><rect x="450px" y="75px" width="250px" height="150px" fill="#fff" /><text x="465px" y="163px" fill="olive" style="font-size:40px;font-family:&#x27;Roboto&#x27;,sans-serif">color: inherit</text></g></svg></p>\n<p><em>Note</em>: <code>:root</code> is a pseudo-class that refers to the highest-level ancestor in the DOM. For webpages, using <code>:root</code> is the same as using <code>html</code>. However, because CSS can be used for styling <code>SVG</code> and <code>XML</code> as well, it might have a different meaning sometimes.</p>\n',

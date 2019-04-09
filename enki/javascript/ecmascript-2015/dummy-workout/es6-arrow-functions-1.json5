@@ -16,7 +16,7 @@
         text: 'var',
       },
       {
-        text: '=>',
+        text: '=&gt;',
       },
       {
         text: 'return',
@@ -31,7 +31,7 @@
         text: '=',
       },
       {
-        text: '\\>',
+        text: '\\&gt;',
       },
     ],
     comment: '<p>ES6 <strong>arrow</strong> functions (<code>=></code>) represent function <strong>expressions</strong> in shorter syntax. Arrow functions turn </p>\n<pre><code>function(arguments){expression}\n</code></pre>\n<p>into </p>\n<pre><code>arguments => expression\n</code></pre>\n<p>For example:</p>\n<pre><code>// with ES5\nvar evens = odds.map(\n    function(n){return n + 1}\n  );\n\n// with ES6\nvar evens = odds.map(n => n + 1);\n</code></pre>\n',

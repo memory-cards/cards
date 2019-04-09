@@ -13,10 +13,10 @@
     question: '<p>In regards to HTML comments, which of the following is true?:</p>\n<p>???</p>\n',
     answers: [
       {
-        text: 'The code <!--` starts a comment. The code `--> ends a comment.',
+        text: 'The code &lt;!--` starts a comment. The code `--&gt; ends a comment.',
       },
       {
-        text: 'The comment is placed within <!- xxx ->.',
+        text: 'The comment is placed within &lt;!- xxx -&gt;.',
       },
       {
         text: 'The comment is placed within */ xxx /*.',

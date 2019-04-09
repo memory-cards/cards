@@ -28,7 +28,7 @@
         text: 'input',
       },
       {
-        text: '<input />',
+        text: '&lt;input /&gt;',
       },
       {
         text: 'null',

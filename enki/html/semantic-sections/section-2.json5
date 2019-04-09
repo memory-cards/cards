@@ -13,22 +13,22 @@
     question: '<h3>How much do you know about HTML container elements?</h3>\n<p>Which HTML container element should be used only when the contents would be information stored as an individual record in a database?</p>\n<p>???</p>\n<!--As blogposts and comments are often syndicated (by being pulled into other blogs or being linked via twitter, reddit etc) they should be articles. Cite: http://html5doctor.com/the-section-element/ -->\n',
     answers: [
       {
-        text: '<section>',
+        text: '&lt;section&gt;',
       },
       {
-        text: '<article>',
+        text: '&lt;article&gt;',
       },
       {
-        text: '<blurb>',
+        text: '&lt;blurb&gt;',
       },
       {
-        text: '<data>',
+        text: '&lt;data&gt;',
       },
       {
-        text: '<database>',
+        text: '&lt;database&gt;',
       },
       {
-        text: '<record>',
+        text: '&lt;record&gt;',
       },
     ],
     comment: "<p>The HTML <code>&#x3C;section></code> element is used to represent a standalone section. Usually, This is a section which doesn't have a better element to represent it within that HTML document.</p>\n<p><strong>Note:</strong> Each <code>&#x3C;section></code> element should be properly identified, usually with a heading <code>&#x3C;h1></code>-<code>&#x3C;h6></code>.</p>\n<p>Example:</p>\n<pre><code class=\"language-html\">&#x3C;section>\n  &#x3C;h1>Page name&#x3C;/h1>\n  &#x3C;p>Related info to page&#x3C;/p>\n&#x3C;/section>\n</code></pre>\n<p>If an <code>&#x3C;article></code>, <code>&#x3C;aside></code>, or <code>&#x3C;nav></code> element is more appropriate in your HTML document, don't use the <code>&#x3C;section></code> element. If you need a container for styling and/or scripting don't use the <code>&#x3C;section></code> element, use <code>&#x3C;div></code> instead.</p>\n<p>The <code>&#x3C;section></code> container element should be used only when the contents would be the information stored as an individual record in a database.</p>\n<p>It is encouraged to use the <code>&#x3C;article></code> element instead of the <code>&#x3C;section></code> element when it would make more sense to syndicate the contents of the element.</p>\n",

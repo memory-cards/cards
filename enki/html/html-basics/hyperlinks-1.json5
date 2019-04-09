@@ -13,16 +13,16 @@
     question: '<p>The tag denoting a hyperlink is ???.</p>\n',
     answers: [
       {
-        text: '<a>',
+        text: '&lt;a&gt;',
       },
       {
-        text: '<p>',
+        text: '&lt;p&gt;',
       },
       {
-        text: '<body>',
+        text: '&lt;body&gt;',
       },
       {
-        text: '<div>',
+        text: '&lt;div&gt;',
       },
     ],
     comment: '<p><strong>Hyperlinks</strong>, or links as they are commonly called, represent the way to click either text or images to tell the browser to move to another web page. Links can also open certain files, open user\'s email program, or even jump to different locations of a web page.</p>\n<p>Links are defined by the <code>&#x3C;a></code> tag. Every link must have the <code>href</code> attribute, which takes a path of where to go navigate the web page to. In this example, the "contact.html" would be in the same folder as the existing webpage:</p>\n<pre><code class="language-html">&#x3C;a href="contact.html">\n    Contact\n&#x3C;/a>\n</code></pre>\n<p>When links navigate to web pages on other web servers, it is required to use the "http://" protocol, then the domain name, any folder structure, and then the file. In this example, the web page is on another web server, then looking on the enki.com domain, then within the samples folder, and then linking to the page.html web page.   </p>\n<pre><code class="language-html">&#x3C;p>I am a &#x3C;a \nhref="http://enki.com/samples/page.html">\n    link to Enki.com\n&#x3C;/a>\'s website.&#x3C;/p>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="54"><g fill="none" fill-rule="evenodd"><rect width="320" height="54" fill="#FFF" rx="9"/><text font-family="ArialMT, Arial" font-size="16"><tspan x="40" y="33" fill="#000">I am a</tspan> <tspan x="84.46094" y="33" fill="#0001EE"> link to Enki.com</tspan> <tspan x="200.94531" y="33" fill="#000">&apos;s website.</tspan> <tspan x="275.14063" y="33" fill="#0001EE"> </tspan></text><path stroke="#0001EE" stroke-linecap="square" d="M88.5 34.5h112"/></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/RBKobx)--> \n<p>When links are used with text, such as headings and paragraphs, the text links use most of the style properties of that text (like the font family, font size, font weight) with a few changes: </p>\n<ul>\n<li>link text is blue by default. (<code>color: #0000EE;</code>)</li>\n<li>link text has a text decoration with an underline. (<code>text-decoration: underline;</code>)</li>\n</ul>\n',

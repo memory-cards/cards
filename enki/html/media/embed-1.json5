@@ -13,22 +13,22 @@
     question: '<p>Which HTML element is used to define the container for an external app or plugin, like Adobe Flash?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<embed>',
+        text: '&lt;embed&gt;',
       },
       {
-        text: '<app>',
+        text: '&lt;app&gt;',
       },
       {
-        text: '<external>',
+        text: '&lt;external&gt;',
       },
       {
-        text: '<plugin>',
+        text: '&lt;plugin&gt;',
       },
       {
-        text: '<flash>',
+        text: '&lt;flash&gt;',
       },
       {
-        text: '<object>',
+        text: '&lt;object&gt;',
       },
     ],
     comment: '<p>In HTML you can use the <code>&#x3C;embed></code> element to embed an external application or a plug-in(like Adobe Flash Player) to your web page or document.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;embed type="video/quicktime"\n    src="dancing_stick-man.mov"\n      width="360" height="360">\n</code></pre>\n<p>In the example above we have embedded a dancing stick-man video to our page within a 360-pixel with 360-pixel frame.</p>\n<p>The <code>&#x3C;embed></code> element was introduced in HTML5. It has to have a starting tag and can\'t have a closing tag.</p>\n<p><strong>Important:</strong></p>\n<ul>\n<li><strong>Not all mobile devices support plug-ins.</strong></li>\n<li><strong>Many modern browsers have deprecated and removed the support for plug-ins, so using the <code>&#x3C;embed></code> element is not that good anymore.</strong></li>\n<li><strong>For implementing audio you should use the <code>&#x3C;audio></code> element, and for implementing video you should use the <code>&#x3C;video></code> element.</strong></li>\n</ul>\n',

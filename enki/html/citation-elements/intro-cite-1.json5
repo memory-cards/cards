@@ -13,22 +13,22 @@
     question: '<p>What HTML element is best to use in this example?</p>\n<pre><code class="language-html">&#x3C;p>\nThe 1939 movie\n&#x3C;tag>The Wizard of Oz&#x3C;/tag>\nwas originally filmed in both\nsepia-toned black-and-white\nand Technicolor.\n&#x3C;/p>\n\n&#x3C;p>\n  &#x3C;tag>The Wonderful Wizard of Oz&#x3C;/tag>\n   was written by L. Frank Baum\n   and published in 1900.\n&#x3C;/p>\n</code></pre>\n<p>tag = ???</p>\n',
     answers: [
       {
-        text: '<cite>',
+        text: '&lt;cite&gt;',
       },
       {
-        text: '<quote>',
+        text: '&lt;quote&gt;',
       },
       {
-        text: '<blockquote>',
+        text: '&lt;blockquote&gt;',
       },
       {
-        text: '<q>',
+        text: '&lt;q&gt;',
       },
       {
-        text: '<movie>',
+        text: '&lt;movie&gt;',
       },
       {
-        text: '<title>',
+        text: '&lt;title&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;cite></code> element is used to describe a reference of a cited <strong>creative work</strong>. This element needs to contain either the title or the URL of the cited work.</p>\n<p>What falls under creative work:</p>\n<ul>\n<li>Any online content</li>\n<li>Any book</li>\n<li>Any computer program</li>\n<li>Any original writing</li>\n<li>Any exhibition</li>\n<li>Any video</li>\n<li>Any legal writings</li>\n<li>Any original artwork</li>\n<li>Any research paper</li>\n</ul>\n<pre><code class="language-html">&#x3C;p>\n  More information about Enki here\n  &#x3C;cite>\n    [https://enki.com/about]\n  &#x3C;/cite>.\n&#x3C;/p>\n</code></pre>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="72"><g fill="none" fill-rule="evenodd"><rect width="320" height="72" fill="#FFF" rx="9"/><text fill="#000" font-family="ArialMT, Arial" font-size="16"><tspan x="18" y="31">More information about Enki </tspan> <tspan x="222.54688" y="31" font-family="Arial-ItalicMT, Arial" font-style="italic">[https://</tspan> <tspan x="18" y="48" font-family="Arial-ItalicMT, Arial" font-style="italic">enki.com/about]</tspan> <tspan x="130.95313" y="48">.</tspan></text></g></svg></p>\n<p>The cited URL under the <code>&#x3C;cite></code> element will, by default, display in <i>italic</i>. However, this is easily editable by adding the <code>font-style</code> CSS property to the <code>&#x3C;cite></code> element and changing the default value to \'normal\' or even \'oblique\' (aka bold).</p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/xzyKBz)-->\n',

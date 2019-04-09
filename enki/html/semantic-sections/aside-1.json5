@@ -13,25 +13,25 @@
     question: '<p>Which HTML container element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content?</p>\n<p>???</p>\n<p>An <code>&#x3C;aside></code> should usually contain a navigation list on either the left- or right-hand side of the webpage.</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<aside>',
+        text: '&lt;aside&gt;',
       },
       {
-        text: '<article>',
+        text: '&lt;article&gt;',
       },
       {
-        text: '<section>',
+        text: '&lt;section&gt;',
       },
       {
-        text: '<comment>',
+        text: '&lt;comment&gt;',
       },
       {
-        text: '<news>',
+        text: '&lt;news&gt;',
       },
       {
-        text: '<record>',
+        text: '&lt;record&gt;',
       },
       {
-        text: '<forum>',
+        text: '&lt;forum&gt;',
       },
       {
         text: 'False',

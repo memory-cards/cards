@@ -13,16 +13,16 @@
     question: '<h3>What makes a good meta description?</h3>\n<p>Choose the best option from these:</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<meta name="description" content="Rescue puppies from your local shelter.">',
+        text: '&lt;meta name="description" content="Rescue puppies from your local shelter."&gt;',
       },
       {
-        text: '<meta name="description" content="puppy dogs rescue local shelters adoption">',
+        text: '&lt;meta name="description" content="puppy dogs rescue local shelters adoption"&gt;',
       },
       {
-        text: '<meta name="description" content="http://www.puppyrescue.com">',
+        text: '&lt;meta name="description" content="http://www.puppyrescue.com"&gt;',
       },
       {
-        text: '<meta name="description" content="Austin, Texas">',
+        text: '&lt;meta name="description" content="Austin, Texas"&gt;',
       },
     ],
     comment: '<p>The HTML meta <code>description</code> attribute is used to add a short summary of the content of the web page.</p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;meta\n  name="description"\n  content="Short summary here">\n</code></pre>\n<p>The description meta tag is useful for search engines and browsers for different reasons. For instance, Firefox uses this description as info for bookmarked pages. </p>\n<p>Whereas some search engines use descriptions as information to review and see if they should display that web page to the user.</p>\n',

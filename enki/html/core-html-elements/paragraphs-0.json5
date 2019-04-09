@@ -13,19 +13,19 @@
     question: '<p>Which HTML tags create a paragraph of text?</p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<p>Text Here</p>',
+        text: '&lt;p&gt;Text Here&lt;/p&gt;',
       },
       {
-        text: '<para>Text Here</para>',
+        text: '&lt;para&gt;Text Here&lt;/para&gt;',
       },
       {
-        text: '<p>Text Here<p>',
+        text: '&lt;p&gt;Text Here&lt;p&gt;',
       },
       {
-        text: '</p>Text Here</p>',
+        text: '&lt;/p&gt;Text Here&lt;/p&gt;',
       },
       {
-        text: '<paragraph>Text Here</paragraph>',
+        text: '&lt;paragraph&gt;Text Here&lt;/paragraph&gt;',
       },
     ],
     comment: '<p>In HTML, the <code>&#x3C;p></code> tag defines the start of a paragraph and the <code>&#x3C;/p></code> defines the end.</p>\n<pre><code class="language-html">&#x3C;p>\n  This is a paragraph.\n&#x3C;/p>\n</code></pre>\n<p>Paragraph Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" style="width:100%" viewBox="0 0 320 52"><g fill="none" fill-rule="evenodd"><rect width="320" height="52" fill="#FFF" rx="9"/><text fill="#000" font-family="TimesNewRomanPSMT, Times New Roman" font-size="16"><tspan x="20" y="32">This is a paragraph.</tspan></text></g></svg></p>\n<!--[View CodePen](https://codepen.io/enkidevs/pen/gjMMdo)--> \n<p>The defaults of paragraphs:</p>\n<ul>\n<li>The font size is 16px (pixels).</li>\n<li>The alignment is left aligned.</li>\n<li>The font family is Times New Roman.</li>\n<li>There is a margin of space around the top and bottom of each paragraph that is typically 1em.</li>\n</ul>\n',

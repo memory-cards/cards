@@ -16,7 +16,7 @@
         text: '[key, value] of map',
       },
       {
-        text: 'i=0; i > map.length; i++;',
+        text: 'i=0; i &gt; map.length; i++;',
       },
       {
         text: 'i=1; i == true; i++;',

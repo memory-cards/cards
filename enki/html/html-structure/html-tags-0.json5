@@ -25,10 +25,10 @@
         text: '^',
       },
       {
-        text: '<',
+        text: '&lt;',
       },
       {
-        text: '>',
+        text: '&gt;',
       },
       {
         text: '*',

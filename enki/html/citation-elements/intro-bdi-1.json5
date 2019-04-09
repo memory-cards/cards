@@ -13,22 +13,22 @@
     question: '<p>Which HTML element is used to isolate a span of text that might be formatted in a different direction from other text outside it in within a multi-language document - for such languages as Arabic and Hebrew?  </p>\n<p>???</p>\n',
     answers: [
       {
-        text: '<bdi>',
+        text: '&lt;bdi&gt;',
       },
       {
-        text: '<bdo>',
+        text: '&lt;bdo&gt;',
       },
       {
-        text: '<ltr>',
+        text: '&lt;ltr&gt;',
       },
       {
-        text: '<rtl>',
+        text: '&lt;rtl&gt;',
       },
       {
-        text: '<format>',
+        text: '&lt;format&gt;',
       },
       {
-        text: '<lang>',
+        text: '&lt;lang&gt;',
       },
     ],
     comment: '<p>The HTML <code>&#x3C;bdi></code>, or the <strong>Bidirectional Isolation</strong> element, is used to isolate a span of text that might be formatted in a different direction than other text - typically working with languages from different languages whose direction is unknown.</p>\n<p>For instance, you can use this on a text that is in English (written left-right), to present it in Arabic (written right-left). The \'<a href="https://developer.mozilla.org/en-US/docs/Glossary/user_agent">user agent</a>\' detects that the text should be rendered differently and adjusts accordingly.</p>\n<p>If you don\'t use the <code>&#x3C;bdi></code> element when working with alphanumeric numbers and Arabic text can you see how the code doesn\'t display as you would expect?:</p>\n<pre><code class="language-html">&#x3C;p>\n  User: ماثيو\n  428 points.\n&#x3C;/p>\n</code></pre>\n<p>The strange result would be:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="52"><g fill="none" fill-rule="evenodd"><rect width="320" height="52" fill="#FFF" rx="9"/><text fill="#000" font-family="ArialMT, Arial" font-size="16"><tspan x="18" y="31">User: 428 ماثيو points.</tspan></text></g></svg></p>\n<p>In order to display the numbers properly with, for instance, Arabic, here is how the <code>&#x3C;bdi></code> element fixes this issue: </p>\n<p>Example:</p>\n<pre><code class="language-html">&#x3C;p>\n  User:\n  &#x3C;bdi>ماثيو&#x3C;/bdi>\n  428 points.\n&#x3C;/p>\n</code></pre>\n<p>bdi Result:</p>\n<p><svg xmlns="http://www.w3.org/2000/svg" width="320" height="52"><g fill="none" fill-rule="evenodd"><rect width="320" height="52" fill="#FFF" rx="9"/><text fill="#000" font-family="ArialMT, Arial" font-size="16"><tspan x="18" y="31">User: ماثيو </tspan></text><text fill="#000" font-family="ArialMT, Arial" font-size="16"><tspan x="94" y="32">428 points.</tspan></text></g></svg></p>\n<!--[Visit CodePen](https://codepen.io/enkidevs/pen/yERBoJ)-->\n<p>The CSS rule <code>unicode-bidi : isolate</code> can achieve the same effect as with the <code>&#x3C;bdi></code> element. Nevertheless, it is always better to use the <code>&#x3C;bdi></code> because it provides important semantic meaning, whereas the CSS rule is only presentational.</p>\n<p>This is also important because browsers can ignore CSS styling. So using <code>&#x3C;bdi></code> displays text correctly, whereas with the CSS <code>unicode-bidi: isolate</code> styling would render the text backward due to loss of styling.</p>\n',
