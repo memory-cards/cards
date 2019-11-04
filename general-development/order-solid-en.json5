@@ -9,20 +9,20 @@
     question: 'Order items to get a <b>SOLID</b>',
     answers: [
       {
-        text: "a class should have only a single responsibility (i.e. changes to only one part of the software's specification should be able to affect the specification of the class)"
+        text: "a class should have only a single responsibility (i.e. changes to only one part of the software's specification should be able to affect the specification of the class)",
       },
       {
-        text: "software entities … should be open for extension, but closed for modification."
+        text: 'software entities … should be open for extension, but closed for modification.',
       },
       {
-        text: "objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."
+        text: 'objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.',
       },
       {
-        text: "many client-specific interfaces are better than one general-purpose interface."
+        text: 'many client-specific interfaces are better than one general-purpose interface.',
       },
       {
-        text: 'one should "depend upon abstractions, [not] concretions."'
-      }
+        text: 'one should "depend upon abstractions, [not] concretions."',
+      },
     ],
     comment: '<b>SOLID</b> is: <ol>    <li>Single responsibility principle</li>    <li>Open/closed principle</li>    <li>Liskov substitution principle</li>    <li>Interface segregation principle</li>    <li>Dependency inversion principle</li>    </ol>',
   },
